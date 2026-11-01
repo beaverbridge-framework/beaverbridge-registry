@@ -12,7 +12,6 @@ from the instances it describes.
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import re
 import sys
@@ -20,11 +19,8 @@ from collections import Counter, defaultdict, deque
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from registry_utils import CROSSWALKS, DIST, RAW, ensure_dirs, load_sources, write_json  # noqa: E402
+from registry_utils import DIST, RAW, ROLES, ensure_dirs, load_sources, read_core, write_json  # noqa: E402
 
-CORE_CSV = CROSSWALKS / "core-properties.csv"
-ROLES = ["instance_of", "subclass_of", "part_of", "coordinates", "equivalent_class",
-         "wikidata_equivalent", "external_match"]
 WB = "http://wikiba.se/ontology#"
 RE_WIKIDATA = re.compile(r"wikidata\.org/(?:entity|wiki)/(Q\d+)")
 
@@ -32,11 +28,6 @@ RE_WIKIDATA = re.compile(r"wikidata\.org/(?:entity|wiki)/(Q\d+)")
 def numkey(ident: str) -> tuple:
     m = re.fullmatch(r"([A-Z])(\d+)", ident)
     return (m.group(1), int(m.group(2))) if m else (ident, 0)
-
-
-def read_core() -> list[dict]:
-    with CORE_CSV.open(encoding="utf-8", newline="") as fh:
-        return list(csv.DictReader(fh))
 
 
 def export_path(inst: dict) -> Path | None:

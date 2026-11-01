@@ -3,7 +3,9 @@
   chublets: 99261 triples, 832 items, 168 properties, 13 classes, roles 5/7
   survey: 2 instance(s), 0 warning(s)
 [bundle]
-  bundle: nothing to do (implemented in S4)
+  fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements
+  chublets: 99261 source triples, 13883 kept, 1007 entities, 2858 role statements
+  bundle: 19668 triples from 2 instance(s), 0 warning(s)
 [validate]
   validate: nothing to do (implemented in S6)
 [index]

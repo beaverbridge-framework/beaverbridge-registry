@@ -1,6 +1,7 @@
 """Shared constants and deterministic writers for beaverbridge-registry."""
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 from pathlib import Path
@@ -16,6 +17,14 @@ METADATA = ROOT / "metadata"
 DIST = ROOT / "dist"
 DOCS = ROOT / "docs"
 SOURCES = REGISTRY / "sources.json"
+
+# Where the registry publishes (GitHub Pages of the repository); the vocabulary lives under vocab/.
+REGISTRY_BASE = "https://beaverbridge-framework.github.io/beaverbridge-registry"
+BBR_NS = REGISTRY_BASE + "/vocab/"
+
+CORE_CSV = CROSSWALKS / "core-properties.csv"
+ROLES = ["instance_of", "subclass_of", "part_of", "coordinates", "equivalent_class",
+         "wikidata_equivalent", "external_match"]
 
 
 def ensure_dirs() -> None:
@@ -39,3 +48,16 @@ def sha256_bytes(data: bytes) -> str:
 
 def content_fingerprint(path: Path) -> str:
     return sha256_bytes(path.read_bytes())
+
+
+def read_core() -> list[dict]:
+    """Rows of crosswalks/core-properties.csv (role, instance, property, label_en, datatype, note)."""
+    with CORE_CSV.open(encoding="utf-8", newline="") as fh:
+        return list(csv.DictReader(fh))
+
+
+def write_ntriples(graph, path: Path) -> None:
+    """Sorted, de-duplicated N-Triples: the canonical form, so two runs can be compared byte for byte."""
+    lines = sorted({ln for ln in graph.serialize(format="nt").splitlines() if ln.strip()})
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")

@@ -64,7 +64,7 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 1. **Offline baubar:** Nach dem Harvest läuft alles ohne Netz.
 2. **Byte-identisch:** zwei Läufe hintereinander, `git status` zweimal sauber.
 3. **Keine leere Query:** Eine Beispiel-Query ohne Zeilen bricht den Build ab.
-4. **Herkunft sichtbar:** Jedes Item im Bundle ist über Instanz-Präfix und `dct:source` auf seine Instanz zurückführbar.
+4. **Herkunft sichtbar:** Jedes Item im Bundle ist über `bbr:fromInstance` auf den Katalogeintrag seiner Instanz (mit Quelle, SHA-256, Generator, Datenstand) zurückführbar.
 5. **Kein Rückverweis erfunden:** Die Registry schreibt `owl:sameAs` nur, wenn die Quelle es schon enthält.
 
 ### A3 Querschnittsregeln
@@ -89,7 +89,10 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Quellen holen | über GitHub Pages (HTTP), Git-Clone nur als späterer Fallback über `config.local.json` | 2026-11-01 |
 | IRIs der Items | unverändert aus der Quelle; Eindeutigkeit kommt vom Namespace der Instanz | 2026-11-01 |
 | Anzeige bei gleichen IDs | Instanz-Präfix, z. B. `fuzzy-sl:Q1`, `chublets:Q1`, Label dahinter | 2026-11-01 |
-| Bundle-Umfang | Items, Properties und Klassen | 2026-11-01 |
+| Bundle-Umfang | nur was Facetten und Abfragen über Instanzen brauchen: Entitäten (Items, Properties, Klassen) mit Typ, Labels, Beschreibung, Direktaussagen, Klassenlinks (`rdfs:subClassOf`, `owl:equivalentClass`, `owl:sameAs`), Property-Metadaten; Katalogknoten der Instanz (Titel, Lizenz, Landingpage). Weggelassen: Statement-, Referenz-, Qualifier-Knoten, Zähler, DCAT je Entität, Leerknoten. Die Whitelist steht in `py/step_bundle.py` | 2026-11-01 |
+| IRI von `bbr:` | `https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/` (Pages-Pfad, später w3id); Vokabular von Hand in `metadata/bbr.ttl` | 2026-11-01 |
+| Katalog-IRIs | Registry `…/catalog`, je Instanz ein `dcat:CatalogRecord` unter `…/record/<id>`; jede Entität trägt `bbr:fromInstance` | 2026-11-01 |
+| Normalisierung | Wikidata-Q/P-Nummern als Text werden zu `http://www.wikidata.org/entity/…`; Werte, die sich nicht normalisieren lassen, werden gemeldet und übersprungen (mit `--strict` Fehler) | 2026-11-01 |
 | Startinstanzen | `fuzzy-sl-static` und `chublets-wikibase-demo` | 2026-11-01 |
 | Rolle der Dateien in `sources.json` | je Datei `role`: `export` (Vollexport, wird gegen `rdf_base` geprüft) oder `ontology` (generische Wikibase-Ontologie) | 2026-11-01 |
 | Harvest-Fehler | eine nicht erreichbare Instanz bricht den Lauf nicht ab (Exit 0, Meldung); nur `--strict` macht daraus Exit 1; Stopp nach drei Instanzen ohne Treffer in Folge | 2026-11-01 |
@@ -136,7 +139,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S1 | Skeleton: Layout, `main.py`, Utils, Licence, Citation | beaverbridge-registry | S0 | erledigt 2026-11-01 |
 | S2 | Harvest: `sources.json`, Pages-Download, `harvest.json`, Hash | beaverbridge-registry | S1 | erledigt 2026-11-01 |
 | S3 | Befund je Instanz: Klassen, Properties, Kern-Properties (Crosswalk-Entwurf) | beaverbridge-registry | S2 | erledigt 2026-11-01 |
-| S4 | Bundle: DCAT-Katalog, Instanz-Präfix, Herkunft | beaverbridge-registry | S2 | offen |
+| S4 | Bundle: DCAT-Katalog, Instanz-Präfix, Herkunft | beaverbridge-registry | S2 | erledigt 2026-11-01 |
 | S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | offen |
 | S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | offen |
 | S7 | Index und Facettenseite | beaverbridge-registry | S4 | offen |
@@ -193,15 +196,31 @@ Umgesetzt: `py/step_survey.py` (Schritt `survey` im Standardlauf, nach `harvest`
 
 ### Erledigt 2026-11-01
 
+Abnahme auf dem PC: Commit 0ce9ff6, Survey 8,8 bis 8,9 s, 0 Warnungen, `--strict` grün, `git status` sauber.
+
 Gemessen: fuzzy-sl 12 462 Tripel, 137 Items, 36 Properties (18 in Gebrauch), 19 Klassen, alle sieben Rollen belegt; Chublets 99 261 Tripel, 832 Items, 168 Properties (32 in Gebrauch), 13 Klassen, fünf Rollen belegt (zwei `none` mit Grund). Befunde 9 bis 15 in A1. Negativtest in einer Kopie mit sechs absichtlichen Fehlern (falsches Label, falscher Datentyp, unbekannte Property, `none` ohne Grund, fehlende Zeile, unbekannte Instanz): alle sechs werden gemeldet; dabei zeigte sich ein Absturz bei fehlender Rolle, der behoben ist.
 
-*(S4–S9 werden angelegt, sobald sie dran sind.)*
+## S4 — Bundle
+
+**Ziel:** Ein gemeinsamer Graph aus allen Instanzen, begrenzt auf das, was eine Facettensuche wie in der fdo-squirrel-registry und die Abfragen über Instanzen brauchen.
+
+**Uploads:** keine; `data/raw/` kommt aus dem Repo.
+
+Umgesetzt: `py/step_bundle.py` liest je Instanz den Export, behält nur Tripel, deren Subjekt eine Entität (`<base>/entity/Q…|P…`) ist und deren Prädikat auf der Whitelist steht (oder mit `<base>/prop/direct/` beginnt), dazu den Katalogknoten der Instanz. Je Rolle der Rollen-Tabelle entsteht eine normalisierte `bbr:`-Aussage neben der Quellaussage. Je Instanz ein `dcat:CatalogRecord`, je Entität `bbr:fromInstance`. Ausgabe: `dist/beaverbridge-registry.nt` (sortiert, kanonisch), `dist/beaverbridge-registry.ttl` (aus dem NT, mit Präfixen `fuzzy-sl:`, `chublets:`), `dist/bundle_report.md`. `metadata/bbr.ttl` beschreibt die `bbr:`-Begriffe.
+
+**Abnahme:** `python main.py` meldet 0 Warnungen; zwei Läufe hintereinander lassen `dist/` byte-identisch und `git status` sauber; Rollenaussagen im Bericht passen zur Survey-Tabelle.
+
+### Erledigt 2026-11-01
+
+Gemessen: 19 668 Tripel (fuzzy-sl 1 455 von 12 462 behalten, 173 Entitäten, 264 Rollenaussagen; chublets 13 883 von 99 261, 1 007 Entitäten, 2 858 Rollenaussagen). Lauf rund 5 s; NT/TTL/Bericht zweimal byte-identisch. NT 3,4 MB, TTL 0,9 MB.
+
+*(S5–S9 werden angelegt, sobald sie dran sind.)*
 
 ---
 
 ## Teil D — Offene Punkte
 
-- **IRI des Vokabulars `bbr:`:** Namespace und Auflösung festlegen (z. B. unter `…/beaverbridge-registry/vocab/`, später w3id); Entscheidung in S4, weil das Bundle sie braucht.
+- **Auflösung von `bbr:`:** Namespace ist entschieden (Pages-Pfad); die Seite `vocab/` selbst entsteht mit der Site in S7. Später w3id.
 - **Datenmodell-Klassen gegen Fachklassen:** In fuzzy-sl stehen *Spatial Type*, *Source*, *Project* neben *Archaeological Site*; im Bundle sollten sie unterscheidbar sein (Anker oder Kennzeichnung). Vorschlag in S5.
 - **Anker für Chublets:** Die Instanz bringt keinen CRM-Anker mit; er kommt aus der Klassen-Tabelle der Bridge (S5), nicht aus der Quelle.
 - **w3id-Prefix** für `…/record/…` und Content Negotiation.
