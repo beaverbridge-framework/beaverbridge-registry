@@ -1,0 +1,23 @@
+{% extends "base.html.j2" %}
+{% block body %}
+<h1>Search all instances</h1>
+<p class="muted">{{ n_entries }} items from {{ instances|length }} static Wikibase instances in one bundle of {{ triples }} triples. Filters inside a group combine with “or”, groups combine with “and”.</p>
+<div class="layout">
+  <aside class="facets" aria-label="Filters">
+    <header><h2>Filters</h2><button type="button" id="clear">Clear filters</button></header>
+    <div id="facets"></div>
+  </aside>
+  <section aria-label="Results">
+    <div class="searchbar">
+      <label class="visually-hidden" for="q">Search labels and descriptions</label>
+      <input type="search" id="q" placeholder="Search labels, descriptions, identifiers" autocomplete="off">
+      <label class="visually-hidden" for="sort">Sort</label>
+      <select id="sort"><option value="label">Sort: label A–Z</option><option value="id">Sort: instance and identifier</option></select>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div id="results"></div>
+  </section>
+</div>
+<script type="application/json" id="data">{{ data_json|safe }}</script>
+{% endblock %}
+{% block scripts %}<script src="assets/app.js"></script>{% endblock %}

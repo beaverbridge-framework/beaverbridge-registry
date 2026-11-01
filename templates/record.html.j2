@@ -1,0 +1,18 @@
+{% extends "base.html.j2" %}
+{% block body %}
+<h1>{{ i.title }}</h1>
+<p class="muted mono">{{ i.record }}</p>
+<p>Catalogue record of the instance <code>{{ i.id }}</code>. In the bundle every entity of this instance points here with <code>bbr:fromInstance</code>.</p>
+<table>
+<tbody>
+<tr><th scope="row">Instance</th><td><a href="{{ i.pages_url }}">{{ i.pages_url }}</a></td></tr>
+<tr><th scope="row">Export fetched from</th><td><a href="{{ i.source }}">{{ i.source }}</a></td></tr>
+<tr><th scope="row">SHA-256 of the export</th><td class="hash">{{ i.sha256 }}</td></tr>
+<tr><th scope="row">Generator</th><td>{{ i.generator or "not stated" }}</td></tr>
+<tr><th scope="row">Data as of</th><td>{{ i.data_as_of or "not stated" }}</td></tr>
+<tr><th scope="row">Licence</th><td>{{ i.licence }}</td></tr>
+<tr><th scope="row">Triples in the export</th><td>{{ i.source_triples }}</td></tr>
+<tr><th scope="row">In the bundle</th><td>{{ i.entities }} entities: {{ i["items"] }} items and {{ i.properties }} properties</td></tr>
+</tbody></table>
+<p><a href="{{ root }}index.html#instance={{ i.id }}">Show the {{ i["items"] }} items of this instance in the search</a></p>
+{% endblock %}

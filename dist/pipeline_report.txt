@@ -9,8 +9,10 @@
 [validate]
   validate: nothing to do (implemented in S6)
 [index]
-  index: nothing to do (implemented in S7)
+  fuzzy-sl: 137 items, 36 properties
+  chublets: 832 items, 168 properties
+  index: 969 entries from 2 instance(s), 0 warning(s)
 [site]
-  site: nothing to do (implemented in S7)
+  site: docs/ with search page (969 entries), catalogue, 2 record page(s), 12 vocabulary term(s)
 [sparql]
   sparql: nothing to do (implemented in S8)

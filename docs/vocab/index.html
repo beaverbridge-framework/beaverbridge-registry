@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeaverBridge registry vocabulary</title>
+<meta name="description" content="The bbr: terms">
+<link rel="icon" href="../assets/logo.jpg">
+<link rel="stylesheet" href="../assets/style.css">
+<script>try{var t=localStorage.getItem("bbr-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><img src="../assets/logo.jpg" alt="" width="52" height="52">
+    <div><strong>BeaverBridge registry</strong><span>Static Wikibase instances, one catalogue</span></div></a>
+  <nav class="top" aria-label="Main">
+    <a href="../index.html">Search</a>
+    <a href="../catalog.html">Catalogue</a>
+    <a href="../vocab/index.html">Vocabulary</a>
+    <a href="../downloads/beaverbridge-registry.ttl">Bundle (Turtle)</a>
+    <a href="../registry-index.json">Index (JSON)</a>
+    <a href="https://github.com/beaverbridge-framework/beaverbridge-registry">GitHub</a>
+    <button type="button" id="theme" aria-label="Colour theme">Theme: auto</button>
+  </nav>
+</div></header>
+<main><div class="wrap">
+<h1>BeaverBridge registry vocabulary</h1>
+<p class="muted mono">https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/</p>
+<p>Normalised roles that the same job plays in different Wikibase instances, and the facts the registry records about each instance. Source: <a href="bbr.ttl">bbr.ttl</a> (CC BY 4.0).</p>
+<table>
+<thead><tr><th>Term</th><th>Label</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><a href="coordinates.html"><code>bbr:coordinates</code></a></td><td>coordinates</td><td>The geographic position of the subject, as the source states it (a WKT literal).</td></tr>
+<tr><td><a href="equivalentClass.html"><code>bbr:equivalentClass</code></a></td><td>equivalent class</td><td>The class item states an IRI of an equivalent class, for example a CIDOC CRM class.</td></tr>
+<tr><td><a href="externalMatch.html"><code>bbr:externalMatch</code></a></td><td>external match</td><td>A URL of the same thing elsewhere, as the source states it.</td></tr>
+<tr><td><a href="fromInstance.html"><code>bbr:fromInstance</code></a></td><td>from instance</td><td>The catalogue record of the instance an entity was harvested from.</td></tr>
+<tr><td><a href="generator.html"><code>bbr:generator</code></a></td><td>generator</td><td>The software and version that wrote the export, as the file&#39;s header states it.</td></tr>
+<tr><td><a href="instanceOf.html"><code>bbr:instanceOf</code></a></td><td>instance of</td><td>The subject is an instance of the object (a class item). In Wikibase this is the property labelled &#39;instance of&#39;, whose number differs between instances.</td></tr>
+<tr><td><a href="partOf.html"><code>bbr:partOf</code></a></td><td>part of</td><td>The subject is a part of the object.</td></tr>
+<tr><td><a href="prefix.html"><code>bbr:prefix</code></a></td><td>prefix</td><td>Short code of the instance, used in front of an identifier when two instances use the same one (fuzzy-sl:Q1, chublets:Q1).</td></tr>
+<tr><td><a href="sha256.html"><code>bbr:sha256</code></a></td><td>SHA-256</td><td>SHA-256 of the harvested export file, as published by the instance.</td></tr>
+<tr><td><a href="sourceTripleCount.html"><code>bbr:sourceTripleCount</code></a></td><td>source triple count</td><td>Number of triples in the harvested export, before the registry left out what it does not use.</td></tr>
+<tr><td><a href="subclassOf.html"><code>bbr:subclassOf</code></a></td><td>subclass of</td><td>The subject class is a subclass of the object class.</td></tr>
+<tr><td><a href="wikidataEquivalent.html"><code>bbr:wikidataEquivalent</code></a></td><td>Wikidata equivalent</td><td>The Wikidata entity (http://www.wikidata.org/entity/...) that the source names for the subject. Q-numbers and P-numbers given as plain strings are turned into IRIs.</td></tr>
+</tbody></table>
+</div></main>
+<footer class="site"><div class="wrap">
+  Release 2026-11-01. Code: MIT. Bundle: CC BY 4.0; the licence of each instance is kept in its catalogue record.
+</div></footer>
+</body>
+</html>

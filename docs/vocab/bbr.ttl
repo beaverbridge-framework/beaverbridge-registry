@@ -1,0 +1,75 @@
+# The BeaverBridge registry vocabulary (bbr:). Hand-written; the bundle uses exactly these terms.
+# Namespace: https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/
+# Licence: CC BY 4.0
+
+@prefix bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+    a owl:Ontology ;
+    dct:title "BeaverBridge registry vocabulary"@en ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Normalised roles that the same job plays in different Wikibase instances, and the facts the registry records about each instance."@en .
+
+# Roles. Each statement sits next to the unchanged source statement; which property of which instance
+# plays the role is stated in crosswalks/core-properties.csv.
+
+bbr:instanceOf a owl:ObjectProperty ;
+    rdfs:label "instance of"@en ;
+    rdfs:comment "The subject is an instance of the object (a class item). In Wikibase this is the property labelled 'instance of', whose number differs between instances."@en .
+
+bbr:subclassOf a owl:ObjectProperty ;
+    rdfs:label "subclass of"@en ;
+    rdfs:comment "The subject class is a subclass of the object class."@en .
+
+bbr:partOf a owl:ObjectProperty ;
+    rdfs:label "part of"@en ;
+    rdfs:comment "The subject is a part of the object."@en .
+
+bbr:coordinates a owl:DatatypeProperty ;
+    rdfs:label "coordinates"@en ;
+    rdfs:comment "The geographic position of the subject, as the source states it (a WKT literal)."@en .
+
+bbr:equivalentClass a owl:ObjectProperty ;
+    rdfs:label "equivalent class"@en ;
+    rdfs:comment "The class item states an IRI of an equivalent class, for example a CIDOC CRM class."@en .
+
+bbr:wikidataEquivalent a owl:ObjectProperty ;
+    rdfs:label "Wikidata equivalent"@en ;
+    rdfs:comment "The Wikidata entity (http://www.wikidata.org/entity/...) that the source names for the subject. Q-numbers and P-numbers given as plain strings are turned into IRIs."@en .
+
+bbr:externalMatch a owl:ObjectProperty ;
+    rdfs:label "external match"@en ;
+    rdfs:comment "A URL of the same thing elsewhere, as the source states it."@en .
+
+# Provenance
+
+bbr:fromInstance a owl:ObjectProperty ;
+    rdfs:label "from instance"@en ;
+    rdfs:comment "The catalogue record of the instance an entity was harvested from."@en ;
+    rdfs:range dcat:CatalogRecord .
+
+bbr:prefix a owl:DatatypeProperty ;
+    rdfs:label "prefix"@en ;
+    rdfs:comment "Short code of the instance, used in front of an identifier when two instances use the same one (fuzzy-sl:Q1, chublets:Q1)."@en ;
+    rdfs:domain dcat:CatalogRecord ; rdfs:range xsd:string .
+
+bbr:sha256 a owl:DatatypeProperty ;
+    rdfs:label "SHA-256"@en ;
+    rdfs:comment "SHA-256 of the harvested export file, as published by the instance."@en ;
+    rdfs:domain dcat:CatalogRecord ; rdfs:range xsd:string .
+
+bbr:sourceTripleCount a owl:DatatypeProperty ;
+    rdfs:label "source triple count"@en ;
+    rdfs:comment "Number of triples in the harvested export, before the registry left out what it does not use."@en ;
+    rdfs:domain dcat:CatalogRecord ; rdfs:range xsd:integer .
+
+bbr:generator a owl:DatatypeProperty ;
+    rdfs:label "generator"@en ;
+    rdfs:comment "The software and version that wrote the export, as the file's header states it."@en ;
+    rdfs:domain dcat:CatalogRecord ; rdfs:range xsd:string .

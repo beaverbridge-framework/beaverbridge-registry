@@ -1,0 +1,14 @@
+{% extends "base.html.j2" %}
+{% block body %}
+<h1>Catalogue</h1>
+<p>The registry is a <code>dcat:Catalog</code> with one catalogue record per registered instance. This page is what <code class="mono">{{ catalog_iri }}</code> shows to a browser; the same facts as RDF are in the <a href="downloads/beaverbridge-registry.ttl">bundle</a>.</p>
+<table>
+<thead><tr><th>Instance</th><th>Items</th><th>Properties</th><th>Licence</th><th>Generator</th><th>Data as of</th><th>Record</th></tr></thead>
+<tbody>
+{% for i in instances %}
+<tr><td><a href="{{ i.pages_url }}">{{ i.title }}</a><br><span class="muted mono">{{ i.id }}</span></td>
+<td class="num">{{ i["items"] }}</td><td class="num">{{ i.properties }}</td><td>{{ i.licence }}</td><td>{{ i.generator }}</td><td>{{ i.data_as_of[:10] }}</td>
+<td><a href="record/{{ i.id }}.html">{{ i.id }}</a></td></tr>
+{% endfor %}
+</tbody></table>
+{% endblock %}

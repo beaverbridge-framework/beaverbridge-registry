@@ -92,6 +92,9 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Bundle-Umfang | nur was Facetten und Abfragen über Instanzen brauchen: Entitäten (Items, Properties, Klassen) mit Typ, Labels, Beschreibung, Direktaussagen, Klassenlinks (`rdfs:subClassOf`, `owl:equivalentClass`, `owl:sameAs`), Property-Metadaten; Katalogknoten der Instanz (Titel, Lizenz, Landingpage). Weggelassen: Statement-, Referenz-, Qualifier-Knoten, Zähler, DCAT je Entität, Leerknoten. Die Whitelist steht in `py/step_bundle.py` | 2026-11-01 |
 | IRI von `bbr:` | `https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/` (Pages-Pfad, später w3id); Vokabular von Hand in `metadata/bbr.ttl` | 2026-11-01 |
 | Katalog-IRIs | Registry `…/catalog`, je Instanz ein `dcat:CatalogRecord` unter `…/record/<id>`; jede Entität trägt `bbr:fromInstance` | 2026-11-01 |
+| Seite und Pages | `docs/` wird vollständig von `step_site.py` erzeugt und versioniert (`linguist-generated`); GitHub Pages liefert Branch `main`, Ordner `/docs`; die Seiten brauchen weder Netz noch Drittanbieter | 2026-11-01 |
+| Facetten | Instanz, Klasse (mit Instanz-Präfix), Has (Koordinaten, Wikidata-Link, externer Match), Lizenz; Freitext über Label, Beschreibung, Kennung; Einträge sind Items, Properties nur gezählt | 2026-11-01 |
+| Adressen der Registry-IRIs | `…/catalog`, `…/record/<id>` und `…/vocab/<Begriff>` werden als `.html`-Dateien ausgeliefert (Pages löst die Endung auf); Content Negotiation gibt es nicht, RDF liegt unter `downloads/` und `vocab/bbr.ttl` | 2026-11-01 |
 | Normalisierung | Wikidata-Q/P-Nummern als Text werden zu `http://www.wikidata.org/entity/…`; Werte, die sich nicht normalisieren lassen, werden gemeldet und übersprungen (mit `--strict` Fehler) | 2026-11-01 |
 | Startinstanzen | `fuzzy-sl-static` und `chublets-wikibase-demo` | 2026-11-01 |
 | Rolle der Dateien in `sources.json` | je Datei `role`: `export` (Vollexport, wird gegen `rdf_base` geprüft) oder `ontology` (generische Wikibase-Ontologie) | 2026-11-01 |
@@ -142,7 +145,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S4 | Bundle: DCAT-Katalog, Instanz-Präfix, Herkunft | beaverbridge-registry | S2 | erledigt 2026-11-01 |
 | S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | offen |
 | S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | offen |
-| S7 | Index und Facettenseite | beaverbridge-registry | S4 | offen |
+| S7 | Index und Facettenseite | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | offen |
 | S9 | Überführung nach `beaverbridge` | beaverbridge | S5–S8 | offen |
 
@@ -214,7 +217,30 @@ Umgesetzt: `py/step_bundle.py` liest je Instanz den Export, behält nur Tripel, 
 
 Gemessen: 19 668 Tripel (fuzzy-sl 1 455 von 12 462 behalten, 173 Entitäten, 264 Rollenaussagen; chublets 13 883 von 99 261, 1 007 Entitäten, 2 858 Rollenaussagen). Lauf rund 5 s; NT/TTL/Bericht zweimal byte-identisch. NT 3,4 MB, TTL 0,9 MB.
 
-*(S5–S9 werden angelegt, sobald sie dran sind.)*
+Abnahme auf dem PC: Commit e9e63f8, Bundle 8,3 bis 8,5 s, `--strict` grün, `git status` sauber, gepusht.
+
+## S7 — Index und Facettenseite
+
+**Ziel:** Eine statische Suchseite über alle Instanzen nach dem Muster der fdo-squirrel-registry: Facetten mit Zählwerten, Trefferkarten, Löschen der Filter; dazu die Seiten, unter denen die Registry-IRIs auflösen.
+
+**Uploads:** keine; gebaut wird aus `dist/beaverbridge-registry.nt`.
+
+Umgesetzt:
+
+- `py/step_index.py` liest nur das Bundle und schreibt `dist/registry-index.json`: Instanzen (Titel, Quelle, SHA-256, Generator, Datenstand, Lizenz, Zählwerte), Klassenlabels und ein Eintrag je Item (969: fuzzy-sl 137, chublets 832) mit Label (Englisch zuerst), Beschreibung, Klassen, *part of*, Koordinaten, Wikidata, Match-URLs, Seitenadresse der Instanz (`<pages_url>/<Qn>.html`). Properties werden gezählt, nicht gelistet.
+- `py/step_site.py` baut `docs/` aus `templates/` (Jinja2): `index.html` (Daten eingebettet, öffnet auch von der Platte), `catalog.html` (antwortet für `…/catalog`), `record/<id>.html` (antwortet für `…/record/<id>`), `vocab/` (Übersicht, eine Seite je `bbr:`-Begriff, `bbr.ttl`), `downloads/` (Bundle als TTL und NT), `registry-index.json`, `assets/`, `.nojekyll`.
+- Facetten: Instanz, Klasse (mit Instanz-Präfix, weil Klassennamen kollidieren können), „Has“ (Koordinaten, Wikidata-Link, externer Match), Lizenz. Innerhalb einer Facette ODER, zwischen Facetten UND; Zählwerte beachten die anderen Facetten. Freitextsuche über Label, Beschreibung, Kennung, Klassen; Zustand in der URL (`#class=…&q=…`); Hell, Dunkel und Auto nach `design/PALETTE.md`; Systemschrift, kein Aufruf an Dritte; kein `innerHTML` mit Daten.
+- `assets/logo-256.jpg` ist das Logo auf 256 px verkleinert (15 KB statt 550 KB); das Original bleibt für Dokumente.
+
+**Abnahme:** `python main.py --strict` läuft durch; zwei Läufe lassen `dist/` und `docs/` byte-identisch und `git status` sauber; `docs/index.html` zeigt 969 Einträge, die Filter ändern die Zahl, die Seite zeigt keine Konsolenfehler und läuft bei 390 px Breite ohne waagerechtes Scrollen; nach dem Push zeigt GitHub Pages dieselbe Seite.
+
+### Erledigt 2026-11-01
+
+Getestet in Chromium (Playwright) von der Platte: 969 Einträge, Suche „zoo“ 8 Treffer, fuzzy-sl 137, fuzzy-sl mit Koordinaten 59, Hash-Zustand wird gelesen, kein Konsolenfehler, Breite 390 px ohne Überlauf, Hell und Dunkel geprüft. Dabei gefunden und behoben: In Jinja ist `i.items` die Methode `dict.items`, nicht der Schlüssel; die Seiten waren dadurch nicht byte-identisch (Speicheradresse im Text). Seither `i["items"]`.
+
+Aktivierung: GitHub → Settings → Pages → Branch `main`, Ordner `/docs`.
+
+*(S5, S6, S8 und S9 werden angelegt, sobald sie dran sind.)*
 
 ---
 
@@ -223,6 +249,9 @@ Gemessen: 19 668 Tripel (fuzzy-sl 1 455 von 12 462 behalten, 173 Entitäten, 264
 - **Auflösung von `bbr:`:** Namespace ist entschieden (Pages-Pfad); die Seite `vocab/` selbst entsteht mit der Site in S7. Später w3id.
 - **Datenmodell-Klassen gegen Fachklassen:** In fuzzy-sl stehen *Spatial Type*, *Source*, *Project* neben *Archaeological Site*; im Bundle sollten sie unterscheidbar sein (Anker oder Kennzeichnung). Vorschlag in S5.
 - **Anker für Chublets:** Die Instanz bringt keinen CRM-Anker mit; er kommt aus der Klassen-Tabelle der Bridge (S5), nicht aus der Quelle.
+- **Doppelte Ablage:** `dist/` und `docs/downloads/` halten dieselben 4 MB; mit jeder Änderung des Bundles wächst die Git-Historie um beide. Wenn es stört: `dist/*.nt/.ttl` nicht mehr versionieren und nur `docs/downloads/` behalten.
+- **Facette nach CRM-Anker:** kommt mit S5, sobald `crm_bridge.ttl` Anker auch für Chublets liefert; der Index hat dafür Platz.
+- **Link zur Query-Seite** in der Kopfzeile (`templates/base.html.j2`) mit S8.
 - **w3id-Prefix** für `…/record/…` und Content Negotiation.
 - **Dritte Instanz:** `osm-static-benchmarks` hat ein sehr anderes Modell und wäre der Härtetest, aber erst nach S6.
 - **Zenodo-DOI** für das Bundle als FDO (nach S8).

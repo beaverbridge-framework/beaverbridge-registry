@@ -1,0 +1,20 @@
+{% extends "base.html.j2" %}
+{% block body %}
+{% if term %}
+<h1><code>bbr:{{ term.name }}</code> <span class="muted">{{ term.label }}</span></h1>
+<p class="muted mono">{{ term.iri }}</p>
+<p>{{ term.comment }}</p>
+<p>{{ term.kind }}.{% if term.domain %} Domain: {{ term.domain }}.{% endif %}{% if term.range %} Range: {{ term.range }}.{% endif %}</p>
+<p><a href="index.html">All terms</a></p>
+{% else %}
+<h1>BeaverBridge registry vocabulary</h1>
+<p class="muted mono">{{ ns }}</p>
+<p>{{ intro }} Source: <a href="bbr.ttl">bbr.ttl</a> (CC BY 4.0).</p>
+<table>
+<thead><tr><th>Term</th><th>Label</th><th>Meaning</th></tr></thead>
+<tbody>
+{% for t in terms %}<tr><td><a href="{{ t.name }}.html"><code>bbr:{{ t.name }}</code></a></td><td>{{ t.label }}</td><td>{{ t.comment }}</td></tr>
+{% endfor %}
+</tbody></table>
+{% endif %}
+{% endblock %}

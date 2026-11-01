@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="icon" href="{{ root }}assets/logo.jpg">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+<script>try{var t=localStorage.getItem("bbr-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="{{ root }}index.html"><img src="{{ root }}assets/logo.jpg" alt="" width="52" height="52">
+    <div><strong>BeaverBridge registry</strong><span>Static Wikibase instances, one catalogue</span></div></a>
+  <nav class="top" aria-label="Main">
+    <a href="{{ root }}index.html">Search</a>
+    <a href="{{ root }}catalog.html">Catalogue</a>
+    <a href="{{ root }}vocab/index.html">Vocabulary</a>
+    <a href="{{ root }}downloads/beaverbridge-registry.ttl">Bundle (Turtle)</a>
+    <a href="{{ root }}registry-index.json">Index (JSON)</a>
+    <a href="https://github.com/beaverbridge-framework/beaverbridge-registry">GitHub</a>
+    <button type="button" id="theme" aria-label="Colour theme">Theme: auto</button>
+  </nav>
+</div></header>
+<main><div class="wrap">
+{% block body %}{% endblock %}
+</div></main>
+<footer class="site"><div class="wrap">
+  Release {{ release }}. Code: MIT. Bundle: CC BY 4.0; the licence of each instance is kept in its catalogue record.
+</div></footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>
