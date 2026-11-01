@@ -8,7 +8,7 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 
 ### A1 Ausgangslage
 
-**Wofür das Repo da ist.** Vorstufe von BeaverBridge (siehe Konzeptskizze „BeaverBridge", Tagline *Building Bridges from Community Data to Semantic Knowledge*). Das Repo registriert statische Wikibase-Instanzen, holt deren RDF-Exporte und bündelt sie zu einem gemeinsamen Graphen mit Facettenseite und SPARQL-Seite im Browser. Vorbild ist `FDOx-squirrel/fdo-squirrel-registry`. Am Ende wird alles in das Projekt `beaverbridge` überführt.
+**Wofür das Repo da ist.** Vorstufe von BeaverBridge (siehe Konzeptskizze „BeaverBridge", Tagline *Building Bridges from Community Data to Semantic Knowledge*). Das Repo registriert statische Wikibase-Instanzen, holt deren RDF-Exporte und bündelt sie zu einem gemeinsamen Graphen mit Facettenseite und SPARQL-Seite im Browser. Vorbild ist `FDOx-squirrel/fdo-squirrel-registry`.
 
 **Was schon existiert und nicht neu gebaut wird:**
 
@@ -117,7 +117,7 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Selbsttest des Gates | Vor dem Bundle läuft `tests/shacl/good.ttl` (darf nichts melden) und `bad.ttl` (muss jeden Code aus `expected.json` mit der dort stehenden Severity melden); schlägt das fehl, ist das Gate kaputt und der Lauf bricht ab | 2026-11-01 |
 | Gate-Eigenheiten (pyshacl) | `conforms` ist auch bei Info falsch, darum zählt das Gate selbst nach Severity; die Severity einer SPARQL-Regel kommt aus der Shape, nicht aus der Regel (darum R18 in eigener Shape); R07 wählt seine Fokusknoten über ein `sh:SPARQLTarget` (1 s statt 33 s) | 2026-11-01 |
 | Lizenz | Code MIT; Bundle CC BY 4.0 mit Lizenz je Eintrag erhalten (beide Quellen sind CC0) | Vorschlag |
-| Überführung nach `beaverbridge` | am Ende, Schritt S9; durch die Organisation `beaverbridge-framework` womöglich nur noch Umbenennung statt Transfer | Vorschlag |
+| Schritt S9 (Überführung nach `beaverbridge`) | gestrichen am 2026-11-01; das Repo bleibt eigenständig, solange nichts anderes beschlossen ist | 2026-11-01 |
 | Farben und Schrift | Palette aus dem Logo, Hell/Dunkel, Systemschrift der Familie plus optional Bitter für Überschriften; siehe `design/PALETTE.md` | Vorschlag |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -156,9 +156,8 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S7 | Index und Facettenseite | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | erledigt 2026-11-01 |
-| S9 | Überführung nach `beaverbridge` | beaverbridge | S5–S8 | offen |
 
-Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 können parallel starten, sobald S2 Daten geliefert hat.
+Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 konnten parallel starten, sobald S2 Daten geliefert hatte; alle Schritte sind erledigt.
 
 ---
 
@@ -313,7 +312,9 @@ Umgesetzt:
 
 Das Gate lief zuerst mit 7 Verletzungen auf den echten Daten und fand die Chublets-Weiterleitungen (Befund 16); nach der Behandlung im Bundle ist es sauber. Gemessen: Selbsttest und Bundle zusammen rund 3 s. Eine erste Fassung von R07 brauchte 33 s (eine SPARQL-Abfrage je Subjekt, dazu unbegrenztes `?p`), die jetzige 1 s.
 
-*(S9 wird angelegt, sobald es dran ist.)*
+Abnahme auf dem PC: Commit 328e007 (S5 und S6 zusammen), `--strict` grün, `git status` sauber, gepusht. Selbsttest ok, 0 Verletzungen, 0 Warnungen, 27 Hinweise; `validate` braucht dort rund 4,5 s.
+
+*(Alle Schritte S1 bis S8 sind erledigt; S9 ist gestrichen.)*
 
 ---
 

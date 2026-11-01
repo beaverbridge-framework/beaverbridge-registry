@@ -1,87 +1,18 @@
-# Patch: S5 und S6 — CRM-Brücke und SHACL-Gate
+# Patch: S9 gestrichen, S5 und S6 abgenommen
 
-**S5:** Jede Klasse bekommt eine Klassenart (`domain` oder `model`) und, wo möglich, einen CIDOC-CRM-Anker, auch bei Chublets, das keinen mitbringt. **S6:** Das Bundle wird gegen 25 SHACL-Regeln geprüft, und vorher beweist ein Selbsttest, dass die Prüfung fehlschlagen kann.
-
-Die Zuordnung in `crosswalks/classes.csv` ist ein **Vorschlag**: Klassenart für alle 32 Klassen, E73 für Chublets-Software, E53 für *Site*. Bitte durchsehen und dort korrigieren.
-
-## Inhalt
+Nur Dokumentation: Der Schritt S9 (Überführung nach `beaverbridge`) steht nicht mehr im Plan, die Abnahme von S5 und S6 (Commit `328e007`) ist eingetragen.
 
 | Datei | Änderung |
 |---|---|
-| `crosswalks/classes.csv` | neu: eine Zeile je Klasse, Art, CRM-Anker, Basis |
-| `crosswalks/README.md` | Abschnitt zu `classes.csv` |
-| `py/step_bridge.py` | neu: Schritt `bridge` |
-| `py/step_validate.py` | neu: Schritt `validate` (war Stub), mit Selbsttest |
-| `metadata/shapes.ttl`, `tests/shacl/` | neu: die Regeln, `good.ttl`, `bad.ttl`, `expected.json` |
-| `metadata/bbr.ttl` | `bbr:classKind`, `bbr:crmClass`, `bbr:crmBasis` |
-| `py/step_bundle.py` | übernimmt die Brücke; Weiterleitungen (7 in Chublets) sind keine Entitäten mehr |
-| `py/step_index.py`, `templates/app.js` | Facetten *Kind of class* und *CIDOC CRM* |
-| `py/step_site.py` | Downloads `crm_bridge.ttl` und `shapes.ttl` |
-| `queries.yaml` | 12 Abfragen: `crm-anchors` mit Basis, neu `class-kinds` und `crm-reach` |
-| `main.py` | `bridge` im Standardlauf, nach `survey` |
-| `dist/`, `docs/`, `qmd/` | erzeugt |
-| `README.md`, `PRIMER.md` | Status, S8 abgenommen, S5 und S6 erledigt, neue Beschlüsse |
+| `PRIMER.md` | S9 aus Teil B, Teil A1 und der Beschlusslage entfernt (dort steht jetzt, dass er gestrichen ist), Abnahme S5/S6 ergänzt |
+| `README.md` | Status ohne S9, kein Hinweis mehr auf eine spätere Überführung |
 
-Dateien in den Repo-Ordner ziehen, Ordnerstruktur beibehalten, vorhandene Dateien ersetzen. Alle Befehle für Windows `cmd`.
+Dateien in den Repo-Ordner ziehen und ersetzen. Es ändert sich nichts an Code und Ausgaben.
 
-## 0. Vorbereitung
-
-`pyshacl` muss installiert sein (steht in `requirements.txt`):
+## Abnahme und Push
 
 ```cmd
-pip install -r requirements.txt
-```
-
-## 1. Lauf
-
-```cmd
-python main.py
-```
-
-Erwartet für die neuen Zeilen:
-
-```
-[bridge]
-  bridge: 32 classes, 5 with an anchor of their own, 42 triples, 0 warning(s)
-[bundle]
-  fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements, 0 redirect(s)
-  chublets: 99261 source triples, 13883 kept, 1000 entities, 2858 role statements, 7 redirect(s)
-  bundle: 19703 triples from 2 instance(s), 0 warning(s)
-[validate]
-  validate: self-test ok (25 rules fail on bad.ttl, nothing on good.ttl)
-  validate: 0 violation(s), 0 warning(s), 27 note(s)
-```
-
-## 2. Ansehen
-
-Die Suche öffnet von der Platte. Neue Facetten: *Kind of class* (domain 501, model 462, ohne Klasse 27) und *CIDOC CRM* (E73 Information Object 442, E53 Place 59, ohne Anker 468).
-
-```cmd
-start docs\index.html
-```
-
-Berichte: `dist\bridge_report.md` (Art und Anker je Klasse, mit Weg der Vererbung) und `dist\validation_report.md`.
-
-```cmd
-start dist\bridge_report.md
-```
-
-## 3. Abnahme
-
-Committen, nochmal laufen lassen, der Arbeitsbaum bleibt sauber:
-
-```cmd
-git add -A && git commit -m "S5 CRM bridge, S6 SHACL gate" && python main.py --strict && git status
+git add -A && git commit -m "drop S9, record S5 and S6 acceptance" && python main.py --strict && git status && git push
 ```
 
 Erwartet: `nothing to commit, working tree clean`.
-
-## 4. Push
-
-```cmd
-git push
-```
-
-## Nächster Schritt
-
-Zuerst die Zuordnung in `crosswalks/classes.csv` prüfen. Danach bleibt S9, die Überführung nach `beaverbridge`; dafür neuer Chat mit `PRIMER.md`.
