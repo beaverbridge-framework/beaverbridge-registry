@@ -94,6 +94,7 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Bundle-Umfang | nur was Facetten und Abfragen über Instanzen brauchen: Entitäten (Items, Properties, Klassen) mit Typ, Labels, Beschreibung, Direktaussagen, Klassenlinks (`rdfs:subClassOf`, `owl:equivalentClass`, `owl:sameAs`), Property-Metadaten; Katalogknoten der Instanz (Titel, Lizenz, Landingpage). Weggelassen: Statement-, Referenz-, Qualifier-Knoten, Zähler, DCAT je Entität, Leerknoten. Die Whitelist steht in `py/step_bundle.py` | 2026-11-01 |
 | IRI von `bbr:` | `https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/` (Pages-Pfad, später w3id); Vokabular von Hand in `metadata/bbr.ttl` | 2026-11-01 |
 | Katalog-IRIs | Registry `…/catalog`, je Instanz ein `dcat:CatalogRecord` unter `…/record/<id>`; jede Entität trägt `bbr:fromInstance` | 2026-11-01 |
+| Basiskarte (Leaflet) | Zweite Ausnahme von „kein Drittanbieter“: die Kartenansicht der Suchseite lädt erst beim ersten Öffnen Leaflet 1.9.4 (cdnjs), MapLibre GL 5.24.0 und maplibre-gl-leaflet 0.1.4 (jsDelivr) sowie die Kacheln von OpenFreeMap „Positron“ (OpenStreetMap-Daten), wie in LinkedOpenOgham/tei--epidoc-crosswalk. Ohne Netz oder WebGL bleibt die SVG-Karte mit Gradnetz. Ohne SRI-Hashes | 2026-11-01 |
 | Pyodide über CDN | Einzige Ausnahme von „kein Drittanbieter“: `sparql.html` lädt Pyodide von jsDelivr und rdflib von PyPI, gepinnt auf 0.26.4 und 7.1.1; die Seite sagt das offen. Eigenes Hosting (rund 10 MB und Wheels im Repo) wäre die Alternative | 2026-11-01 |
 | Query-Seite | Graph ist das Turtle-Bundle; Abfragen stehen in `queries.yaml`, jede läuft beim Bau und darf nicht leer sein; gleiche Labels werden gemeldet, nie verschmolzen | 2026-11-01 |
 | Seite und Pages | `docs/` wird vollständig von `step_site.py` erzeugt und versioniert (`linguist-generated`); GitHub Pages liefert Branch `main`, Ordner `/docs`; die Seiten brauchen weder Netz noch Drittanbieter | 2026-11-01 |
@@ -355,7 +356,8 @@ Beschluss (Dialog): Facetten **Instanz** (Lizenz als Zusatz hinter dem Namen), *
 - **Rückmeldung an die Instanzen:** Chublets hat keinen eigenen CRM-Anker und 7 Weiterleitungen; fuzzy-sl verankert nur zwei Klassen. Ob die Instanzen die Brücke übernehmen, ist eine Frage an ihre Pflege.
 - **Items ohne Klasse (R05):** 27 Items haben keine Klasse; als Info gemeldet, nicht als Fehler.
 - **Doppelte Ablage:** `dist/` und `docs/downloads/` halten dieselben 4 MB; mit jeder Änderung des Bundles wächst die Git-Historie um beide. Wenn es stört: `dist/*.nt/.ttl` nicht mehr versionieren und nur `docs/downloads/` behalten.
-- **Karte:** ohne Grundkarte. Umrisse (z. B. Natural Earth, vereinfacht) ließen sich einbetten, wenn es gebraucht wird.
+- **Karte:** Leaflet-Basiskarte ist in der Sandbox nicht gegen die echten Server geprüft (Netz gesperrt); auf Pages ansehen. Ohne SRI-Hashes; Eigenhosting der Bibliotheken wäre die Alternative.
+- **Sortierung:** Titel, die nicht mit einem Buchstaben beginnen (DOIs, Zahlen), stehen am Ende der Liste.
 - **Notebook:** `qmd/…-live.qmd` braucht einmal `quarto add r-wasm/quarto-live` im Repo; gerendert wurde es nicht.
 - **CRM-Abfrage:** `crm-anchors` zeigt heute nur die zwei Anker von fuzzy-sl; mit S5 kommen Chublets dazu, die Abfrage ändert sich nicht.
 - **w3id-Prefix** für `…/record/…` und Content Negotiation.

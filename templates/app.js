@@ -194,12 +194,81 @@
     Object.keys(attrs || {}).forEach(function (a) { n.setAttribute(a, attrs[a]); });
     return n;
   }
+  /* Leaflet, MapLibre GL and the OpenFreeMap "Positron" basemap are third parties. They load only when the Map
+     view is opened for the first time, and the SVG above stays as the fallback (no network, no WebGL, blocked). */
+  var LIB = { state: "idle" };
+  var LIBS = [
+    ["css", "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"],
+    ["css", "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css"],
+    ["js", "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"],
+    ["js", "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"],
+    ["js", "https://cdn.jsdelivr.net/npm/@maplibre/maplibre-gl-leaflet@0.1.4/dist/leaflet-maplibre-gl.js"]
+  ];
+  var BASEMAP_STYLE = "https://tiles.openfreemap.org/styles/positron";
+  var CREDIT = '<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> ' +
+    '<a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">&copy; OpenMapTiles</a> ' +
+    'Data from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>';
+  function loadOne(spec) {
+    return new Promise(function (ok, fail) {
+      var n = spec[0] === "css" ? el("link", { rel: "stylesheet", href: spec[1] }) : el("script", { src: spec[1] });
+      n.onload = ok; n.onerror = function () { fail(new Error(spec[1])); };
+      document.head.appendChild(n);
+    });
+  }
+  function ensureLib() {
+    if (LIB.state !== "idle") return;
+    LIB.state = "loading";
+    LIBS.reduce(function (p, spec) { return p.then(function () { return loadOne(spec); }); }, Promise.resolve())
+      .then(function () { LIB.state = (window.L && window.L.maplibreGL) ? "ready" : "failed"; })
+      .catch(function () { LIB.state = "failed"; })
+      .then(function () { if (state.view === "map") update(); });
+  }
+  var LEAF = null, LAYER = null;
+  function colourOf(i) { return getComputedStyle(document.documentElement).getPropertyValue(["--primary", "--info", "--coral", "--wood"][i % 4]).trim() || "#8E3A63"; }
+  function renderLeaflet(pts, order) {
+    var host = document.getElementById("leaf");
+    host.hidden = false;
+    if (!LEAF) {
+      LEAF = L.map(host, { worldCopyJump: true });
+      LEAF.setMaxZoom(19);
+      try {
+        L.maplibreGL({ style: BASEMAP_STYLE, attributionControl: { customAttribution: CREDIT }, maxZoom: 19 }).addTo(LEAF);
+      } catch (err) { /* no WebGL: the points sit on a plain background */ }
+      LAYER = L.layerGroup().addTo(LEAF);
+    }
+    LAYER.clearLayers();
+    var ll = [];
+    pts.forEach(function (p) {
+      var c = colourOf(order.indexOf(p.e.instance)), pop = el("div", {}, [el("strong", { text: p.e.label }), el("br"),
+        el("span", { "class": "badge", text: p.e.id }), el("br"), link(p.e.url, "Open in the instance")]);
+      L.circleMarker([p.lat, p.lon], { radius: 6, color: "#fff", weight: 1.5, fillColor: c, fillOpacity: 0.9 })
+        .bindPopup(pop).addTo(LAYER);
+      ll.push([p.lat, p.lon]);
+    });
+    LEAF.invalidateSize();
+    LEAF.fitBounds(L.latLngBounds(ll).pad(0.15), { maxZoom: 12 });
+  }
   function renderMap(list) {
-    var host = document.getElementById("map");
-    host.textContent = "";
+    var host = document.getElementById("svgmap"), leaf = document.getElementById("leaf"), legend = document.getElementById("legend");
+    host.textContent = ""; legend.textContent = "";
     var pts = [];
     list.forEach(function (e) { e.coordinates.forEach(function (c) { pts.push({ e: e, lat: c[0], lon: c[1] }); }); });
-    if (!pts.length) { host.appendChild(el("div", { "class": "empty", text: "None of the current hits has coordinates." })); return; }
+    if (!pts.length) { leaf.hidden = true; host.hidden = false; host.appendChild(el("div", { "class": "empty", text: "None of the current hits has coordinates." })); return; }
+    var order = DATA.instances.map(function (i) { return i.id; });
+    ensureLib();
+    var live = LIB.state === "ready";
+    if (live) { host.hidden = true; renderLeaflet(pts, order); }
+    else { leaf.hidden = true; host.hidden = false; renderSvg(host, pts, order); }
+    var seen = {};
+    pts.forEach(function (p) { seen[p.e.instance] = true; });
+    order.filter(function (i) { return seen[i]; }).forEach(function (i) {
+      legend.appendChild(el("span", { "class": "key i" + (order.indexOf(i) % 4), text: "\u25CF " + (INST[i] ? INST[i].title : i) }));
+    });
+    legend.appendChild(el("span", { "class": "muted", text: pts.length + " positions from " +
+      list.filter(function (e) { return e.coordinates.length; }).length + " hits; " +
+      (live ? "basemap: OpenFreeMap, OpenStreetMap" : LIB.state === "loading" ? "loading the basemap \u2026" : "graticule only, the basemap could not be loaded") }));
+  }
+  function renderSvg(host, pts, order) {
     var minLat = 90, maxLat = -90, minLon = 180, maxLon = -180;
     pts.forEach(function (p) {
       minLat = Math.min(minLat, p.lat); maxLat = Math.max(maxLat, p.lat);
@@ -207,23 +276,21 @@
     });
     var padLat = Math.max((maxLat - minLat) * 0.1, 0.5), padLon = Math.max((maxLon - minLon) * 0.1, 0.5);
     minLat -= padLat; maxLat += padLat; minLon -= padLon; maxLon += padLon;
-    var k = Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);   // east-west squeeze at this latitude
+    var k = Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);
     var W = 800, spanX = (maxLon - minLon) * k, spanY = maxLat - minLat;
     var H = Math.max(240, Math.min(560, Math.round(W * spanY / spanX)));
     function X(lon) { return ((lon - minLon) / (maxLon - minLon)) * W; }
     function Y(lat) { return H - ((lat - minLat) / (maxLat - minLat)) * H; }
-    var root = svg("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "class": "mapsvg",
-                            "aria-label": "Map of " + pts.length + " positions" });
+    var root = svg("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "class": "mapsvg", "aria-label": "Map of " + pts.length + " positions" });
     var step = [0.1, 0.25, 0.5, 1, 2, 5, 10, 20, 30].filter(function (s) { return (maxLon - minLon) / s <= 8; })[0] || 30;
     for (var lo = Math.ceil(minLon / step) * step; lo <= maxLon; lo += step) {
       root.appendChild(svg("line", { x1: X(lo), y1: 0, x2: X(lo), y2: H, "class": "grid" }));
-      var t = svg("text", { x: X(lo) + 3, y: H - 4, "class": "gridlabel" }); t.textContent = (Math.round(lo * 100) / 100) + "°"; root.appendChild(t);
+      var t = svg("text", { x: X(lo) + 3, y: H - 4, "class": "gridlabel" }); t.textContent = (Math.round(lo * 100) / 100) + "\u00B0"; root.appendChild(t);
     }
     for (var la = Math.ceil(minLat / step) * step; la <= maxLat; la += step) {
       root.appendChild(svg("line", { x1: 0, y1: Y(la), x2: W, y2: Y(la), "class": "grid" }));
-      var u = svg("text", { x: 3, y: Y(la) - 3, "class": "gridlabel" }); u.textContent = (Math.round(la * 100) / 100) + "°"; root.appendChild(u);
+      var u = svg("text", { x: 3, y: Y(la) - 3, "class": "gridlabel" }); u.textContent = (Math.round(la * 100) / 100) + "\u00B0"; root.appendChild(u);
     }
-    var order = DATA.instances.map(function (i) { return i.id; });
     pts.forEach(function (p) {
       var a = svg("a", { href: p.e.url, target: "_blank", rel: "noopener" });
       var c = svg("circle", { cx: X(p.lon).toFixed(1), cy: Y(p.lat).toFixed(1), r: 5, "class": "pt i" + (order.indexOf(p.e.instance) % 4) });
@@ -231,20 +298,17 @@
       c.appendChild(tt); a.appendChild(c); root.appendChild(a);
     });
     host.appendChild(root);
-    var leg = el("p", { "class": "legend" });
-    var seen = {};
-    pts.forEach(function (p) { seen[p.e.instance] = true; });
-    order.filter(function (i) { return seen[i]; }).forEach(function (i) {
-      leg.appendChild(el("span", { "class": "key i" + (order.indexOf(i) % 4), text: "● " + (INST[i] ? INST[i].title : i) }));
-    });
-    leg.appendChild(el("span", { "class": "muted", text: pts.length + " positions from " + list.filter(function (e) { return e.coordinates.length; }).length + " hits; graticule only, no base map" }));
-    host.appendChild(leg);
   }
+
+  function startsWithLetter(t) { return /^\p{L}/u.test(t); }
 
   function update() {
     var toks = tokens();
     var list = ENTRIES.filter(function (e) { return matches(e, toks, null); });
-    if (state.sort === "label") list.sort(function (a, b) { return a.label.localeCompare(b.label) || (a.id < b.id ? -1 : 1); });
+    if (state.sort === "label") list.sort(function (a, b) {
+      return (startsWithLetter(a.label) ? 0 : 1) - (startsWithLetter(b.label) ? 0 : 1) ||   // digits and symbols last
+             a.label.localeCompare(b.label) || (a.id < b.id ? -1 : 1);
+    });
     document.getElementById("count").textContent = "";
     var cnt = document.getElementById("count");
     cnt.appendChild(el("strong", { text: String(list.length) }));

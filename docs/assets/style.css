@@ -133,3 +133,5 @@ pre.error { white-space: pre-wrap; color: var(--coral); background: var(--surfac
 .pt.i2, .key.i2 { fill: var(--coral); color: var(--coral); }
 .pt.i3, .key.i3 { fill: var(--wood); color: var(--wood); }
 .legend { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .88rem; margin: .5rem 0; }
+.leaf { height: 32rem; max-height: 70vh; border: 1px solid var(--border); border-radius: .6rem; z-index: 0; }
+.leaf .badge { margin-left: 0; }
