@@ -2,28 +2,33 @@
   fuzzy-sl: 12462 triples, 137 items, 36 properties, 19 classes, roles 7/7
   chublets: 99261 triples, 832 items, 168 properties, 13 classes, roles 5/7
   survey: 2 instance(s), 0 warning(s)
+[bridge]
+  bridge: 32 classes, 5 with an anchor of their own, 42 triples, 0 warning(s)
 [bundle]
-  fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements
-  chublets: 99261 source triples, 13883 kept, 1007 entities, 2858 role statements
-  bundle: 19668 triples from 2 instance(s), 0 warning(s)
+  fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements, 0 redirect(s)
+  chublets: 99261 source triples, 13883 kept, 1000 entities, 2858 role statements, 7 redirect(s)
+  bundle: 19703 triples from 2 instance(s), 0 warning(s)
 [validate]
-  validate: nothing to do (implemented in S6)
+  validate: self-test ok (25 rules fail on bad.ttl, nothing on good.ttl)
+  validate: 0 violation(s), 0 warning(s), 27 note(s)
 [index]
   fuzzy-sl: 137 items, 36 properties
   chublets: 832 items, 168 properties
   index: 969 entries from 2 instance(s), 0 warning(s)
 [site]
-  site: docs/ with search page (969 entries), catalogue, 2 record page(s), 12 vocabulary term(s)
+  site: docs/ with search page (969 entries), catalogue, 2 record page(s), 15 vocabulary term(s)
 [sparql]
-    beaverbridge-registry.ttl: 19668 triples
+    beaverbridge-registry.ttl: 19703 triples
     ok   instances         2 rows
     ok   classes          26 rows
     ok   hierarchy        21 rows
     ok   roles            14 rows
-    ok   crm-anchors       2 rows
+    ok   class-kinds       4 rows
+    ok   crm-anchors       5 rows
+    ok   crm-reach         2 rows
     ok   coordinates      73 rows
     ok   wikidata        153 rows
     ok   match-hosts       2 rows
     ok   properties      204 rows
     ok   same-label        5 rows
-  sparql: 10 queries, docs/sparql.html, 10 .rq files, qmd/beaverbridge-registry-sparql-live.qmd
+  sparql: 12 queries, docs/sparql.html, 12 .rq files, qmd/beaverbridge-registry-sparql-live.qmd

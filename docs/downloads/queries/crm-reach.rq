@@ -1,0 +1,18 @@
+# How many items sit under each CIDOC CRM class?
+# The path <code>bbr:instanceOf/bbr:subclassOf*/bbr:crmClass</code> follows
+# the subclass links up to the nearest anchor, so the question is the same in
+# every instance although only some of them state anchors.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance (REPLACE(STR(?crm), "^.*/", "") AS ?crmClass) (COUNT(DISTINCT ?item) AS ?items) WHERE {
+  ?item bbr:instanceOf/bbr:subclassOf*/bbr:crmClass ?crm ;
+        bbr:fromInstance/bbr:prefix ?instance .
+}
+GROUP BY ?instance ?crm
+ORDER BY ?instance DESC(?items)

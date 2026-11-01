@@ -1,0 +1,33 @@
+instance,class,label_en,kind,crm,basis,note
+fuzzy-sl,Q2,Source,model,,none,literature and other sources of a statement
+fuzzy-sl,Q3,Site Type,model,,none,vocabulary class
+fuzzy-sl,Q4,Spatial Type,model,,none,vocabulary class
+fuzzy-sl,Q5,Project,model,,none,provenance of the data; E7_Activity would fit
+fuzzy-sl,Q6,Certainty Level,model,,none,vocabulary class
+fuzzy-sl,Q7,Method Type,model,,none,vocabulary class
+fuzzy-sl,Q10,Archaeological Site,domain,,none,inherits E53_Place through Q79 and Q146
+fuzzy-sl,Q11,Geological Site,domain,,none,inherits E53_Place through Q79 and Q146
+fuzzy-sl,Q21,Person,model,,none,agent of the data; E21_Person would fit
+fuzzy-sl,Q22,Generic Class,model,,none,generic class of the model
+fuzzy-sl,Q79,Site,domain,E53_Place,bridge,root of the site classes; the instance gives no anchor
+fuzzy-sl,Q81,Location Type,model,,none,vocabulary class
+fuzzy-sl,Q90,Cave,domain,,none,inherits E26_Physical_Feature through Q147
+fuzzy-sl,Q91,Spatial Category,model,,none,vocabulary class
+fuzzy-sl,Q125,Point Type,model,,none,vocabulary class
+fuzzy-sl,Q141,Provenance Site,domain,,none,inherits E53_Place through Q79
+fuzzy-sl,Q145,CIDOC-CRM Class,model,,none,class of the CRM class items Q146 and Q147
+fuzzy-sl,Q146,E53 Place,domain,E53_Place,source,stated by the instance in P37
+fuzzy-sl,Q147,E26 Physical Feature,domain,E26_Physical_Feature,source,stated by the instance in P37
+chublets,Q1,Class,model,,none,type of every class
+chublets,Q2,Property,model,,none,type of every property
+chublets,Q3,Instance,model,,none,root of the class tree; its 387 direct items are of mixed kind (topics, repositories, people, papers) and are not typed further
+chublets,Q100,software,domain,E73_Information_Object,bridge,the instance gives no anchor; software is immaterial information
+chublets,Q101,research software,domain,,none,inherits E73_Information_Object through Q100
+chublets,Q102,application software,domain,,none,inherits E73_Information_Object through Q100
+chublets,Q103,software library,domain,,none,inherits E73_Information_Object through Q100
+chublets,Q104,script file,domain,,none,inherits E73_Information_Object through Q100
+chublets,Q105,Little Minion,domain,E73_Information_Object,bridge,not a subclass of software in the instance; its items are software
+chublets,Q106,chublet,domain,,none,inherits E73_Information_Object through Q101
+chublets,Q372,utility software,domain,,none,inherits E73_Information_Object through Q100
+chublets,Q378,QGIS plugin,domain,,none,inherits E73_Information_Object through Q100
+chublets,Q379,plug-in,domain,,none,inherits E73_Information_Object through Q100

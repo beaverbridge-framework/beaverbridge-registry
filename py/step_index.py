@@ -35,6 +35,11 @@ def licence_label(iri: str) -> str:
     return iri
 
 
+def crm_label(iri) -> str:
+    """E53_Place -> 'E53 Place'"""
+    return str(iri).rsplit("/", 1)[-1].replace("_", " ")
+
+
 def pick(values, lang_order=("en",)):
     """One literal: English first, then the other languages in alphabetical order, then untagged."""
     vals = sorted(values, key=lambda v: (getattr(v, "language", None) not in lang_order,
@@ -55,6 +60,25 @@ def build(warn) -> dict:
     tail = lambda u: str(u).rsplit("/", 1)[-1]  # noqa: E731
 
     rank = {i["id"]: n for n, i in enumerate(load_sources())}  # order of registry/sources.json
+    # kind and effective CRM class per class: own anchor, else the nearest one along bbr:subclassOf
+    kind = {c: str(k) for c, k in g.subject_objects(BBR("classKind"))}
+    own_crm = {c: x for c, x in g.subject_objects(BBR("crmClass"))}
+    supers = {}
+    for c, s in g.subject_objects(BBR("subclassOf")):
+        supers.setdefault(c, []).append(s)
+
+    def crm_of(c):
+        seen, queue = {c}, [c]
+        while queue:
+            cur = queue.pop(0)
+            if cur in own_crm:
+                return crm_label(own_crm[cur])
+            for s in sorted(supers.get(cur, []), key=lambda u: numkey(tail(u))):
+                if s not in seen:
+                    seen.add(s)
+                    queue.append(s)
+        return None
+
     instances, entries, class_labels = [], [], {}
     for rec in sorted(g.subjects(RDF.type, DCAT.CatalogRecord),
                       key=lambda r: (rank.get(str(g.value(r, BBR("prefix"))), 99), str(r))):
@@ -84,6 +108,8 @@ def build(warn) -> dict:
             classes = sorted({c for c in g.objects(s, BBR("instanceOf")) if isinstance(c, URIRef)},
                              key=lambda c: numkey(tail(c)))
             e["classes"] = [f"{iid}:{tail(c)}" for c in classes]
+            e["kinds"] = sorted({kind[c] for c in classes if c in kind})
+            e["crm"] = sorted({x for x in (crm_of(c) for c in classes) if x})
             for c in classes:
                 class_labels[f"{iid}:{tail(c)}"] = label.get(c) or tail(c)
             parts = sorted((p for p in g.objects(s, BBR("partOf")) if isinstance(p, URIRef)), key=lambda p: numkey(tail(p)))

@@ -2802,8 +2802,7 @@ chublets:Q138 a wikibase:Item,
     chublets-wdt:P2 chublets:Q103,
         chublets:Q106 .
 
-chublets:Q139 owl:sameAs chublets:Q370 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q139 owl:sameAs chublets:Q370 .
 
 chublets:Q143 a wikibase:Item,
         chublets:Q103,
@@ -4252,8 +4251,7 @@ chublets:Q276 a wikibase:Item,
     chublets-wdt:P2 chublets:Q102,
         chublets:Q106 .
 
-chublets:Q279 owl:sameAs chublets:Q380 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q279 owl:sameAs chublets:Q380 .
 
 chublets:Q281 a wikibase:Item,
         chublets:Q102,
@@ -5593,14 +5591,11 @@ chublets:Q375 a wikibase:Item ;
     bbr:wikidataEquivalent <http://www.wikidata.org/entity/Q2804309> ;
     chublets-wdt:P4 "Q2804309" .
 
-chublets:Q381 owl:sameAs chublets:Q359 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q381 owl:sameAs chublets:Q359 .
 
-chublets:Q382 owl:sameAs chublets:Q365 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q382 owl:sameAs chublets:Q365 .
 
-chublets:Q383 owl:sameAs chublets:Q374 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q383 owl:sameAs chublets:Q374 .
 
 chublets:Q384 a wikibase:Item,
         chublets:Q102,
@@ -6005,8 +6000,7 @@ chublets:Q405 a wikibase:Item,
     chublets-wdt:P2 chublets:Q103,
         chublets:Q106 .
 
-chublets:Q406 owl:sameAs chublets:Q371 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q406 owl:sameAs chublets:Q371 .
 
 chublets:Q409 a wikibase:Item,
         chublets:Q103,
@@ -13215,8 +13209,7 @@ chublets:Q845 a wikibase:Item,
     chublets-wdt:P2 chublets:Q103,
         chublets:Q106 .
 
-chublets:Q846 owl:sameAs chublets:Q361 ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
+chublets:Q846 owl:sameAs chublets:Q361 .
 
 chublets:Q847 a wikibase:Item,
         chublets:Q104,
@@ -19333,6 +19326,7 @@ fuzzy-sl:Q141 a wikibase:Item ;
     schema1:description "Site Type"@en ;
     schema1:name "Provenance Site"@en ;
     skos:prefLabel "Provenance Site"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q3 ;
     bbr:subclassOf fuzzy-sl:Q79 ;
@@ -19354,6 +19348,9 @@ fuzzy-sl:Q147 a wikibase:Item ;
     schema1:name "E26 Physical Feature"@en ;
     skos:altLabel "crm:E26_Physical_Feature"@en ;
     skos:prefLabel "E26 Physical Feature"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "source" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
     bbr:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:subclassOf fuzzy-sl:Q145 ;
@@ -19375,6 +19372,7 @@ chublets:Q101 a wikibase:Item ;
     rdfs:subClassOf chublets:Q100 ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q6> ;
     skos:prefLabel "research software"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -19544,6 +19542,7 @@ chublets:Q379 a wikibase:Item ;
         "software plugin"@en ;
     skos:prefLabel "Plug-in"@de,
         "plug-in"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -19827,6 +19826,7 @@ fuzzy-sl:Q145 a wikibase:Item ;
     schema1:name "CIDOC-CRM Class"@en ;
     skos:altLabel "crm:E1_CRM_Entity"@en ;
     skos:prefLabel "CIDOC-CRM Class"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 fuzzy-sl:Q146 a wikibase:Item ;
@@ -19835,6 +19835,9 @@ fuzzy-sl:Q146 a wikibase:Item ;
     schema1:name "E53 Place"@en ;
     skos:altLabel "crm:E53_Place"@en ;
     skos:prefLabel "E53 Place"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "source" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     bbr:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:subclassOf fuzzy-sl:Q145 ;
@@ -19846,6 +19849,7 @@ fuzzy-sl:Q22 a wikibase:Item ;
     schema1:description "owl:Thing"@en ;
     schema1:name "Generic Class"@en ;
     skos:prefLabel "Generic Class"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q124 a wikibase:Item ;
@@ -20056,6 +20060,7 @@ chublets:Q378 a wikibase:Item ;
     rdfs:subClassOf chublets:Q100 ;
     skos:altLabel "QGIS plug-in"@en ;
     skos:prefLabel "QGIS plugin"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -20087,6 +20092,7 @@ fuzzy-sl:Q7 a wikibase:Item ;
     schema1:description "e.g. Google Maps, OSM"@en ;
     schema1:name "Method Type"@en ;
     skos:prefLabel "Method Type"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 fuzzy-sl:Q75 a wikibase:Item ;
@@ -20103,6 +20109,9 @@ fuzzy-sl:Q79 a wikibase:Item ;
     schema1:description "generic Site Class"@en ;
     schema1:name "Site"@en ;
     skos:prefLabel "Site"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q3 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q3 .
@@ -20112,6 +20121,7 @@ fuzzy-sl:Q91 a wikibase:Item ;
     schema1:description "e.g. Archaeology, Geology"@en ;
     schema1:name "Spatial Category"@en ;
     skos:prefLabel "Spatial Category"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q164 a wikibase:Item ;
@@ -20180,6 +20190,7 @@ fuzzy-sl:Q21 a wikibase:Item ;
     schema1:name "Person"@en ;
     skos:altLabel "Human"@en ;
     skos:prefLabel "Person"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q22 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q22 .
@@ -20189,6 +20200,7 @@ fuzzy-sl:Q3 a wikibase:Item ;
     schema1:description "e.g. archaeological or geological site"@en ;
     schema1:name "Site Type"@en ;
     skos:prefLabel "Site Type"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 fuzzy-sl:Q6 a wikibase:Item ;
@@ -20196,6 +20208,7 @@ fuzzy-sl:Q6 a wikibase:Item ;
     schema1:description "Type"@en ;
     schema1:name "Certainty Level"@en ;
     skos:prefLabel "Certainty Level"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 fuzzy-sl:Q81 a wikibase:Item ;
@@ -20203,6 +20216,7 @@ fuzzy-sl:Q81 a wikibase:Item ;
     schema1:description "Type"@en ;
     schema1:name "Location Type"@en ;
     skos:prefLabel "Location Type"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q190 a wikibase:Item ;
@@ -20247,6 +20261,7 @@ fuzzy-sl:Q90 a wikibase:Item ;
     schema1:description "spatial type"@en ;
     schema1:name "Cave"@en ;
     skos:prefLabel "Cave"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     bbr:subclassOf fuzzy-sl:Q147 ;
@@ -20294,6 +20309,7 @@ fuzzy-sl:Q5 a wikibase:Item ;
     schema1:description "Project Name"@en ;
     schema1:name "Project"@en ;
     skos:prefLabel "Project"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q295 a wikibase:Item ;
@@ -20348,6 +20364,7 @@ chublets:Q372 a wikibase:Item ;
         "utility"@en ;
     skos:prefLabel "Dienstprogramm"@de,
         "utility software"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -20361,6 +20378,7 @@ fuzzy-sl:Q125 a wikibase:Item ;
     schema1:description "Type"@en ;
     schema1:name "Point Type"@en ;
     skos:prefLabel "Point Type"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q158 a wikibase:Item ;
@@ -20507,6 +20525,9 @@ chublets:Q105 a wikibase:Item ;
     rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q10> ;
     skos:prefLabel "Little Minion"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q3 ;
@@ -20529,6 +20550,7 @@ fuzzy-sl:Q2 a wikibase:Item ;
     schema1:description "Source Type"@en ;
     schema1:name "Source"@en ;
     skos:prefLabel "Source"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 fuzzy-sl:Q94 a wikibase:Item ;
@@ -20554,6 +20576,7 @@ fuzzy-sl:Q4 a wikibase:Item ;
     schema1:description "e.g. sink, cave"@en ;
     schema1:name "Spatial Type"@en ;
     skos:prefLabel "Spatial Type"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q1 a wikibase:Item ;
@@ -20567,6 +20590,7 @@ chublets:Q1 a wikibase:Item ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q2> ;
     skos:prefLabel "Klasse"@de,
         "Class"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q3 ;
@@ -20596,6 +20620,7 @@ fuzzy-sl:Q11 a wikibase:Item ;
     schema1:description "e.g. Voscone"@en ;
     schema1:name "Geological Site"@en ;
     skos:prefLabel "Geological Site"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q3 ;
     bbr:subclassOf fuzzy-sl:Q146,
@@ -20686,6 +20711,7 @@ fuzzy-sl:Q10 a wikibase:Item ;
     schema1:description "Site Type"@en ;
     schema1:name "Archaeological Site"@en ;
     skos:prefLabel "Archaeological Site"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q3 ;
     bbr:subclassOf fuzzy-sl:Q146,
@@ -20700,6 +20726,9 @@ chublets:Q100 a wikibase:Item ;
     rdfs:subClassOf <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q5> ;
     skos:prefLabel "software"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q3 ;
@@ -20738,6 +20767,7 @@ chublets:Q104 a wikibase:Item ;
     rdfs:subClassOf chublets:Q100 ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q9> ;
     skos:prefLabel "script file"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -20752,6 +20782,7 @@ chublets:Q102 a wikibase:Item ;
     rdfs:subClassOf chublets:Q100 ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q7> ;
     skos:prefLabel "application software"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -20771,6 +20802,7 @@ chublets:Q2 a wikibase:Item ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q3> ;
     skos:prefLabel "Eigenschaft"@de,
         "Property"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q3 ;
@@ -20794,6 +20826,7 @@ chublets:Q103 a wikibase:Item ;
     rdfs:subClassOf chublets:Q100 ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q8> ;
     skos:prefLabel "software library"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q100 ;
@@ -20824,6 +20857,7 @@ chublets:Q3 a wikibase:Item ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q4> ;
     skos:prefLabel "Instanz"@de,
         "Instance"@en ;
+    bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     chublets-wdt:P2 chublets:Q1 .
@@ -20858,6 +20892,7 @@ chublets:Q106 a wikibase:Item ;
         chublets:Q105 ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q1> ;
     skos:prefLabel "chublet"@en ;
+    bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     bbr:subclassOf chublets:Q101,

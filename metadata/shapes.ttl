@@ -1,0 +1,167 @@
+# SHACL shapes of the registry bundle (dist/beaverbridge-registry.ttl). Hand-written.
+# Every rule has a code in its message (R01 ...). Severity follows the modal verb of the rule:
+#   MUST -> sh:Violation (stops the build), SHOULD -> sh:Warning (stops it with --strict), MAY -> sh:Info (reported only).
+# tests/shacl/ holds a good and a bad graph: the gate is tested against them before it judges the bundle.
+
+@prefix bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shp: <https://beaverbridge-framework.github.io/beaverbridge-registry/shapes#> .
+
+shp:prefixes sh:declare
+    [ sh:prefix "bbr" ; sh:namespace "https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/"^^xsd:anyURI ] ,
+    [ sh:prefix "rdfs" ; sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI ] ,
+    [ sh:prefix "wikibase" ; sh:namespace "http://wikiba.se/ontology#"^^xsd:anyURI ] ,
+    [ sh:prefix "rdf" ; sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI ] .
+
+# ---- entities: every subject that says where it comes from -------------------------------------------------
+
+shp:Entity a sh:NodeShape ;
+    sh:targetSubjectsOf bbr:fromInstance ;
+    sh:property [
+        sh:path bbr:fromInstance ; sh:minCount 1 ; sh:maxCount 1 ; sh:class dcat:CatalogRecord ;
+        sh:severity sh:Violation ;
+        sh:message "R03: an entity points to exactly one catalogue record with bbr:fromInstance" ] ;
+    sh:property [
+        sh:path rdfs:label ; sh:minCount 1 ; sh:severity sh:Violation ;
+        sh:message "R01: an entity has a label" ] ;
+    sh:property [
+        sh:path rdf:type ; sh:severity sh:Violation ;
+        sh:qualifiedValueShape [ sh:in ( wikibase:Item wikibase:Property ) ] ; sh:qualifiedMinCount 1 ;
+        sh:message "R04: an entity is a wikibase:Item or a wikibase:Property" ] .
+
+shp:EntityEnglishLabel a sh:NodeShape ;
+    sh:targetSubjectsOf bbr:fromInstance ;
+    sh:property [
+        sh:path rdfs:label ; sh:severity sh:Warning ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ; sh:qualifiedMinCount 1 ;
+        sh:message "R02: an entity should have an English label" ] .
+
+shp:Item a sh:NodeShape ;
+    sh:targetClass wikibase:Item ;
+    sh:property [
+        sh:path bbr:instanceOf ; sh:minCount 1 ; sh:severity sh:Info ;
+        sh:message "R05: an item may have no class; it then shows as (no class) in the search" ] .
+
+# ---- roles ---------------------------------------------------------------------------------------------------
+
+shp:RoleLinks a sh:NodeShape ;
+    sh:targetSubjectsOf bbr:instanceOf , bbr:subclassOf , bbr:partOf ;
+    sh:property [ sh:path bbr:instanceOf ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;
+        sh:message "R06: the object of bbr:instanceOf is an IRI" ] ;
+    sh:property [ sh:path bbr:subclassOf ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;
+        sh:message "R06: the object of bbr:subclassOf is an IRI" ] ;
+    sh:property [ sh:path bbr:partOf ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;
+        sh:message "R06: the object of bbr:partOf is an IRI" ] ;
+    .
+
+# R07 selects its focus nodes with one query (the nodes that have a role link into another instance) instead of running
+# a query for each of the 3000 subjects: 1 s against 10 s on the bundle.
+shp:RoleLinksStayInInstance a sh:NodeShape ;
+    sh:target [
+        a sh:SPARQLTarget ; sh:prefixes shp:prefixes ;
+        sh:select """
+            SELECT ?this WHERE {
+              ?this (bbr:instanceOf|bbr:subclassOf|bbr:partOf) ?o ; bbr:fromInstance ?a .
+              ?o bbr:fromInstance ?b .
+              FILTER(?a != ?b)
+            }""" ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ; sh:prefixes shp:prefixes ; sh:severity sh:Violation ;
+        sh:message "R07: a role link stays inside one instance; {?o} belongs to another" ;
+        sh:select """
+            SELECT $this ?o WHERE {
+              $this (bbr:instanceOf|bbr:subclassOf|bbr:partOf) ?o ; bbr:fromInstance ?a .
+              ?o bbr:fromInstance ?b .
+              FILTER(?a != ?b)
+            }""" ] .
+
+shp:Wikidata a sh:NodeShape ;
+    sh:targetSubjectsOf bbr:wikidataEquivalent ;
+    sh:property [ sh:path bbr:wikidataEquivalent ; sh:nodeKind sh:IRI ;
+        sh:pattern "^http://www\\.wikidata\\.org/entity/[QP][0-9]+$" ; sh:severity sh:Violation ;
+        sh:message "R11: bbr:wikidataEquivalent is a Wikidata entity IRI" ] .
+
+shp:Coordinates a sh:NodeShape ;
+    sh:targetSubjectsOf bbr:coordinates ;
+    sh:property [ sh:path bbr:coordinates ; sh:datatype geo:wktLiteral ; sh:severity sh:Violation ;
+        sh:message "R12: bbr:coordinates is a geo:wktLiteral" ] ;
+    sh:property [ sh:path bbr:coordinates ; sh:pattern "^\\s*Point\\(\\s*-?[0-9.]+\\s+-?[0-9.]+\\s*\\)\\s*$" ; sh:severity sh:Warning ;
+        sh:message "R13: bbr:coordinates is a WKT Point, the only form the search page reads" ] .
+
+# ---- classes -------------------------------------------------------------------------------------------------
+
+shp:Class a sh:NodeShape ;
+    sh:targetObjectsOf bbr:instanceOf , bbr:subclassOf ;
+    sh:targetSubjectsOf bbr:subclassOf ;
+    sh:property [
+        sh:path bbr:classKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "domain" "model" ) ; sh:severity sh:Violation ;
+        sh:message "R14: a class has exactly one bbr:classKind, domain or model (crosswalks/classes.csv)" ] ;
+    sh:property [
+        sh:path bbr:crmClass ; sh:nodeKind sh:IRI ; sh:pattern "^http://www\\.cidoc-crm\\.org/cidoc-crm/E[0-9]+_" ;
+        sh:severity sh:Violation ; sh:message "R15: bbr:crmClass is a CIDOC CRM class IRI" ] ;
+    sh:property [
+        sh:path bbr:crmBasis ; sh:in ( "source" "bridge" ) ; sh:severity sh:Violation ;
+        sh:message "R16: bbr:crmBasis is source or bridge" ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ; sh:prefixes shp:prefixes ; sh:severity sh:Violation ;
+        sh:message "R17: a class with bbr:crmClass says its basis, and the other way round" ;
+        sh:select """
+            SELECT $this WHERE {
+              { $this bbr:crmClass ?x . FILTER NOT EXISTS { $this bbr:crmBasis ?y } }
+              UNION
+              { $this bbr:crmBasis ?y . FILTER NOT EXISTS { $this bbr:crmClass ?x } }
+            }""" ] .
+
+# Its own shape, because pyshacl takes the severity of a SPARQL constraint from the shape, not from the constraint.
+shp:ClassAnchor a sh:NodeShape ;
+    sh:targetObjectsOf bbr:instanceOf , bbr:subclassOf ;
+    sh:targetSubjectsOf bbr:subclassOf ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ; sh:prefixes shp:prefixes ;
+        sh:message "R18: a domain class should have a CIDOC CRM class, its own or one of a superclass" ;
+        sh:select """
+            SELECT $this WHERE {
+              $this bbr:classKind "domain" .
+              FILTER NOT EXISTS { $this bbr:subclassOf* ?a . ?a bbr:crmClass ?x }
+            }""" ] .
+
+# ---- catalogue -----------------------------------------------------------------------------------------------
+
+shp:Record a sh:NodeShape ;
+    sh:targetClass dcat:CatalogRecord ;
+    sh:property [ sh:path bbr:prefix ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-z0-9][a-z0-9-]*$" ; sh:severity sh:Violation ;
+        sh:message "R19: a record has exactly one prefix, lower case letters, digits and hyphens" ] ;
+    sh:property [ sh:path bbr:sha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[0-9a-f]{64}$" ; sh:severity sh:Violation ;
+        sh:message "R20: a record has the SHA-256 of the export, 64 hex digits" ] ;
+    sh:property [ sh:path dct:source ; sh:minCount 1 ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;
+        sh:message "R21: a record says where the export was fetched from" ] ;
+    sh:property [ sh:path foaf:primaryTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;
+        sh:message "R22: a record has exactly one primary topic, the catalogue node of the instance" ] ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ; sh:severity sh:Violation ;
+        sh:message "R23: a record has a title" ] ;
+    sh:property [ sh:path bbr:generator ; sh:minCount 1 ; sh:severity sh:Warning ;
+        sh:message "R24: a record should name the generator of the export" ] ;
+    sh:property [ sh:path dct:modified ; sh:minCount 1 ; sh:severity sh:Warning ;
+        sh:message "R25: a record should give the date of the data" ] .
+
+shp:InstanceCatalogue a sh:NodeShape ;
+    sh:targetObjectsOf foaf:primaryTopic ;
+    sh:property [ sh:path dct:license ; sh:minCount 1 ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;
+        sh:message "R26: the catalogue node of an instance states its licence, which the registry keeps for every entry" ] .
+
+shp:Registry a sh:NodeShape ;
+    sh:targetNode <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> ;
+    sh:property [ sh:path dct:license ; sh:minCount 1 ; sh:severity sh:Violation ;
+        sh:message "R27: the registry catalogue states its licence" ] ;
+    sh:property [ sh:path dcat:record ; sh:minCount 1 ; sh:severity sh:Violation ;
+        sh:message "R28: the registry catalogue has at least one record" ] .

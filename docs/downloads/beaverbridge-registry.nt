@@ -2388,6 +2388,9 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q5> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <http://www.w3.org/2004/02/skos/core#prefLabel> "software"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmBasis> "bridge" .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmClass> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
@@ -2401,6 +2404,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q6> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <http://www.w3.org/2004/02/skos/core#prefLabel> "research software"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -2414,6 +2418,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q7> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <http://www.w3.org/2004/02/skos/core#prefLabel> "application software"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -2427,6 +2432,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q8> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <http://www.w3.org/2004/02/skos/core#prefLabel> "software library"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -2440,6 +2446,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q9> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <http://www.w3.org/2004/02/skos/core#prefLabel> "script file"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -2453,6 +2460,9 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/extensions/crmdig/D14_Software> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q10> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <http://www.w3.org/2004/02/skos/core#prefLabel> "Little Minion"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmBasis> "bridge" .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmClass> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
@@ -2467,6 +2477,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <http://www.w3.org/2004/02/skos/core#prefLabel> "chublet"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> .
@@ -2928,7 +2939,6 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q138> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q138> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q139> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q370> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q139> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q140> <http://schema.org/name> "Radiocarbon dating, calibration and sequencing"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q140> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q140> <http://www.w3.org/2000/01/rdf-schema#label> "Radiocarbon dating, calibration and sequencing"@en .
@@ -3793,6 +3803,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q2> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Class"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Klasse"@de .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
@@ -5064,7 +5075,6 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q278> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q278> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q279> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q380> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q279> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q280> <http://schema.org/name> "drocks13"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q280> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q280> <http://www.w3.org/2000/01/rdf-schema#label> "drocks13"@en .
@@ -5448,6 +5458,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q3> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eigenschaft"@de .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Property"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
@@ -6873,6 +6884,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <http://www.w3.org/2004/02/skos/core#altLabel> "utility"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dienstprogramm"@de .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <http://www.w3.org/2004/02/skos/core#prefLabel> "utility software"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -6957,6 +6969,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <http://www.w3.org/2004/02/skos/core#altLabel> "QGIS plug-in"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <http://www.w3.org/2004/02/skos/core#prefLabel> "QGIS plugin"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -6993,6 +7006,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <http://www.w3.org/2004/02/skos/core#altLabel> "software plugin"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plug-in"@de .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <http://www.w3.org/2004/02/skos/core#prefLabel> "plug-in"@en .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> .
@@ -7013,11 +7027,8 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q380> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q380> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P4> "Q58529575" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q381> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q359> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q381> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q382> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q365> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q382> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q383> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q374> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q383> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q384> <http://schema.org/description> "App to run C14 calibration on the command line. Includes and is based on a calibration module written in and for Haskell."@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q384> <http://schema.org/name> "currycarbon"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q384> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
@@ -7349,6 +7360,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <http://www.w3.org/2002/07/owl#sameAs> <https://chublets-wikibase.de/entity/Q4> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Instance"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Instanz"@de .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> .
@@ -7486,7 +7498,6 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q405> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q405> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q406> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q371> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q406> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q407> <http://schema.org/name> "heripo lab"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q407> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q407> <http://www.w3.org/2000/01/rdf-schema#label> "heripo lab"@en .
@@ -15993,7 +16004,6 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q845> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q845> <https://n4o-rse.github.io/chublets-wikibase-demo/prop/direct/P2> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q846> <http://www.w3.org/2002/07/owl#sameAs> <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q361> .
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q846> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q847> <http://schema.org/description> "A GNU Octave function for skeletal sex estimation."@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q847> <http://schema.org/name> "skeletal-sex-estimation"@en .
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
@@ -18211,6 +18221,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <http://www.w3.org/2000/01/rdf-schema#label> "Archaeological Site"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Archaeological Site"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> .
@@ -18384,6 +18395,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <http://www.w3.org/2000/01/rdf-schema#label> "Geological Site"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geological Site"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> .
@@ -18451,6 +18463,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q125> <http://www.w3.org/2000/01/rdf-schema#label> "Point Type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q125> <http://www.w3.org/2004/02/skos/core#prefLabel> "Point Type"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q125> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q125> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q126> <http://schema.org/description> "Point Type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q126> <http://schema.org/name> "Representative Point"@en .
@@ -18680,6 +18693,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <http://www.w3.org/2000/01/rdf-schema#label> "Provenance Site"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <http://www.w3.org/2004/02/skos/core#prefLabel> "Provenance Site"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> .
@@ -18715,6 +18729,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> <http://www.w3.org/2000/01/rdf-schema#label> "CIDOC-CRM Class"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> <http://www.w3.org/2004/02/skos/core#altLabel> "crm:E1_CRM_Entity"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> <http://www.w3.org/2004/02/skos/core#prefLabel> "CIDOC-CRM Class"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <http://schema.org/description> "This class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest."@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <http://schema.org/name> "E53 Place"@en .
@@ -18722,6 +18737,9 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <http://www.w3.org/2000/01/rdf-schema#label> "E53 Place"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <http://www.w3.org/2004/02/skos/core#altLabel> "crm:E53_Place"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <http://www.w3.org/2004/02/skos/core#prefLabel> "E53 Place"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmBasis> "source" .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmClass> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> .
@@ -18733,6 +18751,9 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <http://www.w3.org/2000/01/rdf-schema#label> "E26 Physical Feature"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <http://www.w3.org/2004/02/skos/core#altLabel> "crm:E26_Physical_Feature"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <http://www.w3.org/2004/02/skos/core#prefLabel> "E26 Physical Feature"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmBasis> "source" .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmClass> <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/equivalentClass> <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> .
@@ -18821,6 +18842,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <http://www.w3.org/2004/02/skos/core#altLabel> "Human"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <http://www.w3.org/2004/02/skos/core#prefLabel> "Person"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> <https://n4o-rse.github.io/fuzzy-sl-static/prop/direct/P1> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> .
@@ -18829,6 +18851,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> <http://www.w3.org/2000/01/rdf-schema#label> "Generic Class"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> <http://www.w3.org/2004/02/skos/core#prefLabel> "Generic Class"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q23> <http://schema.org/description> "Certainty Level"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q23> <http://schema.org/name> "High"@en .
@@ -18890,6 +18913,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Source"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q30> <http://schema.org/description> "Source"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q30> <http://schema.org/name> "Wikimedia Commons"@en .
@@ -18976,6 +19000,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> <http://www.w3.org/2000/01/rdf-schema#label> "Site Type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Site Type"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q42> <http://schema.org/description> "The answer for everything ..."@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q42> <http://schema.org/name> "42"@en .
@@ -19020,6 +19045,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spatial Type"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q50> <http://schema.org/description> "Region Bruttium (ancient) or Calabria (modern)"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q50> <http://schema.org/name> "Calabria (Regione)"@en .
@@ -19166,6 +19192,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q5> <http://www.w3.org/2000/01/rdf-schema#label> "Project"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q5> <http://www.w3.org/2004/02/skos/core#prefLabel> "Project"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q5> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q5> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q60> <http://schema.org/description> "Noted by K, 1968."@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q60> <http://schema.org/name> "Taranto, Via Oberdan"@en .
@@ -19318,6 +19345,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q6> <http://www.w3.org/2000/01/rdf-schema#label> "Certainty Level"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Certainty Level"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q6> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q6> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q70> <http://schema.org/description> "Campanian Ignimbrite Findspot"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q70> <http://schema.org/name> "Auel Maar AU3"@en .
@@ -19436,6 +19464,9 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <http://www.w3.org/2000/01/rdf-schema#label> "Site"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <http://www.w3.org/2004/02/skos/core#prefLabel> "Site"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmBasis> "bridge" .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmClass> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> <https://n4o-rse.github.io/fuzzy-sl-static/prop/direct/P1> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> .
@@ -19444,6 +19475,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q7> <http://www.w3.org/2000/01/rdf-schema#label> "Method Type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q7> <http://www.w3.org/2004/02/skos/core#prefLabel> "Method Type"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q7> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q7> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q80> <http://schema.org/description> "location type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q80> <http://schema.org/name> "Findspot"@en .
@@ -19458,6 +19490,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q81> <http://www.w3.org/2000/01/rdf-schema#label> "Location Type"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q81> <http://www.w3.org/2004/02/skos/core#prefLabel> "Location Type"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q81> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q81> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q82> <http://schema.org/description> "spatial type"@de .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q82> <http://schema.org/description> "spatial type"@en .
@@ -19570,6 +19603,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <http://www.w3.org/2000/01/rdf-schema#label> "Cave"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cave"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> .
@@ -19580,6 +19614,7 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Category"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> <http://www.w3.org/2004/02/skos/core#prefLabel> "Spatial Category"@en .
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q92> <http://schema.org/description> "spatial category"@en .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q92> <http://schema.org/name> "Archaeology"@en .

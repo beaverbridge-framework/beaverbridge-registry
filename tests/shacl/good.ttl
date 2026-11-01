@@ -1,0 +1,43 @@
+# A small bundle that follows every rule. The gate must find no violation and no warning in it.
+@prefix bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix a: <https://example.org/a/entity/> .
+
+<https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> a dcat:Catalog ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcat:record <https://example.org/registry/record/a> .
+
+<https://example.org/registry/record/a> a dcat:CatalogRecord ;
+    bbr:prefix "a" ;
+    bbr:sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef" ;
+    dct:source <https://example.org/a/export.ttl> ;
+    foaf:primaryTopic <https://example.org/a/catalog> ;
+    dct:title "Instance a"@en ;
+    bbr:generator "wikibase-static 0.0" ;
+    dct:modified "2026-01-01T00:00:00Z"^^xsd:dateTime .
+
+<https://example.org/a/catalog> a dcat:Catalog ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+
+a:Q1 a wikibase:Item ; rdfs:label "Find"@en ; bbr:fromInstance <https://example.org/registry/record/a> ;
+    bbr:instanceOf a:Q2 ; bbr:partOf a:Q3 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/Q42> ;
+    bbr:coordinates "Point(6.5 50.2)"^^geo:wktLiteral .
+
+a:Q2 a wikibase:Item ; rdfs:label "Site"@en ; bbr:fromInstance <https://example.org/registry/record/a> ;
+    bbr:classKind "domain" ; bbr:crmClass crm:E53_Place ; bbr:crmBasis "bridge" .
+
+a:Q3 a wikibase:Item ; rdfs:label "Project"@en ; bbr:fromInstance <https://example.org/registry/record/a> ;
+    bbr:instanceOf a:Q4 .
+
+a:Q4 a wikibase:Item ; rdfs:label "Project class"@en ; bbr:fromInstance <https://example.org/registry/record/a> ;
+    bbr:classKind "model" .
+
+a:P1 a wikibase:Property ; rdfs:label "instance of"@en ; bbr:fromInstance <https://example.org/registry/record/a> .

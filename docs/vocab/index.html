@@ -31,7 +31,10 @@
 <table>
 <thead><tr><th>Term</th><th>Label</th><th>Meaning</th></tr></thead>
 <tbody>
+<tr><td><a href="classKind.html"><code>bbr:classKind</code></a></td><td>class kind</td><td>&#39;domain&#39; for a class of the things the instance is about (sites, software), &#39;model&#39; for a class of the data model itself (vocabulary, types, provenance, the roots). Stated by the registry, not by the instance.</td></tr>
 <tr><td><a href="coordinates.html"><code>bbr:coordinates</code></a></td><td>coordinates</td><td>The geographic position of the subject, as the source states it (a WKT literal).</td></tr>
+<tr><td><a href="crmBasis.html"><code>bbr:crmBasis</code></a></td><td>basis of the CRM anchor</td><td>&#39;source&#39; if the instance states the anchor itself, &#39;bridge&#39; if the registry states it because the instance does not.</td></tr>
+<tr><td><a href="crmClass.html"><code>bbr:crmClass</code></a></td><td>CIDOC CRM class</td><td>The CIDOC CRM class a class is anchored to. A class without one of its own has the one of its nearest superclass that has one (path bbr:subclassOf*/bbr:crmClass).</td></tr>
 <tr><td><a href="equivalentClass.html"><code>bbr:equivalentClass</code></a></td><td>equivalent class</td><td>The class item states an IRI of an equivalent class, for example a CIDOC CRM class.</td></tr>
 <tr><td><a href="externalMatch.html"><code>bbr:externalMatch</code></a></td><td>external match</td><td>A URL of the same thing elsewhere, as the source states it.</td></tr>
 <tr><td><a href="fromInstance.html"><code>bbr:fromInstance</code></a></td><td>from instance</td><td>The catalogue record of the instance an entity was harvested from.</td></tr>

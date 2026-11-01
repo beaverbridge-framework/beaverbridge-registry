@@ -1,0 +1,21 @@
+# Which classes describe the data model and which the subject?
+# The registry marks every class as <em>domain</em> (the things the instance
+# is about: sites, software) or <em>model</em> (vocabulary, types, provenance,
+# the roots of the class tree). This is a statement of the registry, kept in
+# <code>crosswalks/classes.csv</code>, not of the instances.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance ?kind (COUNT(DISTINCT ?c) AS ?classes) (GROUP_CONCAT(DISTINCT ?label; separator=", ") AS ?examples) WHERE {
+  ?c bbr:classKind ?kind ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+}
+GROUP BY ?instance ?kind
+ORDER BY ?instance ?kind

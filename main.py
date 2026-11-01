@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent
 STEPS = [
     ("harvest", "py/step_harvest.py", False, "fetch RDF exports of the registered instances (network)"),
     ("survey", "py/step_survey.py", True, "measure the harvested instances, check the core-property crosswalk"),
+    ("bridge", "py/step_bridge.py", True, "class kind and CIDOC CRM anchor per class (crosswalks/classes.csv)"),
     ("bundle", "py/step_bundle.py", True, "merge harvested graphs into the DCAT catalogue"),
     ("validate", "py/step_validate.py", True, "SHACL gate"),
     ("index", "py/step_index.py", True, "facet index from the bundle"),

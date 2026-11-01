@@ -36,6 +36,7 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 13. **Nur Chublets schreibt `rdf:type` auf Klassen-Items** (RDFS-Brücke: 442 auf Q106, 248 auf Q103, …), fuzzy-sl nicht. `rdf:type` taugt daher nicht als gemeinsames Kriterium; die Rolle `instance_of` über die Property schon.
 14. **Nutzung:** fuzzy-sl verwendet 18 von 36 Properties, Chublets 32 von 168. Die Wikibase-Mechanik (`owl:Class` mit `owl:complementOf` unter `prop/novalue/…`, je eine pro Property) ist für Abfragen irrelevant und wird ignoriert.
 15. **Quelldaten-Auffälligkeiten (bleiben in `data/raw/` unverändert):** In fuzzy-sl P10 *related to* steht an Q46 die Adresse `http://openopenstreetmap.org/node/1257748539` (Tippfehler im Host), und Wikidata-Adressen kommen mit und ohne `www.` vor. Rückmeldung an die Quelle, nicht Korrektur hier.
+16. **Chublets hat 7 Weiterleitungen:** Q139, Q279, Q381, Q382, Q383, Q406 und Q846 haben nur `owl:sameAs` auf ein anderes Item derselben Instanz (in Wikibase zusammengeführte Items). Das SHACL-Gate (S6) hat sie gefunden, weil sie weder Label noch Typ tragen. Das Bundle behält die Verknüpfung, führt sie aber nicht als Entität (kein `bbr:fromInstance`, kein Eintrag in der Suche); der Bundle-Bericht zählt sie.
 
 ### A2 Zielbild
 
@@ -107,8 +108,14 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Rollen im Bundle | Eigenes Vokabular `bbr:` zusätzlich: je Rolle eine normalisierte Aussage (`bbr:instanceOf`, `bbr:subclassOf`, …) neben der unveränderten Quellaussage; die CRM-Bridge hängt an `bbr:` | 2026-11-01 |
 | Survey im Standardlauf | Schritt `survey` läuft offline im Standardlauf, ohne Harvest gibt er nichts aus (mit `--strict` Fehler); Abweichungen der Rollen-Tabelle sind Warnungen, mit `--strict` Fehler | 2026-11-01 |
 | Merge gleicher Dinge über Instanzen | kein Merge ohne Beleg; gleiche Namen werden gemeldet, nie verschmolzen | Vorschlag |
-| CRM-Anker | Crosswalk-CSV je Instanz als einzige Quelle, Mechanismen wie in fdo-squirrel-registry (`axiom`, `ext-axiom`, `normalise`, `instance`, `none`) | Vorschlag |
-| Shapes | Severity nach dem Modalverb des N4O-CIDOC-CRM-Profils (MUST → Fehler, SHOULD → Warnung) | Vorschlag |
+| CRM-Anker | `crosswalks/classes.csv`, eine Zeile je Klasse und Instanz, einzige Quelle: `kind` (`domain` oder `model`), `crm` (Name der CRM-Klasse), `basis` (`source`: die Instanz sagt es selbst, wird gegen den Survey geprüft; `bridge`: die Registry setzt den Anker, mit Grund; `none`). Anker werden entlang `subclass of` geerbt (nächster Oberklassen-Anker). Die Mechanismen der fdo-squirrel-registry (`axiom`, `ext-axiom`, …) sind nicht übernommen | 2026-11-01 |
+| Klassenart | `bbr:classKind` `domain` (Dinge, um die es der Instanz geht: Orte, Software) oder `model` (Klassen des Datenmodells: Vokabular, Typen, Herkunft, Wurzeln); Aussage der Registry, nicht der Instanzen | 2026-11-01 |
+| Vorgeschlagene Zuordnung | Von der Registry vorgeschlagen, von Flo zu prüfen: Chublets-Software (`software`, `Little Minion`) → E73 Information Object; fuzzy-sl `Site` → E53 Place (die Instanz verankert nur *E53 Place* und *E26 Physical Feature* selbst); *Person*, *Project*, *Source* bleiben `model` ohne Anker (E21, E7, E31 wären möglich) | Vorschlag |
+| Brücke im Bundle | Schritt `bridge` (nach `survey`, vor `bundle`) schreibt `dist/crm_bridge.nt/.ttl` und `dist/bridge_report.md`; das Bundle übernimmt die Brücke unverändert. Abfragen folgen dem Anker mit `bbr:instanceOf/bbr:subclassOf*/bbr:crmClass` | 2026-11-01 |
+| Weiterleitungen | Eine Entität, deren einzige Aussage `owl:sameAs` auf eine Entität derselben Instanz ist, gilt als Weiterleitung: Verknüpfung bleibt, `bbr:fromInstance` und Suche nicht | 2026-11-01 |
+| Shapes | `metadata/shapes.ttl`, 25 Regeln mit Code (R01 …) in der Meldung. Severity nach dem Modalverb: MUST → Verletzung (stoppt den Lauf), SHOULD → Warnung (stoppt mit `--strict`), MAY → Info (nur berichtet, z. B. R05: Item ohne Klasse, 27 Fälle) | 2026-11-01 |
+| Selbsttest des Gates | Vor dem Bundle läuft `tests/shacl/good.ttl` (darf nichts melden) und `bad.ttl` (muss jeden Code aus `expected.json` mit der dort stehenden Severity melden); schlägt das fehl, ist das Gate kaputt und der Lauf bricht ab | 2026-11-01 |
+| Gate-Eigenheiten (pyshacl) | `conforms` ist auch bei Info falsch, darum zählt das Gate selbst nach Severity; die Severity einer SPARQL-Regel kommt aus der Shape, nicht aus der Regel (darum R18 in eigener Shape); R07 wählt seine Fokusknoten über ein `sh:SPARQLTarget` (1 s statt 33 s) | 2026-11-01 |
 | Lizenz | Code MIT; Bundle CC BY 4.0 mit Lizenz je Eintrag erhalten (beide Quellen sind CC0) | Vorschlag |
 | Überführung nach `beaverbridge` | am Ende, Schritt S9; durch die Organisation `beaverbridge-framework` womöglich nur noch Umbenennung statt Transfer | Vorschlag |
 | Farben und Schrift | Palette aus dem Logo, Hell/Dunkel, Systemschrift der Familie plus optional Bitter für Überschriften; siehe `design/PALETTE.md` | Vorschlag |
@@ -145,8 +152,8 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S2 | Harvest: `sources.json`, Pages-Download, `harvest.json`, Hash | beaverbridge-registry | S1 | erledigt 2026-11-01 |
 | S3 | Befund je Instanz: Klassen, Properties, Kern-Properties (Crosswalk-Entwurf) | beaverbridge-registry | S2 | erledigt 2026-11-01 |
 | S4 | Bundle: DCAT-Katalog, Instanz-Präfix, Herkunft | beaverbridge-registry | S2 | erledigt 2026-11-01 |
-| S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | offen |
-| S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | offen |
+| S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | erledigt 2026-11-01 |
+| S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S7 | Index und Facettenseite | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S9 | Überführung nach `beaverbridge` | beaverbridge | S5–S8 | offen |
@@ -264,15 +271,58 @@ Umgesetzt:
 
 Zeilenzahlen: instances 2, classes 26, hierarchy 21, roles 14, crm-anchors 2, coordinates 73, wikidata 153, match-hosts 2, properties 204, same-label 5. Geprüft: rdflib 7.1.1 unter **echtem** Pyodide 0.26.4 (Node, Python 3.12.1) parst das Bundle in 2,3 s und liefert für alle zehn Abfragen dieselben Zeilenzahlen. Die Seitenlogik (Run, Reset, Fehleranzeige, Tabelle, Theme, Hinweis bei `file://`) wurde in Chromium mit einem Pyodide-Stand-in getestet, weil das CDN aus der Sandbox gesperrt ist; das Laden von Pyodide und rdflib über das Netz ist deshalb erst am PC oder auf Pages geprüft.
 
-*(S5, S6 und S9 werden angelegt, sobald sie dran sind.)*
+Abnahme auf dem PC: Commit 437467c, `--strict` grün, `git status` sauber, gepusht; GitHub Pages baut (Läufe #2 bis #4 grün).
+
+## S5 — CRM-Brücke der Klassen
+
+**Ziel:** Jede Klasse jeder Instanz hat eine Klassenart und, wo möglich, einen CIDOC-CRM-Anker, auch Chublets, das selbst keinen mitbringt.
+
+**Uploads:** keine.
+
+Umgesetzt:
+
+- `crosswalks/classes.csv` (32 Zeilen: fuzzy-sl 19, chublets 13) mit Erläuterung in `crosswalks/README.md`.
+- `py/step_bridge.py` (Schritt `bridge`, nach `survey`, vor `bundle`): prüft die Tabelle gegen `dist/survey.json` (jede Klasse hat eine Zeile, Label gleich, `source`-Anker gleich dem der Instanz, `bridge` mit Grund, `crm` und `basis` passen zusammen; Abweichung ist Warnung, mit `--strict` Fehler) und schreibt `dist/crm_bridge.nt/.ttl` (42 Tripel) und `dist/bridge_report.md`.
+- Bundle: übernimmt die Brücke; `metadata/bbr.ttl` kennt `bbr:classKind`, `bbr:crmClass`, `bbr:crmBasis`.
+- Suche: neue Facetten *Kind of class* (domain 501, model 462, ohne Klasse 27) und *CIDOC CRM* (E73 Information Object 442, E53 Place 59, ohne Anker 468); der Anker wird entlang `subclass of` geerbt.
+- Abfragen: `crm-anchors` mit Basis, neu `class-kinds` und `crm-reach`; die Seite hat jetzt 12 Abfragen.
+- Seite: `docs/downloads/crm_bridge.ttl` und `docs/downloads/shapes.ttl`.
+
+**Abnahme:** `python main.py --strict` meldet für `bridge` 0 Warnungen; zwei Läufe lassen `dist/` und `docs/` byte-identisch; das Entfernen einer Zeile aus `classes.csv` erzeugt eine Warnung und mit `--strict` Exit 1; in der Suche liefert der Haken *E73 Information Object* 442 Einträge.
+
+### Erledigt 2026-11-01
+
+Alle 7 `domain`-Klassen von fuzzy-sl und alle 10 von chublets haben einen Anker in Kraft (5 eigene: Q79, Q146, Q147 und Q100, Q105; der Rest erbt). Der Anker von *Site* (Q79) und die beiden Chublets-Anker sind Vorschläge der Registry (`basis: bridge`); `kind` ist für alle 32 Klassen ein Vorschlag. Negativtest: eine fehlende Zeile wird gemeldet.
+
+## S6 — SHACL-Gate mit Selbsttest
+
+**Ziel:** Das Bundle wird vor der Veröffentlichung gegen Regeln geprüft, und die Prüfung beweist vorher, dass sie fehlschlagen kann.
+
+**Uploads:** keine.
+
+Umgesetzt:
+
+- `metadata/shapes.ttl`: 25 Regeln R01 bis R28 (R08 bis R10 sind nicht vergeben): Entitäten (Label, genau eine Herkunft, Typ), Rollen (IRI-Objekte, innerhalb einer Instanz, Wikidata-IRI, WKT-Koordinaten), Klassen (genau eine Art, CRM-IRI, Basis, Anker für `domain`-Klassen), Katalog (Präfix, SHA-256, Quelle, Lizenz je Instanz und für die Registry).
+- `tests/shacl/good.ttl`, `bad.ttl`, `expected.json`: der Selbsttest.
+- `py/step_validate.py` (Schritt `validate`, war Stub): Selbsttest, dann das Bundle, Bericht `dist/validation_report.md`. Verletzung → Exit 1, Warnung → Exit 1 nur mit `--strict`.
+- `requirements.txt` hatte `pyshacl` schon; am PC muss es installiert sein (`pip install -r requirements.txt`).
+
+**Abnahme:** `python main.py --strict` meldet „self-test ok (25 rules …)“ und „0 violation(s), 0 warning(s), 27 note(s)“; zwei Läufe lassen `dist/validation_report.md` byte-identisch; ändert man in einer Kopie des Bundles `bbr:classKind "domain"` in `"dom"`, meldet das Gate R14.
+
+### Erledigt 2026-11-01
+
+Das Gate lief zuerst mit 7 Verletzungen auf den echten Daten und fand die Chublets-Weiterleitungen (Befund 16); nach der Behandlung im Bundle ist es sauber. Gemessen: Selbsttest und Bundle zusammen rund 3 s. Eine erste Fassung von R07 brauchte 33 s (eine SPARQL-Abfrage je Subjekt, dazu unbegrenztes `?p`), die jetzige 1 s.
+
+*(S9 wird angelegt, sobald es dran ist.)*
 
 ---
 
 ## Teil D — Offene Punkte
 
 - **Auflösung von `bbr:`:** Namespace ist entschieden (Pages-Pfad); die Seite `vocab/` selbst entsteht mit der Site in S7. Später w3id.
-- **Datenmodell-Klassen gegen Fachklassen:** In fuzzy-sl stehen *Spatial Type*, *Source*, *Project* neben *Archaeological Site*; im Bundle sollten sie unterscheidbar sein (Anker oder Kennzeichnung). Vorschlag in S5.
-- **Anker für Chublets:** Die Instanz bringt keinen CRM-Anker mit; er kommt aus der Klassen-Tabelle der Bridge (S5), nicht aus der Quelle.
+- **Zuordnung prüfen:** `crosswalks/classes.csv` ist ein Vorschlag der Registry (Klassenart, Anker für *Site*, *software*, *Little Minion*); Flo korrigiert dort. Ob *Person*, *Project*, *Source* auf E21, E7, E31 gehören, ist offen.
+- **Rückmeldung an die Instanzen:** Chublets hat keinen eigenen CRM-Anker und 7 Weiterleitungen; fuzzy-sl verankert nur zwei Klassen. Ob die Instanzen die Brücke übernehmen, ist eine Frage an ihre Pflege.
+- **Items ohne Klasse (R05):** 27 Items haben keine Klasse; als Info gemeldet, nicht als Fehler.
 - **Doppelte Ablage:** `dist/` und `docs/downloads/` halten dieselben 4 MB; mit jeder Änderung des Bundles wächst die Git-Historie um beide. Wenn es stört: `dist/*.nt/.ttl` nicht mehr versionieren und nur `docs/downloads/` behalten.
 - **Facette nach CRM-Anker:** kommt mit S5, sobald `crm_bridge.ttl` Anker auch für Chublets liefert; der Index hat dafür Platz.
 - **Notebook:** `qmd/…-live.qmd` braucht einmal `quarto add r-wasm/quarto-live` im Repo; gerendert wurde es nicht.

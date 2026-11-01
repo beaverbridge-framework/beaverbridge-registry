@@ -1,0 +1,60 @@
+# One deliberate fault per rule. The gate must report every code listed in expected.json, with the severity given there.
+@prefix bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix a: <https://example.org/a/entity/> .
+@prefix b: <https://example.org/b/entity/> .
+@prefix ra: <https://example.org/registry/record/a> .
+@prefix rb: <https://example.org/registry/record/b> .
+
+# R27, R28: the registry catalogue has no licence and no record
+<https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> a dcat:Catalog .
+
+# R19..R25: a record with a bad prefix and hash and nothing else
+ra: a dcat:CatalogRecord ; bbr:prefix "A_1" ; bbr:sha256 "abc" .
+
+# R26: the catalogue node of instance b states no licence
+rb: a dcat:CatalogRecord ; bbr:prefix "b" ; bbr:sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef" ;
+    dct:source <https://example.org/b/export.ttl> ; foaf:primaryTopic <https://example.org/b/catalog> ;
+    dct:title "Instance b"@en ; bbr:generator "x" ; dct:modified "2026-01-01T00:00:00Z"^^xsd:dateTime .
+<https://example.org/b/catalog> a dcat:Catalog .
+
+# R01: no label.  R05: no class (an item; Info)
+a:Q1 a wikibase:Item ; bbr:fromInstance ra: .
+# R02: only a German label
+a:Q2 a wikibase:Item ; rdfs:label "Fund"@de ; bbr:fromInstance ra: ; bbr:instanceOf a:Q20 .
+# R03: two records
+a:Q3 a wikibase:Item ; rdfs:label "Two"@en ; bbr:fromInstance ra: , rb: ; bbr:instanceOf a:Q20 .
+# R04: no type
+a:Q4 rdfs:label "Untyped"@en ; bbr:fromInstance ra: .
+# R06: a literal as the class
+a:Q5 a wikibase:Item ; rdfs:label "Literal class"@en ; bbr:fromInstance ra: ; bbr:instanceOf "site" .
+# R07: a role link into another instance
+a:Q6 a wikibase:Item ; rdfs:label "Crossing"@en ; bbr:fromInstance ra: ; bbr:instanceOf a:Q20 ; bbr:partOf b:Q1 .
+b:Q1 a wikibase:Item ; rdfs:label "Other"@en ; bbr:fromInstance rb: ; bbr:instanceOf b:Q2 .
+b:Q2 a wikibase:Item ; rdfs:label "Class b"@en ; bbr:fromInstance rb: ; bbr:classKind "model" .
+# R11: not a Wikidata IRI.  R12: not a wktLiteral.  R13: a literal of the right type, but not a Point
+a:Q7 a wikibase:Item ; rdfs:label "Links"@en ; bbr:fromInstance ra: ; bbr:instanceOf a:Q20 ;
+    bbr:wikidataEquivalent <http://example.org/Q1> ;
+    bbr:coordinates "6.5 50.2" .
+a:Q8 a wikibase:Item ; rdfs:label "Line"@en ; bbr:fromInstance ra: ; bbr:instanceOf a:Q20 ;
+    bbr:coordinates "LineString(1 1, 2 2)"^^geo:wktLiteral .
+
+# classes
+# R14: no kind
+a:Q20 a wikibase:Item ; rdfs:label "Class a"@en ; bbr:fromInstance ra: ; bbr:classKind "domain" ; bbr:crmClass crm:E53_Place ; bbr:crmBasis "bridge" .
+a:Q21 a wikibase:Item ; rdfs:label "No kind"@en ; bbr:fromInstance ra: ; bbr:subclassOf a:Q20 .
+# R15: not a CRM class.  R16: basis not source or bridge
+a:Q22 a wikibase:Item ; rdfs:label "Bad CRM"@en ; bbr:fromInstance ra: ; bbr:subclassOf a:Q20 ; bbr:classKind "model" ;
+    bbr:crmClass <http://example.org/NotCrm> ; bbr:crmBasis "guess" .
+# R17: an anchor without a basis
+a:Q23 a wikibase:Item ; rdfs:label "No basis"@en ; bbr:fromInstance ra: ; bbr:subclassOf a:Q20 ; bbr:classKind "model" ;
+    bbr:crmClass crm:E73_Information_Object .
+# R18: a domain class without an anchor, own or inherited
+a:Q24 a wikibase:Item ; rdfs:label "Unanchored"@en ; bbr:fromInstance ra: ; bbr:subclassOf b:Q2 ; bbr:classKind "domain" .

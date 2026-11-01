@@ -1,21 +1,36 @@
-# Patch: S8 — Query-Seite
+# Patch: S5 und S6 — CRM-Brücke und SHACL-Gate
 
-SPARQL im Browser über das ganze Bundle: `docs/sparql.html` mit zehn bearbeitbaren Abfragen, dieselben als `.rq`-Dateien und als quarto-live-Notebook. Es gibt keinen Endpunkt und keinen Server; `rdflib` läuft unter Pyodide im Browser. Jede Abfrage wird beim Bauen gegen das Bundle ausgeführt, eine leere Antwort bricht den Lauf ab.
+**S5:** Jede Klasse bekommt eine Klassenart (`domain` oder `model`) und, wo möglich, einen CIDOC-CRM-Anker, auch bei Chublets, das keinen mitbringt. **S6:** Das Bundle wird gegen 25 SHACL-Regeln geprüft, und vorher beweist ein Selbsttest, dass die Prüfung fehlschlagen kann.
+
+Die Zuordnung in `crosswalks/classes.csv` ist ein **Vorschlag**: Klassenart für alle 32 Klassen, E73 für Chublets-Software, E53 für *Site*. Bitte durchsehen und dort korrigieren.
 
 ## Inhalt
 
 | Datei | Änderung |
 |---|---|
-| `queries.yaml` | neu: Präfixe und zehn Abfragen, die einzige Quelle |
-| `py/step_sparql.py` | neu: Schritt `sparql` (war Stub) |
-| `py/registry_utils.py` | `jinja_env()` |
-| `py/step_site.py` | nutzt `jinja_env()`, kopiert `theme.js` |
-| `templates/` | `sparql.html.j2`, `sparql.qmd.j2` neu; `base.html.j2` (Link „Query“, `theme.js`), `style.css` (Query-Regeln), `app.js` (ohne Theme-Teil), `theme.js` neu |
-| `docs/`, `qmd/` | erzeugt (alle Seiten haben jetzt den Link „Query“) |
-| `dist/pipeline_report.txt` | erzeugt |
-| `README.md`, `PRIMER.md` | Status, S7 abgenommen, S8 erledigt |
+| `crosswalks/classes.csv` | neu: eine Zeile je Klasse, Art, CRM-Anker, Basis |
+| `crosswalks/README.md` | Abschnitt zu `classes.csv` |
+| `py/step_bridge.py` | neu: Schritt `bridge` |
+| `py/step_validate.py` | neu: Schritt `validate` (war Stub), mit Selbsttest |
+| `metadata/shapes.ttl`, `tests/shacl/` | neu: die Regeln, `good.ttl`, `bad.ttl`, `expected.json` |
+| `metadata/bbr.ttl` | `bbr:classKind`, `bbr:crmClass`, `bbr:crmBasis` |
+| `py/step_bundle.py` | übernimmt die Brücke; Weiterleitungen (7 in Chublets) sind keine Entitäten mehr |
+| `py/step_index.py`, `templates/app.js` | Facetten *Kind of class* und *CIDOC CRM* |
+| `py/step_site.py` | Downloads `crm_bridge.ttl` und `shapes.ttl` |
+| `queries.yaml` | 12 Abfragen: `crm-anchors` mit Basis, neu `class-kinds` und `crm-reach` |
+| `main.py` | `bridge` im Standardlauf, nach `survey` |
+| `dist/`, `docs/`, `qmd/` | erzeugt |
+| `README.md`, `PRIMER.md` | Status, S8 abgenommen, S5 und S6 erledigt, neue Beschlüsse |
 
 Dateien in den Repo-Ordner ziehen, Ordnerstruktur beibehalten, vorhandene Dateien ersetzen. Alle Befehle für Windows `cmd`.
+
+## 0. Vorbereitung
+
+`pyshacl` muss installiert sein (steht in `requirements.txt`):
+
+```cmd
+pip install -r requirements.txt
+```
 
 ## 1. Lauf
 
@@ -23,22 +38,40 @@ Dateien in den Repo-Ordner ziehen, Ordnerstruktur beibehalten, vorhandene Dateie
 python main.py
 ```
 
-Erwartet für den neuen Schritt: zehn Zeilen `ok` mit Zeilenzahlen (2, 26, 21, 14, 2, 73, 153, 2, 204, 5), dann `sparql: 10 queries, docs/sparql.html, 10 .rq files, qmd/…`.
+Erwartet für die neuen Zeilen:
+
+```
+[bridge]
+  bridge: 32 classes, 5 with an anchor of their own, 42 triples, 0 warning(s)
+[bundle]
+  fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements, 0 redirect(s)
+  chublets: 99261 source triples, 13883 kept, 1000 entities, 2858 role statements, 7 redirect(s)
+  bundle: 19703 triples from 2 instance(s), 0 warning(s)
+[validate]
+  validate: self-test ok (25 rules fail on bad.ttl, nothing on good.ttl)
+  validate: 0 violation(s), 0 warning(s), 27 note(s)
+```
 
 ## 2. Ansehen
 
-Die Query-Seite braucht einen Webserver (der Browser lässt eine Seite von der Platte das Bundle nicht laden). Der Server läuft im Vordergrund, mit Strg+C beenden:
+Die Suche öffnet von der Platte. Neue Facetten: *Kind of class* (domain 501, model 462, ohne Klasse 27) und *CIDOC CRM* (E73 Information Object 442, E53 Place 59, ohne Anker 468).
 
 ```cmd
-start http://localhost:8000/sparql.html && python -m http.server 8000 -d docs
+start docs\index.html
 ```
 
-Prüfen: Beim ersten Besuch dauert „Loading the Python runtime“ und „Installing rdflib“ einige Sekunden. Dann steht dort „Ready“ und „Graph loaded: 19668 triples“. Jede Abfrage zeigt nach Run dieselbe Zeilenzahl wie oben, Abfrage 4 (*Which Wikibase property stands behind a role?*) zeigt P1 und P2 vertauscht. Ein absichtlicher Tippfehler in einer Abfrage zeigt die Parse-Meldung.
+Berichte: `dist\bridge_report.md` (Art und Anker je Klasse, mit Weg der Vererbung) und `dist\validation_report.md`.
+
+```cmd
+start dist\bridge_report.md
+```
 
 ## 3. Abnahme
 
+Committen, nochmal laufen lassen, der Arbeitsbaum bleibt sauber:
+
 ```cmd
-git add -A && git commit -m "S8 query page" && python main.py --strict && git status
+git add -A && git commit -m "S5 CRM bridge, S6 SHACL gate" && python main.py --strict && git status
 ```
 
 Erwartet: `nothing to commit, working tree clean`.
@@ -49,8 +82,6 @@ Erwartet: `nothing to commit, working tree clean`.
 git push
 ```
 
-Nach ein bis zwei Minuten läuft dasselbe unter https://beaverbridge-framework.github.io/beaverbridge-registry/sparql.html.
-
 ## Nächster Schritt
 
-Neuer Chat: `PRIMER.md` hochladen und „S5 bitte“ (CRM-Anker, auch für Chublets) oder „S6 bitte“ (SHACL-Gate mit Selbsttest). Danach S9, die Überführung nach `beaverbridge`.
+Zuerst die Zuordnung in `crosswalks/classes.csv` prüfen. Danach bleibt S9, die Überführung nach `beaverbridge`; dafür neuer Chat mit `PRIMER.md`.

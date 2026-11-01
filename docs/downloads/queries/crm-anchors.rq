@@ -1,6 +1,7 @@
-# Which classes state a CIDOC CRM class?
-# Only classes that carry an equivalent class IRI themselves are listed. A
-# class without a row here has no anchor in its own instance.
+# Which classes carry a CIDOC CRM class of their own?
+# <em>source</em> means the instance states the anchor itself, <em>bridge</em>
+# that the registry states it because the instance does not. All other classes
+# inherit the anchor of a superclass, see the next query.
 
 PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -9,8 +10,9 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wikibase: <http://wikiba.se/ontology#>
 
-SELECT ?instance ?class ?crm WHERE {
-  ?c bbr:equivalentClass ?crm ;
+SELECT ?instance ?class (REPLACE(STR(?crm), "^.*/", "") AS ?crmClass) ?basis WHERE {
+  ?c bbr:crmClass ?crm ;
+     bbr:crmBasis ?basis ;
      bbr:fromInstance/bbr:prefix ?instance ;
      rdfs:label ?class .
   FILTER(LANG(?class) = "en")

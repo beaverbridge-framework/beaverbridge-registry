@@ -4,7 +4,7 @@
     docs/catalog.html              the registry catalogue; answers for <REGISTRY_BASE>/catalog
     docs/record/<id>.html          one catalogue record per instance; answers for <REGISTRY_BASE>/record/<id>
     docs/vocab/                    the bbr: vocabulary: bbr.ttl, an overview and one page per term
-    docs/downloads/                the bundle as Turtle and N-Triples
+    docs/downloads/                the bundle as Turtle and N-Triples, the CRM bridge of the classes, the SHACL shapes
     docs/registry-index.json       the facet index
     docs/assets/                   style, scripts, logo
 
@@ -101,6 +101,9 @@ def main() -> int:
     copy(DIST / "beaverbridge-registry.ttl", DOCS / "downloads" / "beaverbridge-registry.ttl")
     copy(DIST / "beaverbridge-registry.nt", DOCS / "downloads" / "beaverbridge-registry.nt")
     copy(index_path, DOCS / "registry-index.json")
+    if (DIST / "crm_bridge.ttl").exists():
+        copy(DIST / "crm_bridge.ttl", DOCS / "downloads" / "crm_bridge.ttl")
+    copy(METADATA / "shapes.ttl", DOCS / "downloads" / "shapes.ttl")
     copy(TEMPLATES / "style.css", DOCS / "assets" / "style.css")
     copy(TEMPLATES / "app.js", DOCS / "assets" / "app.js")
     copy(TEMPLATES / "theme.js", DOCS / "assets" / "theme.js")

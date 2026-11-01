@@ -1,0 +1,77 @@
+@prefix bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass crm:E73_Information_Object .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q102> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q103> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass crm:E73_Information_Object .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q378> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q379> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q10> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q11> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q125> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q141> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q145> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q146> bbr:classKind "domain" ;
+    bbr:crmBasis "source" ;
+    bbr:crmClass crm:E53_Place .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q147> bbr:classKind "domain" ;
+    bbr:crmBasis "source" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q21> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q22> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q4> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q5> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q6> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q7> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q79> bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass crm:E53_Place .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q81> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q90> bbr:classKind "domain" .
+
+<https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> bbr:classKind "model" .
+

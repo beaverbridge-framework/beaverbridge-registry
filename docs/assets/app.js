@@ -6,7 +6,7 @@
   var INST = {};
   DATA.instances.forEach(function (i) { INST[i.id] = i; });
   var PAGE = 60, COLLAPSED = 10;
-  var NONE = "(no class)";
+  var NONE = "(no class)", NOANCHOR = "(no anchor)";
 
   var FACETS = [
     { key: "instance", label: "Instance", get: function (e) { return [e.instance]; },
@@ -14,6 +14,10 @@
     { key: "class", label: "Class", get: function (e) { return e.classes.length ? e.classes : [NONE]; },
       text: function (v) { return v === NONE ? NONE : CL[v] || v; },
       sub: function (v) { return v === NONE ? "" : v.split(":")[0]; } },
+    { key: "kind", label: "Kind of class", get: function (e) { return e.kinds.length ? e.kinds : [NONE]; },
+      text: function (v) { return v; } },
+    { key: "crm", label: "CIDOC CRM", get: function (e) { return e.crm.length ? e.crm : [NOANCHOR]; },
+      text: function (v) { return v; } },
     { key: "features", label: "Has", get: function (e) { return e.features; }, text: function (v) { return v; } },
     { key: "licence", label: "Licence", get: function (e) { return [INST[e.instance].licence]; }, text: function (v) { return v; } }
   ];
@@ -22,7 +26,7 @@
     e._v = {};
     FACETS.forEach(function (f) { e._v[f.key] = f.get(e); });
     e._h = [e.label, e.description, e.id, e.classes.map(function (c) { return CL[c]; }).join(" "),
-            e.part_of.map(function (p) { return p.label; }).join(" ")].join(" ").toLowerCase();
+            e.part_of.map(function (p) { return p.label; }).join(" "), e.crm.join(" ")].join(" ").toLowerCase();
   });
 
   var state = { q: "", sel: {}, sort: "label", shown: PAGE, expanded: {} };
