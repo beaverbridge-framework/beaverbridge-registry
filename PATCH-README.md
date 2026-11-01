@@ -1,67 +1,55 @@
-# Patch: S2 — Harvest
+# Patch: S3 — Survey and role crosswalk
 
-Fetches the RDF exports of the registered instances from their GitHub Pages and stores them unchanged in `data/raw/<id>/`, with a `harvest.json` manifest (bytes, SHA-256, ETag, generator version, data date, triple count).
+Measures every harvested instance (offline, from `data/raw/`) and checks `crosswalks/core-properties.csv` against it. The crosswalk says which property plays which role in which instance, because the numbers differ: *instance of* is P1 in fuzzy-sl and P2 in chublets.
 
 ## Contents
 
 | File | Change |
 |---|---|
-| `py/step_harvest.py` | new: the harvest step |
-| `main.py` | forwards unknown options to the step (`python main.py harvest --force`); only a full run writes `dist/pipeline_report.txt` |
-| `registry/sources.json` | each file now has a `role` (`export` or `ontology`) |
-| `.gitattributes` | new: LF everywhere, `data/raw/**` kept byte-for-byte |
-| `PRIMER.md` | S2 status, findings in A1, new rows in A4 |
+| `py/step_survey.py` | new: the `survey` step |
+| `crosswalks/core-properties.csv` | new: seven roles, one row per instance and role |
+| `crosswalks/README.md` | new: what the roles mean |
+| `main.py` | `survey` added to the default run, between `harvest` and `bundle` |
+| `PRIMER.md` | S2 and S3 done, findings 9 to 15 in A1, new decisions in A4 |
 
 Copy the files into `C:\git\beaverbridge-registry`, keeping the folder structure. All commands are for Windows `cmd`, one line each.
 
-## 1. Can the Pages be reached? (before the first run)
+## 1. Run
 
 ```cmd
-curl.exe -sI https://n4o-rse.github.io/fuzzy-sl-static/downloads/wikibase-ontology.ttl && curl.exe -sI https://n4o-rse.github.io/chublets-wikibase-demo/downloads/wikibase-ontology.ttl
+cd C:\git\beaverbridge-registry && python main.py
 ```
 
-Both must start with `HTTP/2 200`. If one says 404 or 403, send me the first lines of the answer.
+Expected for the survey:
 
-## 2. Harvest
-
-```cmd
-cd C:\git\beaverbridge-registry && python -m pip install -r requirements.txt && python main.py harvest
+```
+fuzzy-sl: 12462 triples, 137 items, 36 properties, 19 classes, roles 7/7
+chublets: 99261 triples, 832 items, 168 properties, 13 classes, roles 5/7
+survey: 2 instance(s), 0 warning(s)
 ```
 
-Expected: four lines `fetched …`, with 12 462 triples for fuzzy-sl and 99 261 for chublets (these are the numbers measured on the local clones; Pages may carry newer data).
+## 2. Check (acceptance of S3)
 
-## 3. Check (acceptance of S2)
-
-Second run fetches nothing:
+Commit, run again, the working tree stays clean (the first run creates `dist/survey.json` and `dist/survey_report.md`, which are versioned):
 
 ```cmd
-cd C:\git\beaverbridge-registry && python main.py harvest
-```
-
-Expected: four lines `unchanged (304)`.
-
-Commit, run again, the working tree stays clean:
-
-```cmd
-cd C:\git\beaverbridge-registry && git add -A && git commit -m "S2 harvest" && python main.py harvest && python main.py && git status
+cd C:\git\beaverbridge-registry && git add -A && git commit -m "S3 survey and role crosswalk" && python main.py --strict && git status
 ```
 
 Expected: `nothing to commit, working tree clean`.
 
-## 4. Push
+Read the report:
+
+```cmd
+cd C:\git\beaverbridge-registry && start dist\survey_report.md
+```
+
+## 3. Push
 
 ```cmd
 cd C:\git\beaverbridge-registry && git push
 ```
 
-## Other options
-
-```cmd
-cd C:\git\beaverbridge-registry && python main.py harvest --force --instance chublets
-```
-
-`--local` reads from local clones instead (set `{"clone_dir": "C:\\git"}` in `config.local.json`, copy of `config.local.example.json`); `--offline` only reports what is on disk.
-
 ## Next step
 
-New chat: upload `PRIMER.md` (and the bundle from A5) and say "S3 bitte".
+New chat: upload `PRIMER.md` and say "S4 bitte" (bundle: DCAT catalogue, instance prefix, `bbr:` roles). S6, S7 and S8 can follow in any order after S4.

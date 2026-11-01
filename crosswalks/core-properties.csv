@@ -1,0 +1,15 @@
+role,instance,property,label_en,datatype,note
+instance_of,fuzzy-sl,P1,instance of,WikibaseItem,
+instance_of,chublets,P2,instance of,WikibaseItem,P1 and P2 are swapped against fuzzy-sl
+subclass_of,fuzzy-sl,P2,subclass of,WikibaseItem,
+subclass_of,chublets,P1,subclass of,WikibaseItem,P1 and P2 are swapped against fuzzy-sl
+part_of,fuzzy-sl,P3,part of,WikibaseItem,
+part_of,chublets,P122,part of,WikibaseItem,
+coordinates,fuzzy-sl,P4,has coordinate,GlobeCoordinate,
+coordinates,chublets,none,,,no coordinates in this instance
+equivalent_class,fuzzy-sl,P37,equivalent class,Url,carries the CIDOC CRM class IRI on the class items Q146 and Q147
+equivalent_class,chublets,none,,,no property for equivalent classes; P4 points to Wikidata (role wikidata_equivalent)
+wikidata_equivalent,fuzzy-sl,P34,Wikidata ID,ExternalId,plain Q-number
+wikidata_equivalent,chublets,P4,Wikidata equivalent,ExternalId,plain Q-number on items; on properties it holds P-numbers
+external_match,fuzzy-sl,P27,has match,Url,
+external_match,chublets,P115,exact match,Url,

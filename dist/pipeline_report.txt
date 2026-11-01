@@ -1,3 +1,7 @@
+[survey]
+  fuzzy-sl: 12462 triples, 137 items, 36 properties, 19 classes, roles 7/7
+  chublets: 99261 triples, 832 items, 168 properties, 13 classes, roles 5/7
+  survey: 2 instance(s), 0 warning(s)
 [bundle]
   bundle: nothing to do (implemented in S4)
 [validate]

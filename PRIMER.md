@@ -29,6 +29,13 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 6. `downloads/wikibase-ontology.ttl` ist in **beiden** Instanzen byte-identisch (11 336 Bytes, 255 Tripel, SHA-256 `5f71c0e8…`) und nennt keinen Instanz-Namespace; es ist die generische Wikibase-Ontologie von wikibase-static (geprüft 2026-11-01). Folge: Sie wird je Instanz geholt, im Bundle aber nur einmal gebraucht, und eine `rdf_base`-Prüfung gilt nur für den Vollexport (`role: export`).
 7. Tripelzahlen der Vollexporte (rdflib 7.6.0, 2026-11-01): fuzzy-sl 12 462 (wikibase-static 0.10.0, Daten vom 2025-11-01), Chublets 99 261 (0.19.0, Daten vom 2026-10-25). Beide parsen ohne Fehler.
 8. Beide Exporte enthalten ein eigenes DCAT-Dataset (`cat:export` bzw. `chbcat:`) mit Lizenzangabe (CC0). Das ist der Anker für den Katalogeintrag.
+9. **P1 und P2 sind vertauscht** (geprüft 2026-11-01, `dist/survey_report.md`): fuzzy-sl P1 *instance of*, P2 *subclass of*; Chublets P2 *instance of*, P1 *subclass of*. Auch *part of* (fuzzy-sl P3, Chublets P122), *Wikidata-Verweis* (P34 gegen P4) und *exact match* (P27 gegen P115) haben verschiedene Nummern. Eine instanzübergreifende Abfrage geht deshalb nur über die Rollen-Tabelle `crosswalks/core-properties.csv`.
+10. **Keine gemeinsamen Wikidata-Items:** fuzzy-sl nennt 23, Chublets 34 Wikidata-Q-Nummern, der Schnitt ist leer. Die Domänen (Geo/Archäologie gegen Forschungssoftware) überlappen nicht; Fragen über beide Instanzen betreffen Struktur (Klassen, Properties, CRM-Anker), nicht identische Entitäten.
+11. **fuzzy-sl trägt seinen CRM-Anker selbst:** Die Klassen-Items Q146 *E53 Place* und Q147 *E26 Physical Feature* haben über P37 *equivalent class* die CRM-IRI. *Archaeological Site* (52 Items) und *Geological Site* (19) erben E53 über *subclass of*, *Cave* erbt E26 (0 Items). Vierzehn von 19 Klassen haben keinen Anker: die Datenmodell-Klassen (*Spatial Type*, *Source*, *Project*, *Person*, *Certainty Level*, …), aber auch die Fachklassen *Site* und *Provenance Site* sowie *CIDOC-CRM Class* selbst.
+12. **Chublets hat keinen CRM-Anker.** Der Klassenbaum hat die Wurzel Q3 *Instance* (387 direkte Instanzen); Q1 *Class* und Q2 *Property* sind Unterklassen von Q3, alle 168 Properties sind Instanzen von Q2. *chublet* (Q106, 442 Items) ist Unterklasse von Q101 *research software* und Q105 *Little Minion*. Klassen und Properties erscheinen also beide als „Instanzen".
+13. **Nur Chublets schreibt `rdf:type` auf Klassen-Items** (RDFS-Brücke: 442 auf Q106, 248 auf Q103, …), fuzzy-sl nicht. `rdf:type` taugt daher nicht als gemeinsames Kriterium; die Rolle `instance_of` über die Property schon.
+14. **Nutzung:** fuzzy-sl verwendet 18 von 36 Properties, Chublets 32 von 168. Die Wikibase-Mechanik (`owl:Class` mit `owl:complementOf` unter `prop/novalue/…`, je eine pro Property) ist für Abfragen irrelevant und wird ignoriert.
+15. **Quelldaten-Auffälligkeiten (bleiben in `data/raw/` unverändert):** In fuzzy-sl P10 *related to* steht an Q46 die Adresse `http://openopenstreetmap.org/node/1257748539` (Tippfehler im Host), und Wikidata-Adressen kommen mit und ohne `www.` vor. Rückmeldung an die Quelle, nicht Korrektur hier.
 
 ### A2 Zielbild
 
@@ -37,6 +44,8 @@ registry/sources.json            kuratierte Liste der Instanzen (Name, pages_url
         │  py/step_harvest.py    HTTP: <pages_url>/downloads/*.ttl  (einziger Netz-Schritt)
         ▼
 data/raw/<instanz>/              unverändert, read-only, harvest.json mit Hash und Generator-Version
+        │  py/step_survey.py     Vermessung + Prüfung von crosswalks/core-properties.csv
+        │                        → dist/survey.json, dist/survey_report.md
         │  crosswalks/*.csv      Property-/Klassen-Zuordnung je Instanz → CIDOC CRM
         │  py/step_bundle.py     Katalog (DCAT), Instanz-Präfix, CRM-Anker
         ▼
@@ -86,6 +95,9 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Harvest-Fehler | eine nicht erreichbare Instanz bricht den Lauf nicht ab (Exit 0, Meldung); nur `--strict` macht daraus Exit 1; Stopp nach drei Instanzen ohne Treffer in Folge | 2026-11-01 |
 | Manifest ohne Uhr | `harvest.json` enthält Bytes, SHA-256, ETag, Generator und Datenstand aus der Datei selbst, keine Abrufzeit | 2026-11-01 |
 | Rohdaten bleiben Bytes | `.gitattributes`: `data/raw/** -text`, damit kein Zeilenende-Umbau den SHA-256 ändert; Dateien werden schreibgeschützt abgelegt | 2026-11-01 |
+| Rollen-Tabelle | `crosswalks/core-properties.csv`: je Rolle (`instance_of`, `subclass_of`, `part_of`, `coordinates`, `equivalent_class`, `wikidata_equivalent`, `external_match`) und Instanz eine Property oder `none` mit Grund; von Hand gepflegt, vom Survey gegen den Graphen geprüft (Property vorhanden, englisches Label und Datentyp gleich) | 2026-11-01 |
+| Rollen im Bundle | Eigenes Vokabular `bbr:` zusätzlich: je Rolle eine normalisierte Aussage (`bbr:instanceOf`, `bbr:subclassOf`, …) neben der unveränderten Quellaussage; die CRM-Bridge hängt an `bbr:` | 2026-11-01 |
+| Survey im Standardlauf | Schritt `survey` läuft offline im Standardlauf, ohne Harvest gibt er nichts aus (mit `--strict` Fehler); Abweichungen der Rollen-Tabelle sind Warnungen, mit `--strict` Fehler | 2026-11-01 |
 | Merge gleicher Dinge über Instanzen | kein Merge ohne Beleg; gleiche Namen werden gemeldet, nie verschmolzen | Vorschlag |
 | CRM-Anker | Crosswalk-CSV je Instanz als einzige Quelle, Mechanismen wie in fdo-squirrel-registry (`axiom`, `ext-axiom`, `normalise`, `instance`, `none`) | Vorschlag |
 | Shapes | Severity nach dem Modalverb des N4O-CIDOC-CRM-Profils (MUST → Fehler, SHOULD → Warnung) | Vorschlag |
@@ -122,8 +134,8 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 |---|---|---|---|---|
 | S0 | Festlegungen (Name, Ort, IRIs, Anzeige, Umfang) | — | — | erledigt 2026-11-01 |
 | S1 | Skeleton: Layout, `main.py`, Utils, Licence, Citation | beaverbridge-registry | S0 | erledigt 2026-11-01 |
-| S2 | Harvest: `sources.json`, Pages-Download, `harvest.json`, Hash | beaverbridge-registry | S1 | Code fertig 2026-11-01, Lauf gegen echte Pages am PC offen |
-| S3 | Befund je Instanz: Klassen, Properties, Kern-Properties (Crosswalk-Entwurf) | beaverbridge-registry | S2 | offen |
+| S2 | Harvest: `sources.json`, Pages-Download, `harvest.json`, Hash | beaverbridge-registry | S1 | erledigt 2026-11-01 |
+| S3 | Befund je Instanz: Klassen, Properties, Kern-Properties (Crosswalk-Entwurf) | beaverbridge-registry | S2 | erledigt 2026-11-01 |
 | S4 | Bundle: DCAT-Katalog, Instanz-Präfix, Herkunft | beaverbridge-registry | S2 | offen |
 | S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | offen |
 | S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | offen |
@@ -161,21 +173,37 @@ Kern: `sources.json` führt je Instanz `id`, `pages_url`, `rdf_base`, `prefix_fa
 
 **Abnahme:** `python main.py harvest` holt je Instanz Vollexport und Ontologie; ein zweiter Lauf meldet nur 'unchanged'; `harvest.json` nennt Generator-Version (`0.10.0` bzw. `0.19.0`), Hash und Tripelzahl; nach `git add`, `commit` und erneutem Lauf ist `git status` sauber.
 
-### Erledigt 2026-11-01 (Code; Lauf gegen echte Pages offen)
+### Erledigt 2026-11-01
 
 Umgesetzt in `py/step_harvest.py`: Download per HTTP mit `If-None-Match` (ETag), bei 304 keine Übertragung; bei gleichem SHA-256 wird nichts neu geschrieben; Parse-Prüfung mit rdflib (Tripelzahl im Manifest, Parse-Fehler als Warnung, Datei bleibt unverändert); `--force`, `--instance`, `--local` (liest aus `clone_dir` in `config.local.json`), `--offline`, `--sources`, `--strict`. `main.py` reicht unbekannte Optionen an den Schritt weiter (`python main.py harvest --force`) und schreibt `dist/pipeline_report.txt` nur noch bei einem vollen Lauf.
 
 Getestet gegen lokal ausgelieferte Klone mit ETag-Server: Lauf 1 holt vier Dateien (0,6 MB und 5,2 MB), Lauf 2 meldet viermal 304, das Manifest ist nach Lauf 2 und nach `--force` byte-identisch; `--local` liefert dieselben Hashes; ein toter Port gibt Exit 0, mit `--strict` Exit 1, und legt nichts an.
 
-**Offen für die Abnahme am PC:** Echter Lauf gegen `n4o-rse.github.io`, dann `data/raw/` einchecken.
+**Abnahme am PC (Windows, Python 3.10) bestanden:** Alle vier Dateien kamen von den echten Pages, mit denselben Tripelzahlen wie lokal (12 462 und 99 261); der erste Lauf dauerte 7,9 s, der zweite 0,5 s mit viermal `unchanged (304)`; nach Commit und erneutem Lauf war `git status` sauber (Commit `b9f549a`, Rohdaten versioniert in `data/raw/`).
 
-*(S3–S9 werden angelegt, sobald sie dran sind.)*
+## S3 — Befund je Instanz und Rollen-Tabelle
+
+**Ziel:** Ein offline laufender Schritt vermisst jede geharvestete Instanz und prüft die Rollen-Tabelle gegen die Graphen; die Befunde stehen in A1.
+
+**Uploads:** keine; `data/raw/` kommt aus dem Repo.
+
+Umgesetzt: `py/step_survey.py` (Schritt `survey` im Standardlauf, nach `harvest`, vor `bundle`) schreibt `dist/survey.json` und `dist/survey_report.md`: Zählwerte, Properties im Gebrauch mit Datentyp und Häufigkeit, Klassen mit Instanzzahl und Oberklassen, Wurzelklassen, Klassen mit Anker (`equivalent_class`) samt geerbten Ankern, Wikidata-Q-Nummern je Instanz und ihr Schnitt. `crosswalks/core-properties.csv` (mit `crosswalks/README.md`) ordnet sieben Rollen den Properties zu. Alle Namensräume werden aus `rdf_base` abgeleitet, nicht aus Präfixnamen.
+
+**Abnahme:** `python main.py` läuft durch und meldet 0 Warnungen; zwei Läufe hintereinander lassen `dist/survey.json` und `dist/survey_report.md` byte-identisch und `git status` sauber; ein absichtlich falscher Eintrag in der Rollen-Tabelle erzeugt eine Warnung und mit `--strict` Exit 1.
+
+### Erledigt 2026-11-01
+
+Gemessen: fuzzy-sl 12 462 Tripel, 137 Items, 36 Properties (18 in Gebrauch), 19 Klassen, alle sieben Rollen belegt; Chublets 99 261 Tripel, 832 Items, 168 Properties (32 in Gebrauch), 13 Klassen, fünf Rollen belegt (zwei `none` mit Grund). Befunde 9 bis 15 in A1. Negativtest in einer Kopie mit sechs absichtlichen Fehlern (falsches Label, falscher Datentyp, unbekannte Property, `none` ohne Grund, fehlende Zeile, unbekannte Instanz): alle sechs werden gemeldet; dabei zeigte sich ein Absturz bei fehlender Rolle, der behoben ist.
+
+*(S4–S9 werden angelegt, sobald sie dran sind.)*
 
 ---
 
 ## Teil D — Offene Punkte
 
-- **Gemeinsame Kern-Properties:** Ob die Registry ein eigenes, kleines Vokabular (`bbr:instanceOf`, `bbr:subclassOf`) über die Instanz-Properties legt oder nur über CRM anchored. Entscheidung in S3.
+- **IRI des Vokabulars `bbr:`:** Namespace und Auflösung festlegen (z. B. unter `…/beaverbridge-registry/vocab/`, später w3id); Entscheidung in S4, weil das Bundle sie braucht.
+- **Datenmodell-Klassen gegen Fachklassen:** In fuzzy-sl stehen *Spatial Type*, *Source*, *Project* neben *Archaeological Site*; im Bundle sollten sie unterscheidbar sein (Anker oder Kennzeichnung). Vorschlag in S5.
+- **Anker für Chublets:** Die Instanz bringt keinen CRM-Anker mit; er kommt aus der Klassen-Tabelle der Bridge (S5), nicht aus der Quelle.
 - **w3id-Prefix** für `…/record/…` und Content Negotiation.
 - **Dritte Instanz:** `osm-static-benchmarks` hat ein sehr anderes Modell und wäre der Härtetest, aber erst nach S6.
 - **Zenodo-DOI** für das Bundle als FDO (nach S8).

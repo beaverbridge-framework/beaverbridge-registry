@@ -1,0 +1,1455 @@
+{
+  "cross": {
+    "role_ids_differ": [
+      "instance_of",
+      "subclass_of",
+      "part_of",
+      "wikidata_equivalent",
+      "external_match"
+    ],
+    "shared_wikidata_qids": []
+  },
+  "instances": [
+    {
+      "anchors": [
+        {
+          "class": "Q146",
+          "label": "E53 Place",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+        },
+        {
+          "class": "Q147",
+          "label": "E26 Physical Feature",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"
+        }
+      ],
+      "classes": [
+        {
+          "id": "Q2",
+          "instances": 13,
+          "label": "Source",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q3",
+          "instances": 4,
+          "label": "Site Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q4",
+          "instances": 14,
+          "label": "Spatial Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q5",
+          "instances": 5,
+          "label": "Project",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q6",
+          "instances": 4,
+          "label": "Certainty Level",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q7",
+          "instances": 3,
+          "label": "Method Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q10",
+          "instances": 52,
+          "label": "Archaeological Site",
+          "property_instances": 0,
+          "superclasses": [
+            "Q79",
+            "Q146"
+          ]
+        },
+        {
+          "id": "Q11",
+          "instances": 19,
+          "label": "Geological Site",
+          "property_instances": 0,
+          "superclasses": [
+            "Q79",
+            "Q146"
+          ]
+        },
+        {
+          "id": "Q21",
+          "instances": 4,
+          "label": "Person",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q22",
+          "instances": 2,
+          "label": "Generic Class",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q79",
+          "instances": 0,
+          "label": "Site",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q81",
+          "instances": 4,
+          "label": "Location Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q90",
+          "instances": 0,
+          "label": "Cave",
+          "property_instances": 0,
+          "superclasses": [
+            "Q147"
+          ]
+        },
+        {
+          "id": "Q91",
+          "instances": 3,
+          "label": "Spatial Category",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q125",
+          "instances": 6,
+          "label": "Point Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q141",
+          "instances": 1,
+          "label": "Provenance Site",
+          "property_instances": 0,
+          "superclasses": [
+            "Q79"
+          ]
+        },
+        {
+          "id": "Q145",
+          "instances": 0,
+          "label": "CIDOC-CRM Class",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q146",
+          "instances": 0,
+          "label": "E53 Place",
+          "property_instances": 0,
+          "superclasses": [
+            "Q145"
+          ]
+        },
+        {
+          "id": "Q147",
+          "instances": 0,
+          "label": "E26 Physical Feature",
+          "property_instances": 0,
+          "superclasses": [
+            "Q145"
+          ]
+        }
+      ],
+      "file": "n4o-rse.github.io-fuzzy-sl-static.ttl",
+      "id": "fuzzy-sl",
+      "inherited_anchors": [
+        {
+          "class": "Q10",
+          "label": "Archaeological Site",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+          "via": "Q146"
+        },
+        {
+          "class": "Q11",
+          "label": "Geological Site",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+          "via": "Q146"
+        },
+        {
+          "class": "Q90",
+          "label": "Cave",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature",
+          "via": "Q147"
+        }
+      ],
+      "items": 137,
+      "label": "fuzzy-sl (static copy)",
+      "properties": {
+        "P1": {
+          "datatype": "WikibaseItem",
+          "label": "instance of",
+          "uses": 134
+        },
+        "P10": {
+          "datatype": "Url",
+          "label": "related to",
+          "uses": 65
+        },
+        "P11": {
+          "datatype": "String",
+          "label": "has reference",
+          "uses": 48
+        },
+        "P12": {
+          "datatype": "Url",
+          "label": "related to type",
+          "uses": 0
+        },
+        "P13": {
+          "datatype": "String",
+          "label": "certainty description",
+          "uses": 0
+        },
+        "P14": {
+          "datatype": "WikibaseItem",
+          "label": "acting person",
+          "uses": 0
+        },
+        "P15": {
+          "datatype": "String",
+          "label": "method description",
+          "uses": 0
+        },
+        "P16": {
+          "datatype": "WikibaseItem",
+          "label": "source type (detail)",
+          "uses": 0
+        },
+        "P17": {
+          "datatype": "Url",
+          "label": "reference URL",
+          "uses": 0
+        },
+        "P18": {
+          "datatype": "String",
+          "label": "Formatter URL",
+          "uses": 2
+        },
+        "P19": {
+          "datatype": "ExternalId",
+          "label": "Semantic Kompakkt ID",
+          "uses": 2
+        },
+        "P2": {
+          "datatype": "WikibaseItem",
+          "label": "subclass of",
+          "uses": 8
+        },
+        "P20": {
+          "datatype": "String",
+          "label": "formatter URI for RDF resource",
+          "uses": 0
+        },
+        "P21": {
+          "datatype": "ExternalId",
+          "label": "ISO 639-1 code",
+          "uses": 0
+        },
+        "P22": {
+          "datatype": "Monolingualtext",
+          "label": "certainty description (with language)",
+          "uses": 0
+        },
+        "P23": {
+          "datatype": "String",
+          "label": "precision",
+          "uses": 0
+        },
+        "P24": {
+          "datatype": "WikibaseItem",
+          "label": "location type",
+          "uses": 0
+        },
+        "P25": {
+          "datatype": "String",
+          "label": "reference (String)",
+          "uses": 0
+        },
+        "P26": {
+          "datatype": "WikibaseItem",
+          "label": "has spatial category",
+          "uses": 32
+        },
+        "P27": {
+          "datatype": "Url",
+          "label": "has match",
+          "uses": 1
+        },
+        "P28": {
+          "datatype": "Url",
+          "label": "match type",
+          "uses": 0
+        },
+        "P29": {
+          "datatype": "WikibaseItem",
+          "label": "has broader location",
+          "uses": 6
+        },
+        "P3": {
+          "datatype": "WikibaseItem",
+          "label": "part of",
+          "uses": 58
+        },
+        "P30": {
+          "datatype": "WikibaseItem",
+          "label": "has narrower location",
+          "uses": 7
+        },
+        "P31": {
+          "datatype": "WikibaseItem",
+          "label": "reference (Item)",
+          "uses": 0
+        },
+        "P32": {
+          "datatype": "Url",
+          "label": "located in the administrative territorial entity",
+          "uses": 11
+        },
+        "P33": {
+          "datatype": "WikibaseItem",
+          "label": "point type",
+          "uses": 0
+        },
+        "P34": {
+          "datatype": "ExternalId",
+          "label": "Wikidata ID",
+          "uses": 1
+        },
+        "P35": {
+          "datatype": "String",
+          "label": "WKT Geometry",
+          "uses": 1
+        },
+        "P37": {
+          "datatype": "Url",
+          "label": "equivalent class",
+          "uses": 2
+        },
+        "P4": {
+          "datatype": "GlobeCoordinate",
+          "label": "has coordinate",
+          "uses": 60
+        },
+        "P5": {
+          "datatype": "WikibaseItem",
+          "label": "certainty level",
+          "uses": 0
+        },
+        "P6": {
+          "datatype": "WikibaseItem",
+          "label": "source type (generic)",
+          "uses": 0
+        },
+        "P7": {
+          "datatype": "WikibaseItem",
+          "label": "method used",
+          "uses": 0
+        },
+        "P8": {
+          "datatype": "WikibaseItem",
+          "label": "has spatial type",
+          "uses": 47
+        },
+        "P9": {
+          "datatype": "WikibaseItem",
+          "label": "has type",
+          "uses": 1
+        }
+      },
+      "rdf_base": "https://n4o-rse.github.io/fuzzy-sl-static",
+      "references": 26,
+      "roles": {
+        "coordinates": "P4",
+        "equivalent_class": "P37",
+        "external_match": "P27",
+        "instance_of": "P1",
+        "part_of": "P3",
+        "subclass_of": "P2",
+        "wikidata_equivalent": "P34"
+      },
+      "roots": [
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q21",
+        "Q22",
+        "Q79",
+        "Q81",
+        "Q91",
+        "Q125",
+        "Q145"
+      ],
+      "statements": 488,
+      "triples": 12462,
+      "wikidata_qids": [
+        "Q2",
+        "Q38",
+        "Q183",
+        "Q218",
+        "Q801",
+        "Q810",
+        "Q6681",
+        "Q23883",
+        "Q52035",
+        "Q53514",
+        "Q120052",
+        "Q219060",
+        "Q755123",
+        "Q3403140",
+        "Q3936338",
+        "Q12778461",
+        "Q27686281",
+        "Q27686986",
+        "Q61788595",
+        "Q103177460",
+        "Q126503090",
+        "Q130529871",
+        "Q130547772"
+      ]
+    },
+    {
+      "anchors": [],
+      "classes": [
+        {
+          "id": "Q1",
+          "instances": 13,
+          "label": "Class",
+          "property_instances": 0,
+          "superclasses": [
+            "Q3"
+          ]
+        },
+        {
+          "id": "Q2",
+          "instances": 0,
+          "label": "Property",
+          "property_instances": 168,
+          "superclasses": [
+            "Q3"
+          ]
+        },
+        {
+          "id": "Q3",
+          "instances": 387,
+          "label": "Instance",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q100",
+          "instances": 6,
+          "label": "software",
+          "property_instances": 0,
+          "superclasses": [
+            "Q3"
+          ]
+        },
+        {
+          "id": "Q101",
+          "instances": 0,
+          "label": "research software",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        },
+        {
+          "id": "Q102",
+          "instances": 94,
+          "label": "application software",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        },
+        {
+          "id": "Q103",
+          "instances": 248,
+          "label": "software library",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        },
+        {
+          "id": "Q104",
+          "instances": 74,
+          "label": "script file",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        },
+        {
+          "id": "Q105",
+          "instances": 6,
+          "label": "Little Minion",
+          "property_instances": 0,
+          "superclasses": [
+            "Q3"
+          ]
+        },
+        {
+          "id": "Q106",
+          "instances": 442,
+          "label": "chublet",
+          "property_instances": 0,
+          "superclasses": [
+            "Q101",
+            "Q105"
+          ]
+        },
+        {
+          "id": "Q372",
+          "instances": 4,
+          "label": "utility software",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        },
+        {
+          "id": "Q378",
+          "instances": 2,
+          "label": "QGIS plugin",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        },
+        {
+          "id": "Q379",
+          "instances": 1,
+          "label": "plug-in",
+          "property_instances": 0,
+          "superclasses": [
+            "Q100"
+          ]
+        }
+      ],
+      "file": "n4o-rse.github.io-chublets-wikibase-demo.ttl",
+      "id": "chublets",
+      "inherited_anchors": [],
+      "items": 832,
+      "label": "chublets.software Wikibase (model demo)",
+      "properties": {
+        "P1": {
+          "datatype": "WikibaseItem",
+          "label": "subclass of",
+          "uses": 13
+        },
+        "P10": {
+          "datatype": "WikibaseItem",
+          "label": "range",
+          "uses": 71
+        },
+        "P100": {
+          "datatype": "ExternalId",
+          "label": "close match Wikidata property",
+          "uses": 24
+        },
+        "P101": {
+          "datatype": "ExternalId",
+          "label": "equivalent CodeMeta term",
+          "uses": 84
+        },
+        "P102": {
+          "datatype": "ExternalId",
+          "label": "equivalent schema.org term",
+          "uses": 71
+        },
+        "P103": {
+          "datatype": "String",
+          "label": "application category",
+          "uses": 0
+        },
+        "P104": {
+          "datatype": "Time",
+          "label": "archive date",
+          "uses": 0
+        },
+        "P105": {
+          "datatype": "Url",
+          "label": "archive URL",
+          "uses": 0
+        },
+        "P106": {
+          "datatype": "WikibaseItem",
+          "label": "collection",
+          "uses": 416
+        },
+        "P107": {
+          "datatype": "WikibaseItem",
+          "label": "copyright license",
+          "uses": 2
+        },
+        "P108": {
+          "datatype": "ExternalId",
+          "label": "CRAN project",
+          "uses": 39
+        },
+        "P109": {
+          "datatype": "WikibaseItem",
+          "label": "depends on software",
+          "uses": 34
+        },
+        "P110": {
+          "datatype": "Url",
+          "label": "described at URL",
+          "uses": 4
+        },
+        "P111": {
+          "datatype": "WikibaseItem",
+          "label": "described by source",
+          "uses": 25
+        },
+        "P112": {
+          "datatype": "String",
+          "label": "description",
+          "uses": 0
+        },
+        "P113": {
+          "datatype": "WikibaseItem",
+          "label": "developer",
+          "uses": 511
+        },
+        "P114": {
+          "datatype": "ExternalId",
+          "label": "DOI",
+          "uses": 35
+        },
+        "P115": {
+          "datatype": "Url",
+          "label": "exact match",
+          "uses": 416
+        },
+        "P116": {
+          "datatype": "String",
+          "label": "inventory number",
+          "uses": 416
+        },
+        "P117": {
+          "datatype": "WikibaseItem",
+          "label": "main subject",
+          "uses": 614
+        },
+        "P118": {
+          "datatype": "WikibaseItem",
+          "label": "maintained by WikiProject",
+          "uses": 416
+        },
+        "P119": {
+          "datatype": "Monolingualtext",
+          "label": "name",
+          "uses": 416
+        },
+        "P120": {
+          "datatype": "Url",
+          "label": "official website",
+          "uses": 125
+        },
+        "P121": {
+          "datatype": "ExternalId",
+          "label": "open-archaeo ID",
+          "uses": 0
+        },
+        "P122": {
+          "datatype": "WikibaseItem",
+          "label": "part of",
+          "uses": 832
+        },
+        "P123": {
+          "datatype": "WikibaseItem",
+          "label": "programmed in",
+          "uses": 305
+        },
+        "P124": {
+          "datatype": "ExternalId",
+          "label": "PyPI project",
+          "uses": 1
+        },
+        "P125": {
+          "datatype": "Url",
+          "label": "source code repository URL",
+          "uses": 397
+        },
+        "P126": {
+          "datatype": "WikibaseItem",
+          "label": "version control system",
+          "uses": 0
+        },
+        "P127": {
+          "datatype": "ExternalId",
+          "label": "Wikidata item",
+          "uses": 0
+        },
+        "P128": {
+          "datatype": "String",
+          "label": "application sub category",
+          "uses": 0
+        },
+        "P129": {
+          "datatype": "String",
+          "label": "application suite",
+          "uses": 0
+        },
+        "P130": {
+          "datatype": "WikibaseItem",
+          "label": "based on",
+          "uses": 0
+        },
+        "P131": {
+          "datatype": "WikibaseItem",
+          "label": "contributor to the creative work or subject",
+          "uses": 0
+        },
+        "P132": {
+          "datatype": "String",
+          "label": "development status",
+          "uses": 0
+        },
+        "P133": {
+          "datatype": "Url",
+          "label": "download URL",
+          "uses": 0
+        },
+        "P134": {
+          "datatype": "WikibaseItem",
+          "label": "funder",
+          "uses": 0
+        },
+        "P135": {
+          "datatype": "ExternalId",
+          "label": "GitHub account",
+          "uses": 0
+        },
+        "P136": {
+          "datatype": "WikibaseItem",
+          "label": "has part(s)",
+          "uses": 0
+        },
+        "P137": {
+          "datatype": "Time",
+          "label": "inception",
+          "uses": 1
+        },
+        "P138": {
+          "datatype": "Url",
+          "label": "issue tracker URL",
+          "uses": 0
+        },
+        "P139": {
+          "datatype": "Time",
+          "label": "last update",
+          "uses": 0
+        },
+        "P140": {
+          "datatype": "WikibaseItem",
+          "label": "maintained by",
+          "uses": 0
+        },
+        "P141": {
+          "datatype": "Url",
+          "label": "official demo URL",
+          "uses": 0
+        },
+        "P142": {
+          "datatype": "WikibaseItem",
+          "label": "operating system",
+          "uses": 0
+        },
+        "P143": {
+          "datatype": "WikibaseItem",
+          "label": "platform",
+          "uses": 0
+        },
+        "P144": {
+          "datatype": "Time",
+          "label": "publication date",
+          "uses": 0
+        },
+        "P145": {
+          "datatype": "WikibaseItem",
+          "label": "readable file format",
+          "uses": 0
+        },
+        "P146": {
+          "datatype": "String",
+          "label": "series ordinal",
+          "uses": 0
+        },
+        "P147": {
+          "datatype": "ExternalId",
+          "label": "SoftWare Hash IDentifier",
+          "uses": 0
+        },
+        "P148": {
+          "datatype": "String",
+          "label": "software version identifier",
+          "uses": 5
+        },
+        "P149": {
+          "datatype": "WikibaseItem",
+          "label": "supporting data",
+          "uses": 0
+        },
+        "P150": {
+          "datatype": "WikibaseItem",
+          "label": "target product",
+          "uses": 0
+        },
+        "P151": {
+          "datatype": "Url",
+          "label": "user manual URL",
+          "uses": 0
+        },
+        "P152": {
+          "datatype": "String",
+          "label": "version",
+          "uses": 0
+        },
+        "P153": {
+          "datatype": "WikibaseItem",
+          "label": "version type",
+          "uses": 0
+        },
+        "P154": {
+          "datatype": "WikibaseItem",
+          "label": "writable file format",
+          "uses": 0
+        },
+        "P155": {
+          "datatype": "String",
+          "label": "address",
+          "uses": 0
+        },
+        "P156": {
+          "datatype": "WikibaseItem",
+          "label": "affiliation",
+          "uses": 0
+        },
+        "P157": {
+          "datatype": "WikibaseItem",
+          "label": "archives at",
+          "uses": 0
+        },
+        "P158": {
+          "datatype": "String",
+          "label": "available on device",
+          "uses": 0
+        },
+        "P159": {
+          "datatype": "WikibaseItem",
+          "label": "award received",
+          "uses": 0
+        },
+        "P160": {
+          "datatype": "WikibaseItem",
+          "label": "binding of software library",
+          "uses": 0
+        },
+        "P161": {
+          "datatype": "Url",
+          "label": "build instructions",
+          "uses": 0
+        },
+        "P162": {
+          "datatype": "WikibaseItem",
+          "label": "cites work",
+          "uses": 0
+        },
+        "P163": {
+          "datatype": "String",
+          "label": "code sample type",
+          "uses": 0
+        },
+        "P164": {
+          "datatype": "WikibaseItem",
+          "label": "computes solution to",
+          "uses": 0
+        },
+        "P165": {
+          "datatype": "Url",
+          "label": "cont integration",
+          "uses": 0
+        },
+        "P166": {
+          "datatype": "Url",
+          "label": "continuous integration",
+          "uses": 0
+        },
+        "P167": {
+          "datatype": "WikibaseItem",
+          "label": "copyright holder",
+          "uses": 0
+        },
+        "P168": {
+          "datatype": "Quantity",
+          "label": "copyright year",
+          "uses": 0
+        },
+        "P169": {
+          "datatype": "String",
+          "label": "countries not supported",
+          "uses": 0
+        },
+        "P170": {
+          "datatype": "String",
+          "label": "countries supported",
+          "uses": 0
+        },
+        "P171": {
+          "datatype": "WikibaseItem",
+          "label": "creator",
+          "uses": 1
+        },
+        "P172": {
+          "datatype": "Quantity",
+          "label": "data size",
+          "uses": 0
+        },
+        "P173": {
+          "datatype": "WikibaseItem",
+          "label": "distribution format",
+          "uses": 0
+        },
+        "P174": {
+          "datatype": "ExternalId",
+          "label": "DistroWatch ID",
+          "uses": 0
+        },
+        "P175": {
+          "datatype": "ExternalId",
+          "label": "Google Play Store app ID",
+          "uses": 0
+        },
+        "P176": {
+          "datatype": "ExternalId",
+          "label": "Debian stable package",
+          "uses": 0
+        },
+        "P177": {
+          "datatype": "ExternalId",
+          "label": "Arch Linux package",
+          "uses": 0
+        },
+        "P178": {
+          "datatype": "ExternalId",
+          "label": "Fedora package",
+          "uses": 0
+        },
+        "P179": {
+          "datatype": "ExternalId",
+          "label": "Ubuntu package",
+          "uses": 0
+        },
+        "P180": {
+          "datatype": "ExternalId",
+          "label": "Gentoo package",
+          "uses": 0
+        },
+        "P181": {
+          "datatype": "ExternalId",
+          "label": "F-Droid package",
+          "uses": 0
+        },
+        "P182": {
+          "datatype": "WikibaseItem",
+          "label": "version, edition or translation of",
+          "uses": 0
+        },
+        "P183": {
+          "datatype": "WikibaseItem",
+          "label": "editor",
+          "uses": 0
+        },
+        "P184": {
+          "datatype": "Url",
+          "label": "email address",
+          "uses": 0
+        },
+        "P185": {
+          "datatype": "Time",
+          "label": "embargo date",
+          "uses": 0
+        },
+        "P186": {
+          "datatype": "Time",
+          "label": "embargo end date",
+          "uses": 0
+        },
+        "P187": {
+          "datatype": "WikibaseItem",
+          "label": "encoding",
+          "uses": 0
+        },
+        "P188": {
+          "datatype": "Time",
+          "label": "end date",
+          "uses": 0
+        },
+        "P189": {
+          "datatype": "Time",
+          "label": "end time",
+          "uses": 0
+        },
+        "P190": {
+          "datatype": "WikibaseItem",
+          "label": "facet of",
+          "uses": 0
+        },
+        "P191": {
+          "datatype": "WikibaseItem",
+          "label": "family name",
+          "uses": 0
+        },
+        "P192": {
+          "datatype": "String",
+          "label": "feature list",
+          "uses": 0
+        },
+        "P193": {
+          "datatype": "WikibaseItem",
+          "label": "field of work",
+          "uses": 0
+        },
+        "P194": {
+          "datatype": "WikibaseItem",
+          "label": "file format",
+          "uses": 0
+        },
+        "P195": {
+          "datatype": "WikibaseItem",
+          "label": "followed by",
+          "uses": 0
+        },
+        "P196": {
+          "datatype": "WikibaseItem",
+          "label": "follows",
+          "uses": 0
+        },
+        "P197": {
+          "datatype": "ExternalId",
+          "label": "Framalibre ID",
+          "uses": 0
+        },
+        "P198": {
+          "datatype": "ExternalId",
+          "label": "Free Software Directory entry",
+          "uses": 0
+        },
+        "P199": {
+          "datatype": "String",
+          "label": "funding",
+          "uses": 0
+        },
+        "P2": {
+          "datatype": "WikibaseItem",
+          "label": "instance of",
+          "uses": 1445
+        },
+        "P200": {
+          "datatype": "WikibaseItem",
+          "label": "given name",
+          "uses": 0
+        },
+        "P201": {
+          "datatype": "WikibaseItem",
+          "label": "GUI toolkit or framework",
+          "uses": 0
+        },
+        "P202": {
+          "datatype": "WikibaseItem",
+          "label": "has characteristic",
+          "uses": 0
+        },
+        "P203": {
+          "datatype": "WikibaseItem",
+          "label": "has source code",
+          "uses": 0
+        },
+        "P204": {
+          "datatype": "CommonsMedia",
+          "label": "image",
+          "uses": 2
+        },
+        "P205": {
+          "datatype": "WikibaseItem",
+          "label": "influenced by",
+          "uses": 0
+        },
+        "P206": {
+          "datatype": "WikibaseItem",
+          "label": "input device",
+          "uses": 0
+        },
+        "P207": {
+          "datatype": "Url",
+          "label": "install URL",
+          "uses": 0
+        },
+        "P208": {
+          "datatype": "Url",
+          "label": "IRC channel URL",
+          "uses": 0
+        },
+        "P209": {
+          "datatype": "String",
+          "label": "is accessible for free",
+          "uses": 0
+        },
+        "P210": {
+          "datatype": "WikibaseItem",
+          "label": "is source code of",
+          "uses": 0
+        },
+        "P211": {
+          "datatype": "CommonsMedia",
+          "label": "logo image",
+          "uses": 0
+        },
+        "P212": {
+          "datatype": "String",
+          "label": "media type",
+          "uses": 0
+        },
+        "P213": {
+          "datatype": "WikibaseItem",
+          "label": "member of",
+          "uses": 0
+        },
+        "P214": {
+          "datatype": "String",
+          "label": "memory requirements",
+          "uses": 0
+        },
+        "P215": {
+          "datatype": "WikibaseItem",
+          "label": "notable work",
+          "uses": 0
+        },
+        "P216": {
+          "datatype": "Url",
+          "label": "official blog URL",
+          "uses": 0
+        },
+        "P217": {
+          "datatype": "ExternalId",
+          "label": "Open Hub ID",
+          "uses": 0
+        },
+        "P218": {
+          "datatype": "WikibaseItem",
+          "label": "output device",
+          "uses": 0
+        },
+        "P219": {
+          "datatype": "WikibaseItem",
+          "label": "package management system",
+          "uses": 0
+        },
+        "P220": {
+          "datatype": "WikibaseItem",
+          "label": "part of the series",
+          "uses": 0
+        },
+        "P221": {
+          "datatype": "String",
+          "label": "permissions",
+          "uses": 0
+        },
+        "P222": {
+          "datatype": "Url",
+          "label": "person identifier",
+          "uses": 0
+        },
+        "P223": {
+          "datatype": "Time",
+          "label": "point in time",
+          "uses": 0
+        },
+        "P224": {
+          "datatype": "Quantity",
+          "label": "port",
+          "uses": 0
+        },
+        "P225": {
+          "datatype": "String",
+          "label": "position",
+          "uses": 0
+        },
+        "P226": {
+          "datatype": "Quantity",
+          "label": "price",
+          "uses": 0
+        },
+        "P227": {
+          "datatype": "String",
+          "label": "processor requirements",
+          "uses": 0
+        },
+        "P228": {
+          "datatype": "WikibaseItem",
+          "label": "producer",
+          "uses": 0
+        },
+        "P229": {
+          "datatype": "WikibaseItem",
+          "label": "provider",
+          "uses": 0
+        },
+        "P230": {
+          "datatype": "WikibaseItem",
+          "label": "publisher",
+          "uses": 0
+        },
+        "P231": {
+          "datatype": "Url",
+          "label": "readme",
+          "uses": 0
+        },
+        "P232": {
+          "datatype": "String",
+          "label": "release notes",
+          "uses": 0
+        },
+        "P233": {
+          "datatype": "WikibaseItem",
+          "label": "review",
+          "uses": 0
+        },
+        "P234": {
+          "datatype": "String",
+          "label": "review aspect",
+          "uses": 0
+        },
+        "P235": {
+          "datatype": "String",
+          "label": "review body",
+          "uses": 0
+        },
+        "P236": {
+          "datatype": "String",
+          "label": "role name",
+          "uses": 0
+        },
+        "P237": {
+          "datatype": "WikibaseItem",
+          "label": "software add on",
+          "uses": 0
+        },
+        "P238": {
+          "datatype": "WikibaseItem",
+          "label": "software engine",
+          "uses": 0
+        },
+        "P239": {
+          "datatype": "WikibaseItem",
+          "label": "software quality assurance",
+          "uses": 0
+        },
+        "P240": {
+          "datatype": "WikibaseItem",
+          "label": "software suggestions",
+          "uses": 0
+        },
+        "P241": {
+          "datatype": "ExternalId",
+          "label": "SourceForge project",
+          "uses": 0
+        },
+        "P242": {
+          "datatype": "WikibaseItem",
+          "label": "sponsor",
+          "uses": 0
+        },
+        "P243": {
+          "datatype": "Time",
+          "label": "start date",
+          "uses": 0
+        },
+        "P244": {
+          "datatype": "Time",
+          "label": "start time",
+          "uses": 0
+        },
+        "P245": {
+          "datatype": "String",
+          "label": "storage requirements",
+          "uses": 0
+        },
+        "P246": {
+          "datatype": "ExternalId",
+          "label": "swMATH work ID",
+          "uses": 0
+        },
+        "P247": {
+          "datatype": "Monolingualtext",
+          "label": "title",
+          "uses": 2
+        },
+        "P248": {
+          "datatype": "WikibaseItem",
+          "label": "web interface software",
+          "uses": 0
+        },
+        "P249": {
+          "datatype": "WikibaseItem",
+          "label": "digital rights management system",
+          "uses": 0
+        },
+        "P250": {
+          "datatype": "ExternalId",
+          "label": "ISO standard",
+          "uses": 0
+        },
+        "P251": {
+          "datatype": "WikibaseItem",
+          "label": "language of work or name",
+          "uses": 0
+        },
+        "P252": {
+          "datatype": "WikibaseItem",
+          "label": "movement",
+          "uses": 0
+        },
+        "P253": {
+          "datatype": "WikibaseItem",
+          "label": "removed feature",
+          "uses": 0
+        },
+        "P254": {
+          "datatype": "ExternalId",
+          "label": "RfC ID",
+          "uses": 0
+        },
+        "P255": {
+          "datatype": "Url",
+          "label": "Stack Exchange tag",
+          "uses": 0
+        },
+        "P256": {
+          "datatype": "String",
+          "label": "TeX string",
+          "uses": 0
+        },
+        "P257": {
+          "datatype": "String",
+          "label": "Unicode character",
+          "uses": 0
+        },
+        "P3": {
+          "datatype": "WikibaseProperty",
+          "label": "subproperty of",
+          "uses": 0
+        },
+        "P4": {
+          "datatype": "ExternalId",
+          "label": "Wikidata equivalent",
+          "uses": 152
+        },
+        "P5": {
+          "datatype": "String",
+          "label": "formatter URL",
+          "uses": 4
+        },
+        "P6": {
+          "datatype": "Url",
+          "label": "reference URL",
+          "uses": 0
+        },
+        "P7": {
+          "datatype": "Time",
+          "label": "retrieved",
+          "uses": 0
+        },
+        "P8": {
+          "datatype": "WikibaseItem",
+          "label": "stated in",
+          "uses": 0
+        },
+        "P9": {
+          "datatype": "WikibaseItem",
+          "label": "domain",
+          "uses": 135
+        }
+      },
+      "rdf_base": "https://n4o-rse.github.io/chublets-wikibase-demo",
+      "references": 600,
+      "roles": {
+        "external_match": "P115",
+        "instance_of": "P2",
+        "part_of": "P122",
+        "subclass_of": "P1",
+        "wikidata_equivalent": "P4"
+      },
+      "roots": [
+        "Q3"
+      ],
+      "statements": 7046,
+      "triples": 99261,
+      "wikidata_qids": [
+        "Q364",
+        "Q1860",
+        "Q2005",
+        "Q2013",
+        "Q7397",
+        "Q28865",
+        "Q166142",
+        "Q184148",
+        "Q188860",
+        "Q312466",
+        "Q334661",
+        "Q1070421",
+        "Q1985727",
+        "Q2804309",
+        "Q10513450",
+        "Q47213994",
+        "Q58529575",
+        "Q66606154",
+        "Q67624599",
+        "Q73899440",
+        "Q73901970",
+        "Q74003194",
+        "Q74004218",
+        "Q74005133",
+        "Q74823867",
+        "Q74824570",
+        "Q88865971",
+        "Q95001953",
+        "Q98229157",
+        "Q115755098",
+        "Q123054280",
+        "Q125400678",
+        "Q141115627",
+        "Q141818802"
+      ]
+    }
+  ],
+  "warnings": []
+}
