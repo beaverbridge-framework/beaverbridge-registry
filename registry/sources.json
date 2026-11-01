@@ -8,8 +8,14 @@
       "rdf_base": "https://n4o-rse.github.io/fuzzy-sl-static",
       "prefix_family": "wd",
       "files": [
-        "downloads/n4o-rse.github.io-fuzzy-sl-static.ttl",
-        "downloads/wikibase-ontology.ttl"
+        {
+          "path": "downloads/n4o-rse.github.io-fuzzy-sl-static.ttl",
+          "role": "export"
+        },
+        {
+          "path": "downloads/wikibase-ontology.ttl",
+          "role": "ontology"
+        }
       ]
     },
     {
@@ -20,8 +26,14 @@
       "rdf_base": "https://n4o-rse.github.io/chublets-wikibase-demo",
       "prefix_family": "chb",
       "files": [
-        "downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl",
-        "downloads/wikibase-ontology.ttl"
+        {
+          "path": "downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl",
+          "role": "export"
+        },
+        {
+          "path": "downloads/wikibase-ontology.ttl",
+          "role": "ontology"
+        }
       ]
     }
   ]

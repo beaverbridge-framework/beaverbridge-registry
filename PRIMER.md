@@ -24,9 +24,11 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 1. Jede Instanz hat einen **eigenen Namespace** über `rdf_base` in `site.yaml`. Entitäts-IRIs sind deshalb global eindeutig, obwohl die Kurz-IDs kollidieren (`Q1` gibt es in beiden). Ein Umschreiben der IRIs ist **nicht nötig**; nur Anzeige und Facetten brauchen ein Instanz-Präfix.
 2. Die **Präfixfamilien unterscheiden sich**: fuzzy-sl-static schreibt `wd:`, `wdt:`, `p:`, `ps:` (mit eigener Basis-IRI), chublets-wikibase-demo schreibt `chb:`, `chbt:`, `chbp:`, `chbps:`. Das ist nur Syntax; nach dem Parsen sind es volle IRIs. Eine gemeinsame Abfrage darf sich nicht auf Präfixnamen stützen.
 3. **Property-Pfade unterscheiden sich im Kern:** P1/P2 bedeuten in beiden Instanzen nicht dasselbe (fuzzy-sl: `formatter_property: P18`; Chublets: `P5`; Chublets-Kern: Q1 Class, Q2 Property, Q3 Instance, P1 subclass of, P2 instance of). Eine instanzübergreifende Abfrage nach „instance of" braucht eine **Property-Zuordnung je Instanz** (Crosswalk), kein gemeinsames `P31`.
-4. **Veröffentlichte RDF-Dateien** liegen je Instanz unter `docs/downloads/`: `<host>-<repo>.ttl` (Vollexport) und `wikibase-ontology.ttl`. Größen: fuzzy-sl ca. 0,6 MB, Chublets ca. 5,2 MB. Erreichbarkeit über Pages ist noch **nicht** geprüft (S2).
+4. **Veröffentlichte RDF-Dateien** liegen je Instanz unter `docs/downloads/`: `<host>-<repo>.ttl` (Vollexport) und `wikibase-ontology.ttl`. Größen: fuzzy-sl ca. 0,6 MB, Chublets ca. 5,2 MB. Erreichbarkeit über die echten Pages-Adressen ist aus der Sandbox **nicht** prüfbar (Proxy antwortet 403 auf `github.io`, geprüft 2026-11-01); der Harvest wurde gegen lokal ausgelieferte Klone getestet. Die Prüfung am PC steht in der Abnahme von S2.
 5. Die Chublets-Demo trägt `counterpart:` in `site.yaml` und schreibt dadurch `owl:sameAs` auf die echte Wikibase `chublets-wikibase.de`. Das ist dort Absicht; die Registry übernimmt es unverändert, behauptet aber selbst nichts darüber.
-6. Beide Exporte enthalten ein eigenes DCAT-Dataset (`cat:export` bzw. `chbcat:`) mit Lizenzangabe (CC0). Das ist der Anker für den Katalogeintrag.
+6. `downloads/wikibase-ontology.ttl` ist in **beiden** Instanzen byte-identisch (11 336 Bytes, 255 Tripel, SHA-256 `5f71c0e8…`) und nennt keinen Instanz-Namespace; es ist die generische Wikibase-Ontologie von wikibase-static (geprüft 2026-11-01). Folge: Sie wird je Instanz geholt, im Bundle aber nur einmal gebraucht, und eine `rdf_base`-Prüfung gilt nur für den Vollexport (`role: export`).
+7. Tripelzahlen der Vollexporte (rdflib 7.6.0, 2026-11-01): fuzzy-sl 12 462 (wikibase-static 0.10.0, Daten vom 2025-11-01), Chublets 99 261 (0.19.0, Daten vom 2026-10-25). Beide parsen ohne Fehler.
+8. Beide Exporte enthalten ein eigenes DCAT-Dataset (`cat:export` bzw. `chbcat:`) mit Lizenzangabe (CC0). Das ist der Anker für den Katalogeintrag.
 
 ### A2 Zielbild
 
@@ -80,6 +82,10 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Anzeige bei gleichen IDs | Instanz-Präfix, z. B. `fuzzy-sl:Q1`, `chublets:Q1`, Label dahinter | 2026-11-01 |
 | Bundle-Umfang | Items, Properties und Klassen | 2026-11-01 |
 | Startinstanzen | `fuzzy-sl-static` und `chublets-wikibase-demo` | 2026-11-01 |
+| Rolle der Dateien in `sources.json` | je Datei `role`: `export` (Vollexport, wird gegen `rdf_base` geprüft) oder `ontology` (generische Wikibase-Ontologie) | 2026-11-01 |
+| Harvest-Fehler | eine nicht erreichbare Instanz bricht den Lauf nicht ab (Exit 0, Meldung); nur `--strict` macht daraus Exit 1; Stopp nach drei Instanzen ohne Treffer in Folge | 2026-11-01 |
+| Manifest ohne Uhr | `harvest.json` enthält Bytes, SHA-256, ETag, Generator und Datenstand aus der Datei selbst, keine Abrufzeit | 2026-11-01 |
+| Rohdaten bleiben Bytes | `.gitattributes`: `data/raw/** -text`, damit kein Zeilenende-Umbau den SHA-256 ändert; Dateien werden schreibgeschützt abgelegt | 2026-11-01 |
 | Merge gleicher Dinge über Instanzen | kein Merge ohne Beleg; gleiche Namen werden gemeldet, nie verschmolzen | Vorschlag |
 | CRM-Anker | Crosswalk-CSV je Instanz als einzige Quelle, Mechanismen wie in fdo-squirrel-registry (`axiom`, `ext-axiom`, `normalise`, `instance`, `none`) | Vorschlag |
 | Shapes | Severity nach dem Modalverb des N4O-CIDOC-CRM-Profils (MUST → Fehler, SHOULD → Warnung) | Vorschlag |
@@ -116,7 +122,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 |---|---|---|---|---|
 | S0 | Festlegungen (Name, Ort, IRIs, Anzeige, Umfang) | — | — | erledigt 2026-11-01 |
 | S1 | Skeleton: Layout, `main.py`, Utils, Licence, Citation | beaverbridge-registry | S0 | erledigt 2026-11-01 |
-| S2 | Harvest: `sources.json`, Pages-Download, `harvest.json`, Hash | beaverbridge-registry | S1 | offen |
+| S2 | Harvest: `sources.json`, Pages-Download, `harvest.json`, Hash | beaverbridge-registry | S1 | Code fertig 2026-11-01, Lauf gegen echte Pages am PC offen |
 | S3 | Befund je Instanz: Klassen, Properties, Kern-Properties (Crosswalk-Entwurf) | beaverbridge-registry | S2 | offen |
 | S4 | Bundle: DCAT-Katalog, Instanz-Präfix, Herkunft | beaverbridge-registry | S2 | offen |
 | S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | offen |
@@ -153,7 +159,15 @@ Skeleton steht. `main.py --list` nennt sechs Schritte (`harvest` explizit, die a
 
 Kern: `sources.json` führt je Instanz `id`, `pages_url`, `rdf_base`, `prefix_family`. Der Harvest lädt `downloads/*.ttl`, prüft per Bytezahl und SHA-256 gegen den vorherigen Lauf und schreibt nichts neu, wenn nichts neu ist. Eine nicht erreichbare Instanz bricht den Lauf nicht ab; nach drei Fehlern in Folge stoppt er. Wegen der Anubis-Erfahrung bei Wikibase Cloud: Pages selbst ist unkritisch, die Quelle bleibt aber nie direkt im Spiel.
 
-**Abnahme:** `python main.py harvest` holt beide Dateien; ein zweiter Lauf lädt nichts; `harvest.json` nennt Generator-Version (`0.10.0` bzw. `0.19.0`) und Hash.
+**Abnahme:** `python main.py harvest` holt je Instanz Vollexport und Ontologie; ein zweiter Lauf meldet nur 'unchanged'; `harvest.json` nennt Generator-Version (`0.10.0` bzw. `0.19.0`), Hash und Tripelzahl; nach `git add`, `commit` und erneutem Lauf ist `git status` sauber.
+
+### Erledigt 2026-11-01 (Code; Lauf gegen echte Pages offen)
+
+Umgesetzt in `py/step_harvest.py`: Download per HTTP mit `If-None-Match` (ETag), bei 304 keine Übertragung; bei gleichem SHA-256 wird nichts neu geschrieben; Parse-Prüfung mit rdflib (Tripelzahl im Manifest, Parse-Fehler als Warnung, Datei bleibt unverändert); `--force`, `--instance`, `--local` (liest aus `clone_dir` in `config.local.json`), `--offline`, `--sources`, `--strict`. `main.py` reicht unbekannte Optionen an den Schritt weiter (`python main.py harvest --force`) und schreibt `dist/pipeline_report.txt` nur noch bei einem vollen Lauf.
+
+Getestet gegen lokal ausgelieferte Klone mit ETag-Server: Lauf 1 holt vier Dateien (0,6 MB und 5,2 MB), Lauf 2 meldet viermal 304, das Manifest ist nach Lauf 2 und nach `--force` byte-identisch; `--local` liefert dieselben Hashes; ein toter Port gibt Exit 0, mit `--strict` Exit 1, und legt nichts an.
+
+**Offen für die Abnahme am PC:** Echter Lauf gegen `n4o-rse.github.io`, dann `data/raw/` einchecken.
 
 *(S3–S9 werden angelegt, sobald sie dran sind.)*
 

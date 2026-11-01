@@ -53,10 +53,10 @@ def select(args) -> list:
     return chosen
 
 
-def run_step(step, strict: bool, log: list) -> tuple[int, float]:
+def run_step(step, strict: bool, log: list, extra: list) -> tuple[int, float]:
     name, path, _, _ = step
     env = dict(os.environ, PYTHONIOENCODING="utf-8")
-    cmd = [sys.executable, str(ROOT / path)] + (["--strict"] if strict else [])
+    cmd = [sys.executable, str(ROOT / path)] + (["--strict"] if strict else []) + extra
     t0 = time.perf_counter()
     proc = subprocess.Popen(cmd, cwd=ROOT, env=env, stdout=subprocess.PIPE,
                             stderr=subprocess.STDOUT, text=True, encoding="utf-8")
@@ -76,7 +76,7 @@ def main() -> int:
     ap.add_argument("--skip")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--strict", action="store_true")
-    args = ap.parse_args()
+    args, extra = ap.parse_known_args()  # unknown options go to the step, e.g.  python main.py harvest --force
 
     if args.list:
         for name, path, default, desc in STEPS:
@@ -94,7 +94,7 @@ def main() -> int:
         header = f"[{step[0]}]"
         print(header)
         log.append(header)
-        code, secs = run_step(step, args.strict, log)
+        code, secs = run_step(step, args.strict, log, extra if (args.verb or args.only) else [])
         timings.append((step[0], secs))
         if code != 0:
             print(f"step {step[0]} failed (exit {code})")
@@ -105,10 +105,12 @@ def main() -> int:
     for name, secs in timings:
         print(f"{name:10} {secs:8.2f} {100 * secs / total:6.1f} %")
 
-    report = ROOT / "dist" / "pipeline_report.txt"
-    report.parent.mkdir(exist_ok=True)
-    # No clock in the output: the report holds step names and lines only; timings stay on the terminal.
-    report.write_text("\n".join(log) + "\n", encoding="utf-8", newline="\n")
+    if not (args.verb or args.only):
+        # Only a full run writes the report, so a single step cannot overwrite it with a fragment.
+        report = ROOT / "dist" / "pipeline_report.txt"
+        report.parent.mkdir(exist_ok=True)
+        # No clock in the output: the report holds step names and lines only; timings stay on the terminal.
+        report.write_text("\n".join(log) + "\n", encoding="utf-8", newline="\n")
     return 0
 
 

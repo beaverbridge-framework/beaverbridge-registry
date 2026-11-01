@@ -1,0 +1,10 @@
+# LF everywhere, so a rebuild on Windows does not rewrite every file.
+* text=auto eol=lf
+
+# Harvested files are kept byte-for-byte as the instance published them: the SHA-256 in harvest.json is the hash
+# of these bytes, and a line-ending conversion would change it.
+data/raw/** -text
+
+# Generated, versioned products: edit the generator, never the artefact.
+dist/** linguist-generated=true
+docs/** linguist-generated=true

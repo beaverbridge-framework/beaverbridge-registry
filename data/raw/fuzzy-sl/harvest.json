@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "bytes": 624828,
+      "data_as_of": "2025-11-01T08:28:29Z",
+      "etag": "\"6ad9da18-988bc\"",
+      "generator": "wikibase-static 0.10.0",
+      "licence": "CC0 1.0",
+      "path": "downloads/n4o-rse.github.io-fuzzy-sl-static.ttl",
+      "rdf_base_seen": true,
+      "role": "export",
+      "route": "http",
+      "sha256": "91d5b8849ad785b52170b500f2f8b9b0ec0bd06a650ac9b41f94917c6bbaa884",
+      "triples": 12462
+    },
+    {
+      "bytes": 11336,
+      "etag": "\"6ad9da18-2c48\"",
+      "path": "downloads/wikibase-ontology.ttl",
+      "role": "ontology",
+      "route": "http",
+      "sha256": "5f71c0e84afda5de7fe6cc2dc33f8b7fe9dcab764cfe516c60bc037f8ebd87eb",
+      "triples": 255
+    }
+  ],
+  "instance": "fuzzy-sl",
+  "label": "fuzzy-sl (static copy)",
+  "pages_url": "https://n4o-rse.github.io/fuzzy-sl-static/",
+  "prefix_family": "wd",
+  "rdf_base": "https://n4o-rse.github.io/fuzzy-sl-static"
+}

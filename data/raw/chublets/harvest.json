@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "bytes": 5176145,
+      "data_as_of": "2026-10-25T00:00:00Z",
+      "etag": "\"6addf4a5-4efb51\"",
+      "generator": "wikibase-static 0.19.0",
+      "licence": "CC0 1.0 (Public Domain)",
+      "path": "downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl",
+      "rdf_base_seen": true,
+      "role": "export",
+      "route": "http",
+      "sha256": "7e79f32a63caff5c7233ab203b41b1066f099982416f3310068d9709742572f2",
+      "triples": 99261
+    },
+    {
+      "bytes": 11336,
+      "etag": "\"6addf4a5-2c48\"",
+      "path": "downloads/wikibase-ontology.ttl",
+      "role": "ontology",
+      "route": "http",
+      "sha256": "5f71c0e84afda5de7fe6cc2dc33f8b7fe9dcab764cfe516c60bc037f8ebd87eb",
+      "triples": 255
+    }
+  ],
+  "instance": "chublets",
+  "label": "chublets.software Wikibase (model demo)",
+  "pages_url": "https://n4o-rse.github.io/chublets-wikibase-demo/",
+  "prefix_family": "chb",
+  "rdf_base": "https://n4o-rse.github.io/chublets-wikibase-demo"
+}
