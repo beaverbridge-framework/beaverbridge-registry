@@ -6,9 +6,9 @@ A registry for static Wikibase instances published with [wikibase-static](https:
 
 This repository is the prototype of **BeaverBridge**, a Community Hub to CIDOC CRM transformation toolkit, and will be merged into it. It follows the pattern of the [FDOx registry](https://github.com/FDOx-squirrel/fdo-squirrel-registry).
 
-> **Status: S7 of the work plan.** Harvest, survey, bundle and the facet search page exist; validation, the SPARQL page and the CRM bridge follow. See [`PRIMER.md`](PRIMER.md) (German) for the plan.
+> **Status: S8 of the work plan.** Harvest, survey, bundle, the facet search page and the browser SPARQL page exist; validation and the CRM bridge follow. See [`PRIMER.md`](PRIMER.md) (German) for the plan.
 
-The site is built into `docs/` and published with GitHub Pages: https://beaverbridge-framework.github.io/beaverbridge-registry/ (facet search, catalogue, one record per instance, the `bbr:` vocabulary, the bundle as Turtle and N-Triples). `docs/index.html` also opens straight from disk.
+The site is built into `docs/` and published with GitHub Pages: https://beaverbridge-framework.github.io/beaverbridge-registry/ (facet search, SPARQL in the browser, catalogue, one record per instance, the `bbr:` vocabulary, the bundle as Turtle and N-Triples). `docs/index.html` also opens straight from disk; the query page needs a web server (`python -m http.server -d docs`) or GitHub Pages.
 
 ## Running
 

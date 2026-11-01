@@ -1,0 +1,21 @@
+# Which Wikibase property stands behind a role?
+# The registry writes every role as a normalised statement next to the source
+# statement. Asking for the source predicate that carries the same object
+# shows the crosswalk at work: <em>instance of</em> is <code>P1</code> in one
+# instance and <code>P2</code> in the other.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT DISTINCT ?instance (REPLACE(STR(?role), "^.*/", "bbr:") AS ?roleName) ?sourcePredicate WHERE {
+  VALUES ?role { bbr:instanceOf bbr:subclassOf bbr:partOf bbr:externalMatch }
+  ?s ?role ?o ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     ?sourcePredicate ?o .
+  FILTER(?sourcePredicate != ?role)
+}
+ORDER BY ?roleName ?instance

@@ -92,6 +92,8 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Bundle-Umfang | nur was Facetten und Abfragen über Instanzen brauchen: Entitäten (Items, Properties, Klassen) mit Typ, Labels, Beschreibung, Direktaussagen, Klassenlinks (`rdfs:subClassOf`, `owl:equivalentClass`, `owl:sameAs`), Property-Metadaten; Katalogknoten der Instanz (Titel, Lizenz, Landingpage). Weggelassen: Statement-, Referenz-, Qualifier-Knoten, Zähler, DCAT je Entität, Leerknoten. Die Whitelist steht in `py/step_bundle.py` | 2026-11-01 |
 | IRI von `bbr:` | `https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/` (Pages-Pfad, später w3id); Vokabular von Hand in `metadata/bbr.ttl` | 2026-11-01 |
 | Katalog-IRIs | Registry `…/catalog`, je Instanz ein `dcat:CatalogRecord` unter `…/record/<id>`; jede Entität trägt `bbr:fromInstance` | 2026-11-01 |
+| Pyodide über CDN | Einzige Ausnahme von „kein Drittanbieter“: `sparql.html` lädt Pyodide von jsDelivr und rdflib von PyPI, gepinnt auf 0.26.4 und 7.1.1; die Seite sagt das offen. Eigenes Hosting (rund 10 MB und Wheels im Repo) wäre die Alternative | 2026-11-01 |
+| Query-Seite | Graph ist das Turtle-Bundle; Abfragen stehen in `queries.yaml`, jede läuft beim Bau und darf nicht leer sein; gleiche Labels werden gemeldet, nie verschmolzen | 2026-11-01 |
 | Seite und Pages | `docs/` wird vollständig von `step_site.py` erzeugt und versioniert (`linguist-generated`); GitHub Pages liefert Branch `main`, Ordner `/docs`; die Seiten brauchen weder Netz noch Drittanbieter | 2026-11-01 |
 | Facetten | Instanz, Klasse (mit Instanz-Präfix), Has (Koordinaten, Wikidata-Link, externer Match), Lizenz; Freitext über Label, Beschreibung, Kennung; Einträge sind Items, Properties nur gezählt | 2026-11-01 |
 | Adressen der Registry-IRIs | `…/catalog`, `…/record/<id>` und `…/vocab/<Begriff>` werden als `.html`-Dateien ausgeliefert (Pages löst die Endung auf); Content Negotiation gibt es nicht, RDF liegt unter `downloads/` und `vocab/bbr.ttl` | 2026-11-01 |
@@ -146,7 +148,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S5 | CRM-Crosswalk: `crosswalks/*.csv` → `crm_bridge.ttl` | beaverbridge-registry | S3, S4 | offen |
 | S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | offen |
 | S7 | Index und Facettenseite | beaverbridge-registry | S4 | erledigt 2026-11-01 |
-| S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | offen |
+| S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S9 | Überführung nach `beaverbridge` | beaverbridge | S5–S8 | offen |
 
 Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 können parallel starten, sobald S2 Daten geliefert hat.
@@ -238,9 +240,31 @@ Umgesetzt:
 
 Getestet in Chromium (Playwright) von der Platte: 969 Einträge, Suche „zoo“ 8 Treffer, fuzzy-sl 137, fuzzy-sl mit Koordinaten 59, Hash-Zustand wird gelesen, kein Konsolenfehler, Breite 390 px ohne Überlauf, Hell und Dunkel geprüft. Dabei gefunden und behoben: In Jinja ist `i.items` die Methode `dict.items`, nicht der Schlüssel; die Seiten waren dadurch nicht byte-identisch (Speicheradresse im Text). Seither `i["items"]`.
 
+Abnahme auf dem PC: Commit 71d6b03, Lauf mit `--strict` grün, `git status` sauber, gepusht. Dabei waren fünf leere Dateien (`51`, `6124`, `git`, `main`, `python`) im Commit, vermutlich durch eine versehentliche `>`-Umleitung am PC; mit 91b217d entfernt.
+
 Aktivierung: GitHub → Settings → Pages → Branch `main`, Ordner `/docs`.
 
-*(S5, S6, S8 und S9 werden angelegt, sobald sie dran sind.)*
+## S8 — Query-Seite
+
+**Ziel:** SPARQL im Browser über das ganze Bundle, ohne Endpunkt und Server, nach dem Muster der Familie (Skill `wdt-sparql`): eine Quelle `queries.yaml`, daraus Seite, `.rq`-Dateien und Notebook.
+
+**Uploads:** keine.
+
+Umgesetzt:
+
+- `queries.yaml` (Wurzel des Repos): Graph `dist/beaverbridge-registry.ttl` (im Browser unter `downloads/…`), ein Präfixblock, zehn Abfragen: Instanzen, Klassen je Instanz, Klassenhierarchie, *welche Wikibase-Property steht hinter einer Rolle* (zeigt die Vertauschung P1/P2), CRM-Anker, Koordinaten, Wikidata-Verweise, Hosts der externen Matches, Properties mit Datentyp, gleiche Labels in mehreren Instanzen (gemeldet, nie verschmolzen).
+- `py/step_sparql.py` führt **jede Abfrage vor dem Schreiben gegen das Bundle aus; eine Abfrage ohne Zeilen bricht den Lauf ab.** Danach `docs/sparql.html`, `docs/downloads/queries/*.rq` und `qmd/beaverbridge-registry-sparql-live.qmd`.
+- Vorlagen `templates/sparql.html.j2` (erbt von `base.html.j2`) und `templates/sparql.qmd.j2`; Pyodide 0.26.4 und rdflib 7.1.1 sind gepinnt (`PYODIDE_VERSION`, `RDFLIB_VERSION`). Ergebnisse höchstens 500 Zeilen, Zellwerte werden an einer Stelle maskiert, ein Parse-Fehler zeigt die echte Meldung.
+- Kopfzeile aller Seiten hat den Link „Query“. Der Theme-Knopf lag bisher nur in `app.js` und tat auf Katalog-, Record- und Vokabularseiten nichts; er steht jetzt in `templates/theme.js` und läuft überall.
+- `registry_utils.jinja_env()` ist die gemeinsame Jinja-Umgebung (`StrictUndefined`).
+
+**Abnahme:** `python main.py --strict` listet zehn Abfragen mit Zeilenzahl > 0; zwei Läufe lassen `dist/`, `docs/` und `qmd/` byte-identisch; über `python -m http.server -d docs` meldet die Seite „Ready“ und „Graph loaded: 19668 triples“; jede Abfrage zeigt dieselbe Zeilenzahl wie im Build; nach dem Push dasselbe unter GitHub Pages.
+
+### Erledigt 2026-11-01
+
+Zeilenzahlen: instances 2, classes 26, hierarchy 21, roles 14, crm-anchors 2, coordinates 73, wikidata 153, match-hosts 2, properties 204, same-label 5. Geprüft: rdflib 7.1.1 unter **echtem** Pyodide 0.26.4 (Node, Python 3.12.1) parst das Bundle in 2,3 s und liefert für alle zehn Abfragen dieselben Zeilenzahlen. Die Seitenlogik (Run, Reset, Fehleranzeige, Tabelle, Theme, Hinweis bei `file://`) wurde in Chromium mit einem Pyodide-Stand-in getestet, weil das CDN aus der Sandbox gesperrt ist; das Laden von Pyodide und rdflib über das Netz ist deshalb erst am PC oder auf Pages geprüft.
+
+*(S5, S6 und S9 werden angelegt, sobald sie dran sind.)*
 
 ---
 
@@ -251,7 +275,8 @@ Aktivierung: GitHub → Settings → Pages → Branch `main`, Ordner `/docs`.
 - **Anker für Chublets:** Die Instanz bringt keinen CRM-Anker mit; er kommt aus der Klassen-Tabelle der Bridge (S5), nicht aus der Quelle.
 - **Doppelte Ablage:** `dist/` und `docs/downloads/` halten dieselben 4 MB; mit jeder Änderung des Bundles wächst die Git-Historie um beide. Wenn es stört: `dist/*.nt/.ttl` nicht mehr versionieren und nur `docs/downloads/` behalten.
 - **Facette nach CRM-Anker:** kommt mit S5, sobald `crm_bridge.ttl` Anker auch für Chublets liefert; der Index hat dafür Platz.
-- **Link zur Query-Seite** in der Kopfzeile (`templates/base.html.j2`) mit S8.
+- **Notebook:** `qmd/…-live.qmd` braucht einmal `quarto add r-wasm/quarto-live` im Repo; gerendert wurde es nicht.
+- **CRM-Abfrage:** `crm-anchors` zeigt heute nur die zwei Anker von fuzzy-sl; mit S5 kommen Chublets dazu, die Abfrage ändert sich nicht.
 - **w3id-Prefix** für `…/record/…` und Content Negotiation.
 - **Dritte Instanz:** `osm-static-benchmarks` hat ein sehr anderes Modell und wäre der Härtetest, aber erst nach S6.
 - **Zenodo-DOI** für das Bundle als FDO (nach S8).

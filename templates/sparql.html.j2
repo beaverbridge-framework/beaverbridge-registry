@@ -1,0 +1,140 @@
+{% extends "base.html.j2" %}
+{% block body %}
+<h1>{{ page.title }}</h1>
+<p>{{ page.intro|safe }}</p>
+<p class="note">There is no SPARQL endpoint and no server. The bundle is fetched as a static file and parsed in your browser with <code>rdflib</code> under Pyodide, so an archived copy of this repository stays queryable. The Python runtime is loaded from a CDN (jsDelivr) and <code>rdflib</code> from PyPI, once per visit; nothing you type leaves your machine.</p>
+
+<div class="status" id="status" role="status"><span class="dot" id="dot"></span><span id="status-text">Loading the Python runtime (about 10 MB on the first visit)…</span></div>
+<p class="note" id="graph-note" hidden></p>
+
+{% for q in queries %}
+<section class="query block" id="q-{{ q.id }}">
+  <h2>{{ loop.index }}. {{ q.title }}</h2>
+  <p>{{ q.intro|safe }}</p>
+  <label class="visually-hidden" for="src-{{ q.id }}">SPARQL query {{ loop.index }}</label>
+  <textarea class="sparql" id="src-{{ q.id }}" spellcheck="false" rows="{{ q.rows }}">{{ q.sparql }}</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="{{ q.id }}" disabled>Run</button>
+    <button type="button" class="reset" data-q="{{ q.id }}">Reset</button>
+    <a class="muted" href="downloads/queries/{{ q.id }}.rq" download>.rq</a>
+    <span class="timing muted" id="time-{{ q.id }}"></span>
+  </div>
+  <div class="result" id="out-{{ q.id }}" aria-live="polite"></div>
+</section>
+{% endfor %}
+
+<p class="muted block">Graph: <a href="{{ graph.url }}"><code>{{ graph.url }}</code></a>, {{ graph.megabytes }} MB{% if page.vocabulary_note %}; {{ page.vocabulary_note|safe }}{% endif %}
+A quarto-live version for teaching is in <code>qmd/</code> of the repository.</p>
+
+<script type="application/json" id="qdata">{{ payload_json|safe }}</script>
+{% endblock %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/pyodide/v{{ pyodide_version }}/full/pyodide.js"></script>
+<script>
+/* The queries are written from queries.yaml by py/step_sparql.py, so this page, the .rq files and the notebook cannot
+   drift apart. */
+const DATA = JSON.parse(document.getElementById("qdata").textContent);
+const PREFIXES = DATA.prefixes, QUERIES = DATA.queries, GRAPH_URL = DATA.graph_url, MAX_ROWS = DATA.max_rows;
+const statusText = document.getElementById("status-text"), dot = document.getElementById("dot");
+let pyodide = null;
+
+function setStatus(text, state) { statusText.textContent = text; dot.className = "dot " + (state || ""); }
+
+/* Cell values come from the graph and may contain <, & or quotes: escape once, here. */
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+
+function renderTable(cols, rows, elId, total) {
+  const out = document.getElementById(elId);
+  if (!rows.length) { out.innerHTML = '<p class="note">No results. The query is valid but matched nothing.</p>'; return; }
+  let h = '<div class="table-scroll"><table><thead><tr>' + cols.map(function (c) { return "<th>" + esc(c) + "</th>"; }).join("") + "</tr></thead><tbody>";
+  rows.forEach(function (r) {
+    h += "<tr>" + cols.map(function (c) {
+      const v = r[c];
+      if (v === null || v === undefined) return '<td class="nil">&mdash;</td>';
+      const s = String(v);
+      return /^https?:\/\//.test(s) ? '<td><a href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s) + "</a></td>" : "<td>" + esc(s) + "</td>";
+    }).join("") + "</tr>";
+  });
+  h += "</tbody></table></div>";
+  h += '<p class="note">' + (total > rows.length ? "Showing the first " + rows.length + " of " + total + " rows." : rows.length + " row" + (rows.length === 1 ? "" : "s") + ".") + "</p>";
+  out.innerHTML = h;
+}
+
+async function boot() {
+  if (location.protocol === "file:") {
+    setStatus("Open this page through a web server (python -m http.server -d docs) or from GitHub Pages: a browser does not let a page loaded from disk fetch the graph.", "err");
+    return;
+  }
+  try {
+    pyodide = await loadPyodide();
+    setStatus("Installing rdflib…", "busy");
+    await pyodide.loadPackage("micropip");
+    await pyodide.runPythonAsync('import micropip\nawait micropip.install("rdflib=={{ rdflib_version }}")');
+    setStatus("Loading the graph…", "busy");
+    pyodide.globals.set("_graph_url", GRAPH_URL);
+    await pyodide.runPythonAsync(`
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+resp = await pyfetch(_graph_url)
+if resp.status != 200:
+    raise RuntimeError(f"{_graph_url} -> HTTP {resp.status}")
+base = Graph()
+base.parse(data=await resp.string(), format="turtle")
+n_base = len(base)
+`);
+    const n = pyodide.globals.get("n_base");
+    const note = document.getElementById("graph-note");
+    note.hidden = false;
+    note.textContent = "Graph loaded: " + n + " triples from " + GRAPH_URL + ".";
+    setStatus("Ready. Edit a query and press Run.", "ok");
+    document.querySelectorAll("button.run").forEach(function (b) { b.disabled = false; });
+  } catch (err) {
+    setStatus("Could not start: " + err.message, "err");
+    console.error(err);
+  }
+}
+
+async function runQuery(id) {
+  const btn = document.querySelector('button.run[data-q="' + id + '"]');
+  const timing = document.getElementById("time-" + id), out = document.getElementById("out-" + id);
+  btn.disabled = true; timing.textContent = "running…"; out.textContent = "";
+  const t0 = performance.now();
+  try {
+    pyodide.globals.set("_q_src", PREFIXES + "\n" + document.getElementById("src-" + id).value);
+    pyodide.globals.set("_max_rows", MAX_ROWS);
+    const json = await pyodide.runPythonAsync(`
+import json
+res = base.query(_q_src)
+cols = [str(v) for v in res.vars]
+_all = list(res)
+rows = [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)} for r in _all[:_max_rows]]
+json.dumps({"cols": cols, "rows": rows, "n": len(base), "total": len(_all)})
+`);
+    const data = JSON.parse(json);
+    renderTable(data.cols, data.rows, "out-" + id, data.total);
+    timing.textContent = ((performance.now() - t0) / 1000).toFixed(1) + " s over " + data.n + " triples";
+  } catch (err) {
+    /* People are meant to edit these queries, so a parse error is the normal case: show the real message. */
+    out.innerHTML = '<pre class="error">' + esc(err.message) + "</pre>";
+    timing.textContent = "";
+  }
+  btn.disabled = false;
+}
+
+document.querySelectorAll("button.run").forEach(function (b) { b.addEventListener("click", function () { runQuery(b.dataset.q); }); });
+document.querySelectorAll("button.reset").forEach(function (b) {
+  b.addEventListener("click", function () {
+    const id = b.dataset.q;
+    document.getElementById("src-" + id).value = QUERIES[id];
+    document.getElementById("out-" + id).textContent = "";
+    document.getElementById("time-" + id).textContent = "";
+  });
+});
+boot();
+</script>
+{% endblock %}

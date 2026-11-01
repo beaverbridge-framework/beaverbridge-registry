@@ -1,0 +1,19 @@
+# How are the classes related?
+# Subclass links of all instances, through <code>bbr:subclassOf</code>. Each
+# row is one link from a class to its superclass.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance ?class ?superclass WHERE {
+  ?c bbr:subclassOf ?s ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?class .
+  ?s rdfs:label ?superclass .
+  FILTER(LANG(?class) = "en" && LANG(?superclass) = "en")
+}
+ORDER BY ?instance ?superclass ?class

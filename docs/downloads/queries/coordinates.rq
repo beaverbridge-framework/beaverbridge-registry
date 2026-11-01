@@ -1,0 +1,23 @@
+# Which items have coordinates?
+# Items with a position, as the source states it (WKT, longitude first). Only
+# instances with a coordinate property show up.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance ?item ?class ?coordinates WHERE {
+  ?i bbr:coordinates ?coordinates ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?item .
+  FILTER(LANG(?item) = "en")
+  OPTIONAL {
+    ?i bbr:instanceOf ?c .
+    ?c rdfs:label ?class .
+    FILTER(LANG(?class) = "en")
+  }
+}
+ORDER BY ?instance ?item

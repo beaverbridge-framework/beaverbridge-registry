@@ -1,0 +1,17 @@
+# Where do the external matches lead?
+# Matches are grouped by the host of the URL they point to.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance ?host (COUNT(?i) AS ?links) WHERE {
+  ?i bbr:externalMatch ?url ;
+     bbr:fromInstance/bbr:prefix ?instance .
+  BIND(REPLACE(STR(?url), "^https?://([^/]+).*$", "$1") AS ?host)
+}
+GROUP BY ?instance ?host
+ORDER BY DESC(?links) ?host

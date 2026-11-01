@@ -1,18 +1,19 @@
-# Patch: S7 — Index und Facettenseite
+# Patch: S8 — Query-Seite
 
-Baut aus dem Bundle die Suchseite: Facetten mit Zählwerten (Instanz, Klasse, Has, Lizenz), Freitextsuche, Trefferkarten, Hell/Dunkel nach `design/PALETTE.md`. Dazu die Seiten, unter denen die Registry-IRIs auflösen: Katalog, ein Eintrag je Instanz, das `bbr:`-Vokabular. Alles landet in `docs/`, dem Pages-Ordner.
+SPARQL im Browser über das ganze Bundle: `docs/sparql.html` mit zehn bearbeitbaren Abfragen, dieselben als `.rq`-Dateien und als quarto-live-Notebook. Es gibt keinen Endpunkt und keinen Server; `rdflib` läuft unter Pyodide im Browser. Jede Abfrage wird beim Bauen gegen das Bundle ausgeführt, eine leere Antwort bricht den Lauf ab.
 
 ## Inhalt
 
 | Datei | Änderung |
 |---|---|
-| `py/step_index.py` | neu: Schritt `index` (war Stub), schreibt `dist/registry-index.json` |
-| `py/step_site.py` | neu: Schritt `site` (war Stub), schreibt `docs/` |
-| `templates/` | neu: `base`, `index`, `catalog`, `record`, `vocab` als Jinja2-Vorlagen, dazu `style.css` und `app.js` |
-| `assets/logo-256.jpg` | neu: Logo auf 256 px (15 KB) für die Kopfzeile |
-| `docs/` | neu, erzeugt: Seite, Downloads, Index, Vokabular |
-| `dist/registry-index.json`, `dist/pipeline_report.txt` | erzeugt |
-| `README.md`, `PRIMER.md` | Status, S4 abgenommen, S7 erledigt, neue Beschlüsse |
+| `queries.yaml` | neu: Präfixe und zehn Abfragen, die einzige Quelle |
+| `py/step_sparql.py` | neu: Schritt `sparql` (war Stub) |
+| `py/registry_utils.py` | `jinja_env()` |
+| `py/step_site.py` | nutzt `jinja_env()`, kopiert `theme.js` |
+| `templates/` | `sparql.html.j2`, `sparql.qmd.j2` neu; `base.html.j2` (Link „Query“, `theme.js`), `style.css` (Query-Regeln), `app.js` (ohne Theme-Teil), `theme.js` neu |
+| `docs/`, `qmd/` | erzeugt (alle Seiten haben jetzt den Link „Query“) |
+| `dist/pipeline_report.txt` | erzeugt |
+| `README.md`, `PRIMER.md` | Status, S7 abgenommen, S8 erledigt |
 
 Dateien in den Repo-Ordner ziehen, Ordnerstruktur beibehalten, vorhandene Dateien ersetzen. Alle Befehle für Windows `cmd`.
 
@@ -22,45 +23,34 @@ Dateien in den Repo-Ordner ziehen, Ordnerstruktur beibehalten, vorhandene Dateie
 python main.py
 ```
 
-Erwartet für die neuen Schritte:
-
-```
-[index]
-  fuzzy-sl: 137 items, 36 properties
-  chublets: 832 items, 168 properties
-  index: 969 entries from 2 instance(s), 0 warning(s)
-[site]
-  site: docs/ with search page (969 entries), catalogue, 2 record page(s), 12 vocabulary term(s)
-```
+Erwartet für den neuen Schritt: zehn Zeilen `ok` mit Zeilenzahlen (2, 26, 21, 14, 2, 73, 153, 2, 204, 5), dann `sparql: 10 queries, docs/sparql.html, 10 .rq files, qmd/…`.
 
 ## 2. Ansehen
 
-Die Seite öffnet auch direkt von der Platte, ohne Server:
+Die Query-Seite braucht einen Webserver (der Browser lässt eine Seite von der Platte das Bundle nicht laden). Der Server läuft im Vordergrund, mit Strg+C beenden:
 
 ```cmd
-start docs\index.html
+start http://localhost:8000/sparql.html && python -m http.server 8000 -d docs
 ```
 
-Prüfen: oben „969 of 969 entries“; Haken bei *fuzzy-sl* ergibt 137, dazu *coordinates* 59; Suche „zoo“ 8 Treffer; der Knopf *Theme* wechselt Auto, Hell, Dunkel.
+Prüfen: Beim ersten Besuch dauert „Loading the Python runtime“ und „Installing rdflib“ einige Sekunden. Dann steht dort „Ready“ und „Graph loaded: 19668 triples“. Jede Abfrage zeigt nach Run dieselbe Zeilenzahl wie oben, Abfrage 4 (*Which Wikibase property stands behind a role?*) zeigt P1 und P2 vertauscht. Ein absichtlicher Tippfehler in einer Abfrage zeigt die Parse-Meldung.
 
 ## 3. Abnahme
 
-Committen, nochmal laufen lassen, der Arbeitsbaum bleibt sauber (`docs/` ist versioniert):
-
 ```cmd
-git add -A && git commit -m "S7 index and facet page" && python main.py --strict && git status
+git add -A && git commit -m "S8 query page" && python main.py --strict && git status
 ```
 
 Erwartet: `nothing to commit, working tree clean`.
 
-## 4. Push und Pages einschalten
+## 4. Push
 
 ```cmd
 git push
 ```
 
-Dann auf GitHub: *Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch `main`, Ordner `/docs` → Save*. Nach ein bis zwei Minuten antwortet https://beaverbridge-framework.github.io/beaverbridge-registry/ mit der Seite; dort muss auch `…/vocab/instanceOf` und `…/record/fuzzy-sl` antworten.
+Nach ein bis zwei Minuten läuft dasselbe unter https://beaverbridge-framework.github.io/beaverbridge-registry/sparql.html.
 
 ## Nächster Schritt
 
-Neuer Chat: `PRIMER.md` hochladen und „S8 bitte“ (Query-Seite mit Pyodide) oder „S5 bitte“ (CRM-Anker, dann kommt eine Facette dazu) oder „S6 bitte“ (SHACL-Gate).
+Neuer Chat: `PRIMER.md` hochladen und „S5 bitte“ (CRM-Anker, auch für Chublets) oder „S6 bitte“ (SHACL-Gate mit Selbsttest). Danach S9, die Überführung nach `beaverbridge`.

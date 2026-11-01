@@ -98,3 +98,20 @@ td.hash { font-family: var(--font-mono); font-size: .8rem; overflow-wrap: anywhe
 section.block { margin-top: 2rem; }
 .note { border-left: 4px solid var(--info); background: var(--surface-alt); padding: .5rem .8rem; border-radius: .3rem; }
 footer.site { border-top: 1px solid var(--border); color: var(--text-muted); font-size: .88rem; padding: 1rem 0 2rem; }
+
+/* ---- query page ---- */
+.note { margin: .5rem 0 0; color: var(--text-muted); font-size: .88rem; max-width: 74ch; }
+.status { display: flex; gap: .6rem; align-items: center; margin: 1rem 0 .5rem; padding: .5rem .8rem; background: var(--surface); border: 1px solid var(--border); border-radius: .4rem; }
+.dot { width: .7rem; height: .7rem; border-radius: 50%; background: var(--text-muted); flex: none; }
+.dot.busy { background: var(--wood); animation: pulse 1s infinite alternate; }
+.dot.ok { background: var(--info); }
+.dot.err { background: var(--coral); }
+@keyframes pulse { from { opacity: .3; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .dot.busy { animation: none; } }
+section.query h2 { margin-bottom: .3rem; }
+textarea.sparql { width: 100%; font: .85rem/1.45 var(--font-mono); padding: .6rem .7rem; border: 1px solid var(--border); border-radius: .4rem; background: var(--surface-alt); color: var(--text); resize: vertical; tab-size: 2; }
+.query-bar { display: flex; gap: .6rem; align-items: center; margin: .4rem 0; }
+.query-bar button:disabled { opacity: .5; cursor: not-allowed; }
+.table-scroll { overflow-x: auto; max-width: 100%; }
+td.nil { color: var(--text-muted); }
+pre.error { white-space: pre-wrap; color: var(--coral); background: var(--surface-alt); padding: .6rem .8rem; border-radius: .4rem; border-left: 4px solid var(--coral); overflow-x: auto; }

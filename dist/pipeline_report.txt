@@ -15,4 +15,15 @@
 [site]
   site: docs/ with search page (969 entries), catalogue, 2 record page(s), 12 vocabulary term(s)
 [sparql]
-  sparql: nothing to do (implemented in S8)
+    beaverbridge-registry.ttl: 19668 triples
+    ok   instances         2 rows
+    ok   classes          26 rows
+    ok   hierarchy        21 rows
+    ok   roles            14 rows
+    ok   crm-anchors       2 rows
+    ok   coordinates      73 rows
+    ok   wikidata        153 rows
+    ok   match-hosts       2 rows
+    ok   properties      204 rows
+    ok   same-label        5 rows
+  sparql: 10 queries, docs/sparql.html, 10 .rq files, qmd/beaverbridge-registry-sparql-live.qmd

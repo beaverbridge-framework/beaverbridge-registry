@@ -1,0 +1,299 @@
+---
+title: "Querying the BeaverBridge registry"
+format: live-html
+engine: knitr
+pyodide:
+  packages:
+    - micropip
+---
+
+<!-- Needs the quarto-live extension once per repository:  quarto add r-wasm/quarto-live  -->
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+## About this notebook
+
+This notebook queries the registry bundle, one RDF graph over several static Wikibase instances, with SPARQL in the browser. Nothing is sent to a server.
+
+The roles `bbr:instanceOf`, `bbr:subclassOf`, `bbr:partOf` and the others are the same in every instance, although
+the Wikibase properties behind them are not (`P1` and `P2` are swapped between fuzzy-sl and chublets). Ask across
+instances through the roles.
+
+
+## Step 1: set up and load the graph
+
+`rdflib` is not bundled with Pyodide, so it is installed with `micropip`. HTTP has to go through
+`pyodide.http.pyfetch`: `requests` and `urllib.request` do not work in the browser.
+
+```{pyodide}
+#| autorun: false
+#| label: setup
+#| output: false
+import micropip
+await micropip.install("rdflib==7.1.1")
+
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+GRAPH_URL = "https://beaverbridge-framework.github.io/beaverbridge-registry/downloads/beaverbridge-registry.ttl"
+
+PREFIXES = """
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+"""
+
+async def load(url):
+    resp = await pyfetch(url)
+    if resp.status != 200:
+        raise RuntimeError(f"{url} -> HTTP {resp.status}")
+    g = Graph()
+    g.parse(data=await resp.string(), format="turtle")
+    return g
+
+def show(graph, query):
+    """Run a query and return the rows as a list of dicts."""
+    res = graph.query(PREFIXES + query)
+    cols = [str(v) for v in res.vars]
+    return [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)} for r in res]
+```
+
+The bundle is about 0.9 MB.
+
+```{pyodide}
+#| autorun: false
+#| label: load-graph
+base = await load(GRAPH_URL)
+print(f"{len(base)} triples loaded from {GRAPH_URL}")
+```
+
+## Step 2: Which instances are in the registry?
+
+One catalogue record per instance: where it comes from, under which licence, written by which version of wikibase-static, and how large the export was before the registry kept what a search needs.
+
+```{pyodide}
+#| autorun: false
+#| label: query-instances
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
+  ?record a dcat:CatalogRecord ;
+          bbr:prefix ?instance ;
+          dct:title ?title ;
+          bbr:sourceTripleCount ?sourceTriples .
+  OPTIONAL { ?record bbr:generator ?generator }
+  OPTIONAL { ?record dct:modified ?dataAsOf }
+  OPTIONAL { ?record foaf:primaryTopic/dct:license ?licence }
+}
+ORDER BY ?instance""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 3: Which classes have how many items?
+
+The same question in every instance, asked through <code>bbr:instanceOf</code>. The English label of the class is shown; some classes have a second label in another language.
+
+```{pyodide}
+#| autorun: false
+#| label: query-classes
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?class (COUNT(DISTINCT ?item) AS ?items) WHERE {
+  ?item bbr:instanceOf ?c ;
+        bbr:fromInstance/bbr:prefix ?instance .
+  ?c rdfs:label ?class .
+  FILTER(LANG(?class) = "en")
+}
+GROUP BY ?instance ?class
+ORDER BY ?instance DESC(?items) ?class""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 4: How are the classes related?
+
+Subclass links of all instances, through <code>bbr:subclassOf</code>. Each row is one link from a class to its superclass.
+
+```{pyodide}
+#| autorun: false
+#| label: query-hierarchy
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?class ?superclass WHERE {
+  ?c bbr:subclassOf ?s ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?class .
+  ?s rdfs:label ?superclass .
+  FILTER(LANG(?class) = "en" && LANG(?superclass) = "en")
+}
+ORDER BY ?instance ?superclass ?class""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 5: Which Wikibase property stands behind a role?
+
+The registry writes every role as a normalised statement next to the source statement. Asking for the source predicate that carries the same object shows the crosswalk at work: <em>instance of</em> is <code>P1</code> in one instance and <code>P2</code> in the other.
+
+```{pyodide}
+#| autorun: false
+#| label: query-roles
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT DISTINCT ?instance (REPLACE(STR(?role), "^.*/", "bbr:") AS ?roleName) ?sourcePredicate WHERE {
+  VALUES ?role { bbr:instanceOf bbr:subclassOf bbr:partOf bbr:externalMatch }
+  ?s ?role ?o ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     ?sourcePredicate ?o .
+  FILTER(?sourcePredicate != ?role)
+}
+ORDER BY ?roleName ?instance""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 6: Which classes state a CIDOC CRM class?
+
+Only classes that carry an equivalent class IRI themselves are listed. A class without a row here has no anchor in its own instance.
+
+```{pyodide}
+#| autorun: false
+#| label: query-crm-anchors
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?class ?crm WHERE {
+  ?c bbr:equivalentClass ?crm ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?class .
+  FILTER(LANG(?class) = "en")
+}
+ORDER BY ?instance ?class""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 7: Which items have coordinates?
+
+Items with a position, as the source states it (WKT, longitude first). Only instances with a coordinate property show up.
+
+```{pyodide}
+#| autorun: false
+#| label: query-coordinates
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?item ?class ?coordinates WHERE {
+  ?i bbr:coordinates ?coordinates ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?item .
+  FILTER(LANG(?item) = "en")
+  OPTIONAL {
+    ?i bbr:instanceOf ?c .
+    ?c rdfs:label ?class .
+    FILTER(LANG(?class) = "en")
+  }
+}
+ORDER BY ?instance ?item""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 8: Which items point to Wikidata?
+
+Plain Q-numbers in the sources are turned into Wikidata IRIs by the bundle step, so this works the same for every instance.
+
+```{pyodide}
+#| autorun: false
+#| label: query-wikidata
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?item ?wikidata WHERE {
+  ?i bbr:wikidataEquivalent ?wikidata ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?item .
+  FILTER(LANG(?item) = "en")
+}
+ORDER BY ?instance ?item""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 9: Where do the external matches lead?
+
+Matches are grouped by the host of the URL they point to.
+
+```{pyodide}
+#| autorun: false
+#| label: query-match-hosts
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?host (COUNT(?i) AS ?links) WHERE {
+  ?i bbr:externalMatch ?url ;
+     bbr:fromInstance/bbr:prefix ?instance .
+  BIND(REPLACE(STR(?url), "^https?://([^/]+).*$", "$1") AS ?host)
+}
+GROUP BY ?instance ?host
+ORDER BY DESC(?links) ?host""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 10: Which properties does each instance define?
+
+All properties with their datatype. The numbers are local to the instance; the label and datatype are what can be compared.
+
+```{pyodide}
+#| autorun: false
+#| label: query-properties
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?instance ?property ?label ?datatype WHERE {
+  ?p a wikibase:Property ;
+     rdfs:label ?label ;
+     wikibase:propertyType ?t ;
+     bbr:fromInstance/bbr:prefix ?instance .
+  FILTER(LANG(?label) = "en")
+  BIND(REPLACE(STR(?p), "^.*/", "") AS ?property)
+  BIND(REPLACE(STR(?t), "^.*#", "") AS ?datatype)
+}
+ORDER BY ?instance ?datatype ?label""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 11: Which labels occur in more than one instance?
+
+Equal names are reported and never merged: the registry only states that two entries share a label, not that they are the same thing. Whether <em>Florian Thiery</em> in both instances is one person is for a person to say.
+
+```{pyodide}
+#| autorun: false
+#| label: query-same-label
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?label ?a ?x ?b ?y WHERE {
+  ?x rdfs:label ?label ;
+     bbr:fromInstance/bbr:prefix ?a .
+  ?y rdfs:label ?label ;
+     bbr:fromInstance/bbr:prefix ?b .
+  FILTER(?a < ?b && LANG(?label) = "en")
+}
+ORDER BY ?label""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+
+---
+
+Produced by `beaverbridge-registry`, the prototype of BeaverBridge. Vocabulary: `metadata/bbr.ttl`.

@@ -6,7 +6,9 @@
     docs/vocab/                    the bbr: vocabulary: bbr.ttl, an overview and one page per term
     docs/downloads/                the bundle as Turtle and N-Triples
     docs/registry-index.json       the facet index
-    docs/assets/                   style, script, logo
+    docs/assets/                   style, scripts, logo
+
+The query page (docs/sparql.html) belongs to the step `sparql`.
 
 Pages come from templates/ with Jinja2; files are copied byte for byte. Nothing reads the clock or the network.
 """
@@ -19,7 +21,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from registry_utils import BBR_NS, DIST, DOCS, METADATA, RELEASE, REGISTRY_BASE, ROOT, ensure_dirs  # noqa: E402
+from registry_utils import (BBR_NS, DIST, DOCS, METADATA, RELEASE, REGISTRY_BASE, ROOT, ensure_dirs,  # noqa: E402
+                            jinja_env)
 
 TEMPLATES = ROOT / "templates"
 LOGO = ROOT / "assets" / "logo-256.jpg"
@@ -69,9 +72,7 @@ def main() -> int:
         print("site: no index, nothing written")
         return 1 if args.strict else 0
 
-    from jinja2 import Environment, FileSystemLoader, StrictUndefined
-    env = Environment(loader=FileSystemLoader(str(TEMPLATES)), autoescape=True, trim_blocks=True, lstrip_blocks=True,
-                      undefined=StrictUndefined, keep_trailing_newline=True)
+    env = jinja_env()
     data = json.loads(index_path.read_text(encoding="utf-8"))
     instances = data["instances"]
     common = {"release": RELEASE, "root": ""}
@@ -102,6 +103,7 @@ def main() -> int:
     copy(index_path, DOCS / "registry-index.json")
     copy(TEMPLATES / "style.css", DOCS / "assets" / "style.css")
     copy(TEMPLATES / "app.js", DOCS / "assets" / "app.js")
+    copy(TEMPLATES / "theme.js", DOCS / "assets" / "theme.js")
     copy(LOGO, DOCS / "assets" / "logo.jpg")
     write(DOCS / ".nojekyll", "")
 

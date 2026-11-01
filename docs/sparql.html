@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeaverBridge registry: query</title>
+<meta name="description" content="The bundle of all registered instances is one RDF graph. The queries below run on it in your browser; edit them and press Run. Questions across instances go thr">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("bbr-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="" width="52" height="52">
+    <div><strong>BeaverBridge registry</strong><span>Static Wikibase instances, one catalogue</span></div></a>
+  <nav class="top" aria-label="Main">
+    <a href="index.html">Search</a>
+    <a href="sparql.html">Query</a>
+    <a href="catalog.html">Catalogue</a>
+    <a href="vocab/index.html">Vocabulary</a>
+    <a href="downloads/beaverbridge-registry.ttl">Bundle (Turtle)</a>
+    <a href="registry-index.json">Index (JSON)</a>
+    <a href="https://github.com/beaverbridge-framework/beaverbridge-registry">GitHub</a>
+    <button type="button" id="theme" aria-label="Colour theme">Theme: auto</button>
+  </nav>
+</div></header>
+<main><div class="wrap">
+<h1>Query all instances</h1>
+<p>The bundle of all registered instances is one RDF graph. The queries below run on it in your browser; edit them and press Run. Questions across instances go through the <code>bbr:</code> roles (instance of, subclass of, part of, …) and never through a P-number, because the numbers differ between Wikibases.</p>
+<p class="note">There is no SPARQL endpoint and no server. The bundle is fetched as a static file and parsed in your browser with <code>rdflib</code> under Pyodide, so an archived copy of this repository stays queryable. The Python runtime is loaded from a CDN (jsDelivr) and <code>rdflib</code> from PyPI, once per visit; nothing you type leaves your machine.</p>
+
+<div class="status" id="status" role="status"><span class="dot" id="dot"></span><span id="status-text">Loading the Python runtime (about 10 MB on the first visit)…</span></div>
+<p class="note" id="graph-note" hidden></p>
+
+<section class="query block" id="q-instances">
+  <h2>1. Which instances are in the registry?</h2>
+  <p>One catalogue record per instance: where it comes from, under which licence, written by which version of wikibase-static, and how large the export was before the registry kept what a search needs.</p>
+  <label class="visually-hidden" for="src-instances">SPARQL query 1</label>
+  <textarea class="sparql" id="src-instances" spellcheck="false" rows="11">SELECT ?instance ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
+  ?record a dcat:CatalogRecord ;
+          bbr:prefix ?instance ;
+          dct:title ?title ;
+          bbr:sourceTripleCount ?sourceTriples .
+  OPTIONAL { ?record bbr:generator ?generator }
+  OPTIONAL { ?record dct:modified ?dataAsOf }
+  OPTIONAL { ?record foaf:primaryTopic/dct:license ?licence }
+}
+ORDER BY ?instance</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="instances" disabled>Run</button>
+    <button type="button" class="reset" data-q="instances">Reset</button>
+    <a class="muted" href="downloads/queries/instances.rq" download>.rq</a>
+    <span class="timing muted" id="time-instances"></span>
+  </div>
+  <div class="result" id="out-instances" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-classes">
+  <h2>2. Which classes have how many items?</h2>
+  <p>The same question in every instance, asked through <code>bbr:instanceOf</code>. The English label of the class is shown; some classes have a second label in another language.</p>
+  <label class="visually-hidden" for="src-classes">SPARQL query 2</label>
+  <textarea class="sparql" id="src-classes" spellcheck="false" rows="9">SELECT ?instance ?class (COUNT(DISTINCT ?item) AS ?items) WHERE {
+  ?item bbr:instanceOf ?c ;
+        bbr:fromInstance/bbr:prefix ?instance .
+  ?c rdfs:label ?class .
+  FILTER(LANG(?class) = &#34;en&#34;)
+}
+GROUP BY ?instance ?class
+ORDER BY ?instance DESC(?items) ?class</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="classes" disabled>Run</button>
+    <button type="button" class="reset" data-q="classes">Reset</button>
+    <a class="muted" href="downloads/queries/classes.rq" download>.rq</a>
+    <span class="timing muted" id="time-classes"></span>
+  </div>
+  <div class="result" id="out-classes" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-hierarchy">
+  <h2>3. How are the classes related?</h2>
+  <p>Subclass links of all instances, through <code>bbr:subclassOf</code>. Each row is one link from a class to its superclass.</p>
+  <label class="visually-hidden" for="src-hierarchy">SPARQL query 3</label>
+  <textarea class="sparql" id="src-hierarchy" spellcheck="false" rows="9">SELECT ?instance ?class ?superclass WHERE {
+  ?c bbr:subclassOf ?s ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?class .
+  ?s rdfs:label ?superclass .
+  FILTER(LANG(?class) = &#34;en&#34; &amp;&amp; LANG(?superclass) = &#34;en&#34;)
+}
+ORDER BY ?instance ?superclass ?class</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="hierarchy" disabled>Run</button>
+    <button type="button" class="reset" data-q="hierarchy">Reset</button>
+    <a class="muted" href="downloads/queries/hierarchy.rq" download>.rq</a>
+    <span class="timing muted" id="time-hierarchy"></span>
+  </div>
+  <div class="result" id="out-hierarchy" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-roles">
+  <h2>4. Which Wikibase property stands behind a role?</h2>
+  <p>The registry writes every role as a normalised statement next to the source statement. Asking for the source predicate that carries the same object shows the crosswalk at work: <em>instance of</em> is <code>P1</code> in one instance and <code>P2</code> in the other.</p>
+  <label class="visually-hidden" for="src-roles">SPARQL query 4</label>
+  <textarea class="sparql" id="src-roles" spellcheck="false" rows="9">SELECT DISTINCT ?instance (REPLACE(STR(?role), &#34;^.*/&#34;, &#34;bbr:&#34;) AS ?roleName) ?sourcePredicate WHERE {
+  VALUES ?role { bbr:instanceOf bbr:subclassOf bbr:partOf bbr:externalMatch }
+  ?s ?role ?o ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     ?sourcePredicate ?o .
+  FILTER(?sourcePredicate != ?role)
+}
+ORDER BY ?roleName ?instance</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="roles" disabled>Run</button>
+    <button type="button" class="reset" data-q="roles">Reset</button>
+    <a class="muted" href="downloads/queries/roles.rq" download>.rq</a>
+    <span class="timing muted" id="time-roles"></span>
+  </div>
+  <div class="result" id="out-roles" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-crm-anchors">
+  <h2>5. Which classes state a CIDOC CRM class?</h2>
+  <p>Only classes that carry an equivalent class IRI themselves are listed. A class without a row here has no anchor in its own instance.</p>
+  <label class="visually-hidden" for="src-crm-anchors">SPARQL query 5</label>
+  <textarea class="sparql" id="src-crm-anchors" spellcheck="false" rows="8">SELECT ?instance ?class ?crm WHERE {
+  ?c bbr:equivalentClass ?crm ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?class .
+  FILTER(LANG(?class) = &#34;en&#34;)
+}
+ORDER BY ?instance ?class</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="crm-anchors" disabled>Run</button>
+    <button type="button" class="reset" data-q="crm-anchors">Reset</button>
+    <a class="muted" href="downloads/queries/crm-anchors.rq" download>.rq</a>
+    <span class="timing muted" id="time-crm-anchors"></span>
+  </div>
+  <div class="result" id="out-crm-anchors" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-coordinates">
+  <h2>6. Which items have coordinates?</h2>
+  <p>Items with a position, as the source states it (WKT, longitude first). Only instances with a coordinate property show up.</p>
+  <label class="visually-hidden" for="src-coordinates">SPARQL query 6</label>
+  <textarea class="sparql" id="src-coordinates" spellcheck="false" rows="13">SELECT ?instance ?item ?class ?coordinates WHERE {
+  ?i bbr:coordinates ?coordinates ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?item .
+  FILTER(LANG(?item) = &#34;en&#34;)
+  OPTIONAL {
+    ?i bbr:instanceOf ?c .
+    ?c rdfs:label ?class .
+    FILTER(LANG(?class) = &#34;en&#34;)
+  }
+}
+ORDER BY ?instance ?item</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="coordinates" disabled>Run</button>
+    <button type="button" class="reset" data-q="coordinates">Reset</button>
+    <a class="muted" href="downloads/queries/coordinates.rq" download>.rq</a>
+    <span class="timing muted" id="time-coordinates"></span>
+  </div>
+  <div class="result" id="out-coordinates" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-wikidata">
+  <h2>7. Which items point to Wikidata?</h2>
+  <p>Plain Q-numbers in the sources are turned into Wikidata IRIs by the bundle step, so this works the same for every instance.</p>
+  <label class="visually-hidden" for="src-wikidata">SPARQL query 7</label>
+  <textarea class="sparql" id="src-wikidata" spellcheck="false" rows="8">SELECT ?instance ?item ?wikidata WHERE {
+  ?i bbr:wikidataEquivalent ?wikidata ;
+     bbr:fromInstance/bbr:prefix ?instance ;
+     rdfs:label ?item .
+  FILTER(LANG(?item) = &#34;en&#34;)
+}
+ORDER BY ?instance ?item</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="wikidata" disabled>Run</button>
+    <button type="button" class="reset" data-q="wikidata">Reset</button>
+    <a class="muted" href="downloads/queries/wikidata.rq" download>.rq</a>
+    <span class="timing muted" id="time-wikidata"></span>
+  </div>
+  <div class="result" id="out-wikidata" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-match-hosts">
+  <h2>8. Where do the external matches lead?</h2>
+  <p>Matches are grouped by the host of the URL they point to.</p>
+  <label class="visually-hidden" for="src-match-hosts">SPARQL query 8</label>
+  <textarea class="sparql" id="src-match-hosts" spellcheck="false" rows="8">SELECT ?instance ?host (COUNT(?i) AS ?links) WHERE {
+  ?i bbr:externalMatch ?url ;
+     bbr:fromInstance/bbr:prefix ?instance .
+  BIND(REPLACE(STR(?url), &#34;^https?://([^/]+).*$&#34;, &#34;$1&#34;) AS ?host)
+}
+GROUP BY ?instance ?host
+ORDER BY DESC(?links) ?host</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="match-hosts" disabled>Run</button>
+    <button type="button" class="reset" data-q="match-hosts">Reset</button>
+    <a class="muted" href="downloads/queries/match-hosts.rq" download>.rq</a>
+    <span class="timing muted" id="time-match-hosts"></span>
+  </div>
+  <div class="result" id="out-match-hosts" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-properties">
+  <h2>9. Which properties does each instance define?</h2>
+  <p>All properties with their datatype. The numbers are local to the instance; the label and datatype are what can be compared.</p>
+  <label class="visually-hidden" for="src-properties">SPARQL query 9</label>
+  <textarea class="sparql" id="src-properties" spellcheck="false" rows="11">SELECT ?instance ?property ?label ?datatype WHERE {
+  ?p a wikibase:Property ;
+     rdfs:label ?label ;
+     wikibase:propertyType ?t ;
+     bbr:fromInstance/bbr:prefix ?instance .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  BIND(REPLACE(STR(?p), &#34;^.*/&#34;, &#34;&#34;) AS ?property)
+  BIND(REPLACE(STR(?t), &#34;^.*#&#34;, &#34;&#34;) AS ?datatype)
+}
+ORDER BY ?instance ?datatype ?label</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="properties" disabled>Run</button>
+    <button type="button" class="reset" data-q="properties">Reset</button>
+    <a class="muted" href="downloads/queries/properties.rq" download>.rq</a>
+    <span class="timing muted" id="time-properties"></span>
+  </div>
+  <div class="result" id="out-properties" aria-live="polite"></div>
+</section>
+<section class="query block" id="q-same-label">
+  <h2>10. Which labels occur in more than one instance?</h2>
+  <p>Equal names are reported and never merged: the registry only states that two entries share a label, not that they are the same thing. Whether <em>Florian Thiery</em> in both instances is one person is for a person to say.</p>
+  <label class="visually-hidden" for="src-same-label">SPARQL query 10</label>
+  <textarea class="sparql" id="src-same-label" spellcheck="false" rows="9">SELECT ?label ?a ?x ?b ?y WHERE {
+  ?x rdfs:label ?label ;
+     bbr:fromInstance/bbr:prefix ?a .
+  ?y rdfs:label ?label ;
+     bbr:fromInstance/bbr:prefix ?b .
+  FILTER(?a &lt; ?b &amp;&amp; LANG(?label) = &#34;en&#34;)
+}
+ORDER BY ?label</textarea>
+  <div class="query-bar">
+    <button type="button" class="run primary" data-q="same-label" disabled>Run</button>
+    <button type="button" class="reset" data-q="same-label">Reset</button>
+    <a class="muted" href="downloads/queries/same-label.rq" download>.rq</a>
+    <span class="timing muted" id="time-same-label"></span>
+  </div>
+  <div class="result" id="out-same-label" aria-live="polite"></div>
+</section>
+
+<p class="muted block">Graph: <a href="downloads/beaverbridge-registry.ttl"><code>downloads/beaverbridge-registry.ttl</code></a>, 0.9 MB; vocabulary: <a href="vocab/index.html"><code>bbr:</code></a>.A quarto-live version for teaching is in <code>qmd/</code> of the repository.</p>
+
+<script type="application/json" id="qdata">{"graph_url": "downloads/beaverbridge-registry.ttl", "max_rows": 500, "prefixes": "PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>\nPREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX wikibase: <http://wikiba.se/ontology#>\n", "queries": {"classes": "SELECT ?instance ?class (COUNT(DISTINCT ?item) AS ?items) WHERE {\n  ?item bbr:instanceOf ?c ;\n        bbr:fromInstance/bbr:prefix ?instance .\n  ?c rdfs:label ?class .\n  FILTER(LANG(?class) = \"en\")\n}\nGROUP BY ?instance ?class\nORDER BY ?instance DESC(?items) ?class", "coordinates": "SELECT ?instance ?item ?class ?coordinates WHERE {\n  ?i bbr:coordinates ?coordinates ;\n     bbr:fromInstance/bbr:prefix ?instance ;\n     rdfs:label ?item .\n  FILTER(LANG(?item) = \"en\")\n  OPTIONAL {\n    ?i bbr:instanceOf ?c .\n    ?c rdfs:label ?class .\n    FILTER(LANG(?class) = \"en\")\n  }\n}\nORDER BY ?instance ?item", "crm-anchors": "SELECT ?instance ?class ?crm WHERE {\n  ?c bbr:equivalentClass ?crm ;\n     bbr:fromInstance/bbr:prefix ?instance ;\n     rdfs:label ?class .\n  FILTER(LANG(?class) = \"en\")\n}\nORDER BY ?instance ?class", "hierarchy": "SELECT ?instance ?class ?superclass WHERE {\n  ?c bbr:subclassOf ?s ;\n     bbr:fromInstance/bbr:prefix ?instance ;\n     rdfs:label ?class .\n  ?s rdfs:label ?superclass .\n  FILTER(LANG(?class) = \"en\" && LANG(?superclass) = \"en\")\n}\nORDER BY ?instance ?superclass ?class", "instances": "SELECT ?instance ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {\n  ?record a dcat:CatalogRecord ;\n          bbr:prefix ?instance ;\n          dct:title ?title ;\n          bbr:sourceTripleCount ?sourceTriples .\n  OPTIONAL { ?record bbr:generator ?generator }\n  OPTIONAL { ?record dct:modified ?dataAsOf }\n  OPTIONAL { ?record foaf:primaryTopic/dct:license ?licence }\n}\nORDER BY ?instance", "match-hosts": "SELECT ?instance ?host (COUNT(?i) AS ?links) WHERE {\n  ?i bbr:externalMatch ?url ;\n     bbr:fromInstance/bbr:prefix ?instance .\n  BIND(REPLACE(STR(?url), \"^https?://([^/]+).*$\", \"$1\") AS ?host)\n}\nGROUP BY ?instance ?host\nORDER BY DESC(?links) ?host", "properties": "SELECT ?instance ?property ?label ?datatype WHERE {\n  ?p a wikibase:Property ;\n     rdfs:label ?label ;\n     wikibase:propertyType ?t ;\n     bbr:fromInstance/bbr:prefix ?instance .\n  FILTER(LANG(?label) = \"en\")\n  BIND(REPLACE(STR(?p), \"^.*/\", \"\") AS ?property)\n  BIND(REPLACE(STR(?t), \"^.*#\", \"\") AS ?datatype)\n}\nORDER BY ?instance ?datatype ?label", "roles": "SELECT DISTINCT ?instance (REPLACE(STR(?role), \"^.*/\", \"bbr:\") AS ?roleName) ?sourcePredicate WHERE {\n  VALUES ?role { bbr:instanceOf bbr:subclassOf bbr:partOf bbr:externalMatch }\n  ?s ?role ?o ;\n     bbr:fromInstance/bbr:prefix ?instance ;\n     ?sourcePredicate ?o .\n  FILTER(?sourcePredicate != ?role)\n}\nORDER BY ?roleName ?instance", "same-label": "SELECT ?label ?a ?x ?b ?y WHERE {\n  ?x rdfs:label ?label ;\n     bbr:fromInstance/bbr:prefix ?a .\n  ?y rdfs:label ?label ;\n     bbr:fromInstance/bbr:prefix ?b .\n  FILTER(?a < ?b && LANG(?label) = \"en\")\n}\nORDER BY ?label", "wikidata": "SELECT ?instance ?item ?wikidata WHERE {\n  ?i bbr:wikidataEquivalent ?wikidata ;\n     bbr:fromInstance/bbr:prefix ?instance ;\n     rdfs:label ?item .\n  FILTER(LANG(?item) = \"en\")\n}\nORDER BY ?instance ?item"}}</script>
+</div></main>
+<footer class="site"><div class="wrap">
+  Release 2026-11-01. Code: MIT. Bundle: CC BY 4.0; the licence of each instance is kept in its catalogue record.
+</div></footer>
+<script src="assets/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script>
+/* The queries are written from queries.yaml by py/step_sparql.py, so this page, the .rq files and the notebook cannot
+   drift apart. */
+const DATA = JSON.parse(document.getElementById("qdata").textContent);
+const PREFIXES = DATA.prefixes, QUERIES = DATA.queries, GRAPH_URL = DATA.graph_url, MAX_ROWS = DATA.max_rows;
+const statusText = document.getElementById("status-text"), dot = document.getElementById("dot");
+let pyodide = null;
+
+function setStatus(text, state) { statusText.textContent = text; dot.className = "dot " + (state || ""); }
+
+/* Cell values come from the graph and may contain <, & or quotes: escape once, here. */
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+
+function renderTable(cols, rows, elId, total) {
+  const out = document.getElementById(elId);
+  if (!rows.length) { out.innerHTML = '<p class="note">No results. The query is valid but matched nothing.</p>'; return; }
+  let h = '<div class="table-scroll"><table><thead><tr>' + cols.map(function (c) { return "<th>" + esc(c) + "</th>"; }).join("") + "</tr></thead><tbody>";
+  rows.forEach(function (r) {
+    h += "<tr>" + cols.map(function (c) {
+      const v = r[c];
+      if (v === null || v === undefined) return '<td class="nil">&mdash;</td>';
+      const s = String(v);
+      return /^https?:\/\//.test(s) ? '<td><a href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s) + "</a></td>" : "<td>" + esc(s) + "</td>";
+    }).join("") + "</tr>";
+  });
+  h += "</tbody></table></div>";
+  h += '<p class="note">' + (total > rows.length ? "Showing the first " + rows.length + " of " + total + " rows." : rows.length + " row" + (rows.length === 1 ? "" : "s") + ".") + "</p>";
+  out.innerHTML = h;
+}
+
+async function boot() {
+  if (location.protocol === "file:") {
+    setStatus("Open this page through a web server (python -m http.server -d docs) or from GitHub Pages: a browser does not let a page loaded from disk fetch the graph.", "err");
+    return;
+  }
+  try {
+    pyodide = await loadPyodide();
+    setStatus("Installing rdflib…", "busy");
+    await pyodide.loadPackage("micropip");
+    await pyodide.runPythonAsync('import micropip\nawait micropip.install("rdflib==7.1.1")');
+    setStatus("Loading the graph…", "busy");
+    pyodide.globals.set("_graph_url", GRAPH_URL);
+    await pyodide.runPythonAsync(`
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+resp = await pyfetch(_graph_url)
+if resp.status != 200:
+    raise RuntimeError(f"{_graph_url} -> HTTP {resp.status}")
+base = Graph()
+base.parse(data=await resp.string(), format="turtle")
+n_base = len(base)
+`);
+    const n = pyodide.globals.get("n_base");
+    const note = document.getElementById("graph-note");
+    note.hidden = false;
+    note.textContent = "Graph loaded: " + n + " triples from " + GRAPH_URL + ".";
+    setStatus("Ready. Edit a query and press Run.", "ok");
+    document.querySelectorAll("button.run").forEach(function (b) { b.disabled = false; });
+  } catch (err) {
+    setStatus("Could not start: " + err.message, "err");
+    console.error(err);
+  }
+}
+
+async function runQuery(id) {
+  const btn = document.querySelector('button.run[data-q="' + id + '"]');
+  const timing = document.getElementById("time-" + id), out = document.getElementById("out-" + id);
+  btn.disabled = true; timing.textContent = "running…"; out.textContent = "";
+  const t0 = performance.now();
+  try {
+    pyodide.globals.set("_q_src", PREFIXES + "\n" + document.getElementById("src-" + id).value);
+    pyodide.globals.set("_max_rows", MAX_ROWS);
+    const json = await pyodide.runPythonAsync(`
+import json
+res = base.query(_q_src)
+cols = [str(v) for v in res.vars]
+_all = list(res)
+rows = [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)} for r in _all[:_max_rows]]
+json.dumps({"cols": cols, "rows": rows, "n": len(base), "total": len(_all)})
+`);
+    const data = JSON.parse(json);
+    renderTable(data.cols, data.rows, "out-" + id, data.total);
+    timing.textContent = ((performance.now() - t0) / 1000).toFixed(1) + " s over " + data.n + " triples";
+  } catch (err) {
+    /* People are meant to edit these queries, so a parse error is the normal case: show the real message. */
+    out.innerHTML = '<pre class="error">' + esc(err.message) + "</pre>";
+    timing.textContent = "";
+  }
+  btn.disabled = false;
+}
+
+document.querySelectorAll("button.run").forEach(function (b) { b.addEventListener("click", function () { runQuery(b.dataset.q); }); });
+document.querySelectorAll("button.reset").forEach(function (b) {
+  b.addEventListener("click", function () {
+    const id = b.dataset.q;
+    document.getElementById("src-" + id).value = QUERIES[id];
+    document.getElementById("out-" + id).textContent = "";
+    document.getElementById("time-" + id).textContent = "";
+  });
+});
+boot();
+</script>
+</body>
+</html>

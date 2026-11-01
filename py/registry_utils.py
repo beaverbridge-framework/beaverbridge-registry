@@ -56,6 +56,13 @@ def read_core() -> list[dict]:
         return list(csv.DictReader(fh))
 
 
+def jinja_env(autoescape: bool = True):
+    """Jinja2 environment over templates/; undefined names are errors, so a typo cannot ship as an empty string."""
+    from jinja2 import Environment, FileSystemLoader, StrictUndefined
+    return Environment(loader=FileSystemLoader(str(ROOT / "templates")), autoescape=autoescape, trim_blocks=True,
+                       lstrip_blocks=True, undefined=StrictUndefined, keep_trailing_newline=True)
+
+
 def write_ntriples(graph, path: Path) -> None:
     """Sorted, de-duplicated N-Triples: the canonical form, so two runs can be compared byte for byte."""
     lines = sorted({ln for ln in graph.serialize(format="nt").splitlines() if ln.strip()})

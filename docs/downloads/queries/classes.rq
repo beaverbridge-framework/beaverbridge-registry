@@ -1,0 +1,20 @@
+# Which classes have how many items?
+# The same question in every instance, asked through
+# <code>bbr:instanceOf</code>. The English label of the class is shown; some
+# classes have a second label in another language.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance ?class (COUNT(DISTINCT ?item) AS ?items) WHERE {
+  ?item bbr:instanceOf ?c ;
+        bbr:fromInstance/bbr:prefix ?instance .
+  ?c rdfs:label ?class .
+  FILTER(LANG(?class) = "en")
+}
+GROUP BY ?instance ?class
+ORDER BY ?instance DESC(?items) ?class

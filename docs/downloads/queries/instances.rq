@@ -1,0 +1,22 @@
+# Which instances are in the registry?
+# One catalogue record per instance: where it comes from, under which licence,
+# written by which version of wikibase-static, and how large the export was
+# before the registry kept what a search needs.
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?instance ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
+  ?record a dcat:CatalogRecord ;
+          bbr:prefix ?instance ;
+          dct:title ?title ;
+          bbr:sourceTripleCount ?sourceTriples .
+  OPTIONAL { ?record bbr:generator ?generator }
+  OPTIONAL { ?record dct:modified ?dataAsOf }
+  OPTIONAL { ?record foaf:primaryTopic/dct:license ?licence }
+}
+ORDER BY ?instance

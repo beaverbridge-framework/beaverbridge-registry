@@ -1,0 +1,84 @@
+---
+title: "{{ qmd.title }}"
+format: live-html
+engine: knitr
+pyodide:
+  packages:
+    - micropip
+---
+
+<!-- Needs the quarto-live extension once per repository:  quarto add r-wasm/quarto-live  -->
+{% raw %}{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}{% endraw %}
+
+## About this notebook
+
+{{ qmd.about }}
+
+{{ qmd.notes }}
+
+## Step 1: set up and load the graph
+
+`rdflib` is not bundled with Pyodide, so it is installed with `micropip`. HTTP has to go through
+`pyodide.http.pyfetch`: `requests` and `urllib.request` do not work in the browser.
+
+```{pyodide}
+#| autorun: false
+#| label: setup
+#| output: false
+import micropip
+await micropip.install("rdflib=={{ rdflib_version }}")
+
+from pyodide.http import pyfetch
+from rdflib import Graph
+
+GRAPH_URL = "{{ qmd.graph_url }}"
+
+PREFIXES = """
+{{ prefixes }}
+"""
+
+async def load(url):
+    resp = await pyfetch(url)
+    if resp.status != 200:
+        raise RuntimeError(f"{url} -> HTTP {resp.status}")
+    g = Graph()
+    g.parse(data=await resp.string(), format="turtle")
+    return g
+
+def show(graph, query):
+    """Run a query and return the rows as a list of dicts."""
+    res = graph.query(PREFIXES + query)
+    cols = [str(v) for v in res.vars]
+    return [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)} for r in res]
+```
+
+The bundle is about {{ qmd.megabytes }} MB.
+
+```{pyodide}
+#| autorun: false
+#| label: load-graph
+base = await load(GRAPH_URL)
+print(f"{len(base)} triples loaded from {GRAPH_URL}")
+```
+
+{% for q in queries %}
+## Step {{ loop.index + 1 }}: {{ q.title }}
+
+{{ q.intro }}
+
+```{pyodide}
+#| autorun: false
+#| label: query-{{ q.id }}
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+{{ q.sparql }}""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+{% endfor %}
+
+---
+
+Produced by `beaverbridge-registry`, the prototype of BeaverBridge. Vocabulary: `metadata/bbr.ttl`.
