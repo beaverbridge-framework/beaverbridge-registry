@@ -1,6 +1,6 @@
 # PRIMER — beaverbridge-registry
 
-Arbeitsplan für das Repo `n4o-rse/beaverbridge-registry`. Wird am Anfang jedes Chats hochgeladen und am Ende zurückgeschrieben. Teil A zuerst lesen, dann nur den Schritt, an dem gearbeitet wird.
+Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird am Anfang jedes Chats hochgeladen und am Ende zurückgeschrieben. Teil A zuerst lesen, dann nur den Schritt, an dem gearbeitet wird.
 
 ---
 
@@ -73,7 +73,8 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | Frage | Beschluss | seit |
 |---|---|---|
 | Repo-Name | `beaverbridge-registry` (Registry = Quellenliste + gemeinsames Bundle) | 2026-11-01 |
-| Ort | `github.com/n4o-rse/beaverbridge-registry` | 2026-11-01 |
+| Ort | `github.com/beaverbridge-framework/beaverbridge-registry` (zuerst unter `n4o-rse` geplant, dann `florianthiery`, am 2026-11-01 in die Organisation `beaverbridge-framework` gelegt) | 2026-11-01 |
+| Organisation | Perspektivisch ziehen auch die übrigen Repos der Familie nach `beaverbridge-framework`; bis dahin bleiben die Quellen (`fuzzy-sl-static`, `chublets-wikibase-demo`) unter `n4o-rse`, und `sources.json` führt die Adressen je Instanz einzeln | 2026-11-01 |
 | Quellen holen | über GitHub Pages (HTTP), Git-Clone nur als späterer Fallback über `config.local.json` | 2026-11-01 |
 | IRIs der Items | unverändert aus der Quelle; Eindeutigkeit kommt vom Namespace der Instanz | 2026-11-01 |
 | Anzeige bei gleichen IDs | Instanz-Präfix, z. B. `fuzzy-sl:Q1`, `chublets:Q1`, Label dahinter | 2026-11-01 |
@@ -83,7 +84,7 @@ Eigenschaften des Ergebnisses (jede ist prüfbar):
 | CRM-Anker | Crosswalk-CSV je Instanz als einzige Quelle, Mechanismen wie in fdo-squirrel-registry (`axiom`, `ext-axiom`, `normalise`, `instance`, `none`) | Vorschlag |
 | Shapes | Severity nach dem Modalverb des N4O-CIDOC-CRM-Profils (MUST → Fehler, SHOULD → Warnung) | Vorschlag |
 | Lizenz | Code MIT; Bundle CC BY 4.0 mit Lizenz je Eintrag erhalten (beide Quellen sind CC0) | Vorschlag |
-| Überführung nach `beaverbridge` | am Ende, Schritt S9 | Vorschlag |
+| Überführung nach `beaverbridge` | am Ende, Schritt S9; durch die Organisation `beaverbridge-framework` womöglich nur noch Umbenennung statt Transfer | Vorschlag |
 | Farben und Schrift | Palette aus dem Logo, Hell/Dunkel, Systemschrift der Familie plus optional Bitter für Überschriften; siehe `design/PALETTE.md` | Vorschlag |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -100,7 +101,7 @@ Nicht hochladen: `config.local.json`, `.venv/`, `.git/`, `data/raw/`, `dist/*.tt
 
 | Pfad | Inhalt | Ziel des Redirects | Status |
 |---|---|---|---|
-| `https://n4o-rse.github.io/beaverbridge-registry/` | Facettenseite | — | geplant |
+| `https://beaverbridge-framework.github.io/beaverbridge-registry/` | Facettenseite | — | geplant |
 | `…/sparql.html` | Browser-SPARQL | — | geplant |
 | `…/catalog` | `dcat:Catalog` | `downloads/beaverbridge-registry.ttl` | geplant |
 | `…/record/<instanz>` | Katalogeintrag je Instanz | `instance/<instanz>.html` | geplant |

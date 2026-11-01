@@ -14,7 +14,7 @@ authors:
 license: MIT
 version: "1.0.0"
 date-released: "2026-11-01"
-repository-code: "https://github.com/n4o-rse/beaverbridge-registry"  # TODO: insert URL
+repository-code: "https://github.com/beaverbridge-framework/beaverbridge-registry"
 # doi: "10.5281/zenodo.XXXXXXX"  # TODO: add Zenodo DOI once minted
 keywords:
   - Wikibase

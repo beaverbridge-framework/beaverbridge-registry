@@ -1,41 +1,23 @@
-# Patch: S1 — Skeleton (beaverbridge-registry)
+# Patch: S1b — repository moved to `beaverbridge-framework`
 
-New repository `beaverbridge-registry`: layout, orchestrator, utilities, licence, citation, `registry/sources.json` (fuzzy-sl and chublets), logo and the colour palette (`design/PALETTE.md`, `design/palette.html`). No harvest logic yet; every step is a stub.
+The repository now lives at https://github.com/beaverbridge-framework/beaverbridge-registry. This patch only updates the references: `PRIMER.md` (repo name, decision on location and organisation, Pages address in A6) and `CITATION.cff` (`repository-code`).
 
 All commands are for Windows `cmd`, one line each.
 
-## 1. Unpack and run
+## Apply
 
 ```cmd
-cd C:\git && mkdir beaverbridge-registry && cd beaverbridge-registry && git init -b main && tar -xf C:\git\beaverbridge-registry-s1.zip && python -m pip install -r requirements.txt && python main.py --list && python main.py
+cd C:\git\beaverbridge-registry && git remote set-url origin https://github.com/beaverbridge-framework/beaverbridge-registry.git && tar -xf C:\git\beaverbridge-registry-s1b.zip && git add -A && git commit -m "S1b: repository moved to beaverbridge-framework" && git push
 ```
 
-`tar` ships with Windows 10/11. If it is missing, unpack the ZIP by hand into `C:\git\beaverbridge-registry`.
+If your local copy was cloned from the new address already, the `git remote set-url` part does nothing harmful.
 
-## 2. Check (acceptance of S1)
-
-- `python main.py --list` shows six steps: `harvest` (explicit), `bundle`, `validate`, `index`, `site`, `sparql`.
-- `python main.py` exits cleanly and prints "nothing to do" for each default step.
-- Determinism: commit, run again, `git status` must be empty.
+## How to check
 
 ```cmd
-cd C:\git\beaverbridge-registry && git add -A && git commit -m "S1 skeleton" && python main.py && git status
+cd C:\git\beaverbridge-registry && findstr /s /i "n4o-rse/beaverbridge-registry florianthiery" PRIMER.md CITATION.cff
 ```
 
-Expected: `nothing to commit, working tree clean`.
+Only the history line in A4 ("zuerst unter `n4o-rse` geplant, dann `florianthiery`") may match; nothing else.
 
-## 3. Look at the palette
-
-```cmd
-cd C:\git\beaverbridge-registry && start design\palette.html
-```
-
-## 4. Push (when the empty repo `n4o-rse/beaverbridge-registry` exists on GitHub)
-
-```cmd
-cd C:\git\beaverbridge-registry && git remote add origin https://github.com/n4o-rse/beaverbridge-registry.git && git push -u origin main
-```
-
-## 5. Next step
-
-New chat: upload `PRIMER.md` (and the bundle from PRIMER A5) and say "S2 bitte" (harvest).
+Then `python main.py` and `git status` as before: working tree stays clean.
