@@ -23,7 +23,9 @@
 
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q2> bbr:classKind "model" .
 
-<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> bbr:classKind "model" .
+<https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q3> bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass crm:E1_CRM_Entity .
 
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q372> bbr:classKind "domain" .
 

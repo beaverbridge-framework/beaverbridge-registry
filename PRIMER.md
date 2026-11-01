@@ -158,7 +158,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S7 | Index und Facettenseite | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S10 | Dritte Instanz: osm-benchmarks | beaverbridge-registry | S3, S5 | erledigt 2026-11-01 |
-| S11 | Facettenseite auf sinnvolle Facetten umstellen | beaverbridge-registry | S10 | offen |
+| S11 | Facettenseite auf sinnvolle Facetten umstellen | beaverbridge-registry | S10 | erledigt 2026-11-01 |
 
 Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 konnten parallel starten, sobald S2 Daten geliefert hatte; alle Schritte sind erledigt.
 
@@ -331,6 +331,21 @@ Das CRM-Overlay der Instanz steht nur als `rdfs:subClassOf crm:E25_Human-Made_Fe
 
 Gemessen: Bundle 20 701 Tripel (osm-benchmarks 820 von 6 278 behalten, 51 Entitäten, 109 Rollenaussagen), Index 996 Einträge, Gate 0 Verletzungen, 12 Abfragen mit Zeilen, zweimal byte-identisch.
 
+Abnahme auf dem PC: Commit 570d642, `--strict` grün, `git status` sauber, gepusht.
+
+---
+
+## S11 — Facettenseite auf sinnvolle Facetten
+
+### Erledigt 2026-11-01
+
+Beschluss (Dialog): Facetten **Instanz** (Lizenz als Zusatz hinter dem Namen), **Region**, **Klasse**, **CIDOC CRM**; dazu eine **Kartenansicht**; Items von Modellklassen standardmäßig **ausgeblendet** (Schalter „Include items of model classes“, Hash `model=1`). Entfallen sind die Facetten *Kind of class*, *Has* und *Licence*.
+
+- **Region:** `crosswalks/regions.csv` (grobe Boxen, Reihenfolge entscheidet, mehrere Boxen je Region möglich; kein Treffer = *Elsewhere*, ohne Koordinaten = *(no coordinates)*). Die Boxen sind eine Browsing-Hilfe und keine Grenzen; Flo kann sie von Hand ändern. `step_index.py` schreibt `regions` je Eintrag.
+- **Karte:** reines SVG aus den Koordinaten der aktuellen Treffer, Gradnetz, Punkte als Links auf die Instanzseite, Farbe je Instanz, automatischer Ausschnitt; ohne Grundkarte und ohne Fremdserver (Hash `view=map`).
+- **Modellklassen:** Ein Item ist ausgeblendet, wenn seine Klassen alle `model` sind. Weil Chublets Q3 *Instance* die eigentlichen Inhalte (366 Items) trägt, ist Q3 jetzt `domain` mit Anker `E1_CRM_Entity` (`basis: bridge`; der einzige Anspruch, der für alle gemischten Items stimmt). Das ist ein Vorschlag, den Flo mit `classes.csv` prüft.
+- Gemessen: 917 von 996 Einträgen sichtbar, 996 mit Schalter; Karte 83 Positionen; Italien 29, Großbritannien 27, Irland 12; keine Konsolenfehler, kein Überlauf bei 390 px.
+
 ---
 
 ## Teil D — Offene Punkte
@@ -340,7 +355,7 @@ Gemessen: Bundle 20 701 Tripel (osm-benchmarks 820 von 6 278 behalten, 51 Entit�
 - **Rückmeldung an die Instanzen:** Chublets hat keinen eigenen CRM-Anker und 7 Weiterleitungen; fuzzy-sl verankert nur zwei Klassen. Ob die Instanzen die Brücke übernehmen, ist eine Frage an ihre Pflege.
 - **Items ohne Klasse (R05):** 27 Items haben keine Klasse; als Info gemeldet, nicht als Fehler.
 - **Doppelte Ablage:** `dist/` und `docs/downloads/` halten dieselben 4 MB; mit jeder Änderung des Bundles wächst die Git-Historie um beide. Wenn es stört: `dist/*.nt/.ttl` nicht mehr versionieren und nur `docs/downloads/` behalten.
-- **Facette nach CRM-Anker:** kommt mit S5, sobald `crm_bridge.ttl` Anker auch für Chublets liefert; der Index hat dafür Platz.
+- **Karte:** ohne Grundkarte. Umrisse (z. B. Natural Earth, vereinfacht) ließen sich einbetten, wenn es gebraucht wird.
 - **Notebook:** `qmd/…-live.qmd` braucht einmal `quarto add r-wasm/quarto-live` im Repo; gerendert wurde es nicht.
 - **CRM-Abfrage:** `crm-anchors` zeigt heute nur die zwei Anker von fuzzy-sl; mit S5 kommen Chublets dazu, die Abfrage ändert sich nicht.
 - **w3id-Prefix** für `…/record/…` und Content Negotiation.

@@ -21910,7 +21910,9 @@ chublets:Q3 a wikibase:Item ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q4> ;
     skos:prefLabel "Instanz"@de,
         "Instance"@en ;
-    bbr:classKind "model" ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
     chublets-wdt:P2 chublets:Q1 .

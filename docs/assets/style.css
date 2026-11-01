@@ -115,3 +115,21 @@ textarea.sparql { width: 100%; font: .85rem/1.45 var(--font-mono); padding: .6re
 .table-scroll { overflow-x: auto; max-width: 100%; }
 td.nil { color: var(--text-muted); }
 pre.error { white-space: pre-wrap; color: var(--coral); background: var(--surface-alt); padding: .6rem .8rem; border-radius: .4rem; border-left: 4px solid var(--coral); overflow-x: auto; }
+
+/* S11: view toggle, model toggle, map */
+.viewtoggle { display: inline-flex; }
+.viewtoggle button { border-radius: 0; }
+.viewtoggle button:first-child { border-radius: .4rem 0 0 .4rem; }
+.viewtoggle button:last-child { border-radius: 0 .4rem .4rem 0; margin-left: -1px; }
+.viewtoggle button[aria-pressed=true] { background: var(--primary); color: var(--on-primary); border-color: var(--primary); }
+.modeltoggle { display: block; margin: 0 0 .6rem; font-size: .9rem; color: var(--text-muted); }
+.mapsvg { width: 100%; height: auto; background: var(--surface); border: 1px solid var(--border); border-radius: .6rem; }
+.mapsvg .grid { stroke: var(--border); stroke-width: 1; }
+.mapsvg .gridlabel { fill: var(--text-muted); font-size: 11px; }
+.mapsvg .pt { stroke: var(--surface); stroke-width: 1.2; fill-opacity: .85; }
+.mapsvg .pt:hover { stroke: var(--text); stroke-width: 2; }
+.pt.i0, .key.i0 { fill: var(--primary); color: var(--primary); }
+.pt.i1, .key.i1 { fill: var(--info); color: var(--info); }
+.pt.i2, .key.i2 { fill: var(--coral); color: var(--coral); }
+.pt.i3, .key.i3 { fill: var(--wood); color: var(--wood); }
+.legend { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .88rem; margin: .5rem 0; }

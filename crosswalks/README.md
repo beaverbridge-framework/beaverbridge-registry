@@ -33,3 +33,7 @@ Edit this file by hand. It is a source, not a generated artefact.
 Anchors are inherited along `subclass of`: a class without an anchor of its own has the one of its nearest superclass that has one. A `domain` class with neither is reported (SHOULD).
 
 The `bridge` rows and the `kind` column are proposals of the registry, not statements of the instances: correct them here, never in the generated files.
+
+## regions.csv
+
+`regions.csv` gives the **Region** facet of the search page: coarse, hand-drawn bounding boxes (`south,west,north,east` in degrees) in file order. The first box that holds a point decides; a region may have several boxes (Italy has two); a point in no box is *Elsewhere*, an item without coordinates is *(no coordinates)*. The boxes are a convenience for browsing, not an authority and not a country border: they overlap the real borders, and a coast or a small state may fall into a neighbour. Edit by hand.

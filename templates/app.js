@@ -8,28 +8,28 @@
   var PAGE = 60, COLLAPSED = 10;
   var NONE = "(no class)", NOANCHOR = "(no anchor)";
 
+  var NOCOORD = "(no coordinates)";
   var FACETS = [
     { key: "instance", label: "Instance", get: function (e) { return [e.instance]; },
-      text: function (v) { return INST[v] ? INST[v].title : v; } },
+      text: function (v) { return INST[v] ? INST[v].title : v; },
+      sub: function (v) { return INST[v] ? INST[v].licence : ""; } },
+    { key: "region", label: "Region", get: function (e) { return e.regions; }, text: function (v) { return v; } },
     { key: "class", label: "Class", get: function (e) { return e.classes.length ? e.classes : [NONE]; },
       text: function (v) { return v === NONE ? NONE : CL[v] || v; },
       sub: function (v) { return v === NONE ? "" : v.split(":")[0]; } },
-    { key: "kind", label: "Kind of class", get: function (e) { return e.kinds.length ? e.kinds : [NONE]; },
-      text: function (v) { return v; } },
     { key: "crm", label: "CIDOC CRM", get: function (e) { return e.crm.length ? e.crm : [NOANCHOR]; },
-      text: function (v) { return v; } },
-    { key: "features", label: "Has", get: function (e) { return e.features; }, text: function (v) { return v; } },
-    { key: "licence", label: "Licence", get: function (e) { return [INST[e.instance].licence]; }, text: function (v) { return v; } }
+      text: function (v) { return v; } }
   ];
 
   ENTRIES.forEach(function (e) {
+    e._model = e.kinds.length > 0 && e.kinds.indexOf("domain") < 0;  // classes of the data model only
     e._v = {};
     FACETS.forEach(function (f) { e._v[f.key] = f.get(e); });
     e._h = [e.label, e.description, e.id, e.classes.map(function (c) { return CL[c]; }).join(" "),
             e.part_of.map(function (p) { return p.label; }).join(" "), e.crm.join(" ")].join(" ").toLowerCase();
   });
 
-  var state = { q: "", sel: {}, sort: "label", shown: PAGE, expanded: {} };
+  var state = { q: "", sel: {}, sort: "label", shown: PAGE, expanded: {}, model: false, view: "list" };
   FACETS.forEach(function (f) { state.sel[f.key] = []; });
 
   /* ---- URL hash <-> state ---- */
@@ -38,6 +38,8 @@
       var p = new URLSearchParams(location.hash.replace(/^#/, ""));
       state.q = p.get("q") || "";
       if (p.get("sort") === "id") state.sort = "id";
+      state.model = p.get("model") === "1";
+      state.view = p.get("view") === "map" ? "map" : "list";
       FACETS.forEach(function (f) { state.sel[f.key] = p.getAll(f.key); });
     } catch (err) { /* old browser: start empty */ }
   }
@@ -46,6 +48,8 @@
       var p = new URLSearchParams();
       if (state.q) p.set("q", state.q);
       if (state.sort !== "label") p.set("sort", state.sort);
+      if (state.model) p.set("model", "1");
+      if (state.view === "map") p.set("view", "map");
       FACETS.forEach(function (f) { state.sel[f.key].forEach(function (v) { p.append(f.key, v); }); });
       var s = p.toString();
       history.replaceState(null, "", s ? "#" + s : location.pathname + location.search);
@@ -55,6 +59,7 @@
   /* ---- matching ---- */
   function tokens() { return state.q.toLowerCase().split(/\s+/).filter(Boolean); }
   function matches(e, toks, skip) {
+    if (!state.model && e._model) return false;
     for (var i = 0; i < toks.length; i++) if (e._h.indexOf(toks[i]) < 0) return false;
     for (var k = 0; k < FACETS.length; k++) {
       var key = FACETS[k].key, sel = state.sel[key];
@@ -182,6 +187,60 @@
     }
   }
 
+  /* ---- map: an SVG of the hits that have coordinates; no tiles, no server ---- */
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function svg(tag, attrs) {
+    var n = document.createElementNS(SVGNS, tag);
+    Object.keys(attrs || {}).forEach(function (a) { n.setAttribute(a, attrs[a]); });
+    return n;
+  }
+  function renderMap(list) {
+    var host = document.getElementById("map");
+    host.textContent = "";
+    var pts = [];
+    list.forEach(function (e) { e.coordinates.forEach(function (c) { pts.push({ e: e, lat: c[0], lon: c[1] }); }); });
+    if (!pts.length) { host.appendChild(el("div", { "class": "empty", text: "None of the current hits has coordinates." })); return; }
+    var minLat = 90, maxLat = -90, minLon = 180, maxLon = -180;
+    pts.forEach(function (p) {
+      minLat = Math.min(minLat, p.lat); maxLat = Math.max(maxLat, p.lat);
+      minLon = Math.min(minLon, p.lon); maxLon = Math.max(maxLon, p.lon);
+    });
+    var padLat = Math.max((maxLat - minLat) * 0.1, 0.5), padLon = Math.max((maxLon - minLon) * 0.1, 0.5);
+    minLat -= padLat; maxLat += padLat; minLon -= padLon; maxLon += padLon;
+    var k = Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);   // east-west squeeze at this latitude
+    var W = 800, spanX = (maxLon - minLon) * k, spanY = maxLat - minLat;
+    var H = Math.max(240, Math.min(560, Math.round(W * spanY / spanX)));
+    function X(lon) { return ((lon - minLon) / (maxLon - minLon)) * W; }
+    function Y(lat) { return H - ((lat - minLat) / (maxLat - minLat)) * H; }
+    var root = svg("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "class": "mapsvg",
+                            "aria-label": "Map of " + pts.length + " positions" });
+    var step = [0.1, 0.25, 0.5, 1, 2, 5, 10, 20, 30].filter(function (s) { return (maxLon - minLon) / s <= 8; })[0] || 30;
+    for (var lo = Math.ceil(minLon / step) * step; lo <= maxLon; lo += step) {
+      root.appendChild(svg("line", { x1: X(lo), y1: 0, x2: X(lo), y2: H, "class": "grid" }));
+      var t = svg("text", { x: X(lo) + 3, y: H - 4, "class": "gridlabel" }); t.textContent = (Math.round(lo * 100) / 100) + "°"; root.appendChild(t);
+    }
+    for (var la = Math.ceil(minLat / step) * step; la <= maxLat; la += step) {
+      root.appendChild(svg("line", { x1: 0, y1: Y(la), x2: W, y2: Y(la), "class": "grid" }));
+      var u = svg("text", { x: 3, y: Y(la) - 3, "class": "gridlabel" }); u.textContent = (Math.round(la * 100) / 100) + "°"; root.appendChild(u);
+    }
+    var order = DATA.instances.map(function (i) { return i.id; });
+    pts.forEach(function (p) {
+      var a = svg("a", { href: p.e.url, target: "_blank", rel: "noopener" });
+      var c = svg("circle", { cx: X(p.lon).toFixed(1), cy: Y(p.lat).toFixed(1), r: 5, "class": "pt i" + (order.indexOf(p.e.instance) % 4) });
+      var tt = svg("title"); tt.textContent = p.e.label + " (" + p.e.id + ")";
+      c.appendChild(tt); a.appendChild(c); root.appendChild(a);
+    });
+    host.appendChild(root);
+    var leg = el("p", { "class": "legend" });
+    var seen = {};
+    pts.forEach(function (p) { seen[p.e.instance] = true; });
+    order.filter(function (i) { return seen[i]; }).forEach(function (i) {
+      leg.appendChild(el("span", { "class": "key i" + (order.indexOf(i) % 4), text: "● " + (INST[i] ? INST[i].title : i) }));
+    });
+    leg.appendChild(el("span", { "class": "muted", text: pts.length + " positions from " + list.filter(function (e) { return e.coordinates.length; }).length + " hits; graticule only, no base map" }));
+    host.appendChild(leg);
+  }
+
   function update() {
     var toks = tokens();
     var list = ENTRIES.filter(function (e) { return matches(e, toks, null); });
@@ -190,7 +249,14 @@
     var cnt = document.getElementById("count");
     cnt.appendChild(el("strong", { text: String(list.length) }));
     cnt.appendChild(document.createTextNode(" of " + ENTRIES.length + " entries"));
-    renderFacets(); renderResults(list); writeHash();
+    var showMap = state.view === "map";
+    document.getElementById("map").hidden = !showMap;
+    document.getElementById("results").hidden = showMap;
+    document.getElementById("view-list").setAttribute("aria-pressed", showMap ? "false" : "true");
+    document.getElementById("view-map").setAttribute("aria-pressed", showMap ? "true" : "false");
+    renderFacets();
+    if (showMap) renderMap(list); else renderResults(list);
+    writeHash();
   }
 
   /* ---- controls ---- */
@@ -201,11 +267,17 @@
     clearTimeout(timer);
     timer = setTimeout(function () { state.q = q.value.trim(); state.shown = PAGE; update(); }, 120);
   });
+  var mdl = document.getElementById("model");
+  mdl.checked = state.model;
+  mdl.addEventListener("change", function () { state.model = mdl.checked; state.shown = PAGE; update(); });
+  ["list", "map"].forEach(function (v) {
+    document.getElementById("view-" + v).addEventListener("click", function () { state.view = v; update(); });
+  });
   sort.addEventListener("change", function () { state.sort = sort.value; update(); });
   document.getElementById("clear").addEventListener("click", function () {
-    state.q = ""; q.value = ""; FACETS.forEach(function (f) { state.sel[f.key] = []; }); state.shown = PAGE; update();
+    state.q = ""; q.value = ""; state.model = false; mdl.checked = false; FACETS.forEach(function (f) { state.sel[f.key] = []; }); state.shown = PAGE; update();
   });
-  window.addEventListener("hashchange", function () { readHash(); q.value = state.q; sort.value = state.sort; update(); });
+  window.addEventListener("hashchange", function () { readHash(); q.value = state.q; sort.value = state.sort; mdl.checked = state.model; update(); });
 
   update();
 })();

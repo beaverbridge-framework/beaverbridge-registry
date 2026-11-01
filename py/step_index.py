@@ -8,12 +8,13 @@ shows exactly what the bundle holds. An entry is an item (wikibase:Item); proper
 from __future__ import annotations
 
 import argparse
+import csv
 import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from registry_utils import BBR_NS, DIST, RELEASE, ensure_dirs, load_sources, write_json  # noqa: E402
+from registry_utils import BBR_NS, CROSSWALKS, DIST, RELEASE, ensure_dirs, load_sources, write_json  # noqa: E402
 
 RE_POINT = re.compile(r"^\s*Point\(\s*(-?[0-9.]+)\s+(-?[0-9.]+)\s*\)\s*$", re.I)
 RE_QID = re.compile(r"^http://www\.wikidata\.org/entity/(Q[0-9]+)$")
@@ -36,6 +37,28 @@ def licence_label(iri: str) -> str:
     if m:
         return "ODbL-" + m.group(1).replace("-", ".")
     return iri
+
+
+NO_COORDS = "(no coordinates)"
+ELSEWHERE = "Elsewhere"
+
+
+def load_regions() -> list[tuple]:
+    """crosswalks/regions.csv: coarse boxes in file order; a region may have several boxes."""
+    with (CROSSWALKS / "regions.csv").open(encoding="utf-8", newline="") as fh:
+        return [(r["label"], float(r["south"]), float(r["west"]), float(r["north"]), float(r["east"]))
+                for r in csv.DictReader(fh)]
+
+
+def regions_of(coords, boxes) -> list[str]:
+    """Label of the first box that holds a point, for every point; Elsewhere if none does."""
+    if not coords:
+        return [NO_COORDS]
+    found = set()
+    for lat, lon in coords:
+        hit = next((b[0] for b in boxes if b[1] <= lat <= b[3] and b[2] <= lon <= b[4]), ELSEWHERE)
+        found.add(hit)
+    return sorted(found)
 
 
 def crm_label(iri) -> str:
@@ -82,6 +105,7 @@ def build(warn) -> dict:
                     queue.append(s)
         return None
 
+    boxes = load_regions()
     instances, entries, class_labels = [], [], {}
     for rec in sorted(g.subjects(RDF.type, DCAT.CatalogRecord),
                       key=lambda r: (rank.get(str(g.value(r, BBR("prefix"))), 99), str(r))):
@@ -125,6 +149,7 @@ def build(warn) -> dict:
                 else:
                     warn(f"{e['id']}: coordinates not read: {c}")
             e["coordinates"] = sorted(coords)
+            e["regions"] = regions_of(e["coordinates"], boxes)
             e["wikidata"] = sorted({RE_QID.match(str(w)).group(1) for w in g.objects(s, BBR("wikidataEquivalent"))
                                     if RE_QID.match(str(w))}, key=numkey)
             e["matches"] = sorted(str(m) for m in g.objects(s, BBR("externalMatch")))

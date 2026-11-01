@@ -1,7 +1,7 @@
 {% extends "base.html.j2" %}
 {% block body %}
 <h1>Search all instances</h1>
-<p class="muted">{{ n_entries }} items from {{ instances|length }} static Wikibase instances in one bundle of {{ triples }} triples. Filters inside a group combine with “or”, groups combine with “and”.</p>
+<p class="muted">{{ n_entries }} items from {{ instances|length }} static Wikibase instances in one bundle of {{ triples }} triples. Filters inside a group combine with “or”, groups combine with “and”. Items that only describe the data model are hidden until you ask for them. Regions are coarse boxes set by the registry (<code>crosswalks/regions.csv</code>), not an authority.</p>
 <div class="layout">
   <aside class="facets" aria-label="Filters">
     <header><h2>Filters</h2><button type="button" id="clear">Clear filters</button></header>
@@ -13,8 +13,13 @@
       <input type="search" id="q" placeholder="Search labels, descriptions, identifiers" autocomplete="off">
       <label class="visually-hidden" for="sort">Sort</label>
       <select id="sort"><option value="label">Sort: label A–Z</option><option value="id">Sort: instance and identifier</option></select>
+      <span class="viewtoggle" role="group" aria-label="View">
+        <button type="button" id="view-list" aria-pressed="true">List</button><button type="button" id="view-map" aria-pressed="false">Map</button>
+      </span>
     </div>
+    <label class="modeltoggle"><input type="checkbox" id="model"> Include items of model classes (vocabulary, types, sources, the roots of the class trees)</label>
     <p class="count" id="count" aria-live="polite"></p>
+    <div id="map" hidden></div>
     <div id="results"></div>
   </section>
 </div>

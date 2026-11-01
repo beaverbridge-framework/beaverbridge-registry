@@ -20,7 +20,7 @@ fuzzy-sl,Q146,E53 Place,domain,E53_Place,source,stated by the instance in P37
 fuzzy-sl,Q147,E26 Physical Feature,domain,E26_Physical_Feature,source,stated by the instance in P37
 chublets,Q1,Class,model,,none,type of every class
 chublets,Q2,Property,model,,none,type of every property
-chublets,Q3,Instance,model,,none,root of the class tree; its 387 direct items are of mixed kind (topics, repositories, people, papers) and are not typed further
+chublets,Q3,Instance,domain,E1_CRM_Entity,bridge,root of the class tree; its direct items are of mixed kind (topics, repositories, people, papers) and are not typed further; E1_CRM_Entity is the only claim that holds for all of them
 chublets,Q100,software,domain,E73_Information_Object,bridge,the instance gives no anchor; software is immaterial information
 chublets,Q101,research software,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q102,application software,domain,,none,inherits E73_Information_Object through Q100

@@ -4,12 +4,12 @@
   osm-benchmarks: 6278 triples, 27 items, 24 properties, 4 classes, roles 5/7
   survey: 3 instance(s), 0 warning(s)
 [bridge]
-  bridge: 36 classes, 6 with an anchor of their own, 48 triples, 0 warning(s)
+  bridge: 36 classes, 7 with an anchor of their own, 50 triples, 0 warning(s)
 [bundle]
   fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements, 0 redirect(s)
   chublets: 99261 source triples, 13883 kept, 1000 entities, 2858 role statements, 7 redirect(s)
   osm-benchmarks: 6278 source triples, 820 kept, 51 entities, 109 role statements, 0 redirect(s)
-  bundle: 20701 triples from 3 instance(s), 0 warning(s)
+  bundle: 20703 triples from 3 instance(s), 0 warning(s)
 [validate]
   validate: self-test ok (25 rules fail on bad.ttl, nothing on good.ttl)
   validate: 0 violation(s), 0 warning(s), 27 note(s)
@@ -21,14 +21,14 @@
 [site]
   site: docs/ with search page (996 entries), catalogue, 3 record page(s), 15 vocabulary term(s)
 [sparql]
-    beaverbridge-registry.ttl: 20701 triples
+    beaverbridge-registry.ttl: 20703 triples
     ok   instances         3 rows
     ok   classes          29 rows
     ok   hierarchy        24 rows
     ok   roles            20 rows
     ok   class-kinds       6 rows
-    ok   crm-anchors       6 rows
-    ok   crm-reach         3 rows
+    ok   crm-anchors       7 rows
+    ok   crm-reach         4 rows
     ok   coordinates      96 rows
     ok   wikidata        162 rows
     ok   match-hosts       3 rows
