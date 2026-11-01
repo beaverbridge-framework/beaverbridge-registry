@@ -1,0 +1,7 @@
+# Parsing and serialising the harvested Turtle
+rdflib>=7.0
+# SHACL gate (S6)
+pyshacl>=0.26
+# Page templates (S7, S8)
+jinja2>=3.1
+pyyaml>=6.0

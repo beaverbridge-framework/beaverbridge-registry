@@ -1,0 +1,28 @@
+{
+  "instances": [
+    {
+      "id": "fuzzy-sl",
+      "label": "fuzzy-sl (static copy)",
+      "repo": "https://github.com/n4o-rse/fuzzy-sl-static",
+      "pages_url": "https://n4o-rse.github.io/fuzzy-sl-static/",
+      "rdf_base": "https://n4o-rse.github.io/fuzzy-sl-static",
+      "prefix_family": "wd",
+      "files": [
+        "downloads/n4o-rse.github.io-fuzzy-sl-static.ttl",
+        "downloads/wikibase-ontology.ttl"
+      ]
+    },
+    {
+      "id": "chublets",
+      "label": "chublets.software Wikibase (model demo)",
+      "repo": "https://github.com/n4o-rse/chublets-wikibase-demo",
+      "pages_url": "https://n4o-rse.github.io/chublets-wikibase-demo/",
+      "rdf_base": "https://n4o-rse.github.io/chublets-wikibase-demo",
+      "prefix_family": "chb",
+      "files": [
+        "downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl",
+        "downloads/wikibase-ontology.ttl"
+      ]
+    }
+  ]
+}

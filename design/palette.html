@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeaverBridge palette</title>
+<style>
+  :root {
+    --bg:#FBF7F4; --surface:#FFFFFF; --surface-alt:#F3EBE6; --text:#2B1B24; --text-muted:#6A5560; --border:#E0D2CA;
+    --primary:#8E3A63; --primary-hover:#742E50; --on-primary:#FFFFFF; --link:#7A3157;
+    --wood:#7A5B3A; --coral:#C04A35; --cream:#F2E3B0; --info:#2F6F7A;
+    --font-body:"Helvetica Neue",Arial,Helvetica,sans-serif;
+    --font-head:Bitter,Georgia,"Times New Roman",serif;
+    --font-mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  .dark {
+    --bg:#1C1218; --surface:#271A22; --surface-alt:#33232D; --text:#F3E9EE; --text-muted:#BBA6B1; --border:#4A3643;
+    --primary:#D777A6; --primary-hover:#E597BD; --on-primary:#1C1218; --link:#E39BC1;
+    --wood:#C9A27A; --coral:#F0866F; --cream:#F2E3B0; --info:#6FC0CC;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#888; font-family:var(--font-body); }
+  .mode { background:var(--bg); color:var(--text); padding:20px 16px 28px; }
+  .wrap { max-width:720px; margin:0 auto; }
+  h1,h2 { font-family:var(--font-head); color:var(--primary); margin:0 0 4px; }
+  h1 { font-size:1.6rem; } h2 { font-size:1.15rem; margin-top:22px; }
+  p.sub { color:var(--text-muted); margin:0 0 14px; font-size:.9rem; }
+  .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  @media (min-width:560px){ .grid { grid-template-columns:repeat(3,1fr); } }
+  .sw { background:var(--surface); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+  .chip { height:56px; }
+  .meta { padding:8px 10px; font-size:.78rem; line-height:1.35; }
+  .meta b { display:block; font-size:.82rem; }
+  code { font-family:var(--font-mono); color:var(--text-muted); }
+  .demo { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; margin-top:8px; }
+  .demo h3 { font-family:var(--font-head); color:var(--primary); margin:0 0 6px; }
+  .demo p { margin:0 0 10px; }
+  a { color:var(--link); }
+  .btn { display:inline-block; background:var(--primary); color:var(--on-primary); padding:8px 14px; border-radius:8px; text-decoration:none; font-weight:600; }
+  .btn:hover { background:var(--primary-hover); }
+  .badge { display:inline-block; border:1px solid var(--wood); color:var(--wood); border-radius:999px; padding:1px 9px; font-size:.78rem; font-family:var(--font-mono); }
+  .hit { background:var(--cream); color:#2B1B24; padding:0 3px; border-radius:3px; }
+  .warn { color:var(--coral); font-weight:600; }
+  .note { color:var(--info); }
+  .zebra { width:100%; border-collapse:collapse; margin-top:10px; font-size:.85rem; }
+  .zebra td, .zebra th { padding:6px 8px; text-align:left; border-bottom:1px solid var(--border); }
+  .zebra tr:nth-child(even) td { background:var(--surface-alt); }
+  .fonts p { margin:4px 0; }
+</style>
+</head>
+<body>
+
+<!-- LIGHT -->
+<section class="mode" id="light">
+<div class="wrap">
+  <h1>BeaverBridge · light</h1>
+  <p class="sub">Derived from the logo: plum fur, brown hat and logs, coral tongue, cream teeth.</p>
+  <div class="grid" data-set="light"></div>
+
+  <h2>In use</h2>
+  <div class="demo">
+    <h3>Registry of static Wikibases</h3>
+    <p>Items from <span class="badge">fuzzy-sl:Q1</span> and <span class="badge">chublets:Q1</span>, found with <span class="hit">search hit</span> highlighting. <a href="#light">A link</a> · <span class="note">a note</span> · <span class="warn">a SHACL violation</span></p>
+    <a class="btn" href="#light">Open SPARQL page</a>
+    <table class="zebra"><tr><th>Instance</th><th>Items</th></tr><tr><td>fuzzy-sl</td><td>…</td></tr><tr><td>chublets</td><td>…</td></tr></table>
+  </div>
+  <div class="demo fonts">
+    <p style="font-family:var(--font-head);font-size:1.2rem;color:var(--primary)">Headings: Bitter, Georgia fallback</p>
+    <p>Body: Helvetica Neue, Arial, as in the family sites.</p>
+    <p style="font-family:var(--font-mono);font-size:.85rem">Code and IRIs: ui-monospace, Menlo, Consolas</p>
+  </div>
+</div>
+</section>
+
+<!-- DARK -->
+<section class="mode dark" id="dark">
+<div class="wrap">
+  <h1>BeaverBridge · dark</h1>
+  <p class="sub">The primary is the lightened plum; the logo plum is too dark on a dark background.</p>
+  <div class="grid" data-set="dark"></div>
+
+  <h2>In use</h2>
+  <div class="demo">
+    <h3>Registry of static Wikibases</h3>
+    <p>Items from <span class="badge">fuzzy-sl:Q1</span> and <span class="badge">chublets:Q1</span>, found with <span class="hit">search hit</span> highlighting. <a href="#dark">A link</a> · <span class="note">a note</span> · <span class="warn">a SHACL violation</span></p>
+    <a class="btn" href="#dark">Open SPARQL page</a>
+    <table class="zebra"><tr><th>Instance</th><th>Items</th></tr><tr><td>fuzzy-sl</td><td>…</td></tr><tr><td>chublets</td><td>…</td></tr></table>
+  </div>
+  <div class="demo fonts">
+    <p style="font-family:var(--font-head);font-size:1.2rem;color:var(--primary)">Headings: Bitter, Georgia fallback</p>
+    <p>Body: Helvetica Neue, Arial, as in the family sites.</p>
+    <p style="font-family:var(--font-mono);font-size:.85rem">Code and IRIs: ui-monospace, Menlo, Consolas</p>
+  </div>
+</div>
+</section>
+
+<script>
+const sets = {
+  light: [["bg","#FBF7F4","page background"],["surface","#FFFFFF","cards, tables"],["surface-alt","#F3EBE6","zebra, code"],
+    ["text","#2B1B24","body text"],["text-muted","#6A5560","captions"],["border","#E0D2CA","lines"],
+    ["primary","#8E3A63","buttons, headings"],["primary-hover","#742E50","hover"],["on-primary","#FFFFFF","text on primary"],
+    ["link","#7A3157","links"],["wood","#7A5B3A","badges"],["coral","#C04A35","warnings"],
+    ["cream","#F2E3B0","highlight"],["info","#2F6F7A","notes"]],
+  dark: [["bg","#1C1218","page background"],["surface","#271A22","cards, tables"],["surface-alt","#33232D","zebra, code"],
+    ["text","#F3E9EE","body text"],["text-muted","#BBA6B1","captions"],["border","#4A3643","lines"],
+    ["primary","#D777A6","buttons, headings"],["primary-hover","#E597BD","hover"],["on-primary","#1C1218","text on primary"],
+    ["link","#E39BC1","links"],["wood","#C9A27A","badges"],["coral","#F0866F","warnings"],
+    ["cream","#F2E3B0","highlight"],["info","#6FC0CC","notes"]]
+};
+document.querySelectorAll(".grid").forEach(g => {
+  g.innerHTML = sets[g.dataset.set].map(([n,h,u]) =>
+    `<div class="sw"><div class="chip" style="background:${h}"></div><div class="meta"><b>--${n}</b><code>${h}</code><br>${u}</div></div>`).join("");
+});
+</script>
+</body>
+</html>

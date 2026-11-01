@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "beaverbridge-registry: Registry of static Wikibase instances"
+abstract: >-
+  Harvests RDF exports of static Wikibase instances, bundles them into a DCAT catalogue anchored in CIDOC CRM and publishes a facet page and a browser SPARQL page.
+type: software
+authors:
+  - family-names: Schenk
+    given-names: Fiona
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: insert ORCID
+  - family-names: Thiery
+    given-names: Florian
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: insert ORCID
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-01"
+repository-code: "https://github.com/n4o-rse/beaverbridge-registry"  # TODO: insert URL
+# doi: "10.5281/zenodo.XXXXXXX"  # TODO: add Zenodo DOI once minted
+keywords:
+  - Wikibase
+  - Linked Data
+  - CIDOC CRM
+  - registry

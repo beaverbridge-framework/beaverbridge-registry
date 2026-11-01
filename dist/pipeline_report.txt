@@ -1,0 +1,10 @@
+[bundle]
+  bundle: nothing to do (implemented in S4)
+[validate]
+  validate: nothing to do (implemented in S6)
+[index]
+  index: nothing to do (implemented in S7)
+[site]
+  site: nothing to do (implemented in S7)
+[sparql]
+  sparql: nothing to do (implemented in S8)
