@@ -24,7 +24,7 @@ CLASSES_CSV = CROSSWALKS / "classes.csv"
 CRM = "http://www.cidoc-crm.org/cidoc-crm/"
 KINDS = ("domain", "model")
 BASES = ("source", "bridge", "none")
-RE_CRM = re.compile(r"^E[0-9]+_[A-Za-z0-9_]+$")
+RE_CRM = re.compile(r"^E[0-9]+_[A-Za-z0-9_-]+$")
 
 
 def numkey(ident: str) -> tuple:

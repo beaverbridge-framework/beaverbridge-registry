@@ -4,6 +4,7 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> <http://www.w3.org/ns/dcat#landingPage> <https://beaverbridge-framework.github.io/beaverbridge-registry/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> <http://www.w3.org/ns/dcat#record> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> <http://www.w3.org/ns/dcat#record> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> <http://www.w3.org/ns/dcat#record> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> <http://purl.org/dc/terms/modified> "2026-10-25T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> <http://purl.org/dc/terms/source> <https://n4o-rse.github.io/chublets-wikibase-demo/downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl> .
@@ -26,6 +27,17 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/prefix> "fuzzy-sl" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "91d5b8849ad785b52170b500f2f8b9b0ec0bd06a650ac9b41f94917c6bbaa884" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceTripleCount> "12462"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://purl.org/dc/terms/modified> "2026-11-01T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://purl.org/dc/terms/source> <https://n4o-rse.github.io/osm-benchmarks-static/downloads/n4o-rse.github.io-osm-benchmarks-static.ttl> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://purl.org/dc/terms/title> "OSM benchmarks (static Wikibase)"@en .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/osm-benchmarks-static/> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/osm-benchmarks-static/catalog> .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.22.0" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/prefix> "osm-benchmarks" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "1b711e75f4d4790959be85ecdc8c4a27a518b8291b987175f136460c80ea92aa" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceTripleCount> "6278"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/catalog> <http://purl.org/dc/terms/conformsTo> <http://wikiba.se/ontology> .
 <https://n4o-rse.github.io/chublets-wikibase-demo/catalog> <http://purl.org/dc/terms/description> "The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and about 100 software entries imported from open-archaeo." .
 <https://n4o-rse.github.io/chublets-wikibase-demo/catalog> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
@@ -19701,3 +19713,989 @@
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q99> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q99> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> .
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q99> <https://n4o-rse.github.io/fuzzy-sl-static/prop/direct/P1> <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://purl.org/dc/terms/conformsTo> <http://wikiba.se/ontology> .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://purl.org/dc/terms/description> "A static, read-only Wikibase of OpenStreetMap benchmarks (survey points with a Wikimedia Commons image) in Ireland, Northern Ireland and Scotland. One item per OSM element, its version history as statements, anchored in CIDOC CRM." .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/1-0/> .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://purl.org/dc/terms/modified> "2026-11-01T00:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://purl.org/dc/terms/title> "OSM benchmarks (static Wikibase)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/osm-benchmarks-static/> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://schema.org/description> "Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://schema.org/description> "The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://schema.org/name> "OSM element"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://schema.org/name> "OSM-Element"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Url> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://www.w3.org/2000/01/rdf-schema#label> "OSM element"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Element"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM element"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Element"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P100> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://schema.org/description> "Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://schema.org/description> "One version of the OSM element, as the URL of that version; one statement per version."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://schema.org/name> "OSM version"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://schema.org/name> "OSM-Version"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Url> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://www.w3.org/2000/01/rdf-schema#label> "OSM version"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Version"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM version"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Version"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://schema.org/description> "Number of an OSM version (qualifier)."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://schema.org/description> "Nummer einer OSM-Version (Qualifier)."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://schema.org/name> "OSM version number"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://schema.org/name> "OSM-Versionsnummer"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P102> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Quantity> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://www.w3.org/2000/01/rdf-schema#label> "OSM version number"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Versionsnummer"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM version number"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Versionsnummer"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://schema.org/description> "Time at which an OSM version was saved, ISO 8601 in UTC to the second, as text (qualifier); the package has no time-of-day value yet."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://schema.org/description> "Zeitpunkt, an dem eine OSM-Version gespeichert wurde, ISO 8601 in UTC, sekundengenau, als Text (Qualifier); das Paket kennt noch keinen Zeitwert mit Uhrzeit."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://schema.org/name> "OSM timestamp"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://schema.org/name> "OSM-Zeitstempel"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P103> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#String> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://www.w3.org/2000/01/rdf-schema#label> "OSM timestamp"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Zeitstempel"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM timestamp"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Zeitstempel"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://schema.org/description> "Das OSM-Changeset, in dem eine Version entstand (Qualifier); der Link führt zu seiner Seite bei OpenStreetMap."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://schema.org/description> "The OSM changeset in which a version was made (qualifier); the link leads to its page at OpenStreetMap."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://schema.org/name> "OSM changeset"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://schema.org/name> "OSM-Changeset"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P104> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#ExternalId> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://www.w3.org/2000/01/rdf-schema#label> "OSM changeset"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Changeset"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM changeset"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Changeset"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P5> "https://www.openstreetmap.org/changeset/$1" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://schema.org/description> "Name des OSM-Benutzers, der eine Version angelegt hat (Qualifier), so wie er beim Lesen der Daten lautete."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://schema.org/description> "Name of the OSM user who made a version (qualifier), as it was when the data were read."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://schema.org/name> "OSM user name"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://schema.org/name> "OSM-Benutzername"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P105> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#String> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://www.w3.org/2000/01/rdf-schema#label> "OSM user name"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Benutzername"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM user name"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Benutzername"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://schema.org/description> "Numeric ID (uid) of the OSM user who made a version (qualifier); stays the same when the user name changes."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://schema.org/description> "Numerische ID (uid) des OSM-Benutzers, der eine Version angelegt hat (Qualifier); bleibt gleich, wenn sich der Name ändert."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://schema.org/name> "OSM user ID"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://schema.org/name> "OSM-Benutzer-ID"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P106> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#ExternalId> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://www.w3.org/2000/01/rdf-schema#label> "OSM user ID"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Benutzer-ID"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM user ID"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Benutzer-ID"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://schema.org/description> "Die Version des OSM-Elements, ab der es die Auswahl dieser Seite (die Tag-Bedingungen der Abfrage) erfüllt, als URL dieser Version."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://schema.org/description> "The version of the OSM element from which it meets the selection of this site (the tag conditions of the query), as the URL of that version."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://schema.org/name> "in der Auswahl seit"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://schema.org/name> "in selection since"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Url> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://www.w3.org/2000/01/rdf-schema#label> "in der Auswahl seit"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://www.w3.org/2000/01/rdf-schema#label> "in selection since"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://www.w3.org/2004/02/skos/core#prefLabel> "in der Auswahl seit"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <http://www.w3.org/2004/02/skos/core#prefLabel> "in selection since"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://schema.org/description> "Die letzte Version des OSM-Elements, die die Auswahl noch erfüllt, als URL dieser Version (Qualifier von „in der Auswahl seit“); fehlt, solange sie erfüllt ist."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://schema.org/description> "The last version of the OSM element that still meets the selection, as the URL of that version (qualifier of \"in selection since\"); absent while it still does."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://schema.org/name> "in der Auswahl bis"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://schema.org/name> "in selection until"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P108> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Url> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://www.w3.org/2000/01/rdf-schema#label> "in der Auswahl bis"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://www.w3.org/2000/01/rdf-schema#label> "in selection until"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://www.w3.org/2004/02/skos/core#prefLabel> "in der Auswahl bis"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <http://www.w3.org/2004/02/skos/core#prefLabel> "in selection until"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://schema.org/description> "Name der Auswahl (Export-Typ, zum Beispiel benchmarks), auf die sich ein Statement „in der Auswahl seit“ bezieht (Qualifier)."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://schema.org/description> "Name of the selection (export type, for example benchmarks) a statement \"in selection since\" refers to (qualifier)."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://schema.org/name> "Auswahl"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://schema.org/name> "selection"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P109> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#String> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://www.w3.org/2000/01/rdf-schema#label> "Auswahl"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://www.w3.org/2000/01/rdf-schema#label> "selection"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://www.w3.org/2004/02/skos/core#prefLabel> "Auswahl"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <http://www.w3.org/2004/02/skos/core#prefLabel> "selection"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://schema.org/description> "Class the values of a property should belong to."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://schema.org/description> "Klasse, zu der die Werte einer Eigenschaft gehören sollen."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://schema.org/name> "Wertebereich"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://schema.org/name> "range"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P10> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#WikibaseItem> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://www.w3.org/2000/01/rdf-schema#label> "Wertebereich"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://www.w3.org/2000/01/rdf-schema#label> "range"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wertebereich"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <http://www.w3.org/2004/02/skos/core#prefLabel> "range"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P10> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P10> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://schema.org/description> "Aktuelle Position des Elements; bei einem Way oder einer Relation der Mittelpunkt seiner Geometrie."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://schema.org/description> "Current position of the element; for a way or relation the centre of its geometry."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://schema.org/name> "Koordinate"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://schema.org/name> "coordinate location"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#GlobeCoordinate> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://www.w3.org/2000/01/rdf-schema#label> "Koordinate"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://www.w3.org/2000/01/rdf-schema#label> "coordinate location"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://www.w3.org/2004/02/skos/core#prefLabel> "Koordinate"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <http://www.w3.org/2004/02/skos/core#prefLabel> "coordinate location"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P625> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P625" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://schema.org/description> "Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://schema.org/description> "Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://schema.org/name> "Geometrie-Verlauf"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://schema.org/name> "geometry history"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#String> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://www.w3.org/2000/01/rdf-schema#label> "Geometrie-Verlauf"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://www.w3.org/2000/01/rdf-schema#label> "geometry history"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geometrie-Verlauf"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <http://www.w3.org/2004/02/skos/core#prefLabel> "geometry history"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://schema.org/description> "Bild des Elements auf Wikimedia Commons (aus dem OSM-Tag wikimedia_commons)."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://schema.org/description> "Image of the element on Wikimedia Commons (from the OSM tag wikimedia_commons)."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://schema.org/name> "Bild"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://schema.org/name> "image"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#CommonsMedia> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://www.w3.org/2000/01/rdf-schema#label> "Bild"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://www.w3.org/2000/01/rdf-schema#label> "image"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bild"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <http://www.w3.org/2004/02/skos/core#prefLabel> "image"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P18> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://schema.org/description> "A tag of the current version of the OSM element, written key=value."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://schema.org/description> "Ein Tag der aktuellen Version des OSM-Elements, geschrieben als key=value."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://schema.org/name> "OSM tag"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://schema.org/name> "OSM-Tag"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#String> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://www.w3.org/2000/01/rdf-schema#label> "OSM tag"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://www.w3.org/2000/01/rdf-schema#label> "OSM-Tag"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM tag"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <http://www.w3.org/2004/02/skos/core#prefLabel> "OSM-Tag"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://schema.org/description> "Diese Klasse ist eine speziellere Form der Wertklasse."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://schema.org/description> "This class is a more specific form of the value class."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://schema.org/name> "Unterklasse von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://schema.org/name> "subclass of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#WikibaseItem> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://www.w3.org/2000/01/rdf-schema#label> "Unterklasse von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://www.w3.org/2000/01/rdf-schema#label> "subclass of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Unterklasse von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <http://www.w3.org/2004/02/skos/core#prefLabel> "subclass of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P279> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P10> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P279" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P1> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://schema.org/description> "Diese Entität gehört zur Wertklasse."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://schema.org/description> "This entity is a member of the value class."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://schema.org/name> "instance of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://schema.org/name> "ist eine Instanz von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#WikibaseItem> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://www.w3.org/2000/01/rdf-schema#label> "instance of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://www.w3.org/2000/01/rdf-schema#label> "ist eine Instanz von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://www.w3.org/2004/02/skos/core#prefLabel> "instance of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <http://www.w3.org/2004/02/skos/core#prefLabel> "ist eine Instanz von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P31> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P10> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P31" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P2> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://schema.org/description> "Diese Eigenschaft ist eine speziellere Form der Wert-Eigenschaft."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://schema.org/description> "This property is a more specific form of the value property."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://schema.org/name> "Untereigenschaft von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://schema.org/name> "subproperty of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#WikibaseProperty> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://www.w3.org/2000/01/rdf-schema#label> "Untereigenschaft von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://www.w3.org/2000/01/rdf-schema#label> "subproperty of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Untereigenschaft von"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <http://www.w3.org/2004/02/skos/core#prefLabel> "subproperty of"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P1647> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P10> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P1647" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P3> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://schema.org/description> "Das Wikidata-Item oder die Wikidata-Property, die dieser Entität entspricht (zum Beispiel Q7397 oder P275)."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://schema.org/description> "The Wikidata item or property that corresponds to this entity (for example Q7397 or P275)."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://schema.org/name> "Wikidata equivalent"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://schema.org/name> "Wikidata-Entsprechung"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#ExternalId> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://www.w3.org/2000/01/rdf-schema#label> "Wikidata equivalent"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://www.w3.org/2000/01/rdf-schema#label> "Wikidata-Entsprechung"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wikidata equivalent"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wikidata-Entsprechung"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P4> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P5> "https://www.wikidata.org/entity/$1" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://schema.org/description> "URL pattern of an identifier property; $1 stands for the identifier."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://schema.org/description> "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://schema.org/name> "URL-Muster"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://schema.org/name> "formatter URL"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P5> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#String> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://www.w3.org/2000/01/rdf-schema#label> "URL-Muster"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://www.w3.org/2000/01/rdf-schema#label> "formatter URL"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://www.w3.org/2004/02/skos/core#prefLabel> "URL-Muster"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <http://www.w3.org/2004/02/skos/core#prefLabel> "formatter URL"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P1630> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P1630" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P5> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://schema.org/description> "Web page that documents a statement."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://schema.org/description> "Webseite, die eine Aussage belegt."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://schema.org/name> "Beleg-URL"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://schema.org/name> "reference URL"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P6> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Url> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://www.w3.org/2000/01/rdf-schema#label> "Beleg-URL"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://www.w3.org/2000/01/rdf-schema#label> "reference URL"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://www.w3.org/2004/02/skos/core#prefLabel> "Beleg-URL"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <http://www.w3.org/2004/02/skos/core#prefLabel> "reference URL"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P854> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P6> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P854" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://schema.org/description> "Date on which the source of a statement was read."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://schema.org/description> "Datum, an dem die Quelle einer Aussage gelesen wurde."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://schema.org/name> "abgerufen am"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://schema.org/name> "retrieved"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P7> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#Time> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://www.w3.org/2000/01/rdf-schema#label> "abgerufen am"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://www.w3.org/2000/01/rdf-schema#label> "retrieved"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://www.w3.org/2004/02/skos/core#prefLabel> "abgerufen am"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <http://www.w3.org/2004/02/skos/core#prefLabel> "retrieved"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P813> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P7> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P813" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://schema.org/description> "Item that names the source of a statement."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://schema.org/description> "Item, das die Quelle einer Aussage nennt."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://schema.org/name> "angegeben in"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://schema.org/name> "stated in"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P8> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#WikibaseItem> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://www.w3.org/2000/01/rdf-schema#label> "angegeben in"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://www.w3.org/2000/01/rdf-schema#label> "stated in"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://www.w3.org/2004/02/skos/core#prefLabel> "angegeben in"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <http://www.w3.org/2004/02/skos/core#prefLabel> "stated in"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/wikidataEquivalent> <http://www.wikidata.org/entity/P248> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P8> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P4> "P248" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://schema.org/description> "Class the subject of a property's statements should belong to."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://schema.org/description> "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://schema.org/name> "Definitionsbereich"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://schema.org/name> "domain"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://wikiba.se/ontology#directClaim> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://wikiba.se/ontology#propertyType> <http://wikiba.se/ontology#WikibaseItem> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://www.w3.org/2000/01/rdf-schema#label> "Definitionsbereich"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://www.w3.org/2000/01/rdf-schema#label> "domain"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://www.w3.org/2004/02/skos/core#prefLabel> "Definitionsbereich"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <http://www.w3.org/2004/02/skos/core#prefLabel> "domain"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P10> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/P9> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P9> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://schema.org/description> "A fixed survey marker (benchmark, survey point, milestone) that is mapped as one element in OpenStreetMap."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://schema.org/description> "Eine fest verbaute Vermessungsmarke (Höhenmarke, Vermessungspunkt, Meilenstein), die in OpenStreetMap als ein Element kartiert ist."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://schema.org/name> "Benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://schema.org/name> "Höhenmarke"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://www.w3.org/2000/01/rdf-schema#label> "Höhenmarke"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <http://www.w3.org/2004/02/skos/core#prefLabel> "Höhenmarke"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "domain" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmBasis> "bridge" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/crmClass> <http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P1> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://schema.org/description> "OpenStreetMap node 12600848879"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://schema.org/name> "Benchmark at St. Nicholas' Collegiate Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at St. Nicholas' Collegiate Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at St. Nicholas' Collegiate Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-9.0538691 53.2725397)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12600848879> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12600848879> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12600848879/history/5> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12600848879/history/4> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-9.0538691 53.2725397)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-9.0538687 53.2725388)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-9.0538691 53.2725397)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-9.0539459 53.2725582)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20St.%20Nicholas%27%20Collegiate%20Church.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "description=Second mark on the principal levelling line from Galway to Tuam. Has a copper bolt and inscription." .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "inscription=LM 2" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "source=survey;25inch map" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-02-19" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:purpose=vertical" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q101> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://schema.org/description> "OpenStreetMap node 12888689968"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://schema.org/name> "Benchmark at Ardreigh Lock"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at Ardreigh Lock"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at Ardreigh Lock"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-6.9790004 52.9774432)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12888689968> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12888689968> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12888689968/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12888689968/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-6.9790004 52.9774432)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.9789703 52.9774212)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.9790004 52.9774432)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Ardreigh%20Lock.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-05" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q102> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://schema.org/description> "OpenStreetMap node 12919476068"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://schema.org/name> "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://www.w3.org/2000/01/rdf-schema#label> "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <http://www.w3.org/2004/02/skos/core#prefLabel> "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.260726 55.8642448)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12919476068> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12919476068> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12919476068/history/6> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12919476068/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.260726 55.8642448)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2607179 55.8642366)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.260726 55.8642448)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20West%20Campbell%20Street%20and%20Bath%20Street.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "name:en=NO145 BATH ST SE FACE E ANG 1989 37,995m" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-16" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:purpose=vertical" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:type=benchmark" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q103> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://schema.org/description> "OpenStreetMap node 12919738910"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://schema.org/name> "Benchmark at St George's Tron Parish Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at St George's Tron Parish Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at St George's Tron Parish Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2537467 55.8620198)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12919738910> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12919738910> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12919738910/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12919738910/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2537467 55.8620198)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2537443 55.8620197)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2537467 55.8620198)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20St%20George%27s%20Tron%20Parish%20Church.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-16" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q104> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://schema.org/description> "OpenStreetMap node 12922675575"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://schema.org/name> "Benchmark at corner of Blantyre St and Argyle St"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at corner of Blantyre St and Argyle St"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at corner of Blantyre St and Argyle St"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2924895 55.8685438)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12922675575> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12922675575> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12922675575/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12922675575/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2924895 55.8685438)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2924895 55.8685438)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2924923 55.8685441)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20corner%20of%20Blantyre%20St%20and%20Argyle%20St.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q105> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://schema.org/description> "OpenStreetMap node 12923698705"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://schema.org/name> "Benchmark on City Union Railway Bridge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark on City Union Railway Bridge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark on City Union Railway Bridge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2497576 55.8526441)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12923698705> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12923698705> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12923698705/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12923698705/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2497576 55.8526441)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2497576 55.8526441)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20City%20Union%20Railway%20Bridge.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q106> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://schema.org/description> "OpenStreetMap node 12923704831"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://schema.org/name> "Benchmark on Albert Bridge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark on Albert Bridge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark on Albert Bridge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.247294 55.8527993)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12923704831> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12923704831> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12923704831/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12923704831/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.247294 55.8527993)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.247294 55.8527993)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20Albert%20Bridge.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q107> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://schema.org/description> "OpenStreetMap node 12923752174"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://schema.org/name> "Benchmark at the corner of Trongate- Chrisholm Street"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at the corner of Trongate- Chrisholm Street"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at the corner of Trongate- Chrisholm Street"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2453643 55.8568563)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12923752174> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12923752174> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12923752174/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12923752174/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2453643 55.8568563)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2453563 55.8568545)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2453643 55.8568563)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20Trongate-%20Chrisholm%20Street.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q108> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://schema.org/description> "OpenStreetMap node 12923754806"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://schema.org/name> "Benchmark at Blackstock's Close (Saltmarket)"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at Blackstock's Close (Saltmarket)"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at Blackstock's Close (Saltmarket)"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2454407 55.8547441)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12923754806> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12923754806> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12923754806/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12923754806/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2454407 55.8547441)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2454407 55.8547441)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Blackstock%27s%20Close%20%28Saltmarket%29.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q109> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://schema.org/description> "OpenStreetMap node 12924781327"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://schema.org/name> "Benchmark in the East side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark in the East side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark in the East side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2477111 55.860784)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12924781327> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12924781327> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12924781327/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12924781327/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2477111 55.860784)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2477111 55.860784)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20in%20the%20East%20side%20of%20the%20City%20Chambers.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q110> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://schema.org/description> "OpenStreetMap node 12924782280"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://schema.org/name> "Benchmark on the North side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark on the North side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark on the North side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2478655 55.8611989)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12924782280> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12924782280> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12924782280/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12924782280/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2478655 55.8611989)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2478655 55.8611989)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20North%20side%20of%20the%20City%20Chambers.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q111> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://schema.org/description> "OpenStreetMap node 12924784584"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://schema.org/name> "Benchmark on the South side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark on the South side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark on the South side of the City Chambers"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2485537 55.8606261)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12924784584> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12924784584> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12924784584/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12924784584/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2485537 55.8606261)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2485537 55.8606261)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20South%20side%20of%20the%20City%20Chambers.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-18" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q112> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://schema.org/description> "OpenStreetMap node 12925489820"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://schema.org/name> "Benchmark on the Cathedral gate lodge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark on the Cathedral gate lodge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark on the Cathedral gate lodge"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2353755 55.8623444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12925489820> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12925489820> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12925489820/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12925489820/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2353755 55.8623444)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2353755 55.8623444)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2353803 55.8623446)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20Cathedral%20gate%20lodge.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-19" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q113> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://schema.org/description> "OpenStreetMap node 12925655350"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://schema.org/name> "Barony Halls benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://www.w3.org/2000/01/rdf-schema#label> "Barony Halls benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <http://www.w3.org/2004/02/skos/core#prefLabel> "Barony Halls benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.2368032 55.8620442)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12925655350> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12925655350> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12925655350/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12925655350/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.2368032 55.8620442)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.2368032 55.8620442)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Barony%20Halls%20benchmark.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-19" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q114> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://schema.org/description> "OpenStreetMap node 12925919541"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://schema.org/name> "Govan Road benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://www.w3.org/2000/01/rdf-schema#label> "Govan Road benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <http://www.w3.org/2004/02/skos/core#prefLabel> "Govan Road benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-4.3147383 55.8636907)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12925919541> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12925919541> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12925919541/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12925919541/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-4.3147383 55.8636907)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-4.3147383 55.8636907)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Govan%20Road%20benchmark.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-19" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q115> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://schema.org/description> "OpenStreetMap node 12936028929"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://schema.org/name> "Benchmark at Melrose Abbey"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at Melrose Abbey"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at Melrose Abbey"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-2.7178857 55.5989376)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/12936028929> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/12936028929> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/12936028929/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/12936028929/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-2.7178857 55.5989376)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-2.7178856 55.5989365)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-2.7178857 55.5989376)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-2.7180546 55.5989369)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Melrose%20Abbey.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-06-20" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q116> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://schema.org/description> "OpenStreetMap node 13331549275"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://schema.org/name> "OS benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://www.w3.org/2000/01/rdf-schema#label> "OS benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <http://www.w3.org/2004/02/skos/core#prefLabel> "OS benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-8.4683873 54.2726815)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/13331549275> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/13331549275> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/13331549275/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/13331549275/history/2> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-8.4683873 54.2726815)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-8.4683873 54.2726815)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/OS%20benchmark.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2025-11-25" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q117> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://schema.org/description> "OpenStreetMap node 6666122939"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://schema.org/name> "MilestoneDublin8Howth1"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://www.w3.org/2000/01/rdf-schema#label> "MilestoneDublin8Howth1"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <http://www.w3.org/2004/02/skos/core#prefLabel> "MilestoneDublin8Howth1"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-6.0906714 53.390985)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/6666122939> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/6666122939> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/6666122939/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/6666122939/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-6.0906714 53.390985)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.0906714 53.390985)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.0906724 53.3909747)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/MilestoneDublin8Howth1.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "direction=185" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "distance=8" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "highway=milestone" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "historic=milestone" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "inscription=P.O Dublin 8 Howth 1" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "mapillary=805418053850230" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "material=stone;cast_iron" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "milestone:destination=post_office" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q118> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://schema.org/description> "OpenStreetMap node 6721748182"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://schema.org/name> "MilestoneDublin9Howth"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://www.w3.org/2000/01/rdf-schema#label> "MilestoneDublin9Howth"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <http://www.w3.org/2004/02/skos/core#prefLabel> "MilestoneDublin9Howth"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-6.0681842 53.387749)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/6721748182> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/6721748182> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/6721748182/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/6721748182/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-6.0681842 53.387749)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.06809 53.387743)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.0681842 53.387749)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/MilestoneDublin9Howth.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "distance=9 miles" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "highway=milestone" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "historic=milestone" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "inscription=P.O Dublin 9 Howth" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "milestone:destination=post_office" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q119> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://schema.org/description> "OpenStreetMap node 6967103228"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://schema.org/name> "Milestone Old Dublin Road"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://www.w3.org/2000/01/rdf-schema#label> "Milestone Old Dublin Road"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <http://www.w3.org/2004/02/skos/core#prefLabel> "Milestone Old Dublin Road"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-7.2121484 52.6468593)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/6967103228> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/6967103228> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/6967103228/history/5> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/6967103228/history/5> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-7.2121484 52.6468593)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-7.2121484 52.6468593)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Milestone%20Old%20Dublin%20Road.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "historic=milestone" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "inscription=CARLOW 17 [...] ROYAL OAK 9" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "source=survey" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2024-04-02" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q120> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://schema.org/description> "OpenStreetMap node 7873204616"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://schema.org/name> "Benchmark at Scots Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark at Scots Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benchmark at Scots Church"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-7.6966593 52.3531682)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/7873204616> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/7873204616> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/7873204616/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/7873204616/history/3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-7.6966593 52.3531682)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-7.6966593 52.3531682)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Scots%20Church.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "description=horizontal type with dot" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "historic=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "source=survey;OS 6'' Cassini map" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q121> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://schema.org/description> "OpenStreetMap node 14257817434"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://schema.org/name> "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://www.w3.org/2000/01/rdf-schema#label> "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <http://www.w3.org/2004/02/skos/core#prefLabel> "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-6.9063675 54.128786)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/14257817434> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/14257817434> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/14257817434/history/1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/14257817434/history/1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-6.9063675 54.128786)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-6.9063675 54.128786)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Presbyterian%20Church%2C%20Ballybay%20-%20geograph.org.uk%20-%203013138.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "source=wikimedia" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q122> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://schema.org/description> "OpenStreetMap node 7709937682"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://schema.org/name> "Ballingarry benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://www.w3.org/2000/01/rdf-schema#label> "Ballingarry benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ballingarry benchmark"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/coordinates> "Point(-7.5413562 52.5861876)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/externalMatch> <https://www.openstreetmap.org/node/7709937682> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P100> <https://www.openstreetmap.org/node/7709937682> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P101> <https://www.openstreetmap.org/node/7709937682/history/5> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P107> <https://www.openstreetmap.org/node/7709937682/history/5> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P110> "Point(-7.5413562 52.5861876)"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-7.5413562 52.5861876)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P111> "POINT(-7.541375 52.5861786)" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P112> <http://commons.wikimedia.org/wiki/Special:FilePath/Ballingarry%20benchmark.jpg> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "benchmark=yes" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "check_date=2026-07-30" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "ele:1913=675.9" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "man_made=survey_point" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "note=On the window sill." .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "source=survey;OS 25'' map" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey:date=2020-07-12" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P113> "survey_point:structure=cut" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q123> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://schema.org/description> "A set of things of the same kind; the type of every class."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://schema.org/description> "Eine Menge gleichartiger Dinge; der Typ jeder Klasse."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://schema.org/name> "Class"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://schema.org/name> "Klasse"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://www.w3.org/2000/01/rdf-schema#label> "Class"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://www.w3.org/2000/01/rdf-schema#label> "Klasse"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Class"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <http://www.w3.org/2004/02/skos/core#prefLabel> "Klasse"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P1> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://schema.org/description> "A relation or attribute that links an entity to a value; the type of every property."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://schema.org/description> "Eine Beziehung oder ein Merkmal, das eine Entität mit einem Wert verbindet; der Typ jeder Eigenschaft."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://schema.org/name> "Eigenschaft"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://schema.org/name> "Property"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://www.w3.org/2000/01/rdf-schema#label> "Eigenschaft"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eigenschaft"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <http://www.w3.org/2004/02/skos/core#prefLabel> "Property"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/subclassOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P1> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://schema.org/description> "Die Wurzel des Klassenbaums: alles hier Beschriebene ist eine Instanz davon."@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://schema.org/description> "The root of the class tree: everything described here is an instance of it."@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://schema.org/name> "Instance"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://schema.org/name> "Instanz"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://wikiba.se/ontology#Item> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://www.w3.org/2000/01/rdf-schema#label> "Instance"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://www.w3.org/2000/01/rdf-schema#label> "Instanz"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/2002/07/owl#Thing> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Instance"@en .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <http://www.w3.org/2004/02/skos/core#prefLabel> "Instanz"@de .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/classKind> "model" .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/fromInstance> <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/instanceOf> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/P2> <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> .

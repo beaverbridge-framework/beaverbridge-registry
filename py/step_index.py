@@ -25,13 +25,16 @@ def numkey(ident: str) -> tuple:
 
 
 def licence_label(iri: str) -> str:
-    """Short name of a Creative Commons licence IRI; any other IRI stays as it is."""
+    """Short name of a Creative Commons or ODbL licence IRI; any other IRI stays as it is."""
     m = re.match(r"https?://creativecommons\.org/publicdomain/zero/([0-9.]+)/?$", iri)
     if m:
         return f"CC0-{m.group(1)}"
     m = re.match(r"https?://creativecommons\.org/licenses/([a-z-]+)/([0-9.]+)/?$", iri)
     if m:
         return f"CC-{m.group(1).upper()}-{m.group(2)}"
+    m = re.match(r"https?://opendatacommons\.org/licenses/odbl/([0-9]+[-.][0-9]+)/?$", iri)
+    if m:
+        return "ODbL-" + m.group(1).replace("-", ".")
     return iri
 
 

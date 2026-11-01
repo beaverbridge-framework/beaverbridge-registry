@@ -35,6 +35,24 @@
           "role": "ontology"
         }
       ]
+    },
+    {
+      "id": "osm-benchmarks",
+      "label": "OSM benchmarks (static Wikibase)",
+      "repo": "https://github.com/n4o-rse/osm-benchmarks-static",
+      "pages_url": "https://n4o-rse.github.io/osm-benchmarks-static/",
+      "rdf_base": "https://n4o-rse.github.io/osm-benchmarks-static",
+      "prefix_family": "obs",
+      "files": [
+        {
+          "path": "downloads/n4o-rse.github.io-osm-benchmarks-static.ttl",
+          "role": "export"
+        },
+        {
+          "path": "downloads/wikibase-ontology.ttl",
+          "role": "ontology"
+        }
+      ]
     }
   ]
 }

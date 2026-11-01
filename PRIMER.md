@@ -17,6 +17,7 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 | `n4o-rse/wikibase-static` | Paket: Harvest, CSV-Import, Build der Static-Seiten | — | — |
 | `n4o-rse/fuzzy-sl-static` | Quelle 1: gesicherte Kopie von fuzzy-sl.wikibase.cloud | https://n4o-rse.github.io/fuzzy-sl-static/ | wikibase-static 0.10.0 |
 | `n4o-rse/chublets-wikibase-demo` | Quelle 2: Modell-Demo der Chublets-Wikibase | https://n4o-rse.github.io/chublets-wikibase-demo/ | wikibase-static 0.19.0 |
+| `n4o-rse/osm-benchmarks-static` | Quelle 3: OSM-Höhenmarken mit Versionsverlauf, Lizenz ODbL 1.0 | https://n4o-rse.github.io/osm-benchmarks-static/ | wikibase-static 0.22.0 |
 | `FDOx-squirrel/fdo-squirrel-registry` | Vorbild für Pipeline, Gate, Query-Seite | https://fdox-squirrel.github.io/fdo-squirrel-registry/ | — |
 
 **Befunde** (geprüft 2026-11-01 durch Klonen beider Static-Repos):
@@ -156,6 +157,8 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S6 | SHACL-Gate mit Selbsttest | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S7 | Index und Facettenseite | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | erledigt 2026-11-01 |
+| S10 | Dritte Instanz: osm-benchmarks | beaverbridge-registry | S3, S5 | erledigt 2026-11-01 |
+| S11 | Facettenseite auf sinnvolle Facetten umstellen | beaverbridge-registry | S10 | offen |
 
 Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 konnten parallel starten, sobald S2 Daten geliefert hatte; alle Schritte sind erledigt.
 
@@ -314,7 +317,19 @@ Das Gate lief zuerst mit 7 Verletzungen auf den echten Daten und fand die Chuble
 
 Abnahme auf dem PC: Commit 328e007 (S5 und S6 zusammen), `--strict` grün, `git status` sauber, gepusht. Selbsttest ok, 0 Verletzungen, 0 Warnungen, 27 Hinweise; `validate` braucht dort rund 4,5 s.
 
-*(Alle Schritte S1 bis S8 sind erledigt; S9 ist gestrichen.)*
+*(Die Schritte S1 bis S8 sind erledigt; S9 ist gestrichen.)*
+
+---
+
+## S10 — Dritte Instanz: osm-benchmarks
+
+### Erledigt 2026-11-01
+
+`registry/sources.json` führt `osm-benchmarks` (Präfixfamilie `obs`, Export und Ontologie). Befund: 6 278 Tripel, 27 Items, 24 Properties, 4 Klassen (Class, Property, Instance, Benchmark). Rollen 5 von 7: instance of P2, subclass of P1, coordinates P110 (*coordinate location*), Wikidata equivalent P4 (nur an Properties, mit P-Nummern), external match P100 (*OSM element*, die OSM-Node-URL); *part of* und *equivalent class* gibt es nicht. P111 (Geometrie-Verlauf) ist WKT-Text und keine Rolle.
+
+Das CRM-Overlay der Instanz steht nur als `rdfs:subClassOf crm:E25_Human-Made_Feature` im Export, nicht als Property; die Registry führt es als `basis: bridge`. `RE_CRM` in `step_bridge.py` erlaubt jetzt den Bindestrich (`E25_Human-Made_Feature`). `licence_label()` kennt ODbL (`ODbL-1.0`).
+
+Gemessen: Bundle 20 701 Tripel (osm-benchmarks 820 von 6 278 behalten, 51 Entitäten, 109 Rollenaussagen), Index 996 Einträge, Gate 0 Verletzungen, 12 Abfragen mit Zeilen, zweimal byte-identisch.
 
 ---
 

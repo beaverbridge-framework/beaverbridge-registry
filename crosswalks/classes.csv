@@ -31,3 +31,7 @@ chublets,Q106,chublet,domain,,none,inherits E73_Information_Object through Q101
 chublets,Q372,utility software,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q378,QGIS plugin,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q379,plug-in,domain,,none,inherits E73_Information_Object through Q100
+osm-benchmarks,Q1,Class,model,,none,type of every class
+osm-benchmarks,Q2,Property,model,,none,type of every property
+osm-benchmarks,Q3,Instance,model,,none,root of the class tree
+osm-benchmarks,Q100,Benchmark,domain,E25_Human-Made_Feature,bridge,stated by the instance as rdfs:subClassOf in its CRM overlay (data/crm.csv) not as a property

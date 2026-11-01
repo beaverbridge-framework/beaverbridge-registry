@@ -7,6 +7,8 @@
 @prefix fuzzy-sl: <https://n4o-rse.github.io/fuzzy-sl-static/entity/> .
 @prefix fuzzy-sl-wdt: <https://n4o-rse.github.io/fuzzy-sl-static/prop/direct/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix osm-benchmarks: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix osm-benchmarks-wdt: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -16275,6 +16277,968 @@ fuzzy-sl:Q99 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
+osm-benchmarks:P1 a wikibase:Property ;
+    rdfs:label "Unterklasse von"@de,
+        "subclass of"@en ;
+    schema1:description "Diese Klasse ist eine speziellere Form der Wertklasse."@de,
+        "This class is a more specific form of the value class."@en ;
+    schema1:name "Unterklasse von"@de,
+        "subclass of"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P1 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    skos:prefLabel "Unterklasse von"@de,
+        "subclass of"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P279> ;
+    osm-benchmarks-wdt:P10 osm-benchmarks:Q1 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P279" ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q1 .
+
+osm-benchmarks:P10 a wikibase:Property ;
+    rdfs:label "Wertebereich"@de,
+        "range"@en ;
+    schema1:description "Klasse, zu der die Werte einer Eigenschaft gehören sollen."@de,
+        "Class the values of a property should belong to."@en ;
+    schema1:name "Wertebereich"@de,
+        "range"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P10 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    skos:prefLabel "Wertebereich"@de,
+        "range"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P10 osm-benchmarks:Q1 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q2 .
+
+osm-benchmarks:P100 a wikibase:Property ;
+    rdfs:label "OSM-Element"@de,
+        "OSM element"@en ;
+    schema1:description "Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."@de,
+        "The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID."@en ;
+    schema1:name "OSM-Element"@de,
+        "OSM element"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P100 ;
+    wikibase:propertyType wikibase:Url ;
+    skos:prefLabel "OSM-Element"@de,
+        "OSM element"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P101 a wikibase:Property ;
+    rdfs:label "OSM-Version"@de,
+        "OSM version"@en ;
+    schema1:description "Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version."@de,
+        "One version of the OSM element, as the URL of that version; one statement per version."@en ;
+    schema1:name "OSM-Version"@de,
+        "OSM version"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P101 ;
+    wikibase:propertyType wikibase:Url ;
+    skos:prefLabel "OSM-Version"@de,
+        "OSM version"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P102 a wikibase:Property ;
+    rdfs:label "OSM-Versionsnummer"@de,
+        "OSM version number"@en ;
+    schema1:description "Nummer einer OSM-Version (Qualifier)."@de,
+        "Number of an OSM version (qualifier)."@en ;
+    schema1:name "OSM-Versionsnummer"@de,
+        "OSM version number"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P102 ;
+    wikibase:propertyType wikibase:Quantity ;
+    skos:prefLabel "OSM-Versionsnummer"@de,
+        "OSM version number"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 .
+
+osm-benchmarks:P103 a wikibase:Property ;
+    rdfs:label "OSM-Zeitstempel"@de,
+        "OSM timestamp"@en ;
+    schema1:description "Zeitpunkt, an dem eine OSM-Version gespeichert wurde, ISO 8601 in UTC, sekundengenau, als Text (Qualifier); das Paket kennt noch keinen Zeitwert mit Uhrzeit."@de,
+        "Time at which an OSM version was saved, ISO 8601 in UTC to the second, as text (qualifier); the package has no time-of-day value yet."@en ;
+    schema1:name "OSM-Zeitstempel"@de,
+        "OSM timestamp"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P103 ;
+    wikibase:propertyType wikibase:String ;
+    skos:prefLabel "OSM-Zeitstempel"@de,
+        "OSM timestamp"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 .
+
+osm-benchmarks:P104 a wikibase:Property ;
+    rdfs:label "OSM-Changeset"@de,
+        "OSM changeset"@en ;
+    schema1:description "Das OSM-Changeset, in dem eine Version entstand (Qualifier); der Link führt zu seiner Seite bei OpenStreetMap."@de,
+        "The OSM changeset in which a version was made (qualifier); the link leads to its page at OpenStreetMap."@en ;
+    schema1:name "OSM-Changeset"@de,
+        "OSM changeset"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P104 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    skos:prefLabel "OSM-Changeset"@de,
+        "OSM changeset"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P5 "https://www.openstreetmap.org/changeset/$1" .
+
+osm-benchmarks:P105 a wikibase:Property ;
+    rdfs:label "OSM-Benutzername"@de,
+        "OSM user name"@en ;
+    schema1:description "Name des OSM-Benutzers, der eine Version angelegt hat (Qualifier), so wie er beim Lesen der Daten lautete."@de,
+        "Name of the OSM user who made a version (qualifier), as it was when the data were read."@en ;
+    schema1:name "OSM-Benutzername"@de,
+        "OSM user name"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P105 ;
+    wikibase:propertyType wikibase:String ;
+    skos:prefLabel "OSM-Benutzername"@de,
+        "OSM user name"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 .
+
+osm-benchmarks:P106 a wikibase:Property ;
+    rdfs:label "OSM-Benutzer-ID"@de,
+        "OSM user ID"@en ;
+    schema1:description "Numerische ID (uid) des OSM-Benutzers, der eine Version angelegt hat (Qualifier); bleibt gleich, wenn sich der Name ändert."@de,
+        "Numeric ID (uid) of the OSM user who made a version (qualifier); stays the same when the user name changes."@en ;
+    schema1:name "OSM-Benutzer-ID"@de,
+        "OSM user ID"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P106 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    skos:prefLabel "OSM-Benutzer-ID"@de,
+        "OSM user ID"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 .
+
+osm-benchmarks:P107 a wikibase:Property ;
+    rdfs:label "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    schema1:description "Die Version des OSM-Elements, ab der es die Auswahl dieser Seite (die Tag-Bedingungen der Abfrage) erfüllt, als URL dieser Version."@de,
+        "The version of the OSM element from which it meets the selection of this site (the tag conditions of the query), as the URL of that version."@en ;
+    schema1:name "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P107 ;
+    wikibase:propertyType wikibase:Url ;
+    skos:prefLabel "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P108 a wikibase:Property ;
+    rdfs:label "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    schema1:description "Die letzte Version des OSM-Elements, die die Auswahl noch erfüllt, als URL dieser Version (Qualifier von „in der Auswahl seit“); fehlt, solange sie erfüllt ist."@de,
+        "The last version of the OSM element that still meets the selection, as the URL of that version (qualifier of \"in selection since\"); absent while it still does."@en ;
+    schema1:name "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P108 ;
+    wikibase:propertyType wikibase:Url ;
+    skos:prefLabel "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 .
+
+osm-benchmarks:P109 a wikibase:Property ;
+    rdfs:label "Auswahl"@de,
+        "selection"@en ;
+    schema1:description "Name der Auswahl (Export-Typ, zum Beispiel benchmarks), auf die sich ein Statement „in der Auswahl seit“ bezieht (Qualifier)."@de,
+        "Name of the selection (export type, for example benchmarks) a statement \"in selection since\" refers to (qualifier)."@en ;
+    schema1:name "Auswahl"@de,
+        "selection"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P109 ;
+    wikibase:propertyType wikibase:String ;
+    skos:prefLabel "Auswahl"@de,
+        "selection"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 .
+
+osm-benchmarks:P110 a wikibase:Property ;
+    rdfs:label "Koordinate"@de,
+        "coordinate location"@en ;
+    schema1:description "Aktuelle Position des Elements; bei einem Way oder einer Relation der Mittelpunkt seiner Geometrie."@de,
+        "Current position of the element; for a way or relation the centre of its geometry."@en ;
+    schema1:name "Koordinate"@de,
+        "coordinate location"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P110 ;
+    wikibase:propertyType wikibase:GlobeCoordinate ;
+    skos:prefLabel "Koordinate"@de,
+        "coordinate location"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P625> ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P625" ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P111 a wikibase:Property ;
+    rdfs:label "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    schema1:description "Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."@de,
+        "Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp."@en ;
+    schema1:name "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P111 ;
+    wikibase:propertyType wikibase:String ;
+    skos:prefLabel "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P112 a wikibase:Property ;
+    rdfs:label "Bild"@de,
+        "image"@en ;
+    schema1:description "Bild des Elements auf Wikimedia Commons (aus dem OSM-Tag wikimedia_commons)."@de,
+        "Image of the element on Wikimedia Commons (from the OSM tag wikimedia_commons)."@en ;
+    schema1:name "Bild"@de,
+        "image"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P112 ;
+    wikibase:propertyType wikibase:CommonsMedia ;
+    skos:prefLabel "Bild"@de,
+        "image"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P18> ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P18" ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P113 a wikibase:Property ;
+    rdfs:label "OSM-Tag"@de,
+        "OSM tag"@en ;
+    schema1:description "Ein Tag der aktuellen Version des OSM-Elements, geschrieben als key=value."@de,
+        "A tag of the current version of the OSM element, written key=value."@en ;
+    schema1:name "OSM-Tag"@de,
+        "OSM tag"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P113 ;
+    wikibase:propertyType wikibase:String ;
+    skos:prefLabel "OSM-Tag"@de,
+        "OSM tag"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q100 .
+
+osm-benchmarks:P2 a wikibase:Property ;
+    rdfs:label "ist eine Instanz von"@de,
+        "instance of"@en ;
+    schema1:description "Diese Entität gehört zur Wertklasse."@de,
+        "This entity is a member of the value class."@en ;
+    schema1:name "ist eine Instanz von"@de,
+        "instance of"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P2 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    skos:prefLabel "ist eine Instanz von"@de,
+        "instance of"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P31> ;
+    osm-benchmarks-wdt:P10 osm-benchmarks:Q1 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P31" ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q3 .
+
+osm-benchmarks:P3 a wikibase:Property ;
+    rdfs:label "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    schema1:description "Diese Eigenschaft ist eine speziellere Form der Wert-Eigenschaft."@de,
+        "This property is a more specific form of the value property."@en ;
+    schema1:name "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P3 ;
+    wikibase:propertyType wikibase:WikibaseProperty ;
+    skos:prefLabel "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P1647> ;
+    osm-benchmarks-wdt:P10 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P1647" ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q2 .
+
+osm-benchmarks:P4 a wikibase:Property ;
+    rdfs:label "Wikidata-Entsprechung"@de,
+        "Wikidata equivalent"@en ;
+    schema1:description "Das Wikidata-Item oder die Wikidata-Property, die dieser Entität entspricht (zum Beispiel Q7397 oder P275)."@de,
+        "The Wikidata item or property that corresponds to this entity (for example Q7397 or P275)."@en ;
+    schema1:name "Wikidata-Entsprechung"@de,
+        "Wikidata equivalent"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P4 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    skos:prefLabel "Wikidata-Entsprechung"@de,
+        "Wikidata equivalent"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P5 "https://www.wikidata.org/entity/$1" .
+
+osm-benchmarks:P5 a wikibase:Property ;
+    rdfs:label "URL-Muster"@de,
+        "formatter URL"@en ;
+    schema1:description "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de,
+        "URL pattern of an identifier property; $1 stands for the identifier."@en ;
+    schema1:name "URL-Muster"@de,
+        "formatter URL"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P5 ;
+    wikibase:propertyType wikibase:String ;
+    skos:prefLabel "URL-Muster"@de,
+        "formatter URL"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P1630> ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P1630" ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q2 .
+
+osm-benchmarks:P6 a wikibase:Property ;
+    rdfs:label "Beleg-URL"@de,
+        "reference URL"@en ;
+    schema1:description "Webseite, die eine Aussage belegt."@de,
+        "Web page that documents a statement."@en ;
+    schema1:name "Beleg-URL"@de,
+        "reference URL"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P6 ;
+    wikibase:propertyType wikibase:Url ;
+    skos:prefLabel "Beleg-URL"@de,
+        "reference URL"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P854> ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P854" .
+
+osm-benchmarks:P7 a wikibase:Property ;
+    rdfs:label "abgerufen am"@de,
+        "retrieved"@en ;
+    schema1:description "Datum, an dem die Quelle einer Aussage gelesen wurde."@de,
+        "Date on which the source of a statement was read."@en ;
+    schema1:name "abgerufen am"@de,
+        "retrieved"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P7 ;
+    wikibase:propertyType wikibase:Time ;
+    skos:prefLabel "abgerufen am"@de,
+        "retrieved"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P813> ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P813" .
+
+osm-benchmarks:P8 a wikibase:Property ;
+    rdfs:label "angegeben in"@de,
+        "stated in"@en ;
+    schema1:description "Item, das die Quelle einer Aussage nennt."@de,
+        "Item that names the source of a statement."@en ;
+    schema1:name "angegeben in"@de,
+        "stated in"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P8 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    skos:prefLabel "angegeben in"@de,
+        "stated in"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    bbr:wikidataEquivalent <http://www.wikidata.org/entity/P248> ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P4 "P248" .
+
+osm-benchmarks:P9 a wikibase:Property ;
+    rdfs:label "Definitionsbereich"@de,
+        "domain"@en ;
+    schema1:description "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de,
+        "Class the subject of a property's statements should belong to."@en ;
+    schema1:name "Definitionsbereich"@de,
+        "domain"@en ;
+    wikibase:directClaim osm-benchmarks-wdt:P9 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    skos:prefLabel "Definitionsbereich"@de,
+        "domain"@en ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P10 osm-benchmarks:Q1 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q2 ;
+    osm-benchmarks-wdt:P9 osm-benchmarks:Q2 .
+
+osm-benchmarks:Q101 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    schema1:description "OpenStreetMap node 12600848879"@en ;
+    schema1:name "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    skos:prefLabel "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    bbr:coordinates "Point(-9.0538691 53.2725397)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12600848879> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12600848879> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12600848879/history/5> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12600848879/history/4> ;
+    osm-benchmarks-wdt:P110 "Point(-9.0538691 53.2725397)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-9.0538687 53.2725388)",
+        "POINT(-9.0538691 53.2725397)",
+        "POINT(-9.0539459 53.2725582)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20St.%20Nicholas%27%20Collegiate%20Church.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "description=Second mark on the principal levelling line from Galway to Tuam. Has a copper bolt and inscription.",
+        "inscription=LM 2",
+        "man_made=survey_point",
+        "source=survey;25inch map",
+        "survey:date=2025-02-19",
+        "survey_point:purpose=vertical",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q102 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at Ardreigh Lock"@en ;
+    schema1:description "OpenStreetMap node 12888689968"@en ;
+    schema1:name "Benchmark at Ardreigh Lock"@en ;
+    skos:prefLabel "Benchmark at Ardreigh Lock"@en ;
+    bbr:coordinates "Point(-6.9790004 52.9774432)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12888689968> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12888689968> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12888689968/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12888689968/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-6.9790004 52.9774432)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-6.9789703 52.9774212)",
+        "POINT(-6.9790004 52.9774432)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Ardreigh%20Lock.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-05" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q103 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    schema1:description "OpenStreetMap node 12919476068"@en ;
+    schema1:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    bbr:coordinates "Point(-4.260726 55.8642448)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12919476068> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12919476068> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12919476068/history/6> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12919476068/history/3> ;
+    osm-benchmarks-wdt:P110 "Point(-4.260726 55.8642448)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2607179 55.8642366)",
+        "POINT(-4.260726 55.8642448)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20West%20Campbell%20Street%20and%20Bath%20Street.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "name:en=NO145 BATH ST SE FACE E ANG 1989 37,995m",
+        "survey:date=2025-06-16",
+        "survey_point:purpose=vertical",
+        "survey_point:structure=cut",
+        "survey_point:type=benchmark" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q104 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at St George's Tron Parish Church"@en ;
+    schema1:description "OpenStreetMap node 12919738910"@en ;
+    schema1:name "Benchmark at St George's Tron Parish Church"@en ;
+    skos:prefLabel "Benchmark at St George's Tron Parish Church"@en ;
+    bbr:coordinates "Point(-4.2537467 55.8620198)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12919738910> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12919738910> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12919738910/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12919738910/history/3> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2537467 55.8620198)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2537443 55.8620197)",
+        "POINT(-4.2537467 55.8620198)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20St%20George%27s%20Tron%20Parish%20Church.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-16",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q105 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    schema1:description "OpenStreetMap node 12922675575"@en ;
+    schema1:name "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    skos:prefLabel "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    bbr:coordinates "Point(-4.2924895 55.8685438)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12922675575> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12922675575> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12922675575/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12922675575/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2924895 55.8685438)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2924895 55.8685438)",
+        "POINT(-4.2924923 55.8685441)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20corner%20of%20Blantyre%20St%20and%20Argyle%20St.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q106 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark on City Union Railway Bridge"@en ;
+    schema1:description "OpenStreetMap node 12923698705"@en ;
+    schema1:name "Benchmark on City Union Railway Bridge"@en ;
+    skos:prefLabel "Benchmark on City Union Railway Bridge"@en ;
+    bbr:coordinates "Point(-4.2497576 55.8526441)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12923698705> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12923698705> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12923698705/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12923698705/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2497576 55.8526441)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2497576 55.8526441)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20City%20Union%20Railway%20Bridge.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q107 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark on Albert Bridge"@en ;
+    schema1:description "OpenStreetMap node 12923704831"@en ;
+    schema1:name "Benchmark on Albert Bridge"@en ;
+    skos:prefLabel "Benchmark on Albert Bridge"@en ;
+    bbr:coordinates "Point(-4.247294 55.8527993)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12923704831> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12923704831> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12923704831/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12923704831/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.247294 55.8527993)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.247294 55.8527993)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20Albert%20Bridge.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q108 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    schema1:description "OpenStreetMap node 12923752174"@en ;
+    schema1:name "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    skos:prefLabel "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    bbr:coordinates "Point(-4.2453643 55.8568563)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12923752174> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12923752174> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12923752174/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12923752174/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2453643 55.8568563)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2453563 55.8568545)",
+        "POINT(-4.2453643 55.8568563)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20Trongate-%20Chrisholm%20Street.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q109 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    schema1:description "OpenStreetMap node 12923754806"@en ;
+    schema1:name "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    skos:prefLabel "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    bbr:coordinates "Point(-4.2454407 55.8547441)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12923754806> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12923754806> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12923754806/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12923754806/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2454407 55.8547441)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2454407 55.8547441)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Blackstock%27s%20Close%20%28Saltmarket%29.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q110 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark in the East side of the City Chambers"@en ;
+    schema1:description "OpenStreetMap node 12924781327"@en ;
+    schema1:name "Benchmark in the East side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark in the East side of the City Chambers"@en ;
+    bbr:coordinates "Point(-4.2477111 55.860784)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12924781327> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12924781327> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12924781327/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12924781327/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2477111 55.860784)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2477111 55.860784)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20in%20the%20East%20side%20of%20the%20City%20Chambers.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q111 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark on the North side of the City Chambers"@en ;
+    schema1:description "OpenStreetMap node 12924782280"@en ;
+    schema1:name "Benchmark on the North side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark on the North side of the City Chambers"@en ;
+    bbr:coordinates "Point(-4.2478655 55.8611989)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12924782280> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12924782280> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12924782280/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12924782280/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2478655 55.8611989)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2478655 55.8611989)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20North%20side%20of%20the%20City%20Chambers.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q112 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark on the South side of the City Chambers"@en ;
+    schema1:description "OpenStreetMap node 12924784584"@en ;
+    schema1:name "Benchmark on the South side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark on the South side of the City Chambers"@en ;
+    bbr:coordinates "Point(-4.2485537 55.8606261)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12924784584> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12924784584> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12924784584/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12924784584/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2485537 55.8606261)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2485537 55.8606261)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20South%20side%20of%20the%20City%20Chambers.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q113 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark on the Cathedral gate lodge"@en ;
+    schema1:description "OpenStreetMap node 12925489820"@en ;
+    schema1:name "Benchmark on the Cathedral gate lodge"@en ;
+    skos:prefLabel "Benchmark on the Cathedral gate lodge"@en ;
+    bbr:coordinates "Point(-4.2353755 55.8623444)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12925489820> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12925489820> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12925489820/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12925489820/history/3> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2353755 55.8623444)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2353755 55.8623444)",
+        "POINT(-4.2353803 55.8623446)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20Cathedral%20gate%20lodge.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-19",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q114 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Barony Halls benchmark"@en ;
+    schema1:description "OpenStreetMap node 12925655350"@en ;
+    schema1:name "Barony Halls benchmark"@en ;
+    skos:prefLabel "Barony Halls benchmark"@en ;
+    bbr:coordinates "Point(-4.2368032 55.8620442)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12925655350> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12925655350> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12925655350/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12925655350/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.2368032 55.8620442)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.2368032 55.8620442)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Barony%20Halls%20benchmark.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-19",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q115 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Govan Road benchmark"@en ;
+    schema1:description "OpenStreetMap node 12925919541"@en ;
+    schema1:name "Govan Road benchmark"@en ;
+    skos:prefLabel "Govan Road benchmark"@en ;
+    bbr:coordinates "Point(-4.3147383 55.8636907)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12925919541> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12925919541> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12925919541/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12925919541/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-4.3147383 55.8636907)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-4.3147383 55.8636907)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Govan%20Road%20benchmark.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-19",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q116 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at Melrose Abbey"@en ;
+    schema1:description "OpenStreetMap node 12936028929"@en ;
+    schema1:name "Benchmark at Melrose Abbey"@en ;
+    skos:prefLabel "Benchmark at Melrose Abbey"@en ;
+    bbr:coordinates "Point(-2.7178857 55.5989376)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/12936028929> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/12936028929> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/12936028929/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/12936028929/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-2.7178857 55.5989376)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-2.7178856 55.5989365)",
+        "POINT(-2.7178857 55.5989376)",
+        "POINT(-2.7180546 55.5989369)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Melrose%20Abbey.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-20",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q117 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "OS benchmark"@en ;
+    schema1:description "OpenStreetMap node 13331549275"@en ;
+    schema1:name "OS benchmark"@en ;
+    skos:prefLabel "OS benchmark"@en ;
+    bbr:coordinates "Point(-8.4683873 54.2726815)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/13331549275> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/13331549275> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/13331549275/history/2> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/13331549275/history/2> ;
+    osm-benchmarks-wdt:P110 "Point(-8.4683873 54.2726815)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-8.4683873 54.2726815)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/OS%20benchmark.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-11-25",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q118 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "MilestoneDublin8Howth1"@en ;
+    schema1:description "OpenStreetMap node 6666122939"@en ;
+    schema1:name "MilestoneDublin8Howth1"@en ;
+    skos:prefLabel "MilestoneDublin8Howth1"@en ;
+    bbr:coordinates "Point(-6.0906714 53.390985)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/6666122939> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/6666122939> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/6666122939/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/6666122939/history/3> ;
+    osm-benchmarks-wdt:P110 "Point(-6.0906714 53.390985)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-6.0906714 53.390985)",
+        "POINT(-6.0906724 53.3909747)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/MilestoneDublin8Howth1.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "direction=185",
+        "distance=8",
+        "highway=milestone",
+        "historic=milestone",
+        "inscription=P.O Dublin 8 Howth 1",
+        "man_made=survey_point",
+        "mapillary=805418053850230",
+        "material=stone;cast_iron",
+        "milestone:destination=post_office" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q119 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "MilestoneDublin9Howth"@en ;
+    schema1:description "OpenStreetMap node 6721748182"@en ;
+    schema1:name "MilestoneDublin9Howth"@en ;
+    skos:prefLabel "MilestoneDublin9Howth"@en ;
+    bbr:coordinates "Point(-6.0681842 53.387749)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/6721748182> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/6721748182> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/6721748182/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/6721748182/history/3> ;
+    osm-benchmarks-wdt:P110 "Point(-6.0681842 53.387749)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-6.06809 53.387743)",
+        "POINT(-6.0681842 53.387749)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/MilestoneDublin9Howth.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "distance=9 miles",
+        "highway=milestone",
+        "historic=milestone",
+        "inscription=P.O Dublin 9 Howth",
+        "man_made=survey_point",
+        "milestone:destination=post_office" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q120 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Milestone Old Dublin Road"@en ;
+    schema1:description "OpenStreetMap node 6967103228"@en ;
+    schema1:name "Milestone Old Dublin Road"@en ;
+    skos:prefLabel "Milestone Old Dublin Road"@en ;
+    bbr:coordinates "Point(-7.2121484 52.6468593)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/6967103228> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/6967103228> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/6967103228/history/5> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/6967103228/history/5> ;
+    osm-benchmarks-wdt:P110 "Point(-7.2121484 52.6468593)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-7.2121484 52.6468593)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Milestone%20Old%20Dublin%20Road.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "historic=milestone",
+        "inscription=CARLOW 17 [...] ROYAL OAK 9",
+        "man_made=survey_point",
+        "source=survey",
+        "survey:date=2024-04-02" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q121 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Benchmark at Scots Church"@en ;
+    schema1:description "OpenStreetMap node 7873204616"@en ;
+    schema1:name "Benchmark at Scots Church"@en ;
+    skos:prefLabel "Benchmark at Scots Church"@en ;
+    bbr:coordinates "Point(-7.6966593 52.3531682)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/7873204616> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/7873204616> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/7873204616/history/3> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/7873204616/history/3> ;
+    osm-benchmarks-wdt:P110 "Point(-7.6966593 52.3531682)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-7.6966593 52.3531682)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Scots%20Church.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "description=horizontal type with dot",
+        "historic=yes",
+        "man_made=survey_point",
+        "source=survey;OS 6'' Cassini map" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q122 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    schema1:description "OpenStreetMap node 14257817434"@en ;
+    schema1:name "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    skos:prefLabel "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    bbr:coordinates "Point(-6.9063675 54.128786)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/14257817434> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/14257817434> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/14257817434/history/1> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/14257817434/history/1> ;
+    osm-benchmarks-wdt:P110 "Point(-6.9063675 54.128786)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-6.9063675 54.128786)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Presbyterian%20Church%2C%20Ballybay%20-%20geograph.org.uk%20-%203013138.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "source=wikimedia",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
+osm-benchmarks:Q123 a wikibase:Item,
+        geo:Feature,
+        osm-benchmarks:Q100 ;
+    rdfs:label "Ballingarry benchmark"@en ;
+    schema1:description "OpenStreetMap node 7709937682"@en ;
+    schema1:name "Ballingarry benchmark"@en ;
+    skos:prefLabel "Ballingarry benchmark"@en ;
+    bbr:coordinates "Point(-7.5413562 52.5861876)"^^geo:wktLiteral ;
+    bbr:externalMatch <https://www.openstreetmap.org/node/7709937682> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q100 ;
+    osm-benchmarks-wdt:P100 <https://www.openstreetmap.org/node/7709937682> ;
+    osm-benchmarks-wdt:P101 <https://www.openstreetmap.org/node/7709937682/history/5> ;
+    osm-benchmarks-wdt:P107 <https://www.openstreetmap.org/node/7709937682/history/5> ;
+    osm-benchmarks-wdt:P110 "Point(-7.5413562 52.5861876)"^^geo:wktLiteral ;
+    osm-benchmarks-wdt:P111 "POINT(-7.5413562 52.5861876)",
+        "POINT(-7.541375 52.5861786)" ;
+    osm-benchmarks-wdt:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Ballingarry%20benchmark.jpg> ;
+    osm-benchmarks-wdt:P113 "benchmark=yes",
+        "check_date=2026-07-30",
+        "ele:1913=675.9",
+        "man_made=survey_point",
+        "note=On the window sill.",
+        "source=survey;OS 25'' map",
+        "survey:date=2020-07-12",
+        "survey_point:structure=cut" ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q100 .
+
 <https://n4o-rse.github.io/chublets-wikibase-demo/catalog> a dcat:Catalog ;
     dct:conformsTo <http://wikiba.se/ontology> ;
     dct:description "The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and about 100 software entries imported from open-archaeo." ;
@@ -18866,12 +19830,13 @@ fuzzy-sl:Q97 a wikibase:Item ;
     fuzzy-sl-wdt:P3 fuzzy-sl:Q94 ;
     fuzzy-sl-wdt:P4 "Point(-2.3602 54.9912)"^^geo:wktLiteral .
 
-<https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> a dcat:Catalog ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:title "BeaverBridge registry of static Wikibase instances"@en ;
-    dcat:landingPage <https://beaverbridge-framework.github.io/beaverbridge-registry/> ;
-    dcat:record <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets>,
-        <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+<https://n4o-rse.github.io/osm-benchmarks-static/catalog> a dcat:Catalog ;
+    dct:conformsTo <http://wikiba.se/ontology> ;
+    dct:description "A static, read-only Wikibase of OpenStreetMap benchmarks (survey points with a Wikimedia Commons image) in Ireland, Northern Ireland and Scotland. One item per OSM element, its version history as statements, anchored in CIDOC CRM." ;
+    dct:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dct:modified "2026-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:title "OSM benchmarks (static Wikibase)" ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/> .
 
 chublets:Q151 a wikibase:Item ;
     rdfs:label "f-silva-archaeo"@en ;
@@ -19365,6 +20330,14 @@ fuzzy-sl:Q76 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
+
+<https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> a dcat:Catalog ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:title "BeaverBridge registry of static Wikibase instances"@en ;
+    dcat:landingPage <https://beaverbridge-framework.github.io/beaverbridge-registry/> ;
+    dcat:record <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets>,
+        <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl>,
+        <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> .
 
 chublets:Q101 a wikibase:Item ;
     rdfs:label "research software"@en ;
@@ -20157,6 +21130,21 @@ chublets:Q371 a wikibase:Item,
         chublets:Q3 ;
     chublets-wdt:P4 "Q2005" .
 
+osm-benchmarks:Q3 a wikibase:Item ;
+    rdfs:label "Instanz"@de,
+        "Instance"@en ;
+    schema1:description "Die Wurzel des Klassenbaums: alles hier Beschriebene ist eine Instanz davon."@de,
+        "The root of the class tree: everything described here is an instance of it."@en ;
+    schema1:name "Instanz"@de,
+        "Instance"@en ;
+    owl:equivalentClass owl:Thing ;
+    skos:prefLabel "Instanz"@de,
+        "Instance"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q1 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q1 .
+
 chublets:Q130 a wikibase:Item ;
     rdfs:label "anatolian"@en ;
     schema1:name "anatolian"@en ;
@@ -20407,6 +21395,23 @@ chublets:Q253 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
+
+osm-benchmarks:Q1 a wikibase:Item ;
+    rdfs:label "Klasse"@de,
+        "Class"@en ;
+    schema1:description "Eine Menge gleichartiger Dinge; der Typ jeder Klasse."@de,
+        "A set of things of the same kind; the type of every class."@en ;
+    schema1:name "Klasse"@de,
+        "Class"@en ;
+    owl:equivalentClass rdfs:Class ;
+    skos:prefLabel "Klasse"@de,
+        "Class"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q1 ;
+    bbr:subclassOf osm-benchmarks:Q3 ;
+    osm-benchmarks-wdt:P1 osm-benchmarks:Q3 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q1 .
 
 chublets:Q154 a wikibase:Item ;
     rdfs:label "Diagrams and visualizations"@en ;
@@ -20674,6 +21679,35 @@ chublets:Q116 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> a dcat:CatalogRecord ;
+    dct:isPartOf <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> ;
+    dct:modified "2026-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    dct:source <https://n4o-rse.github.io/osm-benchmarks-static/downloads/n4o-rse.github.io-osm-benchmarks-static.ttl> ;
+    dct:title "OSM benchmarks (static Wikibase)"@en ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/> ;
+    foaf:primaryTopic <https://n4o-rse.github.io/osm-benchmarks-static/catalog> ;
+    bbr:generator "wikibase-static 0.22.0" ;
+    bbr:prefix "osm-benchmarks" ;
+    bbr:sha256 "1b711e75f4d4790959be85ecdc8c4a27a518b8291b987175f136460c80ea92aa" ;
+    bbr:sourceTripleCount 6278 .
+
+osm-benchmarks:Q2 a wikibase:Item ;
+    rdfs:label "Eigenschaft"@de,
+        "Property"@en ;
+    schema1:description "Eine Beziehung oder ein Merkmal, das eine Entität mit einem Wert verbindet; der Typ jeder Eigenschaft."@de,
+        "A relation or attribute that links an entity to a value; the type of every property."@en ;
+    schema1:name "Eigenschaft"@de,
+        "Property"@en ;
+    owl:equivalentClass rdf:Property ;
+    skos:prefLabel "Eigenschaft"@de,
+        "Property"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q1 ;
+    bbr:subclassOf osm-benchmarks:Q3 ;
+    osm-benchmarks-wdt:P1 osm-benchmarks:Q3 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q1 .
+
 chublets:Q370 a wikibase:Item,
         chublets:Q106 ;
     rdfs:label "Python"@de,
@@ -20705,6 +21739,25 @@ chublets:Q370 a wikibase:Item,
     chublets-wdt:P2 chublets:Q106,
         chublets:Q3 ;
     chublets-wdt:P4 "Q28865" .
+
+osm-benchmarks:Q100 a wikibase:Item ;
+    rdfs:label "Höhenmarke"@de,
+        "Benchmark"@en ;
+    schema1:description "Eine fest verbaute Vermessungsmarke (Höhenmarke, Vermessungspunkt, Meilenstein), die in OpenStreetMap als ein Element kartiert ist."@de,
+        "A fixed survey marker (benchmark, survey point, milestone) that is mapped as one element in OpenStreetMap."@en ;
+    schema1:name "Höhenmarke"@de,
+        "Benchmark"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature> ;
+    skos:prefLabel "Höhenmarke"@de,
+        "Benchmark"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
+    bbr:instanceOf osm-benchmarks:Q1 ;
+    bbr:subclassOf osm-benchmarks:Q3 ;
+    osm-benchmarks-wdt:P1 osm-benchmarks:Q3 ;
+    osm-benchmarks-wdt:P2 osm-benchmarks:Q1 .
 
 fuzzy-sl:Q10 a wikibase:Item ;
     rdfs:label "Archaeological Site"@en ;

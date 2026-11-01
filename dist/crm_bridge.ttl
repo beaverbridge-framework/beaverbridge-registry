@@ -75,3 +75,13 @@
 
 <https://n4o-rse.github.io/fuzzy-sl-static/entity/Q91> bbr:classKind "model" .
 
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> bbr:classKind "model" .
+

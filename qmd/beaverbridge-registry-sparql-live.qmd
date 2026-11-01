@@ -59,7 +59,7 @@ def show(graph, query):
     return [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)} for r in res]
 ```
 
-The bundle is about 0.9 MB.
+The bundle is about 1.0 MB.
 
 ```{pyodide}
 #| autorun: false

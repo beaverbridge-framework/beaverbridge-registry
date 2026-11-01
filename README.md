@@ -26,6 +26,7 @@ python main.py
 |---|---|---|
 | `fuzzy-sl` | [fuzzy-sl-static](https://github.com/n4o-rse/fuzzy-sl-static) | https://n4o-rse.github.io/fuzzy-sl-static/ |
 | `chublets` | [chublets-wikibase-demo](https://github.com/n4o-rse/chublets-wikibase-demo) | https://n4o-rse.github.io/chublets-wikibase-demo/ |
+| `osm-benchmarks` | [osm-benchmarks-static](https://github.com/n4o-rse/osm-benchmarks-static) | https://n4o-rse.github.io/osm-benchmarks-static/ |
 
 ## Licence
 

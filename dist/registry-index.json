@@ -1,5 +1,5 @@
 {
-  "bundle_triples": 19703,
+  "bundle_triples": 20701,
   "class_labels": {
     "chublets:Q1": "Class",
     "chublets:Q100": "software",
@@ -25,7 +25,9 @@
     "fuzzy-sl:Q6": "Certainty Level",
     "fuzzy-sl:Q7": "Method Type",
     "fuzzy-sl:Q81": "Location Type",
-    "fuzzy-sl:Q91": "Spatial Category"
+    "fuzzy-sl:Q91": "Spatial Category",
+    "osm-benchmarks:Q1": "Class",
+    "osm-benchmarks:Q100": "Benchmark"
   },
   "entries": [
     {
@@ -26089,6 +26091,795 @@
       "wikidata": [
         "Q125400678"
       ]
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q1"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "A set of things of the same kind; the type of every class.",
+      "features": [],
+      "id": "osm-benchmarks:Q1",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "model"
+      ],
+      "label": "Class",
+      "matches": [],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q1.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q1"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "A relation or attribute that links an entity to a value; the type of every property.",
+      "features": [],
+      "id": "osm-benchmarks:Q2",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "model"
+      ],
+      "label": "Property",
+      "matches": [],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q2.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q1"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "The root of the class tree: everything described here is an instance of it.",
+      "features": [],
+      "id": "osm-benchmarks:Q3",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "model"
+      ],
+      "label": "Instance",
+      "matches": [],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q3.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q1"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "A fixed survey marker (benchmark, survey point, milestone) that is mapped as one element in OpenStreetMap.",
+      "features": [],
+      "id": "osm-benchmarks:Q100",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "model"
+      ],
+      "label": "Benchmark",
+      "matches": [],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q100.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          53.2725397,
+          -9.0538691
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12600848879",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q101",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at St. Nicholas' Collegiate Church",
+      "matches": [
+        "https://www.openstreetmap.org/node/12600848879"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q101.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          52.9774432,
+          -6.9790004
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12888689968",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q102",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at Ardreigh Lock",
+      "matches": [
+        "https://www.openstreetmap.org/node/12888689968"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q102.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8642448,
+          -4.260726
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12919476068",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q103",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "NO145 BATH ST SE FACE E ANG 1989 37,995m",
+      "matches": [
+        "https://www.openstreetmap.org/node/12919476068"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q103.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8620198,
+          -4.2537467
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12919738910",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q104",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at St George's Tron Parish Church",
+      "matches": [
+        "https://www.openstreetmap.org/node/12919738910"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q104.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8685438,
+          -4.2924895
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12922675575",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q105",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at corner of Blantyre St and Argyle St",
+      "matches": [
+        "https://www.openstreetmap.org/node/12922675575"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q105.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8526441,
+          -4.2497576
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12923698705",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q106",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark on City Union Railway Bridge",
+      "matches": [
+        "https://www.openstreetmap.org/node/12923698705"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q106.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8527993,
+          -4.247294
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12923704831",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q107",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark on Albert Bridge",
+      "matches": [
+        "https://www.openstreetmap.org/node/12923704831"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q107.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8568563,
+          -4.2453643
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12923752174",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q108",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at the corner of Trongate- Chrisholm Street",
+      "matches": [
+        "https://www.openstreetmap.org/node/12923752174"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q108.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8547441,
+          -4.2454407
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12923754806",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q109",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at Blackstock's Close (Saltmarket)",
+      "matches": [
+        "https://www.openstreetmap.org/node/12923754806"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q109.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.860784,
+          -4.2477111
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12924781327",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q110",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark in the East side of the City Chambers",
+      "matches": [
+        "https://www.openstreetmap.org/node/12924781327"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q110.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8611989,
+          -4.2478655
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12924782280",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q111",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark on the North side of the City Chambers",
+      "matches": [
+        "https://www.openstreetmap.org/node/12924782280"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q111.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8606261,
+          -4.2485537
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12924784584",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q112",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark on the South side of the City Chambers",
+      "matches": [
+        "https://www.openstreetmap.org/node/12924784584"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q112.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8623444,
+          -4.2353755
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12925489820",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q113",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark on the Cathedral gate lodge",
+      "matches": [
+        "https://www.openstreetmap.org/node/12925489820"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q113.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8620442,
+          -4.2368032
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12925655350",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q114",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Barony Halls benchmark",
+      "matches": [
+        "https://www.openstreetmap.org/node/12925655350"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q114.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.8636907,
+          -4.3147383
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12925919541",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q115",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Govan Road benchmark",
+      "matches": [
+        "https://www.openstreetmap.org/node/12925919541"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q115.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          55.5989376,
+          -2.7178857
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 12936028929",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q116",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at Melrose Abbey",
+      "matches": [
+        "https://www.openstreetmap.org/node/12936028929"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q116.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          54.2726815,
+          -8.4683873
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 13331549275",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q117",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "OS benchmark",
+      "matches": [
+        "https://www.openstreetmap.org/node/13331549275"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q117.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          53.390985,
+          -6.0906714
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 6666122939",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q118",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "MilestoneDublin8Howth1",
+      "matches": [
+        "https://www.openstreetmap.org/node/6666122939"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q118.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          53.387749,
+          -6.0681842
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 6721748182",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q119",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "MilestoneDublin9Howth",
+      "matches": [
+        "https://www.openstreetmap.org/node/6721748182"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q119.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          52.6468593,
+          -7.2121484
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 6967103228",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q120",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Milestone Old Dublin Road",
+      "matches": [
+        "https://www.openstreetmap.org/node/6967103228"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q120.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          52.3531682,
+          -7.6966593
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 7873204616",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q121",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Benchmark at Scots Church",
+      "matches": [
+        "https://www.openstreetmap.org/node/7873204616"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q121.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          54.128786,
+          -6.9063675
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 14257817434",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q122",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138",
+      "matches": [
+        "https://www.openstreetmap.org/node/14257817434"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q122.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "osm-benchmarks:Q100"
+      ],
+      "coordinates": [
+        [
+          52.5861876,
+          -7.5413562
+        ]
+      ],
+      "crm": [
+        "E25 Human-Made Feature"
+      ],
+      "description": "OpenStreetMap node 7709937682",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "osm-benchmarks:Q123",
+      "instance": "osm-benchmarks",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Ballingarry benchmark",
+      "matches": [
+        "https://www.openstreetmap.org/node/7709937682"
+      ],
+      "part_of": [],
+      "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q123.html",
+      "wikidata": []
     }
   ],
   "instances": [
@@ -26121,6 +26912,21 @@
       "source": "https://n4o-rse.github.io/chublets-wikibase-demo/downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl",
       "source_triples": 99261,
       "title": "chublets.software Wikibase (model demo)"
+    },
+    {
+      "data_as_of": "2026-11-01T00:00:00+00:00",
+      "entities": 51,
+      "generator": "wikibase-static 0.22.0",
+      "id": "osm-benchmarks",
+      "items": 27,
+      "licence": "ODbL-1.0",
+      "pages_url": "https://n4o-rse.github.io/osm-benchmarks-static/",
+      "properties": 24,
+      "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks",
+      "sha256": "1b711e75f4d4790959be85ecdc8c4a27a518b8291b987175f136460c80ea92aa",
+      "source": "https://n4o-rse.github.io/osm-benchmarks-static/downloads/n4o-rse.github.io-osm-benchmarks-static.ttl",
+      "source_triples": 6278,
+      "title": "OSM benchmarks (static Wikibase)"
     }
   ],
   "release": "2026-11-01"

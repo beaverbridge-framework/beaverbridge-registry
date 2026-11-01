@@ -1,18 +1,24 @@
-# Patch: S9 gestrichen, S5 und S6 abgenommen
+# Patch S10: osm-benchmarks als dritte Instanz
 
-Nur Dokumentation: Der Schritt S9 (Überführung nach `beaverbridge`) steht nicht mehr im Plan, die Abnahme von S5 und S6 (Commit `328e007`) ist eingetragen.
+Nimmt `osm-benchmarks-static` (OSM-Höhenmarken, ODbL 1.0) in die Registry auf. Das Bundle hat danach 20 701 Tripel aus 3 Instanzen, die Facettenseite 996 Einträge.
 
 | Datei | Änderung |
 |---|---|
-| `PRIMER.md` | S9 aus Teil B, Teil A1 und der Beschlusslage entfernt (dort steht jetzt, dass er gestrichen ist), Abnahme S5/S6 ergänzt |
-| `README.md` | Status ohne S9, kein Hinweis mehr auf eine spätere Überführung |
+| `registry/sources.json` | neue Instanz `osm-benchmarks` (Export und Ontologie) |
+| `data/raw/osm-benchmarks/` | geerntete Dateien und `harvest.json` (Stand 2026-11-01) |
+| `crosswalks/core-properties.csv` | 7 Zeilen für die neue Instanz (5 Rollen, 2 mit `none` und Grund) |
+| `crosswalks/classes.csv` | 4 Klassen (Class, Property, Instance, Benchmark → E25_Human-Made_Feature als Brücke) |
+| `py/step_bridge.py` | CRM-Klassenname darf Bindestrich enthalten |
+| `py/step_index.py` | Lizenzkürzel `ODbL-1.0` |
+| `PRIMER.md`, `README.md` | Instanz, Befund, Schritte S10 (erledigt) und S11 (offen) |
+| `dist/`, `docs/`, `qmd/` | neu erzeugt |
 
-Dateien in den Repo-Ordner ziehen und ersetzen. Es ändert sich nichts an Code und Ausgaben.
+Dateien in den Repo-Ordner ziehen und ersetzen.
 
 ## Abnahme und Push
 
 ```cmd
-git add -A && git commit -m "drop S9, record S5 and S6 acceptance" && python main.py --strict && git status && git push
+git add -A && git commit -m "S10 add osm-benchmarks as third instance" && python main.py --strict && git status && git push
 ```
 
-Erwartet: `nothing to commit, working tree clean`.
+Erwartet: `--strict` grün (survey 3 Instanzen, bundle 20701 Tripel, validate 0 Verletzungen, index 996 Einträge, 12 Abfragen mit Zeilen) und `nothing to commit, working tree clean`.

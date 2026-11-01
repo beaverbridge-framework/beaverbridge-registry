@@ -4,6 +4,7 @@
       "instance_of",
       "subclass_of",
       "part_of",
+      "coordinates",
       "wikidata_equivalent",
       "external_match"
     ],
@@ -1448,6 +1449,190 @@
         "Q125400678",
         "Q141115627",
         "Q141818802"
+      ]
+    },
+    {
+      "anchors": [],
+      "classes": [
+        {
+          "id": "Q1",
+          "instances": 4,
+          "label": "Class",
+          "property_instances": 0,
+          "superclasses": [
+            "Q3"
+          ]
+        },
+        {
+          "id": "Q2",
+          "instances": 0,
+          "label": "Property",
+          "property_instances": 24,
+          "superclasses": [
+            "Q3"
+          ]
+        },
+        {
+          "id": "Q3",
+          "instances": 0,
+          "label": "Instance",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q100",
+          "instances": 23,
+          "label": "Benchmark",
+          "property_instances": 0,
+          "superclasses": [
+            "Q3"
+          ]
+        }
+      ],
+      "file": "n4o-rse.github.io-osm-benchmarks-static.ttl",
+      "id": "osm-benchmarks",
+      "inherited_anchors": [],
+      "items": 27,
+      "label": "OSM benchmarks (static Wikibase)",
+      "properties": {
+        "P1": {
+          "datatype": "WikibaseItem",
+          "label": "subclass of",
+          "uses": 3
+        },
+        "P10": {
+          "datatype": "WikibaseItem",
+          "label": "range",
+          "uses": 5
+        },
+        "P100": {
+          "datatype": "Url",
+          "label": "OSM element",
+          "uses": 23
+        },
+        "P101": {
+          "datatype": "Url",
+          "label": "OSM version",
+          "uses": 23
+        },
+        "P102": {
+          "datatype": "Quantity",
+          "label": "OSM version number",
+          "uses": 0
+        },
+        "P103": {
+          "datatype": "String",
+          "label": "OSM timestamp",
+          "uses": 0
+        },
+        "P104": {
+          "datatype": "ExternalId",
+          "label": "OSM changeset",
+          "uses": 0
+        },
+        "P105": {
+          "datatype": "String",
+          "label": "OSM user name",
+          "uses": 0
+        },
+        "P106": {
+          "datatype": "ExternalId",
+          "label": "OSM user ID",
+          "uses": 0
+        },
+        "P107": {
+          "datatype": "Url",
+          "label": "in selection since",
+          "uses": 23
+        },
+        "P108": {
+          "datatype": "Url",
+          "label": "in selection until",
+          "uses": 0
+        },
+        "P109": {
+          "datatype": "String",
+          "label": "selection",
+          "uses": 0
+        },
+        "P110": {
+          "datatype": "GlobeCoordinate",
+          "label": "coordinate location",
+          "uses": 23
+        },
+        "P111": {
+          "datatype": "String",
+          "label": "geometry history",
+          "uses": 36
+        },
+        "P112": {
+          "datatype": "CommonsMedia",
+          "label": "image",
+          "uses": 23
+        },
+        "P113": {
+          "datatype": "String",
+          "label": "OSM tag",
+          "uses": 114
+        },
+        "P2": {
+          "datatype": "WikibaseItem",
+          "label": "instance of",
+          "uses": 51
+        },
+        "P3": {
+          "datatype": "WikibaseProperty",
+          "label": "subproperty of",
+          "uses": 0
+        },
+        "P4": {
+          "datatype": "ExternalId",
+          "label": "Wikidata equivalent",
+          "uses": 9
+        },
+        "P5": {
+          "datatype": "String",
+          "label": "formatter URL",
+          "uses": 2
+        },
+        "P6": {
+          "datatype": "Url",
+          "label": "reference URL",
+          "uses": 0
+        },
+        "P7": {
+          "datatype": "Time",
+          "label": "retrieved",
+          "uses": 0
+        },
+        "P8": {
+          "datatype": "WikibaseItem",
+          "label": "stated in",
+          "uses": 0
+        },
+        "P9": {
+          "datatype": "WikibaseItem",
+          "label": "domain",
+          "uses": 13
+        }
+      },
+      "rdf_base": "https://n4o-rse.github.io/osm-benchmarks-static",
+      "references": 53,
+      "roles": {
+        "coordinates": "P110",
+        "external_match": "P100",
+        "instance_of": "P2",
+        "subclass_of": "P1",
+        "wikidata_equivalent": "P4"
+      },
+      "roots": [
+        "Q3"
+      ],
+      "statements": 390,
+      "triples": 6278,
+      "wikidata_qids": [
+        "Q2",
+        "Q199"
       ]
     }
   ],
