@@ -15,9 +15,11 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 | Repo | Rolle | Pages-Adresse | Erzeuger |
 |---|---|---|---|
 | `n4o-rse/wikibase-static` | Paket: Harvest, CSV-Import, Build der Static-Seiten | — | — |
-| `n4o-rse/fuzzy-sl-static` | Quelle 1: gesicherte Kopie von fuzzy-sl.wikibase.cloud | https://n4o-rse.github.io/fuzzy-sl-static/ | wikibase-static 0.10.0 |
+| `n4o-rse/wb-fuzzysl-static` | Quelle 1: gesicherte Kopie von fuzzy-sl.wikibase.cloud | https://n4o-rse.github.io/wb-fuzzysl-static/ | wikibase-static 0.30.1 |
 | `n4o-rse/chublets-wikibase-demo` | Quelle 2: Modell-Demo der Chublets-Wikibase | https://n4o-rse.github.io/chublets-wikibase-demo/ | wikibase-static 0.19.0 |
 | `n4o-rse/osm-benchmarks-static` | Quelle 3: OSM-Höhenmarken mit Versionsverlauf, Lizenz ODbL 1.0 | https://n4o-rse.github.io/osm-benchmarks-static/ | wikibase-static 0.22.0 |
+| `n4o-rse/wb-squirrelbase-static` | Quelle 4: gesicherte Kopie von squirrelbase.wikibase.cloud (Harvest, CC0 1.0) | https://n4o-rse.github.io/wb-squirrelbase-static/ | wikibase-static 0.30.1 |
+| `n4o-rse/wb-n4o-prov-static` | Quelle 5: gesicherte Kopie von n4o-prov.wikibase.cloud (Provenienz, CC0 1.0) | https://n4o-rse.github.io/wb-n4o-prov-static/ | wikibase-static 0.30.1 |
 | `FDOx-squirrel/fdo-squirrel-registry` | Vorbild für Pipeline, Gate, Query-Seite | https://fdox-squirrel.github.io/fdo-squirrel-registry/ | — |
 
 **Befunde** (geprüft 2026-11-01 durch Klonen beider Static-Repos):
@@ -160,6 +162,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S8 | Query-Seite (`queries.yaml`, Pyodide) | beaverbridge-registry | S4 | erledigt 2026-11-01 |
 | S10 | Dritte Instanz: osm-benchmarks | beaverbridge-registry | S3, S5 | erledigt 2026-11-01 |
 | S11 | Facettenseite auf sinnvolle Facetten umstellen | beaverbridge-registry | S10 | erledigt 2026-11-01 |
+| S12 | Vierte und fünfte Instanz: squirrelbase, n4o-prov | beaverbridge-registry | S10 | erledigt 2026-11-18 (Abnahme auf dem PC offen) |
 
 Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 konnten parallel starten, sobald S2 Daten geliefert hatte; alle Schritte sind erledigt.
 
@@ -347,6 +350,26 @@ Beschluss (Dialog): Facetten **Instanz** (Lizenz als Zusatz hinter dem Namen), *
 - **Modellklassen:** Ein Item ist ausgeblendet, wenn seine Klassen alle `model` sind. Weil Chublets Q3 *Instance* die eigentlichen Inhalte (366 Items) trägt, ist Q3 jetzt `domain` mit Anker `E1_CRM_Entity` (`basis: bridge`; der einzige Anspruch, der für alle gemischten Items stimmt). Das ist ein Vorschlag, den Flo mit `classes.csv` prüft.
 - Gemessen: 917 von 996 Einträgen sichtbar, 996 mit Schalter; Karte 83 Positionen; Italien 29, Großbritannien 27, Irland 12; keine Konsolenfehler, kein Überlauf bei 390 px.
 
+## S12 — Vierte und fünfte Instanz: squirrelbase, n4o-prov
+
+### Erledigt 2026-11-18
+
+`registry/sources.json` führt `squirrelbase` (Präfixfamilie `sqb`) und `n4o-prov` (`n4op`): statische Kopien von squirrelbase.wikibase.cloud und n4o-prov.wikibase.cloud, beide mit wikibase-static 0.30.1 aus einem Harvest gebaut (`n4o-rse/wb-*-static`). Das Harvest der Registry lief mit `--local` gegen die gebauten `docs/`; gegen Pages liefert es dieselben Bytes.
+
+Befund squirrelbase: 6 415 Tripel, 58 Items, 29 Properties, 6 Klassen. Rollen 5 von 7: instance of P1, subclass of P2, coordinates P8 (*representative point*), Wikidata equivalent P6 (*Wikidata Q-ID*, hier ein String und kein ExternalId), external match P11 (*aligned with term*). *part of* und *equivalent class* gibt es nicht. Klassen: *Object* (E24, `bridge`), *temporal Object* erbt, vier Vokabularklassen (`model`).
+
+Befund n4o-prov: 14 495 Tripel, 132 Items, 61 Properties, 29 Klassen. Rollen 4 von 7: instance of P2, subclass of P1 (wie in chublets vertauscht gegen fuzzy-sl), coordinates P25, external match P21 (*aligned with*: GND, Wikidata, Museums-URLs). Kein *part of*, kein *equivalent class*, kein *Wikidata equivalent* (P24 und P58 nennen Wikidata-Orte und -Ortstypen, nicht die Q-Nummer des Items). Domänenklassen mit `bridge`-Anker: *Human* E21, *Corporate Body* E40, *Object* E22, *Collection* E78, *Place* E53, *Event* E5; die übrigen 23 sind `model` (SKOS-Klassen, Normdateien, Rollen, Vokabulare). Die Anker sind Vorschläge der Registry.
+
+**Umbenennung:** `fuzzy-sl-static` heißt jetzt `wb-fuzzysl-static` (Präfix `wb-` = Wikibase als Quelle); Pages-Adresse und `rdf_base` ändern sich mit, die Instanz-ID `fuzzy-sl` bleibt. Der Rohexport in `data/raw/fuzzy-sl/` stammt aus dem Neubau mit wikibase-static 0.30.1. Weil die Entitäts-IRIs auf der neuen Basis stehen, sind Bundle und Index neu erzeugt; die alte Adresse war nirgends veröffentlicht.
+
+**Gefunden und behoben:** Ein Wikibase-Statement „unbekannter Wert“ (`somevalue`, in n4o-prov bei P53, P33, P43, P45) steht im Export als Blank Node. rdflib benennt Blank Nodes bei jedem Einlesen neu, die N-Triples des Bundles waren dadurch von Lauf zu Lauf verschieden. `registry_utils.canonical_bnodes()` benennt sie nach den Aussagen, die sie erwähnen; zwei Knoten mit denselben Aussagen werden dabei einer.
+
+Gemessen: Bundle 23 991 Tripel aus 5 Instanzen, Index 1 186 Einträge, Gate 0 Verletzungen, 0 Warnungen, 12 Abfragen mit Zeilen, `--strict` grün, zweimal byte-identisch.
+
+**Englische Labels (R02):** `Q119` (*Münze Australien*) und `Q124` (*Drancy*) von n4o-prov haben nur ein deutsches Label. Die Registry ergänzt sie aus `crosswalks/labels-en.csv` als `rdfs:label "Australian coin (auto)"@en` (das Suffix zeigt, dass die Registry sie gemacht hat und nicht die Instanz). Hat die Instanz später ein englisches Label, meldet das Bundle die Zeile als Warnung; dann die Zeile löschen. Besser bleibt das Label in der Quelle.
+
+---
+
 ---
 
 ## Teil D — Offene Punkte
@@ -354,6 +377,7 @@ Beschluss (Dialog): Facetten **Instanz** (Lizenz als Zusatz hinter dem Namen), *
 - **Auflösung von `bbr:`:** Namespace ist entschieden (Pages-Pfad); die Seite `vocab/` selbst entsteht mit der Site in S7. Später w3id.
 - **Zuordnung prüfen:** `crosswalks/classes.csv` ist ein Vorschlag der Registry (Klassenart, Anker für *Site*, *software*, *Little Minion*); Flo korrigiert dort. Ob *Person*, *Project*, *Source* auf E21, E7, E31 gehören, ist offen.
 - **Rückmeldung an die Instanzen:** Chublets hat keinen eigenen CRM-Anker und 7 Weiterleitungen; fuzzy-sl verankert nur zwei Klassen. Ob die Instanzen die Brücke übernehmen, ist eine Frage an ihre Pflege.
+- **Englische Labels in n4o-prov (R02):** `crosswalks/labels-en.csv` hält zwei Übersetzungen der Registry (`(auto)`). Wenn die Quelle die Labels bekommt, die Zeilen löschen.
 - **Items ohne Klasse (R05):** 27 Items haben keine Klasse; als Info gemeldet, nicht als Fehler.
 - **Doppelte Ablage:** `dist/` und `docs/downloads/` halten dieselben 4 MB; mit jeder Änderung des Bundles wächst die Git-Historie um beide. Wenn es stört: `dist/*.nt/.ttl` nicht mehr versionieren und nur `docs/downloads/` behalten.
 - **Karte:** Leaflet-Basiskarte ist in der Sandbox nicht gegen die echten Server geprüft (Netz gesperrt); auf Pages ansehen. Ohne SRI-Hashes; Eigenhosting der Bibliotheken wäre die Alternative.

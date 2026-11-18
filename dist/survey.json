@@ -173,7 +173,7 @@
           ]
         }
       ],
-      "file": "n4o-rse.github.io-fuzzy-sl-static.ttl",
+      "file": "n4o-rse.github.io-wb-fuzzysl-static.ttl",
       "id": "fuzzy-sl",
       "inherited_anchors": [
         {
@@ -379,7 +379,7 @@
           "uses": 1
         }
       },
-      "rdf_base": "https://n4o-rse.github.io/fuzzy-sl-static",
+      "rdf_base": "https://n4o-rse.github.io/wb-fuzzysl-static",
       "references": 26,
       "roles": {
         "coordinates": "P4",
@@ -1633,6 +1633,867 @@
       "wikidata_qids": [
         "Q2",
         "Q199"
+      ]
+    },
+    {
+      "anchors": [],
+      "classes": [
+        {
+          "id": "Q2",
+          "instances": 33,
+          "label": "Object",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q17",
+          "instances": 5,
+          "label": "temporal Object",
+          "property_instances": 0,
+          "superclasses": [
+            "Q2"
+          ]
+        },
+        {
+          "id": "Q31",
+          "instances": 3,
+          "label": "Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q32",
+          "instances": 3,
+          "label": "Alignment Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q36",
+          "instances": 7,
+          "label": "Alignment Score",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q44",
+          "instances": 3,
+          "label": "Acquisition Method",
+          "property_instances": 0,
+          "superclasses": []
+        }
+      ],
+      "file": "n4o-rse.github.io-wb-squirrelbase-static.ttl",
+      "id": "squirrelbase",
+      "inherited_anchors": [],
+      "items": 58,
+      "label": "Squirrelbase (static copy of squirrelbase.wikibase.cloud)",
+      "properties": {
+        "P1": {
+          "datatype": "WikibaseItem",
+          "label": "instance of",
+          "uses": 54
+        },
+        "P10": {
+          "datatype": "Url",
+          "label": "aligned with item",
+          "uses": 0
+        },
+        "P11": {
+          "datatype": "Url",
+          "label": "aligned with term",
+          "uses": 28
+        },
+        "P12": {
+          "datatype": "WikibaseItem",
+          "label": "alignment type (SKOS)",
+          "uses": 0
+        },
+        "P13": {
+          "datatype": "String",
+          "label": "alignment repository",
+          "uses": 0
+        },
+        "P14": {
+          "datatype": "WikibaseItem",
+          "label": "alignment score",
+          "uses": 0
+        },
+        "P15": {
+          "datatype": "String",
+          "label": "alignment description",
+          "uses": 0
+        },
+        "P16": {
+          "datatype": "String",
+          "label": "alignment source",
+          "uses": 0
+        },
+        "P17": {
+          "datatype": "String",
+          "label": "WKT geometry",
+          "uses": 0
+        },
+        "P18": {
+          "datatype": "WikibaseItem",
+          "label": "acquisition method",
+          "uses": 0
+        },
+        "P19": {
+          "datatype": "String",
+          "label": "acquisition software",
+          "uses": 0
+        },
+        "P2": {
+          "datatype": "WikibaseItem",
+          "label": "subclass of",
+          "uses": 1
+        },
+        "P20": {
+          "datatype": "String",
+          "label": "acquisition creator",
+          "uses": 0
+        },
+        "P21": {
+          "datatype": "String",
+          "label": "acquisition license",
+          "uses": 0
+        },
+        "P22": {
+          "datatype": "String",
+          "label": "FDO type",
+          "uses": 0
+        },
+        "P23": {
+          "datatype": "String",
+          "label": "FDO format",
+          "uses": 0
+        },
+        "P24": {
+          "datatype": "String",
+          "label": "FDO license",
+          "uses": 0
+        },
+        "P25": {
+          "datatype": "String",
+          "label": "FDO release version",
+          "uses": 0
+        },
+        "P26": {
+          "datatype": "Url",
+          "label": "Semantic Kompakkt URL",
+          "uses": 2
+        },
+        "P27": {
+          "datatype": "String",
+          "label": "alignment label",
+          "uses": 0
+        },
+        "P28": {
+          "datatype": "Url",
+          "label": "3D File URL",
+          "uses": 3
+        },
+        "P29": {
+          "datatype": "String",
+          "label": "acquisition hardware",
+          "uses": 0
+        },
+        "P3": {
+          "datatype": "Url",
+          "label": "3DHOP URL",
+          "uses": 7
+        },
+        "P4": {
+          "datatype": "Url",
+          "label": "KIRI URL",
+          "uses": 23
+        },
+        "P5": {
+          "datatype": "Url",
+          "label": "Sketchfab URL",
+          "uses": 10
+        },
+        "P6": {
+          "datatype": "String",
+          "label": "Wikidata Q-ID",
+          "uses": 24
+        },
+        "P7": {
+          "datatype": "String",
+          "label": "OSM ID",
+          "uses": 33
+        },
+        "P8": {
+          "datatype": "GlobeCoordinate",
+          "label": "representative point",
+          "uses": 32
+        },
+        "P9": {
+          "datatype": "Url",
+          "label": "FDO URL",
+          "uses": 7
+        }
+      },
+      "rdf_base": "https://n4o-rse.github.io/wb-squirrelbase-static",
+      "references": 0,
+      "roles": {
+        "coordinates": "P8",
+        "external_match": "P11",
+        "instance_of": "P1",
+        "subclass_of": "P2",
+        "wikidata_equivalent": "P6"
+      },
+      "roots": [
+        "Q2",
+        "Q31",
+        "Q32",
+        "Q36",
+        "Q44"
+      ],
+      "statements": 224,
+      "triples": 6415,
+      "wikidata_qids": [
+        "Q2",
+        "Q152445",
+        "Q153965",
+        "Q261274",
+        "Q537513",
+        "Q572562",
+        "Q1371047",
+        "Q1570646",
+        "Q2016147",
+        "Q5588564",
+        "Q7321974",
+        "Q24041450",
+        "Q30247109",
+        "Q33056801",
+        "Q42887850",
+        "Q55046509",
+        "Q60554307",
+        "Q121592049",
+        "Q138425168",
+        "Q138426902",
+        "Q138426946"
+      ]
+    },
+    {
+      "anchors": [],
+      "classes": [
+        {
+          "id": "Q1",
+          "instances": 20,
+          "label": "Concept",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q2",
+          "instances": 2,
+          "label": "Concept Scheme",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q3",
+          "instances": 0,
+          "label": "Collection",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q4",
+          "instances": 0,
+          "label": "Ordered Collection",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q5",
+          "instances": 0,
+          "label": "SKOS Plus Class",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q6",
+          "instances": 26,
+          "label": "Human",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q7",
+          "instances": 3,
+          "label": "Corporate Body",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q8",
+          "instances": 0,
+          "label": "Fictive Person",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q9",
+          "instances": 0,
+          "label": "GND",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q10",
+          "instances": 0,
+          "label": "Wikidata",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q11",
+          "instances": 0,
+          "label": "VIAF",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q12",
+          "instances": 9,
+          "label": "Repository",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q13",
+          "instances": 0,
+          "label": "Wikipedia",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q14",
+          "instances": 0,
+          "label": "NDP",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q15",
+          "instances": 0,
+          "label": "Provenienzgazetteer",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q16",
+          "instances": 3,
+          "label": "Role",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q17",
+          "instances": 0,
+          "label": "Medallist",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q18",
+          "instances": 0,
+          "label": "Previous Owner",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q21",
+          "instances": 0,
+          "label": "Coin Dealer",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q22",
+          "instances": 0,
+          "label": "Body-Gazetteer",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q24",
+          "instances": 0,
+          "label": "British Museum",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q33",
+          "instances": 26,
+          "label": "Object",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q40",
+          "instances": 9,
+          "label": "Collection",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q42",
+          "instances": 6,
+          "label": "Core Entity",
+          "property_instances": 0,
+          "superclasses": [
+            "Q1"
+          ]
+        },
+        {
+          "id": "Q43",
+          "instances": 0,
+          "label": "Event",
+          "property_instances": 0,
+          "superclasses": [
+            "Q5"
+          ]
+        },
+        {
+          "id": "Q54",
+          "instances": 9,
+          "label": "Place",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q55",
+          "instances": 4,
+          "label": "Alignment Score",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q62",
+          "instances": 3,
+          "label": "Object Type",
+          "property_instances": 0,
+          "superclasses": []
+        },
+        {
+          "id": "Q77",
+          "instances": 3,
+          "label": "Place Type",
+          "property_instances": 0,
+          "superclasses": []
+        }
+      ],
+      "file": "n4o-rse.github.io-wb-n4o-prov-static.ttl",
+      "id": "n4o-prov",
+      "inherited_anchors": [],
+      "items": 132,
+      "label": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)",
+      "properties": {
+        "P1": {
+          "datatype": "WikibaseItem",
+          "label": "subclass of",
+          "uses": 23
+        },
+        "P10": {
+          "datatype": "Url",
+          "label": "related match",
+          "uses": 0
+        },
+        "P11": {
+          "datatype": "Url",
+          "label": "close match",
+          "uses": 0
+        },
+        "P12": {
+          "datatype": "Url",
+          "label": "exact match",
+          "uses": 0
+        },
+        "P13": {
+          "datatype": "Url",
+          "label": "reference URL",
+          "uses": 0
+        },
+        "P15": {
+          "datatype": "Time",
+          "label": "end of existing",
+          "uses": 6
+        },
+        "P16": {
+          "datatype": "Time",
+          "label": "start of existing",
+          "uses": 7
+        },
+        "P19": {
+          "datatype": "WikibaseItem",
+          "label": "in scheme",
+          "uses": 19
+        },
+        "P2": {
+          "datatype": "WikibaseItem",
+          "label": "instance of",
+          "uses": 123
+        },
+        "P20": {
+          "datatype": "WikibaseItem",
+          "label": "role",
+          "uses": 28
+        },
+        "P21": {
+          "datatype": "Url",
+          "label": "aligned with",
+          "uses": 69
+        },
+        "P22": {
+          "datatype": "WikibaseProperty",
+          "label": "alignment type",
+          "uses": 0
+        },
+        "P23": {
+          "datatype": "WikibaseItem",
+          "label": "alignment repository",
+          "uses": 0
+        },
+        "P24": {
+          "datatype": "Url",
+          "label": "location (Wikidata)",
+          "uses": 20
+        },
+        "P25": {
+          "datatype": "GlobeCoordinate",
+          "label": "representative point",
+          "uses": 12
+        },
+        "P27": {
+          "datatype": "String",
+          "label": "label",
+          "uses": 0
+        },
+        "P28": {
+          "datatype": "Monolingualtext",
+          "label": "label mono",
+          "uses": 0
+        },
+        "P29": {
+          "datatype": "Url",
+          "label": "linked objects",
+          "uses": 62
+        },
+        "P3": {
+          "datatype": "WikibaseItem",
+          "label": "top concept of",
+          "uses": 0
+        },
+        "P30": {
+          "datatype": "WikibaseItem",
+          "label": "relationship",
+          "uses": 6
+        },
+        "P31": {
+          "datatype": "WikibaseItem",
+          "label": "relationship type",
+          "uses": 0
+        },
+        "P32": {
+          "datatype": "WikibaseItem",
+          "label": "object relation",
+          "uses": 26
+        },
+        "P33": {
+          "datatype": "Url",
+          "label": "object URL",
+          "uses": 25
+        },
+        "P34": {
+          "datatype": "WikibaseItem",
+          "label": "belongs to collection",
+          "uses": 39
+        },
+        "P35": {
+          "datatype": "WikibaseItem",
+          "label": "has role (object)",
+          "uses": 0
+        },
+        "P36": {
+          "datatype": "String",
+          "label": "location description",
+          "uses": 0
+        },
+        "P37": {
+          "datatype": "WikibaseItem",
+          "label": "alignment score",
+          "uses": 0
+        },
+        "P38": {
+          "datatype": "String",
+          "label": "alignment description",
+          "uses": 0
+        },
+        "P39": {
+          "datatype": "WikibaseProperty",
+          "label": "corresponds with",
+          "uses": 5
+        },
+        "P4": {
+          "datatype": "WikibaseItem",
+          "label": "has top concept",
+          "uses": 0
+        },
+        "P40": {
+          "datatype": "String",
+          "label": "alignment source",
+          "uses": 0
+        },
+        "P41": {
+          "datatype": "String",
+          "label": "name",
+          "uses": 13
+        },
+        "P42": {
+          "datatype": "WikibaseItem",
+          "label": "status",
+          "uses": 2
+        },
+        "P43": {
+          "datatype": "String",
+          "label": "profession",
+          "uses": 12
+        },
+        "P44": {
+          "datatype": "Url",
+          "label": "location",
+          "uses": 0
+        },
+        "P45": {
+          "datatype": "String",
+          "label": "object identifier",
+          "uses": 25
+        },
+        "P46": {
+          "datatype": "WikibaseItem",
+          "label": "object type",
+          "uses": 22
+        },
+        "P47": {
+          "datatype": "Url",
+          "label": "collection URL",
+          "uses": 4
+        },
+        "P48": {
+          "datatype": "WikibaseItem",
+          "label": "human/cooperatebody role",
+          "uses": 0
+        },
+        "P49": {
+          "datatype": "Time",
+          "label": "point in time",
+          "uses": 0
+        },
+        "P5": {
+          "datatype": "WikibaseItem",
+          "label": "broader",
+          "uses": 0
+        },
+        "P50": {
+          "datatype": "String",
+          "label": "action (String)",
+          "uses": 0
+        },
+        "P51": {
+          "datatype": "WikibaseItem",
+          "label": "collection role",
+          "uses": 0
+        },
+        "P52": {
+          "datatype": "WikibaseItem",
+          "label": "collection involved",
+          "uses": 0
+        },
+        "P53": {
+          "datatype": "WikibaseItem",
+          "label": "place relation",
+          "uses": 16
+        },
+        "P54": {
+          "datatype": "String",
+          "label": "place detail",
+          "uses": 0
+        },
+        "P55": {
+          "datatype": "WikibaseItem",
+          "label": "place type",
+          "uses": 0
+        },
+        "P56": {
+          "datatype": "String",
+          "label": "biography (String)",
+          "uses": 2
+        },
+        "P57": {
+          "datatype": "Url",
+          "label": "biography (URL)",
+          "uses": 6
+        },
+        "P58": {
+          "datatype": "Url",
+          "label": "place type (Wikidata)",
+          "uses": 3
+        },
+        "P59": {
+          "datatype": "String",
+          "label": "sourcing circumstances",
+          "uses": 0
+        },
+        "P6": {
+          "datatype": "WikibaseItem",
+          "label": "narrower",
+          "uses": 0
+        },
+        "P60": {
+          "datatype": "WikibaseItem",
+          "label": "person/body relation",
+          "uses": 1
+        },
+        "P61": {
+          "datatype": "String",
+          "label": "start time",
+          "uses": 0
+        },
+        "P62": {
+          "datatype": "String",
+          "label": "end time",
+          "uses": 0
+        },
+        "P63": {
+          "datatype": "WikibaseItem",
+          "label": "creator of object",
+          "uses": 2
+        },
+        "P64": {
+          "datatype": "WikibaseItem",
+          "label": "former collection",
+          "uses": 3
+        },
+        "P65": {
+          "datatype": "Url",
+          "label": "Provenance feature",
+          "uses": 2
+        },
+        "P7": {
+          "datatype": "WikibaseItem",
+          "label": "related",
+          "uses": 0
+        },
+        "P8": {
+          "datatype": "Url",
+          "label": "broad match",
+          "uses": 0
+        },
+        "P9": {
+          "datatype": "Url",
+          "label": "narrow match",
+          "uses": 0
+        }
+      },
+      "rdf_base": "https://n4o-rse.github.io/wb-n4o-prov-static",
+      "references": 25,
+      "roles": {
+        "coordinates": "P25",
+        "external_match": "P21",
+        "instance_of": "P2",
+        "subclass_of": "P1"
+      },
+      "roots": [
+        "Q5",
+        "Q40",
+        "Q54",
+        "Q55",
+        "Q62",
+        "Q77"
+      ],
+      "statements": 596,
+      "triples": 14495,
+      "wikidata_qids": [
+        "Q2",
+        "Q64",
+        "Q1055",
+        "Q1718",
+        "Q1726",
+        "Q1731",
+        "Q1773",
+        "Q2814",
+        "Q3778",
+        "Q3820",
+        "Q3942",
+        "Q14910",
+        "Q14960",
+        "Q35997",
+        "Q36600",
+        "Q72722",
+        "Q105084",
+        "Q279123",
+        "Q328468",
+        "Q628858",
+        "Q818093",
+        "Q1580676",
+        "Q1589826",
+        "Q1596893",
+        "Q1985727",
+        "Q2086982",
+        "Q4518509",
+        "Q13512883",
+        "Q15444743",
+        "Q51724860",
+        "Q105655513",
+        "Q108813204",
+        "Q112440399"
       ]
     }
   ],

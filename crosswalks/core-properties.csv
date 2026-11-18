@@ -20,3 +20,17 @@ wikidata_equivalent,osm-benchmarks,P4,Wikidata equivalent,ExternalId,on properti
 external_match,fuzzy-sl,P27,has match,Url,
 external_match,chublets,P115,exact match,Url,
 external_match,osm-benchmarks,P100,OSM element,Url,the OpenStreetMap node of the benchmark
+instance_of,squirrelbase,P1,instance of,WikibaseItem,
+subclass_of,squirrelbase,P2,subclass of,WikibaseItem,
+part_of,squirrelbase,none,,,no part-of property in this instance
+coordinates,squirrelbase,P8,representative point,GlobeCoordinate,P17 holds the geometry as WKT text and is not a role
+equivalent_class,squirrelbase,none,,,no property for equivalent classes
+wikidata_equivalent,squirrelbase,P6,Wikidata Q-ID,String,plain Q-number; a string property here and not an external identifier
+external_match,squirrelbase,P11,aligned with term,Url,Wikidata entity URLs of the aligned terms; P10 (aligned with item) is defined and unused
+instance_of,n4o-prov,P2,instance of,WikibaseItem,P1 and P2 are swapped against fuzzy-sl
+subclass_of,n4o-prov,P1,subclass of,WikibaseItem,P1 and P2 are swapped against fuzzy-sl
+part_of,n4o-prov,none,,,no part-of property; P19 (in scheme) and P34 (belongs to collection) are domain relations and not roles
+coordinates,n4o-prov,P25,representative point,GlobeCoordinate,
+equivalent_class,n4o-prov,none,,,no property for equivalent classes
+wikidata_equivalent,n4o-prov,none,,,P24 and P58 point to Wikidata places and place types and do not state the item's own Q-number
+external_match,n4o-prov,P21,aligned with,Url,GND and Wikidata and museum URLs of the same entity

@@ -23,6 +23,7 @@ REGISTRY_BASE = "https://beaverbridge-framework.github.io/beaverbridge-registry"
 BBR_NS = REGISTRY_BASE + "/vocab/"
 
 CORE_CSV = CROSSWALKS / "core-properties.csv"
+LABELS_EN_CSV = CROSSWALKS / "labels-en.csv"
 ROLES = ["instance_of", "subclass_of", "part_of", "coordinates", "equivalent_class",
          "wikidata_equivalent", "external_match"]
 
@@ -63,8 +64,41 @@ def jinja_env(autoescape: bool = True):
                        lstrip_blocks=True, undefined=StrictUndefined, keep_trailing_newline=True)
 
 
+def canonical_bnodes(graph):
+    """The graph with every blank node renamed after what it stands for, so two runs write the same bytes.
+
+    rdflib gives a blank node a new random name at every parse. A "some value" statement of a Wikibase (the source
+    knows there is a value, not which) is such a node; without a stable name the bundle would differ between two runs.
+    The name is a hash of the statements that mention the node. Two blank nodes with the same statements get the
+    same name and become one: for "some value" that means two unknown values of the same property of the same
+    subject are written once, which the bundle does not use to tell them apart.
+    """
+    from rdflib import BNode, Graph
+
+    nodes = {n for triple in graph for n in triple if isinstance(n, BNode)}
+    if not nodes:
+        return graph
+    name = {}
+    for b in nodes:
+        parts = [("in", str(s), str(p)) for s, p, _ in graph.triples((None, None, b))]
+        parts += [("out", str(p), str(o)) for _, p, o in graph.triples((b, None, None)) if not isinstance(o, BNode)]
+        name[b] = BNode("b" + sha256_bytes(repr(sorted(parts)).encode("utf-8"))[:24])
+    out = Graph()
+    for s, p, o in graph:
+        out.add((name.get(s, s), p, name.get(o, o)))
+    return out
+
+
 def write_ntriples(graph, path: Path) -> None:
     """Sorted, de-duplicated N-Triples: the canonical form, so two runs can be compared byte for byte."""
-    lines = sorted({ln for ln in graph.serialize(format="nt").splitlines() if ln.strip()})
+    lines = sorted({ln for ln in canonical_bnodes(graph).serialize(format="nt").splitlines() if ln.strip()})
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+
+
+def read_labels_en() -> list[dict]:
+    """crosswalks/labels-en.csv: English labels that the registry adds where an instance has none (instance, id, label_en)."""
+    if not LABELS_EN_CSV.exists():
+        return []
+    with LABELS_EN_CSV.open(encoding="utf-8", newline="") as fh:
+        return [r for r in csv.DictReader(fh) if r.get("instance")]

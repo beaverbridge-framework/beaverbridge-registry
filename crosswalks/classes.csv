@@ -35,3 +35,38 @@ osm-benchmarks,Q1,Class,model,,none,type of every class
 osm-benchmarks,Q2,Property,model,,none,type of every property
 osm-benchmarks,Q3,Instance,model,,none,root of the class tree
 osm-benchmarks,Q100,Benchmark,domain,E25_Human-Made_Feature,bridge,stated by the instance as rdfs:subClassOf in its CRM overlay (data/crm.csv) not as a property
+squirrelbase,Q2,Object,domain,E24_Physical_Human-Made_Thing,bridge,the instance gives no anchor; its items are stones, statues and snowmen, all human-made physical things
+squirrelbase,Q17,temporal Object,domain,,none,inherits E24_Physical_Human-Made_Thing through Q2
+squirrelbase,Q31,Type,model,,none,class of the vocabulary classes
+squirrelbase,Q32,Alignment Type,model,,none,vocabulary class
+squirrelbase,Q36,Alignment Score,model,,none,vocabulary class
+squirrelbase,Q44,Acquisition Method,model,,none,vocabulary class
+n4o-prov,Q1,Concept,model,,none,SKOS class of the model
+n4o-prov,Q2,Concept Scheme,model,,none,SKOS class of the model
+n4o-prov,Q3,Collection,model,,none,SKOS class of the model; not the museum collection Q40
+n4o-prov,Q4,Ordered Collection,model,,none,SKOS class of the model
+n4o-prov,Q5,SKOS Plus Class,model,,none,root of the SKOS classes
+n4o-prov,Q8,Fictive Person,model,,none,unused vocabulary class; not anchored
+n4o-prov,Q9,GND,model,,none,authority file used as alignment repository
+n4o-prov,Q10,Wikidata,model,,none,authority file used as alignment repository
+n4o-prov,Q11,VIAF,model,,none,authority file used as alignment repository
+n4o-prov,Q12,Repository,model,,none,external repository of gazetteer resources; not a holding institution
+n4o-prov,Q13,Wikipedia,model,,none,alignment repository
+n4o-prov,Q14,NDP,model,,none,alignment repository
+n4o-prov,Q15,Provenienzgazetteer,model,,none,thesaurus of the data
+n4o-prov,Q16,Role,model,,none,vocabulary class
+n4o-prov,Q17,Medallist,model,,none,role
+n4o-prov,Q18,Previous Owner,model,,none,role
+n4o-prov,Q21,Coin Dealer,model,,none,role
+n4o-prov,Q22,Body-Gazetteer,model,,none,thesaurus of the data
+n4o-prov,Q24,British Museum,model,,none,alignment repository term
+n4o-prov,Q42,Core Entity,model,,none,class of the core classes Human, Corporate Body, Object, Collection, Place
+n4o-prov,Q55,Alignment Score,model,,none,vocabulary class
+n4o-prov,Q62,Object Type,model,,none,vocabulary class
+n4o-prov,Q77,Place Type,model,,none,vocabulary class
+n4o-prov,Q6,Human,domain,E21_Person,bridge,the instance gives no anchor; persons
+n4o-prov,Q7,Corporate Body,domain,E40_Legal_Body,bridge,the instance gives no anchor; firms, galleries and similar bodies
+n4o-prov,Q33,Object,domain,E22_Human-Made_Object,bridge,the instance gives no anchor; coins, medals and paintings
+n4o-prov,Q40,Collection,domain,E78_Curated_Holding,bridge,the instance gives no anchor; museum and digital collections
+n4o-prov,Q43,Event,domain,E5_Event,bridge,the instance gives no anchor; no items yet
+n4o-prov,Q54,Place,domain,E53_Place,bridge,the instance gives no anchor; cities and other places

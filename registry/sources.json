@@ -3,13 +3,13 @@
     {
       "id": "fuzzy-sl",
       "label": "fuzzy-sl (static copy)",
-      "repo": "https://github.com/n4o-rse/fuzzy-sl-static",
-      "pages_url": "https://n4o-rse.github.io/fuzzy-sl-static/",
-      "rdf_base": "https://n4o-rse.github.io/fuzzy-sl-static",
+      "repo": "https://github.com/n4o-rse/wb-fuzzysl-static",
+      "pages_url": "https://n4o-rse.github.io/wb-fuzzysl-static/",
+      "rdf_base": "https://n4o-rse.github.io/wb-fuzzysl-static",
       "prefix_family": "wd",
       "files": [
         {
-          "path": "downloads/n4o-rse.github.io-fuzzy-sl-static.ttl",
+          "path": "downloads/n4o-rse.github.io-wb-fuzzysl-static.ttl",
           "role": "export"
         },
         {
@@ -46,6 +46,42 @@
       "files": [
         {
           "path": "downloads/n4o-rse.github.io-osm-benchmarks-static.ttl",
+          "role": "export"
+        },
+        {
+          "path": "downloads/wikibase-ontology.ttl",
+          "role": "ontology"
+        }
+      ]
+    },
+    {
+      "id": "squirrelbase",
+      "label": "Squirrelbase (static copy of squirrelbase.wikibase.cloud)",
+      "repo": "https://github.com/n4o-rse/wb-squirrelbase-static",
+      "pages_url": "https://n4o-rse.github.io/wb-squirrelbase-static/",
+      "rdf_base": "https://n4o-rse.github.io/wb-squirrelbase-static",
+      "prefix_family": "sqb",
+      "files": [
+        {
+          "path": "downloads/n4o-rse.github.io-wb-squirrelbase-static.ttl",
+          "role": "export"
+        },
+        {
+          "path": "downloads/wikibase-ontology.ttl",
+          "role": "ontology"
+        }
+      ]
+    },
+    {
+      "id": "n4o-prov",
+      "label": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)",
+      "repo": "https://github.com/n4o-rse/wb-n4o-prov-static",
+      "pages_url": "https://n4o-rse.github.io/wb-n4o-prov-static/",
+      "rdf_base": "https://n4o-rse.github.io/wb-n4o-prov-static",
+      "prefix_family": "n4op",
+      "files": [
+        {
+          "path": "downloads/n4o-rse.github.io-wb-n4o-prov-static.ttl",
           "role": "export"
         },
         {

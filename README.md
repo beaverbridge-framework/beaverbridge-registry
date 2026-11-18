@@ -24,9 +24,11 @@ python main.py
 
 | Id | Source | Pages |
 |---|---|---|
-| `fuzzy-sl` | [fuzzy-sl-static](https://github.com/n4o-rse/fuzzy-sl-static) | https://n4o-rse.github.io/fuzzy-sl-static/ |
+| `fuzzy-sl` | [wb-fuzzysl-static](https://github.com/n4o-rse/wb-fuzzysl-static) | https://n4o-rse.github.io/wb-fuzzysl-static/ |
 | `chublets` | [chublets-wikibase-demo](https://github.com/n4o-rse/chublets-wikibase-demo) | https://n4o-rse.github.io/chublets-wikibase-demo/ |
 | `osm-benchmarks` | [osm-benchmarks-static](https://github.com/n4o-rse/osm-benchmarks-static) | https://n4o-rse.github.io/osm-benchmarks-static/ |
+| `squirrelbase` | [wb-squirrelbase-static](https://github.com/n4o-rse/wb-squirrelbase-static) | https://n4o-rse.github.io/wb-squirrelbase-static/ |
+| `n4o-prov` | [wb-n4o-prov-static](https://github.com/n4o-rse/wb-n4o-prov-static) | https://n4o-rse.github.io/wb-n4o-prov-static/ |
 
 ## Licence
 

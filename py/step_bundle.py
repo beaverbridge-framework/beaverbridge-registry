@@ -27,7 +27,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from registry_utils import (BBR_NS, DIST, RAW, REGISTRY_BASE, ROLES, ensure_dirs, load_sources,  # noqa: E402
-                            read_core, write_ntriples)
+                            read_core, read_labels_en, write_ntriples)
 
 ROLE_TERM = {"instance_of": "instanceOf", "subclass_of": "subclassOf", "part_of": "partOf",
              "coordinates": "coordinates", "equivalent_class": "equivalentClass",
@@ -124,6 +124,17 @@ def build(instances: list[dict], core_rows: list[dict], warn) -> tuple[object, l
         entities -= redirects
         for e in entities:
             out.add((e, BBR.fromInstance, record))
+
+        # English labels that the registry adds where the instance has none (crosswalks/labels-en.csv). The label says
+        # "(auto)" so nobody takes it for the instance's own; once the instance has an English label the row is reported.
+        for row in (r for r in read_labels_en() if r["instance"] == iid):
+            ent = URIRef(f"{base}/entity/{row['id']}")
+            if ent not in entities:
+                warn(f"{iid}: labels-en.csv row {row['id']}: no such entity in the export")
+            elif any(lit.language == "en" for lit in out.objects(ent, RDFS.label) if isinstance(lit, Literal)):
+                warn(f"{iid}: labels-en.csv row {row['id']}: the instance has an English label now; delete the row")
+            else:
+                out.add((ent, RDFS.label, Literal(f"{row['label_en'].strip()} (auto)", lang="en")))
 
         # roles: one normalised statement per source statement, the source statement stays
         pids = {r["role"]: r["property"] for r in core_rows if r["instance"] == iid and r["property"] != "none"}

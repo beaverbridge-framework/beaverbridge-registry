@@ -1,5 +1,5 @@
 {
-  "bundle_triples": 20703,
+  "bundle_triples": 23991,
   "class_labels": {
     "chublets:Q1": "Class",
     "chublets:Q100": "software",
@@ -26,8 +26,27 @@
     "fuzzy-sl:Q7": "Method Type",
     "fuzzy-sl:Q81": "Location Type",
     "fuzzy-sl:Q91": "Spatial Category",
+    "n4o-prov:Q1": "Concept",
+    "n4o-prov:Q12": "Repository",
+    "n4o-prov:Q16": "Role",
+    "n4o-prov:Q2": "Concept Scheme",
+    "n4o-prov:Q33": "Object",
+    "n4o-prov:Q40": "Collection",
+    "n4o-prov:Q42": "Core Entity",
+    "n4o-prov:Q54": "Place",
+    "n4o-prov:Q55": "Alignment Score",
+    "n4o-prov:Q6": "Human",
+    "n4o-prov:Q62": "Object Type",
+    "n4o-prov:Q7": "Corporate Body",
+    "n4o-prov:Q77": "Place Type",
     "osm-benchmarks:Q1": "Class",
-    "osm-benchmarks:Q100": "Benchmark"
+    "osm-benchmarks:Q100": "Benchmark",
+    "squirrelbase:Q17": "temporal Object",
+    "squirrelbase:Q2": "Object",
+    "squirrelbase:Q31": "Type",
+    "squirrelbase:Q32": "Alignment Type",
+    "squirrelbase:Q36": "Alignment Score",
+    "squirrelbase:Q44": "Acquisition Method"
   },
   "entries": [
     {
@@ -45,7 +64,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q1.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q1.html",
       "wikidata": []
     },
     {
@@ -63,7 +82,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q2.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q2.html",
       "wikidata": []
     },
     {
@@ -81,7 +100,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q3.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q3.html",
       "wikidata": []
     },
     {
@@ -99,7 +118,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q4.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q4.html",
       "wikidata": []
     },
     {
@@ -117,7 +136,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q5.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q5.html",
       "wikidata": []
     },
     {
@@ -135,7 +154,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q6.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q6.html",
       "wikidata": []
     },
     {
@@ -153,7 +172,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q7.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q7.html",
       "wikidata": []
     },
     {
@@ -175,7 +194,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q10.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q10.html",
       "wikidata": []
     },
     {
@@ -197,7 +216,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q11.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q11.html",
       "wikidata": []
     },
     {
@@ -233,7 +252,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q13.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q13.html",
       "wikidata": []
     },
     {
@@ -255,7 +274,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q14.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q14.html",
       "wikidata": []
     },
     {
@@ -277,7 +296,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q15.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q15.html",
       "wikidata": []
     },
     {
@@ -299,7 +318,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q16.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q16.html",
       "wikidata": []
     },
     {
@@ -321,7 +340,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q17.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q17.html",
       "wikidata": []
     },
     {
@@ -343,7 +362,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q18.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q18.html",
       "wikidata": []
     },
     {
@@ -365,7 +384,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q19.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q19.html",
       "wikidata": []
     },
     {
@@ -387,7 +406,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q20.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q20.html",
       "wikidata": []
     },
     {
@@ -409,7 +428,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q21.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q21.html",
       "wikidata": []
     },
     {
@@ -427,7 +446,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q22.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q22.html",
       "wikidata": []
     },
     {
@@ -449,7 +468,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q23.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q23.html",
       "wikidata": []
     },
     {
@@ -471,7 +490,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q24.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q24.html",
       "wikidata": []
     },
     {
@@ -493,7 +512,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q25.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q25.html",
       "wikidata": []
     },
     {
@@ -515,7 +534,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q26.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q26.html",
       "wikidata": []
     },
     {
@@ -537,7 +556,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q27.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q27.html",
       "wikidata": []
     },
     {
@@ -559,7 +578,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q28.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q28.html",
       "wikidata": []
     },
     {
@@ -581,7 +600,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q29.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q29.html",
       "wikidata": []
     },
     {
@@ -603,7 +622,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q30.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q30.html",
       "wikidata": []
     },
     {
@@ -625,7 +644,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q31.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q31.html",
       "wikidata": []
     },
     {
@@ -647,7 +666,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q32.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q32.html",
       "wikidata": []
     },
     {
@@ -669,7 +688,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q33.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q33.html",
       "wikidata": []
     },
     {
@@ -691,7 +710,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q34.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q34.html",
       "wikidata": []
     },
     {
@@ -713,7 +732,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q35.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q35.html",
       "wikidata": []
     },
     {
@@ -735,7 +754,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q36.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q36.html",
       "wikidata": []
     },
     {
@@ -757,7 +776,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q37.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q37.html",
       "wikidata": []
     },
     {
@@ -779,7 +798,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q38.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q38.html",
       "wikidata": []
     },
     {
@@ -801,7 +820,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q39.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q39.html",
       "wikidata": []
     },
     {
@@ -823,7 +842,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q42.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q42.html",
       "wikidata": []
     },
     {
@@ -859,7 +878,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q46.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q46.html",
       "wikidata": []
     },
     {
@@ -895,7 +914,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q49.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q49.html",
       "wikidata": []
     },
     {
@@ -931,7 +950,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q50.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q50.html",
       "wikidata": []
     },
     {
@@ -967,7 +986,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q51.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q51.html",
       "wikidata": []
     },
     {
@@ -1003,7 +1022,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q52.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q52.html",
       "wikidata": []
     },
     {
@@ -1039,7 +1058,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q53.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q53.html",
       "wikidata": []
     },
     {
@@ -1075,7 +1094,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q54.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q54.html",
       "wikidata": []
     },
     {
@@ -1111,7 +1130,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q55.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q55.html",
       "wikidata": []
     },
     {
@@ -1147,7 +1166,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q56.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q56.html",
       "wikidata": []
     },
     {
@@ -1183,7 +1202,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q57.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q57.html",
       "wikidata": []
     },
     {
@@ -1219,7 +1238,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q58.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q58.html",
       "wikidata": []
     },
     {
@@ -1255,7 +1274,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q59.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q59.html",
       "wikidata": []
     },
     {
@@ -1291,7 +1310,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q60.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q60.html",
       "wikidata": []
     },
     {
@@ -1327,7 +1346,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q61.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q61.html",
       "wikidata": []
     },
     {
@@ -1363,7 +1382,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q62.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q62.html",
       "wikidata": []
     },
     {
@@ -1399,7 +1418,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q63.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q63.html",
       "wikidata": []
     },
     {
@@ -1435,7 +1454,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q64.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q64.html",
       "wikidata": []
     },
     {
@@ -1471,7 +1490,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q66.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q66.html",
       "wikidata": []
     },
     {
@@ -1507,7 +1526,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q67.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q67.html",
       "wikidata": []
     },
     {
@@ -1543,7 +1562,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q68.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q68.html",
       "wikidata": []
     },
     {
@@ -1579,7 +1598,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q69.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q69.html",
       "wikidata": []
     },
     {
@@ -1615,7 +1634,7 @@
       "regions": [
         "Central and western Europe"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q70.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q70.html",
       "wikidata": []
     },
     {
@@ -1637,7 +1656,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q71.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q71.html",
       "wikidata": []
     },
     {
@@ -1659,7 +1678,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q72.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q72.html",
       "wikidata": []
     },
     {
@@ -1695,7 +1714,7 @@
       "regions": [
         "Balkans and Black Sea"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q73.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q73.html",
       "wikidata": []
     },
     {
@@ -1732,7 +1751,7 @@
       "regions": [
         "Ireland"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q74.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q74.html",
       "wikidata": [
         "Q130529871"
       ]
@@ -1756,7 +1775,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q75.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q75.html",
       "wikidata": []
     },
     {
@@ -1778,7 +1797,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q76.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q76.html",
       "wikidata": []
     },
     {
@@ -1800,7 +1819,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q77.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q77.html",
       "wikidata": []
     },
     {
@@ -1822,7 +1841,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q78.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q78.html",
       "wikidata": []
     },
     {
@@ -1844,7 +1863,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q79.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q79.html",
       "wikidata": []
     },
     {
@@ -1866,7 +1885,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q80.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q80.html",
       "wikidata": []
     },
     {
@@ -1884,7 +1903,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q81.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q81.html",
       "wikidata": []
     },
     {
@@ -1902,7 +1921,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q82.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q82.html",
       "wikidata": []
     },
     {
@@ -1924,7 +1943,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q83.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q83.html",
       "wikidata": []
     },
     {
@@ -1960,7 +1979,7 @@
       "regions": [
         "Central and western Europe"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q84.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q84.html",
       "wikidata": []
     },
     {
@@ -1996,7 +2015,7 @@
       "regions": [
         "Central and western Europe"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q85.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q85.html",
       "wikidata": []
     },
     {
@@ -2018,7 +2037,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q86.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q86.html",
       "wikidata": []
     },
     {
@@ -2040,7 +2059,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q87.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q87.html",
       "wikidata": []
     },
     {
@@ -2076,7 +2095,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q88.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q88.html",
       "wikidata": []
     },
     {
@@ -2113,7 +2132,7 @@
       "regions": [
         "Balkans and Black Sea"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q89.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q89.html",
       "wikidata": []
     },
     {
@@ -2135,7 +2154,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q90.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q90.html",
       "wikidata": []
     },
     {
@@ -2153,7 +2172,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q91.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q91.html",
       "wikidata": []
     },
     {
@@ -2175,7 +2194,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q92.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q92.html",
       "wikidata": []
     },
     {
@@ -2197,7 +2216,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q93.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q93.html",
       "wikidata": []
     },
     {
@@ -2219,7 +2238,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q94.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q94.html",
       "wikidata": []
     },
     {
@@ -2258,7 +2277,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q95.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q95.html",
       "wikidata": []
     },
     {
@@ -2294,7 +2313,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q96.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q96.html",
       "wikidata": []
     },
     {
@@ -2330,7 +2349,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q97.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q97.html",
       "wikidata": []
     },
     {
@@ -2352,7 +2371,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q98.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q98.html",
       "wikidata": []
     },
     {
@@ -2374,7 +2393,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q99.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q99.html",
       "wikidata": []
     },
     {
@@ -2396,7 +2415,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q100.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q100.html",
       "wikidata": []
     },
     {
@@ -2432,7 +2451,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q101.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q101.html",
       "wikidata": []
     },
     {
@@ -2463,7 +2482,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q102.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q102.html",
       "wikidata": []
     },
     {
@@ -2499,7 +2518,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q103.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q103.html",
       "wikidata": []
     },
     {
@@ -2521,7 +2540,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q104.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q104.html",
       "wikidata": []
     },
     {
@@ -2557,7 +2576,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q105.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q105.html",
       "wikidata": []
     },
     {
@@ -2593,7 +2612,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q106.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q106.html",
       "wikidata": []
     },
     {
@@ -2629,7 +2648,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q107.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q107.html",
       "wikidata": []
     },
     {
@@ -2665,7 +2684,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q108.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q108.html",
       "wikidata": []
     },
     {
@@ -2701,7 +2720,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q109.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q109.html",
       "wikidata": []
     },
     {
@@ -2719,7 +2738,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q110.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q110.html",
       "wikidata": []
     },
     {
@@ -2756,7 +2775,7 @@
       "regions": [
         "Greece"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q111.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q111.html",
       "wikidata": []
     },
     {
@@ -2793,7 +2812,7 @@
       "regions": [
         "Balkans and Black Sea"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q112.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q112.html",
       "wikidata": []
     },
     {
@@ -2815,7 +2834,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q113.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q113.html",
       "wikidata": []
     },
     {
@@ -2852,7 +2871,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q114.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q114.html",
       "wikidata": []
     },
     {
@@ -2889,7 +2908,7 @@
       "regions": [
         "Balkans and Black Sea"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q115.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q115.html",
       "wikidata": []
     },
     {
@@ -2926,7 +2945,7 @@
       "regions": [
         "North Africa and Levant"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q116.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q116.html",
       "wikidata": []
     },
     {
@@ -2963,7 +2982,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q117.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q117.html",
       "wikidata": []
     },
     {
@@ -3000,7 +3019,7 @@
       "regions": [
         "Balkans and Black Sea"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q118.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q118.html",
       "wikidata": []
     },
     {
@@ -3037,7 +3056,7 @@
       "regions": [
         "Balkans and Black Sea"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q119.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q119.html",
       "wikidata": []
     },
     {
@@ -3073,7 +3092,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q120.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q120.html",
       "wikidata": []
     },
     {
@@ -3109,7 +3128,7 @@
       "regions": [
         "Great Britain"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q121.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q121.html",
       "wikidata": []
     },
     {
@@ -3145,7 +3164,7 @@
       "regions": [
         "Central and western Europe"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q122.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q122.html",
       "wikidata": []
     },
     {
@@ -3167,7 +3186,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q123.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q123.html",
       "wikidata": []
     },
     {
@@ -3189,7 +3208,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q124.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q124.html",
       "wikidata": []
     },
     {
@@ -3207,7 +3226,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q125.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q125.html",
       "wikidata": []
     },
     {
@@ -3229,7 +3248,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q126.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q126.html",
       "wikidata": []
     },
     {
@@ -3251,7 +3270,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q127.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q127.html",
       "wikidata": []
     },
     {
@@ -3273,7 +3292,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q128.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q128.html",
       "wikidata": []
     },
     {
@@ -3295,7 +3314,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q129.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q129.html",
       "wikidata": []
     },
     {
@@ -3317,7 +3336,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q130.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q130.html",
       "wikidata": []
     },
     {
@@ -3353,7 +3372,7 @@
       "regions": [
         "Ireland"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q131.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q131.html",
       "wikidata": []
     },
     {
@@ -3375,7 +3394,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q132.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q132.html",
       "wikidata": []
     },
     {
@@ -3397,7 +3416,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q133.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q133.html",
       "wikidata": []
     },
     {
@@ -3433,7 +3452,7 @@
       "regions": [
         "North Africa and Levant"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q134.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q134.html",
       "wikidata": []
     },
     {
@@ -3455,7 +3474,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q135.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q135.html",
       "wikidata": []
     },
     {
@@ -3492,7 +3511,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q136.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q136.html",
       "wikidata": []
     },
     {
@@ -3529,7 +3548,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q137.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q137.html",
       "wikidata": []
     },
     {
@@ -3566,7 +3585,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q138.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q138.html",
       "wikidata": []
     },
     {
@@ -3603,7 +3622,7 @@
       "regions": [
         "Italy"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q139.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q139.html",
       "wikidata": []
     },
     {
@@ -3639,7 +3658,7 @@
       "regions": [
         "Central and western Europe"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q140.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q140.html",
       "wikidata": []
     },
     {
@@ -3661,7 +3680,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q141.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q141.html",
       "wikidata": []
     },
     {
@@ -3683,7 +3702,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q142.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q142.html",
       "wikidata": []
     },
     {
@@ -3705,7 +3724,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q143.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q143.html",
       "wikidata": []
     },
     {
@@ -3727,7 +3746,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q144.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q144.html",
       "wikidata": []
     },
     {
@@ -3745,7 +3764,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q145.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q145.html",
       "wikidata": []
     },
     {
@@ -3763,7 +3782,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q146.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q146.html",
       "wikidata": []
     },
     {
@@ -3781,7 +3800,7 @@
       "regions": [
         "(no coordinates)"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q147.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q147.html",
       "wikidata": []
     },
     {
@@ -3821,7 +3840,7 @@
       "regions": [
         "Ireland"
       ],
-      "url": "https://n4o-rse.github.io/fuzzy-sl-static/Q148.html",
+      "url": "https://n4o-rse.github.io/wb-fuzzysl-static/Q148.html",
       "wikidata": []
     },
     {
@@ -30626,21 +30645,4907 @@
       ],
       "url": "https://n4o-rse.github.io/osm-benchmarks-static/Q123.html",
       "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "core",
+      "features": [],
+      "id": "squirrelbase:Q1",
+      "instance": "squirrelbase",
+      "kinds": [],
+      "label": "Entity",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q1.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "core entity",
+      "features": [],
+      "id": "squirrelbase:Q2",
+      "instance": "squirrelbase",
+      "kinds": [],
+      "label": "Object",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q2.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.5026745,
+          13.3249878
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q4",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Asymmetrische Vase (Berlin Ku’damm)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q4.html",
+      "wikidata": [
+        "Q116206915"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          50.7617299,
+          6.0187331
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q5",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Adlerstein in Vaals (Niederlande)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q5.html",
+      "wikidata": [
+        "Q17445038"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          41.892906,
+          12.482534
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q6",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Rom Capitol Kopf Konstantin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q6.html",
+      "wikidata": [
+        "Q1289781"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          41.892906111111,
+          12.482533888889
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q7",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Rom Capitol Hand Konstantin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q7.html",
+      "wikidata": [
+        "Q1289781"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          41.892906111111,
+          12.482533888889
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q8",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Rom Capitol Fuß Konstantin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q8.html",
+      "wikidata": [
+        "Q1289781"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.514512,
+          13.350108
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q9",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Berliner Siegessäule (Mosaik)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q9.html",
+      "wikidata": [
+        "Q154987"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          49.7936363,
+          9.9318653
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates"
+      ],
+      "id": "squirrelbase:Q10",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Der \"Große Sitzende\" (Dom Würzburg)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q10.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          49.410568,
+          8.714044
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q11",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Gedenkstein von Kurfürst Karl (Schloss Heidelberg)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q11.html",
+      "wikidata": [
+        "Q327265"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          49.4102478,
+          8.7191369
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q12",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Vater Rhein (Schloss Heidelberg)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q12.html",
+      "wikidata": [
+        "Q131632857"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          49.317267,
+          8.441199
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q13",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Domnapf (Speyer)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q13.html",
+      "wikidata": [
+        "Q22627"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          49.407556,
+          8.190597
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q14",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Geißbockbrunnen (Deidesheim)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q14.html",
+      "wikidata": [
+        "Q122573616"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          50.941421,
+          6.965944
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q15",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Köln Hohenzollernbrücke (Schlösser)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q15.html",
+      "wikidata": [
+        "Q696762"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          46.8825371,
+          12.1679203
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q16",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Statua del Mendicante di Anterselva",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q16.html",
+      "wikidata": [
+        "Q572562"
+      ]
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "core entity",
+      "features": [],
+      "id": "squirrelbase:Q17",
+      "instance": "squirrelbase",
+      "kinds": [],
+      "label": "temporal Object",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q17.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q17"
+      ],
+      "coordinates": [
+        [
+          46.852304,
+          12.248093
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "temporal object",
+      "features": [
+        "coordinates"
+      ],
+      "id": "squirrelbase:Q18",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Schneemann in St. Magdalena (Gsies)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q18.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q17"
+      ],
+      "coordinates": [
+        [
+          46.6381439,
+          12.2343376
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "temporal object",
+      "features": [
+        "coordinates"
+      ],
+      "id": "squirrelbase:Q19",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Schneemann am Dreizinnenblick",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q19.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q17"
+      ],
+      "coordinates": [
+        [
+          46.6966976,
+          12.0838144
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "temporal object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q20",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Eismännchen auf dem Pragser Wildsee",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q20.html",
+      "wikidata": [
+        "Q445369"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q17"
+      ],
+      "coordinates": [
+        [
+          46.696697611111,
+          12.083814388889
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "temporal object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q21",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Eismännchen auf Stein auf dem Pragser Wildsee",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q21.html",
+      "wikidata": [
+        "Q445369"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.6525592,
+          -7.2442662
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates"
+      ],
+      "id": "squirrelbase:Q22",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Milestone Maudlin Street (Kilkenny)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q22.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.2758257,
+          -9.6430769
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q23",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "CIIC 153",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q23.html",
+      "wikidata": [
+        "Q106680820"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          51.896088111111,
+          -8.4943143888889
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q24",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "GEARS/1",
+      "matches": [
+        "http://www.wikidata.org/entity/Q2016147",
+        "http://www.wikidata.org/entity/Q24041450"
+      ],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q24.html",
+      "wikidata": [
+        "Q126500898"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          51.896088111111,
+          -8.4943143888889
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q25",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "CHUIS/1",
+      "matches": [
+        "http://www.wikidata.org/entity/Q2016147",
+        "http://www.wikidata.org/entity/Q24041450"
+      ],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q25.html",
+      "wikidata": [
+        "Q126500897"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.731596,
+          -7.38951
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q27",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "St. Lachtain's Well",
+      "matches": [
+        "http://www.wikidata.org/entity/Q1371047",
+        "http://www.wikidata.org/entity/Q60554307"
+      ],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q27.html",
+      "wikidata": [
+        "Q121840779"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "squirrelbase:Q28",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "St. Nicholas's Well (Killamery)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q28.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "squirrelbase:Q29",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Saint Molin's Well (Mullennakill)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q29.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "squirrelbase:Q30",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Letztes Abendmahl mit Judas Iskariot",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q30.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q31",
+      "instance": "squirrelbase",
+      "kinds": [],
+      "label": "Type",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q31.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q31"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q32",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "Alignment Type",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q32.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q32"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q33",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "skos:exactMatch",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q33.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q32"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q34",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "skos:closeMatch",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q34.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q32"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q35",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "skos:relatedMatch",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q35.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q31"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q36",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "Alignment Score",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q36.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q37",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "7 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q37.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q38",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "6 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q38.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q39",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "5 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q39.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q40",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "4 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q40.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q41",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "3 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q41.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q42",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "2 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q42.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q36"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q43",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "1 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q43.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q31"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q44",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "Acquisition Method",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q44.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q44"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q45",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "Structure from Motion (SfM)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q45.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q44"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q46",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "Laser Scan",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q46.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q44"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q47",
+      "instance": "squirrelbase",
+      "kinds": [
+        "model"
+      ],
+      "label": "Photogrammetry Scan",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q47.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          51.893715,
+          -8.4924208
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q48",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "CIIC 81 / UCC 4 / CO074-148----",
+      "matches": [
+        "http://www.wikidata.org/entity/Q121592049",
+        "http://www.wikidata.org/entity/Q2016147"
+      ],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q48.html",
+      "wikidata": [
+        "Q130529871"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.1847478,
+          -10.3364628
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "squirrelbase:Q49",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Cill Maoilchéadair | Kilmalkedar (I-KER-055)",
+      "matches": [
+        "http://www.wikidata.org/entity/Q2016147",
+        "http://www.wikidata.org/entity/Q55046509"
+      ],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q49.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.0767683,
+          -9.5543233
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "squirrelbase:Q50",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Páirc an Mhóinéir | Parkavonear 1 (I-KER-112)",
+      "matches": [
+        "http://www.wikidata.org/entity/Q2016147",
+        "http://www.wikidata.org/entity/Q30247109"
+      ],
+      "part_of": [],
+      "regions": [
+        "Ireland"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q50.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          55.864547,
+          -4.3129711
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q51",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Govan Stone 02 (Hogback)",
+      "matches": [
+        "http://www.wikidata.org/entity/Q1570646",
+        "http://www.wikidata.org/entity/Q42887850",
+        "http://www.wikidata.org/entity/Q5588564"
+      ],
+      "part_of": [],
+      "regions": [
+        "Great Britain"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q51.html",
+      "wikidata": [
+        "Q136659904"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          52.5169774,
+          13.3079973
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q52",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Berlin: “Charlotten-Bär” von Nana Topchishvili",
+      "matches": [
+        "http://www.wikidata.org/entity/Q138426946",
+        "http://www.wikidata.org/entity/Q152445"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q52.html",
+      "wikidata": [
+        "Q138426731"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q53",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Berlin: Briefkasten in der Mommsenstraße",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q53.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q54",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Köln: Kastell Divitia Deutz “Taktiles Modell”",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q54.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          50.9383972,
+          6.9522895
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "Wikidata link",
+        "external match"
+      ],
+      "id": "squirrelbase:Q55",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Köln: Kunstwerk “Heinz Eau”",
+      "matches": [
+        "http://www.wikidata.org/entity/Q138425168",
+        "http://www.wikidata.org/entity/Q33056801",
+        "http://www.wikidata.org/entity/Q537513"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q55.html",
+      "wikidata": [
+        "Q138425201"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          51.3131242,
+          9.4982136
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "squirrelbase:Q56",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Kassel: Beuys-Stele B 1036 “7000 Eichen”",
+      "matches": [
+        "http://www.wikidata.org/entity/Q138426902",
+        "http://www.wikidata.org/entity/Q153965",
+        "http://www.wikidata.org/entity/Q261274",
+        "https://www.openstreetmap.org/relation/4629093"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q56.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          51.3133479,
+          9.4163989
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q57",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Kassel: Dackelgrab zum Andenken an “Erdmann”",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q57.html",
+      "wikidata": [
+        "Q138426831"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [],
+      "id": "squirrelbase:Q58",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Strudelkopfsattel: Kriegerdenkmal WW I",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q58.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "squirrelbase:Q2"
+      ],
+      "coordinates": [
+        [
+          47.0718475,
+          15.4412347
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "Wikidata link"
+      ],
+      "id": "squirrelbase:Q59",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Graz: “Das Erforschen der Dauer” von Manfred Erjautz",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q59.html",
+      "wikidata": [
+        "Q138426799"
+      ]
+    },
+    {
+      "classes": [
+        "squirrelbase:Q17"
+      ],
+      "coordinates": [
+        [
+          46.888362,
+          12.16988
+        ]
+      ],
+      "crm": [
+        "E24 Physical Human-Made Thing"
+      ],
+      "description": "",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "squirrelbase:Q60",
+      "instance": "squirrelbase",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Antholzer See: “Steinmännchen”",
+      "matches": [
+        "http://www.wikidata.org/entity/Q572562",
+        "http://www.wikidata.org/entity/Q7321974",
+        "https://vocab.getty.edu/aat/300006960",
+        "https://www.openstreetmap.org/relation/14599988"
+      ],
+      "part_of": [],
+      "regions": [
+        "Italy"
+      ],
+      "url": "https://n4o-rse.github.io/wb-squirrelbase-static/Q60.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "SKOS Concept",
+      "features": [],
+      "id": "n4o-prov:Q1",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Concept",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q1.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "SKOS Concept Scheme",
+      "features": [],
+      "id": "n4o-prov:Q2",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Concept Scheme",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q2.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "SKOS Collection",
+      "features": [],
+      "id": "n4o-prov:Q3",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Collection",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q3.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "SKOS Ordered Collection",
+      "features": [],
+      "id": "n4o-prov:Q4",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Ordered Collection",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q4.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "sub-class of the SKOS plus ontology",
+      "features": [],
+      "id": "n4o-prov:Q5",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "SKOS Plus Class",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q5.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q42"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "core entity",
+      "features": [],
+      "id": "n4o-prov:Q6",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Human",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q6.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q42"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "core entity",
+      "features": [],
+      "id": "n4o-prov:Q7",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Corporate Body",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q7.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "a person that may not exist, e.g. a Roman god",
+      "features": [],
+      "id": "n4o-prov:Q8",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Fictive Person",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q8.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Gemeinsame Normdatei",
+      "features": [],
+      "id": "n4o-prov:Q9",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "GND",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q9.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Wikidata Community Hub",
+      "features": [],
+      "id": "n4o-prov:Q10",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Wikidata",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q10.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Virtual International Authority File",
+      "features": [],
+      "id": "n4o-prov:Q11",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "VIAF",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q11.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "external repository that includes gazetteer resources",
+      "features": [],
+      "id": "n4o-prov:Q12",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Repository",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q12.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Wikipedia Repository",
+      "features": [],
+      "id": "n4o-prov:Q13",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Wikipedia",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q13.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Normdatenportal des Münzkabinetts",
+      "features": [],
+      "id": "n4o-prov:Q14",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "NDP",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q14.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q2"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Thesaurus",
+      "features": [],
+      "id": "n4o-prov:Q15",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Provenienzgazetteer",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q15.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "role of an item",
+      "features": [],
+      "id": "n4o-prov:Q16",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Role",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q16.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q16"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Role",
+      "features": [],
+      "id": "n4o-prov:Q17",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Medallist",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q17.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q16"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "role",
+      "features": [],
+      "id": "n4o-prov:Q18",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Previous Owner",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q18.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "German sculptor, medallist and illustrator",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q19",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Prof. Hans Karl Burgeff",
+      "matches": [
+        "http://d-nb.info/gnd/121066762",
+        "http://wikidata.org/entity/Q1580676"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q19.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          33.886944444444,
+          35.513055555556
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Coin dealer in Beyrouth (Beirut)",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q20",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Zakaris Bezdikian",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/8221"
+      ],
+      "part_of": [],
+      "regions": [
+        "North Africa and Levant"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q20.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q16"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "role",
+      "features": [],
+      "id": "n4o-prov:Q21",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Coin Dealer",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q21.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q2"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Thesaurus",
+      "features": [],
+      "id": "n4o-prov:Q22",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Body-Gazetteer",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q22.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q7"
+      ],
+      "coordinates": [
+        [
+          49.195277777778,
+          16.608333333333
+        ]
+      ],
+      "crm": [
+        "E40 Legal Body"
+      ],
+      "description": "Ignaz Storek steel foundry and machine factory in Brünn",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q23",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Ignaz Storek (Brünn)",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/koerperschaft/8652"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q23.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "British Museum Term",
+      "features": [],
+      "id": "n4o-prov:Q24",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "British Museum",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q24.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          52.516666666667,
+          13.383333333333
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Coin Dealer in Berlin",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q25",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Dr. Philipp Lederer",
+      "matches": [
+        "http://viaf.org/viaf/103209084",
+        "http://wikidata.org/entity/Q2086982",
+        "https://d-nb.info/gnd/143778765",
+        "https://de.wikipedia.org/wiki/Philipp_Lederer",
+        "https://ikmk.smb.museum/ndp/person/4077",
+        "https://www.britishmuseum.org/collection/term/BIOG59166"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q25.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          52.516666666667,
+          13.383333333333
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Coin Deadler in Berlin",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q26",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Felix Schlessinger",
+      "matches": [
+        "http://viaf.org/viaf/22506321",
+        "http://www.wikidata.org/entity/Q105655513",
+        "https://d-nb.info/gnd/101509677",
+        "https://ikmk.smb.museum/ndp/person/6382"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q26.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          51.231144444444,
+          6.7723805555556
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "merchant in Düsseldorf",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q27",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Dr. Reinhard Heynen",
+      "matches": [
+        "http://wikidata.org/entity/Q108813204",
+        "https://d-nb.info/gnd/101595239",
+        "https://ikmk.smb.museum/ndp/person/5879",
+        "https://viaf.org/viaf/74222280"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q27.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          51.231144444444,
+          6.7723805555556
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "wife and widow of Dr. Reinhard Heynen",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q28",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Emmi Heynen",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/7840"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q28.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "relationship type",
+      "features": [],
+      "id": "n4o-prov:Q29",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Wife",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q29.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "relationship type",
+      "features": [],
+      "id": "n4o-prov:Q30",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Husband",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q30.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "relationship type",
+      "features": [],
+      "id": "n4o-prov:Q31",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Widow",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q31.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "relationship type",
+      "features": [],
+      "id": "n4o-prov:Q32",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Spouse",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q32.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q42"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Core Entity",
+      "features": [],
+      "id": "n4o-prov:Q33",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Object",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q33.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "Interaktiver Katalog des Münzkabinetts Berlin 18257669",
+      "features": [],
+      "id": "n4o-prov:Q34",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Alexandria: Aurelianus und Vaballathus 270-271 n. Chr.",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q34.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf ID453",
+      "features": [],
+      "id": "n4o-prov:Q35",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Röm. Republik: Aes grave, Urbane Libralserie 343-269 v. Chr.",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q35.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf ID460",
+      "features": [],
+      "id": "n4o-prov:Q36",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Röm. Republik: Aes grave, Janus-Merkur-Reihe 280-276 v. Chr.",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q36.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "relationship type",
+      "features": [],
+      "id": "n4o-prov:Q37",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Sibling",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q37.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "relationship type",
+      "features": [],
+      "id": "n4o-prov:Q38",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "first-degree relatives",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q38.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q39",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q39.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q42"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "Core Entity",
+      "features": [],
+      "id": "n4o-prov:Q40",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Collection",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q40.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q41",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Interaktiver Katalog des Münzkabinetts Berlin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q41.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "PG core entity",
+      "features": [],
+      "id": "n4o-prov:Q42",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Core Entity",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q42.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q42"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "core entity",
+      "features": [],
+      "id": "n4o-prov:Q43",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Event",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q43.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Private scholar and coin collector",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q44",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Benoni Friedländer",
+      "matches": [
+        "http://wikidata.org/entity/Q818093",
+        "https://d-nb.info/gnd/116796634",
+        "https://ikmk.smb.museum/ndp/person/5474",
+        "https://viaf.org/viaf/40139014"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q44.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Founding director of the Münzkabinett Berlin as a scientifically organized collection",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q45",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Dr. Julius Friedländer",
+      "matches": [
+        "http://wikidata.org/entity/Q72722",
+        "https://d-nb.info/gnd/116797266",
+        "https://ikmk.smb.museum/ndp/person/5783",
+        "https://viaf.org/viaf/35217543"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q45.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q7"
+      ],
+      "coordinates": [
+        [
+          51.482777777778,
+          11.969722222222
+        ]
+      ],
+      "crm": [
+        "E40 Legal Body"
+      ],
+      "description": "Corporation",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q46",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "A. Riebeck’sche Montanwerke",
+      "matches": [
+        "http://wikidata.org/entity/Q279123",
+        "https://d-nb.info/gnd/4672945-8",
+        "https://ikmk.smb.museum/ndp/corporation/7479",
+        "https://viaf.org/viaf/243872791"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q46.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          31.201388888889,
+          29.901111111111
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Mr Avierino of Ramleh near Alexandria",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q47",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Alexander Avierino",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/7490"
+      ],
+      "part_of": [],
+      "regions": [
+        "North Africa and Levant"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q47.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          38.4,
+          27.166666666667
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Royal Prussian consul general Spiegelthal in Smyrna from 1851 to 1859",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q48",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Ludwig Peter Spiegelthal",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/6241"
+      ],
+      "part_of": [],
+      "regions": [
+        "Greece"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q48.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          38.4,
+          27.166666666667
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Royal Swedish consul in Smyrna",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q49",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Friedrich Wilhelm Spiegelthal",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/9505"
+      ],
+      "part_of": [],
+      "regions": [
+        "Greece"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q49.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Regierungsrat Müller",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q50",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Müller",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/10237"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q50.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          49.112222222222,
+          9.7375
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Müller, Bergrat",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q51",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Müller",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/6422"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q51.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [
+        [
+          51.05,
+          13.74
+        ]
+      ],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Court secretary Müller of Dresden",
+      "features": [
+        "coordinates",
+        "external match"
+      ],
+      "id": "n4o-prov:Q52",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Müller",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/6008"
+      ],
+      "part_of": [],
+      "regions": [
+        "Central and western Europe"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q52.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Geheimer Hofrat W. Müller",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q53",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Müller W.",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/6013"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q53.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q42"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "core entity",
+      "features": [],
+      "id": "n4o-prov:Q54",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Place",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q54.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "Type",
+      "features": [],
+      "id": "n4o-prov:Q55",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Alignment Score",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q55.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q55"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "alignment score",
+      "features": [],
+      "id": "n4o-prov:Q56",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "7 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q56.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q55"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "alignment score",
+      "features": [],
+      "id": "n4o-prov:Q57",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "6 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q57.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q55"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "alignment score",
+      "features": [],
+      "id": "n4o-prov:Q58",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "5 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q58.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q55"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "alignment score",
+      "features": [],
+      "id": "n4o-prov:Q59",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "4 Star",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q59.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q60",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "J. Pucher",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/12810"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q60.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q61",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "hadrianische Münze von Caesarea Cappadocia",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q61.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "types",
+      "features": [],
+      "id": "n4o-prov:Q62",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Object Type",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q62.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q62"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "object type",
+      "features": [],
+      "id": "n4o-prov:Q63",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Coin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q63.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "collection action type",
+      "features": [],
+      "id": "n4o-prov:Q64",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "purchase",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q64.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q65",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Münzkabinett Berlin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q65.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q66",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Melitta Stremme",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/12454"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q66.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q67",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Berlin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q67.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q68",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Frühkaiserzeitlicher Sesterz mit Gegenstempel PRO und merkwürdiger Korrosion",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q68.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q69",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Johannes Cislek",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/12815"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q69.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q70",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Gleiwitz",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q70.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q71",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "eine Prägemedaille",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q71.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q62"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "object type",
+      "features": [],
+      "id": "n4o-prov:Q72",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Medal",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q72.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q73",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Meno Auerbach",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/12887"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q73.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q74",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Hamburg",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q74.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q75",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Riga",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q75.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q77"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "place type",
+      "features": [],
+      "id": "n4o-prov:Q76",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Nazi concentration camp",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q76.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "type",
+      "features": [],
+      "id": "n4o-prov:Q77",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Place Type",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q77.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q77"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "place type",
+      "features": [],
+      "id": "n4o-prov:Q78",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Place of residence",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q78.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q79",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Probus 280 n. Chr.",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q79.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q80",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Hamburg: Stadt 1400-1450",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q80.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "collection action type",
+      "features": [],
+      "id": "n4o-prov:Q81",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "donation",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q81.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q82",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "G. Böcking",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/5633"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q82.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q83",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Pfalz bei Rhein: Ruprecht III. 1399-1402",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q83.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q84",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Mainz: Adolf I. von Nassau 1381-1385",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q84.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q85",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Bergdirektor Rudolf Stahr",
+      "matches": [
+        "https://ikmk.smb.museum/ndp/person/6244"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q85.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q86",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Zwickau",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q86.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q87",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Genf: Bistum ca. 1100-1150",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q87.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q88",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Hans von Aulock",
+      "matches": [
+        "http://www.wikidata.org/entity/Q15444743",
+        "https://d-nb.info/gnd/106251680X",
+        "https://de.wikipedia.org/wiki/Hans_von_Aulock",
+        "https://ikmk.smb.museum/ndp/person/5608",
+        "https://viaf.org/viaf/94531105",
+        "https://www.britishmuseum.org/collection/term/BIOG102124"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q88.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q89",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Dr. med. Aloys Maria Lautenschläger",
+      "matches": [
+        "http://www.wikidata.org/entity/Q112440399",
+        "https://d-nb.info/gnd/127708103",
+        "https://ikmk.smb.museum/ndp/person/5964",
+        "https://viaf.org/viaf/35486333"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q89.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q90",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Aschaffenburg",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q90.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q77"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "place type",
+      "features": [],
+      "id": "n4o-prov:Q91",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Working Place",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q91.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q92",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Digitales Münzkabinett der Universität Münster",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q92.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q93",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Archäologisches Museum der Universität Münster",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q93.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q94",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Das Digitale Münzkabinett der Goethe-Universität, Frankfurt am Main",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q94.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q95",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Münzkabinett der Goethe-Universität, Frankfurt am Main",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q95.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q96",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Münzkabinett der Heinrich-Heine-Universität Düsseldorf",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q96.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q97",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "British Museum",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q97.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q98",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Lykien ca. 500 v. Chr. (IKMK)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q98.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q99",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Elektron ca. 560-550 v. Chr. (Münster)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q99.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q100",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Nikaia 62-58 v. Chr. (GU Frankfurt)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q100.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q101",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Pontos: Mithradates VI. 75/74 v. Chr. (Düsseldorf)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q101.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q102",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "coin 1979,0101.218 (British Museum)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q102.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q103",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "coin 1979,0101.351 (British Museum)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q103.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q104",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Finnland: 1912 1912",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q104.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q105",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Russland: Katharina II. 1767",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q105.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q106",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Paul Lindpaintner",
+      "matches": [
+        "https://agorha.inha.fr/ark:/54721/f3c10ea6-31f8-497b-a1f2-4a2c0ab9359a",
+        "https://d-nb.info/gnd/1206345349",
+        "https://de.wikipedia.org/wiki/Paul_Lindpaintner",
+        "https://provenienz.gnm.de/person/LindpaintnerPaul",
+        "https://www.proveana.de/de/link/act00003851",
+        "https://www.wikidata.org/entity/Q13512883"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q106.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q107",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "König, Johann (1586-1642), Landschaft mit Waldweiher, um 1620 (Gm 1405)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q107.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q62"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "object type",
+      "features": [],
+      "id": "n4o-prov:Q108",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Painting",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q108.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q40"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E78 Curated Holding"
+      ],
+      "description": "Collection",
+      "features": [],
+      "id": "n4o-prov:Q109",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Gemanisches Nationalmuseum",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q109.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q110",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Brand, Johann Christian (1722-1795), Die Furt, 1769 (Gm 1413)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q110.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q7"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E40 Legal Body"
+      ],
+      "description": "previous Owner",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q111",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Galerie Maria Almas-Dietrich",
+      "matches": [
+        "https://d-nb.info/gnd/120591112X",
+        "https://provenienz.gnm.de/institution/AlmasDietrichGalerieAlmasDietrich",
+        "https://www.proveana.de/de/link/act10003649",
+        "https://www.wikidata.org/entity/Q51724860"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q111.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "Status",
+      "features": [],
+      "id": "n4o-prov:Q112",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "ALIU List of Red Flag Names",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q112.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "repository",
+      "features": [],
+      "id": "n4o-prov:Q113",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "Proveana",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q113.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "repository",
+      "features": [],
+      "id": "n4o-prov:Q114",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "gnm.provenienz",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q114.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q12"
+      ],
+      "coordinates": [],
+      "crm": [],
+      "description": "repository",
+      "features": [],
+      "id": "n4o-prov:Q115",
+      "instance": "n4o-prov",
+      "kinds": [
+        "model"
+      ],
+      "label": "AGORHA",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q115.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "profession",
+      "features": [],
+      "id": "n4o-prov:Q116",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Art Dealer",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q116.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q117",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Den Haag",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q117.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location",
+      "features": [],
+      "id": "n4o-prov:Q118",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "München",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q118.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object",
+      "features": [],
+      "id": "n4o-prov:Q119",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Australian coin (auto)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q119.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Oberbergrat",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q120",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Heinrich Böcking",
+      "matches": [
+        "https://d-nb.info/gnd/102534020",
+        "https://ikmk.smb.museum/ndp/person/5634",
+        "https://viaf.org/viaf/49616668",
+        "https://www.wikidata.org/wiki/Q1596893"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q120.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q1",
+        "n4o-prov:Q6"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E21 Person"
+      ],
+      "description": "Legal scholar",
+      "features": [
+        "external match"
+      ],
+      "id": "n4o-prov:Q121",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain",
+        "model"
+      ],
+      "label": "Hermann Helfft",
+      "matches": [
+        "https://blha-recherche.brandenburg.de/detail.aspx?ID=1989030"
+      ],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q121.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "Men's Heads",
+      "features": [],
+      "id": "n4o-prov:Q122",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "2 paintings",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q122.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "object, painting",
+      "features": [],
+      "id": "n4o-prov:Q123",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "landscape",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q123.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q54"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E53 Place"
+      ],
+      "description": "location (Sammellager)",
+      "features": [],
+      "id": "n4o-prov:Q124",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Drancy (auto)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q124.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "painting",
+      "features": [],
+      "id": "n4o-prov:Q125",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Plauderstunde am Brunnen",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q125.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "",
+      "features": [],
+      "id": "n4o-prov:Q126",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Alte Nationalgalerie, Staatliche Museen zu Berlin",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q126.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "Painter",
+      "features": [],
+      "id": "n4o-prov:Q127",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Oscar Begas",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q127.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "Consul",
+      "features": [],
+      "id": "n4o-prov:Q128",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Joachim Heinrich Wilhelm Wagener",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q128.html",
+      "wikidata": []
+    },
+    {
+      "classes": [
+        "n4o-prov:Q33"
+      ],
+      "coordinates": [],
+      "crm": [
+        "E22 Human-Made Object"
+      ],
+      "description": "painting",
+      "features": [],
+      "id": "n4o-prov:Q129",
+      "instance": "n4o-prov",
+      "kinds": [
+        "domain"
+      ],
+      "label": "Portrait of Heinrich Böcking",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q129.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "museum",
+      "features": [],
+      "id": "n4o-prov:Q130",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Saarlandmuseum, Saarbrücken",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q130.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "painter",
+      "features": [],
+      "id": "n4o-prov:Q131",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Louis Krevel",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q131.html",
+      "wikidata": []
+    },
+    {
+      "classes": [],
+      "coordinates": [],
+      "crm": [],
+      "description": "dealer",
+      "features": [],
+      "id": "n4o-prov:Q132",
+      "instance": "n4o-prov",
+      "kinds": [],
+      "label": "Kunsthandel Rolf Oberacker (Wiesbaden)",
+      "matches": [],
+      "part_of": [],
+      "regions": [
+        "(no coordinates)"
+      ],
+      "url": "https://n4o-rse.github.io/wb-n4o-prov-static/Q132.html",
+      "wikidata": []
     }
   ],
   "instances": [
     {
       "data_as_of": "2025-11-01T08:28:29+00:00",
       "entities": 173,
-      "generator": "wikibase-static 0.10.0",
+      "generator": "wikibase-static 0.30.1",
       "id": "fuzzy-sl",
       "items": 137,
       "licence": "CC0-1.0",
-      "pages_url": "https://n4o-rse.github.io/fuzzy-sl-static/",
+      "pages_url": "https://n4o-rse.github.io/wb-fuzzysl-static/",
       "properties": 36,
       "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl",
-      "sha256": "91d5b8849ad785b52170b500f2f8b9b0ec0bd06a650ac9b41f94917c6bbaa884",
-      "source": "https://n4o-rse.github.io/fuzzy-sl-static/downloads/n4o-rse.github.io-fuzzy-sl-static.ttl",
+      "sha256": "d228c6c6cfb4dd989b7b56011f6aa726be1988664b08f451863934f9177efb9f",
+      "source": "https://n4o-rse.github.io/wb-fuzzysl-static/downloads/n4o-rse.github.io-wb-fuzzysl-static.ttl",
       "source_triples": 12462,
       "title": "fuzzy-sl (static copy)"
     },
@@ -30673,6 +35578,36 @@
       "source": "https://n4o-rse.github.io/osm-benchmarks-static/downloads/n4o-rse.github.io-osm-benchmarks-static.ttl",
       "source_triples": 6278,
       "title": "OSM benchmarks (static Wikibase)"
+    },
+    {
+      "data_as_of": "2026-02-23T14:55:27+00:00",
+      "entities": 87,
+      "generator": "wikibase-static 0.30.1",
+      "id": "squirrelbase",
+      "items": 58,
+      "licence": "CC0-1.0",
+      "pages_url": "https://n4o-rse.github.io/wb-squirrelbase-static/",
+      "properties": 29,
+      "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase",
+      "sha256": "13918fe4674597cd0a3ac7a5a49c767aebba56f5715f5e548a040a3e094ff3c6",
+      "source": "https://n4o-rse.github.io/wb-squirrelbase-static/downloads/n4o-rse.github.io-wb-squirrelbase-static.ttl",
+      "source_triples": 6415,
+      "title": "Squirrelbase (static copy of squirrelbase.wikibase.cloud)"
+    },
+    {
+      "data_as_of": "2025-06-12T14:00:33+00:00",
+      "entities": 193,
+      "generator": "wikibase-static 0.30.1",
+      "id": "n4o-prov",
+      "items": 132,
+      "licence": "CC0-1.0",
+      "pages_url": "https://n4o-rse.github.io/wb-n4o-prov-static/",
+      "properties": 61,
+      "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov",
+      "sha256": "05811db4683f3d799ec036d216784d14f9c3275e48ab15109bc7b611ff75f840",
+      "source": "https://n4o-rse.github.io/wb-n4o-prov-static/downloads/n4o-rse.github.io-wb-n4o-prov-static.ttl",
+      "source_triples": 14495,
+      "title": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)"
     }
   ],
   "release": "2026-11-01"

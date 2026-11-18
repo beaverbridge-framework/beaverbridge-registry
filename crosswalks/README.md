@@ -37,3 +37,7 @@ The `bridge` rows and the `kind` column are proposals of the registry, not state
 ## regions.csv
 
 `regions.csv` gives the **Region** facet of the search page: coarse, hand-drawn bounding boxes (`south,west,north,east` in degrees) in file order. The first box that holds a point decides; a region may have several boxes (Italy has two); a point in no box is *Elsewhere*, an item without coordinates is *(no coordinates)*. The boxes are a convenience for browsing, not an authority and not a country border: they overlap the real borders, and a coast or a small state may fall into a neighbour. Edit by hand.
+
+## labels-en.csv
+
+`labels-en.csv` (`instance`, `id`, `label_en`, `note`) gives an English label to an item that its instance labels in another language only; the rule R02 of the gate asks for one. The bundle writes it as `rdfs:label "<label_en> (auto)"@en`: the suffix says that the registry made it and the instance did not. The instance itself is not changed, so the proper fix stays a label in the source Wikibase. Once the instance has an English label the row is reported as a warning and should be deleted. Edit by hand.
