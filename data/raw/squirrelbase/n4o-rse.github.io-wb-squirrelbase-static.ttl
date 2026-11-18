@@ -1,5 +1,5 @@
 # RDF export of squirrelbase (static copy), Wikibase data model; base URI https://n4o-rse.github.io/wb-squirrelbase-static
-# Generated with wikibase-static 0.30.1; data as of 2026-02-23T14:55:27Z
+# Generated with wikibase-static 0.31.0; data as of 2026-02-23T14:55:27Z
 # Licence: CC0 1.0
 # The prefixes sqb:, sqbt:, sqbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only sqb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -8420,6 +8420,174 @@ _:fbbec31d5bf16a6c7d7b554a39b1f107
 
 # CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv) and the DCAT classes of this file (data/dcat-crm.csv),
 # with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
+
+sqb:Q2
+    rdfs:subClassOf crm:E24_Physical_Human-Made_Thing .
+
+sqb:Q4
+    a sqb:Q2 .
+
+sqb:Q5
+    a sqb:Q2 .
+
+sqb:Q6
+    a sqb:Q2 .
+
+sqb:Q7
+    a sqb:Q2 .
+
+sqb:Q8
+    a sqb:Q2 .
+
+sqb:Q9
+    a sqb:Q2 .
+
+sqb:Q10
+    a sqb:Q2 .
+
+sqb:Q11
+    a sqb:Q2 .
+
+sqb:Q12
+    a sqb:Q2 .
+
+sqb:Q13
+    a sqb:Q2 .
+
+sqb:Q14
+    a sqb:Q2 .
+
+sqb:Q15
+    a sqb:Q2 .
+
+sqb:Q16
+    a sqb:Q2 .
+
+sqb:Q17
+    rdfs:subClassOf sqb:Q2 .
+
+sqb:Q18
+    a sqb:Q17 .
+
+sqb:Q19
+    a sqb:Q17 .
+
+sqb:Q20
+    a sqb:Q17 .
+
+sqb:Q21
+    a sqb:Q17 .
+
+sqb:Q22
+    a sqb:Q2 .
+
+sqb:Q23
+    a sqb:Q2 .
+
+sqb:Q24
+    a sqb:Q2 .
+
+sqb:Q25
+    a sqb:Q2 .
+
+sqb:Q27
+    a sqb:Q2 .
+
+sqb:Q28
+    a sqb:Q2 .
+
+sqb:Q29
+    a sqb:Q2 .
+
+sqb:Q30
+    a sqb:Q2 .
+
+sqb:Q32
+    a sqb:Q31 .
+
+sqb:Q33
+    a sqb:Q32 .
+
+sqb:Q34
+    a sqb:Q32 .
+
+sqb:Q35
+    a sqb:Q32 .
+
+sqb:Q36
+    a sqb:Q31 .
+
+sqb:Q37
+    a sqb:Q36 .
+
+sqb:Q38
+    a sqb:Q36 .
+
+sqb:Q39
+    a sqb:Q36 .
+
+sqb:Q40
+    a sqb:Q36 .
+
+sqb:Q41
+    a sqb:Q36 .
+
+sqb:Q42
+    a sqb:Q36 .
+
+sqb:Q43
+    a sqb:Q36 .
+
+sqb:Q44
+    a sqb:Q31 .
+
+sqb:Q45
+    a sqb:Q44 .
+
+sqb:Q46
+    a sqb:Q44 .
+
+sqb:Q47
+    a sqb:Q44 .
+
+sqb:Q48
+    a sqb:Q2 .
+
+sqb:Q49
+    a sqb:Q2 .
+
+sqb:Q50
+    a sqb:Q2 .
+
+sqb:Q51
+    a sqb:Q2 .
+
+sqb:Q52
+    a sqb:Q2 .
+
+sqb:Q53
+    a sqb:Q2 .
+
+sqb:Q54
+    a sqb:Q2 .
+
+sqb:Q55
+    a sqb:Q2 .
+
+sqb:Q56
+    a sqb:Q2 .
+
+sqb:Q57
+    a sqb:Q2 .
+
+sqb:Q58
+    a sqb:Q2 .
+
+sqb:Q59
+    a sqb:Q2 .
+
+sqb:Q60
+    a sqb:Q17 .
 
 crmdig:D1_Digital_Object
     rdfs:subClassOf crm:E73_Information_Object .

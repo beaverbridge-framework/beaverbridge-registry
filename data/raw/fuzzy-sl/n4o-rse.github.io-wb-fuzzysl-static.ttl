@@ -1,5 +1,5 @@
 # RDF export of fuzzy-sl (static copy), Wikibase data model; base URI https://n4o-rse.github.io/wb-fuzzysl-static
-# Generated with wikibase-static 0.30.1; data as of 2025-11-01T08:28:29Z
+# Generated with wikibase-static 0.31.0; data as of 2025-11-01T08:28:29Z
 # Licence: CC0 1.0
 
 @prefix cat: <https://n4o-rse.github.io/wb-fuzzysl-static/catalog/> .
@@ -16096,6 +16096,397 @@ _:fbbec31d5bf16a6c7d7b554a39b1f107
 
 # CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv) and the DCAT classes of this file (data/dcat-crm.csv),
 # with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
+
+wd:Q10
+    a wd:Q3 ;
+    rdfs:subClassOf wd:Q79,
+        wd:Q146 .
+
+wd:Q11
+    a wd:Q3 ;
+    rdfs:subClassOf wd:Q79,
+        wd:Q146 .
+
+wd:Q13
+    a wd:Q10 .
+
+wd:Q14
+    a wd:Q5 .
+
+wd:Q15
+    a wd:Q6 .
+
+wd:Q16
+    a wd:Q4 .
+
+wd:Q17
+    a wd:Q7 .
+
+wd:Q18
+    a wd:Q21 .
+
+wd:Q19
+    a wd:Q2 .
+
+wd:Q20
+    a wd:Q2 .
+
+wd:Q21
+    a wd:Q22 .
+
+wd:Q23
+    a wd:Q6 .
+
+wd:Q24
+    a wd:Q6 .
+
+wd:Q25
+    a wd:Q2 .
+
+wd:Q26
+    a wd:Q2 .
+
+wd:Q27
+    a wd:Q2 .
+
+wd:Q28
+    a wd:Q2 .
+
+wd:Q29
+    a wd:Q2 .
+
+wd:Q30
+    a wd:Q2 .
+
+wd:Q31
+    a wd:Q2 .
+
+wd:Q32
+    a wd:Q4 .
+
+wd:Q33
+    a wd:Q4 .
+
+wd:Q34
+    a wd:Q7 .
+
+wd:Q35
+    a wd:Q21 .
+
+wd:Q36
+    a wd:Q4 .
+
+wd:Q37
+    a wd:Q4 .
+
+wd:Q38
+    a wd:Q4 .
+
+wd:Q39
+    a wd:Q4 .
+
+wd:Q42
+    a wd:Q22 .
+
+wd:Q46
+    a wd:Q10 .
+
+wd:Q49
+    a wd:Q10 .
+
+wd:Q50
+    a wd:Q10 .
+
+wd:Q51
+    a wd:Q10 .
+
+wd:Q52
+    a wd:Q10 .
+
+wd:Q53
+    a wd:Q10 .
+
+wd:Q54
+    a wd:Q10 .
+
+wd:Q55
+    a wd:Q10 .
+
+wd:Q56
+    a wd:Q10 .
+
+wd:Q57
+    a wd:Q10 .
+
+wd:Q58
+    a wd:Q10 .
+
+wd:Q59
+    a wd:Q10 .
+
+wd:Q60
+    a wd:Q10 .
+
+wd:Q61
+    a wd:Q10 .
+
+wd:Q62
+    a wd:Q10 .
+
+wd:Q63
+    a wd:Q10 .
+
+wd:Q64
+    a wd:Q10 .
+
+wd:Q66
+    a wd:Q10 .
+
+wd:Q67
+    a wd:Q10 .
+
+wd:Q68
+    a wd:Q10 .
+
+wd:Q69
+    a wd:Q10 .
+
+wd:Q70
+    a wd:Q11 .
+
+wd:Q71
+    a wd:Q5 .
+
+wd:Q72
+    a wd:Q21 .
+
+wd:Q73
+    a wd:Q11 .
+
+wd:Q74
+    a wd:Q10 .
+
+wd:Q75
+    a wd:Q5 .
+
+wd:Q76
+    a wd:Q4 .
+
+wd:Q77
+    a wd:Q7 .
+
+wd:Q78
+    a wd:Q2 .
+
+wd:Q79
+    a wd:Q3 ;
+    rdfs:subClassOf crm:E53_Place .
+
+wd:Q80
+    a wd:Q81 .
+
+wd:Q83
+    a wd:Q4 .
+
+wd:Q84
+    a wd:Q11 .
+
+wd:Q85
+    a wd:Q11 .
+
+wd:Q86
+    a wd:Q4 .
+
+wd:Q87
+    a wd:Q81 .
+
+wd:Q88
+    a wd:Q11 .
+
+wd:Q89
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q90
+    a wd:Q4 ;
+    rdfs:subClassOf wd:Q147 .
+
+wd:Q92
+    a wd:Q91 .
+
+wd:Q93
+    a wd:Q91 .
+
+wd:Q94
+    a wd:Q5 .
+
+wd:Q95
+    a wd:Q10 .
+
+wd:Q96
+    a wd:Q10 .
+
+wd:Q97
+    a wd:Q10 .
+
+wd:Q98
+    a wd:Q21 .
+
+wd:Q99
+    a wd:Q2 .
+
+wd:Q100
+    a wd:Q2 .
+
+wd:Q101
+    a wd:Q10 .
+
+wd:Q102
+    a wd:Q10 .
+
+wd:Q103
+    a wd:Q10 .
+
+wd:Q104
+    a wd:Q2 .
+
+wd:Q105
+    a wd:Q10 .
+
+wd:Q106
+    a wd:Q10 .
+
+wd:Q107
+    a wd:Q10 .
+
+wd:Q108
+    a wd:Q10 .
+
+wd:Q109
+    a wd:Q10 .
+
+wd:Q111
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q112
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q113
+    a wd:Q6 .
+
+wd:Q114
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q115
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q116
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q117
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q118
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q119
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q120
+    a wd:Q10 .
+
+wd:Q121
+    a wd:Q10 .
+
+wd:Q122
+    a wd:Q10 .
+
+wd:Q123
+    a wd:Q4 .
+
+wd:Q124
+    a wd:Q4 .
+
+wd:Q126
+    a wd:Q125 .
+
+wd:Q127
+    a wd:Q125 .
+
+wd:Q128
+    a wd:Q125 .
+
+wd:Q129
+    a wd:Q125 .
+
+wd:Q130
+    a wd:Q125 .
+
+wd:Q131
+    a wd:Q10 .
+
+wd:Q132
+    a wd:Q81 .
+
+wd:Q133
+    a wd:Q125 .
+
+wd:Q134
+    a wd:Q11 .
+
+wd:Q135
+    a wd:Q4 .
+
+wd:Q136
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q137
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q138
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q139
+    a wd:Q10,
+        wd:Q11 .
+
+wd:Q140
+    a wd:Q141 .
+
+wd:Q141
+    a wd:Q3 ;
+    rdfs:subClassOf wd:Q79 .
+
+wd:Q142
+    a wd:Q5 .
+
+wd:Q143
+    a wd:Q91 .
+
+wd:Q144
+    a wd:Q81 .
+
+wd:Q146
+    rdfs:subClassOf crm:E53_Place,
+        wd:Q145 .
+
+wd:Q147
+    rdfs:subClassOf crm:E26_Physical_Feature,
+        wd:Q145 .
+
+wd:Q148
+    a wd:Q10 .
 
 crmdig:D1_Digital_Object
     rdfs:subClassOf crm:E73_Information_Object .

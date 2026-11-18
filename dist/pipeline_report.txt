@@ -1,19 +1,19 @@
 [survey]
-  fuzzy-sl: 12462 triples, 137 items, 36 properties, 19 classes, roles 7/7
+  fuzzy-sl: 12607 triples, 137 items, 36 properties, 19 classes, roles 7/7
   chublets: 99261 triples, 832 items, 168 properties, 13 classes, roles 5/7
   osm-benchmarks: 6278 triples, 27 items, 24 properties, 4 classes, roles 5/7
-  squirrelbase: 6415 triples, 58 items, 29 properties, 6 classes, roles 5/7
-  n4o-prov: 14495 triples, 132 items, 61 properties, 29 classes, roles 4/7
+  squirrelbase: 6471 triples, 58 items, 29 properties, 6 classes, roles 5/7
+  n4o-prov: 14647 triples, 132 items, 61 properties, 29 classes, roles 4/7
   survey: 5 instance(s), 0 warning(s)
 [bridge]
   bridge: 71 classes, 14 with an anchor of their own, 99 triples, 0 warning(s)
 [bundle]
-  fuzzy-sl: 12462 source triples, 1455 kept, 173 entities, 264 role statements, 0 redirect(s)
+  fuzzy-sl: 12607 source triples, 1600 kept, 173 entities, 264 role statements, 0 redirect(s)
   chublets: 99261 source triples, 13883 kept, 1000 entities, 2858 role statements, 7 redirect(s)
   osm-benchmarks: 6278 source triples, 820 kept, 51 entities, 109 role statements, 0 redirect(s)
-  squirrelbase: 6415 source triples, 758 kept, 87 entities, 139 role statements, 0 redirect(s)
-  n4o-prov: 14495 source triples, 1809 kept, 193 entities, 227 role statements, 0 redirect(s)
-  bundle: 23991 triples from 5 instance(s), 0 warning(s)
+  squirrelbase: 6471 source triples, 814 kept, 87 entities, 139 role statements, 0 redirect(s)
+  n4o-prov: 14647 source triples, 1961 kept, 193 entities, 227 role statements, 0 redirect(s)
+  bundle: 24344 triples from 5 instance(s), 0 warning(s)
 [validate]
   validate: self-test ok (25 rules fail on bad.ttl, nothing on good.ttl)
   validate: 0 violation(s), 0 warning(s), 59 note(s)
@@ -27,11 +27,11 @@
 [site]
   site: docs/ with search page (1186 entries), catalogue, 5 record page(s), 15 vocabulary term(s)
 [sparql]
-    beaverbridge-registry.ttl: 23991 triples
+    beaverbridge-registry.ttl: 24344 triples
     ok   instances         5 rows
     ok   classes          48 rows
     ok   hierarchy        48 rows
-    ok   roles            27 rows
+    ok   roles            33 rows
     ok   class-kinds      10 rows
     ok   crm-anchors      14 rows
     ok   crm-reach        10 rows

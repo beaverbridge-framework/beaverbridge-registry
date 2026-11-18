@@ -1,5 +1,5 @@
 {
-  "bundle_triples": 23991,
+  "bundle_triples": 24344,
   "class_labels": {
     "chublets:Q1": "Class",
     "chublets:Q100": "software",
@@ -35537,16 +35537,16 @@
     {
       "data_as_of": "2025-11-01T08:28:29+00:00",
       "entities": 173,
-      "generator": "wikibase-static 0.30.1",
+      "generator": "wikibase-static 0.31.0",
       "id": "fuzzy-sl",
       "items": 137,
       "licence": "CC0-1.0",
       "pages_url": "https://n4o-rse.github.io/wb-fuzzysl-static/",
       "properties": 36,
       "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl",
-      "sha256": "d228c6c6cfb4dd989b7b56011f6aa726be1988664b08f451863934f9177efb9f",
+      "sha256": "66c7a94ff65b4ffcfec80c347e5efa04119451afc0fcb5b4cd82fa18933df5d5",
       "source": "https://n4o-rse.github.io/wb-fuzzysl-static/downloads/n4o-rse.github.io-wb-fuzzysl-static.ttl",
-      "source_triples": 12462,
+      "source_triples": 12607,
       "title": "fuzzy-sl (static copy)"
     },
     {
@@ -35582,31 +35582,31 @@
     {
       "data_as_of": "2026-02-23T14:55:27+00:00",
       "entities": 87,
-      "generator": "wikibase-static 0.30.1",
+      "generator": "wikibase-static 0.31.0",
       "id": "squirrelbase",
       "items": 58,
       "licence": "CC0-1.0",
       "pages_url": "https://n4o-rse.github.io/wb-squirrelbase-static/",
       "properties": 29,
       "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase",
-      "sha256": "13918fe4674597cd0a3ac7a5a49c767aebba56f5715f5e548a040a3e094ff3c6",
+      "sha256": "9aa61a8b63e23eef6ef3ce6bcaefa16a5d0649ba2f9d31af4f99e783dd8bd683",
       "source": "https://n4o-rse.github.io/wb-squirrelbase-static/downloads/n4o-rse.github.io-wb-squirrelbase-static.ttl",
-      "source_triples": 6415,
+      "source_triples": 6471,
       "title": "squirrelbase (static copy)"
     },
     {
       "data_as_of": "2025-06-12T14:00:33+00:00",
       "entities": 193,
-      "generator": "wikibase-static 0.30.1",
+      "generator": "wikibase-static 0.31.0",
       "id": "n4o-prov",
       "items": 132,
       "licence": "CC0-1.0",
       "pages_url": "https://n4o-rse.github.io/wb-n4o-prov-static/",
       "properties": 61,
       "record": "https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov",
-      "sha256": "05811db4683f3d799ec036d216784d14f9c3275e48ab15109bc7b611ff75f840",
+      "sha256": "35892105857a4b1ced7aa198721857219e03f6a418fb492d31578697ae50e0a9",
       "source": "https://n4o-rse.github.io/wb-n4o-prov-static/downloads/n4o-rse.github.io-wb-n4o-prov-static.ttl",
-      "source_triples": 14495,
+      "source_triples": 14647,
       "title": "n4o-prov (static copy)"
     }
   ],

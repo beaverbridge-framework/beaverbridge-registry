@@ -16062,7 +16062,8 @@ fuzzy-sl:Q1 a wikibase:Item ;
     skos:prefLabel "Site"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
-fuzzy-sl:Q100 a wikibase:Item ;
+fuzzy-sl:Q100 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Database Entry (Source)"@en ;
     schema1:description "Source"@en ;
     schema1:name "Database Entry (Source)"@en ;
@@ -16071,7 +16072,8 @@ fuzzy-sl:Q100 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q104 a wikibase:Item ;
+fuzzy-sl:Q104 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Open Street Map"@en ;
     schema1:description "Source"@en ;
     schema1:name "Open Street Map"@en ;
@@ -16088,7 +16090,9 @@ fuzzy-sl:Q110 a wikibase:Item ;
     skos:prefLabel "Samian Research Database (as Reference)"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
-fuzzy-sl:Q111 a wikibase:Item ;
+fuzzy-sl:Q111 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Franchthi Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Franchthi Cave"@en ;
@@ -16108,7 +16112,9 @@ fuzzy-sl:Q111 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(23.1311 37.4226)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q112 a wikibase:Item ;
+fuzzy-sl:Q112 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Golema Pesht Cave near Zdunje"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Golema Pesht Cave near Zdunje"@en ;
@@ -16127,7 +16133,8 @@ fuzzy-sl:Q112 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(21.1617 41.8117)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q113 a wikibase:Item ;
+fuzzy-sl:Q113 a wikibase:Item,
+        fuzzy-sl:Q6 ;
     rdfs:label "dubious"@en ;
     schema1:description "Certainty Level"@en ;
     schema1:name "dubious"@en ;
@@ -16136,7 +16143,9 @@ fuzzy-sl:Q113 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q6 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q6 .
 
-fuzzy-sl:Q114 a wikibase:Item ;
+fuzzy-sl:Q114 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Paglicci Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Paglicci Cave"@en ;
@@ -16155,7 +16164,9 @@ fuzzy-sl:Q114 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.615 41.6541)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q115 a wikibase:Item ;
+fuzzy-sl:Q115 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Toplitsa Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Toplitsa Cave"@en ;
@@ -16176,7 +16187,9 @@ fuzzy-sl:Q115 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(24.0053 43.1907)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q116 a wikibase:Item ;
+fuzzy-sl:Q116 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Haua-Fteah Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Haua-Fteah Cave"@en ;
@@ -16195,7 +16208,9 @@ fuzzy-sl:Q116 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(22.0516 32.9002)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q117 a wikibase:Item ;
+fuzzy-sl:Q117 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Castelcivita Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Castelcivita Cave"@en ;
@@ -16215,7 +16230,9 @@ fuzzy-sl:Q117 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.2092 40.4956)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q118 a wikibase:Item ;
+fuzzy-sl:Q118 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Temnata Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Temnata Cave"@en ;
@@ -16233,7 +16250,9 @@ fuzzy-sl:Q118 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(23.3848 43.0892)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q119 a wikibase:Item ;
+fuzzy-sl:Q119 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Kozarnika Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Kozarnika Cave"@en ;
@@ -16252,7 +16271,8 @@ fuzzy-sl:Q119 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(22.7024 43.6519)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q120 a wikibase:Item ;
+fuzzy-sl:Q120 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Car Dyke (Samian Discovery Site)"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Car Dyke (Samian Discovery Site)"@en ;
@@ -16266,7 +16286,8 @@ fuzzy-sl:Q120 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-0.2678 53.0125)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q123 .
 
-fuzzy-sl:Q121 a wikibase:Item ;
+fuzzy-sl:Q121 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Llanfair-ar-y-bryn (Samian Discovery Site)"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Llanfair-ar-y-bryn (Samian Discovery Site)"@en ;
@@ -16280,7 +16301,8 @@ fuzzy-sl:Q121 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-3.7933888888889 52.001194444444)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q122 a wikibase:Item ;
+fuzzy-sl:Q122 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Belgian Coast (Samian Discovery Site)"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Belgian Coast (Samian Discovery Site)"@en ;
@@ -16294,7 +16316,8 @@ fuzzy-sl:Q122 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(2.857 51.2075)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q124 .
 
-fuzzy-sl:Q126 a wikibase:Item ;
+fuzzy-sl:Q126 a wikibase:Item,
+        fuzzy-sl:Q125 ;
     rdfs:label "Representative Point"@en ;
     schema1:description "Point Type"@en ;
     schema1:name "Representative Point"@en ;
@@ -16303,7 +16326,8 @@ fuzzy-sl:Q126 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q125 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q125 .
 
-fuzzy-sl:Q127 a wikibase:Item ;
+fuzzy-sl:Q127 a wikibase:Item,
+        fuzzy-sl:Q125 ;
     rdfs:label "Place as a Concept"@en ;
     schema1:description "Point Type"@en ;
     schema1:name "Place as a Concept"@en ;
@@ -16313,7 +16337,8 @@ fuzzy-sl:Q127 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q125 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q125 .
 
-fuzzy-sl:Q128 a wikibase:Item ;
+fuzzy-sl:Q128 a wikibase:Item,
+        fuzzy-sl:Q125 ;
     rdfs:label "Location of a Place as a Concept"@en ;
     schema1:description "Point Type"@en ;
     schema1:name "Location of a Place as a Concept"@en ;
@@ -16323,7 +16348,8 @@ fuzzy-sl:Q128 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q125 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q125 .
 
-fuzzy-sl:Q129 a wikibase:Item ;
+fuzzy-sl:Q129 a wikibase:Item,
+        fuzzy-sl:Q125 ;
     rdfs:label "Natural Place"@en ;
     schema1:description "Point Type"@en ;
     schema1:name "Natural Place"@en ;
@@ -16332,7 +16358,8 @@ fuzzy-sl:Q129 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q125 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q125 .
 
-fuzzy-sl:Q13 a wikibase:Item ;
+fuzzy-sl:Q13 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "San Giorgio Ionico 1949"@en ;
     schema1:description "San Giorgio Ionico (bei Tarent), auf dem Grundbesitz von `E. De Finis`."@en ;
     schema1:name "San Giorgio Ionico 1949"@en ;
@@ -16350,7 +16377,8 @@ fuzzy-sl:Q13 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.3787 40.4579)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q130 a wikibase:Item ;
+fuzzy-sl:Q130 a wikibase:Item,
+        fuzzy-sl:Q125 ;
     rdfs:label "Untersuchungsort"@de,
         "Investigation Place"@en ;
     schema1:description "Point Type"@de,
@@ -16363,7 +16391,8 @@ fuzzy-sl:Q130 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q125 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q125 .
 
-fuzzy-sl:Q131 a wikibase:Item ;
+fuzzy-sl:Q131 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Ogham Stone Coumeenole North"@en ;
     schema1:description "Ogham Stone at Dunmore Head"@en ;
     schema1:name "Ogham Stone Coumeenole North"@en ;
@@ -16386,7 +16415,8 @@ fuzzy-sl:Q131 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-10.473182888889 52.110254111111)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q76 .
 
-fuzzy-sl:Q132 a wikibase:Item ;
+fuzzy-sl:Q132 a wikibase:Item,
+        fuzzy-sl:Q81 ;
     rdfs:label "Exhibition Site"@en ;
     schema1:description "location type"@en ;
     schema1:name "Exhibition Site"@en ;
@@ -16395,7 +16425,8 @@ fuzzy-sl:Q132 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q81 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q81 .
 
-fuzzy-sl:Q133 a wikibase:Item ;
+fuzzy-sl:Q133 a wikibase:Item,
+        fuzzy-sl:Q125 ;
     rdfs:label "Exhibition"@en ;
     schema1:description "Point Type"@en ;
     schema1:name "Exhibition"@en ;
@@ -16404,7 +16435,8 @@ fuzzy-sl:Q133 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q125 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q125 .
 
-fuzzy-sl:Q134 a wikibase:Item ;
+fuzzy-sl:Q134 a wikibase:Item,
+        fuzzy-sl:Q11 ;
     rdfs:label "Dead Sea Deep Drilling Project 5017-1A"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Dead Sea Deep Drilling Project 5017-1A"@en ;
@@ -16425,7 +16457,9 @@ fuzzy-sl:Q134 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(35.4752 31.4931)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q135 .
 
-fuzzy-sl:Q136 a wikibase:Item ;
+fuzzy-sl:Q136 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Pompeii Casa della Fontana Piccola"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Pompeii Casa della Fontana Piccola"@en ;
@@ -16447,7 +16481,9 @@ fuzzy-sl:Q136 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(14.483645194444 40.7514285)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q32 .
 
-fuzzy-sl:Q137 a wikibase:Item ;
+fuzzy-sl:Q137 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Pompeii Via dell’Abbondanza"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Pompeii Via dell’Abbondanza"@en ;
@@ -16469,7 +16505,9 @@ fuzzy-sl:Q137 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(14.488961261111 40.75038655)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q32 .
 
-fuzzy-sl:Q138 a wikibase:Item ;
+fuzzy-sl:Q138 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Pompeii Casa della Caccia Antica"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Pompeii Casa della Caccia Antica"@en ;
@@ -16491,7 +16529,9 @@ fuzzy-sl:Q138 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(14.49 40.75)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q32 .
 
-fuzzy-sl:Q139 a wikibase:Item ;
+fuzzy-sl:Q139 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Fumane Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Fumane Cave"@en ;
@@ -16508,7 +16548,8 @@ fuzzy-sl:Q139 a wikibase:Item ;
     fuzzy-sl-wdt:P3 fuzzy-sl:Q71 ;
     fuzzy-sl-wdt:P4 "Point(10.898888888889 45.585555555556)"^^geo:wktLiteral .
 
-fuzzy-sl:Q140 a wikibase:Item ;
+fuzzy-sl:Q140 a wikibase:Item,
+        fuzzy-sl:Q141 ;
     rdfs:label "Ignaz Storek (Brünn)"@en ;
     schema1:description "Provenance Research Geo Location"@en ;
     schema1:name "Ignaz Storek (Brünn)"@en ;
@@ -16524,7 +16565,8 @@ fuzzy-sl:Q140 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.6247 49.1924)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q144 a wikibase:Item ;
+fuzzy-sl:Q144 a wikibase:Item,
+        fuzzy-sl:Q81 ;
     rdfs:label "Provenance Site"@en ;
     schema1:description "location type"@en ;
     schema1:name "Provenance Site"@en ;
@@ -16533,7 +16575,8 @@ fuzzy-sl:Q144 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q81 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q81 .
 
-fuzzy-sl:Q148 a wikibase:Item ;
+fuzzy-sl:Q148 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Ogham Stone Coolmagort I"@en ;
     schema1:description "Part of the Dunloe Ogham Stones"@en ;
     schema1:name "Ogham Stone Coolmagort I"@en ;
@@ -16548,7 +16591,8 @@ fuzzy-sl:Q148 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-9.633728 52.0605)"^^geo:wktLiteral,
         "Point(-9.634811 52.060384)"^^geo:wktLiteral .
 
-fuzzy-sl:Q15 a wikibase:Item ;
+fuzzy-sl:Q15 a wikibase:Item,
+        fuzzy-sl:Q6 ;
     rdfs:label "Medium"@en ;
     schema1:description "Certainty Level"@en ;
     schema1:name "Medium"@en ;
@@ -16557,7 +16601,8 @@ fuzzy-sl:Q15 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q6 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q6 .
 
-fuzzy-sl:Q17 a wikibase:Item ;
+fuzzy-sl:Q17 a wikibase:Item,
+        fuzzy-sl:Q7 ;
     rdfs:label "Georeferencing"@en ;
     schema1:description "method to get coordinates"@en ;
     schema1:name "Georeferencing"@en ;
@@ -16566,7 +16611,8 @@ fuzzy-sl:Q17 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q7 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q7 .
 
-fuzzy-sl:Q18 a wikibase:Item ;
+fuzzy-sl:Q18 a wikibase:Item,
+        fuzzy-sl:Q21 ;
     rdfs:label "Stefanie Baars"@en ;
     schema1:description "Archäologin"@en ;
     schema1:name "Stefanie Baars"@en ;
@@ -16575,7 +16621,8 @@ fuzzy-sl:Q18 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q21 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q21 .
 
-fuzzy-sl:Q19 a wikibase:Item ;
+fuzzy-sl:Q19 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Paper"@en ;
     schema1:description "Paper of Book"@en ;
     schema1:name "Paper"@en ;
@@ -16584,7 +16631,8 @@ fuzzy-sl:Q19 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q20 a wikibase:Item ;
+fuzzy-sl:Q20 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Textual Description"@en ;
     schema1:description "item is described in a text"@en ;
     schema1:name "Textual Description"@en ;
@@ -16593,7 +16641,8 @@ fuzzy-sl:Q20 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q23 a wikibase:Item ;
+fuzzy-sl:Q23 a wikibase:Item,
+        fuzzy-sl:Q6 ;
     rdfs:label "High"@en ;
     schema1:description "Certainty Level"@en ;
     schema1:name "High"@en ;
@@ -16602,7 +16651,8 @@ fuzzy-sl:Q23 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q6 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q6 .
 
-fuzzy-sl:Q24 a wikibase:Item ;
+fuzzy-sl:Q24 a wikibase:Item,
+        fuzzy-sl:Q6 ;
     rdfs:label "Low"@en ;
     schema1:description "Certainty Level"@en ;
     schema1:name "Low"@en ;
@@ -16611,7 +16661,8 @@ fuzzy-sl:Q24 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q6 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q6 .
 
-fuzzy-sl:Q25 a wikibase:Item ;
+fuzzy-sl:Q25 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "coinhoards.org"@en ;
     schema1:name "coinhoards.org"@en ;
     skos:prefLabel "coinhoards.org"@en ;
@@ -16619,7 +16670,8 @@ fuzzy-sl:Q25 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q26 a wikibase:Item ;
+fuzzy-sl:Q26 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "URI"@en ;
     schema1:description "Source"@en ;
     schema1:name "URI"@en ;
@@ -16628,7 +16680,8 @@ fuzzy-sl:Q26 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q27 a wikibase:Item ;
+fuzzy-sl:Q27 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Image"@en ;
     schema1:description "source"@en ;
     schema1:name "Image"@en ;
@@ -16637,7 +16690,8 @@ fuzzy-sl:Q27 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q28 a wikibase:Item ;
+fuzzy-sl:Q28 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "iDAI.gazetteer"@en ;
     schema1:description "source"@en ;
     schema1:name "iDAI.gazetteer"@en ;
@@ -16646,7 +16700,8 @@ fuzzy-sl:Q28 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q29 a wikibase:Item ;
+fuzzy-sl:Q29 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Pleiades Gazetteer"@en ;
     schema1:description "Source"@en ;
     schema1:name "Pleiades Gazetteer"@en ;
@@ -16655,7 +16710,8 @@ fuzzy-sl:Q29 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q30 a wikibase:Item ;
+fuzzy-sl:Q30 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Wikimedia Commons"@en ;
     schema1:description "Source"@en ;
     schema1:name "Wikimedia Commons"@en ;
@@ -16664,7 +16720,8 @@ fuzzy-sl:Q30 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q31 a wikibase:Item ;
+fuzzy-sl:Q31 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "GeoNames"@en ;
     schema1:description "source"@en ;
     schema1:name "GeoNames"@en ;
@@ -16673,7 +16730,8 @@ fuzzy-sl:Q31 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q34 a wikibase:Item ;
+fuzzy-sl:Q34 a wikibase:Item,
+        fuzzy-sl:Q7 ;
     rdfs:label "External Repository"@en ;
     schema1:description "method type"@en ;
     schema1:name "External Repository"@en ;
@@ -16682,7 +16740,8 @@ fuzzy-sl:Q34 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q7 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q7 .
 
-fuzzy-sl:Q35 a wikibase:Item ;
+fuzzy-sl:Q35 a wikibase:Item,
+        fuzzy-sl:Q21 ;
     rdfs:label "Florian Thiery"@en ;
     schema1:description "Geodät und RSE"@en ;
     schema1:name "Florian Thiery"@en ;
@@ -16691,7 +16750,8 @@ fuzzy-sl:Q35 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q21 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q21 .
 
-fuzzy-sl:Q42 a wikibase:Item ;
+fuzzy-sl:Q42 a wikibase:Item,
+        fuzzy-sl:Q22 ;
     rdfs:label "42"@en ;
     schema1:description "The answer for everything ..."@en ;
     schema1:name "42"@en ;
@@ -16700,7 +16760,8 @@ fuzzy-sl:Q42 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q22 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q22 .
 
-fuzzy-sl:Q46 a wikibase:Item ;
+fuzzy-sl:Q46 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Crotone, loc. Via Paternostro 1974"@en ;
     schema1:description "Crotone, in der località “Via Paternostro” beim Palazzo Messinetti."@en ;
     schema1:name "Crotone, loc. Via Paternostro 1974"@en ;
@@ -16717,7 +16778,8 @@ fuzzy-sl:Q46 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.12661 39.08002)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q32 .
 
-fuzzy-sl:Q49 a wikibase:Item ;
+fuzzy-sl:Q49 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Bruttium"@en ;
     schema1:description "Region Bruttium (ancient) or Calabria (modern)"@en ;
     schema1:name "Bruttium"@en ;
@@ -16732,7 +16794,8 @@ fuzzy-sl:Q49 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.732178 39.248407)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q36 .
 
-fuzzy-sl:Q50 a wikibase:Item ;
+fuzzy-sl:Q50 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Calabria (Regione)"@en ;
     schema1:description "Region Bruttium (ancient) or Calabria (modern)"@en ;
     schema1:name "Calabria (Regione)"@en ;
@@ -16747,7 +16810,8 @@ fuzzy-sl:Q50 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.423461 39.13006)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q37 .
 
-fuzzy-sl:Q51 a wikibase:Item ;
+fuzzy-sl:Q51 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Leucopetra (cape)"@en ;
     schema1:description "Region Bruttium (ancient) or Calabria (modern)"@en ;
     schema1:name "Leucopetra (cape)"@en ;
@@ -16762,7 +16826,8 @@ fuzzy-sl:Q51 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.6373254426 38.0199079744)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q38 .
 
-fuzzy-sl:Q52 a wikibase:Item ;
+fuzzy-sl:Q52 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Shepherd - Bruttium (Calabria) - 1911"@en ;
     schema1:description "Region Bruttium (ancient) or Calabria (modern)"@en ;
     schema1:name "Shepherd - Bruttium (Calabria) - 1911"@en ;
@@ -16777,7 +16842,8 @@ fuzzy-sl:Q52 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.478385 39.044786)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q39 .
 
-fuzzy-sl:Q53 a wikibase:Item ;
+fuzzy-sl:Q53 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Taranto (Italy)"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "Taranto (Italy)"@en ;
@@ -16792,7 +16858,8 @@ fuzzy-sl:Q53 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.24707 40.46438)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q36 .
 
-fuzzy-sl:Q54 a wikibase:Item ;
+fuzzy-sl:Q54 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Paestum (Italy)"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "Paestum (Italy)"@en ;
@@ -16807,7 +16874,8 @@ fuzzy-sl:Q54 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.00731 40.4223)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q55 a wikibase:Item ;
+fuzzy-sl:Q55 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Strongoli (Italy)"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "Strongoli (Italy)"@en ;
@@ -16822,7 +16890,8 @@ fuzzy-sl:Q55 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.05413 39.26576)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q56 a wikibase:Item ;
+fuzzy-sl:Q56 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Calabria (Italy)"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "Calabria (Italy)"@en ;
@@ -16837,7 +16906,8 @@ fuzzy-sl:Q56 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.5 39)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q36 .
 
-fuzzy-sl:Q57 a wikibase:Item ;
+fuzzy-sl:Q57 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "South Italy"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "South Italy"@en ;
@@ -16852,7 +16922,8 @@ fuzzy-sl:Q57 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.93279 40.40542)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q36 .
 
-fuzzy-sl:Q58 a wikibase:Item ;
+fuzzy-sl:Q58 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Province of Brindisi (Italy)"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "Province of Brindisi (Italy)"@en ;
@@ -16867,7 +16938,8 @@ fuzzy-sl:Q58 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.66667 40.58333)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q36 .
 
-fuzzy-sl:Q59 a wikibase:Item ;
+fuzzy-sl:Q59 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Curinga (Italy)"@en ;
     schema1:description "Derived from conhoards.org identifier"@en ;
     schema1:name "Curinga (Italy)"@en ;
@@ -16882,7 +16954,8 @@ fuzzy-sl:Q59 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.31344 38.82811)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q60 a wikibase:Item ;
+fuzzy-sl:Q60 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Taranto, Via Oberdan"@en ;
     schema1:description "Noted by K, 1968."@en ;
     schema1:name "Taranto, Via Oberdan"@en ;
@@ -16899,7 +16972,8 @@ fuzzy-sl:Q60 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.24707 40.46438)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q61 a wikibase:Item ;
+fuzzy-sl:Q61 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Paestum (anc. Poseidonia), Lucania"@en ;
     schema1:name "Paestum (anc. Poseidonia), Lucania"@en ;
     skos:prefLabel "Paestum (anc. Poseidonia), Lucania"@en ;
@@ -16916,7 +16990,8 @@ fuzzy-sl:Q61 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.00731 40.4223)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q62 a wikibase:Item ;
+fuzzy-sl:Q62 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Strongoli (anc. Petelia), 25 km. N of Croton, Bruttium"@en ;
     schema1:name "Strongoli (anc. Petelia), 25 km. N of Croton, Bruttium"@en ;
     skos:prefLabel "Strongoli (anc. Petelia), 25 km. N of Croton, Bruttium"@en ;
@@ -16932,7 +17007,8 @@ fuzzy-sl:Q62 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.05413 39.26576)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q16 .
 
-fuzzy-sl:Q63 a wikibase:Item ;
+fuzzy-sl:Q63 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Calabria (anc. Bruttium)"@en ;
     schema1:name "Calabria (anc. Bruttium)"@en ;
     skos:prefLabel "Calabria (anc. Bruttium)"@en ;
@@ -16948,7 +17024,8 @@ fuzzy-sl:Q63 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.434446 39.155622)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q37 .
 
-fuzzy-sl:Q64 a wikibase:Item ;
+fuzzy-sl:Q64 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "South Italy"@en ;
     schema1:description "Information from correspondents."@en ;
     schema1:name "South Italy"@en ;
@@ -16965,7 +17042,8 @@ fuzzy-sl:Q64 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(15.730228 40.79177)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q37 .
 
-fuzzy-sl:Q66 a wikibase:Item ;
+fuzzy-sl:Q66 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Curinga, 30 km. WSW of Catanzaro, Bruttium"@en ;
     schema1:description "The cicada recorded above bull by Orsi on one Sybaris is in fact a die flaw, which has engulfed ϒΜ"@en ;
     schema1:name "Curinga, 30 km. WSW of Catanzaro, Bruttium"@en ;
@@ -16983,7 +17061,8 @@ fuzzy-sl:Q66 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.31344 38.82811)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q37 .
 
-fuzzy-sl:Q67 a wikibase:Item ;
+fuzzy-sl:Q67 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Fiume Esaro 1967 (gennaio)"@en ;
     schema1:description "Am `Fiume Esaro`."@en ;
     schema1:name "Fiume Esaro 1967 (gennaio)"@en ;
@@ -17001,7 +17080,8 @@ fuzzy-sl:Q67 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.1123 39.0855)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q33 .
 
-fuzzy-sl:Q68 a wikibase:Item ;
+fuzzy-sl:Q68 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Curinga 1916 (IGCH 1881 / Noe 285)"@en ;
     schema1:description "An der Bahnstrecke von Curinga (Provinz Catanzaro), zwischen den Flüssen Angitola und Turrina."@en ;
     schema1:name "Curinga 1916 (IGCH 1881 / Noe 285)"@en ;
@@ -17019,7 +17099,8 @@ fuzzy-sl:Q68 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(16.31344 38.82811)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q32 .
 
-fuzzy-sl:Q69 a wikibase:Item ;
+fuzzy-sl:Q69 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Ionian Shore, Bruttium"@en ;
     schema1:description "The Vlasto Cat. records the above coins as from the Taranto 1908 hd. (Noe 1051 = no. 2000); that hd., however, contained nothing but Taras, Per. VIII. Nos. 413-5 are recorded as from &#x022;the 1908 Taranto find (Ionian Shore find). Noe 1051.&#x022; It is evident that there is a confusion between two finds made in the same year, but concealed at very different dates. In his copy of J. Hirsch May 23, 1910 Evans noted &#x022;Hirsch Find&#x022; against Thurium nos. 281, 285-91, 294, 296 and Corcyra no. 496."@en ;
     schema1:name "Ionian Shore, Bruttium"@en ;
@@ -17037,7 +17118,8 @@ fuzzy-sl:Q69 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(17.665745 40.599356)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q37 .
 
-fuzzy-sl:Q70 a wikibase:Item ;
+fuzzy-sl:Q70 a wikibase:Item,
+        fuzzy-sl:Q11 ;
     rdfs:label "Auel Maar AU3"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Auel Maar AU3"@en ;
@@ -17055,7 +17137,8 @@ fuzzy-sl:Q70 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(6.5951 50.2825)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q83 .
 
-fuzzy-sl:Q72 a wikibase:Item ;
+fuzzy-sl:Q72 a wikibase:Item,
+        fuzzy-sl:Q21 ;
     rdfs:label "Fiona Schenk"@en ;
     schema1:description "Geoscientist"@en ;
     schema1:name "Fiona Schenk"@en ;
@@ -17064,7 +17147,8 @@ fuzzy-sl:Q72 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q21 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q21 .
 
-fuzzy-sl:Q73 a wikibase:Item ;
+fuzzy-sl:Q73 a wikibase:Item,
+        fuzzy-sl:Q11 ;
     rdfs:label "Urluia Quarry"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Urluia Quarry"@en ;
@@ -17087,7 +17171,8 @@ fuzzy-sl:Q73 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(27.9021 44.0947)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q82 .
 
-fuzzy-sl:Q74 a wikibase:Item ;
+fuzzy-sl:Q74 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Ogham Stone UCC Stone Corridor IV"@en ;
     schema1:description "Ogham Stone #4 UCC Stone Corridor at UCC Cork"@en ;
     schema1:name "Ogham Stone UCC Stone Corridor IV"@en ;
@@ -17113,7 +17198,8 @@ fuzzy-sl:Q74 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-8.4924431111111 51.893659305556)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q76 .
 
-fuzzy-sl:Q77 a wikibase:Item ;
+fuzzy-sl:Q77 a wikibase:Item,
+        fuzzy-sl:Q7 ;
     rdfs:label "on-site survey"@en ;
     schema1:description "method to get coordinates"@en ;
     schema1:name "on-site survey"@en ;
@@ -17122,7 +17208,8 @@ fuzzy-sl:Q77 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q7 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q7 .
 
-fuzzy-sl:Q78 a wikibase:Item ;
+fuzzy-sl:Q78 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "on-site survey (source type)"@en ;
     schema1:description "survey as source type"@en ;
     schema1:name "on-site survey (source type)"@en ;
@@ -17131,7 +17218,8 @@ fuzzy-sl:Q78 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q2 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q2 .
 
-fuzzy-sl:Q80 a wikibase:Item ;
+fuzzy-sl:Q80 a wikibase:Item,
+        fuzzy-sl:Q81 ;
     rdfs:label "Findspot"@en ;
     schema1:description "location type"@en ;
     schema1:name "Findspot"@en ;
@@ -17140,7 +17228,8 @@ fuzzy-sl:Q80 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q81 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q81 .
 
-fuzzy-sl:Q84 a wikibase:Item ;
+fuzzy-sl:Q84 a wikibase:Item,
+        fuzzy-sl:Q11 ;
     rdfs:label "Auel Maar AU4"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Auel Maar AU4"@en ;
@@ -17158,7 +17247,8 @@ fuzzy-sl:Q84 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(6.5949 50.2821)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q83 .
 
-fuzzy-sl:Q85 a wikibase:Item ;
+fuzzy-sl:Q85 a wikibase:Item,
+        fuzzy-sl:Q11 ;
     rdfs:label "DE3 Dehner Maar"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "DE3 Dehner Maar"@en ;
@@ -17176,7 +17266,8 @@ fuzzy-sl:Q85 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(6.5066 50.2928)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q83 .
 
-fuzzy-sl:Q87 a wikibase:Item ;
+fuzzy-sl:Q87 a wikibase:Item,
+        fuzzy-sl:Q81 ;
     rdfs:label "Eruption Site"@en ;
     schema1:description "location type"@en ;
     schema1:name "Eruption Site"@en ;
@@ -17185,7 +17276,8 @@ fuzzy-sl:Q87 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q81 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q81 .
 
-fuzzy-sl:Q88 a wikibase:Item ;
+fuzzy-sl:Q88 a wikibase:Item,
+        fuzzy-sl:Q11 ;
     rdfs:label "Campi Flegri"@en ;
     schema1:description "Campanian Ignimbrite Findspot & Eruption Site"@en ;
     schema1:name "Campi Flegri"@en ;
@@ -17206,7 +17298,9 @@ fuzzy-sl:Q88 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(14.1402 40.8275)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q86 .
 
-fuzzy-sl:Q89 a wikibase:Item ;
+fuzzy-sl:Q89 a wikibase:Item,
+        fuzzy-sl:Q10,
+        fuzzy-sl:Q11 ;
     rdfs:label "Crvena Stiljena Cave"@en ;
     schema1:description "Campanian Ignimbrite Findspot"@en ;
     schema1:name "Crvena Stiljena Cave"@en ;
@@ -17225,7 +17319,8 @@ fuzzy-sl:Q89 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(18.4815 42.779)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q90 .
 
-fuzzy-sl:Q98 a wikibase:Item ;
+fuzzy-sl:Q98 a wikibase:Item,
+        fuzzy-sl:Q21 ;
     rdfs:label "Samian Research User"@en ;
     schema1:description "User of the Samian Research Community"@en ;
     schema1:name "Samian Research User"@en ;
@@ -17234,7 +17329,8 @@ fuzzy-sl:Q98 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q21 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q21 .
 
-fuzzy-sl:Q99 a wikibase:Item ;
+fuzzy-sl:Q99 a wikibase:Item,
+        fuzzy-sl:Q2 ;
     rdfs:label "Samian Research Database (Source)"@en ;
     schema1:description "Source"@en ;
     schema1:name "Samian Research Database (Source)"@en ;
@@ -17753,10 +17849,12 @@ n4o-prov:P7 a wikibase:Property ;
     skos:prefLabel "related"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
-n4o-prov:Q10 a wikibase:Item ;
+n4o-prov:Q10 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "Wikidata"@en ;
     schema1:description "Wikidata Community Hub"@en ;
     schema1:name "Wikidata"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Wikidata"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
@@ -17765,7 +17863,8 @@ n4o-prov:Q10 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q106 a wikibase:Item ;
+n4o-prov:Q106 a wikibase:Item,
+        n4o-prov:Q6 ;
     rdfs:label "Paul Lindpaintner"@en ;
     schema1:description "previous Owner"@en ;
     schema1:name "Paul Lindpaintner"@en ;
@@ -17795,10 +17894,12 @@ n4o-prov:Q106 a wikibase:Item ;
     n4o-prov-wdt:P53 n4o-prov:Q117,
         n4o-prov:Q67 .
 
-n4o-prov:Q11 a wikibase:Item ;
+n4o-prov:Q11 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "VIAF"@en ;
     schema1:description "Virtual International Authority File"@en ;
     schema1:name "VIAF"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "VIAF"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
@@ -17807,7 +17908,8 @@ n4o-prov:Q11 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q111 a wikibase:Item ;
+n4o-prov:Q111 a wikibase:Item,
+        n4o-prov:Q7 ;
     rdfs:label "Galerie Maria Almas-Dietrich"@en ;
     schema1:description "previous Owner"@en ;
     schema1:name "Galerie Maria Almas-Dietrich"@en ;
@@ -17835,7 +17937,8 @@ n4o-prov:Q111 a wikibase:Item ;
     n4o-prov-wdt:P43 "Kunsthandlung und Galerie gegründet von Maria Almas-Dietrich." ;
     n4o-prov-wdt:P53 n4o-prov:Q118 .
 
-n4o-prov:Q113 a wikibase:Item ;
+n4o-prov:Q113 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "Proveana"@en ;
     schema1:description "repository"@en ;
     schema1:name "Proveana"@en ;
@@ -17844,7 +17947,8 @@ n4o-prov:Q113 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q12 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q114 a wikibase:Item ;
+n4o-prov:Q114 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "gnm.provenienz"@en ;
     schema1:description "repository"@en ;
     schema1:name "gnm.provenienz"@en ;
@@ -17853,7 +17957,8 @@ n4o-prov:Q114 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q12 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q115 a wikibase:Item ;
+n4o-prov:Q115 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "AGORHA"@en ;
     schema1:description "repository"@en ;
     schema1:name "AGORHA"@en ;
@@ -17869,7 +17974,8 @@ n4o-prov:Q116 a wikibase:Item ;
     skos:prefLabel "Art Dealer"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
-n4o-prov:Q119 a wikibase:Item ;
+n4o-prov:Q119 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Münze Australien"@de,
         "Australian coin (auto)"@en ;
     schema1:description "object"@de ;
@@ -17880,7 +17986,8 @@ n4o-prov:Q119 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q33 ;
     n4o-prov-wdt:P60 n4o-prov:Q89 .
 
-n4o-prov:Q122 a wikibase:Item ;
+n4o-prov:Q122 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "2 Gemälde"@de,
         "2 paintings"@en ;
     schema1:description "Männerköpfe"@de,
@@ -17895,7 +18002,8 @@ n4o-prov:Q122 a wikibase:Item ;
     n4o-prov-wdt:P34 n4o-prov:Q121 ;
     n4o-prov-wdt:P46 n4o-prov:Q108 .
 
-n4o-prov:Q129 a wikibase:Item ;
+n4o-prov:Q129 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Portrait of Heinrich Böcking"@en ;
     schema1:description "painting"@en ;
     schema1:name "Portrait of Heinrich Böcking"@en ;
@@ -17910,10 +18018,12 @@ n4o-prov:Q129 a wikibase:Item ;
     n4o-prov-wdt:P63 n4o-prov:Q131 ;
     n4o-prov-wdt:P64 n4o-prov:Q132 .
 
-n4o-prov:Q13 a wikibase:Item ;
+n4o-prov:Q13 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "Wikipedia"@en ;
     schema1:description "Wikipedia Repository"@en ;
     schema1:name "Wikipedia"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Wikipedia"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
@@ -17922,10 +18032,12 @@ n4o-prov:Q13 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q14 a wikibase:Item ;
+n4o-prov:Q14 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "NDP"@en ;
     schema1:description "Normdatenportal des Münzkabinetts"@en ;
     schema1:name "NDP"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "NDP"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
@@ -17934,7 +18046,9 @@ n4o-prov:Q14 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q19 a wikibase:Item ;
+n4o-prov:Q19 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Prof. Hans Karl Burgeff"@de,
         "Prof. Hans Karl Burgeff"@en ;
     schema1:description "Deutscher Bildhauer, Medailleur und Zeichner"@de,
@@ -17958,7 +18072,9 @@ n4o-prov:Q19 a wikibase:Item ;
     n4o-prov-wdt:P21 <http://d-nb.info/gnd/121066762>,
         <http://wikidata.org/entity/Q1580676> .
 
-n4o-prov:Q20 a wikibase:Item ;
+n4o-prov:Q20 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Zakaris Bezdikian"@de,
         "Zakaris Bezdikian"@en ;
     schema1:description "Münzhändler"@de,
@@ -17982,13 +18098,15 @@ n4o-prov:Q20 a wikibase:Item ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?id=18242415>,
         <https://ikmk.smb.museum/object?id=18258031> .
 
-n4o-prov:Q22 a wikibase:Item ;
+n4o-prov:Q22 a wikibase:Item,
+        n4o-prov:Q2 ;
     rdfs:label "Körperschaften-Gazetteer"@de,
         "Body-Gazetteer"@en ;
     schema1:description "Thesaurus"@de,
         "Thesaurus"@en ;
     schema1:name "Körperschaften-Gazetteer"@de,
         "Body-Gazetteer"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Körperschaften-Gazetteer"@de,
         "Body-Gazetteer"@en ;
     bbr:classKind "model" ;
@@ -17998,7 +18116,9 @@ n4o-prov:Q22 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q2 .
 
-n4o-prov:Q23 a wikibase:Item ;
+n4o-prov:Q23 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q7 ;
     rdfs:label "Firma Ignaz Storek (Brünn)"@de,
         "Ignaz Storek (Brünn)"@en ;
     schema1:description "Firma Stahlgießerei und Maschinenfabrik Ignaz Storek in Brünn"@de,
@@ -18021,10 +18141,12 @@ n4o-prov:Q23 a wikibase:Item ;
     n4o-prov-wdt:P25 "Point(16.608333333333 49.195277777778)"^^geo:wktLiteral ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?id=18262496> .
 
-n4o-prov:Q24 a wikibase:Item ;
+n4o-prov:Q24 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "British Museum"@en ;
     schema1:description "British Museum Term"@en ;
     schema1:name "British Museum"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "British Museum"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
@@ -18033,7 +18155,9 @@ n4o-prov:Q24 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q25 a wikibase:Item ;
+n4o-prov:Q25 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Dr. Philipp Lederer"@de,
         "Dr. Philipp Lederer"@en ;
     schema1:description "Münzhändler in Berlin"@de,
@@ -18070,7 +18194,9 @@ n4o-prov:Q25 a wikibase:Item ;
         <https://ikmk.smb.museum/object?id=18311140>,
         <https://mk-bochum.ikmk.net/object?id=ID2097> .
 
-n4o-prov:Q26 a wikibase:Item ;
+n4o-prov:Q26 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Felix Schlessinger"@de,
         "Felix Schlessinger"@en ;
     schema1:description "Münzhändler in Berlin"@de,
@@ -18113,6 +18239,7 @@ n4o-prov:Q3 a wikibase:Item ;
     rdfs:label "Collection"@en ;
     schema1:description "SKOS Collection"@en ;
     schema1:name "Collection"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:altLabel "skos:Collection"@en ;
     skos:prefLabel "Collection"@en ;
     bbr:classKind "model" ;
@@ -18159,6 +18286,7 @@ n4o-prov:Q4 a wikibase:Item ;
     rdfs:label "Ordered Collection"@en ;
     schema1:description "SKOS Ordered Collection"@en ;
     schema1:name "Ordered Collection"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:altLabel "skos:OrderedCollection"@en ;
     skos:prefLabel "Ordered Collection"@en ;
     bbr:classKind "model" ;
@@ -18166,10 +18294,13 @@ n4o-prov:Q4 a wikibase:Item ;
     bbr:subclassOf n4o-prov:Q5 ;
     n4o-prov-wdt:P1 n4o-prov:Q5 .
 
-n4o-prov:Q43 a wikibase:Item ;
+n4o-prov:Q43 a wikibase:Item,
+        n4o-prov:Q42 ;
     rdfs:label "Event"@en ;
     schema1:description "core entity"@en ;
     schema1:name "Event"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E5_Event>,
+        n4o-prov:Q5 ;
     skos:prefLabel "Event"@en ;
     bbr:classKind "domain" ;
     bbr:crmBasis "bridge" ;
@@ -18180,7 +18311,9 @@ n4o-prov:Q43 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q42 .
 
-n4o-prov:Q46 a wikibase:Item ;
+n4o-prov:Q46 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q7 ;
     rdfs:label "A. Riebeck’sche Montanwerke"@en ;
     schema1:description "Corporation"@en ;
     schema1:name "A. Riebeck’sche Montanwerke"@en ;
@@ -18205,7 +18338,9 @@ n4o-prov:Q46 a wikibase:Item ;
     n4o-prov-wdt:P25 "Point(11.969722222222 51.482777777778)"^^geo:wktLiteral ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?id=18251420> .
 
-n4o-prov:Q47 a wikibase:Item ;
+n4o-prov:Q47 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Alexander Avierino"@de,
         "Alexander Avierino"@en ;
     schema1:description "Herr Avierino in Ramleh bei Alexandria"@de,
@@ -18229,7 +18364,9 @@ n4o-prov:Q47 a wikibase:Item ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?id=18257669> ;
     n4o-prov-wdt:P32 n4o-prov:Q34 .
 
-n4o-prov:Q50 a wikibase:Item ;
+n4o-prov:Q50 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Müller"@en ;
     schema1:description "Regierungsrat Müller"@en ;
     schema1:name "Müller"@en ;
@@ -18246,7 +18383,9 @@ n4o-prov:Q50 a wikibase:Item ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?lang=de&id=18260782>,
         <https://www.ikmk.uni-tuebingen.de/object?id=ID2321> .
 
-n4o-prov:Q51 a wikibase:Item ;
+n4o-prov:Q51 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Müller"@en ;
     schema1:description "Müller, Bergrat"@en ;
     schema1:name "Müller"@en ;
@@ -18265,7 +18404,9 @@ n4o-prov:Q51 a wikibase:Item ;
     n4o-prov-wdt:P25 "Point(9.7375 49.112222222222)"^^geo:wktLiteral ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?lang=de&id=18205835> .
 
-n4o-prov:Q52 a wikibase:Item ;
+n4o-prov:Q52 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Müller"@en ;
     schema1:description "Court secretary Müller of Dresden"@en ;
     schema1:name "Müller"@en ;
@@ -18284,7 +18425,9 @@ n4o-prov:Q52 a wikibase:Item ;
     n4o-prov-wdt:P25 "Point(13.74 51.05)"^^geo:wktLiteral ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?lang=de&id=18246063> .
 
-n4o-prov:Q53 a wikibase:Item ;
+n4o-prov:Q53 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Müller W."@en ;
     schema1:description "Geheimer Hofrat W. Müller"@en ;
     schema1:name "Müller W."@en ;
@@ -18304,7 +18447,8 @@ n4o-prov:Q53 a wikibase:Item ;
         <https://ikmk.smb.museum/object?lang=de&id=18273388>,
         <https://ikmk.smb.museum/object?lang=de&id=18278287> .
 
-n4o-prov:Q56 a wikibase:Item ;
+n4o-prov:Q56 a wikibase:Item,
+        n4o-prov:Q55 ;
     rdfs:label "7 Star"@en ;
     schema1:description "alignment score"@en ;
     schema1:name "7 Star"@en ;
@@ -18314,7 +18458,8 @@ n4o-prov:Q56 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q55 ;
     n4o-prov-wdt:P39 n4o-prov:P12 .
 
-n4o-prov:Q57 a wikibase:Item ;
+n4o-prov:Q57 a wikibase:Item,
+        n4o-prov:Q55 ;
     rdfs:label "6 Star"@en ;
     schema1:description "alignment score"@en ;
     schema1:name "6 Star"@en ;
@@ -18324,7 +18469,8 @@ n4o-prov:Q57 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q55 ;
     n4o-prov-wdt:P39 n4o-prov:P11 .
 
-n4o-prov:Q58 a wikibase:Item ;
+n4o-prov:Q58 a wikibase:Item,
+        n4o-prov:Q55 ;
     rdfs:label "5 Star"@en ;
     schema1:description "alignment score"@en ;
     schema1:name "5 Star"@en ;
@@ -18335,7 +18481,8 @@ n4o-prov:Q58 a wikibase:Item ;
     n4o-prov-wdt:P39 n4o-prov:P8,
         n4o-prov:P9 .
 
-n4o-prov:Q59 a wikibase:Item ;
+n4o-prov:Q59 a wikibase:Item,
+        n4o-prov:Q55 ;
     rdfs:label "4 Star"@en ;
     schema1:description "alignment score"@en ;
     schema1:name "4 Star"@en ;
@@ -18346,6 +18493,7 @@ n4o-prov:Q59 a wikibase:Item ;
     n4o-prov-wdt:P39 n4o-prov:P10 .
 
 n4o-prov:Q60 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "J. Pucher"@en ;
     schema1:description "previous Owner"@en ;
@@ -18374,6 +18522,7 @@ n4o-prov:Q64 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
 n4o-prov:Q66 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "Melitta Stremme"@en ;
     schema1:description "previous Owner"@en ;
@@ -18391,6 +18540,7 @@ n4o-prov:Q66 a wikibase:Item,
     n4o-prov-wdt:P53 n4o-prov:Q67 .
 
 n4o-prov:Q69 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "Johannes Cislek"@en ;
     schema1:description "previous Owner"@en ;
@@ -18408,6 +18558,7 @@ n4o-prov:Q69 a wikibase:Item,
     n4o-prov-wdt:P53 n4o-prov:Q70 .
 
 n4o-prov:Q73 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "Meno Auerbach"@de,
         "Meno Auerbach"@en ;
@@ -18438,7 +18589,8 @@ n4o-prov:Q73 a wikibase:Item,
         <https://collections.yadvashem.org/de/names/14776902>,
         <https://www.mappingthelives.org/bio/e30d2f5f-167c-4f61-8ecb-5f89d46d806e> .
 
-n4o-prov:Q76 a wikibase:Item ;
+n4o-prov:Q76 a wikibase:Item,
+        n4o-prov:Q77 ;
     rdfs:label "Nazi concentration camp"@en ;
     schema1:description "place type"@en ;
     schema1:name "Nazi concentration camp"@en ;
@@ -18449,7 +18601,8 @@ n4o-prov:Q76 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q77 ;
     n4o-prov-wdt:P58 <http://www.wikidata.org/entity/Q328468> .
 
-n4o-prov:Q78 a wikibase:Item ;
+n4o-prov:Q78 a wikibase:Item,
+        n4o-prov:Q77 ;
     rdfs:label "Place of residence"@en ;
     schema1:description "place type"@en ;
     schema1:name "Place of residence"@en ;
@@ -18459,10 +18612,12 @@ n4o-prov:Q78 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q77 ;
     n4o-prov-wdt:P58 <http://www.wikidata.org/entity/Q1589826> .
 
-n4o-prov:Q8 a wikibase:Item ;
+n4o-prov:Q8 a wikibase:Item,
+        n4o-prov:Q1 ;
     rdfs:label "Fictive Person"@en ;
     schema1:description "a person that may not exist, e.g. a Roman god"@en ;
     schema1:name "Fictive Person"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:altLabel "skos:Concept"@en ;
     skos:prefLabel "Fictive Person"@en ;
     bbr:classKind "model" ;
@@ -18484,6 +18639,7 @@ n4o-prov:Q81 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
 n4o-prov:Q82 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "G. Böcking"@en ;
     schema1:description "previous Owner"@en ;
@@ -18502,6 +18658,7 @@ n4o-prov:Q82 a wikibase:Item,
     n4o-prov-wdt:P53 n4o-prov:Q67 .
 
 n4o-prov:Q85 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "Bergdirektor Rudolf Stahr"@en ;
     schema1:description "previous Owner"@en ;
@@ -18519,6 +18676,7 @@ n4o-prov:Q85 a wikibase:Item,
     n4o-prov-wdt:P53 n4o-prov:Q86 .
 
 n4o-prov:Q88 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "Hans von Aulock"@en ;
     schema1:description "previous Owner"@en ;
@@ -18552,10 +18710,12 @@ n4o-prov:Q88 a wikibase:Item,
     n4o-prov-wdt:P43 "Deutscher Bankier, Numismatiker und Münzsammler" ;
     n4o-prov-wdt:P53 [ ] .
 
-n4o-prov:Q9 a wikibase:Item ;
+n4o-prov:Q9 a wikibase:Item,
+        n4o-prov:Q12 ;
     rdfs:label "GND"@en ;
     schema1:description "Gemeinsame Normdatei"@en ;
     schema1:name "GND"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "GND"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
@@ -18564,7 +18724,8 @@ n4o-prov:Q9 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q12 .
 
-n4o-prov:Q91 a wikibase:Item ;
+n4o-prov:Q91 a wikibase:Item,
+        n4o-prov:Q77 ;
     rdfs:label "Working Place"@en ;
     schema1:description "place type"@en ;
     schema1:name "Working Place"@en ;
@@ -18831,7 +18992,8 @@ squirrelbase:Q1 a wikibase:Item ;
     skos:prefLabel "Entity"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> .
 
-squirrelbase:Q10 a wikibase:Item ;
+squirrelbase:Q10 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Der \"Große Sitzende\" (Dom Würzburg)"@de,
         "Der \"Große Sitzende\" (Dom Würzburg)"@en ;
     schema1:description "object"@de,
@@ -18848,7 +19010,8 @@ squirrelbase:Q10 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/9893293767" ;
     squirrelbase-wdt:P8 "Point(9.9318653 49.7936363)"^^geo:wktLiteral .
 
-squirrelbase:Q11 a wikibase:Item ;
+squirrelbase:Q11 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Gedenkstein von Kurfürst Karl (Schloss Heidelberg)"@de,
         "Gedenkstein von Kurfürst Karl (Schloss Heidelberg)"@en ;
     schema1:description "object"@de,
@@ -18867,7 +19030,8 @@ squirrelbase:Q11 a wikibase:Item ;
     squirrelbase-wdt:P7 "way/254154168" ;
     squirrelbase-wdt:P8 "Point(8.714044 49.410568)"^^geo:wktLiteral .
 
-squirrelbase:Q12 a wikibase:Item ;
+squirrelbase:Q12 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Vater Rhein (Schloss Heidelberg)"@de,
         "Vater Rhein (Schloss Heidelberg)"@en ;
     schema1:description "object"@de,
@@ -18886,7 +19050,8 @@ squirrelbase:Q12 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/1899287777" ;
     squirrelbase-wdt:P8 "Point(8.7191369 49.4102478)"^^geo:wktLiteral .
 
-squirrelbase:Q13 a wikibase:Item ;
+squirrelbase:Q13 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Domnapf (Speyer)"@de,
         "Domnapf (Speyer)"@en ;
     schema1:description "object"@de,
@@ -18905,7 +19070,8 @@ squirrelbase:Q13 a wikibase:Item ;
     squirrelbase-wdt:P7 "way/150902024" ;
     squirrelbase-wdt:P8 "Point(8.441199 49.317267)"^^geo:wktLiteral .
 
-squirrelbase:Q14 a wikibase:Item ;
+squirrelbase:Q14 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Geißbockbrunnen (Deidesheim)"@de,
         "Geißbockbrunnen (Deidesheim)"@en ;
     schema1:description "object"@de,
@@ -18924,7 +19090,8 @@ squirrelbase:Q14 a wikibase:Item ;
     squirrelbase-wdt:P7 "way/1314789890" ;
     squirrelbase-wdt:P8 "Point(8.190597 49.407556)"^^geo:wktLiteral .
 
-squirrelbase:Q15 a wikibase:Item ;
+squirrelbase:Q15 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Köln Hohenzollernbrücke (Schlösser)"@de,
         "Köln Hohenzollernbrücke (Schlösser)"@en ;
     schema1:description "object"@de,
@@ -18943,7 +19110,8 @@ squirrelbase:Q15 a wikibase:Item ;
     squirrelbase-wdt:P7 "way/268130024" ;
     squirrelbase-wdt:P8 "Point(6.965944 50.941421)"^^geo:wktLiteral .
 
-squirrelbase:Q16 a wikibase:Item ;
+squirrelbase:Q16 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Statua del Mendicante di Anterselva"@de,
         "Statua del Mendicante di Anterselva"@en ;
     schema1:description "object"@de,
@@ -18962,7 +19130,8 @@ squirrelbase:Q16 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/12549447475" ;
     squirrelbase-wdt:P8 "Point(12.1679203 46.8825371)"^^geo:wktLiteral .
 
-squirrelbase:Q18 a wikibase:Item ;
+squirrelbase:Q18 a wikibase:Item,
+        squirrelbase:Q17 ;
     rdfs:label "Schneemann in St. Magdalena (Gsies)"@de,
         "Schneemann in St. Magdalena (Gsies)"@en ;
     schema1:description "temporal object"@de,
@@ -18978,7 +19147,8 @@ squirrelbase:Q18 a wikibase:Item ;
     squirrelbase-wdt:P4 <https://www.kiriengine.app/share/ShareModel?code=G7ZGI4&serialize=f784a11993b745669f5d73685c7685f8> ;
     squirrelbase-wdt:P8 "Point(12.248093 46.852304)"^^geo:wktLiteral .
 
-squirrelbase:Q19 a wikibase:Item ;
+squirrelbase:Q19 a wikibase:Item,
+        squirrelbase:Q17 ;
     rdfs:label "Schneemann am Dreizinnenblick"@de,
         "Schneemann am Dreizinnenblick"@en ;
     schema1:description "temporal object"@de,
@@ -18995,7 +19165,8 @@ squirrelbase:Q19 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/279714434" ;
     squirrelbase-wdt:P8 "Point(12.2343376 46.6381439)"^^geo:wktLiteral .
 
-squirrelbase:Q20 a wikibase:Item ;
+squirrelbase:Q20 a wikibase:Item,
+        squirrelbase:Q17 ;
     rdfs:label "Eismännchen auf dem Pragser Wildsee"@de,
         "Eismännchen auf dem Pragser Wildsee"@en ;
     schema1:description "temporal object"@de,
@@ -19014,7 +19185,8 @@ squirrelbase:Q20 a wikibase:Item ;
     squirrelbase-wdt:P7 "relation/14517899" ;
     squirrelbase-wdt:P8 "Point(12.0838144 46.6966976)"^^geo:wktLiteral .
 
-squirrelbase:Q21 a wikibase:Item ;
+squirrelbase:Q21 a wikibase:Item,
+        squirrelbase:Q17 ;
     rdfs:label "Eismännchen auf Stein auf dem Pragser Wildsee"@de,
         "Eismännchen auf Stein auf dem Pragser Wildsee"@en ;
     schema1:description "temporal object"@de,
@@ -19033,7 +19205,8 @@ squirrelbase:Q21 a wikibase:Item ;
     squirrelbase-wdt:P7 "relation/14517899" ;
     squirrelbase-wdt:P8 "Point(12.083814388889 46.696697611111)"^^geo:wktLiteral .
 
-squirrelbase:Q22 a wikibase:Item ;
+squirrelbase:Q22 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Milestone Maudlin Street (Kilkenny)"@de,
         "Milestone Maudlin Street (Kilkenny)"@en ;
     schema1:description "object"@de,
@@ -19050,7 +19223,8 @@ squirrelbase:Q22 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/8912202795" ;
     squirrelbase-wdt:P8 "Point(-7.2442662 52.6525592)"^^geo:wktLiteral .
 
-squirrelbase:Q23 a wikibase:Item ;
+squirrelbase:Q23 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "CIIC 153"@en ;
     schema1:description "object"@en ;
     schema1:name "CIIC 153"@en ;
@@ -19065,7 +19239,8 @@ squirrelbase:Q23 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/11677109638" ;
     squirrelbase-wdt:P8 "Point(-9.6430769 52.2758257)"^^geo:wktLiteral .
 
-squirrelbase:Q24 a wikibase:Item ;
+squirrelbase:Q24 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "GEARS/1"@en ;
     schema1:description "object"@en ;
     schema1:name "GEARS/1"@en ;
@@ -19087,7 +19262,8 @@ squirrelbase:Q24 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(-8.4943143888889 51.896088111111)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18369865> .
 
-squirrelbase:Q25 a wikibase:Item ;
+squirrelbase:Q25 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "CHUIS/1"@en ;
     schema1:description "object"@en ;
     schema1:name "CHUIS/1"@en ;
@@ -19110,7 +19286,8 @@ squirrelbase:Q25 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(-8.4943143888889 51.896088111111)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18369720> .
 
-squirrelbase:Q27 a wikibase:Item ;
+squirrelbase:Q27 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "St. Lachtain's Well"@en ;
     schema1:description "object"@en ;
     schema1:name "St. Lachtain's Well"@en ;
@@ -19129,7 +19306,8 @@ squirrelbase:Q27 a wikibase:Item ;
     squirrelbase-wdt:P7 "way/935503837" ;
     squirrelbase-wdt:P8 "Point(-7.38951 52.731596)"^^geo:wktLiteral .
 
-squirrelbase:Q28 a wikibase:Item ;
+squirrelbase:Q28 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "St. Nicholas's Well (Killamery)"@en ;
     schema1:description "object"@en ;
     schema1:name "St. Nicholas's Well (Killamery)"@en ;
@@ -19138,7 +19316,8 @@ squirrelbase:Q28 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q2 ;
     squirrelbase-wdt:P1 squirrelbase:Q2 .
 
-squirrelbase:Q29 a wikibase:Item ;
+squirrelbase:Q29 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Saint Molin's Well (Mullennakill)"@en ;
     schema1:description "object"@en ;
     schema1:name "Saint Molin's Well (Mullennakill)"@en ;
@@ -19147,7 +19326,8 @@ squirrelbase:Q29 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q2 ;
     squirrelbase-wdt:P1 squirrelbase:Q2 .
 
-squirrelbase:Q30 a wikibase:Item ;
+squirrelbase:Q30 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Letztes Abendmahl mit Judas Iskariot"@de,
         "Letztes Abendmahl mit Judas Iskariot"@en ;
     schema1:description "object"@de,
@@ -19160,7 +19340,8 @@ squirrelbase:Q30 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q2 ;
     squirrelbase-wdt:P1 squirrelbase:Q2 .
 
-squirrelbase:Q33 a wikibase:Item ;
+squirrelbase:Q33 a wikibase:Item,
+        squirrelbase:Q32 ;
     rdfs:label "skos:exactMatch"@en ;
     schema1:name "skos:exactMatch"@en ;
     skos:prefLabel "skos:exactMatch"@en ;
@@ -19168,7 +19349,8 @@ squirrelbase:Q33 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q32 ;
     squirrelbase-wdt:P1 squirrelbase:Q32 .
 
-squirrelbase:Q34 a wikibase:Item ;
+squirrelbase:Q34 a wikibase:Item,
+        squirrelbase:Q32 ;
     rdfs:label "skos:closeMatch"@en ;
     schema1:name "skos:closeMatch"@en ;
     skos:prefLabel "skos:closeMatch"@en ;
@@ -19176,7 +19358,8 @@ squirrelbase:Q34 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q32 ;
     squirrelbase-wdt:P1 squirrelbase:Q32 .
 
-squirrelbase:Q35 a wikibase:Item ;
+squirrelbase:Q35 a wikibase:Item,
+        squirrelbase:Q32 ;
     rdfs:label "skos:relatedMatch"@en ;
     schema1:name "skos:relatedMatch"@en ;
     skos:prefLabel "skos:relatedMatch"@en ;
@@ -19184,7 +19367,8 @@ squirrelbase:Q35 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q32 ;
     squirrelbase-wdt:P1 squirrelbase:Q32 .
 
-squirrelbase:Q37 a wikibase:Item ;
+squirrelbase:Q37 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "7 Star"@en ;
     schema1:name "7 Star"@en ;
     skos:prefLabel "7 Star"@en ;
@@ -19192,7 +19376,8 @@ squirrelbase:Q37 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q38 a wikibase:Item ;
+squirrelbase:Q38 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "6 Star"@en ;
     schema1:name "6 Star"@en ;
     skos:prefLabel "6 Star"@en ;
@@ -19200,7 +19385,8 @@ squirrelbase:Q38 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q39 a wikibase:Item ;
+squirrelbase:Q39 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "5 Star"@en ;
     schema1:name "5 Star"@en ;
     skos:prefLabel "5 Star"@en ;
@@ -19208,7 +19394,8 @@ squirrelbase:Q39 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q4 a wikibase:Item ;
+squirrelbase:Q4 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Asymmetrische Vase (Berlin Ku’damm)"@de,
         "Asymmetrische Vase (Berlin Ku’damm)"@en ;
     schema1:description "object"@de,
@@ -19227,7 +19414,8 @@ squirrelbase:Q4 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/2554278342" ;
     squirrelbase-wdt:P8 "Point(13.3249878 52.5026745)"^^geo:wktLiteral .
 
-squirrelbase:Q40 a wikibase:Item ;
+squirrelbase:Q40 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "4 Star"@en ;
     schema1:name "4 Star"@en ;
     skos:prefLabel "4 Star"@en ;
@@ -19235,7 +19423,8 @@ squirrelbase:Q40 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q41 a wikibase:Item ;
+squirrelbase:Q41 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "3 Star"@en ;
     schema1:name "3 Star"@en ;
     skos:prefLabel "3 Star"@en ;
@@ -19243,7 +19432,8 @@ squirrelbase:Q41 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q42 a wikibase:Item ;
+squirrelbase:Q42 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "2 Star"@en ;
     schema1:name "2 Star"@en ;
     skos:prefLabel "2 Star"@en ;
@@ -19251,7 +19441,8 @@ squirrelbase:Q42 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q43 a wikibase:Item ;
+squirrelbase:Q43 a wikibase:Item,
+        squirrelbase:Q36 ;
     rdfs:label "1 Star"@en ;
     schema1:name "1 Star"@en ;
     skos:prefLabel "1 Star"@en ;
@@ -19259,7 +19450,8 @@ squirrelbase:Q43 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q36 ;
     squirrelbase-wdt:P1 squirrelbase:Q36 .
 
-squirrelbase:Q45 a wikibase:Item ;
+squirrelbase:Q45 a wikibase:Item,
+        squirrelbase:Q44 ;
     rdfs:label "Structure from Motion (SfM)"@en ;
     schema1:name "Structure from Motion (SfM)"@en ;
     skos:prefLabel "Structure from Motion (SfM)"@en ;
@@ -19267,7 +19459,8 @@ squirrelbase:Q45 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q44 ;
     squirrelbase-wdt:P1 squirrelbase:Q44 .
 
-squirrelbase:Q46 a wikibase:Item ;
+squirrelbase:Q46 a wikibase:Item,
+        squirrelbase:Q44 ;
     rdfs:label "Laser Scan"@en ;
     schema1:name "Laser Scan"@en ;
     skos:prefLabel "Laser Scan"@en ;
@@ -19275,7 +19468,8 @@ squirrelbase:Q46 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q44 ;
     squirrelbase-wdt:P1 squirrelbase:Q44 .
 
-squirrelbase:Q47 a wikibase:Item ;
+squirrelbase:Q47 a wikibase:Item,
+        squirrelbase:Q44 ;
     rdfs:label "Photogrammetry Scan"@en ;
     schema1:name "Photogrammetry Scan"@en ;
     skos:prefLabel "Photogrammetry Scan"@en ;
@@ -19283,7 +19477,8 @@ squirrelbase:Q47 a wikibase:Item ;
     bbr:instanceOf squirrelbase:Q44 ;
     squirrelbase-wdt:P1 squirrelbase:Q44 .
 
-squirrelbase:Q48 a wikibase:Item ;
+squirrelbase:Q48 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "CIIC 81 / UCC 4 / CO074-148----"@en ;
     schema1:name "CIIC 81 / UCC 4 / CO074-148----"@en ;
     skos:prefLabel "CIIC 81 / UCC 4 / CO074-148----"@en ;
@@ -19303,7 +19498,8 @@ squirrelbase:Q48 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(-8.4924208 51.893715)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18724635> .
 
-squirrelbase:Q49 a wikibase:Item ;
+squirrelbase:Q49 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Cill Maoilchéadair | Kilmalkedar (I-KER-055)"@en ;
     schema1:name "Cill Maoilchéadair | Kilmalkedar (I-KER-055)"@en ;
     skos:altLabel "CIIC 187"@en ;
@@ -19321,7 +19517,8 @@ squirrelbase:Q49 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/9110402648" ;
     squirrelbase-wdt:P8 "Point(-10.3364628 52.1847478)"^^geo:wktLiteral .
 
-squirrelbase:Q5 a wikibase:Item ;
+squirrelbase:Q5 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Adlerstein in Vaals (Niederlande)"@de,
         "Adlerstein in Vaals (Niederlande)"@en ;
     schema1:description "object"@de,
@@ -19342,7 +19539,8 @@ squirrelbase:Q5 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/1128569466" ;
     squirrelbase-wdt:P8 "Point(6.0187331 50.7617299)"^^geo:wktLiteral .
 
-squirrelbase:Q50 a wikibase:Item ;
+squirrelbase:Q50 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Páirc an Mhóinéir | Parkavonear 1 (I-KER-112)"@en ;
     schema1:name "Páirc an Mhóinéir | Parkavonear 1 (I-KER-112)"@en ;
     skos:altLabel "CIIC 242"@en ;
@@ -19360,7 +19558,8 @@ squirrelbase:Q50 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/10040757680" ;
     squirrelbase-wdt:P8 "Point(-9.5543233 52.0767683)"^^geo:wktLiteral .
 
-squirrelbase:Q51 a wikibase:Item ;
+squirrelbase:Q51 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Govan Stone 02 (Hogback)"@en ;
     schema1:name "Govan Stone 02 (Hogback)"@en ;
     skos:prefLabel "Govan Stone 02 (Hogback)"@en ;
@@ -19382,7 +19581,8 @@ squirrelbase:Q51 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/12920194973" ;
     squirrelbase-wdt:P8 "Point(-4.3129711 55.864547)"^^geo:wktLiteral .
 
-squirrelbase:Q52 a wikibase:Item ;
+squirrelbase:Q52 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Berlin: “Charlotten-Bär” von Nana Topchishvili"@en ;
     schema1:name "Berlin: “Charlotten-Bär” von Nana Topchishvili"@en ;
     skos:prefLabel "Berlin: “Charlotten-Bär” von Nana Topchishvili"@en ;
@@ -19401,7 +19601,8 @@ squirrelbase:Q52 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(13.3079973 52.5169774)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18742669> .
 
-squirrelbase:Q53 a wikibase:Item ;
+squirrelbase:Q53 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Berlin: Briefkasten in der Mommsenstraße"@en ;
     schema1:name "Berlin: Briefkasten in der Mommsenstraße"@en ;
     skos:prefLabel "Berlin: Briefkasten in der Mommsenstraße"@en ;
@@ -19410,7 +19611,8 @@ squirrelbase:Q53 a wikibase:Item ;
     squirrelbase-wdt:P1 squirrelbase:Q2 ;
     squirrelbase-wdt:P7 "node/693892087" .
 
-squirrelbase:Q54 a wikibase:Item ;
+squirrelbase:Q54 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Köln: Kastell Divitia Deutz “Taktiles Modell”"@en ;
     schema1:name "Köln: Kastell Divitia Deutz “Taktiles Modell”"@en ;
     skos:prefLabel "Köln: Kastell Divitia Deutz “Taktiles Modell”"@en ;
@@ -19419,7 +19621,8 @@ squirrelbase:Q54 a wikibase:Item ;
     squirrelbase-wdt:P1 squirrelbase:Q2 ;
     squirrelbase-wdt:P7 "node/7985514230" .
 
-squirrelbase:Q55 a wikibase:Item ;
+squirrelbase:Q55 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Köln: Kunstwerk “Heinz Eau”"@en ;
     schema1:name "Köln: Kunstwerk “Heinz Eau”"@en ;
     skos:prefLabel "Köln: Kunstwerk “Heinz Eau”"@en ;
@@ -19440,7 +19643,8 @@ squirrelbase:Q55 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(6.9522895 50.9383972)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18740523> .
 
-squirrelbase:Q56 a wikibase:Item ;
+squirrelbase:Q56 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Kassel: Beuys-Stele B 1036 “7000 Eichen”"@en ;
     schema1:name "Kassel: Beuys-Stele B 1036 “7000 Eichen”"@en ;
     skos:prefLabel "Kassel: Beuys-Stele B 1036 “7000 Eichen”"@en ;
@@ -19461,7 +19665,8 @@ squirrelbase:Q56 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(9.4982136 51.3131242)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18742693> .
 
-squirrelbase:Q57 a wikibase:Item ;
+squirrelbase:Q57 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Kassel: Dackelgrab zum Andenken an “Erdmann”"@en ;
     schema1:name "Kassel: Dackelgrab zum Andenken an “Erdmann”"@en ;
     skos:prefLabel "Kassel: Dackelgrab zum Andenken an “Erdmann”"@en ;
@@ -19474,7 +19679,8 @@ squirrelbase:Q57 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/5336980702" ;
     squirrelbase-wdt:P8 "Point(9.4163989 51.3133479)"^^geo:wktLiteral .
 
-squirrelbase:Q58 a wikibase:Item ;
+squirrelbase:Q58 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Strudelkopfsattel: Kriegerdenkmal WW I"@en ;
     schema1:name "Strudelkopfsattel: Kriegerdenkmal WW I"@en ;
     skos:prefLabel "Strudelkopfsattel: Kriegerdenkmal WW I"@en ;
@@ -19483,7 +19689,8 @@ squirrelbase:Q58 a wikibase:Item ;
     squirrelbase-wdt:P1 squirrelbase:Q2 ;
     squirrelbase-wdt:P7 "node/1362002708" .
 
-squirrelbase:Q59 a wikibase:Item ;
+squirrelbase:Q59 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Graz: “Das Erforschen der Dauer” von Manfred Erjautz"@en ;
     schema1:name "Graz: “Das Erforschen der Dauer” von Manfred Erjautz"@en ;
     skos:prefLabel "Graz: “Das Erforschen der Dauer” von Manfred Erjautz"@en ;
@@ -19496,7 +19703,8 @@ squirrelbase:Q59 a wikibase:Item ;
     squirrelbase-wdt:P7 "node/4237317721" ;
     squirrelbase-wdt:P8 "Point(15.4412347 47.0718475)"^^geo:wktLiteral .
 
-squirrelbase:Q6 a wikibase:Item ;
+squirrelbase:Q6 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Rom Capitol Kopf Konstantin"@de,
         "Rom Capitol Kopf Konstantin"@en ;
     schema1:description "object"@de,
@@ -19516,7 +19724,8 @@ squirrelbase:Q6 a wikibase:Item ;
     squirrelbase-wdt:P7 "relation/9909127" ;
     squirrelbase-wdt:P8 "Point(12.482534 41.892906)"^^geo:wktLiteral .
 
-squirrelbase:Q60 a wikibase:Item ;
+squirrelbase:Q60 a wikibase:Item,
+        squirrelbase:Q17 ;
     rdfs:label "Antholzer See: “Steinmännchen”"@en ;
     schema1:name "Antholzer See: “Steinmännchen”"@en ;
     skos:prefLabel "Antholzer See: “Steinmännchen”"@en ;
@@ -19536,7 +19745,8 @@ squirrelbase:Q60 a wikibase:Item ;
     squirrelbase-wdt:P8 "Point(12.16988 46.888362)"^^geo:wktLiteral ;
     squirrelbase-wdt:P9 <https://doi.org/10.5281/zenodo.18732892> .
 
-squirrelbase:Q7 a wikibase:Item ;
+squirrelbase:Q7 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Rom Capitol Hand Konstantin"@en ;
     schema1:description "object"@en ;
     schema1:name "Rom Capitol Hand Konstantin"@en ;
@@ -19552,7 +19762,8 @@ squirrelbase:Q7 a wikibase:Item ;
     squirrelbase-wdt:P7 "relation/9909127" ;
     squirrelbase-wdt:P8 "Point(12.482533888889 41.892906111111)"^^geo:wktLiteral .
 
-squirrelbase:Q8 a wikibase:Item ;
+squirrelbase:Q8 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Rom Capitol Fuß Konstantin"@de,
         "Rom Capitol Fuß Konstantin"@en ;
     schema1:description "object"@de,
@@ -19572,7 +19783,8 @@ squirrelbase:Q8 a wikibase:Item ;
     squirrelbase-wdt:P7 "relation/9909127" ;
     squirrelbase-wdt:P8 "Point(12.482533888889 41.892906111111)"^^geo:wktLiteral .
 
-squirrelbase:Q9 a wikibase:Item ;
+squirrelbase:Q9 a wikibase:Item,
+        squirrelbase:Q2 ;
     rdfs:label "Berliner Siegessäule (Mosaik)"@de,
         "Berliner Siegessäule (Mosaik)"@en ;
     schema1:description "object"@de,
@@ -21974,7 +22186,8 @@ chublets:Q935 a wikibase:Item ;
     dct:title "fuzzy-sl (static copy)" ;
     dcat:landingPage <https://n4o-rse.github.io/wb-fuzzysl-static/> .
 
-fuzzy-sl:Q102 a wikibase:Item ;
+fuzzy-sl:Q102 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "London (Londinium) / Shadwell"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "London (Londinium) / Shadwell"@en ;
@@ -21988,7 +22201,8 @@ fuzzy-sl:Q102 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-0.05843 51.508987)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P9 fuzzy-sl:Q94 .
 
-fuzzy-sl:Q103 a wikibase:Item ;
+fuzzy-sl:Q103 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "London (Londinium) / Shadwell (Docks)"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "London (Londinium) / Shadwell (Docks)"@en ;
@@ -22002,7 +22216,8 @@ fuzzy-sl:Q103 a wikibase:Item ;
     fuzzy-sl-wdt:P3 fuzzy-sl:Q94 ;
     fuzzy-sl-wdt:P4 "Point(-0.0595 51.5075)"^^geo:wktLiteral .
 
-fuzzy-sl:Q105 a wikibase:Item ;
+fuzzy-sl:Q105 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Colchester (Camulodunum)"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Colchester (Camulodunum)"@en ;
@@ -22016,7 +22231,8 @@ fuzzy-sl:Q105 a wikibase:Item ;
     fuzzy-sl-wdt:P30 fuzzy-sl:Q96 ;
     fuzzy-sl-wdt:P4 "Point(0.899999 51.883338)"^^geo:wktLiteral .
 
-fuzzy-sl:Q106 a wikibase:Item ;
+fuzzy-sl:Q106 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Chesterholm-Vindolanda"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Chesterholm-Vindolanda"@en ;
@@ -22030,7 +22246,8 @@ fuzzy-sl:Q106 a wikibase:Item ;
     fuzzy-sl-wdt:P30 fuzzy-sl:Q97 ;
     fuzzy-sl-wdt:P4 "Point(-2.359504 54.991588)"^^geo:wktLiteral .
 
-fuzzy-sl:Q108 a wikibase:Item ;
+fuzzy-sl:Q108 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Southwark / London Bridge"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Southwark / London Bridge"@en ;
@@ -22044,7 +22261,8 @@ fuzzy-sl:Q108 a wikibase:Item ;
     fuzzy-sl-wdt:P3 fuzzy-sl:Q94 ;
     fuzzy-sl-wdt:P4 "Point(-0.08773 51.507948)"^^geo:wktLiteral .
 
-fuzzy-sl:Q109 a wikibase:Item ;
+fuzzy-sl:Q109 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Southwark / Southwark Bridge"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Southwark / Southwark Bridge"@en ;
@@ -22059,7 +22277,8 @@ fuzzy-sl:Q109 a wikibase:Item ;
     fuzzy-sl-wdt:P3 fuzzy-sl:Q94 ;
     fuzzy-sl-wdt:P4 "Point(-0.094135 51.508796)"^^geo:wktLiteral .
 
-fuzzy-sl:Q123 a wikibase:Item ;
+fuzzy-sl:Q123 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Canal"@en ;
     schema1:description "Spatial Type"@en ;
     schema1:name "Canal"@en ;
@@ -22068,7 +22287,8 @@ fuzzy-sl:Q123 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q124 a wikibase:Item ;
+fuzzy-sl:Q124 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Spatial Region (without administrative borders)"@en ;
     schema1:description "Spatial Type"@en ;
     schema1:name "Spatial Region (without administrative borders)"@en ;
@@ -22077,7 +22297,8 @@ fuzzy-sl:Q124 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q135 a wikibase:Item ;
+fuzzy-sl:Q135 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Lake / Sea"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Lake / Sea"@en ;
@@ -22086,7 +22307,8 @@ fuzzy-sl:Q135 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q143 a wikibase:Item ;
+fuzzy-sl:Q143 a wikibase:Item,
+        fuzzy-sl:Q91 ;
     rdfs:label "Provenance"@en ;
     schema1:description "spatial category"@en ;
     schema1:name "Provenance"@en ;
@@ -22095,7 +22317,8 @@ fuzzy-sl:Q143 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q91 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q91 .
 
-fuzzy-sl:Q33 a wikibase:Item ;
+fuzzy-sl:Q33 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "River"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "River"@en ;
@@ -22104,7 +22327,8 @@ fuzzy-sl:Q33 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q38 a wikibase:Item ;
+fuzzy-sl:Q38 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Representative Point"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Representative Point"@en ;
@@ -22113,7 +22337,8 @@ fuzzy-sl:Q38 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q39 a wikibase:Item ;
+fuzzy-sl:Q39 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Ancient Location"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Ancient Location"@en ;
@@ -22133,7 +22358,8 @@ fuzzy-sl:Q82 a wikibase:Item ;
         "Quarry"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
-fuzzy-sl:Q86 a wikibase:Item ;
+fuzzy-sl:Q86 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Supervolcano"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Supervolcano"@en ;
@@ -22142,7 +22368,8 @@ fuzzy-sl:Q86 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q95 a wikibase:Item ;
+fuzzy-sl:Q95 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "London (Londinium) / No. 1 Poultry"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "London (Londinium) / No. 1 Poultry"@en ;
@@ -22162,7 +22389,8 @@ fuzzy-sl:Q95 a wikibase:Item ;
     fuzzy-sl-wdt:P4 "Point(-0.090556 51.513363)"^^geo:wktLiteral ;
     fuzzy-sl-wdt:P8 fuzzy-sl:Q32 .
 
-fuzzy-sl:Q96 a wikibase:Item ;
+fuzzy-sl:Q96 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Colchester (Camulodunum) / Culver Street"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Colchester (Camulodunum) / Culver Street"@en ;
@@ -22176,7 +22404,8 @@ fuzzy-sl:Q96 a wikibase:Item ;
     fuzzy-sl-wdt:P3 fuzzy-sl:Q94 ;
     fuzzy-sl-wdt:P4 "Point(0.898514 51.888722)"^^geo:wktLiteral .
 
-fuzzy-sl:Q97 a wikibase:Item ;
+fuzzy-sl:Q97 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Chesterholm-Vindolanda / vicus"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Chesterholm-Vindolanda / vicus"@en ;
@@ -22244,7 +22473,8 @@ n4o-prov:P9 a wikibase:Property ;
     skos:prefLabel "narrow match"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
-n4o-prov:Q100 a wikibase:Item ;
+n4o-prov:Q100 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Nikaia 62-58 v. Chr. (GU Frankfurt)"@en ;
     schema1:description "object"@en ;
     schema1:name "Nikaia 62-58 v. Chr. (GU Frankfurt)"@en ;
@@ -22259,7 +22489,8 @@ n4o-prov:Q100 a wikibase:Item ;
         "ID972" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q101 a wikibase:Item ;
+n4o-prov:Q101 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Pontos: Mithradates VI. 75/74 v. Chr. (Düsseldorf)"@en ;
     schema1:description "object"@en ;
     schema1:name "Pontos: Mithradates VI. 75/74 v. Chr. (Düsseldorf)"@en ;
@@ -22274,7 +22505,8 @@ n4o-prov:Q101 a wikibase:Item ;
         "Ls3539.26.01" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q102 a wikibase:Item ;
+n4o-prov:Q102 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "coin 1979,0101.218 (British Museum)"@en ;
     schema1:description "object"@en ;
     schema1:name "coin 1979,0101.218 (British Museum)"@en ;
@@ -22288,7 +22520,8 @@ n4o-prov:Q102 a wikibase:Item ;
         "SNG (SNG von Aulock) (1867)(1867)" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q103 a wikibase:Item ;
+n4o-prov:Q103 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "coin 1979,0101.351 (British Museum)"@en ;
     schema1:description "object"@en ;
     schema1:name "coin 1979,0101.351 (British Museum)"@en ;
@@ -22302,7 +22535,8 @@ n4o-prov:Q103 a wikibase:Item ;
         "SNG (SNG von Aulock) (7763)(7763)" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q104 a wikibase:Item ;
+n4o-prov:Q104 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Finnland: 1912 1912"@en ;
     schema1:description "object"@en ;
     schema1:name "Finnland: 1912 1912"@en ;
@@ -22316,7 +22550,8 @@ n4o-prov:Q104 a wikibase:Item ;
     n4o-prov-wdt:P45 "18222033" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q105 a wikibase:Item ;
+n4o-prov:Q105 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Russland: Katharina II. 1767"@en ;
     schema1:description "object"@en ;
     schema1:name "Russland: Katharina II. 1767"@en ;
@@ -22330,7 +22565,8 @@ n4o-prov:Q105 a wikibase:Item ;
     n4o-prov-wdt:P45 "18207067" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q107 a wikibase:Item ;
+n4o-prov:Q107 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "König, Johann (1586-1642), Landschaft mit Waldweiher, um 1620 (Gm 1405)"@en ;
     schema1:description "object"@en ;
     schema1:name "König, Johann (1586-1642), Landschaft mit Waldweiher, um 1620 (Gm 1405)"@en ;
@@ -22344,7 +22580,8 @@ n4o-prov:Q107 a wikibase:Item ;
     n4o-prov-wdt:P45 "Gm1405" ;
     n4o-prov-wdt:P46 n4o-prov:Q108 .
 
-n4o-prov:Q110 a wikibase:Item ;
+n4o-prov:Q110 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Brand, Johann Christian (1722-1795), Die Furt, 1769 (Gm 1413)"@en ;
     schema1:description "object"@en ;
     schema1:name "Brand, Johann Christian (1722-1795), Die Furt, 1769 (Gm 1413)"@en ;
@@ -22358,7 +22595,8 @@ n4o-prov:Q110 a wikibase:Item ;
     n4o-prov-wdt:P45 "Gm1413" ;
     n4o-prov-wdt:P46 n4o-prov:Q108 .
 
-n4o-prov:Q117 a wikibase:Item ;
+n4o-prov:Q117 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Den Haag"@en ;
     schema1:description "location"@en ;
     schema1:name "Den Haag"@en ;
@@ -22368,7 +22606,8 @@ n4o-prov:Q117 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q36600> .
 
-n4o-prov:Q118 a wikibase:Item ;
+n4o-prov:Q118 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "München"@en ;
     schema1:description "location"@en ;
     schema1:name "München"@en ;
@@ -22378,7 +22617,9 @@ n4o-prov:Q118 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q1726> .
 
-n4o-prov:Q120 a wikibase:Item ;
+n4o-prov:Q120 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Heinrich Böcking"@de,
         "Heinrich Böcking"@en ;
     schema1:description "Oberbergrat"@de,
@@ -22418,7 +22659,8 @@ n4o-prov:Q120 a wikibase:Item ;
     n4o-prov-wdt:P32 n4o-prov:Q125 ;
     n4o-prov-wdt:P43 "Oberbürgermeister von Saarbrücken" .
 
-n4o-prov:Q123 a wikibase:Item ;
+n4o-prov:Q123 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Lanschaft"@de,
         "landscape"@en ;
     schema1:description "object, Gemälde"@de,
@@ -22433,7 +22675,8 @@ n4o-prov:Q123 a wikibase:Item ;
     n4o-prov-wdt:P34 n4o-prov:Q121 ;
     n4o-prov-wdt:P46 n4o-prov:Q108 .
 
-n4o-prov:Q124 a wikibase:Item ;
+n4o-prov:Q124 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Drancy"@de,
         "Drancy (auto)"@en ;
     schema1:description "location (Sammellager)"@de ;
@@ -22443,7 +22686,8 @@ n4o-prov:Q124 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q54 ;
     n4o-prov-wdt:P2 n4o-prov:Q54 .
 
-n4o-prov:Q125 a wikibase:Item ;
+n4o-prov:Q125 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Plauderstunde am Brunnen"@en ;
     schema1:description "painting"@en ;
     schema1:name "Plauderstunde am Brunnen"@en ;
@@ -22500,13 +22744,15 @@ n4o-prov:Q132 a wikibase:Item ;
     skos:prefLabel "Kunsthandel Rolf Oberacker (Wiesbaden)"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
-n4o-prov:Q17 a wikibase:Item ;
+n4o-prov:Q17 a wikibase:Item,
+        n4o-prov:Q16 ;
     rdfs:label "Medailleur/in"@de,
         "Medallist"@en ;
     schema1:description "Rolle"@de,
         "Role"@en ;
     schema1:name "Medailleur/in"@de,
         "Medallist"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Medailleur/in"@de,
         "Medallist"@en ;
     bbr:classKind "model" ;
@@ -22516,7 +22762,9 @@ n4o-prov:Q17 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q16 .
 
-n4o-prov:Q27 a wikibase:Item ;
+n4o-prov:Q27 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Dr. Reinhard Heynen"@de,
         "Dr. Reinhard Heynen"@en ;
     schema1:description "Kaufmann in Düsseldorf"@de,
@@ -22557,7 +22805,9 @@ n4o-prov:Q27 a wikibase:Item ;
     n4o-prov-wdt:P32 n4o-prov:Q35,
         n4o-prov:Q36 .
 
-n4o-prov:Q28 a wikibase:Item ;
+n4o-prov:Q28 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Emmi Heynen"@de,
         "Emmi Heynen"@en ;
     schema1:description "Ehefrau und Witwe von Dr. Reinhard Heynen"@de,
@@ -22590,7 +22840,9 @@ n4o-prov:Q28 a wikibase:Item ;
     n4o-prov-wdt:P32 n4o-prov:Q35,
         n4o-prov:Q36 .
 
-n4o-prov:Q44 a wikibase:Item ;
+n4o-prov:Q44 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Benoni Friedländer"@en ;
     schema1:description "Private scholar and coin collector"@en ;
     schema1:name "Benoni Friedländer"@en ;
@@ -22613,7 +22865,9 @@ n4o-prov:Q44 a wikibase:Item ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?id=18252678> ;
     n4o-prov-wdt:P30 n4o-prov:Q45 .
 
-n4o-prov:Q45 a wikibase:Item ;
+n4o-prov:Q45 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Dr. Julius Friedländer"@en ;
     schema1:description "Founding director of the Münzkabinett Berlin as a scientifically organized collection"@en ;
     schema1:name "Dr. Julius Friedländer"@en ;
@@ -22639,7 +22893,9 @@ n4o-prov:Q45 a wikibase:Item ;
     n4o-prov-wdt:P30 n4o-prov:Q44 ;
     n4o-prov-wdt:P32 n4o-prov:Q34 .
 
-n4o-prov:Q48 a wikibase:Item ;
+n4o-prov:Q48 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Ludwig Peter Spiegelthal"@en ;
     schema1:description "Royal Prussian consul general Spiegelthal in Smyrna from 1851 to 1859"@en ;
     schema1:name "Ludwig Peter Spiegelthal"@en ;
@@ -22659,7 +22915,9 @@ n4o-prov:Q48 a wikibase:Item ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?lang=de&id=18269714> ;
     n4o-prov-wdt:P30 n4o-prov:Q49 .
 
-n4o-prov:Q49 a wikibase:Item ;
+n4o-prov:Q49 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Friedrich Wilhelm Spiegelthal"@en ;
     schema1:description "Royal Swedish consul in Smyrna"@en ;
     schema1:name "Friedrich Wilhelm Spiegelthal"@en ;
@@ -22680,7 +22938,8 @@ n4o-prov:Q49 a wikibase:Item ;
     n4o-prov-wdt:P29 <https://ikmk.smb.museum/object?lang=de&id=18270720> ;
     n4o-prov-wdt:P30 n4o-prov:Q48 .
 
-n4o-prov:Q61 a wikibase:Item ;
+n4o-prov:Q61 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "hadrianische Münze von Caesarea Cappadocia"@en ;
     schema1:description "object"@en ;
     schema1:name "hadrianische Münze von Caesarea Cappadocia"@en ;
@@ -22694,7 +22953,8 @@ n4o-prov:Q61 a wikibase:Item ;
     n4o-prov-wdt:P45 [ ] ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q68 a wikibase:Item ;
+n4o-prov:Q68 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Frühkaiserzeitlicher Sesterz mit Gegenstempel PRO und merkwürdiger Korrosion"@en ;
     schema1:description "object"@en ;
     schema1:name "Frühkaiserzeitlicher Sesterz mit Gegenstempel PRO und merkwürdiger Korrosion"@en ;
@@ -22708,7 +22968,8 @@ n4o-prov:Q68 a wikibase:Item ;
     n4o-prov-wdt:P45 [ ] ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q70 a wikibase:Item ;
+n4o-prov:Q70 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Gleiwitz"@en ;
     schema1:description "location"@en ;
     schema1:name "Gleiwitz"@en ;
@@ -22718,7 +22979,8 @@ n4o-prov:Q70 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q105084> .
 
-n4o-prov:Q71 a wikibase:Item ;
+n4o-prov:Q71 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "eine Prägemedaille"@en ;
     schema1:description "object"@en ;
     schema1:name "eine Prägemedaille"@en ;
@@ -22732,7 +22994,8 @@ n4o-prov:Q71 a wikibase:Item ;
     n4o-prov-wdt:P45 [ ] ;
     n4o-prov-wdt:P46 n4o-prov:Q72 .
 
-n4o-prov:Q72 a wikibase:Item ;
+n4o-prov:Q72 a wikibase:Item,
+        n4o-prov:Q62 ;
     rdfs:label "Medal"@en ;
     schema1:description "object type"@en ;
     schema1:name "Medal"@en ;
@@ -22741,7 +23004,8 @@ n4o-prov:Q72 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q62 ;
     n4o-prov-wdt:P2 n4o-prov:Q62 .
 
-n4o-prov:Q74 a wikibase:Item ;
+n4o-prov:Q74 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Hamburg"@en ;
     schema1:description "location"@en ;
     schema1:name "Hamburg"@en ;
@@ -22751,7 +23015,8 @@ n4o-prov:Q74 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q1055> .
 
-n4o-prov:Q75 a wikibase:Item ;
+n4o-prov:Q75 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Riga"@en ;
     schema1:description "location"@en ;
     schema1:name "Riga"@en ;
@@ -22761,7 +23026,8 @@ n4o-prov:Q75 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q1773> .
 
-n4o-prov:Q79 a wikibase:Item ;
+n4o-prov:Q79 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Probus 280 n. Chr."@en ;
     schema1:description "object"@en ;
     schema1:name "Probus 280 n. Chr."@en ;
@@ -22775,7 +23041,8 @@ n4o-prov:Q79 a wikibase:Item ;
     n4o-prov-wdt:P45 "18247837" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q80 a wikibase:Item ;
+n4o-prov:Q80 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Hamburg: Stadt 1400-1450"@en ;
     schema1:description "object"@en ;
     schema1:name "Hamburg: Stadt 1400-1450"@en ;
@@ -22789,7 +23056,8 @@ n4o-prov:Q80 a wikibase:Item ;
     n4o-prov-wdt:P45 "18206775" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q83 a wikibase:Item ;
+n4o-prov:Q83 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Pfalz bei Rhein: Ruprecht III. 1399-1402"@en ;
     schema1:description "object"@en ;
     schema1:name "Pfalz bei Rhein: Ruprecht III. 1399-1402"@en ;
@@ -22803,7 +23071,8 @@ n4o-prov:Q83 a wikibase:Item ;
     n4o-prov-wdt:P45 "18206115" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q84 a wikibase:Item ;
+n4o-prov:Q84 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Mainz: Adolf I. von Nassau 1381-1385"@en ;
     schema1:description "object"@en ;
     schema1:name "Mainz: Adolf I. von Nassau 1381-1385"@en ;
@@ -22817,7 +23086,8 @@ n4o-prov:Q84 a wikibase:Item ;
     n4o-prov-wdt:P45 "18257105" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q86 a wikibase:Item ;
+n4o-prov:Q86 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Zwickau"@en ;
     schema1:description "location"@en ;
     schema1:name "Zwickau"@en ;
@@ -22827,7 +23097,8 @@ n4o-prov:Q86 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q3778> .
 
-n4o-prov:Q87 a wikibase:Item ;
+n4o-prov:Q87 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Genf: Bistum ca. 1100-1150"@en ;
     schema1:description "object"@en ;
     schema1:name "Genf: Bistum ca. 1100-1150"@en ;
@@ -22842,6 +23113,7 @@ n4o-prov:Q87 a wikibase:Item ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
 n4o-prov:Q89 a wikibase:Item,
+        n4o-prov:Q6,
         <https://n4o-rse.github.io/wb-n4o-prov-static/prop/novalue/P42> ;
     rdfs:label "Dr. med. Aloys Maria Lautenschläger"@en ;
     schema1:description "previous Owner"@en ;
@@ -22871,7 +23143,8 @@ n4o-prov:Q89 a wikibase:Item,
     n4o-prov-wdt:P65 <https://db.lootedculturalassets.de/index.php/Detail/objects/224917>,
         <https://provenienz.gbv.de/Alois_Lautenschl%C3%A4ger> .
 
-n4o-prov:Q90 a wikibase:Item ;
+n4o-prov:Q90 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Aschaffenburg"@en ;
     schema1:description "location"@en ;
     schema1:name "Aschaffenburg"@en ;
@@ -22881,7 +23154,8 @@ n4o-prov:Q90 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q3942> .
 
-n4o-prov:Q92 a wikibase:Item ;
+n4o-prov:Q92 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Digitales Münzkabinett der Universität Münster"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Digitales Münzkabinett der Universität Münster"@en ;
@@ -22891,7 +23165,8 @@ n4o-prov:Q92 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q40 ;
     n4o-prov-wdt:P47 <https://archaeologie.uni-muenster.de> .
 
-n4o-prov:Q93 a wikibase:Item ;
+n4o-prov:Q93 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Archäologisches Museum der Universität Münster"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Archäologisches Museum der Universität Münster"@en ;
@@ -22900,7 +23175,8 @@ n4o-prov:Q93 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q40 ;
     n4o-prov-wdt:P2 n4o-prov:Q40 .
 
-n4o-prov:Q94 a wikibase:Item ;
+n4o-prov:Q94 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Das Digitale Münzkabinett der Goethe-Universität, Frankfurt am Main"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Das Digitale Münzkabinett der Goethe-Universität, Frankfurt am Main"@en ;
@@ -22910,7 +23186,8 @@ n4o-prov:Q94 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q40 ;
     n4o-prov-wdt:P47 <https://www.mkfrankfurt.uni-frankfurt.de/> .
 
-n4o-prov:Q95 a wikibase:Item ;
+n4o-prov:Q95 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Münzkabinett der Goethe-Universität, Frankfurt am Main"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Münzkabinett der Goethe-Universität, Frankfurt am Main"@en ;
@@ -22919,7 +23196,8 @@ n4o-prov:Q95 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q40 ;
     n4o-prov-wdt:P2 n4o-prov:Q40 .
 
-n4o-prov:Q96 a wikibase:Item ;
+n4o-prov:Q96 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Münzkabinett der Heinrich-Heine-Universität Düsseldorf"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Münzkabinett der Heinrich-Heine-Universität Düsseldorf"@en ;
@@ -22928,7 +23206,8 @@ n4o-prov:Q96 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q40 ;
     n4o-prov-wdt:P2 n4o-prov:Q40 .
 
-n4o-prov:Q98 a wikibase:Item ;
+n4o-prov:Q98 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Lykien ca. 500 v. Chr. (IKMK)"@en ;
     schema1:description "object"@en ;
     schema1:name "Lykien ca. 500 v. Chr. (IKMK)"@en ;
@@ -22942,7 +23221,8 @@ n4o-prov:Q98 a wikibase:Item ;
     n4o-prov-wdt:P45 "18312616" ;
     n4o-prov-wdt:P46 n4o-prov:Q63 .
 
-n4o-prov:Q99 a wikibase:Item ;
+n4o-prov:Q99 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Elektron ca. 560-550 v. Chr. (Münster)"@en ;
     schema1:description "object"@en ;
     schema1:name "Elektron ca. 560-550 v. Chr. (Münster)"@en ;
@@ -23383,7 +23663,8 @@ chublets:Q890 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q101 a wikibase:Item ;
+fuzzy-sl:Q101 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "London (Londinium)"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "London (Londinium)"@en ;
@@ -23399,7 +23680,8 @@ fuzzy-sl:Q101 a wikibase:Item ;
         fuzzy-sl:Q95 ;
     fuzzy-sl-wdt:P4 "Point(-0.091838888888889 51.512788888889)"^^geo:wktLiteral .
 
-fuzzy-sl:Q107 a wikibase:Item ;
+fuzzy-sl:Q107 a wikibase:Item,
+        fuzzy-sl:Q10 ;
     rdfs:label "Southwark"@en ;
     schema1:description "Samian Ware Findsport (Samian Research)"@en ;
     schema1:name "Southwark"@en ;
@@ -23414,19 +23696,8 @@ fuzzy-sl:Q107 a wikibase:Item ;
         fuzzy-sl:Q109 ;
     fuzzy-sl-wdt:P4 "Point(-0.0892 51.5)"^^geo:wktLiteral .
 
-fuzzy-sl:Q141 a wikibase:Item ;
-    rdfs:label "Provenance Site"@en ;
-    schema1:description "Site Type"@en ;
-    schema1:name "Provenance Site"@en ;
-    skos:prefLabel "Provenance Site"@en ;
-    bbr:classKind "domain" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
-    bbr:instanceOf fuzzy-sl:Q3 ;
-    bbr:subclassOf fuzzy-sl:Q79 ;
-    fuzzy-sl-wdt:P1 fuzzy-sl:Q3 ;
-    fuzzy-sl-wdt:P2 fuzzy-sl:Q79 .
-
-fuzzy-sl:Q142 a wikibase:Item ;
+fuzzy-sl:Q142 a wikibase:Item,
+        fuzzy-sl:Q5 ;
     rdfs:label "Provenance Research Sites"@en ;
     schema1:description "Project"@en ;
     schema1:name "Provenance Research Sites"@en ;
@@ -23435,22 +23706,8 @@ fuzzy-sl:Q142 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q5 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q5 .
 
-fuzzy-sl:Q147 a wikibase:Item ;
-    rdfs:label "E26 Physical Feature"@en ;
-    schema1:description "This class comprises identifiable features that are physically attached in an integral way to particular physical objects.Instances of E26 Physical Feature share many of the attributes of instances of E19 Physical Object."@en ;
-    schema1:name "E26 Physical Feature"@en ;
-    skos:altLabel "crm:E26_Physical_Feature"@en ;
-    skos:prefLabel "E26 Physical Feature"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "source" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
-    bbr:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
-    bbr:subclassOf fuzzy-sl:Q145 ;
-    fuzzy-sl-wdt:P2 fuzzy-sl:Q145 ;
-    fuzzy-sl-wdt:P37 <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> .
-
-fuzzy-sl:Q76 a wikibase:Item ;
+fuzzy-sl:Q76 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Exhebition Place"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Exhebition Place"@en ;
@@ -23459,7 +23716,8 @@ fuzzy-sl:Q76 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-n4o-prov:Q109 a wikibase:Item ;
+n4o-prov:Q109 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Gemanisches Nationalmuseum"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Gemanisches Nationalmuseum"@en ;
@@ -23475,7 +23733,9 @@ n4o-prov:Q112 a wikibase:Item ;
     skos:prefLabel "ALIU List of Red Flag Names"@en ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
-n4o-prov:Q121 a wikibase:Item ;
+n4o-prov:Q121 a wikibase:Item,
+        n4o-prov:Q1,
+        n4o-prov:Q6 ;
     rdfs:label "Hermann Helfft"@de,
         "Hermann Helfft"@en ;
     schema1:description "Rechtswissenschaftler"@de,
@@ -23501,7 +23761,8 @@ n4o-prov:Q121 a wikibase:Item ;
     n4o-prov-wdt:P57 <https://blha-recherche.brandenburg.de/detail.aspx?ID=1989030>,
         <https://www.bundesarchiv.de/gedenkbuch/de1069584> .
 
-n4o-prov:Q34 a wikibase:Item ;
+n4o-prov:Q34 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Alexandria: Aurelianus und Vaballathus 270-271 n. Chr."@de,
         "Alexandria: Aurelianus und Vaballathus 270-271 n. Chr."@en ;
     schema1:description "Interaktiver Katalog des Münzkabinetts Berlin 18257669"@de,
@@ -23516,7 +23777,8 @@ n4o-prov:Q34 a wikibase:Item ;
     n4o-prov-wdt:P33 <https://ikmk.smb.museum/object?id=18257669> ;
     n4o-prov-wdt:P34 n4o-prov:Q41 .
 
-n4o-prov:Q35 a wikibase:Item ;
+n4o-prov:Q35 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Röm. Republik: Aes grave, Urbane Libralserie 343-269 v. Chr."@de,
         "Röm. Republik: Aes grave, Urbane Libralserie 343-269 v. Chr."@en ;
     schema1:description "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf ID453"@de,
@@ -23531,7 +23793,8 @@ n4o-prov:Q35 a wikibase:Item ;
     n4o-prov-wdt:P33 <https://muenzkatalog.hhu-hosting.de/object?id=ID453> ;
     n4o-prov-wdt:P34 n4o-prov:Q39 .
 
-n4o-prov:Q36 a wikibase:Item ;
+n4o-prov:Q36 a wikibase:Item,
+        n4o-prov:Q33 ;
     rdfs:label "Röm. Republik: Aes grave, Janus-Merkur-Reihe 280-276 v. Chr."@de,
         "Röm. Republik: Aes grave, Janus-Merkur-Reihe 280-276 v. Chr."@en ;
     schema1:description "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf ID460"@de,
@@ -23546,7 +23809,8 @@ n4o-prov:Q36 a wikibase:Item ;
     n4o-prov-wdt:P33 <https://muenzkatalog.hhu-hosting.de/object?id=ID460> ;
     n4o-prov-wdt:P34 n4o-prov:Q39 .
 
-n4o-prov:Q97 a wikibase:Item ;
+n4o-prov:Q97 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "British Museum"@en ;
     schema1:description "Collection"@en ;
     schema1:name "British Museum"@en ;
@@ -23828,7 +24092,39 @@ chublets:Q725 a wikibase:Item,
     chublets-wdt:P2 chublets:Q106,
         chublets:Q3 .
 
-fuzzy-sl:Q83 a wikibase:Item ;
+fuzzy-sl:Q141 a wikibase:Item,
+        fuzzy-sl:Q3 ;
+    rdfs:label "Provenance Site"@en ;
+    schema1:description "Site Type"@en ;
+    schema1:name "Provenance Site"@en ;
+    rdfs:subClassOf fuzzy-sl:Q79 ;
+    skos:prefLabel "Provenance Site"@en ;
+    bbr:classKind "domain" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
+    bbr:instanceOf fuzzy-sl:Q3 ;
+    bbr:subclassOf fuzzy-sl:Q79 ;
+    fuzzy-sl-wdt:P1 fuzzy-sl:Q3 ;
+    fuzzy-sl-wdt:P2 fuzzy-sl:Q79 .
+
+fuzzy-sl:Q147 a wikibase:Item ;
+    rdfs:label "E26 Physical Feature"@en ;
+    schema1:description "This class comprises identifiable features that are physically attached in an integral way to particular physical objects.Instances of E26 Physical Feature share many of the attributes of instances of E19 Physical Object."@en ;
+    schema1:name "E26 Physical Feature"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature>,
+        fuzzy-sl:Q145 ;
+    skos:altLabel "crm:E26_Physical_Feature"@en ;
+    skos:prefLabel "E26 Physical Feature"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "source" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
+    bbr:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
+    bbr:subclassOf fuzzy-sl:Q145 ;
+    fuzzy-sl-wdt:P2 fuzzy-sl:Q145 ;
+    fuzzy-sl-wdt:P37 <http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature> .
+
+fuzzy-sl:Q83 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Maar"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Maar"@en ;
@@ -23837,7 +24133,8 @@ fuzzy-sl:Q83 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-n4o-prov:Q39 a wikibase:Item ;
+n4o-prov:Q39 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Das Digitale Münzkabinett der Heinrich-Heine-Universität Düsseldorf"@en ;
@@ -24019,56 +24316,15 @@ chublets:Q814 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q145 a wikibase:Item ;
-    rdfs:label "CIDOC-CRM Class"@en ;
-    schema1:description "Class of the CIDOC-CRM version: 7.1.3"@en ;
-    schema1:name "CIDOC-CRM Class"@en ;
-    skos:altLabel "crm:E1_CRM_Entity"@en ;
-    skos:prefLabel "CIDOC-CRM Class"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-fuzzy-sl:Q146 a wikibase:Item ;
-    rdfs:label "E53 Place"@en ;
-    schema1:description "This class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest."@en ;
-    schema1:name "E53 Place"@en ;
-    skos:altLabel "crm:E53_Place"@en ;
-    skos:prefLabel "E53 Place"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "source" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    bbr:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
-    bbr:subclassOf fuzzy-sl:Q145 ;
-    fuzzy-sl-wdt:P2 fuzzy-sl:Q145 ;
-    fuzzy-sl-wdt:P37 <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
-
-fuzzy-sl:Q22 a wikibase:Item ;
-    rdfs:label "Generic Class"@en ;
-    schema1:description "owl:Thing"@en ;
-    schema1:name "Generic Class"@en ;
-    skos:prefLabel "Generic Class"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-n4o-prov:Q2 a wikibase:Item ;
-    rdfs:label "Concept Scheme"@en ;
-    schema1:description "SKOS Concept Scheme"@en ;
-    schema1:name "Concept Scheme"@en ;
-    skos:altLabel "skos:ConceptScheme"@en ;
-    skos:prefLabel "Concept Scheme"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:subclassOf n4o-prov:Q5 ;
-    n4o-prov-wdt:P1 n4o-prov:Q5 .
-
-n4o-prov:Q21 a wikibase:Item ;
+n4o-prov:Q21 a wikibase:Item,
+        n4o-prov:Q16 ;
     rdfs:label "Münzhändler"@de,
         "Coin Dealer"@en ;
     schema1:description "Rolle"@de,
         "role"@en ;
     schema1:name "Münzhändler"@de,
         "Coin Dealer"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Münzhändler"@de,
         "Coin Dealer"@en ;
     bbr:classKind "model" ;
@@ -24214,7 +24470,8 @@ chublets:Q463 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q36 a wikibase:Item ;
+fuzzy-sl:Q36 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Region Centre"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Region Centre"@en ;
@@ -24223,7 +24480,8 @@ fuzzy-sl:Q36 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q37 a wikibase:Item ;
+fuzzy-sl:Q37 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Modern Region"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Modern Region"@en ;
@@ -24314,7 +24572,42 @@ chublets:Q448 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q32 a wikibase:Item ;
+fuzzy-sl:Q145 a wikibase:Item ;
+    rdfs:label "CIDOC-CRM Class"@en ;
+    schema1:description "Class of the CIDOC-CRM version: 7.1.3"@en ;
+    schema1:name "CIDOC-CRM Class"@en ;
+    skos:altLabel "crm:E1_CRM_Entity"@en ;
+    skos:prefLabel "CIDOC-CRM Class"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+fuzzy-sl:Q146 a wikibase:Item ;
+    rdfs:label "E53 Place"@en ;
+    schema1:description "This class comprises extents in the natural space where people live, in particular on the surface of the Earth, in the pure sense of physics: independent from temporal phenomena and matter. They may serve describing the physical location of things or phenomena or other areas of interest."@en ;
+    schema1:name "E53 Place"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place>,
+        fuzzy-sl:Q145 ;
+    skos:altLabel "crm:E53_Place"@en ;
+    skos:prefLabel "E53 Place"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "source" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    bbr:equivalentClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
+    bbr:subclassOf fuzzy-sl:Q145 ;
+    fuzzy-sl-wdt:P2 fuzzy-sl:Q145 ;
+    fuzzy-sl-wdt:P37 <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+
+fuzzy-sl:Q22 a wikibase:Item ;
+    rdfs:label "Generic Class"@en ;
+    schema1:description "owl:Thing"@en ;
+    schema1:name "Generic Class"@en ;
+    skos:prefLabel "Generic Class"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+fuzzy-sl:Q32 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Archaeological Site"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Archaeological Site"@en ;
@@ -24323,15 +24616,8 @@ fuzzy-sl:Q32 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q7 a wikibase:Item ;
-    rdfs:label "Method Type"@en ;
-    schema1:description "e.g. Google Maps, OSM"@en ;
-    schema1:name "Method Type"@en ;
-    skos:prefLabel "Method Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-fuzzy-sl:Q75 a wikibase:Item ;
+fuzzy-sl:Q75 a wikibase:Item,
+        fuzzy-sl:Q5 ;
     rdfs:label "Ogham Stones"@en ;
     schema1:description "Project"@en ;
     schema1:name "Ogham Stones"@en ;
@@ -24340,27 +24626,8 @@ fuzzy-sl:Q75 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q5 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q5 .
 
-fuzzy-sl:Q79 a wikibase:Item ;
-    rdfs:label "Site"@en ;
-    schema1:description "generic Site Class"@en ;
-    schema1:name "Site"@en ;
-    skos:prefLabel "Site"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
-    bbr:instanceOf fuzzy-sl:Q3 ;
-    fuzzy-sl-wdt:P1 fuzzy-sl:Q3 .
-
-fuzzy-sl:Q91 a wikibase:Item ;
-    rdfs:label "Spatial Category"@en ;
-    schema1:description "e.g. Archaeology, Geology"@en ;
-    schema1:name "Spatial Category"@en ;
-    skos:prefLabel "Spatial Category"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-n4o-prov:Q108 a wikibase:Item ;
+n4o-prov:Q108 a wikibase:Item,
+        n4o-prov:Q62 ;
     rdfs:label "Painting"@en ;
     schema1:description "object type"@en ;
     schema1:name "Painting"@en ;
@@ -24369,29 +24636,20 @@ n4o-prov:Q108 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q62 ;
     n4o-prov-wdt:P2 n4o-prov:Q62 .
 
-n4o-prov:Q16 a wikibase:Item ;
-    rdfs:label "Rolle"@de,
-        "Role"@en ;
-    schema1:description "Rolle einer Entität"@de,
-        "role of an item"@en ;
-    schema1:name "Rolle"@de,
-        "Role"@en ;
-    skos:prefLabel "Rolle"@de,
-        "Role"@en ;
+n4o-prov:Q2 a wikibase:Item ;
+    rdfs:label "Concept Scheme"@en ;
+    schema1:description "SKOS Concept Scheme"@en ;
+    schema1:name "Concept Scheme"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
+    skos:altLabel "skos:ConceptScheme"@en ;
+    skos:prefLabel "Concept Scheme"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:subclassOf n4o-prov:Q5 ;
     n4o-prov-wdt:P1 n4o-prov:Q5 .
 
-n4o-prov:Q62 a wikibase:Item ;
-    rdfs:label "Object Type"@en ;
-    schema1:description "types"@en ;
-    schema1:name "Object Type"@en ;
-    skos:prefLabel "Object Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
-
-n4o-prov:Q67 a wikibase:Item ;
+n4o-prov:Q67 a wikibase:Item,
+        n4o-prov:Q54 ;
     rdfs:label "Berlin"@en ;
     schema1:description "location"@en ;
     schema1:name "Berlin"@en ;
@@ -24400,61 +24658,6 @@ n4o-prov:Q67 a wikibase:Item ;
     bbr:instanceOf n4o-prov:Q54 ;
     n4o-prov-wdt:P2 n4o-prov:Q54 ;
     n4o-prov-wdt:P24 <http://www.wikidata.org/entity/Q64> .
-
-n4o-prov:Q7 a wikibase:Item ;
-    rdfs:label "Körperschaft"@de,
-        "Corporate Body"@en ;
-    schema1:description "core entity"@de,
-        "core entity"@en ;
-    schema1:name "Körperschaft"@de,
-        "Corporate Body"@en ;
-    skos:altLabel "foaf:Organization"@de,
-        "gnd:CorporateBody"@de,
-        "foaf:Organization"@en,
-        "gnd:CorporateBody"@en ;
-    skos:prefLabel "Körperschaft"@de,
-        "Corporate Body"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:instanceOf n4o-prov:Q42 ;
-    bbr:subclassOf n4o-prov:Q5 ;
-    n4o-prov-wdt:P1 n4o-prov:Q5 ;
-    n4o-prov-wdt:P2 n4o-prov:Q42 .
-
-n4o-prov:Q77 a wikibase:Item ;
-    rdfs:label "Place Type"@en ;
-    schema1:description "type"@en ;
-    schema1:name "Place Type"@en ;
-    skos:prefLabel "Place Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
-
-squirrelbase:Q31 a wikibase:Item ;
-    rdfs:label "Type"@en ;
-    schema1:name "Type"@en ;
-    skos:prefLabel "Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> .
-
-squirrelbase:Q32 a wikibase:Item ;
-    rdfs:label "Alignment Type"@en ;
-    schema1:name "Alignment Type"@en ;
-    skos:prefLabel "Alignment Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
-    bbr:instanceOf squirrelbase:Q31 ;
-    squirrelbase-wdt:P1 squirrelbase:Q31 .
-
-squirrelbase:Q44 a wikibase:Item ;
-    rdfs:label "Acquisition Method"@en ;
-    schema1:name "Acquisition Method"@en ;
-    skos:prefLabel "Acquisition Method"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
-    bbr:instanceOf squirrelbase:Q31 ;
-    squirrelbase-wdt:P1 squirrelbase:Q31 .
 
 chublets:Q164 a wikibase:Item ;
     rdfs:label "Educational resources and practical guides"@en ;
@@ -24531,49 +24734,6 @@ chublets:Q321 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q21 a wikibase:Item ;
-    rdfs:label "Person"@en ;
-    schema1:description "Human Person"@en ;
-    schema1:name "Person"@en ;
-    skos:altLabel "Human"@en ;
-    skos:prefLabel "Person"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
-    bbr:instanceOf fuzzy-sl:Q22 ;
-    fuzzy-sl-wdt:P1 fuzzy-sl:Q22 .
-
-fuzzy-sl:Q3 a wikibase:Item ;
-    rdfs:label "Site Type"@en ;
-    schema1:description "e.g. archaeological or geological site"@en ;
-    schema1:name "Site Type"@en ;
-    skos:prefLabel "Site Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-fuzzy-sl:Q6 a wikibase:Item ;
-    rdfs:label "Certainty Level"@en ;
-    schema1:description "Type"@en ;
-    schema1:name "Certainty Level"@en ;
-    skos:prefLabel "Certainty Level"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-fuzzy-sl:Q81 a wikibase:Item ;
-    rdfs:label "Location Type"@en ;
-    schema1:description "Type"@en ;
-    schema1:name "Location Type"@en ;
-    skos:prefLabel "Location Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-n4o-prov:Q55 a wikibase:Item ;
-    rdfs:label "Alignment Score"@en ;
-    schema1:description "Type"@en ;
-    schema1:name "Alignment Score"@en ;
-    skos:prefLabel "Alignment Score"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
-
 chublets:Q190 a wikibase:Item ;
     rdfs:label "Seriation"@en ;
     schema1:name "Seriation"@en ;
@@ -24601,7 +24761,8 @@ chublets:Q212 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q16 a wikibase:Item ;
+fuzzy-sl:Q16 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Inhabited Place"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Inhabited Place"@en ;
@@ -24611,10 +24772,34 @@ fuzzy-sl:Q16 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 .
 
-fuzzy-sl:Q90 a wikibase:Item ;
+fuzzy-sl:Q7 a wikibase:Item ;
+    rdfs:label "Method Type"@en ;
+    schema1:description "e.g. Google Maps, OSM"@en ;
+    schema1:name "Method Type"@en ;
+    skos:prefLabel "Method Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+fuzzy-sl:Q79 a wikibase:Item,
+        fuzzy-sl:Q3 ;
+    rdfs:label "Site"@en ;
+    schema1:description "generic Site Class"@en ;
+    schema1:name "Site"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    skos:prefLabel "Site"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
+    bbr:instanceOf fuzzy-sl:Q3 ;
+    fuzzy-sl-wdt:P1 fuzzy-sl:Q3 .
+
+fuzzy-sl:Q90 a wikibase:Item,
+        fuzzy-sl:Q4 ;
     rdfs:label "Cave"@en ;
     schema1:description "spatial type"@en ;
     schema1:name "Cave"@en ;
+    rdfs:subClassOf fuzzy-sl:Q147 ;
     skos:prefLabel "Cave"@en ;
     bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
@@ -24622,6 +24807,97 @@ fuzzy-sl:Q90 a wikibase:Item ;
     bbr:subclassOf fuzzy-sl:Q147 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q4 ;
     fuzzy-sl-wdt:P2 fuzzy-sl:Q147 .
+
+fuzzy-sl:Q91 a wikibase:Item ;
+    rdfs:label "Spatial Category"@en ;
+    schema1:description "e.g. Archaeology, Geology"@en ;
+    schema1:name "Spatial Category"@en ;
+    skos:prefLabel "Spatial Category"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+n4o-prov:Q16 a wikibase:Item ;
+    rdfs:label "Rolle"@de,
+        "Role"@en ;
+    schema1:description "Rolle einer Entität"@de,
+        "role of an item"@en ;
+    schema1:name "Rolle"@de,
+        "Role"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
+    skos:prefLabel "Rolle"@de,
+        "Role"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:subclassOf n4o-prov:Q5 ;
+    n4o-prov-wdt:P1 n4o-prov:Q5 .
+
+n4o-prov:Q62 a wikibase:Item ;
+    rdfs:label "Object Type"@en ;
+    schema1:description "types"@en ;
+    schema1:name "Object Type"@en ;
+    skos:prefLabel "Object Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
+
+n4o-prov:Q7 a wikibase:Item,
+        n4o-prov:Q42 ;
+    rdfs:label "Körperschaft"@de,
+        "Corporate Body"@en ;
+    schema1:description "core entity"@de,
+        "core entity"@en ;
+    schema1:name "Körperschaft"@de,
+        "Corporate Body"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body>,
+        n4o-prov:Q5 ;
+    skos:altLabel "foaf:Organization"@de,
+        "gnd:CorporateBody"@de,
+        "foaf:Organization"@en,
+        "gnd:CorporateBody"@en ;
+    skos:prefLabel "Körperschaft"@de,
+        "Corporate Body"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:instanceOf n4o-prov:Q42 ;
+    bbr:subclassOf n4o-prov:Q5 ;
+    n4o-prov-wdt:P1 n4o-prov:Q5 ;
+    n4o-prov-wdt:P2 n4o-prov:Q42 .
+
+n4o-prov:Q77 a wikibase:Item ;
+    rdfs:label "Place Type"@en ;
+    schema1:description "type"@en ;
+    schema1:name "Place Type"@en ;
+    skos:prefLabel "Place Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
+
+squirrelbase:Q31 a wikibase:Item ;
+    rdfs:label "Type"@en ;
+    schema1:name "Type"@en ;
+    skos:prefLabel "Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> .
+
+squirrelbase:Q32 a wikibase:Item,
+        squirrelbase:Q31 ;
+    rdfs:label "Alignment Type"@en ;
+    schema1:name "Alignment Type"@en ;
+    skos:prefLabel "Alignment Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
+    bbr:instanceOf squirrelbase:Q31 ;
+    squirrelbase-wdt:P1 squirrelbase:Q31 .
+
+squirrelbase:Q44 a wikibase:Item,
+        squirrelbase:Q31 ;
+    rdfs:label "Acquisition Method"@en ;
+    schema1:name "Acquisition Method"@en ;
+    skos:prefLabel "Acquisition Method"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
+    bbr:instanceOf squirrelbase:Q31 ;
+    squirrelbase-wdt:P1 squirrelbase:Q31 .
 
 chublets:Q112 a wikibase:Item ;
     rdfs:label "Palaeobotany"@en ;
@@ -24658,24 +24934,6 @@ chublets:Q207 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
-
-fuzzy-sl:Q5 a wikibase:Item ;
-    rdfs:label "Project"@en ;
-    schema1:description "Project Name"@en ;
-    schema1:name "Project"@en ;
-    skos:prefLabel "Project"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-squirrelbase:Q17 a wikibase:Item ;
-    rdfs:label "temporal Object"@en ;
-    schema1:description "core entity"@en ;
-    schema1:name "temporal Object"@en ;
-    skos:prefLabel "temporal Object"@en ;
-    bbr:classKind "domain" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
-    bbr:subclassOf squirrelbase:Q2 ;
-    squirrelbase-wdt:P2 squirrelbase:Q2 .
 
 chublets:Q295 a wikibase:Item ;
     rdfs:label "joeroe"@en ;
@@ -24745,15 +25003,44 @@ chublets:Q372 a wikibase:Item ;
     chublets-wdt:P2 chublets:Q1 ;
     chublets-wdt:P4 "Q312466" .
 
-fuzzy-sl:Q125 a wikibase:Item ;
-    rdfs:label "Point Type"@en ;
-    schema1:description "Type"@en ;
-    schema1:name "Point Type"@en ;
-    skos:prefLabel "Point Type"@en ;
+fuzzy-sl:Q21 a wikibase:Item,
+        fuzzy-sl:Q22 ;
+    rdfs:label "Person"@en ;
+    schema1:description "Human Person"@en ;
+    schema1:name "Person"@en ;
+    skos:altLabel "Human"@en ;
+    skos:prefLabel "Person"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
+    bbr:instanceOf fuzzy-sl:Q22 ;
+    fuzzy-sl-wdt:P1 fuzzy-sl:Q22 .
+
+fuzzy-sl:Q3 a wikibase:Item ;
+    rdfs:label "Site Type"@en ;
+    schema1:description "e.g. archaeological or geological site"@en ;
+    schema1:name "Site Type"@en ;
+    skos:prefLabel "Site Type"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
-n4o-prov:Q41 a wikibase:Item ;
+fuzzy-sl:Q6 a wikibase:Item ;
+    rdfs:label "Certainty Level"@en ;
+    schema1:description "Type"@en ;
+    schema1:name "Certainty Level"@en ;
+    skos:prefLabel "Certainty Level"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+fuzzy-sl:Q81 a wikibase:Item ;
+    rdfs:label "Location Type"@en ;
+    schema1:description "Type"@en ;
+    schema1:name "Location Type"@en ;
+    skos:prefLabel "Location Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+n4o-prov:Q41 a wikibase:Item,
+        n4o-prov:Q40 ;
     rdfs:label "Interaktiver Katalog des Münzkabinetts Berlin"@en ;
     schema1:description "Collection"@en ;
     schema1:name "Interaktiver Katalog des Münzkabinetts Berlin"@en ;
@@ -24763,15 +25050,13 @@ n4o-prov:Q41 a wikibase:Item ;
     n4o-prov-wdt:P2 n4o-prov:Q40 ;
     n4o-prov-wdt:P47 <https://ikmk.smb.museum/> .
 
-n4o-prov:Q42 a wikibase:Item ;
-    rdfs:label "Core Entity"@en ;
-    schema1:description "PG core entity"@en ;
-    schema1:name "Core Entity"@en ;
-    skos:prefLabel "Core Entity"@en ;
+n4o-prov:Q55 a wikibase:Item ;
+    rdfs:label "Alignment Score"@en ;
+    schema1:description "Type"@en ;
+    schema1:name "Alignment Score"@en ;
+    skos:prefLabel "Alignment Score"@en ;
     bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:subclassOf n4o-prov:Q1 ;
-    n4o-prov-wdt:P1 n4o-prov:Q1 .
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
 chublets:Q158 a wikibase:Item ;
     rdfs:label "ISAAKiel"@en ;
@@ -24826,7 +25111,8 @@ chublets:Q154 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q92 a wikibase:Item ;
+fuzzy-sl:Q92 a wikibase:Item,
+        fuzzy-sl:Q91 ;
     rdfs:label "Archaeology"@en ;
     schema1:description "spatial category"@en ;
     schema1:name "Archaeology"@en ;
@@ -24834,15 +25120,6 @@ fuzzy-sl:Q92 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q91 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q91 .
-
-squirrelbase:Q36 a wikibase:Item ;
-    rdfs:label "Alignment Score"@en ;
-    schema1:name "Alignment Score"@en ;
-    skos:prefLabel "Alignment Score"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
-    bbr:instanceOf squirrelbase:Q31 ;
-    squirrelbase-wdt:P1 squirrelbase:Q31 .
 
 chublets:Q144 a wikibase:Item ;
     rdfs:label "Drivers and IO"@en ;
@@ -24853,7 +25130,16 @@ chublets:Q144 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-n4o-prov:Q63 a wikibase:Item ;
+fuzzy-sl:Q5 a wikibase:Item ;
+    rdfs:label "Project"@en ;
+    schema1:description "Project Name"@en ;
+    schema1:name "Project"@en ;
+    skos:prefLabel "Project"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+n4o-prov:Q63 a wikibase:Item,
+        n4o-prov:Q62 ;
     rdfs:label "Coin"@en ;
     schema1:description "object type"@en ;
     schema1:name "Coin"@en ;
@@ -24861,6 +25147,17 @@ n4o-prov:Q63 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q62 ;
     n4o-prov-wdt:P2 n4o-prov:Q62 .
+
+squirrelbase:Q17 a wikibase:Item ;
+    rdfs:label "temporal Object"@en ;
+    schema1:description "core entity"@en ;
+    schema1:name "temporal Object"@en ;
+    rdfs:subClassOf squirrelbase:Q2 ;
+    skos:prefLabel "temporal Object"@en ;
+    bbr:classKind "domain" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
+    bbr:subclassOf squirrelbase:Q2 ;
+    squirrelbase-wdt:P2 squirrelbase:Q2 .
 
 chublets:Q135 a wikibase:Item,
         chublets:Q106 ;
@@ -24910,7 +25207,8 @@ chublets:Q157 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q93 a wikibase:Item ;
+fuzzy-sl:Q93 a wikibase:Item,
+        fuzzy-sl:Q91 ;
     rdfs:label "Geology"@en ;
     schema1:description "spatial category"@en ;
     schema1:name "Geology"@en ;
@@ -24928,39 +25226,24 @@ chublets:Q175 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-n4o-prov:Q12 a wikibase:Item ;
-    rdfs:label "Repository"@en ;
-    schema1:description "external repository that includes gazetteer resources"@en ;
-    schema1:name "Repository"@en ;
-    skos:prefLabel "Repository"@en ;
+fuzzy-sl:Q125 a wikibase:Item ;
+    rdfs:label "Point Type"@en ;
+    schema1:description "Type"@en ;
+    schema1:name "Point Type"@en ;
+    skos:prefLabel "Point Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+n4o-prov:Q42 a wikibase:Item ;
+    rdfs:label "Core Entity"@en ;
+    schema1:description "PG core entity"@en ;
+    schema1:name "Core Entity"@en ;
+    rdfs:subClassOf n4o-prov:Q1 ;
+    skos:prefLabel "Core Entity"@en ;
     bbr:classKind "model" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:subclassOf n4o-prov:Q5 ;
-    n4o-prov-wdt:P1 n4o-prov:Q5 .
-
-n4o-prov:Q40 a wikibase:Item ;
-    rdfs:label "Collection"@en ;
-    schema1:description "Core Entity"@en ;
-    schema1:name "Collection"@en ;
-    skos:prefLabel "Collection"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:instanceOf n4o-prov:Q42 ;
-    n4o-prov-wdt:P2 n4o-prov:Q42 .
-
-n4o-prov:Q54 a wikibase:Item ;
-    rdfs:label "Place"@en ;
-    schema1:description "core entity"@en ;
-    schema1:name "Place"@en ;
-    skos:prefLabel "Place"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:instanceOf n4o-prov:Q42 ;
-    n4o-prov-wdt:P2 n4o-prov:Q42 .
+    bbr:subclassOf n4o-prov:Q1 ;
+    n4o-prov-wdt:P1 n4o-prov:Q1 .
 
 chublets:Q228 a wikibase:Item ;
     rdfs:label "Artefact morphology"@en ;
@@ -24971,13 +25254,15 @@ chublets:Q228 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-n4o-prov:Q15 a wikibase:Item ;
+n4o-prov:Q15 a wikibase:Item,
+        n4o-prov:Q2 ;
     rdfs:label "Provenance Gazetteer"@de,
         "Provenienzgazetteer"@en ;
     schema1:description "Thesaurus"@de,
         "Thesaurus"@en ;
     schema1:name "Provenance Gazetteer"@de,
         "Provenienzgazetteer"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Provenance Gazetteer"@de,
         "Provenienzgazetteer"@en ;
     bbr:classKind "model" ;
@@ -25022,13 +25307,25 @@ chublets:Q136 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-n4o-prov:Q18 a wikibase:Item ;
+squirrelbase:Q36 a wikibase:Item,
+        squirrelbase:Q31 ;
+    rdfs:label "Alignment Score"@en ;
+    schema1:name "Alignment Score"@en ;
+    skos:prefLabel "Alignment Score"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> ;
+    bbr:instanceOf squirrelbase:Q31 ;
+    squirrelbase-wdt:P1 squirrelbase:Q31 .
+
+n4o-prov:Q18 a wikibase:Item,
+        n4o-prov:Q16 ;
     rdfs:label "Vorbesitzer/in"@de,
         "Previous Owner"@en ;
     schema1:description "Rolle"@de,
         "role"@en ;
     schema1:name "Vorbesitzer/in"@de,
         "Previous Owner"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
     skos:prefLabel "Vorbesitzer/in"@de,
         "Previous Owner"@en ;
     bbr:classKind "model" ;
@@ -25038,15 +25335,8 @@ n4o-prov:Q18 a wikibase:Item ;
     n4o-prov-wdt:P1 n4o-prov:Q5 ;
     n4o-prov-wdt:P2 n4o-prov:Q16 .
 
-fuzzy-sl:Q2 a wikibase:Item ;
-    rdfs:label "Source"@en ;
-    schema1:description "Source Type"@en ;
-    schema1:name "Source"@en ;
-    skos:prefLabel "Source"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
-
-fuzzy-sl:Q94 a wikibase:Item ;
+fuzzy-sl:Q94 a wikibase:Item,
+        fuzzy-sl:Q5 ;
     rdfs:label "Samian Ware (Terra Sigillata) Findspots"@en ;
     schema1:description "Project"@en ;
     schema1:name "Samian Ware (Terra Sigillata) Findspots"@en ;
@@ -25054,6 +25344,45 @@ fuzzy-sl:Q94 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q5 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q5 .
+
+n4o-prov:Q12 a wikibase:Item ;
+    rdfs:label "Repository"@en ;
+    schema1:description "external repository that includes gazetteer resources"@en ;
+    schema1:name "Repository"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
+    skos:prefLabel "Repository"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:subclassOf n4o-prov:Q5 ;
+    n4o-prov-wdt:P1 n4o-prov:Q5 .
+
+n4o-prov:Q40 a wikibase:Item,
+        n4o-prov:Q42 ;
+    rdfs:label "Collection"@en ;
+    schema1:description "Core Entity"@en ;
+    schema1:name "Collection"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> ;
+    skos:prefLabel "Collection"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:instanceOf n4o-prov:Q42 ;
+    n4o-prov-wdt:P2 n4o-prov:Q42 .
+
+n4o-prov:Q54 a wikibase:Item,
+        n4o-prov:Q42 ;
+    rdfs:label "Place"@en ;
+    schema1:description "core entity"@en ;
+    schema1:name "Place"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    skos:prefLabel "Place"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:instanceOf n4o-prov:Q42 ;
+    n4o-prov-wdt:P2 n4o-prov:Q42 .
 
 chublets:Q181 a wikibase:Item ;
     rdfs:label "Shape recognition"@en ;
@@ -25063,14 +25392,6 @@ chublets:Q181 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
-
-fuzzy-sl:Q4 a wikibase:Item ;
-    rdfs:label "Spatial Type"@en ;
-    schema1:description "e.g. sink, cave"@en ;
-    schema1:name "Spatial Type"@en ;
-    skos:prefLabel "Spatial Type"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q1 a wikibase:Item ;
     rdfs:label "Klasse"@de,
@@ -25108,21 +25429,8 @@ chublets:Q140 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q11 a wikibase:Item ;
-    rdfs:label "Geological Site"@en ;
-    schema1:description "e.g. Voscone"@en ;
-    schema1:name "Geological Site"@en ;
-    skos:prefLabel "Geological Site"@en ;
-    bbr:classKind "domain" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
-    bbr:instanceOf fuzzy-sl:Q3 ;
-    bbr:subclassOf fuzzy-sl:Q146,
-        fuzzy-sl:Q79 ;
-    fuzzy-sl-wdt:P1 fuzzy-sl:Q3 ;
-    fuzzy-sl-wdt:P2 fuzzy-sl:Q146,
-        fuzzy-sl:Q79 .
-
-fuzzy-sl:Q71 a wikibase:Item ;
+fuzzy-sl:Q71 a wikibase:Item,
+        fuzzy-sl:Q5 ;
     rdfs:label "Campanian Ignimbrite Findspots"@en ;
     schema1:description "Project"@en ;
     schema1:name "Campanian Ignimbrite Findspots"@en ;
@@ -25131,16 +25439,21 @@ fuzzy-sl:Q71 a wikibase:Item ;
     bbr:instanceOf fuzzy-sl:Q5 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q5 .
 
-n4o-prov:Q1 a wikibase:Item ;
-    rdfs:label "Concept"@en ;
-    schema1:description "SKOS Concept"@en ;
-    schema1:name "Concept"@en ;
-    skos:altLabel "skos:Concept"@en ;
-    skos:prefLabel "Concept"@en ;
+fuzzy-sl:Q2 a wikibase:Item ;
+    rdfs:label "Source"@en ;
+    schema1:description "Source Type"@en ;
+    schema1:name "Source"@en ;
+    skos:prefLabel "Source"@en ;
     bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:subclassOf n4o-prov:Q5 ;
-    n4o-prov-wdt:P1 n4o-prov:Q5 .
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
+
+fuzzy-sl:Q4 a wikibase:Item ;
+    rdfs:label "Spatial Type"@en ;
+    schema1:description "e.g. sink, cave"@en ;
+    schema1:name "Spatial Type"@en ;
+    skos:prefLabel "Spatial Type"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> .
 
 chublets:Q148 a wikibase:Item ;
     rdfs:label "Data management"@en ;
@@ -25151,7 +25464,8 @@ chublets:Q148 a wikibase:Item ;
     bbr:instanceOf chublets:Q3 ;
     chublets-wdt:P2 chublets:Q3 .
 
-fuzzy-sl:Q14 a wikibase:Item ;
+fuzzy-sl:Q14 a wikibase:Item,
+        fuzzy-sl:Q5 ;
     rdfs:label "Silver Coinage of Croton"@en ;
     schema1:description "Project"@en ;
     schema1:name "Silver Coinage of Croton"@en ;
@@ -25159,14 +25473,6 @@ fuzzy-sl:Q14 a wikibase:Item ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q5 ;
     fuzzy-sl-wdt:P1 fuzzy-sl:Q5 .
-
-n4o-prov:Q5 a wikibase:Item ;
-    rdfs:label "SKOS Plus Class"@en ;
-    schema1:description "sub-class of the SKOS plus ontology"@en ;
-    schema1:name "SKOS Plus Class"@en ;
-    skos:prefLabel "SKOS Plus Class"@en ;
-    bbr:classKind "model" ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
 chublets:Q126 a wikibase:Item ;
     rdfs:label "Chronological modelling"@en ;
@@ -25198,41 +25504,6 @@ chublets:Q116 a wikibase:Item ;
     bbr:sha256 "1b711e75f4d4790959be85ecdc8c4a27a518b8291b987175f136460c80ea92aa" ;
     bbr:sourceTripleCount 6278 .
 
-n4o-prov:Q33 a wikibase:Item ;
-    rdfs:label "Object"@en ;
-    schema1:description "Core Entity"@en ;
-    schema1:name "Object"@en ;
-    skos:altLabel "E22 Human-Made Object"@en ;
-    skos:prefLabel "Object"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:instanceOf n4o-prov:Q42 ;
-    bbr:subclassOf n4o-prov:Q5 ;
-    n4o-prov-wdt:P1 n4o-prov:Q5 ;
-    n4o-prov-wdt:P2 n4o-prov:Q42 .
-
-n4o-prov:Q6 a wikibase:Item ;
-    rdfs:label "Person"@de,
-        "Human"@en ;
-    schema1:description "core entity"@en ;
-    schema1:name "Person"@de,
-        "Human"@en ;
-    skos:altLabel "Human Person"@en,
-        "foaf:Person"@en,
-        "gnd:Person"@en ;
-    skos:prefLabel "Person"@de,
-        "Human"@en ;
-    bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
-    bbr:instanceOf n4o-prov:Q42 ;
-    bbr:subclassOf n4o-prov:Q5 ;
-    n4o-prov-wdt:P1 n4o-prov:Q5 ;
-    n4o-prov-wdt:P2 n4o-prov:Q42 .
-
 osm-benchmarks:Q2 a wikibase:Item ;
     rdfs:label "Eigenschaft"@de,
         "Property"@en ;
@@ -25250,15 +25521,42 @@ osm-benchmarks:Q2 a wikibase:Item ;
     osm-benchmarks-wdt:P1 osm-benchmarks:Q3 ;
     osm-benchmarks-wdt:P2 osm-benchmarks:Q1 .
 
-squirrelbase:Q2 a wikibase:Item ;
-    rdfs:label "Object"@en ;
-    schema1:description "core entity"@en ;
-    schema1:name "Object"@en ;
-    skos:prefLabel "Object"@en ;
+fuzzy-sl:Q11 a wikibase:Item,
+        fuzzy-sl:Q3 ;
+    rdfs:label "Geological Site"@en ;
+    schema1:description "e.g. Voscone"@en ;
+    schema1:name "Geological Site"@en ;
+    rdfs:subClassOf fuzzy-sl:Q146,
+        fuzzy-sl:Q79 ;
+    skos:prefLabel "Geological Site"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
-    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> ;
-    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> .
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
+    bbr:instanceOf fuzzy-sl:Q3 ;
+    bbr:subclassOf fuzzy-sl:Q146,
+        fuzzy-sl:Q79 ;
+    fuzzy-sl-wdt:P1 fuzzy-sl:Q3 ;
+    fuzzy-sl-wdt:P2 fuzzy-sl:Q146,
+        fuzzy-sl:Q79 .
+
+n4o-prov:Q1 a wikibase:Item ;
+    rdfs:label "Concept"@en ;
+    schema1:description "SKOS Concept"@en ;
+    schema1:name "Concept"@en ;
+    rdfs:subClassOf n4o-prov:Q5 ;
+    skos:altLabel "skos:Concept"@en ;
+    skos:prefLabel "Concept"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:subclassOf n4o-prov:Q5 ;
+    n4o-prov-wdt:P1 n4o-prov:Q5 .
+
+n4o-prov:Q5 a wikibase:Item ;
+    rdfs:label "SKOS Plus Class"@en ;
+    schema1:description "sub-class of the SKOS plus ontology"@en ;
+    schema1:name "SKOS Plus Class"@en ;
+    skos:prefLabel "SKOS Plus Class"@en ;
+    bbr:classKind "model" ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> .
 
 chublets:Q370 a wikibase:Item,
         chublets:Q106 ;
@@ -25311,6 +25609,47 @@ osm-benchmarks:Q100 a wikibase:Item ;
     osm-benchmarks-wdt:P1 osm-benchmarks:Q3 ;
     osm-benchmarks-wdt:P2 osm-benchmarks:Q1 .
 
+n4o-prov:Q33 a wikibase:Item,
+        n4o-prov:Q42 ;
+    rdfs:label "Object"@en ;
+    schema1:description "Core Entity"@en ;
+    schema1:name "Object"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object>,
+        n4o-prov:Q5 ;
+    skos:altLabel "E22 Human-Made Object"@en ;
+    skos:prefLabel "Object"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:instanceOf n4o-prov:Q42 ;
+    bbr:subclassOf n4o-prov:Q5 ;
+    n4o-prov-wdt:P1 n4o-prov:Q5 ;
+    n4o-prov-wdt:P2 n4o-prov:Q42 .
+
+n4o-prov:Q6 a wikibase:Item,
+        n4o-prov:Q42 ;
+    rdfs:label "Person"@de,
+        "Human"@en ;
+    schema1:description "core entity"@en ;
+    schema1:name "Person"@de,
+        "Human"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E21_Person>,
+        n4o-prov:Q5 ;
+    skos:altLabel "Human Person"@en,
+        "foaf:Person"@en,
+        "gnd:Person"@en ;
+    skos:prefLabel "Person"@de,
+        "Human"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
+    bbr:instanceOf n4o-prov:Q42 ;
+    bbr:subclassOf n4o-prov:Q5 ;
+    n4o-prov-wdt:P1 n4o-prov:Q5 ;
+    n4o-prov-wdt:P2 n4o-prov:Q42 .
+
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> a dcat:CatalogRecord ;
     dct:isPartOf <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> ;
     dct:modified "2026-02-23T14:55:27+00:00"^^xsd:dateTime ;
@@ -25318,15 +25657,29 @@ osm-benchmarks:Q100 a wikibase:Item ;
     dct:title "squirrelbase (static copy)"@en ;
     dcat:landingPage <https://n4o-rse.github.io/wb-squirrelbase-static/> ;
     foaf:primaryTopic <https://n4o-rse.github.io/wb-squirrelbase-static/catalog> ;
-    bbr:generator "wikibase-static 0.30.1" ;
+    bbr:generator "wikibase-static 0.31.0" ;
     bbr:prefix "squirrelbase" ;
-    bbr:sha256 "13918fe4674597cd0a3ac7a5a49c767aebba56f5715f5e548a040a3e094ff3c6" ;
-    bbr:sourceTripleCount 6415 .
+    bbr:sha256 "9aa61a8b63e23eef6ef3ce6bcaefa16a5d0649ba2f9d31af4f99e783dd8bd683" ;
+    bbr:sourceTripleCount 6471 .
 
-fuzzy-sl:Q10 a wikibase:Item ;
+squirrelbase:Q2 a wikibase:Item ;
+    rdfs:label "Object"@en ;
+    schema1:description "core entity"@en ;
+    schema1:name "Object"@en ;
+    rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> ;
+    skos:prefLabel "Object"@en ;
+    bbr:classKind "domain" ;
+    bbr:crmBasis "bridge" ;
+    bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> ;
+    bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> .
+
+fuzzy-sl:Q10 a wikibase:Item,
+        fuzzy-sl:Q3 ;
     rdfs:label "Archaeological Site"@en ;
     schema1:description "Site Type"@en ;
     schema1:name "Archaeological Site"@en ;
+    rdfs:subClassOf fuzzy-sl:Q146,
+        fuzzy-sl:Q79 ;
     skos:prefLabel "Archaeological Site"@en ;
     bbr:classKind "domain" ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
@@ -25361,10 +25714,10 @@ chublets:Q100 a wikibase:Item ;
     dct:title "fuzzy-sl (static copy)"@en ;
     dcat:landingPage <https://n4o-rse.github.io/wb-fuzzysl-static/> ;
     foaf:primaryTopic <https://n4o-rse.github.io/wb-fuzzysl-static/catalog> ;
-    bbr:generator "wikibase-static 0.30.1" ;
+    bbr:generator "wikibase-static 0.31.0" ;
     bbr:prefix "fuzzy-sl" ;
-    bbr:sha256 "d228c6c6cfb4dd989b7b56011f6aa726be1988664b08f451863934f9177efb9f" ;
-    bbr:sourceTripleCount 12462 .
+    bbr:sha256 "66c7a94ff65b4ffcfec80c347e5efa04119451afc0fcb5b4cd82fa18933df5d5" ;
+    bbr:sourceTripleCount 12607 .
 
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> a dcat:CatalogRecord ;
     dct:isPartOf <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> ;
@@ -25373,10 +25726,10 @@ chublets:Q100 a wikibase:Item ;
     dct:title "n4o-prov (static copy)"@en ;
     dcat:landingPage <https://n4o-rse.github.io/wb-n4o-prov-static/> ;
     foaf:primaryTopic <https://n4o-rse.github.io/wb-n4o-prov-static/catalog> ;
-    bbr:generator "wikibase-static 0.30.1" ;
+    bbr:generator "wikibase-static 0.31.0" ;
     bbr:prefix "n4o-prov" ;
-    bbr:sha256 "05811db4683f3d799ec036d216784d14f9c3275e48ab15109bc7b611ff75f840" ;
-    bbr:sourceTripleCount 14495 .
+    bbr:sha256 "35892105857a4b1ced7aa198721857219e03f6a418fb492d31578697ae50e0a9" ;
+    bbr:sourceTripleCount 14647 .
 
 chublets:Q111 a wikibase:Item,
         chublets:Q106 ;

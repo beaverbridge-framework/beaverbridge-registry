@@ -1,16 +1,16 @@
 {
   "files": [
     {
-      "bytes": 754862,
+      "bytes": 758929,
       "data_as_of": "2025-06-12T14:00:33Z",
-      "generator": "wikibase-static 0.30.1",
+      "generator": "wikibase-static 0.31.0",
       "licence": "CC0 1.0",
       "path": "downloads/n4o-rse.github.io-wb-n4o-prov-static.ttl",
       "rdf_base_seen": true,
       "role": "export",
       "route": "local-clone",
-      "sha256": "05811db4683f3d799ec036d216784d14f9c3275e48ab15109bc7b611ff75f840",
-      "triples": 14495
+      "sha256": "35892105857a4b1ced7aa198721857219e03f6a418fb492d31578697ae50e0a9",
+      "triples": 14647
     },
     {
       "bytes": 11336,
@@ -22,7 +22,7 @@
     }
   ],
   "instance": "n4o-prov",
-  "label": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)",
+  "label": "n4o-prov (static copy)",
   "pages_url": "https://n4o-rse.github.io/wb-n4o-prov-static/",
   "prefix_family": "n4op",
   "rdf_base": "https://n4o-rse.github.io/wb-n4o-prov-static"

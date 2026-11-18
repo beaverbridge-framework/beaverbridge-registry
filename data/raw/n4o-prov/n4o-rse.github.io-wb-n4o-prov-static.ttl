@@ -1,5 +1,5 @@
 # RDF export of n4o-prov (static copy), Wikibase data model; base URI https://n4o-rse.github.io/wb-n4o-prov-static
-# Generated with wikibase-static 0.30.1; data as of 2025-06-12T14:00:33Z
+# Generated with wikibase-static 0.31.0; data as of 2025-06-12T14:00:33Z
 # Licence: CC0 1.0
 # The prefixes n4op:, n4opt:, n4opp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only n4op:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -19014,6 +19014,380 @@ _:fdb780677ddd1c156c1d869c6ddb0130
 
 # CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv) and the DCAT classes of this file (data/dcat-crm.csv),
 # with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
+
+n4op:Q1
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q2
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q3
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q4
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q6
+    a n4op:Q42 ;
+    rdfs:subClassOf crm:E21_Person,
+        n4op:Q5 .
+
+n4op:Q7
+    a n4op:Q42 ;
+    rdfs:subClassOf crm:E40_Legal_Body,
+        n4op:Q5 .
+
+n4op:Q8
+    a n4op:Q1 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q9
+    a n4op:Q12 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q10
+    a n4op:Q12 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q11
+    a n4op:Q12 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q12
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q13
+    a n4op:Q12 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q14
+    a n4op:Q12 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q15
+    a n4op:Q2 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q16
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q17
+    a n4op:Q16 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q18
+    a n4op:Q16 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q19
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q20
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q21
+    a n4op:Q16 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q22
+    a n4op:Q2 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q23
+    a n4op:Q1,
+        n4op:Q7 .
+
+n4op:Q24
+    a n4op:Q12 ;
+    rdfs:subClassOf n4op:Q5 .
+
+n4op:Q25
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q26
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q27
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q28
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q33
+    a n4op:Q42 ;
+    rdfs:subClassOf crm:E22_Human-Made_Object,
+        n4op:Q5 .
+
+n4op:Q34
+    a n4op:Q33 .
+
+n4op:Q35
+    a n4op:Q33 .
+
+n4op:Q36
+    a n4op:Q33 .
+
+n4op:Q39
+    a n4op:Q40 .
+
+n4op:Q40
+    a n4op:Q42 ;
+    rdfs:subClassOf crm:E78_Curated_Holding .
+
+n4op:Q41
+    a n4op:Q40 .
+
+n4op:Q42
+    rdfs:subClassOf n4op:Q1 .
+
+n4op:Q43
+    a n4op:Q42 ;
+    rdfs:subClassOf crm:E5_Event,
+        n4op:Q5 .
+
+n4op:Q44
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q45
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q46
+    a n4op:Q1,
+        n4op:Q7 .
+
+n4op:Q47
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q48
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q49
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q50
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q51
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q52
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q53
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q54
+    a n4op:Q42 ;
+    rdfs:subClassOf crm:E53_Place .
+
+n4op:Q56
+    a n4op:Q55 .
+
+n4op:Q57
+    a n4op:Q55 .
+
+n4op:Q58
+    a n4op:Q55 .
+
+n4op:Q59
+    a n4op:Q55 .
+
+n4op:Q60
+    a n4op:Q6 .
+
+n4op:Q61
+    a n4op:Q33 .
+
+n4op:Q63
+    a n4op:Q62 .
+
+n4op:Q66
+    a n4op:Q6 .
+
+n4op:Q67
+    a n4op:Q54 .
+
+n4op:Q68
+    a n4op:Q33 .
+
+n4op:Q69
+    a n4op:Q6 .
+
+n4op:Q70
+    a n4op:Q54 .
+
+n4op:Q71
+    a n4op:Q33 .
+
+n4op:Q72
+    a n4op:Q62 .
+
+n4op:Q73
+    a n4op:Q6 .
+
+n4op:Q74
+    a n4op:Q54 .
+
+n4op:Q75
+    a n4op:Q54 .
+
+n4op:Q76
+    a n4op:Q77 .
+
+n4op:Q78
+    a n4op:Q77 .
+
+n4op:Q79
+    a n4op:Q33 .
+
+n4op:Q80
+    a n4op:Q33 .
+
+n4op:Q82
+    a n4op:Q6 .
+
+n4op:Q83
+    a n4op:Q33 .
+
+n4op:Q84
+    a n4op:Q33 .
+
+n4op:Q85
+    a n4op:Q6 .
+
+n4op:Q86
+    a n4op:Q54 .
+
+n4op:Q87
+    a n4op:Q33 .
+
+n4op:Q88
+    a n4op:Q6 .
+
+n4op:Q89
+    a n4op:Q6 .
+
+n4op:Q90
+    a n4op:Q54 .
+
+n4op:Q91
+    a n4op:Q77 .
+
+n4op:Q92
+    a n4op:Q40 .
+
+n4op:Q93
+    a n4op:Q40 .
+
+n4op:Q94
+    a n4op:Q40 .
+
+n4op:Q95
+    a n4op:Q40 .
+
+n4op:Q96
+    a n4op:Q40 .
+
+n4op:Q97
+    a n4op:Q40 .
+
+n4op:Q98
+    a n4op:Q33 .
+
+n4op:Q99
+    a n4op:Q33 .
+
+n4op:Q100
+    a n4op:Q33 .
+
+n4op:Q101
+    a n4op:Q33 .
+
+n4op:Q102
+    a n4op:Q33 .
+
+n4op:Q103
+    a n4op:Q33 .
+
+n4op:Q104
+    a n4op:Q33 .
+
+n4op:Q105
+    a n4op:Q33 .
+
+n4op:Q106
+    a n4op:Q6 .
+
+n4op:Q107
+    a n4op:Q33 .
+
+n4op:Q108
+    a n4op:Q62 .
+
+n4op:Q109
+    a n4op:Q40 .
+
+n4op:Q110
+    a n4op:Q33 .
+
+n4op:Q111
+    a n4op:Q7 .
+
+n4op:Q113
+    a n4op:Q12 .
+
+n4op:Q114
+    a n4op:Q12 .
+
+n4op:Q115
+    a n4op:Q12 .
+
+n4op:Q117
+    a n4op:Q54 .
+
+n4op:Q118
+    a n4op:Q54 .
+
+n4op:Q119
+    a n4op:Q33 .
+
+n4op:Q120
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q121
+    a n4op:Q1,
+        n4op:Q6 .
+
+n4op:Q122
+    a n4op:Q33 .
+
+n4op:Q123
+    a n4op:Q33 .
+
+n4op:Q124
+    a n4op:Q54 .
+
+n4op:Q125
+    a n4op:Q33 .
+
+n4op:Q129
+    a n4op:Q33 .
 
 crmdig:D1_Digital_Object
     rdfs:subClassOf crm:E73_Information_Object .
