@@ -1,5 +1,5 @@
 # RDF export of chublets.software Wikibase (model demo), Wikibase data model; base URI https://n4o-rse.github.io/chublets-wikibase-demo
-# Generated with wikibase-static 0.19.0; data as of 2026-10-25T00:00:00Z
+# Generated with wikibase-static 0.32.0; data as of 2026-11-02T00:00:00Z
 # Licence: CC0 1.0 (Public Domain)
 # The prefixes chb:, chbt:, chbp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only chb:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -1064,11 +1064,11 @@ chbcat:wikibase-ontology
 <https://n4o-rse.github.io/chublets-wikibase-demo/catalog>
     a dcat:Catalog ;
     dcterms:conformsTo <http://wikiba.se/ontology> ;
-    dcterms:description "The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and about 100 software entries imported from open-archaeo." ;
+    dcterms:description "The data model of the chublets.software Wikibase, kept as CSV and rendered as a static, read-only copy. Properties, classes and their Wikidata twins, and the 416 software entries imported from open-archaeo." ;
     dcterms:hasPart chbcat:items,
         chbcat:properties ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    dcterms:modified "2026-10-25T00:00:00Z"^^xsd:dateTime ;
+    dcterms:modified "2026-11-02T00:00:00Z"^^xsd:dateTime ;
     dcterms:title "chublets.software Wikibase (model demo)" ;
     dcat:dataset chbcat:export,
         chbcat:wikibase-ontology ;
@@ -21153,7 +21153,7 @@ chbdist:Q111-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q111, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1660"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1187"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q111.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -21228,7 +21228,7 @@ chbdist:Q114-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q114, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2544"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2071"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q114.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -21428,7 +21428,7 @@ chbdist:Q122-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q122, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1671"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1198"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q122.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -21753,7 +21753,7 @@ chbdist:Q135-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q135, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1666"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1193"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q135.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -24203,7 +24203,7 @@ chbdist:Q234-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q234, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1666"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1193"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q234.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -25128,7 +25128,7 @@ chbdist:Q271-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q271, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1690"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1217"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q271.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -25278,7 +25278,7 @@ chbdist:Q277-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q277, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1673"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1200"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q277.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -26003,7 +26003,7 @@ chbdist:Q307-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q307, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1675"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1202"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q307.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -26428,7 +26428,7 @@ chbdist:Q324-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q324, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1683"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1210"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q324.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27053,7 +27053,7 @@ chbdist:Q349-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q349, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1670"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1197"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q349.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27303,7 +27303,7 @@ chbdist:Q359-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q359, as archived from the Wikibase API"@en ;
-    dcat:byteSize "66478"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "63250"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q359.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27403,7 +27403,7 @@ chbdist:Q363-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q363, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1796"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1305"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q363.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27578,7 +27578,7 @@ chbdist:Q370-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q370, as archived from the Wikibase API"@en ;
-    dcat:byteSize "4006"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "3533"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q370.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -27603,7 +27603,7 @@ chbdist:Q371-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q371, as archived from the Wikibase API"@en ;
-    dcat:byteSize "2719"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "2246"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q371.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -28603,7 +28603,7 @@ chbdist:Q415-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q415, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15438"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "16430"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q415.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -30653,7 +30653,7 @@ chbdist:Q497-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q497, as archived from the Wikibase API"@en ;
-    dcat:byteSize "14719"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "15696"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q497.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -32728,7 +32728,7 @@ chbdist:Q580-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q580, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1666"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1193"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q580.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -32928,7 +32928,7 @@ chbdist:Q588-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q588, as archived from the Wikibase API"@en ;
-    dcat:byteSize "23120"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "24113"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q588.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -33178,7 +33178,7 @@ chbdist:Q598-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q598, as archived from the Wikibase API"@en ;
-    dcat:byteSize "17896"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "18909"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q598.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -34353,7 +34353,7 @@ chbdist:Q645-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q645, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1679"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1206"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q645.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -35203,7 +35203,7 @@ chbdist:Q679-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q679, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1672"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1199"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q679.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -36153,7 +36153,7 @@ chbdist:Q717-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q717, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1677"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1204"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q717.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -36353,7 +36353,7 @@ chbdist:Q725-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q725, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1675"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1202"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q725.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -38228,7 +38228,7 @@ chbdist:Q800-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q800, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1674"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1201"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q800.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -38803,7 +38803,7 @@ chbdist:Q823-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q823, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15434"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "16426"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q823.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -40153,7 +40153,7 @@ chbdist:Q878-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q878, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1664"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1191"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q878.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -40428,7 +40428,7 @@ chbdist:Q889-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q889, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1702"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1229"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q889.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -41203,7 +41203,7 @@ chbdist:Q920-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     dcterms:title "Q920, as archived from the Wikibase API"@en ;
-    dcat:byteSize "1669"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "1196"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/chublets-wikibase-demo/json/Q920.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -41845,14 +41845,12 @@ chb:Q111
     a wikibase:Item ;
     schema:name "R"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "R"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q15> ;
     skos:prefLabel "R"@en ;
-    chbp:P2 chbs:Q111-ACC81343-7286-5070-81C7-29F1C3A97A90,
-        chbs:Q111-EB98BB96-C05E-5082-84A6-F348AFC59520 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q111-EB98BB96-C05E-5082-84A6-F348AFC59520 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q112
     a wikibase:Item ;
@@ -41880,15 +41878,13 @@ chb:Q114
     a wikibase:Item ;
     schema:name "Git"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Git"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q18> ;
     skos:prefLabel "Git"@en ;
-    chbp:P2 chbs:Q114-1A16782A-B9B7-566D-9009-7119C581750E,
-        chbs:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF ;
+    chbp:P2 chbs:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF ;
     chbp:P4 chbs:Q114-FD70BBEC-2C2E-5C78-AFE9-33C9C6C369CC ;
-    chbt:P2 chb:Q3,
-        chb:Q106 ;
+    chbt:P2 chb:Q3 ;
     chbt:P4 "Q186055" .
 
 chb:Q115
@@ -42049,14 +42045,12 @@ chb:Q122
     a wikibase:Item ;
     schema:name "ArcGIS"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "ArcGIS"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q26> ;
     skos:prefLabel "ArcGIS"@en ;
-    chbp:P2 chbs:Q122-228A7CBB-BCF3-53D9-A35B-399EF597439F,
-        chbs:Q122-DF1BE2E5-441A-51F6-8759-97D595E9F0B2 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q122-DF1BE2E5-441A-51F6-8759-97D595E9F0B2 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q123
     a wikibase:Item ;
@@ -42294,14 +42288,12 @@ chb:Q135
     a wikibase:Item ;
     schema:name "QGIS"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "QGIS"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q39> ;
     skos:prefLabel "QGIS"@en ;
-    chbp:P2 chbs:Q135-240895D8-273B-5307-90CE-5363E059F14A,
-        chbs:Q135-C0437714-D557-50A4-ACAD-DAB09AAD4F2B ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q135-240895D8-273B-5307-90CE-5363E059F14A ;
+    chbt:P2 chb:Q3 .
 
 chb:Q136
     a wikibase:Item ;
@@ -44256,14 +44248,12 @@ chb:Q234
     a wikibase:Item ;
     schema:name "Meshlab"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Meshlab"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q137> ;
     skos:prefLabel "Meshlab"@en ;
-    chbp:P2 chbs:Q234-30BA602D-0666-5711-9DF9-F9EADD0E123D,
-        chbs:Q234-DDD43200-266C-5E68-96A5-49D31A70E3DA ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q234-DDD43200-266C-5E68-96A5-49D31A70E3DA ;
+    chbt:P2 chb:Q3 .
 
 chb:Q235
     a wikibase:Item ;
@@ -45099,14 +45089,12 @@ chb:Q271
     a wikibase:Item ;
     schema:name "MATLAB"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "MATLAB"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q174> ;
     skos:prefLabel "MATLAB"@en ;
-    chbp:P2 chbs:Q271-A6FCEBB7-3C3E-5EAD-ADDC-595D3C44C883,
-        chbs:Q271-BCA91289-B244-5488-9F61-25606687AFD0 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q271-BCA91289-B244-5488-9F61-25606687AFD0 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q272
     a wikibase:Item ;
@@ -45229,14 +45217,12 @@ chb:Q277
     a wikibase:Item ;
     schema:name "NetLogo"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "NetLogo"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q180> ;
     skos:prefLabel "NetLogo"@en ;
-    chbp:P2 chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4,
-        chbs:Q277-580909B8-BEAB-52ED-BEDE-92936860E667 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q278
     a wikibase:Item ;
@@ -45898,14 +45884,12 @@ chb:Q307
     a wikibase:Item ;
     schema:name "Lisp"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Lisp"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q209> ;
     skos:prefLabel "Lisp"@en ;
-    chbp:P2 chbs:Q307-336E22F9-CC84-54DC-BDD8-1F669D028B75,
-        chbs:Q307-C1C570F2-77AC-5257-84DF-561B5CDEC3E4 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q307-C1C570F2-77AC-5257-84DF-561B5CDEC3E4 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q308
     a wikibase:Item ;
@@ -46326,14 +46310,12 @@ chb:Q324
     a wikibase:Item ;
     schema:name "Microsoft Excel"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Microsoft Excel"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q229> ;
     skos:prefLabel "Microsoft Excel"@en ;
-    chbp:P2 chbs:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD,
-        chbs:Q324-AFE5D95D-78D6-5698-B7D8-A127567F71F6 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD ;
+    chbt:P2 chb:Q3 .
 
 chb:Q325
     a wikibase:Item ;
@@ -46992,14 +46974,12 @@ chb:Q349
     a wikibase:Item ;
     schema:name "Piwigo"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Piwigo"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q254> ;
     skos:prefLabel "Piwigo"@en ;
-    chbp:P2 chbs:Q349-954EC2FD-C137-5932-B2C4-1C2830DF37C6,
-        chbs:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F ;
+    chbt:P2 chb:Q3 .
 
 chb:Q350
     a wikibase:Item ;
@@ -47260,7 +47240,7 @@ chb:Q359
     schema:name "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "28"^^xsd:integer ;
+    wikibase:statements "27"^^xsd:integer ;
     rdfs:label "Alligator - Allen Transformator"@de,
         "Alligator - Allen Transformer"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q811> ;
@@ -47277,13 +47257,12 @@ chb:Q359
     chbp:P107 chbs:Q359-F429A5B3-FA04-5983-B82E-76CA1A3EB4A9 ;
     chbp:P113 chbs:Q359-7BC78678-A539-5BA1-B0E1-0CACF4CBC93F,
         chbs:Q359-410B885B-C909-5384-BB43-59D5B42418C4,
-        chbs:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD,
-        chbs:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F,
-        chbs:Q359-EEC02582-2679-519C-9581-BB5C63818E17 ;
+        chbs:Q359-C9CDA853-8E54-5BEF-A25E-3A8160ACF89F ;
     chbp:P115 chbs:Q359-F394B1B9-A262-5328-96DF-630F3F552A7B ;
     chbp:P116 chbs:Q359-26CFC54E-82C3-5B79-8B16-F03B6DA92419 ;
     chbp:P117 chbs:Q359-0EEA4586-40E0-584A-8BB1-B4C0071DC3B8,
-        chbs:Q359-17C65C2D-E135-5188-8789-195EA8928C08 ;
+        chbs:Q359-17C65C2D-E135-5188-8789-195EA8928C08,
+        chbs:Q359-696552C6-AD99-5DBA-A7D2-A3DF8052C831 ;
     chbp:P118 chbs:Q359-AE81F285-4EEC-5FE1-B2AF-E30D5C724A87 ;
     chbp:P119 chbs:Q359-7827DDD2-57F3-5423-A8CD-CB51EEC1E98E ;
     chbp:P120 chbs:Q359-81DA759E-5E91-5E77-89E6-0762F8B92BF0,
@@ -47309,6 +47288,7 @@ chb:Q359
     chbt:P115 <https://open-archaeo.info/post/alligator/> ;
     chbt:P116 "alligator" ;
     chbt:P117 chb:Q116,
+        chb:Q126,
         chb:Q193 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "Alligator"@en ;
@@ -47472,12 +47452,10 @@ chb:Q363
         "webbasierter Hosting-Dienst für Software-Entwicklungsprojekte"@de ;
     schema:name "GitHub"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "GitHub"@en ;
     skos:prefLabel "GitHub"@en ;
-    chbp:P2 chbs:Q363-9D96B097-DB22-545E-8A09-205CA555067A ;
     chbp:P4 chbs:Q363-5DA51CC6-00A9-5F62-8D8D-60CEC49AF90F ;
-    chbt:P2 chb:Q106 ;
     chbt:P4 "Q364" .
 
 chb:Q364
@@ -47591,7 +47569,7 @@ chb:Q370
     schema:name "Python"@de,
         "Python"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "Python"@de,
         "Python"@en ;
     skos:altLabel "Programmiersprache Python"@de,
@@ -47610,11 +47588,9 @@ chb:Q370
         "Python.org"@en ;
     skos:prefLabel "Python"@de,
         "Python"@en ;
-    chbp:P2 chbs:Q370-64B68B52-DD00-58CA-BD7A-B27360AC3001,
-        chbs:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407 ;
+    chbp:P2 chbs:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407 ;
     chbp:P4 chbs:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 ;
+    chbt:P2 chb:Q3 ;
     chbt:P4 "Q28865" .
 
 chb:Q371
@@ -47623,14 +47599,12 @@ chb:Q371
         "high-level programming language"@en ;
     schema:name "JavaScript"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "3"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
     rdfs:label "JavaScript"@en ;
     skos:prefLabel "JavaScript"@en ;
-    chbp:P2 chbs:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37,
-        chbs:Q371-D24307A8-F380-5322-A590-FFDD66BDE731 ;
+    chbp:P2 chbs:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37 ;
     chbp:P4 chbs:Q371-7EF10A02-A2F8-5C5E-88C2-BBB1D1A65905 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 ;
+    chbt:P2 chb:Q3 ;
     chbt:P4 "Q2005" .
 
 chb:Q372
@@ -48637,7 +48611,7 @@ chb:Q415
     schema:description "Allen's interval algebra for archaeologists."@en ;
     schema:name "allen.archaeology"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "13"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
     rdfs:label "allen.archaeology"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q293> ;
     skos:prefLabel "allen.archaeology"@en ;
@@ -48647,7 +48621,8 @@ chb:Q415
     chbp:P113 chbs:Q415-5FF9EB00-7877-5A61-A421-D1D6CBF41F8B ;
     chbp:P115 chbs:Q415-4050E355-56B0-5790-AD74-3CF87099206C ;
     chbp:P116 chbs:Q415-D7A46101-8E25-5ED6-B9E6-634291FE4A73 ;
-    chbp:P117 chbs:Q415-1D57D0D2-C990-56A4-9B0D-FB3EFA876C31 ;
+    chbp:P117 chbs:Q415-1D57D0D2-C990-56A4-9B0D-FB3EFA876C31,
+        chbs:Q415-FA750F21-70F4-552D-8DBC-E211E4ADB8E4 ;
     chbp:P118 chbs:Q415-D9CB5B83-F59D-5EF9-B936-8B4ED56CEB00 ;
     chbp:P119 chbs:Q415-0578401F-8030-5F75-AE46-16F860FB7BEB ;
     chbp:P122 chbs:Q415-8A11B538-258D-5CB6-9F18-C102AAABB613,
@@ -48660,7 +48635,8 @@ chb:Q415
     chbt:P113 chb:Q308 ;
     chbt:P115 <https://open-archaeo.info/post/allen-archaeology/> ;
     chbt:P116 "allen-archaeology" ;
-    chbt:P117 chb:Q116 ;
+    chbt:P117 chb:Q116,
+        chb:Q126 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "allen.archaeology"@en ;
     chbt:P122 chb:Q109,
@@ -50691,7 +50667,7 @@ chb:Q497
     schema:description "R script for seriation using correspondence analysis."@en ;
     schema:name "ca"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "14"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
     rdfs:label "ca"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q375> ;
     skos:prefLabel "ca"@en ;
@@ -50702,7 +50678,8 @@ chb:Q497
     chbp:P115 chbs:Q497-5C115EA3-BEBF-5D3D-A97E-354B7C5E4218 ;
     chbp:P116 chbs:Q497-6B4D93BC-D4CB-53D7-9762-03B26E80F0CE ;
     chbp:P117 chbs:Q497-67E14E91-2FA9-5867-8CA4-B264D2BAC8D9,
-        chbs:Q497-17327E0F-D331-5F4E-BF22-4CDDB33FC349 ;
+        chbs:Q497-17327E0F-D331-5F4E-BF22-4CDDB33FC349,
+        chbs:Q497-F59BD852-B1EA-51EB-948B-DC23BFBA94A3 ;
     chbp:P118 chbs:Q497-1F7DFD1F-CE37-5DF1-A752-08CB6307A37A ;
     chbp:P119 chbs:Q497-7FFE67A3-E0CD-5ED3-A4A4-36483D9DFEB5 ;
     chbp:P120 chbs:Q497-CCA1310B-7C5F-5D21-91FF-204789A428F0 ;
@@ -50716,6 +50693,7 @@ chb:Q497
     chbt:P115 <https://open-archaeo.info/post/ca/> ;
     chbt:P116 "ca" ;
     chbt:P117 chb:Q116,
+        chb:Q126,
         chb:Q190 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "ca"@en ;
@@ -52926,14 +52904,12 @@ chb:Q580
     a wikibase:Item ;
     schema:name "Java"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Java"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q458> ;
     skos:prefLabel "Java"@en ;
-    chbp:P2 chbs:Q580-9BEFA178-B06E-55C4-A728-3B904D09D946,
-        chbs:Q580-954D2B84-4FC1-5B60-9873-8850F3C5C789 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q580-954D2B84-4FC1-5B60-9873-8850F3C5C789 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q581
     a wikibase:Item ;
@@ -53073,7 +53049,7 @@ chb:Q588
     schema:description "R package that provides the infrastructure for ordering objects with an implementation of several seriation/sequencing/ordination techniques to reorder matrices, dissimilarity matrices, and dendrograms (see below for a full list). Also provides (optimally) reordered heatmaps, color images and clustering visualizations like dissimilarity plots, and visual assessment of cluster tendency plots (VAT and iVAT)."@en ;
     schema:name "seriation"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "19"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
     rdfs:label "seriation"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q466> ;
     skos:prefLabel "seriation"@en ;
@@ -53088,7 +53064,8 @@ chb:Q588
         chbs:Q588-CA030B15-1404-5309-B920-A1545406EDCE ;
     chbp:P115 chbs:Q588-7F74ABB4-9C90-5656-ABB6-A8008EF76FAB ;
     chbp:P116 chbs:Q588-BADCBA43-94FD-58E7-AE49-00EE17AA3850 ;
-    chbp:P117 chbs:Q588-9CEA09F5-1752-57ED-87C9-0E8DC0FAD851,
+    chbp:P117 chbs:Q588-3CB60DCB-07C3-51C7-B53D-1EB2D24C0DD2,
+        chbs:Q588-9CEA09F5-1752-57ED-87C9-0E8DC0FAD851,
         chbs:Q588-FEDBC612-961F-5A9A-A833-A54F4D02EE01 ;
     chbp:P118 chbs:Q588-9A04CE88-1FE6-5E33-944C-DECBD67A1587 ;
     chbp:P119 chbs:Q588-B734848D-3D31-5DCE-972A-AB69300CC11A ;
@@ -53108,6 +53085,7 @@ chb:Q588
     chbt:P115 <https://open-archaeo.info/post/seriation-mhahsler/> ;
     chbt:P116 "seriation-mhahsler" ;
     chbt:P117 chb:Q116,
+        chb:Q126,
         chb:Q190 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "seriation"@en ;
@@ -53276,7 +53254,7 @@ chb:Q598
     schema:description "Script for calculating mean ceramic dates based on tabular data. This script also estimates sampling error using a bootstrapping procedure."@en ;
     schema:name "Mean-Ceramic-Date-and-Error-Estimation"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "15"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
     rdfs:label "Mean-Ceramic-Date-and-Error-Estimation"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q476> ;
     skos:prefLabel "Mean-Ceramic-Date-and-Error-Estimation"@en ;
@@ -53286,7 +53264,8 @@ chb:Q598
     chbp:P113 chbs:Q598-6EAE30DB-105A-54E2-9019-82ED30074FCA ;
     chbp:P115 chbs:Q598-4C323BBF-7EB6-58CC-8C49-F8DC07F802CF ;
     chbp:P116 chbs:Q598-66532D16-27D8-5EF7-B1F4-95200D50C083 ;
-    chbp:P117 chbs:Q598-ADC508B2-C363-5B34-BB66-3B6A055EFFAF,
+    chbp:P117 chbs:Q598-0CA6F27A-1D76-5644-BB8D-E07739237CF9,
+        chbs:Q598-ADC508B2-C363-5B34-BB66-3B6A055EFFAF,
         chbs:Q598-F2DF8219-FB81-50CD-A3B1-E49234348AEF ;
     chbp:P118 chbs:Q598-D4E8C2CD-AACD-512F-82C7-D3E4CBF257AE ;
     chbp:P119 chbs:Q598-DFAC997A-712C-5F83-8F30-65998A5CF420 ;
@@ -53302,6 +53281,7 @@ chb:Q598
     chbt:P115 <https://open-archaeo.info/post/mean-ceramic-date-and-error-estimation/> ;
     chbt:P116 "mean-ceramic-date-and-error-estimation" ;
     chbt:P117 chb:Q116,
+        chb:Q126,
         chb:Q222 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "Mean-Ceramic-Date-and-Error-Estimation"@en ;
@@ -54507,14 +54487,12 @@ chb:Q645
     a wikibase:Item ;
     schema:name "LibreOffice Calc"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "LibreOffice Calc"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q523> ;
     skos:prefLabel "LibreOffice Calc"@en ;
-    chbp:P2 chbs:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0,
-        chbs:Q645-EEF55E98-D4FC-561A-AA3B-5BFBB35C997A ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q646
     a wikibase:Item ;
@@ -55400,14 +55378,12 @@ chb:Q679
     a wikibase:Item ;
     schema:name "Ruby"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Ruby"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q557> ;
     skos:prefLabel "Ruby"@en ;
-    chbp:P2 chbs:Q679-010D1901-9309-5892-BE43-330D3E064003,
-        chbs:Q679-D49B59DC-3A04-5907-A9D4-5DF3E0568273 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q679-010D1901-9309-5892-BE43-330D3E064003 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q680
     a wikibase:Item ;
@@ -56335,14 +56311,12 @@ chb:Q717
     a wikibase:Item ;
     schema:name "Open Data Kit"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Open Data Kit"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q595> ;
     skos:prefLabel "Open Data Kit"@en ;
-    chbp:P2 chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44,
-        chbs:Q717-0288CD06-C1B0-59AF-87F2-21792F7E9D91 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q718
     a wikibase:Item ;
@@ -56531,14 +56505,12 @@ chb:Q725
     a wikibase:Item ;
     schema:name "Blender"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Blender"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q603> ;
     skos:prefLabel "Blender"@en ;
-    chbp:P2 chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925,
-        chbs:Q725-F598A0F4-6BB3-5FDD-9287-8A3255822832 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q726
     a wikibase:Item ;
@@ -58691,14 +58663,12 @@ chb:Q800
     a wikibase:Item ;
     schema:name "Stellarium"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "Stellarium"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q678> ;
     skos:prefLabel "Stellarium"@en ;
-    chbp:P2 chbs:Q800-01611399-E8AF-5DEA-9617-F0709265F43B,
-        chbs:Q800-C021B557-5222-5B03-9665-3FB824545A5D ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q800-01611399-E8AF-5DEA-9617-F0709265F43B ;
+    chbt:P2 chb:Q3 .
 
 chb:Q801
     a wikibase:Item ;
@@ -59333,7 +59303,7 @@ chb:Q823
     schema:description "Estimate probabilities of find numbers per period."@en ;
     schema:name "aoristic-analysis"@en ;
     wikibase:identifiers "1"^^xsd:integer ;
-    wikibase:statements "14"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
     rdfs:label "aoristic-analysis"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q701> ;
     skos:prefLabel "aoristic-analysis"@en ;
@@ -59344,7 +59314,8 @@ chb:Q823
     chbp:P114 chbs:Q823-41367E44-2529-5C9C-A5AF-C6E73BC3C7FA ;
     chbp:P115 chbs:Q823-1543BCA3-A2E1-59EF-9AE7-A4E8E09A02CE ;
     chbp:P116 chbs:Q823-95748533-A5A6-59DF-AFB9-6FF651545B0F ;
-    chbp:P117 chbs:Q823-AAD80DD8-757C-5471-AD41-FCB98F29178D ;
+    chbp:P117 chbs:Q823-496AB22C-4C36-5CDB-AADF-25B0F4602C79,
+        chbs:Q823-AAD80DD8-757C-5471-AD41-FCB98F29178D ;
     chbp:P118 chbs:Q823-A9108E9F-8C90-5B56-AFC2-11C9367B28FE ;
     chbp:P119 chbs:Q823-AC1535C6-5AF1-5B49-AFD7-D522AC8EFB85 ;
     chbp:P122 chbs:Q823-BE1A62A7-5455-50CA-BFFA-4D8AABDA291B,
@@ -59358,7 +59329,8 @@ chb:Q823
     chbt:P114 "10.1016/j.jasrep.2016.10.006" ;
     chbt:P115 <https://open-archaeo.info/post/aoristic-analysis/> ;
     chbt:P116 "aoristic-analysis" ;
-    chbt:P117 chb:Q116 ;
+    chbt:P117 chb:Q116,
+        chb:Q126 ;
     chbt:P118 chb:Q108 ;
     chbt:P119 "aoristic-analysis"@en ;
     chbt:P122 chb:Q109,
@@ -60889,14 +60861,12 @@ chb:Q878
     a wikibase:Item ;
     schema:name "C"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "C"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q755> ;
     skos:prefLabel "C"@en ;
-    chbp:P2 chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D,
-        chbs:Q878-078E2497-E998-5521-A209-0425CD6F9C9C ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D ;
+    chbt:P2 chb:Q3 .
 
 chb:Q879
     a wikibase:Item ;
@@ -61124,14 +61094,12 @@ chb:Q889
     a wikibase:Item ;
     schema:name "LaTeX"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "LaTeX"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q766> ;
     skos:prefLabel "LaTeX"@en ;
-    chbp:P2 chbs:Q889-93A9126F-11E8-51DF-A975-FD08260348E7,
-        chbs:Q889-AC79CB2F-C801-5239-A697-EB6B0744A3B5 ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q889-AC79CB2F-C801-5239-A697-EB6B0744A3B5 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q890
     a wikibase:Item ;
@@ -61989,14 +61957,12 @@ chb:Q920
     a wikibase:Item ;
     schema:name "AutoCAD"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
-    wikibase:statements "2"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
     rdfs:label "AutoCAD"@en ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q797> ;
     skos:prefLabel "AutoCAD"@en ;
-    chbp:P2 chbs:Q920-A59C6637-B9F7-5EAA-9747-754040035F70,
-        chbs:Q920-CE2D471D-1A90-5F5A-95EC-02436CF9421E ;
-    chbt:P2 chb:Q3,
-        chb:Q106 .
+    chbp:P2 chbs:Q920-A59C6637-B9F7-5EAA-9747-754040035F70 ;
+    chbt:P2 chb:Q3 .
 
 chb:Q921
     a wikibase:Item ;
@@ -71441,12 +71407,6 @@ chbs:Q110-DB53B593-DFF5-51E0-A002-FB198D965D92
     prov:wasDerivedFrom chbref:85c7a369e841e02f3b62533e889f5353015aab20 ;
     chbps:P4 "Q141190255" .
 
-chbs:Q111-ACC81343-7286-5070-81C7-29F1C3A97A90
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q111-EB98BB96-C05E-5082-84A6-F348AFC59520
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -71467,12 +71427,6 @@ chbs:Q113-F16F3B81-BE17-5248-9696-181E756B4CB4
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:85c7a369e841e02f3b62533e889f5353015aab20 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q114-1A16782A-B9B7-566D-9009-7119C581750E
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q114-79384AD3-EE63-5359-B721-3D28AE595DBF
     a wikibase:BestRank,
@@ -71809,12 +71763,6 @@ chbs:Q121-FDBDEA24-B67E-5B1B-9807-5677DD223601
         wikibase:Statement ;
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:7687af46a9c7659a85cc5efdfc7f21d57b76978f ;
-    chbps:P2 chb:Q106 .
-
-chbs:Q122-228A7CBB-BCF3-53D9-A35B-399EF597439F
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
     chbps:P2 chb:Q106 .
 
 chbs:Q122-DF1BE2E5-441A-51F6-8759-97D595E9F0B2
@@ -72274,12 +72222,6 @@ chbs:Q135-240895D8-273B-5307-90CE-5363E059F14A
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:767272475ea5a4d4d1049ad6cb3318dfdd715340 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q135-C0437714-D557-50A4-ACAD-DAB09AAD4F2B
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q136-BD953C5D-976C-51CD-8C6D-44FF989E1B5B
     a wikibase:BestRank,
@@ -76075,12 +76017,6 @@ chbs:Q233-F115A287-FE77-5C3F-9FC4-0436122CC0B4
     prov:wasDerivedFrom chbref:21a94adf7adb8f9ef246e27776192141dfe0feaf ;
     chbps:P119 "meshlab"@en .
 
-chbs:Q234-30BA602D-0666-5711-9DF9-F9EADD0E123D
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q234-DDD43200-266C-5E68-96A5-49D31A70E3DA
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -77875,12 +77811,6 @@ chbs:Q270-EDC77163-14F5-5D32-B62B-4DB5DC53335A
     prov:wasDerivedFrom chbref:a67f2443557fdaa60185ed676f8546791bcf0b4e ;
     chbps:P118 chb:Q108 .
 
-chbs:Q271-A6FCEBB7-3C3E-5EAD-ADDC-595D3C44C883
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q271-BCA91289-B244-5488-9F61-25606687AFD0
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -78147,12 +78077,6 @@ chbs:Q277-6B7032D9-75EE-563F-B3FA-8CF0E7E9DDA4
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:deb5e505950349a13318ff06229812859f1ee761 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q277-580909B8-BEAB-52ED-BEDE-92936860E667
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q278-93B61B05-CA98-5A0D-A596-33B36D3070EB
     a wikibase:BestRank,
@@ -79585,12 +79509,6 @@ chbs:Q306-D60897E4-E1C6-539D-8657-58D85C7E0CBC
     prov:wasDerivedFrom chbref:8ba539a8b921eeed1d230c80d42eae34ad8b7d0d ;
     chbps:P122 chb:Q109 .
 
-chbs:Q307-336E22F9-CC84-54DC-BDD8-1F669D028B75
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q307-C1C570F2-77AC-5257-84DF-561B5CDEC3E4
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -80559,12 +80477,6 @@ chbs:Q324-46E1B1AA-7343-5B3E-95CB-B0370E43E0BD
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:58e70c932dcd0764b8e4a3b2569c472efece935e ;
     chbps:P2 chb:Q3 .
-
-chbs:Q324-AFE5D95D-78D6-5698-B7D8-A127567F71F6
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q325-3E2536B3-4BDB-5DC9-80F5-AFAE31C7C9E2
     a wikibase:BestRank,
@@ -82115,12 +82027,6 @@ chbs:Q348-EF7E2227-FDF5-595E-A0AD-7482EB407343
     prov:wasDerivedFrom chbref:deed171aa4716d67a48f50ab5efb8b35d3d328c6 ;
     chbps:P106 chb:Q110 .
 
-chbs:Q349-954EC2FD-C137-5932-B2C4-1C2830DF37C6
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q349-3985E662-F1CA-5248-B4DF-DAA4769D6C1F
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -82837,6 +82743,13 @@ chbs:Q359-16689D4E-2C9A-537F-8E3D-50A37714F87F
     prov:wasDerivedFrom chbref:707c0156c388067fc8a523813f02784c2664d39b ;
     chbps:P4 "Q74004218" .
 
+chbs:Q359-696552C6-AD99-5DBA-A7D2-A3DF8052C831
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
+    chbps:P117 chb:Q126 .
+
 chbs:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -82844,13 +82757,6 @@ chbs:Q359-A4E1FC6C-F3E2-5452-814E-A63B02212CAF
     prov:wasDerivedFrom chbref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82,
         chbref:cc2605b1f4b95dbf214854dd9c49f5ee8785d641 ;
     chbps:P122 chb:Q110 .
-
-chbs:Q359-A41D3BCD-0338-52A0-A04C-8DEE7C3790DD
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom chbref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
-    chbps:P113 chb:Q365 .
 
 chbs:Q359-AC0E33A2-2D88-533F-98B4-1094B40E6664
     a wikibase:Statement ;
@@ -82899,13 +82805,6 @@ chbs:Q359-E13D21F5-CD5A-56FE-87AA-181CC87B0C7C
     chbpq:P126 chb:Q114 ;
     chbpq:P248 chb:Q363 ;
     chbps:P125 <https://github.com/RGZM/alligator> .
-
-chbs:Q359-EEC02582-2679-519C-9581-BB5C63818E17
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    prov:wasDerivedFrom chbref:c78b839bf400c9d562b409cdbf9cf4c3f3d51a82 ;
-    chbps:P113 chb:Q374 .
 
 chbs:Q359-EFF15EB9-DC41-5F35-8C6B-FE9F582EE1D2
     a wikibase:Statement ;
@@ -83518,12 +83417,6 @@ chbs:Q363-5DA51CC6-00A9-5F62-8D8D-60CEC49AF90F
     prov:wasDerivedFrom chbref:5c5c5df55d2afd583ff7bd6308068efa971fccfc ;
     chbps:P4 "Q364" .
 
-chbs:Q363-9D96B097-DB22-545E-8A09-205CA555067A
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q364-D8D6478E-B4F4-5F8A-B223-F2C1BAC5E407
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -83580,12 +83473,6 @@ chbs:Q370-9F1D71C1-98DE-50B1-8E11-4BEC2F7C3332
     prov:wasDerivedFrom chbref:000f2b81e99bbe75bf7c61252febbc605d562e83 ;
     chbps:P4 "Q28865" .
 
-chbs:Q370-64B68B52-DD00-58CA-BD7A-B27360AC3001
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q370-BAEF7EDD-A2AC-5F4B-BB06-0EEBC349D407
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -83606,12 +83493,6 @@ chbs:Q371-9035B4D3-DC16-5F2E-A172-5A90082A8D37
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:cc04fd5419bb627117136f56461c90e87c54ae6b ;
     chbps:P2 chb:Q3 .
-
-chbs:Q371-D24307A8-F380-5322-A590-FFDD66BDE731
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q372-26A9184A-7E2E-59B3-AF40-E22A49C3B4B9
     a wikibase:BestRank,
@@ -85723,6 +85604,13 @@ chbs:Q415-E9DDF63A-7099-5A2B-9AB5-38F6AB1CF767
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:ad86c1a8593739ccbfcd34c328a47d5a98a908e4 ;
     chbps:P106 chb:Q110 .
+
+chbs:Q415-FA750F21-70F4-552D-8DBC-E211E4ADB8E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:ad86c1a8593739ccbfcd34c328a47d5a98a908e4 ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q416-1B702F1B-1E46-553C-AF16-7FFB11233EAB
     a wikibase:BestRank,
@@ -90412,6 +90300,13 @@ chbs:Q497-E6C2C286-2626-55A9-BD02-D084E30C1466
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:21f0a53003d54fdf91a6b7fbeea10665dc37c01d ;
     chbps:P2 chb:Q106 .
+
+chbs:Q497-F59BD852-B1EA-51EB-948B-DC23BFBA94A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:21f0a53003d54fdf91a6b7fbeea10665dc37c01d ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q498-4CD3253C-1F70-5AAB-8DBD-A8B31484FE5D
     a wikibase:BestRank,
@@ -95590,12 +95485,6 @@ chbs:Q579-FC46E3AF-A433-5360-8FDE-E9CD95871C25
     chbpq:P146 "1" ;
     chbps:P113 chb:Q581 .
 
-chbs:Q580-9BEFA178-B06E-55C4-A728-3B904D09D946
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q580-954D2B84-4FC1-5B60-9873-8850F3C5C789
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -95855,6 +95744,13 @@ chbs:Q587-179CB447-274E-54B9-83F2-9E3257662CA3
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:f40273ddc45a9ca7c77add513de47f7401087b68 ;
     chbps:P2 chb:Q3 .
+
+chbs:Q588-3CB60DCB-07C3-51C7-B53D-1EB2D24C0DD2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:6446dc0198a491e8bc5124f13899cdf99b95d4ff ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q588-6C774FD4-0CB0-5779-9202-DEC2B555CF15
     a wikibase:BestRank,
@@ -96269,6 +96165,13 @@ chbs:Q598-0A0AC06B-1ADB-594A-A175-2588CB1D275D
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:5ca547eb109e2a27621c38cd5d2f54b12d304036 ;
     chbps:P122 chb:Q109 .
+
+chbs:Q598-0CA6F27A-1D76-5644-BB8D-E07739237CF9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:5ca547eb109e2a27621c38cd5d2f54b12d304036 ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q598-4C323BBF-7EB6-58CC-8C49-F8DC07F802CF
     a wikibase:BestRank,
@@ -99148,12 +99051,6 @@ chbs:Q645-29B23E8A-4888-5BDF-95CB-4AA4922721B0
     prov:wasDerivedFrom chbref:1e4667326de1574e55f8b3b62db11f3020f5a196 ;
     chbps:P2 chb:Q3 .
 
-chbs:Q645-EEF55E98-D4FC-561A-AA3B-5BFBB35C997A
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q646-7CC0D1DC-B128-56B1-84EA-11308D47E9C8
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -101220,12 +101117,6 @@ chbs:Q679-010D1901-9309-5892-BE43-330D3E064003
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:78ac2dfb34ff39c594da3146794ec834493e4ba3 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q679-D49B59DC-3A04-5907-A9D4-5DF3E0568273
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q680-0FE0C5FE-06F0-50CD-8022-810941E992F3
     a wikibase:BestRank,
@@ -103313,12 +103204,6 @@ chbs:Q717-3F6DCF77-7F29-546D-8A48-10DF0D131D44
     prov:wasDerivedFrom chbref:8e0e14dd382ab1eb2e8af04cbce740ecd5da8ff7 ;
     chbps:P2 chb:Q3 .
 
-chbs:Q717-0288CD06-C1B0-59AF-87F2-21792F7E9D91
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q718-C03E8ED7-C756-5162-9351-733E7A434999
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -103752,12 +103637,6 @@ chbs:Q725-5C95BD76-CF44-5F9F-A464-C0CA8BF6F925
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:bbe43d0e593e4ab875368026f1644f3606acf647 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q725-F598A0F4-6BB3-5FDD-9287-8A3255822832
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q726-0C67BB7F-5266-570C-A041-A252AA50071C
     a wikibase:BestRank,
@@ -108997,12 +108876,6 @@ chbs:Q800-01611399-E8AF-5DEA-9617-F0709265F43B
     prov:wasDerivedFrom chbref:ba6b9d3a3edc71dacada18f6516980777f5a4723 ;
     chbps:P2 chb:Q3 .
 
-chbs:Q800-C021B557-5222-5B03-9665-3FB824545A5D
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q801-2FD5D013-7F2B-517D-9B15-9BB4366257F1
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -110536,6 +110409,13 @@ chbs:Q823-97A4BC58-AD0B-5A6E-87E5-478FFB4FCF2C
     prov:wasDerivedFrom chbref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
     chbpq:P126 chb:Q114 ;
     chbps:P125 <https://github.com/LimesLimits/aoristic-analysis> .
+
+chbs:Q823-496AB22C-4C36-5CDB-AADF-25B0F4602C79
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom chbref:0a53c5e6688ed158de578ad32749056d03a20cf0 ;
+    chbps:P117 chb:Q126 .
 
 chbs:Q823-762C9F02-4992-5D8F-8ECD-7D91BB8F48DF
     a wikibase:BestRank,
@@ -114289,12 +114169,6 @@ chbs:Q878-2EAA2105-CEC5-5C5D-93E4-F151B7C3A04D
     prov:wasDerivedFrom chbref:5c271c9a57239650cd1beabbf50d12c51533b667 ;
     chbps:P2 chb:Q3 .
 
-chbs:Q878-078E2497-E998-5521-A209-0425CD6F9C9C
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
-
 chbs:Q879-3C8331EB-D9A8-57CD-964D-8B5D78F05E4C
     a wikibase:BestRank,
         wikibase:Statement ;
@@ -114758,12 +114632,6 @@ chbs:Q888-E4F884B4-3100-591E-800D-433CA369E7D0
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:5ec1a439cbe3638bcdabe782b550466d825c802d ;
     chbps:P122 chb:Q109 .
-
-chbs:Q889-93A9126F-11E8-51DF-A975-FD08260348E7
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q889-AC79CB2F-C801-5239-A697-EB6B0744A3B5
     a wikibase:BestRank,
@@ -116834,12 +116702,6 @@ chbs:Q920-A59C6637-B9F7-5EAA-9747-754040035F70
     wikibase:rank wikibase:NormalRank ;
     prov:wasDerivedFrom chbref:e3f30f64d83ad4ede9b7470d247cac5a0e451186 ;
     chbps:P2 chb:Q3 .
-
-chbs:Q920-CE2D471D-1A90-5F5A-95EC-02436CF9421E
-    a wikibase:BestRank,
-        wikibase:Statement ;
-    wikibase:rank wikibase:NormalRank ;
-    chbps:P2 chb:Q106 .
 
 chbs:Q921-1E11A156-565B-5B41-A595-13487CBE04F6
     a wikibase:BestRank,
@@ -127589,12 +127451,6 @@ chb:Q107
     a chb:Q103,
         chb:Q106 .
 
-chb:Q111
-    a chb:Q106 .
-
-chb:Q114
-    a chb:Q106 .
-
 chb:Q115
     a chb:Q104,
         chb:Q106 .
@@ -127606,9 +127462,6 @@ chb:Q118
 chb:Q121
     a chb:Q103,
         chb:Q106 .
-
-chb:Q122
-    a chb:Q106 .
 
 chb:Q125
     a chb:Q102,
@@ -127625,9 +127478,6 @@ chb:Q131
 chb:Q134
     a chb:Q103,
         chb:Q106 .
-
-chb:Q135
-    a chb:Q106 .
 
 chb:Q138
     a chb:Q103,
@@ -127761,9 +127611,6 @@ chb:Q233
     a chb:Q102,
         chb:Q106 .
 
-chb:Q234
-    a chb:Q106 .
-
 chb:Q236
     a chb:Q104,
         chb:Q106 .
@@ -127828,9 +127675,6 @@ chb:Q270
     a chb:Q104,
         chb:Q106 .
 
-chb:Q271
-    a chb:Q106 .
-
 chb:Q274
     a chb:Q104,
         chb:Q106 .
@@ -127838,9 +127682,6 @@ chb:Q274
 chb:Q276
     a chb:Q102,
         chb:Q106 .
-
-chb:Q277
-    a chb:Q106 .
 
 chb:Q281
     a chb:Q102,
@@ -127894,9 +127735,6 @@ chb:Q306
     a chb:Q103,
         chb:Q106 .
 
-chb:Q307
-    a chb:Q106 .
-
 chb:Q309
     a chb:Q103,
         chb:Q106 .
@@ -127932,9 +127770,6 @@ chb:Q322
 chb:Q323
     a chb:Q103,
         chb:Q106 .
-
-chb:Q324
-    a chb:Q106 .
 
 chb:Q325
     a chb:Q103,
@@ -127996,9 +127831,6 @@ chb:Q348
     a chb:Q103,
         chb:Q106 .
 
-chb:Q349
-    a chb:Q106 .
-
 chb:Q350
     a chb:Q104,
         chb:Q106 .
@@ -128047,15 +127879,6 @@ chb:Q362
     a chb:Q100,
         chb:Q105,
         chb:Q106 .
-
-chb:Q363
-    a chb:Q106 .
-
-chb:Q370
-    a chb:Q106 .
-
-chb:Q371
-    a chb:Q106 .
 
 chb:Q372
     rdfs:subClassOf chb:Q100 .
@@ -128502,9 +128325,6 @@ chb:Q579
     a chb:Q102,
         chb:Q106 .
 
-chb:Q580
-    a chb:Q106 .
-
 chb:Q582
     a chb:Q104,
         chb:Q106 .
@@ -128633,9 +128453,6 @@ chb:Q644
     a chb:Q103,
         chb:Q106 .
 
-chb:Q645
-    a chb:Q106 .
-
 chb:Q646
     a chb:Q102,
         chb:Q106 .
@@ -128711,9 +128528,6 @@ chb:Q676
 chb:Q678
     a chb:Q103,
         chb:Q106 .
-
-chb:Q679
-    a chb:Q106 .
 
 chb:Q680
     a chb:Q104,
@@ -128791,9 +128605,6 @@ chb:Q716
     a chb:Q103,
         chb:Q106 .
 
-chb:Q717
-    a chb:Q106 .
-
 chb:Q719
     a chb:Q103,
         chb:Q106 .
@@ -128809,9 +128620,6 @@ chb:Q723
 chb:Q724
     a chb:Q103,
         chb:Q106 .
-
-chb:Q725
-    a chb:Q106 .
 
 chb:Q726
     a chb:Q104,
@@ -129008,9 +128816,6 @@ chb:Q798
 chb:Q799
     a chb:Q103,
         chb:Q106 .
-
-chb:Q800
-    a chb:Q106 .
 
 chb:Q802
     a chb:Q103,
@@ -129212,9 +129017,6 @@ chb:Q877
     a chb:Q102,
         chb:Q106 .
 
-chb:Q878
-    a chb:Q106 .
-
 chb:Q880
     a chb:Q102,
         chb:Q106 .
@@ -129230,9 +129032,6 @@ chb:Q886
 chb:Q888
     a chb:Q104,
         chb:Q106 .
-
-chb:Q889
-    a chb:Q106 .
 
 chb:Q892
     a chb:Q103,
@@ -129313,9 +129112,6 @@ chb:Q918
 chb:Q919
     a chb:Q103,
         chb:Q106 .
-
-chb:Q920
-    a chb:Q106 .
 
 chb:Q921
     a chb:Q102,

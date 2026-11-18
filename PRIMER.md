@@ -44,7 +44,7 @@ Arbeitsplan für das Repo `beaverbridge-framework/beaverbridge-registry`. Wird a
 ### A2 Zielbild
 
 ```
-registry/sources.json            kuratierte Liste der Instanzen (Name, pages_url, rdf_base, Präfixfamilie)
+registry/sources.json            kuratierte Liste der Instanzen (Name, pages_url, rdf_base, Präfixfamilie, Typ)
         │  py/step_harvest.py    HTTP: <pages_url>/downloads/*.ttl  (einziger Netz-Schritt)
         ▼
 data/raw/<instanz>/              unverändert, read-only, harvest.json mit Hash und Generator-Version
@@ -163,6 +163,7 @@ Offen: w3id-Prefix und Content Negotiation (Teil D).
 | S10 | Dritte Instanz: osm-benchmarks | beaverbridge-registry | S3, S5 | erledigt 2026-11-01 |
 | S11 | Facettenseite auf sinnvolle Facetten umstellen | beaverbridge-registry | S10 | erledigt 2026-11-01 |
 | S12 | Vierte und fünfte Instanz: squirrelbase, n4o-prov | beaverbridge-registry | S10 | erledigt 2026-11-18 (Abnahme auf dem PC offen) |
+| S13 | Quelltyp je Instanz (`wikidata`, `wikibase`, `osm`, `other`) und sieben weitere Satelliten | beaverbridge-registry | S12 | erledigt 2026-11-18 (Abnahme auf dem PC offen) |
 
 Unabhängig voneinander: S6, S7 und S8 hängen nur am Bundle (S4) und können in beliebiger Reihenfolge laufen. S3 und S4 konnten parallel starten, sobald S2 Daten geliefert hatte; alle Schritte sind erledigt.
 
@@ -373,6 +374,20 @@ Gemessen: Bundle 23 991 Tripel aus 5 Instanzen, Index 1 186 Einträge, Gate 0 Ve
 ### Basis `overlay` (2026-11-18)
 
 Seit wikibase-static 0.31.0 tragen die Wikibase-Satelliten ihr CRM-Overlay (`data/crm.csv`) auch auf geernteten Wikibases; ihre Turtle-Dateien enthalten `rdfs:subClassOf <CRM-Klasse>` für die Klassen. Der Survey liest diese Aussagen als `overlay_anchors` (direkte `rdfs:subClassOf` von der Klasse zu einer Klasse unter `http://www.cidoc-crm.org/`; eine Erweiterungsklasse wie `crmdig:D14` wird so genommen, die Kette zum CRM wird nicht verfolgt). Neue Basis `overlay` in `classes.csv`, `step_bridge.py` und R16: ein `bridge`-Eintrag, den die Instanz inzwischen selbst sagt, ist ein Fehler (Warnung), ebenso `overlay` ohne Aussage der Instanz. Für eine Erweiterungsklasse steht in `crm` die CRM-Klasse, die sie erreicht (chublets Q100: D14, `crm` E73). Umgestellt: 11 Zeilen (fuzzy-sl Q79; chublets Q100, Q105; osm-benchmarks Q100; squirrelbase Q2; n4o-prov Q6, Q7, Q33, Q40, Q43, Q54). `bridge` bleibt für chublets Q3 (E1, nur die Registry sagt es).
+
+---
+
+## S13 — Quelltyp und sieben weitere Satelliten
+
+### Erledigt 2026-11-18
+
+`registry/sources.json` führt je Instanz das Feld `type`: `wikidata` (statische Wikibase aus Items eines Wikidata-Projekts, Präfix `wd-`), `wikibase` (geerntete oder aus CSV gebaute Wikibase, `wb-`, Chublets), `osm` (OpenStreetMap-Auswahl, `osm-`) oder `other`. `load_sources()` bricht ohne gültigen Wert ab. Der Bundle-Schritt schreibt `bbr:sourceType` an den Katalogeintrag (Vokabular in `metadata/bbr.ttl`), SHACL-Regel R29 verlangt genau einen Wert aus den vier (Selbsttest: 26 Regeln), der Index führt `type` je Instanz, die Facettenseite die Facette *Source type*, die Karte färbt nach Typ statt nach Instanz (bei zwölf Instanzen wiederholten sich vier Farben), Katalog und Eintragsseite zeigen den Typ, `queries.yaml` hat die Abfrage `source-types`.
+
+Neue Instanzen (alle mit wikibase-static 0.32.0 gebaut): `osm-sisal` (`oss`), `osm-ogham` (`oos`), `osm-holywells` (`ohs`), `wd-govanstones` (`gvs`), `wd-ogham` (`ogs`), `wd-holywells` (`hws`), `wd-irishroundtowers` (`irt`). Die Rollen-Tabelle hat für jede 7 Zeilen; `classes.csv` hat für jede Klasse eine Zeile (Basis `overlay`, wo die Instanz den Anker in `data/crm.csv` nennt; Concept-Klassen der Wikidata-Projekte sind `model`).
+
+CRM-Klassen der vier `wd-`-Satelliten (`data/crm.csv`) sind **Vorschläge** (E22 für Steine und Artefakte, E25 für Bauwerke, E26 für Landschaftsmerkmale, E27 für Stätten, E28/`model` für Concept-Klassen). Flo korrigiert dort; die Registry folgt über `classes.csv` (Survey meldet Abweichungen).
+
+Befund: `osm-sisal`, `osm-ogham`, `osm-holywells` hatten kein `data_as_of`; der Export schrieb „unknown“ und das Bundle ein ungültiges `xsd:dateTime`. `site.yaml` der drei trägt jetzt `2026-11-18` (Overpass-Zeitstempel), der Bundle-Schritt lässt ein Datum, das keines ist, weg und warnt.
 
 ---
 

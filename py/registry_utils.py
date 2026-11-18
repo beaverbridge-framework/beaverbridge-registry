@@ -24,6 +24,9 @@ BBR_NS = REGISTRY_BASE + "/vocab/"
 
 CORE_CSV = CROSSWALKS / "core-properties.csv"
 LABELS_EN_CSV = CROSSWALKS / "labels-en.csv"
+# What an instance is a copy of: a Wikidata project, a Wikibase, an OpenStreetMap selection, anything else. Stated in
+# registry/sources.json (field "type"), written to the catalogue record as bbr:sourceType, shown as a facet.
+SOURCE_TYPES = ["wikidata", "wikibase", "osm", "other"]
 ROLES = ["instance_of", "subclass_of", "part_of", "coordinates", "equivalent_class",
          "wikidata_equivalent", "external_match"]
 
@@ -34,7 +37,17 @@ def ensure_dirs() -> None:
 
 
 def load_sources() -> list[dict]:
-    return json.loads(SOURCES.read_text(encoding="utf-8"))["instances"]
+    """The instances of registry/sources.json; every one must state its source type (SOURCE_TYPES) and have a unique id."""
+    instances = json.loads(SOURCES.read_text(encoding="utf-8"))["instances"]
+    seen = set()
+    for inst in instances:
+        if inst.get("type") not in SOURCE_TYPES:
+            raise ValueError(f"{SOURCES.name}: instance {inst.get('id')!r} needs \"type\": one of {', '.join(SOURCE_TYPES)} "
+                             f"(found {inst.get('type')!r})")
+        if inst["id"] in seen:
+            raise ValueError(f"{SOURCES.name}: instance id {inst['id']!r} is used twice")
+        seen.add(inst["id"])
+    return instances
 
 
 def write_json(path: Path, obj) -> None:

@@ -12,7 +12,7 @@
 | `wikidata_equivalent` | the item states its Wikidata Q-number |
 | `external_match` | the item states a URL of the same thing elsewhere |
 
-`property` is a P-number or `none`; a `none` row needs a reason in `note`. Every instance in `registry/sources.json` needs one row per role.
+`property` is a P-number or `none`; a `none` row needs a reason in `note`. Every instance in `registry/sources.json` needs one row per role. The same file states the `type` of each instance (`wikidata`, `wikibase`, `osm` or `other`), which the registry writes as `bbr:sourceType` and offers as a facet.
 
 The survey step checks every row against the harvested graph (the property exists, its English label and its datatype are the ones stated here) and reports a mismatch as a warning; with `--strict` it stops the build.
 

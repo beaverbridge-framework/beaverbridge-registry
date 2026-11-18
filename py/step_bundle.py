@@ -171,14 +171,17 @@ def build(instances: list[dict], core_rows: list[dict], warn) -> tuple[object, l
         out.add((record, FOAF.primaryTopic, catalog_iri))
         out.add((record, DCTERMS.title, Literal(inst.get("label", iid), lang="en")))
         out.add((record, BBR.prefix, Literal(iid)))
+        out.add((record, BBR.sourceType, Literal(inst["type"])))
         out.add((record, DCAT.landingPage, URIRef(inst["pages_url"])))
         out.add((record, DCTERMS.source, URIRef(inst["pages_url"].rstrip("/") + "/" + finfo["path"])))
         out.add((record, BBR.sha256, Literal(finfo["sha256"])))
         out.add((record, BBR.sourceTripleCount, Literal(len(src), datatype=XSD.integer)))
         if finfo.get("generator"):
             out.add((record, BBR.generator, Literal(finfo["generator"])))
-        if finfo.get("data_as_of"):
+        if finfo.get("data_as_of") and re.fullmatch(r"\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}:\d{2}Z)?", finfo["data_as_of"]):
             out.add((record, DCTERMS.modified, Literal(finfo["data_as_of"], datatype=XSD.dateTime)))
+        elif finfo.get("data_as_of"):   # "unknown" or any other text is not an xsd:dateTime; leave it out, R25 reports the missing date
+            warn(f"{iid}: the export says 'data as of {finfo['data_as_of']}', which is no date; dct:modified is left out")
 
         reports.append({"id": iid, "source_triples": len(src), "kept": dict(kept), "dropped": dict(dropped),
                         "entities": len(entities), "redirects": len(redirects), "roles": dict(role_counts), "skipped": dict(role_skipped)})

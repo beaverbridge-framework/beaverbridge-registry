@@ -1,17 +1,16 @@
 {
   "files": [
     {
-      "bytes": 5176145,
-      "data_as_of": "2026-10-25T00:00:00Z",
-      "etag": "\"6addf4a5-4efb51\"",
-      "generator": "wikibase-static 0.19.0",
+      "bytes": 5171559,
+      "data_as_of": "2026-11-02T00:00:00Z",
+      "generator": "wikibase-static 0.32.0",
       "licence": "CC0 1.0 (Public Domain)",
       "path": "downloads/n4o-rse.github.io-chublets-wikibase-demo.ttl",
       "rdf_base_seen": true,
       "role": "export",
-      "route": "http",
-      "sha256": "7e79f32a63caff5c7233ab203b41b1066f099982416f3310068d9709742572f2",
-      "triples": 99261
+      "route": "local-clone",
+      "sha256": "3953384550ed5665aef7c50254f86a18d1cc9fc726a52a72ba5b0bc6a1e57472",
+      "triples": 99137
     },
     {
       "bytes": 11336,

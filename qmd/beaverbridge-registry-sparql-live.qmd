@@ -59,7 +59,7 @@ def show(graph, query):
     return [{c: (None if r[i] is None else str(r[i])) for i, c in enumerate(cols)} for r in res]
 ```
 
-The bundle is about 1.1 MB.
+The bundle is about 6.7 MB.
 
 ```{pyodide}
 #| autorun: false
@@ -70,16 +70,17 @@ print(f"{len(base)} triples loaded from {GRAPH_URL}")
 
 ## Step 2: Which instances are in the registry?
 
-One catalogue record per instance: where it comes from, under which licence, written by which version of wikibase-static, and how large the export was before the registry kept what a search needs.
+One catalogue record per instance: what it is a copy of (<code>bbr:sourceType</code>: wikidata, wikibase, osm or other), under which licence, written by which version of wikibase-static, and how large the export was before the registry kept what a search needs.
 
 ```{pyodide}
 #| autorun: false
 #| label: query-instances
 assert "base" in dir(), "Run the 'load-graph' cell first."
 rows = show(base, """
-SELECT ?instance ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
+SELECT ?instance ?type ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
   ?record a dcat:CatalogRecord ;
           bbr:prefix ?instance ;
+          bbr:sourceType ?type ;
           dct:title ?title ;
           bbr:sourceTripleCount ?sourceTriples .
   OPTIONAL { ?record bbr:generator ?generator }
@@ -92,7 +93,32 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 3: Which classes have how many items?
+## Step 3: How much comes from Wikidata, from a Wikibase and from OpenStreetMap?
+
+Every record states <code>bbr:sourceType</code>. Together with the roles this gives questions such as: how many items of each type have coordinates, or a CIDOC CRM class?
+
+```{pyodide}
+#| autorun: false
+#| label: query-source-types
+assert "base" in dir(), "Run the 'load-graph' cell first."
+rows = show(base, """
+SELECT ?type (COUNT(DISTINCT ?record) AS ?instances) (COUNT(DISTINCT ?item) AS ?items)
+       (COUNT(DISTINCT ?located) AS ?withCoordinates) (COUNT(DISTINCT ?anchored) AS ?withCrmClass) WHERE {
+  ?record a dcat:CatalogRecord ; bbr:sourceType ?type .
+  OPTIONAL {
+    ?item bbr:fromInstance ?record ; a wikibase:Item .
+    OPTIONAL { ?item bbr:coordinates ?c . BIND(?item AS ?located) }
+    OPTIONAL { ?item bbr:instanceOf/bbr:subclassOf*/bbr:crmClass ?crm . BIND(?item AS ?anchored) }
+  }
+}
+GROUP BY ?type
+ORDER BY DESC(?items)""")
+
+for r in rows:
+    print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
+print(f"\n{len(rows)} rows")
+```
+## Step 4: Which classes have how many items?
 
 The same question in every instance, asked through <code>bbr:instanceOf</code>. The English label of the class is shown; some classes have a second label in another language.
 
@@ -114,7 +140,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 4: How are the classes related?
+## Step 5: How are the classes related?
 
 Subclass links of all instances, through <code>bbr:subclassOf</code>. Each row is one link from a class to its superclass.
 
@@ -136,7 +162,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 5: Which Wikibase property stands behind a role?
+## Step 6: Which Wikibase property stands behind a role?
 
 The registry writes every role as a normalised statement next to the source statement. Asking for the source predicate that carries the same object shows the crosswalk at work: <em>instance of</em> is <code>P1</code> in one instance and <code>P2</code> in the other.
 
@@ -158,7 +184,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 6: Which classes describe the data model and which the subject?
+## Step 7: Which classes describe the data model and which the subject?
 
 The registry marks every class as <em>domain</em> (the things the instance is about: sites, software) or <em>model</em> (vocabulary, types, provenance, the roots of the class tree). This is a statement of the registry, kept in <code>crosswalks/classes.csv</code>, not of the instances.
 
@@ -180,7 +206,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 7: Which classes carry a CIDOC CRM class of their own?
+## Step 8: Which classes carry a CIDOC CRM class of their own?
 
 <em>source</em> means the instance states the anchor itself as a property, <em>overlay</em> that it states it in its CIDOC CRM overlay (<code>data/crm.csv</code>, as <code>rdfs:subClassOf</code>), <em>bridge</em> that the registry states it because the instance does not. All other classes inherit the anchor of a superclass, see the next query.
 
@@ -202,7 +228,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 8: How many items sit under each CIDOC CRM class?
+## Step 9: How many items sit under each CIDOC CRM class?
 
 The path <code>bbr:instanceOf/bbr:subclassOf*/bbr:crmClass</code> follows the subclass links up to the nearest anchor, so the question is the same in every instance although only some of them state anchors.
 
@@ -222,7 +248,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 9: Which items have coordinates?
+## Step 10: Which items have coordinates?
 
 Items with a position, as the source states it (WKT, longitude first). Only instances with a coordinate property show up.
 
@@ -248,7 +274,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 10: Which items point to Wikidata?
+## Step 11: Which items point to Wikidata?
 
 Plain Q-numbers in the sources are turned into Wikidata IRIs by the bundle step, so this works the same for every instance.
 
@@ -269,7 +295,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 11: Where do the external matches lead?
+## Step 12: Where do the external matches lead?
 
 Matches are grouped by the host of the URL they point to.
 
@@ -290,7 +316,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 12: Which properties does each instance define?
+## Step 13: Which properties does each instance define?
 
 All properties with their datatype. The numbers are local to the instance; the label and datatype are what can be compared.
 
@@ -314,7 +340,7 @@ for r in rows:
     print(" | ".join(f"{k}={v}" for k, v in r.items() if v is not None))
 print(f"\n{len(rows)} rows")
 ```
-## Step 13: Which labels occur in more than one instance?
+## Step 14: Which labels occur in more than one instance?
 
 Equal names are reported and never merged: the registry only states that two entries share a label, not that they are the same thing. Whether <em>Florian Thiery</em> in both instances is one person is for a person to say.
 

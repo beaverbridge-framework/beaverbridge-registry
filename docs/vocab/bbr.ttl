@@ -59,6 +59,11 @@ bbr:prefix a owl:DatatypeProperty ;
     rdfs:comment "Short code of the instance, used in front of an identifier when two instances use the same one (fuzzy-sl:Q1, chublets:Q1)."@en ;
     rdfs:domain dcat:CatalogRecord ; rdfs:range xsd:string .
 
+bbr:sourceType a owl:DatatypeProperty ;
+    rdfs:label "source type"@en ;
+    rdfs:comment "What the instance is a copy of: 'wikidata' (items of a Wikidata project), 'wikibase' (a Wikibase, harvested or built from CSV), 'osm' (an OpenStreetMap selection) or 'other'. Stated by the registry (registry/sources.json), not by the instance."@en ;
+    rdfs:domain dcat:CatalogRecord ; rdfs:range xsd:string .
+
 bbr:sha256 a owl:DatatypeProperty ;
     rdfs:label "SHA-256"@en ;
     rdfs:comment "SHA-256 of the harvested export file, as published by the instance."@en ;

@@ -1,16 +1,16 @@
 {
   "files": [
     {
-      "bytes": 334220,
+      "bytes": 342468,
       "data_as_of": "2026-11-01T00:00:00Z",
-      "generator": "wikibase-static 0.22.0",
+      "generator": "wikibase-static 0.32.0",
       "licence": "ODbL 1.0, © OpenStreetMap contributors",
       "path": "downloads/n4o-rse.github.io-osm-benchmarks-static.ttl",
       "rdf_base_seen": true,
       "role": "export",
       "route": "local-clone",
-      "sha256": "1b711e75f4d4790959be85ecdc8c4a27a518b8291b987175f136460c80ea92aa",
-      "triples": 6278
+      "sha256": "97e8dfde16b4c05763d14de1d5bab46a01be881d79cc721d147d4cb500114033",
+      "triples": 6416
     },
     {
       "bytes": 11336,

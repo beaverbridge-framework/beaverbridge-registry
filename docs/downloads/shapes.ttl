@@ -141,6 +141,8 @@ shp:Record a sh:NodeShape ;
     sh:targetClass dcat:CatalogRecord ;
     sh:property [ sh:path bbr:prefix ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-z0-9][a-z0-9-]*$" ; sh:severity sh:Violation ;
         sh:message "R19: a record has exactly one prefix, lower case letters, digits and hyphens" ] ;
+    sh:property [ sh:path bbr:sourceType ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "wikidata" "wikibase" "osm" "other" ) ; sh:severity sh:Violation ;
+        sh:message "R29: a record has exactly one source type: wikidata, wikibase, osm or other (registry/sources.json)" ] ;
     sh:property [ sh:path bbr:sha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[0-9a-f]{64}$" ; sh:severity sh:Violation ;
         sh:message "R20: a record has the SHA-256 of the export, 64 hex digits" ] ;
     sh:property [ sh:path dct:source ; sh:minCount 1 ; sh:nodeKind sh:IRI ; sh:severity sh:Violation ;

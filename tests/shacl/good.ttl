@@ -16,6 +16,7 @@
 
 <https://example.org/registry/record/a> a dcat:CatalogRecord ;
     bbr:prefix "a" ;
+    bbr:sourceType "wikibase" ;
     bbr:sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef" ;
     dct:source <https://example.org/a/export.ttl> ;
     foaf:primaryTopic <https://example.org/a/catalog> ;

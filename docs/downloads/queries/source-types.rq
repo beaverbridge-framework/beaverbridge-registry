@@ -1,0 +1,23 @@
+# How much comes from Wikidata, from a Wikibase and from OpenStreetMap?
+# Every record states <code>bbr:sourceType</code>. Together with the roles
+# this gives questions such as: how many items of each type have coordinates,
+# or a CIDOC CRM class?
+
+PREFIX bbr: <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?type (COUNT(DISTINCT ?record) AS ?instances) (COUNT(DISTINCT ?item) AS ?items)
+       (COUNT(DISTINCT ?located) AS ?withCoordinates) (COUNT(DISTINCT ?anchored) AS ?withCrmClass) WHERE {
+  ?record a dcat:CatalogRecord ; bbr:sourceType ?type .
+  OPTIONAL {
+    ?item bbr:fromInstance ?record ; a wikibase:Item .
+    OPTIONAL { ?item bbr:coordinates ?c . BIND(?item AS ?located) }
+    OPTIONAL { ?item bbr:instanceOf/bbr:subclassOf*/bbr:crmClass ?crm . BIND(?item AS ?anchored) }
+  }
+}
+GROUP BY ?type
+ORDER BY DESC(?items)

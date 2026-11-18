@@ -70,3 +70,64 @@ n4o-prov,Q33,Object,domain,E22_Human-Made_Object,overlay,stated by the instance 
 n4o-prov,Q40,Collection,domain,E78_Curated_Holding,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E78_Curated_Holding
 n4o-prov,Q43,Event,domain,E5_Event,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E5_Event
 n4o-prov,Q54,Place,domain,E53_Place,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E53_Place
+osm-sisal,Q1,Class,model,,none,type of every class
+osm-sisal,Q2,Property,model,,none,type of every property
+osm-sisal,Q3,Instance,model,,none,root of the class tree
+osm-sisal,Q100,Cave,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+osm-ogham,Q1,Class,model,,none,type of every class
+osm-ogham,Q2,Property,model,,none,type of every property
+osm-ogham,Q3,Instance,model,,none,root of the class tree
+osm-ogham,Q100,Ogham stone,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+osm-holywells,Q1,Class,model,,none,type of every class
+osm-holywells,Q2,Property,model,,none,type of every property
+osm-holywells,Q3,Instance,model,,none,root of the class tree
+osm-holywells,Q100,Holy well,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+wd-govanstones,Q1,Class,model,,none,type of every class
+wd-govanstones,Q2,Property,model,,none,type of every property
+wd-govanstones,Q3,Instance,model,,none,root of the class tree
+wd-govanstones,Q108,collection,domain,E78_Curated_Holding,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E78_Curated_Holding
+wd-govanstones,Q109,archaeological artefact,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-govanstones,Q110,archaeological site,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site
+wd-govanstones,Q151,hogback,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-govanstones,Q154,sarcophagus,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-govanstones,Q155,cross slab,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-ogham,Q1,Class,model,,none,type of every class
+wd-ogham,Q2,Property,model,,none,type of every property
+wd-ogham,Q3,Instance,model,,none,root of the class tree
+wd-ogham,Q131,ogham stone,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-ogham,Q132,Ogham Stone Semantic Concept,model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-ogham,Q133,archaeological artefact,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-ogham,Q1415,Ogham Stone Concept,model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-ogham,Q1416,Ogham Stone Concept (RAS Macalister),model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-ogham,Q1653,Ogham Stone Concept (Ogham in 3D Project),model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-ogham,Q1671,Ogham Stone Concept (CISP Database),model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-ogham,Q1703,Ogham Stone Concept (O'Sullivan & Sheehan),model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-holywells,Q1,Class,model,,none,type of every class
+wd-holywells,Q2,Property,model,,none,type of every property
+wd-holywells,Q3,Instance,model,,none,root of the class tree
+wd-holywells,Q348,holy well,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+wd-holywells,Q349,Holy Well Semantic Concept,model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-holywells,Q388,water source,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+wd-holywells,Q390,religious site,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site
+wd-holywells,Q407,spring,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+wd-holywells,Q427,pumping station,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+wd-holywells,Q428,water well,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+wd-holywells,Q533,bullaun,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-holywells,Q545,pilgrimage site,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site
+wd-holywells,Q634,archaeological site,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site
+wd-holywells,Q667,place of worship,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site
+wd-holywells,Q739,swimming area,domain,E53_Place,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E53_Place
+wd-holywells,Q768,water pump,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+wd-holywells,Q801,water resource,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+wd-holywells,Q917,stone,domain,E19_Physical_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E19_Physical_Object
+wd-holywells,Q931,mineral spring,domain,E26_Physical_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E26_Physical_Feature
+wd-holywells,Q939,fulacht fiadh,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site
+wd-irishroundtowers,Q1,Class,model,,none,type of every class
+wd-irishroundtowers,Q2,Property,model,,none,type of every property
+wd-irishroundtowers,Q3,Instance,model,,none,root of the class tree
+wd-irishroundtowers,Q236,national monument of Ireland,model,,none,"class of the data model, marked model in the CRM overlay (data/crm.csv)"
+wd-irishroundtowers,Q241,Irish round tower,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+wd-irishroundtowers,Q318,bell tower,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+wd-irishroundtowers,Q412,built structure,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+wd-irishroundtowers,Q432,inclined tower,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+wd-irishroundtowers,Q531,archaeological site,domain,E27_Site,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E27_Site

@@ -34,3 +34,52 @@ coordinates,n4o-prov,P25,representative point,GlobeCoordinate,
 equivalent_class,n4o-prov,none,,,no property for equivalent classes
 wikidata_equivalent,n4o-prov,none,,,P24 and P58 point to Wikidata places and place types and do not state the item's own Q-number
 external_match,n4o-prov,P21,aligned with,Url,GND and Wikidata and museum URLs of the same entity
+instance_of,osm-sisal,P2,instance of,WikibaseItem,
+instance_of,osm-ogham,P2,instance of,WikibaseItem,
+instance_of,osm-holywells,P2,instance of,WikibaseItem,
+instance_of,wd-govanstones,P2,instance of,WikibaseItem,
+instance_of,wd-ogham,P2,instance of,WikibaseItem,
+instance_of,wd-holywells,P2,instance of,WikibaseItem,
+instance_of,wd-irishroundtowers,P2,instance of,WikibaseItem,
+subclass_of,osm-sisal,P1,subclass of,WikibaseItem,
+subclass_of,osm-ogham,P1,subclass of,WikibaseItem,
+subclass_of,osm-holywells,P1,subclass of,WikibaseItem,
+subclass_of,wd-govanstones,P1,subclass of,WikibaseItem,
+subclass_of,wd-ogham,P1,subclass of,WikibaseItem,
+subclass_of,wd-holywells,P1,subclass of,WikibaseItem,
+subclass_of,wd-irishroundtowers,P1,subclass of,WikibaseItem,
+part_of,osm-sisal,none,,,no part-of property in this instance
+part_of,osm-ogham,none,,,no part-of property in this instance
+part_of,osm-holywells,none,,,no part-of property in this instance
+part_of,wd-govanstones,P111,part of,WikibaseItem,
+part_of,wd-ogham,P101,part of,WikibaseItem,
+part_of,wd-holywells,none,,,no part-of property in this instance
+part_of,wd-irishroundtowers,P147,part of,WikibaseItem,
+coordinates,osm-sisal,P110,coordinate location,GlobeCoordinate,current position; P111 holds the geometry history as WKT text and is not a role
+coordinates,osm-ogham,P110,coordinate location,GlobeCoordinate,current position; P111 holds the geometry history as WKT text and is not a role
+coordinates,osm-holywells,P110,coordinate location,GlobeCoordinate,current position; P111 holds the geometry history as WKT text and is not a role
+coordinates,wd-govanstones,P121,coordinate location,GlobeCoordinate,
+coordinates,wd-ogham,P119,coordinate location,GlobeCoordinate,
+coordinates,wd-holywells,P108,coordinate location,GlobeCoordinate,
+coordinates,wd-irishroundtowers,P131,coordinate location,GlobeCoordinate,
+equivalent_class,osm-sisal,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+equivalent_class,osm-ogham,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+equivalent_class,osm-holywells,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+equivalent_class,wd-govanstones,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+equivalent_class,wd-ogham,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+equivalent_class,wd-holywells,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+equivalent_class,wd-irishroundtowers,none,,,the CIDOC CRM anchor is stated as rdfs:subClassOf in the export's overlay (data/crm.csv) and not as a property
+wikidata_equivalent,osm-sisal,P4,Wikidata equivalent,ExternalId,on properties only (P-numbers); no item has one
+wikidata_equivalent,osm-ogham,P4,Wikidata equivalent,ExternalId,on properties only (P-numbers); no item has one
+wikidata_equivalent,osm-holywells,P4,Wikidata equivalent,ExternalId,on properties only (P-numbers); no item has one
+wikidata_equivalent,wd-govanstones,P4,Wikidata equivalent,ExternalId,plain Q-number on items; on properties it holds P-numbers
+wikidata_equivalent,wd-ogham,P4,Wikidata equivalent,ExternalId,plain Q-number on items; on properties it holds P-numbers
+wikidata_equivalent,wd-holywells,P4,Wikidata equivalent,ExternalId,plain Q-number on items; on properties it holds P-numbers
+wikidata_equivalent,wd-irishroundtowers,P4,Wikidata equivalent,ExternalId,plain Q-number on items; on properties it holds P-numbers
+external_match,osm-sisal,P100,OSM element,Url,the OpenStreetMap element of the feature
+external_match,osm-ogham,P100,OSM element,Url,the OpenStreetMap element of the feature
+external_match,osm-holywells,P100,OSM element,Url,the OpenStreetMap element of the feature
+external_match,wd-govanstones,none,,,no property for an exact match in this instance; P4 points to Wikidata (role wikidata_equivalent)
+external_match,wd-ogham,P134,exact match,Url,7 items
+external_match,wd-holywells,none,,,no property for an exact match in this instance; P4 points to Wikidata (role wikidata_equivalent)
+external_match,wd-irishroundtowers,none,,,no property for an exact match in this instance; P4 points to Wikidata (role wikidata_equivalent)

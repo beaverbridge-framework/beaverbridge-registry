@@ -5,6 +5,7 @@
 <p>Catalogue record of the instance <code>{{ i.id }}</code>. In the bundle every entity of this instance points here with <code>bbr:fromInstance</code>.</p>
 <table>
 <tbody>
+<tr><th scope="row">Source type</th><td>{{ i.type }}</td></tr>
 <tr><th scope="row">Instance</th><td><a href="{{ i.pages_url }}">{{ i.pages_url }}</a></td></tr>
 <tr><th scope="row">Export fetched from</th><td><a href="{{ i.source }}">{{ i.source }}</a></td></tr>
 <tr><th scope="row">SHA-256 of the export</th><td class="hash">{{ i.sha256 }}</td></tr>

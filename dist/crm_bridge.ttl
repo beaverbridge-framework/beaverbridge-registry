@@ -43,6 +43,36 @@
 
 <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q3> bbr:classKind "model" .
 
+<https://n4o-rse.github.io/osm-holywells-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-holywells-static/entity/Q100> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/osm-holywells-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-holywells-static/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-ogham-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-ogham-static/entity/Q100> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/osm-ogham-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-ogham-static/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-sisal-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-sisal-static/entity/Q100> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/osm-sisal-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/osm-sisal-static/entity/Q3> bbr:classKind "model" .
+
 <https://n4o-rse.github.io/wb-fuzzysl-static/entity/Q10> bbr:classKind "domain" .
 
 <https://n4o-rse.github.io/wb-fuzzysl-static/entity/Q11> bbr:classKind "domain" .
@@ -170,4 +200,160 @@
 <https://n4o-rse.github.io/wb-squirrelbase-static/entity/Q36> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-squirrelbase-static/entity/Q44> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q108> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E78_Curated_Holding .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q109> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q110> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q151> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q154> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q155> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-govanstones-static/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q348> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q349> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q388> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q390> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q407> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q427> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q428> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q533> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q545> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q634> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q667> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q739> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E53_Place .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q768> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q801> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q917> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E19_Physical_Object .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q931> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E26_Physical_Feature .
+
+<https://n4o-rse.github.io/wd-holywells-static/entity/Q939> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q236> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q241> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q3> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q318> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q412> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q432> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E25_Human-Made_Feature .
+
+<https://n4o-rse.github.io/wd-irishroundtowers-static/entity/Q531> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E27_Site .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q1> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q131> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q132> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q133> bbr:classKind "domain" ;
+    bbr:crmBasis "overlay" ;
+    bbr:crmClass crm:E22_Human-Made_Object .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q1415> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q1416> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q1653> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q1671> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q1703> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q2> bbr:classKind "model" .
+
+<https://n4o-rse.github.io/wd-ogham-static/entity/Q3> bbr:classKind "model" .
 

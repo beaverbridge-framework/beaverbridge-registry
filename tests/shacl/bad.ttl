@@ -16,11 +16,11 @@
 # R27, R28: the registry catalogue has no licence and no record
 <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> a dcat:Catalog .
 
-# R19..R25: a record with a bad prefix and hash and nothing else
+# R19..R25, R29: a record with a bad prefix and hash, no source type and nothing else
 ra: a dcat:CatalogRecord ; bbr:prefix "A_1" ; bbr:sha256 "abc" .
 
 # R26: the catalogue node of instance b states no licence
-rb: a dcat:CatalogRecord ; bbr:prefix "b" ; bbr:sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef" ;
+rb: a dcat:CatalogRecord ; bbr:prefix "b" ; bbr:sourceType "csv" ; bbr:sha256 "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef" ;
     dct:source <https://example.org/b/export.ttl> ; foaf:primaryTopic <https://example.org/b/catalog> ;
     dct:title "Instance b"@en ; bbr:generator "x" ; dct:modified "2026-01-01T00:00:00Z"^^xsd:dateTime .
 <https://example.org/b/catalog> a dcat:Catalog .

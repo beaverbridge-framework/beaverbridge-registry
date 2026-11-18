@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "bytes": 2198160,
+      "data_as_of": "2026-11-18T00:00:00Z",
+      "generator": "wikibase-static 0.32.0",
+      "licence": "ODbL 1.0, © OpenStreetMap contributors",
+      "path": "downloads/n4o-rse.github.io-osm-sisal-static.ttl",
+      "rdf_base_seen": true,
+      "role": "export",
+      "route": "local-clone",
+      "sha256": "416c1ef2c4331878b3ec6c50425d2ea7afe661ed71f97a6dec793877e6bde9bf",
+      "triples": 42335
+    },
+    {
+      "bytes": 11336,
+      "path": "downloads/wikibase-ontology.ttl",
+      "role": "ontology",
+      "route": "local-clone",
+      "sha256": "5f71c0e84afda5de7fe6cc2dc33f8b7fe9dcab764cfe516c60bc037f8ebd87eb",
+      "triples": 255
+    }
+  ],
+  "instance": "osm-sisal",
+  "label": "OSM caves of SISAL sites (static Wikibase)",
+  "pages_url": "https://n4o-rse.github.io/osm-sisal-static/",
+  "prefix_family": "oss",
+  "rdf_base": "https://n4o-rse.github.io/osm-sisal-static"
+}

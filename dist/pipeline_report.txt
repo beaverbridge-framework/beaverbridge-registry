@@ -1,43 +1,65 @@
 [survey]
   fuzzy-sl: 12607 triples, 137 items, 36 properties, 19 classes, roles 7/7
-  chublets: 99261 triples, 832 items, 168 properties, 13 classes, roles 5/7
-  osm-benchmarks: 6278 triples, 27 items, 24 properties, 4 classes, roles 5/7
+  chublets: 99137 triples, 832 items, 168 properties, 13 classes, roles 5/7
+  osm-benchmarks: 6416 triples, 27 items, 24 properties, 4 classes, roles 5/7
   squirrelbase: 6471 triples, 58 items, 29 properties, 6 classes, roles 5/7
   n4o-prov: 14647 triples, 132 items, 61 properties, 29 classes, roles 4/7
-  survey: 5 instance(s), 0 warning(s)
+  osm-sisal: 42335 triples, 224 items, 31 properties, 4 classes, roles 5/7
+  osm-ogham: 28935 triples, 115 items, 24 properties, 4 classes, roles 5/7
+  osm-holywells: 157295 triples, 830 items, 24 properties, 4 classes, roles 5/7
+  wd-govanstones: 10844 triples, 59 items, 41 properties, 9 classes, roles 5/7
+  wd-ogham: 207083 triples, 1600 items, 55 properties, 11 classes, roles 6/7
+  wd-holywells: 86370 triples, 887 items, 85 properties, 20 classes, roles 4/7
+  wd-irishroundtowers: 57211 triples, 594 items, 107 properties, 9 classes, roles 5/7
+  survey: 12 instance(s), 0 warning(s)
 [bridge]
-  bridge: 71 classes, 14 with an anchor of their own, 99 triples, 0 warning(s)
+  bridge: 132 classes, 46 with an anchor of their own, 224 triples, 0 warning(s)
 [bundle]
   fuzzy-sl: 12607 source triples, 1600 kept, 173 entities, 264 role statements, 0 redirect(s)
-  chublets: 99261 source triples, 13883 kept, 1000 entities, 2858 role statements, 7 redirect(s)
-  osm-benchmarks: 6278 source triples, 820 kept, 51 entities, 109 role statements, 0 redirect(s)
+  chublets: 99137 source triples, 13845 kept, 1000 entities, 2836 role statements, 7 redirect(s)
+  osm-benchmarks: 6416 source triples, 912 kept, 51 entities, 109 role statements, 0 redirect(s)
   squirrelbase: 6471 source triples, 814 kept, 87 entities, 139 role statements, 0 redirect(s)
   n4o-prov: 14647 source triples, 1961 kept, 193 entities, 227 role statements, 0 redirect(s)
-  bundle: 24344 triples from 5 instance(s), 0 warning(s)
+  osm-sisal: 42335 source triples, 5395 kept, 255 entities, 707 role statements, 0 redirect(s)
+  osm-ogham: 28935 source triples, 3385 kept, 139 entities, 373 role statements, 0 redirect(s)
+  osm-holywells: 157295 source triples, 20688 kept, 854 entities, 2518 role statements, 0 redirect(s)
+  wd-govanstones: 10844 source triples, 2200 kept, 100 entities, 253 role statements, 0 redirect(s)
+  wd-ogham: 207083 source triples, 37991 kept, 1655 entities, 10466 role statements, 0 redirect(s)
+  wd-holywells: 86370 source triples, 16527 kept, 972 entities, 1902 role statements, 0 redirect(s)
+  wd-irishroundtowers: 57211 source triples, 11400 kept, 701 entities, 1100 role statements, 0 redirect(s)
+  bundle: 144178 triples from 12 instance(s), 0 warning(s)
 [validate]
-  validate: self-test ok (25 rules fail on bad.ttl, nothing on good.ttl)
-  validate: 0 violation(s), 0 warning(s), 59 note(s)
+  validate: self-test ok (26 rules fail on bad.ttl, nothing on good.ttl)
+  validate: 0 violation(s), 0 warning(s), 1510 note(s)
 [index]
   fuzzy-sl: 137 items, 36 properties
   chublets: 832 items, 168 properties
   osm-benchmarks: 27 items, 24 properties
   squirrelbase: 58 items, 29 properties
   n4o-prov: 132 items, 61 properties
-  index: 1186 entries from 5 instance(s), 0 warning(s)
+  osm-sisal: 224 items, 31 properties
+  osm-ogham: 115 items, 24 properties
+  osm-holywells: 830 items, 24 properties
+  wd-govanstones: 59 items, 41 properties
+  wd-ogham: 1600 items, 55 properties
+  wd-holywells: 887 items, 85 properties
+  wd-irishroundtowers: 594 items, 107 properties
+  index: 5495 entries from 12 instance(s), 0 warning(s)
 [site]
-  site: docs/ with search page (1186 entries), catalogue, 5 record page(s), 15 vocabulary term(s)
+  site: docs/ with search page (5495 entries), catalogue, 12 record page(s), 16 vocabulary term(s)
 [sparql]
-    beaverbridge-registry.ttl: 24344 triples
-    ok   instances         5 rows
-    ok   classes          48 rows
-    ok   hierarchy        48 rows
-    ok   roles            33 rows
-    ok   class-kinds      10 rows
-    ok   crm-anchors      14 rows
-    ok   crm-reach        10 rows
-    ok   coordinates     152 rows
-    ok   wikidata        186 rows
-    ok   match-hosts      17 rows
-    ok   properties      318 rows
-    ok   same-label       57 rows
-  sparql: 12 queries, docs/sparql.html, 12 .rq files, qmd/beaverbridge-registry-sparql-live.qmd
+    beaverbridge-registry.ttl: 144178 triples
+    ok   instances        12 rows
+    ok   source-types      3 rows
+    ok   classes         102 rows
+    ok   hierarchy       102 rows
+    ok   roles            85 rows
+    ok   class-kinds      24 rows
+    ok   crm-anchors      46 rows
+    ok   crm-reach        25 rows
+    ok   coordinates    5804 rows
+    ok   wikidata       3617 rows
+    ok   match-hosts      21 rows
+    ok   properties      685 rows
+    ok   same-label     1667 rows
+  sparql: 13 queries, docs/sparql.html, 13 .rq files, qmd/beaverbridge-registry-sparql-live.qmd

@@ -9,7 +9,12 @@
   var NONE = "(no class)", NOANCHOR = "(no anchor)";
 
   var NOCOORD = "(no coordinates)";
+  var TYPES = ["wikidata", "wikibase", "osm", "other"];   // as in py/registry_utils.py SOURCE_TYPES; the map colour follows this order
+  var TYPE_LABEL = { wikidata: "Wikidata", wikibase: "Wikibase", osm: "OpenStreetMap", other: "Other" };
+  function typeOf(instance) { return INST[instance] ? INST[instance].type : "other"; }
   var FACETS = [
+    { key: "type", label: "Source type", get: function (e) { return [typeOf(e.instance)]; },
+      text: function (v) { return TYPE_LABEL[v] || v; } },
     { key: "instance", label: "Instance", get: function (e) { return [e.instance]; },
       text: function (v) { return INST[v] ? INST[v].title : v; },
       sub: function (v) { return INST[v] ? INST[v].licence : ""; } },
@@ -239,7 +244,7 @@
     LAYER.clearLayers();
     var ll = [];
     pts.forEach(function (p) {
-      var c = colourOf(order.indexOf(p.e.instance)), pop = el("div", {}, [el("strong", { text: p.e.label }), el("br"),
+      var c = colourOf(TYPES.indexOf(typeOf(p.e.instance))), pop = el("div", {}, [el("strong", { text: p.e.label }), el("br"),
         el("span", { "class": "badge", text: p.e.id }), el("br"), link(p.e.url, "Open in the instance")]);
       L.circleMarker([p.lat, p.lon], { radius: 6, color: "#fff", weight: 1.5, fillColor: c, fillOpacity: 0.9 })
         .bindPopup(pop).addTo(LAYER);
@@ -260,9 +265,9 @@
     if (live) { host.hidden = true; renderLeaflet(pts, order); }
     else { leaf.hidden = true; host.hidden = false; renderSvg(host, pts, order); }
     var seen = {};
-    pts.forEach(function (p) { seen[p.e.instance] = true; });
-    order.filter(function (i) { return seen[i]; }).forEach(function (i) {
-      legend.appendChild(el("span", { "class": "key i" + (order.indexOf(i) % 4), text: "\u25CF " + (INST[i] ? INST[i].title : i) }));
+    pts.forEach(function (p) { seen[typeOf(p.e.instance)] = true; });
+    TYPES.filter(function (k) { return seen[k]; }).forEach(function (k) {
+      legend.appendChild(el("span", { "class": "key i" + TYPES.indexOf(k), text: "\u25CF " + TYPE_LABEL[k] }));
     });
     legend.appendChild(el("span", { "class": "muted", text: pts.length + " positions from " +
       list.filter(function (e) { return e.coordinates.length; }).length + " hits; " +
@@ -293,7 +298,7 @@
     }
     pts.forEach(function (p) {
       var a = svg("a", { href: p.e.url, target: "_blank", rel: "noopener" });
-      var c = svg("circle", { cx: X(p.lon).toFixed(1), cy: Y(p.lat).toFixed(1), r: 5, "class": "pt i" + (order.indexOf(p.e.instance) % 4) });
+      var c = svg("circle", { cx: X(p.lon).toFixed(1), cy: Y(p.lat).toFixed(1), r: 5, "class": "pt i" + (TYPES.indexOf(typeOf(p.e.instance)) % 4) });
       var tt = svg("title"); tt.textContent = p.e.label + " (" + p.e.id + ")";
       c.appendChild(tt); a.appendChild(c); root.appendChild(a);
     });

@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "bytes": 1496514,
+      "data_as_of": "2026-11-18T00:00:00Z",
+      "generator": "wikibase-static 0.32.0",
+      "licence": "ODbL 1.0, © OpenStreetMap contributors",
+      "path": "downloads/n4o-rse.github.io-osm-ogham-static.ttl",
+      "rdf_base_seen": true,
+      "role": "export",
+      "route": "local-clone",
+      "sha256": "0edc343cbb72325d791c269f0f80253f758656e366c80ecf1be95ebc803d655b",
+      "triples": 28935
+    },
+    {
+      "bytes": 11336,
+      "path": "downloads/wikibase-ontology.ttl",
+      "role": "ontology",
+      "route": "local-clone",
+      "sha256": "5f71c0e84afda5de7fe6cc2dc33f8b7fe9dcab764cfe516c60bc037f8ebd87eb",
+      "triples": 255
+    }
+  ],
+  "instance": "osm-ogham",
+  "label": "OSM Ogham stones (static Wikibase)",
+  "pages_url": "https://n4o-rse.github.io/osm-ogham-static/",
+  "prefix_family": "oos",
+  "rdf_base": "https://n4o-rse.github.io/osm-ogham-static"
+}

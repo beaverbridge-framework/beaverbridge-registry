@@ -43,12 +43,14 @@ queries:
   - id: instances
     title: "Which instances are in the registry?"
     intro: >-
-      One catalogue record per instance: where it comes from, under which licence, written by which version of
-      wikibase-static, and how large the export was before the registry kept what a search needs.
+      One catalogue record per instance: what it is a copy of (<code>bbr:sourceType</code>: wikidata, wikibase, osm or
+      other), under which licence, written by which version of wikibase-static, and how large the export was before the
+      registry kept what a search needs.
     sparql: |
-      SELECT ?instance ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
+      SELECT ?instance ?type ?title ?licence ?generator ?dataAsOf ?sourceTriples WHERE {
         ?record a dcat:CatalogRecord ;
                 bbr:prefix ?instance ;
+                bbr:sourceType ?type ;
                 dct:title ?title ;
                 bbr:sourceTripleCount ?sourceTriples .
         OPTIONAL { ?record bbr:generator ?generator }
@@ -56,6 +58,24 @@ queries:
         OPTIONAL { ?record foaf:primaryTopic/dct:license ?licence }
       }
       ORDER BY ?instance
+
+  - id: source-types
+    title: "How much comes from Wikidata, from a Wikibase and from OpenStreetMap?"
+    intro: >-
+      Every record states <code>bbr:sourceType</code>. Together with the roles this gives questions such as: how many
+      items of each type have coordinates, or a CIDOC CRM class?
+    sparql: |
+      SELECT ?type (COUNT(DISTINCT ?record) AS ?instances) (COUNT(DISTINCT ?item) AS ?items)
+             (COUNT(DISTINCT ?located) AS ?withCoordinates) (COUNT(DISTINCT ?anchored) AS ?withCrmClass) WHERE {
+        ?record a dcat:CatalogRecord ; bbr:sourceType ?type .
+        OPTIONAL {
+          ?item bbr:fromInstance ?record ; a wikibase:Item .
+          OPTIONAL { ?item bbr:coordinates ?c . BIND(?item AS ?located) }
+          OPTIONAL { ?item bbr:instanceOf/bbr:subclassOf*/bbr:crmClass ?crm . BIND(?item AS ?anchored) }
+        }
+      }
+      GROUP BY ?type
+      ORDER BY DESC(?items)
 
   - id: classes
     title: "Which classes have how many items?"

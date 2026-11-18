@@ -1,5 +1,5 @@
 # RDF export of OSM benchmarks (static Wikibase), Wikibase data model; base URI https://n4o-rse.github.io/osm-benchmarks-static
-# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.32.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -633,12 +633,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12600848879"@en ;
+    dcterms:description "Benchmark, inscription “LM 2” (OpenStreetMap node 12600848879)"@en,
+        "Höhenmarke, Inschrift „LM 2“ (OpenStreetMap-Node 12600848879)"@de ;
     dcterms:identifier "Q101" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q101 ;
-    dcterms:title "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    dcterms:title "Benchmark at St. Nicholas' Collegiate Church"@de,
+        "Benchmark at St. Nicholas' Collegiate Church"@en ;
     schema:about obs:Q101 ;
     dcat:distribution obsdist:Q101-html,
         obsdist:Q101-json,
@@ -649,12 +651,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12888689968"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12888689968)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12888689968)"@de ;
     dcterms:identifier "Q102" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q102 ;
-    dcterms:title "Benchmark at Ardreigh Lock"@en ;
+    dcterms:title "Benchmark at Ardreigh Lock"@de,
+        "Benchmark at Ardreigh Lock"@en ;
     schema:about obs:Q102 ;
     dcat:distribution obsdist:Q102-html,
         obsdist:Q102-json,
@@ -665,12 +669,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12919476068"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12919476068)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12919476068)"@de ;
     dcterms:identifier "Q103" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q103 ;
-    dcterms:title "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    dcterms:title "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     schema:about obs:Q103 ;
     dcat:distribution obsdist:Q103-html,
         obsdist:Q103-json,
@@ -681,12 +687,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12919738910"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12919738910)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12919738910)"@de ;
     dcterms:identifier "Q104" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q104 ;
-    dcterms:title "Benchmark at St George's Tron Parish Church"@en ;
+    dcterms:title "Benchmark at St George's Tron Parish Church"@de,
+        "Benchmark at St George's Tron Parish Church"@en ;
     schema:about obs:Q104 ;
     dcat:distribution obsdist:Q104-html,
         obsdist:Q104-json,
@@ -697,12 +705,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12922675575"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12922675575)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12922675575)"@de ;
     dcterms:identifier "Q105" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q105 ;
-    dcterms:title "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    dcterms:title "Benchmark at corner of Blantyre St and Argyle St"@de,
+        "Benchmark at corner of Blantyre St and Argyle St"@en ;
     schema:about obs:Q105 ;
     dcat:distribution obsdist:Q105-html,
         obsdist:Q105-json,
@@ -713,12 +723,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12923698705"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12923698705)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923698705)"@de ;
     dcterms:identifier "Q106" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q106 ;
-    dcterms:title "Benchmark on City Union Railway Bridge"@en ;
+    dcterms:title "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
     schema:about obs:Q106 ;
     dcat:distribution obsdist:Q106-html,
         obsdist:Q106-json,
@@ -729,12 +741,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12923704831"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12923704831)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923704831)"@de ;
     dcterms:identifier "Q107" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q107 ;
-    dcterms:title "Benchmark on Albert Bridge"@en ;
+    dcterms:title "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
     schema:about obs:Q107 ;
     dcat:distribution obsdist:Q107-html,
         obsdist:Q107-json,
@@ -745,12 +759,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12923752174"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12923752174)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923752174)"@de ;
     dcterms:identifier "Q108" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q108 ;
-    dcterms:title "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    dcterms:title "Benchmark at the corner of Trongate- Chrisholm Street"@de,
+        "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
     schema:about obs:Q108 ;
     dcat:distribution obsdist:Q108-html,
         obsdist:Q108-json,
@@ -761,12 +777,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12923754806"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12923754806)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923754806)"@de ;
     dcterms:identifier "Q109" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q109 ;
-    dcterms:title "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    dcterms:title "Benchmark at Blackstock's Close (Saltmarket)"@de,
+        "Benchmark at Blackstock's Close (Saltmarket)"@en ;
     schema:about obs:Q109 ;
     dcat:distribution obsdist:Q109-html,
         obsdist:Q109-json,
@@ -777,12 +795,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12924781327"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12924781327)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12924781327)"@de ;
     dcterms:identifier "Q110" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q110 ;
-    dcterms:title "Benchmark in the East side of the City Chambers"@en ;
+    dcterms:title "Benchmark in the East side of the City Chambers"@de,
+        "Benchmark in the East side of the City Chambers"@en ;
     schema:about obs:Q110 ;
     dcat:distribution obsdist:Q110-html,
         obsdist:Q110-json,
@@ -793,12 +813,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12924782280"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12924782280)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12924782280)"@de ;
     dcterms:identifier "Q111" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q111 ;
-    dcterms:title "Benchmark on the North side of the City Chambers"@en ;
+    dcterms:title "Benchmark on the North side of the City Chambers"@de,
+        "Benchmark on the North side of the City Chambers"@en ;
     schema:about obs:Q111 ;
     dcat:distribution obsdist:Q111-html,
         obsdist:Q111-json,
@@ -809,12 +831,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12924784584"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12924784584)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12924784584)"@de ;
     dcterms:identifier "Q112" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q112 ;
-    dcterms:title "Benchmark on the South side of the City Chambers"@en ;
+    dcterms:title "Benchmark on the South side of the City Chambers"@de,
+        "Benchmark on the South side of the City Chambers"@en ;
     schema:about obs:Q112 ;
     dcat:distribution obsdist:Q112-html,
         obsdist:Q112-json,
@@ -825,12 +849,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12925489820"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12925489820)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925489820)"@de ;
     dcterms:identifier "Q113" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q113 ;
-    dcterms:title "Benchmark on the Cathedral gate lodge"@en ;
+    dcterms:title "Benchmark on the Cathedral gate lodge"@de,
+        "Benchmark on the Cathedral gate lodge"@en ;
     schema:about obs:Q113 ;
     dcat:distribution obsdist:Q113-html,
         obsdist:Q113-json,
@@ -841,12 +867,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12925655350"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12925655350)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925655350)"@de ;
     dcterms:identifier "Q114" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q114 ;
-    dcterms:title "Barony Halls benchmark"@en ;
+    dcterms:title "Barony Halls benchmark"@de,
+        "Barony Halls benchmark"@en ;
     schema:about obs:Q114 ;
     dcat:distribution obsdist:Q114-html,
         obsdist:Q114-json,
@@ -857,12 +885,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12925919541"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12925919541)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925919541)"@de ;
     dcterms:identifier "Q115" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q115 ;
-    dcterms:title "Govan Road benchmark"@en ;
+    dcterms:title "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
     schema:about obs:Q115 ;
     dcat:distribution obsdist:Q115-html,
         obsdist:Q115-json,
@@ -873,12 +903,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12936028929"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12936028929)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12936028929)"@de ;
     dcterms:identifier "Q116" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q116 ;
-    dcterms:title "Benchmark at Melrose Abbey"@en ;
+    dcterms:title "Benchmark at Melrose Abbey"@de,
+        "Benchmark at Melrose Abbey"@en ;
     schema:about obs:Q116 ;
     dcat:distribution obsdist:Q116-html,
         obsdist:Q116-json,
@@ -889,12 +921,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 13331549275"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 13331549275)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13331549275)"@de ;
     dcterms:identifier "Q117" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q117 ;
-    dcterms:title "OS benchmark"@en ;
+    dcterms:title "OS benchmark"@de,
+        "OS benchmark"@en ;
     schema:about obs:Q117 ;
     dcat:distribution obsdist:Q117-html,
         obsdist:Q117-json,
@@ -905,12 +939,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 6666122939"@en ;
+    dcterms:description "Meilenstein, Inschrift „P.O Dublin 8 Howth 1“ (OpenStreetMap-Node 6666122939)"@de,
+        "Milestone, inscription “P.O Dublin 8 Howth 1” (OpenStreetMap node 6666122939)"@en ;
     dcterms:identifier "Q118" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q118 ;
-    dcterms:title "MilestoneDublin8Howth1"@en ;
+    dcterms:title "Milestone Dublin 8 Howth 1"@de,
+        "Milestone Dublin 8 Howth 1"@en ;
     schema:about obs:Q118 ;
     dcat:distribution obsdist:Q118-html,
         obsdist:Q118-json,
@@ -921,12 +957,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 6721748182"@en ;
+    dcterms:description "Meilenstein, Inschrift „P.O Dublin 9 Howth“ (OpenStreetMap-Node 6721748182)"@de,
+        "Milestone, inscription “P.O Dublin 9 Howth” (OpenStreetMap node 6721748182)"@en ;
     dcterms:identifier "Q119" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q119 ;
-    dcterms:title "MilestoneDublin9Howth"@en ;
+    dcterms:title "Milestone Dublin 9 Howth"@de,
+        "Milestone Dublin 9 Howth"@en ;
     schema:about obs:Q119 ;
     dcat:distribution obsdist:Q119-html,
         obsdist:Q119-json,
@@ -937,12 +975,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 6967103228"@en ;
+    dcterms:description "Meilenstein, Inschrift „CARLOW 17 [...] ROYAL OAK 9“ (OpenStreetMap-Node 6967103228)"@de,
+        "Milestone, inscription “CARLOW 17 [...] ROYAL OAK 9” (OpenStreetMap node 6967103228)"@en ;
     dcterms:identifier "Q120" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q120 ;
-    dcterms:title "Milestone Old Dublin Road"@en ;
+    dcterms:title "Milestone Old Dublin Road"@de,
+        "Milestone Old Dublin Road"@en ;
     schema:about obs:Q120 ;
     dcat:distribution obsdist:Q120-html,
         obsdist:Q120-json,
@@ -953,12 +993,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 7873204616"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 7873204616)"@en,
+        "Höhenmarke (OpenStreetMap-Node 7873204616)"@de ;
     dcterms:identifier "Q121" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q121 ;
-    dcterms:title "Benchmark at Scots Church"@en ;
+    dcterms:title "Benchmark at Scots Church"@de,
+        "Benchmark at Scots Church"@en ;
     schema:about obs:Q121 ;
     dcat:distribution obsdist:Q121-html,
         obsdist:Q121-json,
@@ -969,12 +1011,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 14257817434"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 14257817434)"@en,
+        "Höhenmarke (OpenStreetMap-Node 14257817434)"@de ;
     dcterms:identifier "Q122" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q122 ;
-    dcterms:title "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    dcterms:title "Second Presbyterian Church, Ballybay"@de,
+        "Second Presbyterian Church, Ballybay"@en ;
     schema:about obs:Q122 ;
     dcat:distribution obsdist:Q122-html,
         obsdist:Q122-json,
@@ -985,12 +1029,14 @@ obscat:wikibase-ontology
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 7709937682"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 7709937682)"@en,
+        "Höhenmarke (OpenStreetMap-Node 7709937682)"@de ;
     dcterms:identifier "Q123" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q123 ;
-    dcterms:title "Ballingarry benchmark"@en ;
+    dcterms:title "Ballingarry benchmark"@de,
+        "Ballingarry benchmark"@en ;
     schema:about obs:Q123 ;
     dcat:distribution obsdist:Q123-html,
         obsdist:Q123-json,
@@ -1710,7 +1756,7 @@ obsdist:Q101-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q101, as archived from the Wikibase API"@en ;
-    dcat:byteSize "26727"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "26995"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q101.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1735,7 +1781,7 @@ obsdist:Q102-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q102, as archived from the Wikibase API"@en ;
-    dcat:byteSize "14255"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "14459"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q102.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1760,7 +1806,7 @@ obsdist:Q103-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q103, as archived from the Wikibase API"@en ;
-    dcat:byteSize "26202"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "26420"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q103.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1785,7 +1831,7 @@ obsdist:Q104-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q104, as archived from the Wikibase API"@en ;
-    dcat:byteSize "17258"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "17479"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q104.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1810,7 +1856,7 @@ obsdist:Q105-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q105, as archived from the Wikibase API"@en ;
-    dcat:byteSize "15196"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "15422"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q105.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1835,7 +1881,7 @@ obsdist:Q106-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q106, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13516"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13732"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q106.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1860,7 +1906,7 @@ obsdist:Q107-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q107, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13490"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13694"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q107.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1885,7 +1931,7 @@ obsdist:Q108-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q108, as archived from the Wikibase API"@en ;
-    dcat:byteSize "17277"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "17508"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q108.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1910,7 +1956,7 @@ obsdist:Q109-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q109, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13528"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13750"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q109.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1935,7 +1981,7 @@ obsdist:Q110-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q110, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13532"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13757"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q110.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1960,7 +2006,7 @@ obsdist:Q111-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q111, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13536"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13762"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q111.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -1985,7 +2031,7 @@ obsdist:Q112-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q112, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13536"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13762"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q112.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2010,7 +2056,7 @@ obsdist:Q113-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q113, as archived from the Wikibase API"@en ;
-    dcat:byteSize "17246"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "17461"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q113.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2035,7 +2081,7 @@ obsdist:Q114-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q114, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13484"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13684"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q114.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2060,7 +2106,7 @@ obsdist:Q115-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q115, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13480"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13678"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q115.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2085,7 +2131,7 @@ obsdist:Q116-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q116, as archived from the Wikibase API"@en ;
-    dcat:byteSize "18884"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "19088"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q116.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2110,7 +2156,7 @@ obsdist:Q117-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q117, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13464"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13654"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q117.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2135,7 +2181,7 @@ obsdist:Q118-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q118, as archived from the Wikibase API"@en ;
-    dcat:byteSize "22534"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "22819"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q118.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2160,7 +2206,7 @@ obsdist:Q119-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q119, as archived from the Wikibase API"@en ;
-    dcat:byteSize "19861"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "20139"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q119.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2185,7 +2231,7 @@ obsdist:Q120-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q120, as archived from the Wikibase API"@en ;
-    dcat:byteSize "21474"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "21768"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q120.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2210,7 +2256,7 @@ obsdist:Q121-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q121, as archived from the Wikibase API"@en ;
-    dcat:byteSize "16450"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "16652"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q121.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2235,7 +2281,7 @@ obsdist:Q122-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q122, as archived from the Wikibase API"@en ;
-    dcat:byteSize "11488"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "11674"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q122.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2260,7 +2306,7 @@ obsdist:Q123-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q123, as archived from the Wikibase API"@en ;
-    dcat:byteSize "24904"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "25102"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q123.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -2358,16 +2404,20 @@ obs:Q100
 obs:Q101
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12600848879"@en ;
-    schema:name "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    schema:description "Benchmark, inscription “LM 2” (OpenStreetMap node 12600848879)"@en,
+        "Höhenmarke, Inschrift „LM 2“ (OpenStreetMap-Node 12600848879)"@de ;
+    schema:name "Benchmark at St. Nicholas' Collegiate Church"@de,
+        "Benchmark at St. Nicholas' Collegiate Church"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "21"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q101-4D902827-C11A-5277-B493-BE586D77FF29 ;
     geo:hasGeometry obss:Q101-4D902827-C11A-5277-B493-BE586D77FF29,
         obss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7,
         obss:Q101-833B2BE0-11FA-5A3D-9F13-DDAFF5ACF799 ;
-    rdfs:label "Benchmark at St. Nicholas' Collegiate Church"@en ;
-    skos:prefLabel "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    rdfs:label "Benchmark at St. Nicholas' Collegiate Church"@de,
+        "Benchmark at St. Nicholas' Collegiate Church"@en ;
+    skos:prefLabel "Benchmark at St. Nicholas' Collegiate Church"@de,
+        "Benchmark at St. Nicholas' Collegiate Church"@en ;
     obsp:P2 obss:Q101-07A372F5-2E9F-5447-A90A-37F4B9B3C28F ;
     obsp:P100 obss:Q101-30FD1A3B-B847-5CA3-8732-9A4AD322AE19 ;
     obsp:P101 obss:Q101-07AEBB9C-EF3D-5408-A81F-D68524DDE55B,
@@ -2410,15 +2460,19 @@ obs:Q101
 obs:Q102
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12888689968"@en ;
-    schema:name "Benchmark at Ardreigh Lock"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12888689968)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12888689968)"@de ;
+    schema:name "Benchmark at Ardreigh Lock"@de,
+        "Benchmark at Ardreigh Lock"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q102-4D73754D-554F-512F-ADF4-A77A1BD7772F ;
     geo:hasGeometry obss:Q102-4D73754D-554F-512F-ADF4-A77A1BD7772F,
         obss:Q102-7F4E8602-2859-57C3-AAE5-F978D63A7CEA ;
-    rdfs:label "Benchmark at Ardreigh Lock"@en ;
-    skos:prefLabel "Benchmark at Ardreigh Lock"@en ;
+    rdfs:label "Benchmark at Ardreigh Lock"@de,
+        "Benchmark at Ardreigh Lock"@en ;
+    skos:prefLabel "Benchmark at Ardreigh Lock"@de,
+        "Benchmark at Ardreigh Lock"@en ;
     obsp:P2 obss:Q102-3D2B0284-F827-5757-9E3B-057B6294411D ;
     obsp:P100 obss:Q102-6E27D6AB-54F5-5337-B4D2-FA21B27A453D ;
     obsp:P101 obss:Q102-0DD25077-409B-592E-9029-B61D9FB11974,
@@ -2446,15 +2500,19 @@ obs:Q102
 obs:Q103
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12919476068"@en ;
-    schema:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12919476068)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12919476068)"@de ;
+    schema:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "20"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C ;
     geo:hasGeometry obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C,
         obss:Q103-85672352-62D4-5E88-8286-F81E3A8D4C8C ;
-    rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
-    skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     obsp:P2 obss:Q103-54055322-9D86-5B37-A1AE-D6BEFA56FDEC ;
     obsp:P100 obss:Q103-C8133615-A16D-5C74-9FA4-F14CEE5A4573 ;
     obsp:P101 obss:Q103-45893AB4-3F6E-5163-AF51-CFAF22EA3228,
@@ -2494,15 +2552,19 @@ obs:Q103
 obs:Q104
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12919738910"@en ;
-    schema:name "Benchmark at St George's Tron Parish Church"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12919738910)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12919738910)"@de ;
+    schema:name "Benchmark at St George's Tron Parish Church"@de,
+        "Benchmark at St George's Tron Parish Church"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q104-B671F23B-72A1-5EB7-A777-94CE0E1661CC ;
     geo:hasGeometry obss:Q104-54487646-ABAD-51AD-8829-B031256E4CE1,
         obss:Q104-B671F23B-72A1-5EB7-A777-94CE0E1661CC ;
-    rdfs:label "Benchmark at St George's Tron Parish Church"@en ;
-    skos:prefLabel "Benchmark at St George's Tron Parish Church"@en ;
+    rdfs:label "Benchmark at St George's Tron Parish Church"@de,
+        "Benchmark at St George's Tron Parish Church"@en ;
+    skos:prefLabel "Benchmark at St George's Tron Parish Church"@de,
+        "Benchmark at St George's Tron Parish Church"@en ;
     obsp:P2 obss:Q104-C16F1D9D-E2AF-5272-9A42-A1DA8078FCE4 ;
     obsp:P100 obss:Q104-84851980-FBA2-562F-9F5B-ABBC099028FC ;
     obsp:P101 obss:Q104-360F9666-E21F-5DBC-87E6-D21050040B70,
@@ -2533,15 +2595,19 @@ obs:Q104
 obs:Q105
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12922675575"@en ;
-    schema:name "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12922675575)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12922675575)"@de ;
+    schema:name "Benchmark at corner of Blantyre St and Argyle St"@de,
+        "Benchmark at corner of Blantyre St and Argyle St"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "13"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q105-59C745B5-3D80-5A49-B14A-2B5D728F58B2 ;
     geo:hasGeometry obss:Q105-59C745B5-3D80-5A49-B14A-2B5D728F58B2,
         obss:Q105-D2535C6A-89F1-5BCB-9366-F5F6060E6223 ;
-    rdfs:label "Benchmark at corner of Blantyre St and Argyle St"@en ;
-    skos:prefLabel "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    rdfs:label "Benchmark at corner of Blantyre St and Argyle St"@de,
+        "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    skos:prefLabel "Benchmark at corner of Blantyre St and Argyle St"@de,
+        "Benchmark at corner of Blantyre St and Argyle St"@en ;
     obsp:P2 obss:Q105-B3AC9E50-BE78-5951-BE8D-CE6D230AC6E1 ;
     obsp:P100 obss:Q105-FFE1A2CB-8C0A-53ED-A178-B7D05AD512BF ;
     obsp:P101 obss:Q105-574936DC-E283-5B5C-8C29-490078AE35C1,
@@ -2571,14 +2637,18 @@ obs:Q105
 obs:Q106
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12923698705"@en ;
-    schema:name "Benchmark on City Union Railway Bridge"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12923698705)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923698705)"@de ;
+    schema:name "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A ;
     geo:hasGeometry obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A ;
-    rdfs:label "Benchmark on City Union Railway Bridge"@en ;
-    skos:prefLabel "Benchmark on City Union Railway Bridge"@en ;
+    rdfs:label "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
+    skos:prefLabel "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
     obsp:P2 obss:Q106-2FE8F952-DFA1-59DA-8735-99A45223DCAB ;
     obsp:P100 obss:Q106-0DF0D498-7D17-5715-A3F5-3B9946A3E309 ;
     obsp:P101 obss:Q106-52EF5FD6-B910-5C33-9128-13CADDC444D9,
@@ -2606,14 +2676,18 @@ obs:Q106
 obs:Q107
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12923704831"@en ;
-    schema:name "Benchmark on Albert Bridge"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12923704831)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923704831)"@de ;
+    schema:name "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24 ;
     geo:hasGeometry obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24 ;
-    rdfs:label "Benchmark on Albert Bridge"@en ;
-    skos:prefLabel "Benchmark on Albert Bridge"@en ;
+    rdfs:label "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
+    skos:prefLabel "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
     obsp:P2 obss:Q107-1F93CACF-4E8A-55D5-865C-8181373DD66C ;
     obsp:P100 obss:Q107-A6EA8EE8-7424-55EE-AD0A-F8084CBB9715 ;
     obsp:P101 obss:Q107-223E544F-40C8-5F0A-8DAA-9B80346FE935,
@@ -2641,15 +2715,19 @@ obs:Q107
 obs:Q108
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12923752174"@en ;
-    schema:name "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12923752174)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923752174)"@de ;
+    schema:name "Benchmark at the corner of Trongate- Chrisholm Street"@de,
+        "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB ;
     geo:hasGeometry obss:Q108-7C9918F4-1B94-54F9-9B28-82867E053E24,
         obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB ;
-    rdfs:label "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
-    skos:prefLabel "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    rdfs:label "Benchmark at the corner of Trongate- Chrisholm Street"@de,
+        "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    skos:prefLabel "Benchmark at the corner of Trongate- Chrisholm Street"@de,
+        "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
     obsp:P2 obss:Q108-2650679E-8FD2-5447-9458-B967CD435F9A ;
     obsp:P100 obss:Q108-2801E878-1F61-57D7-9BAC-40FDBB993A52 ;
     obsp:P101 obss:Q108-95F68E16-61FF-5294-8FB0-CDB912E7BB5A,
@@ -2680,14 +2758,18 @@ obs:Q108
 obs:Q109
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12923754806"@en ;
-    schema:name "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12923754806)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923754806)"@de ;
+    schema:name "Benchmark at Blackstock's Close (Saltmarket)"@de,
+        "Benchmark at Blackstock's Close (Saltmarket)"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q109-41302B4E-7A7B-5D0B-BDAE-0C93C2277E80 ;
     geo:hasGeometry obss:Q109-41302B4E-7A7B-5D0B-BDAE-0C93C2277E80 ;
-    rdfs:label "Benchmark at Blackstock's Close (Saltmarket)"@en ;
-    skos:prefLabel "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    rdfs:label "Benchmark at Blackstock's Close (Saltmarket)"@de,
+        "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    skos:prefLabel "Benchmark at Blackstock's Close (Saltmarket)"@de,
+        "Benchmark at Blackstock's Close (Saltmarket)"@en ;
     obsp:P2 obss:Q109-3E3BCC37-C080-5DBB-B05D-0691AA540692 ;
     obsp:P100 obss:Q109-AF85F148-24BE-511F-8B1A-36C6B6A8DA58 ;
     obsp:P101 obss:Q109-813BD162-2D2A-59E8-B615-3ACB556A4668,
@@ -2715,14 +2797,18 @@ obs:Q109
 obs:Q110
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12924781327"@en ;
-    schema:name "Benchmark in the East side of the City Chambers"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12924781327)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12924781327)"@de ;
+    schema:name "Benchmark in the East side of the City Chambers"@de,
+        "Benchmark in the East side of the City Chambers"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q110-4A944909-C940-540E-8BF6-FDE208169E29 ;
     geo:hasGeometry obss:Q110-4A944909-C940-540E-8BF6-FDE208169E29 ;
-    rdfs:label "Benchmark in the East side of the City Chambers"@en ;
-    skos:prefLabel "Benchmark in the East side of the City Chambers"@en ;
+    rdfs:label "Benchmark in the East side of the City Chambers"@de,
+        "Benchmark in the East side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark in the East side of the City Chambers"@de,
+        "Benchmark in the East side of the City Chambers"@en ;
     obsp:P2 obss:Q110-CFD4F992-5E9B-533F-8184-A96704FCAFA2 ;
     obsp:P100 obss:Q110-09973066-641A-5004-9772-7CE563AF9169 ;
     obsp:P101 obss:Q110-312E9A6A-CE42-57A5-A30B-D1E2B0E9453C,
@@ -2750,14 +2836,18 @@ obs:Q110
 obs:Q111
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12924782280"@en ;
-    schema:name "Benchmark on the North side of the City Chambers"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12924782280)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12924782280)"@de ;
+    schema:name "Benchmark on the North side of the City Chambers"@de,
+        "Benchmark on the North side of the City Chambers"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q111-EB631E0F-743A-5185-AE1A-33F542B95209 ;
     geo:hasGeometry obss:Q111-EB631E0F-743A-5185-AE1A-33F542B95209 ;
-    rdfs:label "Benchmark on the North side of the City Chambers"@en ;
-    skos:prefLabel "Benchmark on the North side of the City Chambers"@en ;
+    rdfs:label "Benchmark on the North side of the City Chambers"@de,
+        "Benchmark on the North side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark on the North side of the City Chambers"@de,
+        "Benchmark on the North side of the City Chambers"@en ;
     obsp:P2 obss:Q111-1F1CACB3-6C58-55CC-A42D-533684E0401E ;
     obsp:P100 obss:Q111-ED1A0331-E16F-5858-B685-2B2A178A227E ;
     obsp:P101 obss:Q111-14AB38DA-E264-5C9E-9AB3-37484E10EA31,
@@ -2785,14 +2875,18 @@ obs:Q111
 obs:Q112
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12924784584"@en ;
-    schema:name "Benchmark on the South side of the City Chambers"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12924784584)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12924784584)"@de ;
+    schema:name "Benchmark on the South side of the City Chambers"@de,
+        "Benchmark on the South side of the City Chambers"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q112-14DAFCD7-4B33-578F-A990-02327E7FCCD8 ;
     geo:hasGeometry obss:Q112-14DAFCD7-4B33-578F-A990-02327E7FCCD8 ;
-    rdfs:label "Benchmark on the South side of the City Chambers"@en ;
-    skos:prefLabel "Benchmark on the South side of the City Chambers"@en ;
+    rdfs:label "Benchmark on the South side of the City Chambers"@de,
+        "Benchmark on the South side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark on the South side of the City Chambers"@de,
+        "Benchmark on the South side of the City Chambers"@en ;
     obsp:P2 obss:Q112-164F7B71-2888-5BB8-9C75-E4D14341709C ;
     obsp:P100 obss:Q112-F862AD6D-4913-5A41-9A85-E360340497F5 ;
     obsp:P101 obss:Q112-87F2E6D8-B436-5A4B-A0EE-C18798949CB2,
@@ -2820,15 +2914,19 @@ obs:Q112
 obs:Q113
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12925489820"@en ;
-    schema:name "Benchmark on the Cathedral gate lodge"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12925489820)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925489820)"@de ;
+    schema:name "Benchmark on the Cathedral gate lodge"@de,
+        "Benchmark on the Cathedral gate lodge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A ;
     geo:hasGeometry obss:Q113-294A42B3-907B-596F-9B32-82614F8378AD,
         obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A ;
-    rdfs:label "Benchmark on the Cathedral gate lodge"@en ;
-    skos:prefLabel "Benchmark on the Cathedral gate lodge"@en ;
+    rdfs:label "Benchmark on the Cathedral gate lodge"@de,
+        "Benchmark on the Cathedral gate lodge"@en ;
+    skos:prefLabel "Benchmark on the Cathedral gate lodge"@de,
+        "Benchmark on the Cathedral gate lodge"@en ;
     obsp:P2 obss:Q113-E5504893-DC29-57CE-831F-AD05B393D176 ;
     obsp:P100 obss:Q113-7C0D45FD-C113-57DF-9543-DC74AF233AC2 ;
     obsp:P101 obss:Q113-7B33C902-F53C-5B1D-A1D5-88CB014AC8BB,
@@ -2859,14 +2957,18 @@ obs:Q113
 obs:Q114
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12925655350"@en ;
-    schema:name "Barony Halls benchmark"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12925655350)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925655350)"@de ;
+    schema:name "Barony Halls benchmark"@de,
+        "Barony Halls benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q114-E162619D-B662-581C-ACFA-210DB1678C94 ;
     geo:hasGeometry obss:Q114-E162619D-B662-581C-ACFA-210DB1678C94 ;
-    rdfs:label "Barony Halls benchmark"@en ;
-    skos:prefLabel "Barony Halls benchmark"@en ;
+    rdfs:label "Barony Halls benchmark"@de,
+        "Barony Halls benchmark"@en ;
+    skos:prefLabel "Barony Halls benchmark"@de,
+        "Barony Halls benchmark"@en ;
     obsp:P2 obss:Q114-18B437CC-2FB6-5F38-AA27-D7190DD94205 ;
     obsp:P100 obss:Q114-6EAEDAE2-EDEC-5F78-8A0C-1458112168B3 ;
     obsp:P101 obss:Q114-8ABCAC2E-3C38-5DA0-8F7B-DB64B0FB7DB5,
@@ -2894,14 +2996,18 @@ obs:Q114
 obs:Q115
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12925919541"@en ;
-    schema:name "Govan Road benchmark"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12925919541)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925919541)"@de ;
+    schema:name "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C ;
     geo:hasGeometry obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C ;
-    rdfs:label "Govan Road benchmark"@en ;
-    skos:prefLabel "Govan Road benchmark"@en ;
+    rdfs:label "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
+    skos:prefLabel "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
     obsp:P2 obss:Q115-8E0C29EA-5138-56C2-A65B-8AC331159EFE ;
     obsp:P100 obss:Q115-2141BF48-5BB2-58DC-ACA7-D47C3B3A5004 ;
     obsp:P101 obss:Q115-1C656306-9D2B-5E71-B67B-3D3AB9ABBE71,
@@ -2929,16 +3035,20 @@ obs:Q115
 obs:Q116
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12936028929"@en ;
-    schema:name "Benchmark at Melrose Abbey"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12936028929)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12936028929)"@de ;
+    schema:name "Benchmark at Melrose Abbey"@de,
+        "Benchmark at Melrose Abbey"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "15"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC ;
     geo:hasGeometry obss:Q116-BF46AA1D-963C-5826-B8C5-077E17421848,
         obss:Q116-C407EF84-4B22-5B55-B3BC-AB3ABFB7F76C,
         obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC ;
-    rdfs:label "Benchmark at Melrose Abbey"@en ;
-    skos:prefLabel "Benchmark at Melrose Abbey"@en ;
+    rdfs:label "Benchmark at Melrose Abbey"@de,
+        "Benchmark at Melrose Abbey"@en ;
+    skos:prefLabel "Benchmark at Melrose Abbey"@de,
+        "Benchmark at Melrose Abbey"@en ;
     obsp:P2 obss:Q116-8824B569-26C1-5DE6-A840-EF42D21FC062 ;
     obsp:P100 obss:Q116-AECD2629-9F28-5067-AE1B-6104EE569DC9 ;
     obsp:P101 obss:Q116-0A42E7FA-B632-5A95-A59A-9BB861217166,
@@ -2971,14 +3081,18 @@ obs:Q116
 obs:Q117
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 13331549275"@en ;
-    schema:name "OS benchmark"@en ;
+    schema:description "Benchmark (OpenStreetMap node 13331549275)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13331549275)"@de ;
+    schema:name "OS benchmark"@de,
+        "OS benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B ;
     geo:hasGeometry obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B ;
-    rdfs:label "OS benchmark"@en ;
-    skos:prefLabel "OS benchmark"@en ;
+    rdfs:label "OS benchmark"@de,
+        "OS benchmark"@en ;
+    skos:prefLabel "OS benchmark"@de,
+        "OS benchmark"@en ;
     obsp:P2 obss:Q117-6D087126-E8B0-5594-9CEE-72945CDD606C ;
     obsp:P100 obss:Q117-781898A6-F0A2-572E-ADCE-E6774120B4AC ;
     obsp:P101 obss:Q117-9F31AB9F-C2D0-5633-94DF-BB9D3AE85C9D,
@@ -3006,15 +3120,19 @@ obs:Q117
 obs:Q118
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 6666122939"@en ;
-    schema:name "MilestoneDublin8Howth1"@en ;
+    schema:description "Meilenstein, Inschrift „P.O Dublin 8 Howth 1“ (OpenStreetMap-Node 6666122939)"@de,
+        "Milestone, inscription “P.O Dublin 8 Howth 1” (OpenStreetMap node 6666122939)"@en ;
+    schema:name "Milestone Dublin 8 Howth 1"@de,
+        "Milestone Dublin 8 Howth 1"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "20"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q118-65235DFF-052D-5E32-BBA8-71FBA6C83E1F ;
     geo:hasGeometry obss:Q118-1790EC6E-B6CB-5E3D-ABDC-B3D496DC6A6A,
         obss:Q118-65235DFF-052D-5E32-BBA8-71FBA6C83E1F ;
-    rdfs:label "MilestoneDublin8Howth1"@en ;
-    skos:prefLabel "MilestoneDublin8Howth1"@en ;
+    rdfs:label "Milestone Dublin 8 Howth 1"@de,
+        "Milestone Dublin 8 Howth 1"@en ;
+    skos:prefLabel "Milestone Dublin 8 Howth 1"@de,
+        "Milestone Dublin 8 Howth 1"@en ;
     obsp:P2 obss:Q118-3A60D0C0-54C3-5ED4-B094-701BC0CE1EE6 ;
     obsp:P100 obss:Q118-AF8B17AC-9166-5317-8EB8-3E91E353DCC2 ;
     obsp:P101 obss:Q118-8C4B9966-F3F0-5E84-8F81-B93343C01F02,
@@ -3057,15 +3175,19 @@ obs:Q118
 obs:Q119
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 6721748182"@en ;
-    schema:name "MilestoneDublin9Howth"@en ;
+    schema:description "Meilenstein, Inschrift „P.O Dublin 9 Howth“ (OpenStreetMap-Node 6721748182)"@de,
+        "Milestone, inscription “P.O Dublin 9 Howth” (OpenStreetMap node 6721748182)"@en ;
+    schema:name "Milestone Dublin 9 Howth"@de,
+        "Milestone Dublin 9 Howth"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q119-EEBDF477-1409-5594-9498-CD0035C9F681 ;
     geo:hasGeometry obss:Q119-CA16E98D-5B2B-5636-AAFF-E9B5995675D3,
         obss:Q119-EEBDF477-1409-5594-9498-CD0035C9F681 ;
-    rdfs:label "MilestoneDublin9Howth"@en ;
-    skos:prefLabel "MilestoneDublin9Howth"@en ;
+    rdfs:label "Milestone Dublin 9 Howth"@de,
+        "Milestone Dublin 9 Howth"@en ;
+    skos:prefLabel "Milestone Dublin 9 Howth"@de,
+        "Milestone Dublin 9 Howth"@en ;
     obsp:P2 obss:Q119-796B44C4-8AF1-5DA2-B9BF-FFAB2EE3FA6B ;
     obsp:P100 obss:Q119-4327C187-1746-5DCC-8FB0-2C1D89AC8D1F ;
     obsp:P101 obss:Q119-0E848F64-AAAA-59FF-A613-8342E76E5122,
@@ -3102,14 +3224,18 @@ obs:Q119
 obs:Q120
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 6967103228"@en ;
-    schema:name "Milestone Old Dublin Road"@en ;
+    schema:description "Meilenstein, Inschrift „CARLOW 17 [...] ROYAL OAK 9“ (OpenStreetMap-Node 6967103228)"@de,
+        "Milestone, inscription “CARLOW 17 [...] ROYAL OAK 9” (OpenStreetMap node 6967103228)"@en ;
+    schema:name "Milestone Old Dublin Road"@de,
+        "Milestone Old Dublin Road"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B ;
     geo:hasGeometry obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B ;
-    rdfs:label "Milestone Old Dublin Road"@en ;
-    skos:prefLabel "Milestone Old Dublin Road"@en ;
+    rdfs:label "Milestone Old Dublin Road"@de,
+        "Milestone Old Dublin Road"@en ;
+    skos:prefLabel "Milestone Old Dublin Road"@de,
+        "Milestone Old Dublin Road"@en ;
     obsp:P2 obss:Q120-BEBDB9BE-A54E-56C3-A1F1-7F116E1C828A ;
     obsp:P100 obss:Q120-65E992E3-5B91-56BF-8BA3-F635BE885ED9 ;
     obsp:P101 obss:Q120-0F3A3101-2F27-5149-ABDC-0D1FC479CA12,
@@ -3144,14 +3270,18 @@ obs:Q120
 obs:Q121
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 7873204616"@en ;
-    schema:name "Benchmark at Scots Church"@en ;
+    schema:description "Benchmark (OpenStreetMap node 7873204616)"@en,
+        "Höhenmarke (OpenStreetMap-Node 7873204616)"@de ;
+    schema:name "Benchmark at Scots Church"@de,
+        "Benchmark at Scots Church"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q121-5196786B-23DD-5AB1-9CC2-D268037CD70D ;
     geo:hasGeometry obss:Q121-5196786B-23DD-5AB1-9CC2-D268037CD70D ;
-    rdfs:label "Benchmark at Scots Church"@en ;
-    skos:prefLabel "Benchmark at Scots Church"@en ;
+    rdfs:label "Benchmark at Scots Church"@de,
+        "Benchmark at Scots Church"@en ;
+    skos:prefLabel "Benchmark at Scots Church"@de,
+        "Benchmark at Scots Church"@en ;
     obsp:P2 obss:Q121-A10D8DE7-CC1C-5803-8454-1E68E0FA86C1 ;
     obsp:P100 obss:Q121-ED7B1502-766B-509E-B245-5652BEB8879A ;
     obsp:P101 obss:Q121-63AD5EDF-4CF8-5205-B783-F8113FF12F00,
@@ -3182,14 +3312,18 @@ obs:Q121
 obs:Q122
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 14257817434"@en ;
-    schema:name "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    schema:description "Benchmark (OpenStreetMap node 14257817434)"@en,
+        "Höhenmarke (OpenStreetMap-Node 14257817434)"@de ;
+    schema:name "Second Presbyterian Church, Ballybay"@de,
+        "Second Presbyterian Church, Ballybay"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "11"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401 ;
     geo:hasGeometry obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401 ;
-    rdfs:label "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
-    skos:prefLabel "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    rdfs:label "Second Presbyterian Church, Ballybay"@de,
+        "Second Presbyterian Church, Ballybay"@en ;
+    skos:prefLabel "Second Presbyterian Church, Ballybay"@de,
+        "Second Presbyterian Church, Ballybay"@en ;
     obsp:P2 obss:Q122-0C48C86F-CC73-59E4-9DC0-00F968613CD5 ;
     obsp:P100 obss:Q122-D1E0C81B-BF8E-554D-A133-8F77B806AE30 ;
     obsp:P101 obss:Q122-91CE90DD-8FA3-59FE-8ADD-720AF5C5BE9F ;
@@ -3216,15 +3350,19 @@ obs:Q122
 obs:Q123
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 7709937682"@en ;
-    schema:name "Ballingarry benchmark"@en ;
+    schema:description "Benchmark (OpenStreetMap node 7709937682)"@en,
+        "Höhenmarke (OpenStreetMap-Node 7709937682)"@de ;
+    schema:name "Ballingarry benchmark"@de,
+        "Ballingarry benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "20"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB ;
     geo:hasGeometry obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB,
         obss:Q123-DE289D6D-4A4B-508C-B2DB-C49D683E6924 ;
-    rdfs:label "Ballingarry benchmark"@en ;
-    skos:prefLabel "Ballingarry benchmark"@en ;
+    rdfs:label "Ballingarry benchmark"@de,
+        "Ballingarry benchmark"@en ;
+    skos:prefLabel "Ballingarry benchmark"@de,
+        "Ballingarry benchmark"@en ;
     obsp:P2 obss:Q123-3DB0D4BC-A809-5F04-AC7E-9EBFA11DCD2D ;
     obsp:P100 obss:Q123-56401383-4068-5134-8B01-F9D12874BCB1 ;
     obsp:P101 obss:Q123-9718A570-CCD9-5161-91DD-91A665736DCB,

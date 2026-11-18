@@ -158,7 +158,8 @@ def build(warn) -> dict:
             entries.append(e)
 
         instances.append({
-            "id": iid, "title": str(g.value(rec, DCTERMS.title)), "pages_url": pages_url, "licence": lic_label,
+            "id": iid, "type": str(g.value(rec, BBR("sourceType")) or "other"),
+            "title": str(g.value(rec, DCTERMS.title)), "pages_url": pages_url, "licence": lic_label,
             "generator": str(g.value(rec, BBR("generator")) or ""), "data_as_of": str(g.value(rec, DCTERMS.modified) or ""),
             "source": str(g.value(rec, DCTERMS.source)), "sha256": str(g.value(rec, BBR("sha256"))),
             "source_triples": int(g.value(rec, BBR("sourceTripleCount")) or 0),

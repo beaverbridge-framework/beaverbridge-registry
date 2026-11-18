@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "bytes": 558298,
+      "data_as_of": "2026-11-18T00:00:00Z",
+      "generator": "wikibase-static 0.32.0",
+      "licence": "CC0 1.0",
+      "path": "downloads/n4o-rse.github.io-wd-govanstones-static.ttl",
+      "rdf_base_seen": true,
+      "role": "export",
+      "route": "local-clone",
+      "sha256": "d72af92065aefc55981ab2b07ce8816768c6c9bf12a5275e4585721174a37835",
+      "triples": 10844
+    },
+    {
+      "bytes": 11336,
+      "path": "downloads/wikibase-ontology.ttl",
+      "role": "ontology",
+      "route": "local-clone",
+      "sha256": "5f71c0e84afda5de7fe6cc2dc33f8b7fe9dcab764cfe516c60bc037f8ebd87eb",
+      "triples": 255
+    }
+  ],
+  "instance": "wd-govanstones",
+  "label": "Govan Stones (static Wikibase from Wikidata)",
+  "pages_url": "https://n4o-rse.github.io/wd-govanstones-static/",
+  "prefix_family": "gvs",
+  "rdf_base": "https://n4o-rse.github.io/wd-govanstones-static"
+}
