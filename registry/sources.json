@@ -56,7 +56,7 @@
     },
     {
       "id": "squirrelbase",
-      "label": "Squirrelbase (static copy of squirrelbase.wikibase.cloud)",
+      "label": "squirrelbase (static copy)",
       "repo": "https://github.com/n4o-rse/wb-squirrelbase-static",
       "pages_url": "https://n4o-rse.github.io/wb-squirrelbase-static/",
       "rdf_base": "https://n4o-rse.github.io/wb-squirrelbase-static",
@@ -74,7 +74,7 @@
     },
     {
       "id": "n4o-prov",
-      "label": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)",
+      "label": "n4o-prov (static copy)",
       "repo": "https://github.com/n4o-rse/wb-n4o-prov-static",
       "pages_url": "https://n4o-rse.github.io/wb-n4o-prov-static/",
       "rdf_base": "https://n4o-rse.github.io/wb-n4o-prov-static",

@@ -72,6 +72,9 @@ fieldset.facet legend { font: 700 .95rem var(--font-head); color: var(--primary)
 .facet ul { list-style: none; margin: 0; padding: 0; max-height: 17rem; overflow: auto; }
 .facet li label { display: flex; gap: .45rem; align-items: baseline; padding: .12rem 0; cursor: pointer; font-size: .92rem; }
 .facet li .n { margin-left: auto; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.facet li label > span:not(.n):not(.sub) { min-width: 0; overflow-wrap: anywhere; }
+.facet li .n, .facet li .sub { flex: none; }
+.facet li label input { flex: none; }
 .facet li .sub { color: var(--text-muted); font-size: .78rem; }
 .facet li.zero label { opacity: .55; }
 .facet .more { margin-top: .3rem; font-size: .85rem; }

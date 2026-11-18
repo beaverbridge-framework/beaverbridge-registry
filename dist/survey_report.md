@@ -192,7 +192,7 @@ No class of this instance states an equivalent class IRI.
 
 ## squirrelbase
 
-Squirrelbase (static copy of squirrelbase.wikibase.cloud). Export `n4o-rse.github.io-wb-squirrelbase-static.ttl`, base `https://n4o-rse.github.io/wb-squirrelbase-static`.
+squirrelbase (static copy). Export `n4o-rse.github.io-wb-squirrelbase-static.ttl`, base `https://n4o-rse.github.io/wb-squirrelbase-static`.
 
 ### Properties in use (12 of 29)
 
@@ -228,7 +228,7 @@ No class of this instance states an equivalent class IRI.
 
 ## n4o-prov
 
-N4O Provenance (static copy of n4o-prov.wikibase.cloud). Export `n4o-rse.github.io-wb-n4o-prov-static.ttl`, base `https://n4o-rse.github.io/wb-n4o-prov-static`.
+n4o-prov (static copy). Export `n4o-rse.github.io-wb-n4o-prov-static.ttl`, base `https://n4o-rse.github.io/wb-n4o-prov-static`.
 
 ### Properties in use (29 of 61)
 

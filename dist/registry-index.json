@@ -35592,7 +35592,7 @@
       "sha256": "13918fe4674597cd0a3ac7a5a49c767aebba56f5715f5e548a040a3e094ff3c6",
       "source": "https://n4o-rse.github.io/wb-squirrelbase-static/downloads/n4o-rse.github.io-wb-squirrelbase-static.ttl",
       "source_triples": 6415,
-      "title": "Squirrelbase (static copy of squirrelbase.wikibase.cloud)"
+      "title": "squirrelbase (static copy)"
     },
     {
       "data_as_of": "2025-06-12T14:00:33+00:00",
@@ -35607,7 +35607,7 @@
       "sha256": "05811db4683f3d799ec036d216784d14f9c3275e48ab15109bc7b611ff75f840",
       "source": "https://n4o-rse.github.io/wb-n4o-prov-static/downloads/n4o-rse.github.io-wb-n4o-prov-static.ttl",
       "source_triples": 14495,
-      "title": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)"
+      "title": "n4o-prov (static copy)"
     }
   ],
   "release": "2026-11-01"

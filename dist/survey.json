@@ -1687,7 +1687,7 @@
       "id": "squirrelbase",
       "inherited_anchors": [],
       "items": 58,
-      "label": "Squirrelbase (static copy of squirrelbase.wikibase.cloud)",
+      "label": "squirrelbase (static copy)",
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",
@@ -2134,7 +2134,7 @@
       "id": "n4o-prov",
       "inherited_anchors": [],
       "items": 132,
-      "label": "N4O Provenance (static copy of n4o-prov.wikibase.cloud)",
+      "label": "n4o-prov (static copy)",
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",

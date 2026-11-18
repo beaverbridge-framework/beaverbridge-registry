@@ -32,7 +32,7 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://purl.org/dc/terms/modified> "2025-06-12T14:00:33+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://purl.org/dc/terms/source> <https://n4o-rse.github.io/wb-n4o-prov-static/downloads/n4o-rse.github.io-wb-n4o-prov-static.ttl> .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://purl.org/dc/terms/title> "N4O Provenance (static copy of n4o-prov.wikibase.cloud)"@en .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://purl.org/dc/terms/title> "n4o-prov (static copy)"@en .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/wb-n4o-prov-static/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/wb-n4o-prov-static/catalog> .
@@ -54,7 +54,7 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://purl.org/dc/terms/modified> "2026-02-23T14:55:27+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://purl.org/dc/terms/source> <https://n4o-rse.github.io/wb-squirrelbase-static/downloads/n4o-rse.github.io-wb-squirrelbase-static.ttl> .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://purl.org/dc/terms/title> "Squirrelbase (static copy of squirrelbase.wikibase.cloud)"@en .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://purl.org/dc/terms/title> "squirrelbase (static copy)"@en .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/wb-squirrelbase-static/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/wb-squirrelbase-static/catalog> .
