@@ -1,5 +1,5 @@
 # RDF export of fuzzy-sl (static copy), Wikibase data model; base URI https://n4o-rse.github.io/wb-fuzzysl-static
-# Generated with wikibase-static 0.31.0; data as of 2025-11-01T08:28:29Z
+# Generated with wikibase-static 0.32.0; data as of 2025-11-01T08:28:29Z
 # Licence: CC0 1.0
 
 @prefix cat: <https://n4o-rse.github.io/wb-fuzzysl-static/catalog/> .

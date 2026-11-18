@@ -197,6 +197,23 @@
       ],
       "items": 137,
       "label": "fuzzy-sl (static copy)",
+      "overlay_anchors": [
+        {
+          "class": "Q79",
+          "label": "Site",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+        },
+        {
+          "class": "Q146",
+          "label": "E53 Place",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+        },
+        {
+          "class": "Q147",
+          "label": "E26 Physical Feature",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature"
+        }
+      ],
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",
@@ -558,6 +575,18 @@
       "inherited_anchors": [],
       "items": 832,
       "label": "chublets.software Wikibase (model demo)",
+      "overlay_anchors": [
+        {
+          "class": "Q100",
+          "label": "software",
+          "target": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
+        },
+        {
+          "class": "Q105",
+          "label": "Little Minion",
+          "target": "http://www.cidoc-crm.org/extensions/crmdig/D14_Software"
+        }
+      ],
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",
@@ -1494,6 +1523,13 @@
       "inherited_anchors": [],
       "items": 27,
       "label": "OSM benchmarks (static Wikibase)",
+      "overlay_anchors": [
+        {
+          "class": "Q100",
+          "label": "Benchmark",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature"
+        }
+      ],
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",
@@ -1688,6 +1724,13 @@
       "inherited_anchors": [],
       "items": 58,
       "label": "squirrelbase (static copy)",
+      "overlay_anchors": [
+        {
+          "class": "Q2",
+          "label": "Object",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"
+        }
+      ],
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",
@@ -2135,6 +2178,38 @@
       "inherited_anchors": [],
       "items": 132,
       "label": "n4o-prov (static copy)",
+      "overlay_anchors": [
+        {
+          "class": "Q6",
+          "label": "Human",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
+        },
+        {
+          "class": "Q7",
+          "label": "Corporate Body",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body"
+        },
+        {
+          "class": "Q33",
+          "label": "Object",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"
+        },
+        {
+          "class": "Q40",
+          "label": "Collection",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding"
+        },
+        {
+          "class": "Q43",
+          "label": "Event",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+        },
+        {
+          "class": "Q54",
+          "label": "Place",
+          "target": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+        }
+      ],
       "properties": {
         "P1": {
           "datatype": "WikibaseItem",

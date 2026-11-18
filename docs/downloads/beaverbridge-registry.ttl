@@ -18303,7 +18303,7 @@ n4o-prov:Q43 a wikibase:Item,
         n4o-prov:Q5 ;
     skos:prefLabel "Event"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E5_Event> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q42 ;
@@ -24788,7 +24788,7 @@ fuzzy-sl:Q79 a wikibase:Item,
     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     skos:prefLabel "Site"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/fuzzy-sl> ;
     bbr:instanceOf fuzzy-sl:Q3 ;
@@ -24856,7 +24856,7 @@ n4o-prov:Q7 a wikibase:Item,
     skos:prefLabel "Körperschaft"@de,
         "Corporate Body"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q42 ;
@@ -25288,7 +25288,7 @@ chublets:Q105 a wikibase:Item ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q10> ;
     skos:prefLabel "Little Minion"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
@@ -25364,7 +25364,7 @@ n4o-prov:Q40 a wikibase:Item,
     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> ;
     skos:prefLabel "Collection"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q42 ;
@@ -25378,7 +25378,7 @@ n4o-prov:Q54 a wikibase:Item,
     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     skos:prefLabel "Place"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q42 ;
@@ -25601,7 +25601,7 @@ osm-benchmarks:Q100 a wikibase:Item ;
     skos:prefLabel "Höhenmarke"@de,
         "Benchmark"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/osm-benchmarks> ;
     bbr:instanceOf osm-benchmarks:Q1 ;
@@ -25619,7 +25619,7 @@ n4o-prov:Q33 a wikibase:Item,
     skos:altLabel "E22 Human-Made Object"@en ;
     skos:prefLabel "Object"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q42 ;
@@ -25642,7 +25642,7 @@ n4o-prov:Q6 a wikibase:Item,
     skos:prefLabel "Person"@de,
         "Human"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> ;
     bbr:instanceOf n4o-prov:Q42 ;
@@ -25657,9 +25657,9 @@ n4o-prov:Q6 a wikibase:Item,
     dct:title "squirrelbase (static copy)"@en ;
     dcat:landingPage <https://n4o-rse.github.io/wb-squirrelbase-static/> ;
     foaf:primaryTopic <https://n4o-rse.github.io/wb-squirrelbase-static/catalog> ;
-    bbr:generator "wikibase-static 0.31.0" ;
+    bbr:generator "wikibase-static 0.32.0" ;
     bbr:prefix "squirrelbase" ;
-    bbr:sha256 "9aa61a8b63e23eef6ef3ce6bcaefa16a5d0649ba2f9d31af4f99e783dd8bd683" ;
+    bbr:sha256 "f5a2f10f0f01ec36165320e299cf30c79b66a7f2bba7484af521c54d2a008304" ;
     bbr:sourceTripleCount 6471 .
 
 squirrelbase:Q2 a wikibase:Item ;
@@ -25669,7 +25669,7 @@ squirrelbase:Q2 a wikibase:Item ;
     rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> ;
     skos:prefLabel "Object"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/squirrelbase> .
 
@@ -25697,7 +25697,7 @@ chublets:Q100 a wikibase:Item ;
     owl:sameAs <https://chublets-wikibase.de/entity/Q5> ;
     skos:prefLabel "software"@en ;
     bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> ;
     bbr:fromInstance <https://beaverbridge-framework.github.io/beaverbridge-registry/record/chublets> ;
     bbr:instanceOf chublets:Q1 ;
@@ -25714,9 +25714,9 @@ chublets:Q100 a wikibase:Item ;
     dct:title "fuzzy-sl (static copy)"@en ;
     dcat:landingPage <https://n4o-rse.github.io/wb-fuzzysl-static/> ;
     foaf:primaryTopic <https://n4o-rse.github.io/wb-fuzzysl-static/catalog> ;
-    bbr:generator "wikibase-static 0.31.0" ;
+    bbr:generator "wikibase-static 0.32.0" ;
     bbr:prefix "fuzzy-sl" ;
-    bbr:sha256 "66c7a94ff65b4ffcfec80c347e5efa04119451afc0fcb5b4cd82fa18933df5d5" ;
+    bbr:sha256 "c1df85e1b6634f76dca015d7b3031ccd8307280e5040d10ca9328955b4be6c50" ;
     bbr:sourceTripleCount 12607 .
 
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/n4o-prov> a dcat:CatalogRecord ;
@@ -25726,9 +25726,9 @@ chublets:Q100 a wikibase:Item ;
     dct:title "n4o-prov (static copy)"@en ;
     dcat:landingPage <https://n4o-rse.github.io/wb-n4o-prov-static/> ;
     foaf:primaryTopic <https://n4o-rse.github.io/wb-n4o-prov-static/catalog> ;
-    bbr:generator "wikibase-static 0.31.0" ;
+    bbr:generator "wikibase-static 0.32.0" ;
     bbr:prefix "n4o-prov" ;
-    bbr:sha256 "35892105857a4b1ced7aa198721857219e03f6a418fb492d31578697ae50e0a9" ;
+    bbr:sha256 "de85fa0812d9034a0f927bcb97bfcd2e4d574f755db772b7e6e9ac72e405cf9f" ;
     bbr:sourceTripleCount 14647 .
 
 chublets:Q111 a wikibase:Item,

@@ -4,7 +4,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q1> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q100> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E73_Information_Object .
 
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q101> bbr:classKind "domain" .
@@ -16,7 +16,7 @@
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q104> bbr:classKind "domain" .
 
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q105> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E73_Information_Object .
 
 <https://n4o-rse.github.io/chublets-wikibase-demo/entity/Q106> bbr:classKind "domain" .
@@ -36,7 +36,7 @@
 <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q1> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q100> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E25_Human-Made_Feature .
 
 <https://n4o-rse.github.io/osm-benchmarks-static/entity/Q2> bbr:classKind "model" .
@@ -78,7 +78,7 @@
 <https://n4o-rse.github.io/wb-fuzzysl-static/entity/Q7> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-fuzzysl-static/entity/Q79> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E53_Place .
 
 <https://n4o-rse.github.io/wb-fuzzysl-static/entity/Q81> bbr:classKind "model" .
@@ -118,37 +118,37 @@
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q3> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q33> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E22_Human-Made_Object .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q4> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q40> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E78_Curated_Holding .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q42> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q43> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E5_Event .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q5> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q54> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E53_Place .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q55> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q6> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E21_Person .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q62> bbr:classKind "model" .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q7> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E40_Legal_Body .
 
 <https://n4o-rse.github.io/wb-n4o-prov-static/entity/Q77> bbr:classKind "model" .
@@ -160,7 +160,7 @@
 <https://n4o-rse.github.io/wb-squirrelbase-static/entity/Q17> bbr:classKind "domain" .
 
 <https://n4o-rse.github.io/wb-squirrelbase-static/entity/Q2> bbr:classKind "domain" ;
-    bbr:crmBasis "bridge" ;
+    bbr:crmBasis "overlay" ;
     bbr:crmClass crm:E24_Physical_Human-Made_Thing .
 
 <https://n4o-rse.github.io/wb-squirrelbase-static/entity/Q31> bbr:classKind "model" .

@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from registry_utils import DIST, RAW, ROLES, ensure_dirs, load_sources, read_core, write_json  # noqa: E402
 
 WB = "http://wikiba.se/ontology#"
+CRM_HOST = "http://www.cidoc-crm.org/"
 RE_WIKIDATA = re.compile(r"wikidata\.org/(?:entity|wiki)/(Q\d+)")
 
 
@@ -133,6 +134,13 @@ def survey_instance(inst: dict, core: dict[str, dict], warn) -> dict:
                     break
                 queue.extend(parents[a])
 
+    # anchors stated in the CRM overlay (data/crm.csv of the static site): rdfs:subClassOf from the class to a class of the CIDOC CRM
+    # namespaces; an extension class (crmdig:D14) is stated as it is, its chain to the CRM is not followed here
+    overlay = []
+    for c in sorted(classes, key=numkey):
+        targets = sorted(str(o) for o in g.objects(entity(c), RDFS.subClassOf) if str(o).startswith(CRM_HOST))
+        overlay += [{"class": c, "label": label(entity(c)), "target": t} for t in targets]
+
     text = path.read_text(encoding="utf-8")
     return {
         "id": iid, "label": inst.get("label", iid), "rdf_base": base, "file": path.name,
@@ -140,7 +148,7 @@ def survey_instance(inst: dict, core: dict[str, dict], warn) -> dict:
         "statements": sum(1 for _ in g.subjects(RDF.type, URIRef(WB + "Statement"))),
         "references": sum(1 for _ in g.subjects(RDF.type, URIRef(WB + "Reference"))),
         "properties": {k: props[k] for k in sorted(props, key=numkey)},
-        "roles": roles, "classes": class_rows, "roots": roots, "anchors": anchors, "inherited_anchors": inherited,
+        "roles": roles, "classes": class_rows, "roots": roots, "anchors": anchors, "inherited_anchors": inherited, "overlay_anchors": overlay,
         "wikidata_qids": sorted(set(RE_WIKIDATA.findall(text)), key=numkey),
     }
 
@@ -176,6 +184,9 @@ def write_report(path: Path, surveys: list[dict], cross: dict) -> None:
                       [[c["id"], c["label"], c["instances"], c["property_instances"], ", ".join(c["superclasses"])]
                        for c in sorted(s["classes"], key=lambda c: (-c["instances"], numkey(c["id"])))]) + [""]
         L += ["Root classes (no superclass): " + (", ".join(s["roots"]) or "none") + ".", ""]
+        if s["overlay_anchors"]:
+            L += ["### Classes that state a CIDOC CRM class in their CRM overlay (rdfs:subClassOf)", ""]
+            L += md_table(["Class", "Label", "CRM class"], [[a["class"], a["label"], a["target"]] for a in s["overlay_anchors"]]) + [""]
         if s["anchors"]:
             L += ["### Classes that state an equivalent class IRI", ""]
             L += md_table(["Class", "Label", "Equivalent class"], [[a["class"], a["label"], a["target"]] for a in s["anchors"]]) + [""]

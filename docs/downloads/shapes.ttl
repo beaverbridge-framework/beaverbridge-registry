@@ -109,8 +109,8 @@ shp:Class a sh:NodeShape ;
         sh:path bbr:crmClass ; sh:nodeKind sh:IRI ; sh:pattern "^http://www\\.cidoc-crm\\.org/cidoc-crm/E[0-9]+_" ;
         sh:severity sh:Violation ; sh:message "R15: bbr:crmClass is a CIDOC CRM class IRI" ] ;
     sh:property [
-        sh:path bbr:crmBasis ; sh:in ( "source" "bridge" ) ; sh:severity sh:Violation ;
-        sh:message "R16: bbr:crmBasis is source or bridge" ] ;
+        sh:path bbr:crmBasis ; sh:in ( "source" "overlay" "bridge" ) ; sh:severity sh:Violation ;
+        sh:message "R16: bbr:crmBasis is source, overlay or bridge" ] ;
     sh:sparql [
         a sh:SPARQLConstraint ; sh:prefixes shp:prefixes ; sh:severity sh:Violation ;
         sh:message "R17: a class with bbr:crmClass says its basis, and the other way round" ;

@@ -4,7 +4,7 @@
     dist/bridge_report.md                     per class: kind, own anchor, anchor in effect (inherited along subclass of), items
 
 The table is checked against dist/survey.json: every class of every instance needs a row, every row a class with the same
-English label, a `source` anchor must be the one the instance states, a `bridge` row needs a reason. A mismatch is a
+English label, a `source` anchor must be the one the instance states as a property, an `overlay` anchor the one it states in its CRM overlay, a `bridge` row needs a reason. A mismatch is a
 warning; with --strict it fails the build. The bundle merges dist/crm_bridge.nt.
 """
 from __future__ import annotations
@@ -23,7 +23,7 @@ from registry_utils import BBR_NS, CROSSWALKS, DIST, ensure_dirs, load_sources, 
 CLASSES_CSV = CROSSWALKS / "classes.csv"
 CRM = "http://www.cidoc-crm.org/cidoc-crm/"
 KINDS = ("domain", "model")
-BASES = ("source", "bridge", "none")
+BASES = ("source", "overlay", "bridge", "none")
 RE_CRM = re.compile(r"^E[0-9]+_[A-Za-z0-9_-]+$")
 
 
@@ -111,7 +111,20 @@ def main() -> int:
                 continue
             if r["basis"] != "source" or CRM + r["crm"] != target:
                 warn(f"{iid}: {cid} states {target} itself, classes.csv has basis '{r['basis']}' and crm '{r['crm']}'")
+        overlay: dict[str, list[str]] = {}
+        for a in s.get("overlay_anchors", []):
+            overlay.setdefault(a["class"], []).append(a["target"])
+        for cid, targets in overlay.items():           # stated in the CRM overlay of the instance (rdfs:subClassOf), not as a property
+            r = table.get(cid)
+            if r is None or cid in stated:
+                continue
+            if r["basis"] != "overlay":
+                warn(f"{iid}: {cid} states {', '.join(targets)} itself in its CRM overlay, classes.csv has basis '{r['basis']}' and crm '{r['crm']}'")
+            elif CRM + r["crm"] not in targets and all(t.startswith(CRM) for t in targets):
+                warn(f"{iid}: {cid} states {', '.join(targets)} in its CRM overlay, classes.csv has crm '{r['crm']}'")
         for cid, r in table.items():
+            if r["basis"] == "overlay" and cid not in overlay:
+                warn(f"{iid}: {cid} has basis 'overlay' but the instance states no CRM class in its overlay")
             if r["basis"] == "source" and cid not in stated:
                 warn(f"{iid}: {cid} has basis 'source' but the instance states no anchor")
 

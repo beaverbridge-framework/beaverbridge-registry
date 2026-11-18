@@ -1,5 +1,5 @@
 # RDF export of n4o-prov (static copy), Wikibase data model; base URI https://n4o-rse.github.io/wb-n4o-prov-static
-# Generated with wikibase-static 0.31.0; data as of 2025-06-12T14:00:33Z
+# Generated with wikibase-static 0.32.0; data as of 2025-06-12T14:00:33Z
 # Licence: CC0 1.0
 # The prefixes n4op:, n4opt:, n4opp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only n4op:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 

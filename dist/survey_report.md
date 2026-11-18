@@ -79,6 +79,14 @@ fuzzy-sl (static copy). Export `n4o-rse.github.io-wb-fuzzysl-static.ttl`, base `
 
 Root classes (no superclass): Q2, Q3, Q4, Q5, Q6, Q7, Q21, Q22, Q79, Q81, Q91, Q125, Q145.
 
+### Classes that state a CIDOC CRM class in their CRM overlay (rdfs:subClassOf)
+
+| Class | Label | CRM class |
+|---|---|---|
+| Q79 | Site | http://www.cidoc-crm.org/cidoc-crm/E53_Place |
+| Q146 | E53 Place | http://www.cidoc-crm.org/cidoc-crm/E53_Place |
+| Q147 | E26 Physical Feature | http://www.cidoc-crm.org/cidoc-crm/E26_Physical_Feature |
+
 ### Classes that state an equivalent class IRI
 
 | Class | Label | Equivalent class |
@@ -153,6 +161,13 @@ chublets.software Wikibase (model demo). Export `n4o-rse.github.io-chublets-wiki
 
 Root classes (no superclass): Q3.
 
+### Classes that state a CIDOC CRM class in their CRM overlay (rdfs:subClassOf)
+
+| Class | Label | CRM class |
+|---|---|---|
+| Q100 | software | http://www.cidoc-crm.org/extensions/crmdig/D14_Software |
+| Q105 | Little Minion | http://www.cidoc-crm.org/extensions/crmdig/D14_Software |
+
 No class of this instance states an equivalent class IRI.
 
 ## osm-benchmarks
@@ -187,6 +202,12 @@ OSM benchmarks (static Wikibase). Export `n4o-rse.github.io-osm-benchmarks-stati
 | Q3 | Instance | 0 | 0 |  |
 
 Root classes (no superclass): Q3.
+
+### Classes that state a CIDOC CRM class in their CRM overlay (rdfs:subClassOf)
+
+| Class | Label | CRM class |
+|---|---|---|
+| Q100 | Benchmark | http://www.cidoc-crm.org/cidoc-crm/E25_Human-Made_Feature |
 
 No class of this instance states an equivalent class IRI.
 
@@ -223,6 +244,12 @@ squirrelbase (static copy). Export `n4o-rse.github.io-wb-squirrelbase-static.ttl
 | Q44 | Acquisition Method | 3 | 0 |  |
 
 Root classes (no superclass): Q2, Q31, Q32, Q36, Q44.
+
+### Classes that state a CIDOC CRM class in their CRM overlay (rdfs:subClassOf)
+
+| Class | Label | CRM class |
+|---|---|---|
+| Q2 | Object | http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing |
 
 No class of this instance states an equivalent class IRI.
 
@@ -299,6 +326,17 @@ n4o-prov (static copy). Export `n4o-rse.github.io-wb-n4o-prov-static.ttl`, base 
 | Q43 | Event | 0 | 0 | Q5 |
 
 Root classes (no superclass): Q5, Q40, Q54, Q55, Q62, Q77.
+
+### Classes that state a CIDOC CRM class in their CRM overlay (rdfs:subClassOf)
+
+| Class | Label | CRM class |
+|---|---|---|
+| Q6 | Human | http://www.cidoc-crm.org/cidoc-crm/E21_Person |
+| Q7 | Corporate Body | http://www.cidoc-crm.org/cidoc-crm/E40_Legal_Body |
+| Q33 | Object | http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object |
+| Q40 | Collection | http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding |
+| Q43 | Event | http://www.cidoc-crm.org/cidoc-crm/E5_Event |
+| Q54 | Place | http://www.cidoc-crm.org/cidoc-crm/E53_Place |
 
 No class of this instance states an equivalent class IRI.
 

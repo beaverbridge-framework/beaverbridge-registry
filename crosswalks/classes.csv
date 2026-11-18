@@ -9,7 +9,7 @@ fuzzy-sl,Q10,Archaeological Site,domain,,none,inherits E53_Place through Q79 and
 fuzzy-sl,Q11,Geological Site,domain,,none,inherits E53_Place through Q79 and Q146
 fuzzy-sl,Q21,Person,model,,none,agent of the data; E21_Person would fit
 fuzzy-sl,Q22,Generic Class,model,,none,generic class of the model
-fuzzy-sl,Q79,Site,domain,E53_Place,bridge,root of the site classes; the instance gives no anchor
+fuzzy-sl,Q79,Site,domain,E53_Place,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E53_Place
 fuzzy-sl,Q81,Location Type,model,,none,vocabulary class
 fuzzy-sl,Q90,Cave,domain,,none,inherits E26_Physical_Feature through Q147
 fuzzy-sl,Q91,Spatial Category,model,,none,vocabulary class
@@ -21,12 +21,12 @@ fuzzy-sl,Q147,E26 Physical Feature,domain,E26_Physical_Feature,source,stated by 
 chublets,Q1,Class,model,,none,type of every class
 chublets,Q2,Property,model,,none,type of every property
 chublets,Q3,Instance,domain,E1_CRM_Entity,bridge,root of the class tree; its direct items are of mixed kind (topics, repositories, people, papers) and are not typed further; E1_CRM_Entity is the only claim that holds for all of them
-chublets,Q100,software,domain,E73_Information_Object,bridge,the instance gives no anchor; software is immaterial information
+chublets,Q100,software,domain,E73_Information_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as D14_Software
 chublets,Q101,research software,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q102,application software,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q103,software library,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q104,script file,domain,,none,inherits E73_Information_Object through Q100
-chublets,Q105,Little Minion,domain,E73_Information_Object,bridge,not a subclass of software in the instance; its items are software
+chublets,Q105,Little Minion,domain,E73_Information_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as D14_Software; not a subclass of software in the instance, its items are software
 chublets,Q106,chublet,domain,,none,inherits E73_Information_Object through Q101
 chublets,Q372,utility software,domain,,none,inherits E73_Information_Object through Q100
 chublets,Q378,QGIS plugin,domain,,none,inherits E73_Information_Object through Q100
@@ -34,8 +34,8 @@ chublets,Q379,plug-in,domain,,none,inherits E73_Information_Object through Q100
 osm-benchmarks,Q1,Class,model,,none,type of every class
 osm-benchmarks,Q2,Property,model,,none,type of every property
 osm-benchmarks,Q3,Instance,model,,none,root of the class tree
-osm-benchmarks,Q100,Benchmark,domain,E25_Human-Made_Feature,bridge,stated by the instance as rdfs:subClassOf in its CRM overlay (data/crm.csv) not as a property
-squirrelbase,Q2,Object,domain,E24_Physical_Human-Made_Thing,bridge,the instance gives no anchor; its items are stones, statues and snowmen, all human-made physical things
+osm-benchmarks,Q100,Benchmark,domain,E25_Human-Made_Feature,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E25_Human-Made_Feature
+squirrelbase,Q2,Object,domain,E24_Physical_Human-Made_Thing,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E24_Physical_Human-Made_Thing
 squirrelbase,Q17,temporal Object,domain,,none,inherits E24_Physical_Human-Made_Thing through Q2
 squirrelbase,Q31,Type,model,,none,class of the vocabulary classes
 squirrelbase,Q32,Alignment Type,model,,none,vocabulary class
@@ -64,9 +64,9 @@ n4o-prov,Q42,Core Entity,model,,none,class of the core classes Human, Corporate 
 n4o-prov,Q55,Alignment Score,model,,none,vocabulary class
 n4o-prov,Q62,Object Type,model,,none,vocabulary class
 n4o-prov,Q77,Place Type,model,,none,vocabulary class
-n4o-prov,Q6,Human,domain,E21_Person,bridge,the instance gives no anchor; persons
-n4o-prov,Q7,Corporate Body,domain,E40_Legal_Body,bridge,the instance gives no anchor; firms, galleries and similar bodies
-n4o-prov,Q33,Object,domain,E22_Human-Made_Object,bridge,the instance gives no anchor; coins, medals and paintings
-n4o-prov,Q40,Collection,domain,E78_Curated_Holding,bridge,the instance gives no anchor; museum and digital collections
-n4o-prov,Q43,Event,domain,E5_Event,bridge,the instance gives no anchor; no items yet
-n4o-prov,Q54,Place,domain,E53_Place,bridge,the instance gives no anchor; cities and other places
+n4o-prov,Q6,Human,domain,E21_Person,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E21_Person
+n4o-prov,Q7,Corporate Body,domain,E40_Legal_Body,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E40_Legal_Body
+n4o-prov,Q33,Object,domain,E22_Human-Made_Object,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E22_Human-Made_Object
+n4o-prov,Q40,Collection,domain,E78_Curated_Holding,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E78_Curated_Holding
+n4o-prov,Q43,Event,domain,E5_Event,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E5_Event
+n4o-prov,Q54,Place,domain,E53_Place,overlay,stated by the instance in its CRM overlay (data/crm.csv) as E53_Place

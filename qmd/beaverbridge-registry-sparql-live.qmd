@@ -182,7 +182,7 @@ print(f"\n{len(rows)} rows")
 ```
 ## Step 7: Which classes carry a CIDOC CRM class of their own?
 
-<em>source</em> means the instance states the anchor itself, <em>bridge</em> that the registry states it because the instance does not. All other classes inherit the anchor of a superclass, see the next query.
+<em>source</em> means the instance states the anchor itself as a property, <em>overlay</em> that it states it in its CIDOC CRM overlay (<code>data/crm.csv</code>, as <code>rdfs:subClassOf</code>), <em>bridge</em> that the registry states it because the instance does not. All other classes inherit the anchor of a superclass, see the next query.
 
 ```{pyodide}
 #| autorun: false
