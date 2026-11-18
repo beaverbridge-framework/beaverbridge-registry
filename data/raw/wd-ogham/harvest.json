@@ -3,13 +3,13 @@
     {
       "bytes": 9642573,
       "data_as_of": "2026-11-18T00:00:00Z",
-      "generator": "wikibase-static 0.32.0",
+      "generator": "wikibase-static 0.33.0",
       "licence": "CC0 1.0",
       "path": "downloads/n4o-rse.github.io-wd-ogham-static.ttl",
       "rdf_base_seen": true,
       "role": "export",
       "route": "local-clone",
-      "sha256": "343821a03526f60b0ae4c55921df8e814916d1d43ec3eb0fa65859e6afe6709a",
+      "sha256": "1344bd6be87ff151b09d46a071ffe0e534a84152fd5372b93fa894132192bc12",
       "triples": 207083
     },
     {

@@ -1,5 +1,5 @@
 # RDF export of Ogham Stones (static Wikibase), Wikibase data model; base URI https://n4o-rse.github.io/wd-ogham-static
-# Generated with wikibase-static 0.32.0; data as of 2026-11-18T00:00:00Z
+# Generated with wikibase-static 0.33.0; data as of 2026-11-18T00:00:00Z
 # Licence: CC0 1.0
 # The prefixes ogs:, ogst:, ogsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ogs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 

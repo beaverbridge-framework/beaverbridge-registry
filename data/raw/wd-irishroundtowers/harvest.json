@@ -3,13 +3,13 @@
     {
       "bytes": 2882654,
       "data_as_of": "2026-11-18T00:00:00Z",
-      "generator": "wikibase-static 0.32.0",
+      "generator": "wikibase-static 0.33.0",
       "licence": "CC0 1.0",
       "path": "downloads/n4o-rse.github.io-wd-irishroundtowers-static.ttl",
       "rdf_base_seen": true,
       "role": "export",
       "route": "local-clone",
-      "sha256": "a76da0d9349d47513db4425b329dd17ca81a133fd7672b0d434de0bca3c6d37e",
+      "sha256": "451a1c4d81dad2e5df041105d01b1a869c25dd0565b48748e2a9b271b3286866",
       "triples": 57211
     },
     {

@@ -3,13 +3,13 @@
     {
       "bytes": 558298,
       "data_as_of": "2026-11-18T00:00:00Z",
-      "generator": "wikibase-static 0.32.0",
+      "generator": "wikibase-static 0.33.0",
       "licence": "CC0 1.0",
       "path": "downloads/n4o-rse.github.io-wd-govanstones-static.ttl",
       "rdf_base_seen": true,
       "role": "export",
       "route": "local-clone",
-      "sha256": "d72af92065aefc55981ab2b07ce8816768c6c9bf12a5275e4585721174a37835",
+      "sha256": "e592221d61db54af2a505a40292a6e9dd6189e0b83a2f2c5b507a7efd72a45fa",
       "triples": 10844
     },
     {

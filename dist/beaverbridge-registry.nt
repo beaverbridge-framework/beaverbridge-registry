@@ -117,9 +117,9 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/wd-govanstones-static/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/wd-govanstones-static/catalog> .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.32.0" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.33.0" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/prefix> "wd-govanstones" .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "d72af92065aefc55981ab2b07ce8816768c6c9bf12a5275e4585721174a37835" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "e592221d61db54af2a505a40292a6e9dd6189e0b83a2f2c5b507a7efd72a45fa" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceTripleCount> "10844"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-govanstones> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceType> "wikidata" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
@@ -129,9 +129,9 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/wd-holywells-static/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/wd-holywells-static/catalog> .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.32.0" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.33.0" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/prefix> "wd-holywells" .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "8e4ec788a2c00e9a0406c39fe0d40f4b672dcc4465a6f460a2da1d859f41023e" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "3c59cc0b43906f85dd398987d4da5bdd7e457b7e1c694833734bd9d68fa51c87" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceTripleCount> "86370"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-holywells> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceType> "wikidata" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
@@ -141,9 +141,9 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/wd-irishroundtowers-static/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/wd-irishroundtowers-static/catalog> .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.32.0" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.33.0" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/prefix> "wd-irishroundtowers" .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "a76da0d9349d47513db4425b329dd17ca81a133fd7672b0d434de0bca3c6d37e" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "451a1c4d81dad2e5df041105d01b1a869c25dd0565b48748e2a9b271b3286866" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceTripleCount> "57211"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-irishroundtowers> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceType> "wikidata" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <http://purl.org/dc/terms/isPartOf> <https://beaverbridge-framework.github.io/beaverbridge-registry/catalog> .
@@ -153,9 +153,9 @@
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#CatalogRecord> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <http://www.w3.org/ns/dcat#landingPage> <https://n4o-rse.github.io/wd-ogham-static/> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <http://xmlns.com/foaf/0.1/primaryTopic> <https://n4o-rse.github.io/wd-ogham-static/catalog> .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.32.0" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/generator> "wikibase-static 0.33.0" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/prefix> "wd-ogham" .
-<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "343821a03526f60b0ae4c55921df8e814916d1d43ec3eb0fa65859e6afe6709a" .
+<https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sha256> "1344bd6be87ff151b09d46a071ffe0e534a84152fd5372b93fa894132192bc12" .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceTripleCount> "207083"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <https://beaverbridge-framework.github.io/beaverbridge-registry/record/wd-ogham> <https://beaverbridge-framework.github.io/beaverbridge-registry/vocab/sourceType> "wikidata" .
 <https://n4o-rse.github.io/chublets-wikibase-demo/catalog> <http://purl.org/dc/terms/conformsTo> <http://wikiba.se/ontology> .
